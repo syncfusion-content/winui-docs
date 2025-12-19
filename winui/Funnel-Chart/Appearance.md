@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in WinUI Chart control | Syncfusion
+title: Appearance in WinUI Funnel Chart control | Syncfusion
 description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart (SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
@@ -20,10 +20,9 @@ Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.U
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -64,13 +63,14 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
     </Grid.Resources>
 
      <chart:SfFunnelChart x:Name="chart" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value"
-                PaletteBrushes="{StaticResource customBrushes}">
+                          ItemsSource="{Binding Data}" 
+                          XBindingPath="Category"
+                          YBindingPath="Value"
+                          PaletteBrushes="{StaticResource customBrushes}">
      . . .
     </chart:SfFunnelChart>
 </Grid>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -113,31 +113,31 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
             <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#FFE7C7" />
                     <GradientStop Offset="0" Color="#FCB69F" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#fadd7d" />
                     <GradientStop Offset="0" Color="#fccc2d" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#DCFA97" />
                     <GradientStop Offset="0" Color="#96E6A1" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#DDD6F3" />
                     <GradientStop Offset="0" Color="#FAACA8" />
-                </LinearGradientBrush>
-                <LinearGradientBrush>
+            </LinearGradientBrush>
+            <LinearGradientBrush>
                     <GradientStop Offset="1" Color="#A8EAEE" />
                     <GradientStop Offset="0" Color="#7BB0F9" />
-                </LinearGradientBrush>
+            </LinearGradientBrush>
         </BrushCollection>
     </Grid.Resources>
 
      <chart:SfFunnelChart x:Name="chart" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value"
-                PaletteBrushes="{StaticResource customBrushes}">
+                          ItemsSource="{Binding Data}" 
+                          XBindingPath="Category"
+                          YBindingPath="Value"
+                          PaletteBrushes="{StaticResource customBrushes}">
      . . .
     </chart:SfFunnelChart>
 </Grid>

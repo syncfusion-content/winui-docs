@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in WinUI Chart control | Syncfusion
+title: Tooltip in WinUI Pyramid Chart control | Syncfusion
 description: This section explains about how to enable tooltip and its customization in Syncfusion® WinUI Chart(SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
@@ -23,8 +23,7 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
                       EnableTooltip="True"
                       ItemsSource="{Binding Data}" 
                       XBindingPath="Category"
-                      YBindingPath="Value">          
-
+                      YBindingPath="Value">
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -151,8 +150,7 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     </chart:SfPyramidChart.Resources>
 
     <chart:SfPyramidChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior
-					LabelStyle="{StaticResource labelStyle}"/>
+        <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfPyramidChart.TooltipBehavior>
 . . . 
 </chart:SfPyramidChart>
@@ -188,38 +186,38 @@ The pyramid chart provides support to customize the appearance of the tooltip by
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="tooltipTemplate">
+<chart:SfPyramidChart x:Name="chart" Height="388"  Width="500">
+    <chart:SfPyramidChart.Resources>
+        <DataTemplate x:Key="tooltipTemplate1" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}"
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12" 
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
+			   Foreground="Black"
+			   FontWeight="Medium" 
+			   FontSize="12"
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Center"/>
                 <TextBlock Text=" : "
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center" 
-						   VerticalAlignment="Center"/>
+			   Foreground="Black"
+			   FontWeight="Medium"
+			   FontSize="12" 
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Item.Value}"
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
+			   Foreground="Black"
+			   FontWeight="Medium"
+			   FontSize="12"
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
-
+        . . .
         <Style TargetType="Path" x:Key="style">
-                <Setter Property="Stroke" Value="Black"/>
-                <Setter Property="Fill" Value="LightGreen"/>
-                <Setter Property="StrokeThickness" Value="2"/>
+            <Setter Property="Stroke" Value="Black"/>
+            <Setter Property="Fill" Value="LightGreen"/>
+            <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </Grid.Resources>
-
+    </chart:SfPyramidChart.Resources>
+. . .
     <chart:SfPyramidChart x:Name="chart"
                            ItemsSource="{Binding Data}" 
                            XBindingPath="Category"  
@@ -231,7 +229,8 @@ The pyramid chart provides support to customize the appearance of the tooltip by
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfPyramidChart.TooltipBehavior>
     </chart:SfPyramidChart>
-</Grid>
+
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
@@ -251,3 +250,5 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip template in WinUI Chart](Tooltip_Images/WinUI_chart_tooltip_template.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tooltip labels.

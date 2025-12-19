@@ -42,7 +42,6 @@ using Syncfusion.UI.Xaml.Charts;
 
 public sealed partial class MainWindow : Window
 {
-    
     public MainWindow()
     {
         this.InitializeComponent();
@@ -114,7 +113,6 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 <Window>
     . . .
-
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">
 
@@ -146,9 +144,7 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight xaml %}
 
 <chart:SfFunnelChart Header="PRODUCT SALES">
-    
 . . .
-
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -156,9 +152,7 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-
 . . .
-
 chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
@@ -182,9 +176,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-
 . . .
-
 chart.ShowDataLabels = true;
 
 {% endhighlight %}
@@ -250,13 +242,14 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES" 
-                             EnableTooltip="True"
-                             ShowDataLabels="True"
-                             Height="388" Width="500" 
-                             ItemsSource="{Binding Data}" 
-                             XBindingPath="Category"
-                             YBindingPath="Value">
+<chart:SfFunnelChart x:Name="chart" 
+		     Header="PRODUCT SALES" 
+                     EnableTooltip="True"
+                     ShowDataLabels="True"
+                     Height="388" Width="500" 
+                     ItemsSource="{Binding Data}" 
+                     XBindingPath="Category"
+                     YBindingPath="Value">
 
         <chart:SfFunnelChart.DataContext>
             <model:ChartViewModel />

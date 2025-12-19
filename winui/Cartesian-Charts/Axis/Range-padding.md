@@ -173,10 +173,10 @@ The [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 . . .
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis RangePadding="Additional">
-        <chart:DateTimeAxis.LabelStyle>
-            <chart:LabelStyle LabelFormat="MMM-yy" />
-        </chart:DateTimeAxis.LabelStyle>
-    </chart:DateTimeAxis>
+            <chart:DateTimeAxis.LabelStyle>
+               <chart:LabelStyle LabelFormat="MMM-yy" />
+            </chart:DateTimeAxis.LabelStyle>
+        </chart:DateTimeAxis>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
@@ -218,10 +218,10 @@ this.Content = chart;
 . . .
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis RangePadding="None">
-        <chart:DateTimeAxis.LabelStyle>
-            <chart:LabelStyle LabelFormat="MMM-yy" />
-        </chart:DateTimeAxis.LabelStyle>
-    </chart:DateTimeAxis>
+            <chart:DateTimeAxis.LabelStyle>
+               <chart:LabelStyle LabelFormat="MMM-yy" />
+            </chart:DateTimeAxis.LabelStyle>
+        </chart:DateTimeAxis>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>

@@ -583,26 +583,26 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 <chart:SfCartesianChart Height="388"  Width="500">
     <chart:SfCartesianChart.Resources>
-        <DataTemplate x:Key="tooltipTemplate1">
+        <DataTemplate x:Key="tooltipTemplate1" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}"
-						   Foreground="Black"
-						   FontWeight="Medium" 
-						   FontSize="12"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
+			   Foreground="Black"
+			   FontWeight="Medium" 
+			   FontSize="12"
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Center"/>
                 <TextBlock Text=" : "
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12" 
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
+			   Foreground="Black"
+			   FontWeight="Medium"
+			   FontSize="12" 
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Item.Value}"
-						   Foreground="Black"
-						   FontWeight="Medium"
-						   FontSize="12"
-						   HorizontalAlignment="Center"
-						   VerticalAlignment="Center"/>
+			   Foreground="Black"
+			   FontWeight="Medium"
+			   FontSize="12"
+			   HorizontalAlignment="Center"
+			   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
         . . .
@@ -666,4 +666,6 @@ this.Content = chart;
 {% endtabs %}
 
 ![Tooltip template in WinUI Chart](Tooltip_images/WinUI_chart_tooltip_customization.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tooltip labels.
 

@@ -50,7 +50,7 @@ The funnel chart can be customized to the inverted pyramid chart by setting the 
 <chart:SfFunnelChart MinimumWidth="0" 
                      ItemsSource="{Binding Data}" 
                      XBindingPath="Category"
-                    YBindingPath="Value">
+                     YBindingPath="Value">
 </chart:SfFunnelChart>
  
 {% endhighlight %}

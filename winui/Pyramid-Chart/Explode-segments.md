@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explode segments in WinUI Chart control | Syncfusion
+title: Explode segments in WinUI Pyramid Chart control | Syncfusion
 description: This section explains about how to explode single segment or all segments in Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
@@ -20,12 +20,11 @@ Exploding a segment is used to pull attention to a specific area of the pyramid.
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" 
-                ExplodeIndex="3"  
-                ExplodeOffset="30" 
-                ItemsSource="{Binding Data}" 
-                XBindingPath="Category"
-                YBindingPath="Value">
-
+                      ExplodeIndex="3"  
+                      ExplodeOffset="30" 
+                      ItemsSource="{Binding Data}" 
+                      XBindingPath="Category"
+                      YBindingPath="Value">
 </chart:SfPyramidChart>
  
 {% endhighlight %}

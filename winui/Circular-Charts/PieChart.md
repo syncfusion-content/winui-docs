@@ -99,6 +99,7 @@ The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusi
 {% tabs %}
 
 {% highlight xaml %}
+
 <chart:SfCircularChart>
 
     <chart:SfCircularChart.Series>
@@ -107,12 +108,11 @@ The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusi
                          YBindingPath="SalesRate"
                          ShowDataLabels="True"
                          GroupTo="1000"
-						 GroupMode="Value">
+			 GroupMode="Value">
             <chart:PieSeries.DataLabelSettings>
-                <chart:CircularDataLabelSettings
-							ShowConnectorLine="True"
-                            ConnectorHeight="80" 
-                            Context="DataLabelItem"/>
+                <chart:CircularDataLabelSettings ShowConnectorLine="True"
+                            			 ConnectorHeight="80" 
+                            			 Context="DataLabelItem"/>
             </chart:PieSeries.DataLabelSettings>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>

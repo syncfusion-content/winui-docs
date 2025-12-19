@@ -172,38 +172,38 @@ The appearance of the data label can be customized using the [ContentTemplate](h
     <DataTemplate x:Key="dataLabelTemplate">
         <StackPanel Orientation="Vertical">
             <Path Grid.Row="0" 
-				  Stretch="Uniform"
-				  Fill="#1E88E5"                              
-				  Width="15"
-				  Height="15"
-				  Margin="0,0,0,0"                              
-				  RenderTransformOrigin="0.5,0.5"
-				  Data="M22.5,15.8899993896484L37.5,                                
-				  30.8899993896484 7.5,
-				  30.8899993896484 22.5,
-				  15.8899993896484z">
+                  Stretch="Uniform"
+		  Fill="#1E88E5"                              
+		  Width="15"
+		  Height="15"
+		  Margin="0,0,0,0"                              
+		  RenderTransformOrigin="0.5,0.5"
+		  Data="M22.5,15.8899993896484L37.5,                                
+		  30.8899993896484 7.5,
+		  30.8899993896484 22.5,
+		  15.8899993896484z">
                 <Path.RenderTransform>
                     <TransformGroup>
                         <TransformGroup.Children>
                             <RotateTransform Angle="0" />
-                            <ScaleTransform ScaleX="1"
-											ScaleY="1" />
+                            <ScaleTransform ScaleX="1" ScaleY="1" />
                         </TransformGroup.Children>
                     </TransformGroup>
                 </Path.RenderTransform>
             </Path>
             <TextBlock Grid.Row="1"
-					   Text="{Binding}" 
-					   FontSize="11"
-					   Foreground="Black">
-		   </TextBlock>
+		       Text="{Binding}" 
+		       FontSize="11"
+		       Foreground="Black">
+            </TextBlock>
         </StackPanel>
     </DataTemplate>
 </chart:SfCartesianChart.Resources>
 . . . 
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Position="Outer" 
+        <chart:CartesianDataLabelSettings Position="Outer"
+                                          Context="YValue"
                                           ContentTemplate="{StaticResource dataLabelTemplate}"/>
     </chart:ColumnSeries.DataLabelSettings>
 . . .
@@ -221,6 +221,7 @@ ColumnSeries series = new ColumnSeries();
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Position = DataLabelPosition.Outer,
+    Context = LabelContext.YValue,
     ContentTemplate = chart.Resources["dataLabelTemplate"] as DataTemplate
 };
 
@@ -232,6 +233,8 @@ chart.Series.Add(series);
 
 ![Data label template in WinUI chart](DataLabel_images/winui_chart_data_label_template.png)
 
+N> The binding context for the DataLabelSettings `ContentTemplate` is [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context), which is used to customize the content of data labels. This property defines the value displayed in the data label, such as the X value or any other value from the underlying model object. By default, the value of `Context` is [YValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelContext.html#Syncfusion_UI_Xaml_Charts_LabelContext_YValue).
+
 ## Format
 
 The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Format) property can be used to format the data labels.
@@ -239,6 +242,7 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% tabs %}
 
 {% highlight xaml %}
+
 <chart:SfCartesianChart>
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
@@ -261,8 +265,8 @@ ColumnSeries series = new ColumnSeries();
 series.DataLabelSettings = new CartesianDataLabelSettings()
 {
     Format = "#.000",
-	Position = DataLabelPosition.Outer
-	Background = new SolidColorBrush(Colors.Transparent),
+    Position = DataLabelPosition.Outer,
+    Background = new SolidColorBrush(Colors.Transparent),
 };
 
 chart.Series.Add(series);
@@ -290,6 +294,7 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 </chart:SfCartesianChart>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -329,8 +334,7 @@ N> This behavior varies based on the chart series type.
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings
-					BarLabelAlignment="Middle"/>
+        <chart:CartesianDataLabelSettings BarLabelAlignment="Middle"/>
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 </chart:SfCartesianChart>
@@ -381,10 +385,8 @@ The connector line can be customized using the below properties.
 
 <chart:SfCartesianChart.Resources>
     <Style TargetType="Path" x:Key="lineStyle">
-        <Setter Property="StrokeDashArray"
-				Value="10,7,5"/>
-        <Setter Property="Stroke"
-				Value="Black"/>
+        <Setter Property="StrokeDashArray" Value="10,7,5"/>
+        <Setter Property="Stroke" Value="Black"/>
     </Style>
 </chart:SfCartesianChart.Resources>
 . . .
@@ -433,8 +435,7 @@ chart.Series.Add(series);
 . . .
 <chart:ColumnSeries ShowDataLabels="True">
     <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings
-					UseSeriesPalette="True"/>
+        <chart:CartesianDataLabelSettings UseSeriesPalette="True"/>
     </chart:ColumnSeries.DataLabelSettings>
 </chart:ColumnSeries>
 

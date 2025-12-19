@@ -94,7 +94,6 @@ Legend icon represents a symbol associated with the each legend item. [LegendIco
     <chart:ChartLegend/>
 </chart:SfCircularChart.Legend>
 
-
 <chart:SfCircularChart.Series>
     <chart:PieSeries LegendIcon="Rectangle"
                      ItemsSource="{Binding Data}"  
@@ -139,7 +138,7 @@ The appearance of the legend icon can be customized using the below properties.
 . . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend IconWidth="10" 
-					   IconHeight="5" 
+		       IconHeight="5" 
                        IconVisibility="Visible">
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
@@ -175,16 +174,16 @@ Circular chart provides support to add custom icon for the legend using [LegendI
     <Grid.Resources>
         <DataTemplate x:Key="iconTemplate">
             <Ellipse Height="15"
-					 Width="15"
-					 Fill="White" 
-					 Stroke="#4a4a4a" 
-					 StrokeThickness="2"/>
+		     Width="15"
+		     Fill="White" 
+		     Stroke="#4a4a4a" 
+		     StrokeThickness="2"/>
         </DataTemplate>
     </Grid.Resources>
+
 <chart:SfCircularChart>
     <chart:SfCircularChart.Legend>
-        <chart:ChartLegend IconWidth="15"
-						   IconHeight="15"/>
+        <chart:ChartLegend IconWidth="15" IconHeight="15"/>
     </chart:SfCircularChart.Legend>
 
     <chart:PieSeries LegendIconTemplate="{StaticResource iconTemplate}"
@@ -325,8 +324,7 @@ To display the legend at the left, set the [Placement](https://help.syncfusion.c
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
-    <chart:ChartLegend ItemMargin="10"
-					   Placement="Left"/>
+    <chart:ChartLegend ItemMargin="10" Placement="Left"/>
 </chart:SfCircularChart.Legend>
 
 </chart:SfCircularChart>
@@ -361,12 +359,13 @@ The legend background appearance can be customized by using the below properties
 {% tabs %}
 
 {% highlight xaml %}
+
 <chart:SfCircularChart>
 . . .
 <chart:SfCircularChart.Legend>
     <chart:ChartLegend Background="Gray"
-					   BorderBrush="Black" 
-					   BorderThickness="1" 
+		       BorderBrush="Black" 
+		       BorderThickness="1" 
                        CornerRadius="5" >
     </chart:ChartLegend>
 </chart:SfCircularChart.Legend>
@@ -399,32 +398,29 @@ Customize each legend item by using [ItemTemplate](https://help.syncfusion.com/c
 
 {% highlight xaml %}
 
-<Grid x:Name="grid">
-    <Grid.Resources>
-        <DataTemplate x:Key="labelTemplate">
-            <StackPanel Margin="10"
-						Orientation="Vertical">
-                <Ellipse Height="15"
-						 Width="15"
-						 Fill="{Binding Interior}" 
-						 Stroke="#4a4a4a"
-						 StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center"
-						   FontSize="12"
+<chart:SfCircularChart x:Name="chart">
+    <chart:SfCircularChart.Resources>
+        <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
+            <StackPanel Margin="10" Orientation="Vertical">
+                <Ellipse Height="15" 
+                         Width="15" 
+                         Fill="{Binding IconBrush}" 
+                         Stroke="#4a4a4a" 
+                         StrokeThickness="2"/>
+                <TextBlock HorizontalAlignment="Center" 
+                           FontSize="12"
                            Foreground="Black" 
-                           FontWeight="SemiBold"
-						   Text="{Binding Label}"/>
+                           FontWeight="SemiBold" 
+                           Text="{Binding Item._XAxesData}"/>
             </StackPanel>
         </DataTemplate>
-    </Grid.Resources>
-<chart:SfCircularChart>
+    </chart:SfCircularChart.Resources>
     . . .
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCircularChart.Legend>
 
 </chart:SfCircularChart>
-</Grid>
 
 {% endhighlight %}
 
@@ -434,7 +430,6 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 chart.Legend = new ChartLegend()
 {
-
    ItemTemplate = grid.Resources["itemTemplate"] as DataTemplate
 };
 
@@ -443,4 +438,6 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 ![Item template support for legend in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_template.png)
+
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html#Syncfusion_UI_Xaml_Charts_LegendItem_Item) can be used to access the data linked to the associated model class. The binding context for ChartLegend `ItemTemplate` is [LegendItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html), which provides the necessary data for the legend labels.
 

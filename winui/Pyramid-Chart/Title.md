@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in WinUI Chart control | Syncfusion
+title: Title in WinUI Pyramid Chart control | Syncfusion
 description: Learn here all about title with Syncfusion® WinUI Chart(SfPyramidChart) control and its customization.
 platform: WinUI
 control: SfPyramidChart
@@ -42,16 +42,16 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
 
 {% highlight xaml %}
 
- <chart:SfPyramidChart>
+<chart:SfPyramidChart>
 
     <chart:SfPyramidChart.Header>
         <Border BorderThickness="2"
-				BorderBrush="Black"
-				Margin="10"
-				CornerRadius="5">
+		BorderBrush="Black"
+		Margin="10"
+		CornerRadius="5">
             <TextBlock FontSize="14"
-					   Text="The Food Comparison Pyramid"
-					   Margin="5"/>
+		       Text="The Food Comparison Pyramid"
+		       Margin="5"/>
         </Border>
     </chart:SfPyramidChart.Header>
             
