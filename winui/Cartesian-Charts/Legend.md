@@ -497,7 +497,7 @@ Customize each legend item by using the [`ItemTemplate`](https://help.syncfusion
 
 chart.Legend = new ChartLegend()
 {
-   ItemTemplate = chart.Resources["itemTemplate"] as DataTemplate
+   ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
 
 {% endhighlight %}
