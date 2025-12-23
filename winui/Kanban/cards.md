@@ -708,7 +708,7 @@ The following code example shows the usage of DataTemplate.
 {% highlight C# hl_lines="1" %}
 
 this.kanban.IsToolTipEnabled = true;
-this.kanban.ItemsSource = new ViewModel().Tasks;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %}
