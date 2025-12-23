@@ -56,8 +56,8 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
     <chart:CategoryAxis Header="Category">
         <chart:CategoryAxis.HeaderStyle>
             <chart:LabelStyle FontFamily="Algerian"
-							  FontSize="13"
-							  Foreground="Blue"/>
+			      FontSize="13"
+			      Foreground="Blue"/>
         </chart:CategoryAxis.HeaderStyle>
     </chart:CategoryAxis>
 </chart:SfCartesianChart.XAxes>
