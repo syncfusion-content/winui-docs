@@ -23,7 +23,7 @@ This section explains how to populate the [WinUI Pyramid Chart](https://www.sync
 
 {% highlight xaml %}
 
-<Window>
+<Window
     x:Class="ChartDemo.MainWindow"
 
     . . .
@@ -113,7 +113,7 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 {% highlight xaml %} 
 
-<Window>
+<Window
     . . .
 
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
