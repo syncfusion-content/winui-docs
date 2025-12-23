@@ -188,7 +188,7 @@ The pyramid chart provides support to customize the appearance of the tooltip by
 
 <chart:SfPyramidChart x:Name="chart" Height="388"  Width="500">
     <chart:SfPyramidChart.Resources>
-        <DataTemplate x:Key="tooltipTemplate1" x:DataType="chart:ChartSegment">
+        <DataTemplate x:Key="tooltipTemplate" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}"
 			   Foreground="Black"

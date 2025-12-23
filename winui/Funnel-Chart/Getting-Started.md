@@ -23,7 +23,7 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 
 {% highlight xaml %}
 
-<Window>
+<Window
     x:Class="ChartDemo.MainWindow"
 
     . . .
@@ -111,7 +111,7 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 {% highlight xaml %} 
 
-<Window>
+<Window
     . . .
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">

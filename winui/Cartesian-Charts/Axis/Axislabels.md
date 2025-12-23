@@ -131,7 +131,7 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 <chart:SfCartesianChart>
 . . .
 <chart:SfCartesianChart.Resources>
-    <DataTemplate x:Key="labelTemplate">
+    <DataTemplate x:Key="labelTemplate" x:DataType="chart:ChartAxisLabel">
         <Border BorderBrush="Blue"
 	        CornerRadius="5"
 		BorderThickness="1">
@@ -167,6 +167,8 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![Axis LabelTemplate support in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_Template.png)
+
+N> The binding context for the `LabelTemplate` is [ChartAxisLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which provides the necessary data for the axis labels.
 
 ## Label Extent
 
