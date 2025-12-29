@@ -23,43 +23,43 @@ Before starting, make sure your MCP Server is set up and running.
 
 ## Component-Specific Prompts
 
-### Grid
+### DataGrid
 
-The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
+The Syncfusion WinUI DataGrid delivers fast, flexible tables for large datasets with built-in interactivity.
 
 {% promptcards %}
 {% promptcard Sorting %}
-#SyncfusionWinUIAssistant How do I enable sorting in the Syncfusion WinUI Grid?
+#SyncfusionWinUIAssistant How do I enable sorting in the Syncfusion WinUI DataGrid?
 {% endpromptcard %}
 {% promptcard Grouping and Filtering %}
-#SyncfusionWinUIAssistant Show me an example of grouping and filtering data in the Grid component.
+#SyncfusionWinUIAssistant Show me an example of grouping and filtering data in the DataGrid component.
 {% endpromptcard %}
 {% promptcard Editing with Column Types %}
 #SyncfusionWinUIAssistant How to configure in-place editing using numeric, text, date, checkbox, image, combo box, picker, and template editors in the DataGrid.
 {% endpromptcard %}
 {% promptcard Selection and Keyboard Navigation %}
-#SyncfusionWinUIAssistant Enable single and multiple row selection with programmatic selection APIs and Windows keyboard navigation.
+#SyncfusionWinUIAssistant Describe how to enable both single‑row and multiple‑row selection and how to perform programmatic row selection using APIs. Also provide explanation of all supported mouse and keyboard interactions.
 {% endpromptcard %}
 {% promptcard CRUD Operations %}
-#SyncfusionWinUIAssistant What’s the code to implement full CRUD operations in Syncfusion WinUI Grid?
+#SyncfusionWinUIAssistant Give me the code example to perform full CRUD operations in the Syncfusion WinUI DataGrid?
 {% endpromptcard %}
-{% promptcard Grid Export to Excel %}
-#SyncfusionWinUIAssistant How to export data to Excel in syncfusion WinUI Grid?
+{% promptcard DataGrid Export to Excel %}
+#SyncfusionWinUIAssistant How to export data to Excel in syncfusion WinUI DataGrid?
 {% endpromptcard %}
 {% promptcard Virtual Scrolling %}
-#SyncfusionWinUIAssistant How do I configure virtual scrolling for large datasets in the Grid?
+#SyncfusionWinUIAssistant How do I configure virtual scrolling for large datasets in the DataGrid?
 {% endpromptcard %}
-{% promptcard Multicolumn Grid Setup %}
-#SyncfusionWinUIAssistant Create a multicolumn Grid to display product details with sorting and filtering.
+{% promptcard Multicolumn DataGrid Setup %}
+#SyncfusionWinUIAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering.
 {% endpromptcard %}
 {% promptcard Load control in a cell/column %}
 #SyncfusionWinUIAssistant How can I integrate or load a WinUI control inside each cell or column of the Syncfusion WinUI DataGrid?
 {% endpromptcard %}
-{% promptcard Advanced Grid Features %}
-#SyncfusionWinUIAssistant Show me a Grid with sorting, grouping, filtering, and virtual scrolling
+{% promptcard Advanced DataGrid Features %}
+#SyncfusionWinUIAssistant Show me a DataGrid with sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
-{% promptcard Troubleshooting Grid Export %}
-#SyncfusionWinUIAssistant Why isn’t my Grid exporting to Excel correctly?
+{% promptcard Troubleshooting DataGrid Export %}
+#SyncfusionWinUIAssistant Why isn’t my DataGrid exporting to Excel correctly?
 {% endpromptcard %}
 {% promptcard Cell Editing %}
 #SyncfusionWinUIAssistant How to enable cell editing in the DataGrid?
@@ -71,7 +71,7 @@ The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets
 #SyncfusionWinUIAssistant How to Drag and Drop a Row in WinUI DataGrid?
 {% endpromptcard %}
 {% promptcard Styling and Conditional Formatting %}
-#SyncfusionWinUIAssistant Customize cell and header styles and apply conditional formatting based on data values.
+#SyncfusionWinUIAssistant Customize cell and header styles and apply conditional formatting based on data values in WinUI DataGrid.
 {% endpromptcard %}
 {% endpromptcards %}
 

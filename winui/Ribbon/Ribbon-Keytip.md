@@ -55,7 +55,7 @@ The access text can be attached to the ribbon elements by using the `KeyTipServi
                                           DisplayOptions="Normal,Simplified"
                                           Icon="Paste"
                                           ribbon:KeyTipService.AccessText ="V"
-                                          SizeMode="Large">
+                                          AllowedSizeModes="Large">
                     <ribbon:RibbonSplitButton.Flyout>
                         <MenuFlyout>
                             <MenuFlyoutItem Command="{Binding ButtonCommand}"
@@ -73,20 +73,20 @@ The access text can be attached to the ribbon elements by using the `KeyTipServi
                                          Content="Cut"
                                          DisplayOptions="Normal,Overflow"
                                          Icon="Cut"
-                                         SizeMode="Normal"                                                             
+                                         AllowedSizeModes="Normal"                                                             
                                          ribbon:KeyTipService.AccessText="X"/>
                 <ribbon:RibbonButton Command="{Binding ButtonCommand}"
                                          CommandParameter="Copy"
                                          Content="Copy"
                                          DisplayOptions="Normal,Overflow"
                                          Icon="Copy"
-                                         SizeMode="Normal" 
+                                         AllowedSizeModes="Normal" 
                                          ribbon:KeyTipService.AccessText="C"/>
                 <ribbon:RibbonButton Command="{Binding ButtonCommand}"
                                          CommandParameter="Format Painter"
                                          Content="Format Painter"
                                          DisplayOptions="Normal,Simplified"
-                                         SizeMode="Normal"
+                                         AllowedSizeModes="Normal"
                                          ribbon:KeyTipService.AccessText="FP">
                         <ribbon:RibbonButton.Icon>
                             <FontIcon Glyph="&#xF0E3;" />
