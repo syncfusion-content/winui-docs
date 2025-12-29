@@ -13,9 +13,9 @@ The below section describes more information about Ribbon items and its features
 
 ## Changing the size of the ribbon items
 
-The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using `AllowedSizeModes` property.
+The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using [AllowedSizeModes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonElementSizeModes.html) property.
 
-`AllowedSizeModes` is an Enum type property used to arrange Ribbon items inside a RibbonGroup with Small, Normal and Large sizes. 
+[AllowedSizeModes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonElementSizeModes.html) is an Enum type property used to arrange Ribbon items inside a RibbonGroup with Small, Normal and Large sizes. 
 
 * **Small** : Displays only the image.
 * **Normal** : Displays an image along with the text in horizontal alignment.

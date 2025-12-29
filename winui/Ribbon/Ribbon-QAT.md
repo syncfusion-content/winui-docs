@@ -156,7 +156,7 @@ QAT items can also be removed by using the Customize window. Select the QAT item
 
 ## Change Position of Quick Access Toolbar
 
-The position of Quick Access Toolbar (QAT) can be changed by using it `Position` property.
+The position of Quick Access Toolbar (QAT) can be changed by using it [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.QATPosition.html) property.
 
 The Position enumeration comprises of following values: .
 
@@ -164,7 +164,7 @@ The Position enumeration comprises of following values: .
 * **Below the Ribbon** - Displays the Quick Access Toolbar below the ribbon.
 * **Hide** - Hide the Quick Access Toolbar in the ribbon.
 
-The default value is **Above the Ribbon**. The below code shows how to change the position of `Quick Access Toolbar` in Ribbon.
+The default value is **Above the Ribbon**. The below code shows how to change the position of [Quick Access Toolbar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.QuickAccessToolBar.html) in Ribbon.
 
 {% tabs %}
 {% highlight xaml %}
