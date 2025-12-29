@@ -25,7 +25,7 @@ Before starting, make sure your MCP Server is set up and running.
 
 ### DataGrid
 
-The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
+The Syncfusion WinUI DataGrid delivers fast, flexible tables for large datasets with built-in interactivity.
 
 {% promptcards %}
 {% promptcard Sorting %}
@@ -43,22 +43,22 @@ The Syncfusion WinUI Data Grid delivers fast, flexible tables for large datasets
 {% promptcard CRUD Operations %}
 #SyncfusionWinUIAssistant Give me the code example to perform full CRUD operations in the Syncfusion WinUI DataGrid?
 {% endpromptcard %}
-{% promptcard Grid Export to Excel %}
+{% promptcard DataGrid Export to Excel %}
 #SyncfusionWinUIAssistant How to export data to Excel in syncfusion WinUI DataGrid?
 {% endpromptcard %}
 {% promptcard Virtual Scrolling %}
 #SyncfusionWinUIAssistant How do I configure virtual scrolling for large datasets in the DataGrid?
 {% endpromptcard %}
-{% promptcard Multicolumn Grid Setup %}
+{% promptcard Multicolumn DataGrid Setup %}
 #SyncfusionWinUIAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering.
 {% endpromptcard %}
 {% promptcard Load control in a cell/column %}
 #SyncfusionWinUIAssistant How can I integrate or load a WinUI control inside each cell or column of the Syncfusion WinUI DataGrid?
 {% endpromptcard %}
-{% promptcard Advanced Grid Features %}
-#SyncfusionWinUIAssistant Show me a DataGrid with sorting, grouping, filtering, and virtual scrolling
+{% promptcard Advanced DataGrid Features %}
+#SyncfusionWinUIAssistant Show me a DataGrid with sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
-{% promptcard Troubleshooting Grid Export %}
+{% promptcard Troubleshooting DataGrid Export %}
 #SyncfusionWinUIAssistant Why isn’t my DataGrid exporting to Excel correctly?
 {% endpromptcard %}
 {% promptcard Cell Editing %}
