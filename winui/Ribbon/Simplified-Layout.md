@@ -119,7 +119,7 @@ Also, the DisplayMode property allows the following value combinations as well.
                               Content="Paste"
                               DisplayOptions="Normal,Simplified"
                               Icon="Paste"
-                              SizeMode="Large">
+                              AllowedSizeModes="Large">
         </ribbon:RibbonSplitButton>
         <!--This item will be displayed in normal layout and inside overflow menu during simplified Layout-->
         <ribbon:RibbonButton Command="{Binding ButtonCommand}"
@@ -127,20 +127,20 @@ Also, the DisplayMode property allows the following value combinations as well.
                          Content="Cut"
                          DisplayOptions="Normal,Overflow"
                          Icon="Cut"
-                         SizeMode="Normal" />                                                      
+                         AllowedSizeModes="Normal" />                                                      
         <!--This item will be displayed only in simplified layout-->
         <ribbon:RibbonButton Command="{Binding ButtonCommand}"
                          CommandParameter="Copy"
                          Content="Copy"
                          DisplayOptions="Simplified"
                          Icon="Copy"
-                         SizeMode="Normal" />
+                         AllowedSizeModes="Normal" />
         <!--This item will be displayed only in normal layout-->
         <ribbon:RibbonButton Command="{Binding ButtonCommand}"
                          CommandParameter="Format Painter"
                          Content="Format Painter"
                          DisplayOptions="Normal"
-                         SizeMode="Normal"/>                                    
+                         AllowedSizeModes="Normal"/>                                    
     </Page>
 
 {% endhighlight %}

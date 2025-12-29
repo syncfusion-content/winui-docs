@@ -13,9 +13,9 @@ The below section describes more information about Ribbon items and its features
 
 ## Changing the size of the ribbon items
 
-The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using `SizeMode` property.
+The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using `AllowedSizeModes` property.
 
-`SizeMode` is an Enum type property used to arrange Ribbon items inside a RibbonGroup with Small, Normal and Large sizes. 
+`AllowedSizeModes` is an Enum type property used to arrange Ribbon items inside a RibbonGroup with Small, Normal and Large sizes. 
 
 * **Small** : Displays only the image.
 * **Normal** : Displays an image along with the text in horizontal alignment.
@@ -31,7 +31,7 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
                 <ribbon:RibbonSplitButton x:Name="pasteButton"
                                           Icon="Paste"
                                           Content="Paste"
-                                          SizeMode="Large">
+                                          AllowedSizeModes="Large">
                     <ribbon:RibbonSplitButton.Flyout>
                         <MenuFlyout>
                             <MenuFlyoutItem Text="Paste" />
@@ -43,14 +43,14 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
                 <ribbon:RibbonButton x:Name="cutButton"
                                      Icon="Cut"
                                      Content="Cut"
-                                     SizeMode="Normal" />
+                                     AllowedSizeModes="Normal" />
                 <ribbon:RibbonButton x:Name="copyButton"
                                      Icon="Copy"
                                      Content="Copy"
-                                     SizeMode="Normal" />
+                                     AllowedSizeModes="Normal" />
                 <ribbon:RibbonButton x:Name="formatPainterButton"
                                      Content="Format Painter"
-                                     SizeMode="Normal">
+                                     AllowedSizeModes="Normal">
                     <ribbon:RibbonButton.Icon>
                         <FontIcon Glyph="&#xF0E3;" />
                     </ribbon:RibbonButton.Icon>
@@ -59,7 +59,7 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
             <ribbon:RibbonGroup Header="File">
                 <ribbon:RibbonDropDownButton x:Name="newFileButton"
                                              Content="New File"
-                                             SizeMode="Large">
+                                             AllowedSizeModes="Large">
                     <ribbon:RibbonDropDownButton.Icon>
                         <FontIcon Glyph="&#xE7C3;" />
                     </ribbon:RibbonDropDownButton.Icon>
@@ -72,7 +72,7 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
                 </ribbon:RibbonDropDownButton>
                 <ribbon:RibbonButton x:Name="openButton"
                                      Content="Open"
-                                     SizeMode="Normal">
+                                     AllowedSizeModes="Normal">
                     <ribbon:RibbonButton.Icon>
                         <FontIcon FontFamily="Segoe MDL2 Assets"
                                   Glyph="&#xED25;" />
@@ -81,11 +81,11 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
                 <ribbon:RibbonButton x:Name="shareButton"
                                      Icon="Share"
                                      Content="Share"
-                                     SizeMode="Normal" />
+                                     AllowedSizeModes="Normal" />
                 <ribbon:RibbonButton x:Name="printButton"
                                      Icon="Print"
                                      Content="Print"
-                                     SizeMode="Normal" />
+                                     AllowedSizeModes="Normal" />
             </ribbon:RibbonGroup>
             <ribbon:RibbonGroup Header="Font">
                 <ribbon:RibbonItemHost Margin="0,12,0,0">
@@ -117,7 +117,7 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
                                 </ToggleButton.Content>
                             </ToggleButton>
                             <ribbon:RibbonSplitButton x:Name="underlineButton"
-                                                      SizeMode="Small"
+                                                      AllowedSizeModes="Small"
                                                       Icon="Underline"
                                                       Content="Underline">
                                 <ribbon:RibbonSplitButton.Flyout>
@@ -131,7 +131,7 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
                             </ribbon:RibbonSplitButton>
                             <ribbon:RibbonButton x:Name="fontSizeButton"
                                                  Icon="FontSize"
-                                                 SizeMode="Small"
+                                                 AllowedSizeModes="Small"
                                                  Content="FontSize" />
                         </StackPanel>
                     </ribbon:RibbonItemHost.ItemTemplate>
@@ -166,7 +166,7 @@ The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon
             <ribbon:RibbonGroup LauncherButtonClick="RibbonGroup_LauncherButtonClick"
                                 Header="Clipboard">
                 <ribbon:RibbonDropDownButton Icon="Paste"
-                                             SizeMode="Large"
+                                             AllowedSizeModes="Large"
                                              Content="Paste" />
             </ribbon:RibbonGroup>
             <ribbon:RibbonGroup Header="File" />
@@ -201,7 +201,7 @@ The command for the Launcher button in a [RibbonGroup](https://help.syncfusion.c
         <ribbon:RibbonGroup LauncherButtonCommand="{Binding LauncherButtonCommand, Mode=TwoWay}" 
                             Header="Clipboard">
             <ribbon:RibbonDropDownButton Icon="Paste"
-                                         SizeMode="Large"
+                                         AllowedSizeModes="Large"
                                          Content="Paste" />
         </ribbon:RibbonGroup>
         <ribbon:RibbonGroup Header="File" />
@@ -245,7 +245,7 @@ The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon
             <ribbon:RibbonGroup ShowLauncherButton="False"
                                 Header="Clipboard">
                 <ribbon:RibbonDropDownButton Icon="Paste"
-                                             SizeMode="Large"
+                                             AllowedSizeModes="Large"
                                              Content="Paste" />
             </ribbon:RibbonGroup>
             <ribbon:RibbonGroup Header="File" />
