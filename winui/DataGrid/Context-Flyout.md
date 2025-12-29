@@ -525,3 +525,5 @@ You can change the appearance of the context flyout by customizing the style wit
 {% endtabs %}
 
 <img src="Context-Flyout_Images/winui-datagrid-changing-context-flyout-background.png" alt="Changing Context Flyout Background in WinUI DataGrid" width="100%" Height="Auto"/>
+
+N> You can also explore our [Context Flyout Example](https://github.com/SyncfusionExamples/winui-datagrid-context-flyout/tree/master/Context_Flyout), which shows how to customize context flyouts in a WinUI DataGrid.
