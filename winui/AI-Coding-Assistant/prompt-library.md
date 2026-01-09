@@ -271,7 +271,7 @@ The Syncfusion WinUI Ribbon is a command bar that organizes an application’s t
 #SyncfusionWinUIAssistant Create contextual RibbonTab groups and show or hide them based on selection or app state?
 {% endpromptcard %}
 {% promptcard Ribbon Gallery %}
-#SyncfusionWinUIAssistant How to build Ribbon gallery with item templates, and selection change handling?
+#SyncfusionWinUIAssistant How to build Ribbon gallery with item templates, and selection change handling in WinUI Ribbon?
 {% endpromptcard %}
 {% promptcard Localization and RTL %}
 #SyncfusionWinUIAssistant How to localize WinUI Ribbon text and tooltips and enable right-to-left (RTL) layout?
