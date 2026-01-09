@@ -256,31 +256,31 @@ The Syncfusion WinUI Ribbon is a command bar that organizes an application’s t
 #SyncfusionWinUIAssistant Configure Backstage with pages, navigation, and commands in the WinUI Ribbon?
 {% endpromptcard %}
 {% promptcard Quick Access Toolbar (QAT) %}
-#SyncfusionWinUIAssistant Add, remove, and persist QAT items and position it above or below the Ribbon?
+#SyncfusionWinUIAssistant Add, remove, and position it above or below the WinUI Ribbon?
 {% endpromptcard %}
 {% promptcard ScreenTips %}
-#SyncfusionWinUIAssistant Create ScreenTips with headers, footers, images, and shortcuts for Ribbon items?
+#SyncfusionWinUIAssistant Create ScreenTips with Title and content for WinUI Ribbon items?
 {% endpromptcard %}
 {% promptcard KeyTips %}
-#SyncfusionWinUIAssistant How to enable and customize KeyTips for keyboard navigation in the Ribbon?
+#SyncfusionWinUIAssistant How to enable and customize KeyTips for keyboard navigation in the WinUI Ribbon?
 {% endpromptcard %}
 {% promptcard Simplified Layout %}
-#SyncfusionWinUIAssistant Enable simplified layout and configure group resizing behavior in the Ribbon?
+#SyncfusionWinUIAssistant Enable simplified layout and configure group resizing behavior in the WinUI Ribbon?
 {% endpromptcard %}
 {% promptcard Contextual Tabs %}
 #SyncfusionWinUIAssistant Create contextual RibbonTab groups and show or hide them based on selection or app state?
 {% endpromptcard %}
 {% promptcard Ribbon Gallery %}
-#SyncfusionWinUIAssistant How to build Ribbon gallery with item templates, filtering, and selection change handling?
+#SyncfusionWinUIAssistant How to build Ribbon gallery with item templates, and selection change handling in WinUI Ribbon?
 {% endpromptcard %}
 {% promptcard Localization and RTL %}
-#SyncfusionWinUIAssistant How to localize Ribbon text and tooltips and enable right-to-left (RTL) layout?
+#SyncfusionWinUIAssistant How to localize WinUI Ribbon text and tooltips and enable right-to-left (RTL) layout?
 {% endpromptcard %}
 {% promptcard Theming %}
 #SyncfusionWinUIAssistant How to style ribbon items, screen tip, key tip and QAT; support Light/Dark themes.
 {% endpromptcard %}
 {% promptcard Group Resizing Policies %}
-#SyncfusionWinUIAssistant How to configure Ribbon group size definitions (Large, Medium, Small) and item collapsing for narrow widths?
+#SyncfusionWinUIAssistant How to configure Ribbon group size definitions (Large, Normal, Small) and item collapsing for narrow widths?
 {% endpromptcard %}
 {% endpromptcards %}
 
