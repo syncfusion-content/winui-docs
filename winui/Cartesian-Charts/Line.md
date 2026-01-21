@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Line Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the line chart and its type in Syncfusion® WinUI Chart (SfCartesianChart) control. 
+title: Line Chart in WinUI Chart Control | Syncfusion
+description: Learn all about the line chart and its types in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: winui line chart, winui sfcartesianchart, winui line chart customization, syncfusion winui line chart,  winui line chart configuration.
+keywords: winui line chart, winui sfcartesianchart, winui line chart customization, syncfusion winui line chart, winui line chart configuration.
 ---
 
 # Line Chart in WinUI Chart (SfCartesianChart)
 
 ## Line Chart
 
-[WinUI Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-line-chart) is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+The [WinUI Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-line-chart) is used to represent data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}
 
@@ -75,9 +75,9 @@ this.Content = chart;
 
 ![Line Chart in WinUI](Chart-types_images/WinUI_line_chart.png)
 
-### Dashed line
+### Dashed Line
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_StrokeDashArray) property of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) is used to render the line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_StrokeDashArray) property of the [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) is used to render the line series with dashes. Odd values are considered as rendering size, and even values are considered as gaps.
 
 {% tabs %}
 
@@ -148,9 +148,9 @@ this.Content = chart;
 
 ![Dashed line chart in WinUI](Chart-types_images/WinUI_dash_line_chart.png)
 
-## Step Line Chart 
+## Step Line Chart
 
-The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
+The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect data points, resulting in a step-like progression.
 
 {% tabs %}
 
@@ -207,11 +207,11 @@ this.Content = chart;
 
 ![Step line Chart in WinUI](Chart-types_images/WinUI_step_line_chart.png)
 
-N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepLine) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepLine), which shows how to easily configure it with built-in support for creating stunning visual effects.
 
-## Spline Chart 
+## Spline Chart
 
-The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
+The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but instead of connecting data points with line segments, the data points are connected by smooth Bezier curves.
 
 {% tabs %}
 
@@ -273,9 +273,9 @@ this.Content = chart;
 
 ![Spline chart type in WinUI Chart](Chart-types_images/WinUI_spline_chart.png)
 
-### Spline rendering types
+### Spline Rendering Types
 
-The [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_Type) property allows you to change the spline curve in series. By default, the value of the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_Type) is [Natural](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineType.html#Syncfusion_UI_Xaml_Charts_SplineType_Natural).
+The [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_Type) property allows you to change the spline curve in a series. By default, the [Type](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_Type) is set to [Natural](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineType.html#Syncfusion_UI_Xaml_Charts_SplineType_Natural).
 
 The following types are used in SplineSeries:
 
@@ -335,4 +335,4 @@ this.Content = chart;
 
 ![Spline types chart in WinUI Chart](Chart-types_images/WinUI_spline_types_chart.png)
 
-N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Spline) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Spline), which demonstrates how to easily configure it with built-in support for creating stunning visual effects.

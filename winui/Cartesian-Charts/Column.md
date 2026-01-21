@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the column chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Column Chart in WinUI Chart Control | Syncfusion
+description: Learn about the column chart and its features in the Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,7 +10,7 @@ keywords: winui column chart, winui sfcartesianchart, winui column chart customi
 
 # Column Chart in WinUI Chart (SfCartesianChart)
 
-[WinUI Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-column-chart) is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+The [WinUI Column Chart](https://www.syncfusion.com/winui-controls/charts/winui-column-chart) is used to plot discrete rectangles based on given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}
 
@@ -60,9 +60,9 @@ this.Content = chart;
 
 ![Column chart type in WinUI Chart](Chart-Types_images/WinUI_column_chart.png)
 
-## Segment spacing
+## Segment Spacing
 
-The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to adjust the spacing between segments. The default value is 0, with available values ranging from 0 to 1. Here, 1 corresponds to 100% and 0 to 0% of the available space.
 
 {% tabs %}
 
@@ -114,4 +114,4 @@ this.Content = chart;
 
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
 
-N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Column) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Column) which demonstrates how to easily configure it with built-in support for creating stunning visual effects.

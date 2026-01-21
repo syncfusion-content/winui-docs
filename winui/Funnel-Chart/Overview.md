@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About WinUI Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion® WinUI Chart (SfFunnelChart) control with key features and more.
+title: About WinUI Chart Control | Syncfusion
+description: Learn all about the introduction of Syncfusion® WinUI Chart (SfFunnelChart) control with key features and more.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # WinUI Chart (SfFunnelChart) Overview
 
-Syncfusion® WinUI Funnel Chart (SfFunnelChart) is used to create the beautiful funnel series to analyze the various stages in a process, which are used in high quality WinUI applications.
+The Syncfusion® WinUI Funnel Chart (SfFunnelChart) is used to create visually appealing funnel series that analyze the various stages in a process, suitable for high-quality WinUI applications.
 
 ![Funnel Chart in WinUI Chart](Getting-Started_Images/winui_funnel_chart.png)
 
-## Key features
+## Key Features
 
-* It supports funnel series for more user-friendly data representation and greater UI visualization.
+* It supports funnel series for user-friendly data representation and enhanced UI visualization.
 
-* User interaction features such as selection, tooltip, and exploding segments are included in the funnel chart for enhancing end-user experience.
+* User interaction features such as selection, tooltips, and exploding segments are included to enhance the end-user experience.
 
-* Legends provide more information about the segments. The legend can also be used to collapse the segments. If an item exceeds the available bounds, the legends can be wrapped or scrolled.
+* Legends provide additional information about the segments. The legend can also be used to collapse the segments. If an item exceeds the available bounds, the legends can be wrapped or scrolled.
 
-* Provides various options for customizing and visualizing the chart features, title, data labels, legends, segment spacing, etc.
+* Offers various options for customizing and visualizing chart features such as titles, data labels, legends, and segment spacing.

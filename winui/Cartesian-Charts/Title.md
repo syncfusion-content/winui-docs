@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Title in WinUI Chart control | Syncfusion
-description: Learn here all about title with Syncfusion® WinUI Chart (SfCartesianChart) control and its customization.
+title: Title in WinUI Chart Control | Syncfusion
+description: Learn all about the title in the Syncfusion® WinUI Chart (SfCartesianChart) control and its customization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,7 +10,7 @@ keywords: winui chart title, winui sfcartesianchart title, winui chart title cus
 
 # Chart Title in WinUI Chart (SfCartesianChart)
 
-[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
 {% tabs %}   
 
@@ -37,7 +37,7 @@ this.Content = chart;
 
 ## Customization
 
-Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+The chart provides support to add any `UIElement` as a title. The following code example defines a `TextBlock` as the chart header.
 
 {% tabs %}   
 
@@ -92,7 +92,7 @@ this.Content = chart;
 
 ## Alignment
 
-The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+The title text content can be aligned horizontally to the left, center, or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}   
 

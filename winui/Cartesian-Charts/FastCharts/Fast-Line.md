@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Fast Line chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Line Series feature of Syncfusion® WinUI Chart control(SfCartesianChart) and more.
+title: Fast Line Chart in WinUI Chart Control | Syncfusion
+description: Learn all about the Fast Line Series feature of the Syncfusion® WinUI Chart control (SfCartesianChart) and more.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: winui fast line chart, winui sfcartesianchart, fast line chart, winui fast line chart customization, syncfusion winui fast line chart, fast line chart settings.
+keywords: WinUI fast line chart, WinUI SfCartesianChart, fast line chart, WinUI fast line chart customization, Syncfusion WinUI fast line chart, fast line chart settings.
 ---
 
 # Fast Line Chart in WinUI (SfCartesianChart)
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
+The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a specialized line series capable of rendering a large collection of data points using a polyline segment efficiently.
 
 {% tabs %}
 
@@ -62,7 +62,7 @@ chart.Series.Add(series);
 
 ## Fast Line Bitmap Chart
 
-The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments, rendered using `WriteableBitmap`. The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is, it renders a million data point in a fraction of seconds.
+The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments rendered using `WriteableBitmap`. This series type can render a million data points in just a fraction of a second.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ chart.Series.Add(series);
 
 ### Anti-aliasing
 
-As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
+Since it is rendered using a bitmap, there might be some jagged lines at the edges. This can be reduced by using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
 
 {% tabs %}
 
