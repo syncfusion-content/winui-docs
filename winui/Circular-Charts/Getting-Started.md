@@ -335,6 +335,6 @@ public sealed partial class MainWindow : Window
 
 {% endtabs %}
 
-![Pie chart in WinUI Chart](Getting-Started_Images/WinUI_pie_chart.png)
+![Pie chart in WinUI Chart](getting-started_images/winui-pie-chart.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CircularChartGettingStarted)

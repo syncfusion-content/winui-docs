@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion® [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) (SfCircularChart) is used to create the chart with beautiful and enhanced UI visualization of data that are used in high-quality WinUI applications.
 
-![Circular Chart in WinUI Chart](Getting-Started_Images/winui_pie-chart-overview.png)
+![Circular chart in WinUI Chart](getting-started_images/winui-pie-chart-overview.png)
 
 ## Key features
 
