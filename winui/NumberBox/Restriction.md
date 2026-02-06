@@ -87,7 +87,7 @@ You can prevent users from editing the numerical value in the editor by setting 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
-sfNumberBox.IsEditable = true;
+sfNumberBox.IsEditable = false;
 
 {% endhighlight %}
 {% endtabs %}
