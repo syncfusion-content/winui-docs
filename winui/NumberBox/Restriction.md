@@ -71,7 +71,7 @@ sfNumberBox.Value = 50;
 
 ## Restrict text editing
 
-You can prevent users from editing the numerical value in the editor using the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_IsEditable) property. However, you can still change the value by using the up-down buttons, mouse scroll, keyboard arrows, and page keys. By default, the value of `IsEditable` property is **false**. 
+You can prevent users from editing the numerical value in the editor by setting the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_IsEditable) property to False. However, you can still change the value by using the up-down buttons, mouse scroll, keyboard arrows, and page keys. By default, the value of `IsEditable` property is **true**. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -79,7 +79,7 @@ You can prevent users from editing the numerical value in the editor using the [
 <editors:SfNumberBox x:Name="sfNumberBox" 
                      HorizontalAlignment="Center"
                      VerticalAlignment="Center"
-                     IsEditable="True" />
+                     IsEditable="False" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -87,7 +87,7 @@ You can prevent users from editing the numerical value in the editor using the [
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
-sfNumberBox.IsEditable = true;
+sfNumberBox.IsEditable = false;
 
 {% endhighlight %}
 {% endtabs %}
