@@ -138,8 +138,8 @@ It highlights all the matches that contain the typed characters in the suggestio
 ![WinUI ComboBox text highlighting based on contains more than one character](Highlighting_images/winui-combobox-textsearchmode-contains-morethanone.png)
 
 
-## **Highlighting search text mode** 
- The SfComboBox provides the following modes.
+### **Highlighting search text mode** 
+The SfComboBox provides the following modes.
 * **None** - This mode does not highlight any text.
 * **Matched** - This mode highlights the text that matches the user input.
 * **Unmatched** - This mode highlights the text that does not matches the user input.
