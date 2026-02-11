@@ -139,7 +139,7 @@ It highlights all the matches that contain the typed characters in the suggestio
 
 
 ## Highlighting search text mode
- The SfComboBox provides the following modes.
+The SfComboBox provides the following modes.
 * **None** - This mode does not highlight any text.
 * **Matched** - This mode highlights the text that matches the user input.
 * **Unmatched** - This mode highlights the text that does not matches the user input.
