@@ -12,7 +12,7 @@ documentation: UG
 Highlight matching characters in the suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
 * **Highlight beginning text**
-* **Highlight all occurrences of the search text**
+* **Highlight all occurance of search text**
 
 
 The text highlight can be indicated with various customizing styles by enabling the following properties. They are
@@ -23,7 +23,7 @@ The text highlight can be indicated with various customizing styles by enabling 
         
 * **HighlightedTextFontWeight** - Sets the font weight of the highlighted text.
 
-* **HighlightedTextFontSize** - Sets the font size of the highlighted text.
+* **HightlightedTextFontSize** - Sets the font size of the highlighted text.
 
 {% tabs %}
 {% highlight XAML %}
@@ -99,7 +99,7 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 
 
-### **Highlight all occurrences of the search text**
+### **Highlight all occurance of search text**
 It highlights all the matches that contain the typed characters in the suggestion list. 
 
 
@@ -138,8 +138,8 @@ It highlights all the matches that contain the typed characters in the suggestio
 ![WinUI ComboBox text highlighting based on contains more than one character](Highlighting_images/winui-combobox-textsearchmode-contains-morethanone.png)
 
 
-## Highlighting search text mode 
-The SfComboBox provides the following modes.
+## **Highlighting search text mode** 
+ The SfComboBox provides the following modes.
 * **None** - This mode does not highlight any text.
 * **Matched** - This mode highlights the text that matches the user input.
 * **Unmatched** - This mode highlights the text that does not matches the user input.
