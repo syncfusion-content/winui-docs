@@ -284,6 +284,67 @@ The Syncfusion WinUI Ribbon is a command bar that organizes an application’s t
 {% endpromptcard %}
 {% endpromptcards %}
 
+### Combobox
+
+The WinUI ComboBox control (multi-select ComboBox) is an editable, searchable selection component that supports data binding, auto-complete, filtering, and custom item templates.
+
+{% promptcards %}
+{% promptcard Editing %}
+#SyncfusionWinUIAssistant Restrict editing WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Selection %}
+#SyncfusionWinUIAssistant Enable multiple selection with checkboxes in the WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Filtering %}
+#SyncfusionWinUIAssistant Enable filtering in WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Searching %}
+#SyncfusionWinUIAssistant Highlight matching items during search in the WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard PlaceholderText  %}
+#SyncfusionWinUIAssistant Display watermark text inside the WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Customization %}
+#SyncfusionWinUIAssistant Customize dropdown list items with images or custom controls in the WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Styling %}
+#SyncfusionWinUIAssistant Apply conditional styling to dropdown items in WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Highlighting %}
+#SyncfusionWinUIAssistant Highlight unmatched characters during search in the WinUI ComboBox.
+{% endpromptcard %}
+{% promptcard Leading & Trailing Views %}
+#SyncfusionWinUIAssistant Add trailing views after the selection content in the WinUI ComboBox
+{% endpromptcard %}
+{% endpromptcards %}
+
+### NumberBox
+
+The WinUI NumberBox control provides an intuitive and advanced editor control that allows you to enter numeric values in currency, percent, decimal formats and validates the user input independent of the custom format applied.
+{% promptcards %}
+{% promptcard Editing %}
+#SyncfusionWinUIAssistant Prevent users from editing the numerical value directly in the WinUI NumberBox.
+{% endpromptcard %}
+{% promptcard Value Formatting %}
+#SyncfusionWinUIAssistant Format values as currency, percent, decimal, or apply custom numeric format strings in WinUI NumberBox.
+{% endpromptcard %}
+{% promptcard Input Restriction %}
+#SyncfusionWinUIAssistant Restrict input to numeric values, control negative inputs, and limit the number of integer or fractional digits in the WinUI NumberBox.
+{% endpromptcard %}
+{% promptcard Watermark %}
+#SyncfusionWinUIAssistant Display and customize watermark or placeholder text in the WinUI NumberBox.
+{% endpromptcard %}
+{% promptcard Keyboard / Mouse / Up Down  %}
+#SyncfusionWinUIAssistant Change values in the WinUI NumberBox using keyboard input, mouse scrolling, and the up/down buttons.
+{% endpromptcard %}
+{% promptcard Header & Description %}
+#SyncfusionWinUIAssistant Add the header and description for the WinUI NumberBox.
+{% endpromptcard %}
+{% promptcard ValueChanged Event %}
+#SyncfusionWinUIAssistant Notify value updates in the WinUI NumberBox.
+{% endpromptcard %}
+{% endpromptcards %}
+
 ## See also
 
 * [AI Coding Assistant Overview](https://help.syncfusion.com/winui/ai-coding-assistant/overview)
