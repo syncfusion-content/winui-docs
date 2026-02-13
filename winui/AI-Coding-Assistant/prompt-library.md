@@ -284,7 +284,7 @@ The Syncfusion WinUI Ribbon is a command bar that organizes an application’s t
 {% endpromptcard %}
 {% endpromptcards %}
 
-### Combobox
+### ComboBox
 
 The WinUI ComboBox control (multi-select ComboBox) is an editable, searchable selection component that supports data binding, auto-complete, filtering, and custom item templates.
 
