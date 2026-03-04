@@ -123,6 +123,46 @@ sfNumberBox.CustomFormat = "0.000";
 
 ![WinUI NumberBox value editing](GettingStarted_images/editing_value.gif)
 
+N> In NumberBox, the default value of the Value, Maximum, and Minimum properties is **null**.
+
+## ValueType
+
+### Supported Datatype
+
+Here are the lists of supported datatypes in SfNumberBox,
+ * Double
+ * Decimal
+ * Float
+ * Long, Ulong
+ * Int, UInt
+ * Byte, SByte
+
+You can assign the data type for `SfNumberBox` using the ValueType property. It allows the control to accept values of the specified data type. By default, the ValueType property is **double**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumberBox x:Name="datatype" Width="300" 
+                     ValueType="Decimal"
+                     Value="3213124.20076757593434242423224356397" 
+                     Minimum="2000.87654678656765" 
+                     Maximum="5100000.24738787437884"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+datatype.ValueType = Syncfusion.UI.Xaml.Editors.NumericType.Decimal;
+datatype.Value = 3213124.20076757593434242423224356397;
+datatype.Minimum = 2000.87654678656765;
+datatype.Maximum = 5100000.24738787437884;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI NumberBox DataType](GettingStarted_images/valuetype.png)
+
+N> Minimum and Maximum must match the ValueType. For example, with ValueType="Decimal", specify Minimum/Maximum using decimal literals to avoid type casting issues and ensure correct validation.
+
 ## Change number format
 
 You can change the format in which the value should be displayed using the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property and [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) property. By default, value of the `CustomFormat` property and `NumberFormatter` property is **null**. You can apply various custom formats available in [this link](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) to the `NumberBox` control  using `CustomFormat` property.
