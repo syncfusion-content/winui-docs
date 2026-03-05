@@ -125,11 +125,9 @@ sfNumberBox.CustomFormat = "0.000";
 
 N> In NumberBox, the default value of the Value, Maximum, and Minimum properties is **null**.
 
-## ValueType
+## Supported data type
 
-### Supported Data-type
-
-Here are the lists of supported data-types in SfNumberBox,
+Here are the supported data types in SfNumberBox:
  * Double
  * Decimal
  * Float
@@ -137,7 +135,7 @@ Here are the lists of supported data-types in SfNumberBox,
  * Int, UInt
  * Byte, SByte
 
-You can assign the data type for `SfNumberBox` using the ValueType property. It allows the control to accept values of the specified data type. By default, the ValueType property is **double**.
+You can assign the data type for `SfNumberBox` using the `ValueType` property. It allows the control to accept values of the specified data type. By default, the `ValueType` property is **double**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,7 +159,7 @@ datatype.Maximum = 5100000.24738787437884;
 
 ![WinUI NumberBox DataType](GettingStarted_images/valuetype.png)
 
-N> Minimum and Maximum must match the ValueType. For example, with ValueType="Decimal", specify Minimum/Maximum using decimal literals to avoid type casting issues and ensure correct validation.
+N> Minimum and Maximum must match the ValueType. For example, when using ValueType="Decimal", specify Minimum and Maximum using decimal literals to avoid type‑casting issues and ensure correct validation.
 
 ## Change number format
 
