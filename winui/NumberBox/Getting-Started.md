@@ -123,8 +123,6 @@ sfNumberBox.CustomFormat = "0.000";
 
 ![WinUI NumberBox value editing](GettingStarted_images/editing_value.gif)
 
-N> In NumberBox, the default value of the Value, Maximum, and Minimum properties is **null**.
-
 ## Supported data type
 
 Here are the supported data types in SfNumberBox:
