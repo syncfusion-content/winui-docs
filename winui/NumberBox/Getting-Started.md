@@ -127,13 +127,13 @@ N> In NumberBox, the default value of the Value, Maximum, and Minimum properties
 
 ## ValueType
 
-### Supported Datatype
+### Supported Data-type
 
-Here are the lists of supported datatypes in SfNumberBox,
+Here are the lists of supported data-types in SfNumberBox,
  * Double
  * Decimal
  * Float
- * Long, Ulong
+ * Long
  * Int, UInt
  * Byte, SByte
 
