@@ -145,7 +145,7 @@ this.Content = chart;
 
 ## Segment Width
 
-The `SegmentWidth` property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
+The `SegmentWidth` property sets the width of each data point (segment) in the series. It accepts values between 0 and 1, the default is 0.8. A value of 1.0 makes the segment occupy the full category width, while smaller values make the segment narrower.
 
 {% tabs %}
 
