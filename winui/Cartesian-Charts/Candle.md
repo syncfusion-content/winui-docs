@@ -109,7 +109,7 @@ Set `BullishBrush` for candles where the close is equal to or higher than the op
                             Low="Low"
                             Close="Close"
                             BullishBrush="Blue"
-                            BearishBrush="Yellow"/>
+                            BearishBrush="Orange"/>
 
     </chart:SfCartesianChart>
 
@@ -134,7 +134,7 @@ CandleSeries series = new CandleSeries()
     Low = "Low",
     Close = "Close",
     BullishBrush = Colors.Blue,
-    BearishBrush = Colors.Yellow,
+    BearishBrush = Colors.Orange,
 };
 
 chart.Series.Add(series);
