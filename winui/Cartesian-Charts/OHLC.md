@@ -10,9 +10,9 @@ keywords: winui ohlc chart, winui chart ohlc type, ohlc chart customization winu
 
 # OHLC Chart in WinUI Chart
 
-OHLC (Open-High-Low-Close) charts represent the price movement of an asset over a specific period. Each data point requires the X-value, open, high, low and close values. To render an OHLC chart in WinUI, use the `HiLoOpenCloseSeries` and add it to the `Series` collection of `SfCartesianChart`.
+OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of `HiLoOpenCloseSeries`, and add it to the `Series` collection property of the `SfCartesianChart`.
 
-A collection of five values is required to plot a point on an OHLC chart, for example:
+To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
 
 {% tabs %}
 
@@ -20,13 +20,13 @@ A collection of five values is required to plot a point on an OHLC chart, for ex
 
     <chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.PrimaryAxis>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.PrimaryAxis>
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis/>
+        </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.SecondaryAxis>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.SecondaryAxis>
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis/>
+        </chart:SfCartesianChart.YAxes> 
 
         <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
                                     XBindingPath="Year"
@@ -85,7 +85,7 @@ StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close =
 
 ## Bull and Bear Color
 
-Use `BullishBrush` to specify the fill color for increasing segments (bull) and `BearishBrush` for decreasing segments (bear).
+Use `BullishBrush` to set the brush for OHLC segments where the close is equal to or higher than the open (bullish/increasing periods), and `BearishBrush` for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
 
 {% tabs %}
 
@@ -93,13 +93,13 @@ Use `BullishBrush` to specify the fill color for increasing segments (bull) and 
 
     <chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.PrimaryAxis>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.PrimaryAxis>
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis/>
+        </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.SecondaryAxis>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.SecondaryAxis>
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis/>
+        </chart:SfCartesianChart.YAxes> 
 
         <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
                                     XBindingPath="Year"
@@ -145,7 +145,7 @@ this.Content = chart;
 
 ## Segment Width
 
-The `SegmentWidth` property gets or sets a value to change the width of the data points (candles) across the series. It accepts values between 0 and 1; the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
+The `SegmentWidth` property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
 
 {% tabs %}
 
@@ -153,13 +153,13 @@ The `SegmentWidth` property gets or sets a value to change the width of the data
 
     <chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.PrimaryAxis>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.PrimaryAxis>
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis/>
+        </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.SecondaryAxis>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.SecondaryAxis>
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis/>
+        </chart:SfCartesianChart.YAxes> 
 
         <chart:HiLoOpenCloseSeries ItemsSource="{Binding StockData}"
                                     XBindingPath="Year"

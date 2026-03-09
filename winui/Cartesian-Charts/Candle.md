@@ -10,22 +10,23 @@ keywords: winui candle chart, candle chart customization winui, syncfusion winui
 
 # Candle Chart in WinUI Chart
 
-Candle charts (candlestick charts) show price movement of an asset over time using candlesticks that encode open, high, low and close values. In WinUI, use the `CandleSeries` and add it to `SfCartesianChart.Series`.
+Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart is made up of a series of rectangular bars, called candlesticks, that represent a specific time, typically one day. To render a candle chart, create an instance of `CandleSeries`, and add it to the `Series` collection property of `SfCartesianChart`.
 
-The same five-value data collection used for OHLC applies to Candle charts:
+To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
 
 {% tabs %}
 
 {% highlight xaml %}
 
     <chart:SfCartesianChart>
-        <chart:SfCartesianChart.PrimaryAxis>
-            <chart:CategoryAxis />
-        </chart:SfCartesianChart.PrimaryAxis>
 
-        <chart:SfCartesianChart.SecondaryAxis>
-            <chart:NumericalAxis />
-        </chart:SfCartesianChart.SecondaryAxis>
+        <chart:SfCartesianChart.XAxes>
+            <chart:CategoryAxis/>
+        </chart:SfCartesianChart.XAxes>
+
+        <chart:SfCartesianChart.YAxes>
+            <chart:NumericalAxis/>
+        </chart:SfCartesianChart.YAxes> 
 
         <chart:CandleSeries ItemsSource="{Binding StockData}"
                             XBindingPath="Year"
@@ -85,7 +86,7 @@ StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close =
 
 ## Bull and Bear Color
 
-Set `BullishBrush` for rising candles and `BearishBrush` for falling candles.
+Set `BullishBrush` for candles where the close is equal to or higher than the open (bullish/increasing periods), and `BearishBrush` for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
 
 {% tabs %}
 
@@ -147,6 +148,12 @@ this.Content = chart;
 ## EnableSolidCandle
 
 Use `EnableSolidCandle` to switch between filled and hollow candles. Default is `false`.
+- When `EnableSolidCandle = false` (hollow mode), the fill state and color are determined by comparing the previous period's close to the current close:
+  - previous close > current close → bearish (uses `BearishBrush`)
+  - previous close <= current close → bullish (uses `BullishBrush`)
+- When `EnableSolidCandle = true` (solid mode), candles are filled and colored by comparing the current open and close:
+  - close >= open → bullish (uses `BullishBrush`)
+  - close < open → bearish (uses `BearishBrush`)
 
 {% tabs %}
 
@@ -206,7 +213,7 @@ this.Content = chart;
 
 ## Segment Width
 
-The `SegmentWidth` property gets or sets a value to change the width of the data points (candles) across the series. It accepts values between 0 and 1; the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
+The `SegmentWidth` property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
 
 {% tabs %}
 
