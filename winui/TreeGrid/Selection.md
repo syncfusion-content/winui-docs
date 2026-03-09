@@ -37,6 +37,28 @@ The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grid
 
 <img src="Selection_images/Selection_img1.png" alt="Row selected in WinUI treegrid" width="100%" Height="Auto"/>
 
+### SingleDeselect mode for Selection and Deselection
+
+SfTreeGrid allows you to select or deselect a single row, when the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) is `SingleDeselect`
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid Name="sfTreeGrid"
+                    AutoExpandMode="RootNodesExpanded"
+                    AutoGenerateColumns="False" 
+                    NavigationMode="Row"
+                    SelectionMode="SingleDeselect"
+                    ColumnSizer="Star" 
+                    ExpanderColumn="FirstName"
+                    ItemsSource="{Binding Employees}"
+                    ParentPropertyName="ID"
+                    ChildPropertyName="ReportsTo"
+                    SelfRelationRootValue="-1" />
+{% endhighlight %}
+{% endtabs %}
+
+N> When the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) is `SingleDeselect`, a single row can be selected or deselected by clicking the respective row or by pressing <kbd>space</kbd> key.
+
 ## Disable selection for rows and columns
 
 You can disable selection and navigation on particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowFocus) property. You can disable selection on particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
