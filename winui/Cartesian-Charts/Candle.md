@@ -148,12 +148,12 @@ this.Content = chart;
 ## EnableSolidCandle
 
 Use `EnableSolidCandle` to switch between filled and hollow candles. Default is `false`.
-- When `EnableSolidCandle = false` (hollow mode), the fill state and color are determined by comparing the previous period's close to the current close:
-  - previous close > current close → bearish (uses `BearishBrush`)
-  - previous close <= current close → bullish (uses `BullishBrush`)
-- When `EnableSolidCandle = true` (solid mode), candles are filled and colored by comparing the current open and close:
-  - close >= open → bullish (uses `BullishBrush`)
-  - close < open → bearish (uses `BearishBrush`)
+- When `EnableSolidCandle = false` (hollow mode), the fill state and color are determined by comparing the previous day close to the current day close:
+  - previous day close > current day close → bearish (uses `BearishBrush`)
+  - previous day close <= current day close → bullish (uses `BullishBrush`)
+- When `EnableSolidCandle = true` (solid mode), candles are filled and colored by comparing the current day open and close:
+  - current day close >= current day open → bullish (uses `BullishBrush`)
+  - current day close < current day open → bearish (uses `BearishBrush`)
 
 {% tabs %}
 
