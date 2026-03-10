@@ -63,7 +63,7 @@ this.Content = chart;
 
 {% endhighlight %}
 
-{% highlight VM %}
+{% highlight c# %}
 
 ObservableCollection<Model> StockData = new ObservableCollection<Model>();
 StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
