@@ -2,7 +2,7 @@
 layout: post
 title: OHLC Chart in WinUI Chart control | Syncfusion
 description: Learn here all about OHLC chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
-platform: winui
+platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui ohlc chart, winui chart ohlc type, ohlc chart customization winui, syncfusion winui ohlc chart, winui cartesian ohlc visualization.
