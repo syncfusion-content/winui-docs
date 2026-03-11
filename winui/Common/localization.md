@@ -152,7 +152,7 @@ The following code example is a reference to assign Localization string to DataG
 
 {% tabs %}
 
-{% highlight App.xaml.cs  %}
+{% highlight c#  %}
 
     public partial class App : Application
     {
