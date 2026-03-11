@@ -2,7 +2,7 @@
 layout: post
 title: Candle Chart in WinUI Chart control | Syncfusion
 description: Learn all about candle chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
-platform: winui
+platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui candle chart, candle chart customization winui, syncfusion winui candle chart, cartesian candle chart winui, winui stock chart.
@@ -63,7 +63,7 @@ this.Content = chart;
 
 {% endhighlight %}
 
-{% highlight VM %}
+{% highlight c# %}
 
 ObservableCollection<Model> StockData = new ObservableCollection<Model>();
 StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
