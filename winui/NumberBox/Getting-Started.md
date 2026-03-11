@@ -123,7 +123,7 @@ sfNumberBox.CustomFormat = "0.000";
 
 ![WinUI NumberBox value editing](GettingStarted_images/editing_value.gif)
 
-## Supported data type
+## Supported data types
 
 Here are the supported data types in SfNumberBox:
  * Double
