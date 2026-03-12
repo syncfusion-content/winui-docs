@@ -55,6 +55,7 @@ Set ItemsSource to your data collection and map XBindingPath and Open/High/Low/C
                         High="High"
                         Low="Low"
                         Close="Close"/>
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -137,8 +138,8 @@ CandleSeries series = new CandleSeries()
     High = "High",
     Low = "Low",
     Close = "Close",
-    BullishBrush = Colors.Blue,
-    BearishBrush = Colors.Orange,
+    BullishBrush = new SolidColorBrush(Colors.Blue),
+    BearishBrush = new SolidColorBrush(Colors.Orange),
 };
 
 chart.Series.Add(series);

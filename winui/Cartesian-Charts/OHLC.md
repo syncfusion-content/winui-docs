@@ -86,7 +86,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-![OHLC chart type in WinUI Chart](Chart-types_images/OHLCBasicRendering.png)
+![OHLC chart type in WinUI Chart](Chart-types_images/OhlcBasicRendering.png)
 
 ## Bull and Bear Color
 
@@ -136,8 +136,8 @@ var series = new HiLoOpenCloseSeries()
     High = "High",
     Low = "Low",
     Close = "Close",
-    BullishBrush = Colors.Blue,
-    BearishBrush = Colors.Orange,
+    BullishBrush = new SolidColorBrush(Colors.Blue),
+    BearishBrush = new SolidColorBrush(Colors.Orange),
 };
 
 chart.Series.Add(series);
