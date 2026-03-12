@@ -15,26 +15,48 @@ Candle charts are a type of financial chart used to represent the price movement
 To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
 
 {% tabs %}
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+ObservableCollection<Model> StockData = new ObservableCollection<Model>();
+StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
+StockData.Add(new Model { Year = "2001", High = 50, Low = 35, Open = 45, Close = 40 });
+StockData.Add(new Model { Year = "2002", High = 40, Low = 30, Open = 37, Close = 40 });
+StockData.Add(new Model { Year = "2003", High = 50, Low = 35, Open = 40, Close = 45 });
+StockData.Add(new Model { Year = "2004", High = 45, Low = 30, Open = 35, Close = 32 });
+StockData.Add(new Model { Year = "2005", High = 50, Low = 35, Open = 40, Close = 45 });
+StockData.Add(new Model { Year = "2006", High = 40, Low = 31, Open = 36, Close = 34 });
+StockData.Add(new Model { Year = "2007", High = 48, Low = 38, Open = 43, Close = 40 });
+StockData.Add(new Model { Year = "2008", High = 55, Low = 45, Open = 48, Close = 50 });
+StockData.Add(new Model { Year = "2009", High = 45, Low = 30, Open = 35, Close = 40 });
+StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close = 35 });
+
+{% endhighlight %}
+{% endtabs %}
+
+Set ItemsSource to your data collection and map XBindingPath and Open/High/Low/Close.
+
+{% tabs %}
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis/>
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes> 
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes> 
 
-        <chart:CandleSeries ItemsSource="{Binding StockData}"
-                            XBindingPath="Year"
-                            Open="Open"
-                            High="High"
-                            Low="Low"
-                            Close="Close"/>
-    </chart:SfCartesianChart>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"/>
+
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -63,23 +85,6 @@ this.Content = chart;
 
 {% endhighlight %}
 
-{% highlight c# %}
-
-ObservableCollection<Model> StockData = new ObservableCollection<Model>();
-StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
-StockData.Add(new Model { Year = "2001", High = 50, Low = 35, Open = 45, Close = 40 });
-StockData.Add(new Model { Year = "2002", High = 40, Low = 30, Open = 37, Close = 40 });
-StockData.Add(new Model { Year = "2003", High = 50, Low = 35, Open = 40, Close = 45 });
-StockData.Add(new Model { Year = "2004", High = 45, Low = 30, Open = 35, Close = 32 });
-StockData.Add(new Model { Year = "2005", High = 50, Low = 35, Open = 40, Close = 45 });
-StockData.Add(new Model { Year = "2006", High = 40, Low = 31, Open = 36, Close = 34 });
-StockData.Add(new Model { Year = "2007", High = 48, Low = 38, Open = 43, Close = 40 });
-StockData.Add(new Model { Year = "2008", High = 55, Low = 45, Open = 48, Close = 50 });
-StockData.Add(new Model { Year = "2009", High = 45, Low = 30, Open = 35, Close = 40 });
-StockData.Add(new Model { Year = "2010", High = 50, Low = 40, Open = 40, Close = 35 });
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ![Candle chart type in WinUI Chart](Chart-types_images/CandleBasicRendering.png)
@@ -92,26 +97,26 @@ Set `BullishBrush` for candles where the close is equal to or higher than the op
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis/>
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>   
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>   
 
-        <chart:CandleSeries ItemsSource="{Binding StockData}"
-                            XBindingPath="Year"
-                            Open="Open"
-                            High="High"
-                            Low="Low"
-                            Close="Close"
-                            BullishBrush="Blue"
-                            BearishBrush="Orange"/>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"
+                        BullishBrush="Blue"
+                        BearishBrush="Orange"/>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -133,8 +138,8 @@ CandleSeries series = new CandleSeries()
     High = "High",
     Low = "Low",
     Close = "Close",
-    BullishBrush = Colors.Blue,
-    BearishBrush = Colors.Orange,
+    BullishBrush = new SolidColorBrush(Colors.Blue),
+    BearishBrush = new SolidColorBrush(Colors.Orange),
 };
 
 chart.Series.Add(series);
@@ -147,7 +152,7 @@ this.Content = chart;
 
 ## EnableSolidCandle
 
-Use `EnableSolidCandle` to switch between filled and hollow candles. Default is `false`.
+In Candle Series, the `EnableSolidCandle` property is used to specify whether the candle segment should be filled or hollow. The default value of this property is `false`.
 - When `EnableSolidCandle = false` (hollow mode), the fill state and color are determined by comparing the previous day close to the current day close:
   - previous day close > current day close → bearish (uses `BearishBrush`)
   - previous day close <= current day close → bullish (uses `BullishBrush`)
@@ -159,25 +164,25 @@ Use `EnableSolidCandle` to switch between filled and hollow candles. Default is 
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis/>
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>   
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>   
 
-        <chart:CandleSeries ItemsSource="{Binding StockData}"
-                            XBindingPath="Year"
-                            Open="Open"
-                            High="High"
-                            Low="Low"
-                            Close="Close"
-                            EnableSolidCandle="True"/>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"
+                        EnableSolidCandle="True"/>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -219,25 +224,25 @@ The `SegmentWidth` property sets the width of each data point (candle) in the se
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.XAxes>
-            <chart:CategoryAxis/>
-        </chart:SfCartesianChart.XAxes>
+    <chart:SfCartesianChart.XAxes>
+        <chart:CategoryAxis/>
+    </chart:SfCartesianChart.XAxes>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>   
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>   
 
-        <chart:CandleSeries ItemsSource="{Binding StockData}"
-                            XBindingPath="Year"
-                            Open="Open"
-                            High="High"
-                            Low="Low"
-                            Close="Close"
-                            SegmentWidth="0.4"/>
+    <chart:CandleSeries ItemsSource="{Binding StockData}"
+                        XBindingPath="Year"
+                        Open="Open"
+                        High="High"
+                        Low="Low"
+                        Close="Close"
+                        SegmentWidth="0.4"/>
 
-    </chart:SfCartesianChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
