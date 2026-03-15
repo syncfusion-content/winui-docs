@@ -17,7 +17,58 @@ Keyboard navigation through the rows is determined based on the [NavigationMode]
 
 ## Selection modes
 
-The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property defines the behavior of selection in tree grid. If `SelectionMode` is [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Single), you can select a single row, and if the `SelectionMode` is [Extended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Extended) or [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_Multiple), you can select multiple rows. If you want to disable the selection, set `SelectionMode` to [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionMode.html#Syncfusion_UI_Xaml_Grids_GridSelectionMode_None).
+The [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) property defines the behavior of selection in tree grid.
+
+<table>
+<tr>
+<th>
+Modes
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+None
+</td>
+<td>
+Disables selection, and no rows can be selected.
+</td>
+</tr>
+<tr>
+<td>
+Single
+</td>
+<td>
+Allows selection of a single row. Upon selecting the next row, the selection in the previous row is cleared. This is the default value.
+</td>
+</tr>
+<tr>
+<td>
+SingleDeselect
+</td>
+<td>
+Allows selection of a single row only. However, upon tapping the row again, the selection is cleared. Similar to single mode, upon selecting the next row, the selection in the previous row is cleared. Also, single row can be selected or deselected by pressing <kbd>space</kbd> key.
+</td>
+</tr>
+<tr>
+<td>
+Multiple
+</td>
+<td>
+Allows selection of more than one row. Selection is not cleared when selecting more than one row. When you click on an already selected row for the second time, the selection is cleared.
+</td>
+</tr>
+<tr>
+<td>
+Extended
+</td>
+<td>
+Allows selecting multiple rows. You can select multiple rows in the SfTreeGrid by dragging the mouse or by using the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>.
+</td>
+</tr>
+</table>
 
 {% tabs %}
 {% highlight xaml %}

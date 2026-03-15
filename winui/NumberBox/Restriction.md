@@ -43,7 +43,7 @@ sfNumberBox.AllowNull = false;
 
 ## Restrict value within range
 
-You can restrict the users to enter input within a minimum and maximum range in `NumberBox` control using the [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Minimum) and[Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Maximum) properties. The default value of the `Minimum` property is **double.MinValue** and `Maximum` property is **double.MaxValue**.
+You can restrict the users to enter input within a minimum and maximum range in `NumberBox` control using the [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Minimum) and[Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Maximum) properties. The default value of the `Minimum` property is **null** and `Maximum` property is **null**.
 
 {% tabs %}
 {% highlight xaml %}
