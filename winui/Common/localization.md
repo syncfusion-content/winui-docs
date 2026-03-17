@@ -87,7 +87,7 @@ The default string of any control can be changed by adding the default .resw fil
 
 ## Localizing without using .resw files 
 
-You can localize the WinUI controls using the `Provider` property of the `LocalizationProvider` Class.  
+You can localize the WinUI controls using the `Provider` property of the `LocalizationProvider` class.  
 
 To implement localization of Syncfusion WinUI controls without using .resw files and using custom string. Follow the steps below. 
 
@@ -105,7 +105,7 @@ If the same key name exists in two different assemblies, you can retrieve the sp
 
 **Step 4:** Return null for the rest of the localizable keys that are not involved in the localization. These keys are loaded with a resource map if available, else it falls back to the default resource map.  
 
-**Step 5:** Assign this instance to the `Provider` property of the `LocalizationProvider` class, before the `InitializeComponent` call in the constructor of the application. 
+**Step 5:** Assign the instance to the `Provider` property of the `LocalizationProvider` class, before the `InitializeComponent` call in the constructor of the application. 
 
 {% tabs %}
 
@@ -123,28 +123,28 @@ The following code example is a reference to assign Localization string to DataG
 
 {% highlight c# %}
 
-    using Syncfusion.UI.Xaml.Core;
+using Syncfusion.UI.Xaml.Core;
 
-    public class MyStringLoader : ILocalizationProvider
+public class MyStringLoader : ILocalizationProvider
+{
+    public string GetLocalizedString(LocalizationInfo info) 
     {
-        public string GetLocalizedString(LocalizationInfo info) 
+        if (info.ResourceAssemblyName == "Syncfusion.Grid.WinUI" && info.ResourceName == " SortDateDescending ")
         {
-            if (info.ResourceAssemblyName == "Syncfusion.Grid.WinUI" && info.ResourceName == " SortDateDescending ")
-            {
-                return "CustomText";
-            }
+            return "CustomText";
+        }
 
-            switch (info.ResourceName)
-            {
-                case "AddNewRowText": // resource key from Syncfusion.Grid.WinUI assembly 
-                    return "CustomText1"; 
-                case "Automatic":   // resource key from Syncfusion.Editors.WinU assembly
-                    return "CustomText2";
-                default:
-                    return null; 
-            }
+        switch (info.ResourceName)
+        {
+            case "AddNewRowText": // resource key from Syncfusion.Grid.WinUI assembly 
+                return "CustomText1"; 
+            case "Automatic":   // resource key from Syncfusion.Editors.WinU assembly
+                return "CustomText2";
+            default:
+                return null; 
         }
     }
+}
 
 {% endhighlight %}
 
@@ -154,14 +154,14 @@ The following code example is a reference to assign Localization string to DataG
 
 {% highlight c#  %}
 
-    public partial class App : Application
+public partial class App : Application
+{
+    public App()
     {
-        public App()
-        {
-            LocalizationProvider.Provider = new MyStringLoader();
-            this.InitializeComponent();
-        }
+        LocalizationProvider.Provider = new MyStringLoader();
+        this.InitializeComponent();
     }
+}
 
 {% endhighlight %}
 
