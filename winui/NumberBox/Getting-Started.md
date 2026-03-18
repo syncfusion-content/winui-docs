@@ -133,7 +133,7 @@ Here are the supported data types in SfNumberBox:
  * Int, UInt
  * Byte, SByte
 
-You can assign the data type for `SfNumberBox` using the `ValueType` property. It allows the control to accept values of the specified data type. By default, the `ValueType` property is **double**.
+You can assign the data type for [SfNumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) using the [ValueType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ValueTypeProperty) property. It allows the control to accept values of the specified data type. By default, the `ValueType` property is **double**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,7 +237,7 @@ sfNumberBox.AllowNull = false;
 ## Header and description
 This section explains about `header` and `description` properties of NumberBox.
 ### Header
-The `Header` property is used to display the title for the `NumberBox` Control.
+The [Header]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Header)) property is used to display the title for the `NumberBox` Control.
      
 {% tabs %}
 {% highlight xaml %}
@@ -261,7 +261,7 @@ SfNumberBox.Header = "Amount to withdraw";
 ![WinUI NumberBox with Header](GettingStarted_images/header_text.png)
 
 #### Header customization
-By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+By using the controls [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_HeaderTemplate) property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -283,7 +283,7 @@ By using the controls `HeaderTemplate` property, you can customize the appearanc
 ![WinUI NumberBox with Header Template](GettingStarted_images/header_template.png)
 
 ### Description
-The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
+The [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Description) support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -333,9 +333,9 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 
 ## Clear button visibility 
 
-The `ShowClearButton` property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled.
+The [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ShowClearButton) property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled.
 
-N> The clear button appears only when the text box is focused and the `IsEditable` property value is set to **true**.
+N> The clear button appears only when the text box is focused and the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_IsEditable) property value is set to **true**.
 {% tabs %}
 {% highlight xaml %}
 
