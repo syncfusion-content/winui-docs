@@ -36,7 +36,7 @@ hoursWorked.NumberFormatter = new DecimalFormatter();
 {% endhighlight %}
 {% endtabs %}
 
-Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in `CustomFormat` property.
+Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property.
 
 N> When using both the `CustomFormat` and the `NumberFormatter` properties, the `CustomFormat` property takes high precedence. 
 
@@ -151,7 +151,7 @@ hoursWorked.CustomFormat = "00.00##";
 
 ## Culture support
 
-The culture support allows the control to be configured for a specific language. To configure this, use the `culture` property.
+The culture support allows the control to be configured for a specific language. To configure this, use the [culture](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Culture) property.
 
 {% tabs %}
 {% highlight c# %}
