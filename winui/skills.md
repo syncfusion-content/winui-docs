@@ -55,7 +55,7 @@ To learn more about the Skills CLI, refer [here](https://skills.sh/docs).
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI code for tasks such as:
 
 - “Add a DataGrid with grouping, sorting, and filtering.”
-- “Create a cartesian chart with data, header, data labels and legend.”
+- “Create a Cartesian chart with data, header, data labels and legend.”
 - “Apply the light theme."
 
 ## See also
