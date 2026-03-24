@@ -10,7 +10,7 @@ keywords: winui candle chart, candle chart customization winui, syncfusion winui
 
 # Candle Chart in WinUI Chart
 
-Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart is made up of a series of rectangular bars, called candlesticks, that represent a specific time, typically one day. To render a candle chart, create an instance of `CandleSeries`, and add it to the `Series` collection property of `SfCartesianChart`.
+Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart is made up of a series of rectangular bars, called candlesticks, that represent a specific time, typically one day. To render a candle chart, create an instance of [CandleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CandleSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
 
@@ -91,7 +91,7 @@ this.Content = chart;
 
 ## Bull and Bear Color
 
-Set `BullishBrush` for candles where the close is equal to or higher than the open (bullish/increasing periods), and `BearishBrush` for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
+Set [BullishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullishBrush) for candles where the close is equal to or higher than the open (bullish/increasing periods), and [BearishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearishBrush) for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ this.Content = chart;
 
 ## EnableSolidCandle
 
-In Candle Series, the `EnableSolidCandle` property is used to specify whether the candle segment should be filled or hollow. The default value of this property is `false`.
+In Candle Series, the [EnableSolidCandle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CandleSeries.html#Syncfusion_UI_Xaml_Charts_CandleSeries_EnableSolidCandle) property is used to specify whether the candle segment should be filled or hollow. The default value of this property is `false`.
 - When `EnableSolidCandle = false` (hollow mode), the fill state and color are determined by comparing the previous day close to the current day close:
   - previous day close > current day close → bearish (uses `BearishBrush`)
   - previous day close <= current day close → bullish (uses `BullishBrush`)
@@ -218,7 +218,7 @@ this.Content = chart;
 
 ## Segment Width
 
-The `SegmentWidth` property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
+The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_SegmentWidth) property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
 
 {% tabs %}
 
