@@ -179,28 +179,28 @@ The following code example explains how to display both x-value and y-value in t
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" Height="388"  Width="500">
-    <chart:SfFunnelChart.Resources>
+<Grid x:Name="grid">
+    <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding Item.Category}" 
-			   Foreground="Black"
-			   FontWeight="Medium"
-		           FontSize="12" 
-			   HorizontalAlignment="Center"
-			   VerticalAlignment="Center"/>
+                           Foreground="Black"
+                           FontWeight="Medium"
+                           FontSize="12" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
                 <TextBlock Text=" : " 
                            Foreground="Black"
-			   FontWeight="Medium"
-			   FontSize="12"
-			   HorizontalAlignment="Center" 
-			   VerticalAlignment="Center"/>
+                           FontWeight="Medium"
+                           FontSize="12"
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
                 <TextBlock Text="{Binding Item.Value}"
-			   Foreground="Black" 
-			   FontWeight="Medium"
-			   FontSize="12" 
-			   HorizontalAlignment="Center" 
-			   VerticalAlignment="Center"/>
+                           Foreground="Black" 
+                           FontWeight="Medium"
+                           FontSize="12" 
+                           HorizontalAlignment="Center" 
+                           VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
@@ -209,8 +209,8 @@ The following code example explains how to display both x-value and y-value in t
             <Setter Property="Fill" Value="LightGreen"/>
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </chart:SfFunnelChart.Resources>
-. . .
+    </Grid.Resources>
+    
     <chart:SfFunnelChart x:Name="chart"
                          ItemsSource="{Binding Data}" 
                          XBindingPath="Category"  
@@ -222,8 +222,7 @@ The following code example explains how to display both x-value and y-value in t
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfFunnelChart.TooltipBehavior>
     </chart:SfFunnelChart>
-
-</chart:SfFunnelChart>
+</Grid>
 
 {% endhighlight %}
 
