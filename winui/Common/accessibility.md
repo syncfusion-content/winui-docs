@@ -21,7 +21,7 @@ A user can use a tool like screen readers to obtain the necessary information ab
 
 ## Keyboard support
 
-Syncfusion<sup>&reg;</sup> WinUI controls provide keyboard support including tab navigation, text input, and control-specific support. For example, the `SfTreeView` control supports arrow-key navigation for item selection.
+Syncfusion<sup>&reg;</sup> WinUI controls provide keyboard support including tab navigation, text input, and control-specific support. For example, the [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control supports arrow-key navigation for item selection.
 
 ## High contrast themes
 
