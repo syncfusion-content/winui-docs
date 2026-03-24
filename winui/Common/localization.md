@@ -14,7 +14,7 @@ Localization is the process of making an application multilingual by formatting 
 
 ## Changing application language
 
-The application language can be changed by setting the desired language to the `ApplicationLanguages.PrimaryLanguageOverride` property in the constructor of the main window. Localization can be done while changing the application language by creating a .resw file.
+The application language can be changed by setting the desired language to the [ApplicationLanguages.PrimaryLanguageOverride](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.applicationlanguages.primarylanguageoverride?view=winrt-19041) property in the constructor of the main window. Localization can be done while changing the application language by creating a .resw file.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ You can use the below code for packaged deployments. But in unpackaged deploymen
 
 N> We recommend setting the above code before the `InitializeComponent` method if you have added a .resw file to your project. Otherwise, it may cause the project to crash.
 
-The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the `ApplicationLanguages.PrimaryLanguageOverride` property.
+The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the [ApplicationLanguages.PrimaryLanguageOverride](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.applicationlanguages.primarylanguageoverride?view=winrt-19041) property.
 
 <img src="Localization-images/winui-datagrid-localization.png" alt="WinUI DataGrid Localization" width="100%" Height="Auto"/>
 
@@ -73,7 +73,7 @@ N> The default resource files of all Syncfusion<sup>&reg;</sup> WinUI libraries 
 
 ![WinUI DataGrid resw file](Localization-images/resources-in-winui-project.png)
 
-N> If the `SfDataGrid` control is used in the application, copy and paste the `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in the Syncfusion.Grid.WinUI library) file into the application under Resources folder. So, now you know the key names and values of the default strings in the Syncfusion.Grid.WinUI library.
+N> If the [SfDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.html) control is used in the application, copy and paste the `Syncfusion.Grid.WinUI.resw` (SfDataGrid present in the Syncfusion.Grid.WinUI library) file into the application under Resources folder. So, now you know the key names and values of the default strings in the Syncfusion.Grid.WinUI library.
 
 4) Now, the key names from default resource files can be defined and assigned values based on language.
 
@@ -87,17 +87,17 @@ The default string of any control can be changed by adding the default .resw fil
 
 ## Localizing without using .resw files 
 
-You can localize the WinUI controls using the `Provider` property of the `LocalizationProvider` Class.  
+You can localize the WinUI controls using the [Provider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html#Syncfusion_UI_Xaml_Core_LocalizationProvider_Provider)  property of the [LocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html) Class.  
 
-To implement localization of Syncfusion WinUI controls without using .resw files and using custom string. Follow the steps below. 
+To implement localization of [Syncfusion WinUI](https://help.syncfusion.com/cr/winui) controls without using .resw files and using custom string. Follow the steps below. 
 
 **Implementation in sample:**
 
 The following procedure that helps to localize in WinUI using String Provider  
 
-**Step 1:** Include the required namespace `using Syncfusion.UI.Xaml.Core;` at the beginning of the file. 
+**Step 1:** Include the required namespace [using Syncfusion.UI.Xaml.Core;](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.html) at the beginning of the file. 
 
-**Step 2:** Create a class that implements the `ILocalizationProvider` interface defined in the Syncfusion.UI.Xaml.Core namespace in the Syncfusion.Core.WinUI.dll 
+**Step 2:** Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.ILocalizationProvider.html) interface defined in the Syncfusion.UI.Xaml.Core namespace in the Syncfusion.Core.WinUI.dll 
 
 **Step 3:** In a `GetLocalizedString` method, return Custom string value for a localizable key 
 
@@ -105,7 +105,7 @@ If the same key name exists in two different assemblies, you can retrieve the sp
 
 **Step 4:** Return null for the rest of the localizable keys that are not involved in the localization. These keys are loaded with a resource map if available, else it falls back to the default resource map.  
 
-**Step 5:** Assign this instance to the `Provider` property of the `LocalizationProvider` class, before the `InitializeComponent` call in the constructor of the application. 
+**Step 5:** Assign this instance to the [Provider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html#Syncfusion_UI_Xaml_Core_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html) class, before the `InitializeComponent` call in the constructor of the application. 
 
 {% tabs %}
 
@@ -117,7 +117,7 @@ If the same key name exists in two different assemblies, you can retrieve the sp
 
 {% endtabs %}
 
-The following code example is a reference to assign Localization string to DataGrid Control in WinUI without using .resw 
+The following code example is a reference to assign Localization string to [DataGrid Control](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.html) in WinUI without using .resw 
 
 {% tabs %}
 
