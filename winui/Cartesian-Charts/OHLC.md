@@ -10,7 +10,7 @@ keywords: winui ohlc chart, winui chart ohlc type, ohlc chart customization winu
 
 # OHLC Chart in WinUI Chart
 
-OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of `HiLoOpenCloseSeries`, and add it to the `Series` collection property of the `SfCartesianChart`.
+OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
 
@@ -90,7 +90,7 @@ this.Content = chart;
 
 ## Bull and Bear Color
 
-Use `BullishBrush` to set the brush for OHLC segments where the close is equal to or higher than the open (bullish/increasing periods), and `BearishBrush` for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
+Use [BullishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullishBrush) to set the brush for OHLC segments where the close is equal to or higher than the open (bullish/increasing periods), and [BearishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearishBrush) for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ this.Content = chart;
 
 ## Segment Width
 
-The `SegmentWidth` property sets the width of each data point (segment) in the series. It accepts values between 0 and 1, the default is 0.8. A value of 1.0 makes the segment occupy the full category width, while smaller values make the segment narrower.
+The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_SegmentWidth) property sets the width of each data point (segment) in the series. It accepts values between 0 and 1, the default is 0.8. A value of 1.0 makes the segment occupy the full category width, while smaller values make the segment narrower.
 
 {% tabs %}
 
