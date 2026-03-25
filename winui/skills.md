@@ -167,7 +167,7 @@ npx skills remove <skill-name>
 {% endhighlight %}
 {% endtabs %}
 
-Replace `<skill-name>` with the name of the skill you want to remove (for example, `syncfusion-winui-accordion`).
+Replace `<skill-name>` with the name of the skill you want to remove (for example, `syncfusion-winui-autocomplete`).
 
 ### Check for Updates
 
