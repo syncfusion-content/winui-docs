@@ -36,7 +36,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI Agent S
 - All guidance is authored directly in Skill files and does not rely on external documentation fetches
 
 **Design‑System Guidance**
-- Theme usage, including light and dark variants
+- Light and dark themes
 - Styling and icon usage patterns
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI components
 
@@ -128,7 +128,7 @@ To learn more about the Skills CLI, refer [here](https://skills.sh/docs).
 2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
 
    - Using the required feature modules for each component.
-   - Injecting applicable component modules (for example, paging, sorting, filtering, and other feature modules).
+   - Injecting applicable component modules (for example, sorting, filtering, and other feature modules).
    - Adding the correct theme and style imports.
 3. **Generates component‑accurate code**, avoiding invalid props or unsupported patterns.
 
@@ -168,7 +168,7 @@ npx skills remove <skill-name>
 {% endhighlight %}
 {% endtabs %}
 
-Replace `<skill-name>` with the name of the skill you want to remove (for example, `syncfusion-winui-autocomplete`).
+Replace `<skill-name>` with the name of the skill you want to remove.
 
 ### Check for Updates
 
