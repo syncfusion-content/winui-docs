@@ -105,7 +105,7 @@ If the same key name exists in two different assemblies, you can retrieve the sp
 
 **Step 4:** Return null for the rest of the localizable keys that are not involved in the localization. These keys are loaded with a resource map if available, else it falls back to the default resource map.  
 
-**Step 5:** Assign this instance to the [Provider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html#Syncfusion_UI_Xaml_Core_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html) class, before the `InitializeComponent` call in the constructor of the application. 
+**Step 5:** Assign the instance to the [Provider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html#Syncfusion_UI_Xaml_Core_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html) class, before the `InitializeComponent` call in the constructor of the application. 
 
 {% tabs %}
 
