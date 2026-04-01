@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Calendar](https://www
 
 ## Structure of Calendar control
 
-![winui-calendar-structure](Images/getting-started/winui-calendar-structure.png)
+![WinUI Calendar structure control](images/getting-started/winui-calendar-structure-control.png)
 
 ## Creating an application with WinUI Calendar
 
@@ -95,7 +95,7 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-![winui-calendar-application](Images/getting-started/winui-calendar-application.png)
+![WinUI Calendar application](images/getting-started/winui-calendar-application.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/GettingStarted).
 
