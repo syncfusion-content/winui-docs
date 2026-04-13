@@ -237,7 +237,7 @@ sfNumberBox.AllowNull = false;
 ## Header and description
 This section explains about `header` and `description` properties of NumberBox.
 ### Header
-The [Header]((https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Header)) property is used to display the title for the `NumberBox` Control.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Header) property is used to display the title for the `NumberBox` Control.
      
 {% tabs %}
 {% highlight xaml %}
