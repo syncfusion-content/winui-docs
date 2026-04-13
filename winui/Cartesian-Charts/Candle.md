@@ -218,7 +218,7 @@ this.Content = chart;
 
 ## Segment Width
 
-The The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_SegmentWidth) property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
+The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_SegmentWidth) property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
 
 {% tabs %}
 
