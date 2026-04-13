@@ -87,7 +87,7 @@ The default string of any control can be changed by adding the default .resw fil
 
 ## Localizing without using .resw files 
 
-You can localize the WinUI controls using the [Provider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html#Syncfusion_UI_Xaml_Core_LocalizationProvider_Provider) property of the [LocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html) class.  
+You can localize the WinUI controls using the [Provider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html#Syncfusion_UI_Xaml_Core_LocalizationProvider_Provider)  property of the [LocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.LocalizationProvider.html) class.  
 
 To implement localization of [Syncfusion WinUI](https://help.syncfusion.com/cr/winui) controls without using .resw files and using custom string. Follow the steps below. 
 
@@ -97,7 +97,7 @@ The following procedure that helps to localize in WinUI using String Provider
 
 **Step 1:** Include the required namespace [using Syncfusion.UI.Xaml.Core;](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.html) at the beginning of the file. 
 
-**Step 2:** Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.ILocalizationProvider.html) interface defined in the [Syncfusion.UI.Xaml.Core](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.html) namespace in the Syncfusion.Core.WinUI.dll 
+**Step 2:** Create a class that implements the [ILocalizationProvider](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.ILocalizationProvider.html) interface defined in the Syncfusion.UI.Xaml.Core namespace in the Syncfusion.Core.WinUI.dll 
 
 **Step 3:** In a `GetLocalizedString` method, return Custom string value for a localizable key 
 
