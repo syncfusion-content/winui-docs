@@ -1258,9 +1258,9 @@ this.dataGrid.CellRenderers.Add("ComboBox", new GridCellComboBoxRendererExt());
 public class GridCellComboBoxRendererExt: GridCellComboBoxRenderer
 {
 
-    protected override void OnEditElementLoaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+    protected override void OnEditElementLoaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        (sender as ComboBox).IsDropDownOpen = true;
+        (sender as SfComboBox).IsDropDownOpen = true;
         base.OnEditElementLoaded(sender, e);
     }
 }
