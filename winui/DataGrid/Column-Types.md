@@ -56,7 +56,7 @@ Use to display the numeric data.
 {{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellComboBoxRenderer.html)'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using <code>ComboBox</code>.
+Use to display the IEnumerable data using <code>SfComboBox</code>.
 </td>
 </tr>
 <tr>
@@ -1195,7 +1195,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 
 ## GridComboBoxColumn
 
-`GridComboBoxColumn` derived from `GridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridComboBoxColumn_ItemsSource) property.
+`GridComboBoxColumn` derived from `GridColumn` which hosts `SfComboBox` as edit element. The data source to SfComboBox can be set by using [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridComboBoxColumn_ItemsSource) property.
 
 By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can set [DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridComboBoxColumn_DisplayMemberPath) which denotes the path to a value on the source object (GridComboBoxColumn.ItemsSource) to serve as the visual representation of object. You can set the [SelectedValuePath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html#Syncfusion_UI_Xaml_DataGrid_GridComboBoxColumn_SelectedValuePath) which denotes the path to get the SelectedValue from the SelectedItem. 
 
@@ -1224,29 +1224,9 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 
 <img src="Column-Types_images/winui-datagrid-combobox-column.png" alt="WinUI DataGrid column with ComboBox" width="100%" Height="Auto"/>
 
-### Improving dropdown opening time
-
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.virtualizingstackpanel?view=winui-3.0) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.itemspaneltemplate?view=winui-3.0) of `ComboBox`, when the large number of items loaded in it.
-
-{% tabs %}
-{% highlight xaml %}
-<Page.Resources>
-    <Style TargetType="ComboBox">
-        <Setter Property="ItemsPanel">
-            <Setter.Value>
-                <ItemsPanelTemplate>
-                    <VirtualizingStackPanel />
-                </ItemsPanelTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-</Page.Resources>
-{% endhighlight %}
-{% endtabs %}
-
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.combobox?view=winui-3.0) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
+You can open the drop down within single click by setting [SfComboBox.IsDropDownOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_IsDropDownOpen) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
 
 Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in `SfDataGrid.CellRenderers` collection.
 
@@ -1258,9 +1238,9 @@ this.dataGrid.CellRenderers.Add("ComboBox", new GridCellComboBoxRendererExt());
 public class GridCellComboBoxRendererExt: GridCellComboBoxRenderer
 {
 
-    protected override void OnEditElementLoaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+    protected override void OnEditElementLoaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        (sender as ComboBox).IsDropDownOpen = true;
+        (sender as SfComboBox).IsDropDownOpen = true;
         base.OnEditElementLoaded(sender, e);
     }
 }
@@ -2106,7 +2086,7 @@ GridComboBoxColumn
 {{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Renderers.GridCellComboBoxRenderer.html)'| markdownify }}
 </td>
 <td>
-ComboBox
+SfComboBox
 </td>
 </tr>
 <tr>
