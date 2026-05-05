@@ -318,7 +318,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridComboBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>ComboBox</code> controls in its cells.
+Represents SfDataGrid column that hosts <code>SfComboBox</code> controls in its cells.
 </td>
 </tr>
 <tr>

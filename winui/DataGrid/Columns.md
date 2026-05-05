@@ -43,7 +43,7 @@ Use to display the numeric data.
 {{'[GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using ComboBox.
+Use to display the IEnumerable data using SfComboBox.
 </td>
 </tr>
 <tr>
