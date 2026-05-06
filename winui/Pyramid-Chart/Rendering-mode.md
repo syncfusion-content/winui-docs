@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rendering mode in WinUI Chart control | Syncfusion
+title: Rendering Modes for WinUI Pyramid Chart | Syncfusion
 description: This sections explains about the rendering surface mode and linear mode of Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
@@ -19,11 +19,12 @@ The [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Cha
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category" 
-                      YBindingPath="Value" 
-                      Mode="Surface">
+<chart:SfPyramidChart 
+    x:Name="chart"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category" 
+    YBindingPath="Value" 
+    Mode="Surface">
 </chart:SfPyramidChart>
  
 {% endhighlight %}
@@ -31,7 +32,12 @@ The [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Cha
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() 
+{ 
+    Path = new PropertyPath("Data")     
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartPyramidMode.Surface;
@@ -52,11 +58,12 @@ The [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category" 
-                      YBindingPath="Value" 
-                      Mode="Linear">
+<chart:SfPyramidChart 
+    x:Name="chart"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category" 
+    YBindingPath="Value" 
+    Mode="Linear">
 </chart:SfPyramidChart>
  
 {% endhighlight %}
@@ -64,7 +71,11 @@ The [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() 
+{
+    Path = new PropertyPath("Data") 
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartPyramidMode.Linear;

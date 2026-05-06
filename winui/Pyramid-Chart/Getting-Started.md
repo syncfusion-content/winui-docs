@@ -25,9 +25,9 @@ This section explains how to populate the [WinUI Pyramid Chart](https://www.sync
 
 <Window
     x:Class="ChartDemo.MainWindow"
-
     . . .
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
+
     <chart:SfPyramidChart/>
 
 </Window>
@@ -42,7 +42,6 @@ using Syncfusion.UI.Xaml.Charts;
 
 public sealed partial class MainWindow : Window
 {
-    
     public MainWindow()
     {
         this.InitializeComponent();
@@ -69,7 +68,6 @@ Now, let us define a simple data model that represents a data point in the chart
 public class Model
 {
     public string FoodName { get; set; }
-
     public double Calories { get; set; }
 }
 
@@ -115,7 +113,6 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 <Window
     . . .
-
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">
 
@@ -132,6 +129,7 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 {% highlight C# %} 
 
 ChartViewModel viewModel = new ChartViewModel();
+
 chart.DataContext = viewModel;
 
 {% endhighlight %}
@@ -140,16 +138,14 @@ chart.DataContext = viewModel;
 
 ## Add Title
 
-The title of the chart provide quick information to the user about the data being plotted in the chart. The title cane be set by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the pyramid chart as follows.
+The title of the chart provides quick information to the user about the data being plotted in the chart. The title can be set by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the pyramid chart as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
 <chart:SfPyramidChart Header="Calories in food">
-    
 . . .
-
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -157,9 +153,7 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-
 . . .
-
 chart.Header = "Calories in food";
 
 {% endhighlight %}
@@ -249,22 +243,22 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      Header="The Food Comparison Pyramid"
-                      EnableTooltip="True"
-                      ShowDataLabels="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="FoodName"
-                      YBindingPath="Calories">
+<chart:SfPyramidChart 
+    x:Name="chart" 
+    Header="The Food Comparison Pyramid"
+    EnableTooltip="True"
+    ShowDataLabels="True"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="FoodName"
+    YBindingPath="Calories">
 
     <chart:SfPyramidChart.DataContext>
-        <model:ChartViewModel />
+        <model:ChartViewModel/>
     </chart:SfPyramidChart.DataContext>
 
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend />
+        <chart:ChartLegend/>
     </chart:SfPyramidChart.Legend>
-
 </chart:SfPyramidChart>
  
 {% endhighlight %}
@@ -280,9 +274,16 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         SfPyramidChart chart = new SfPyramidChart();
+
         ChartViewModel viewModel = new ChartViewModel();
+        
         chart.DataContext = viewModel;
-        chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        
+        chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() 
+        { 
+            Path = new PropertyPath("Data")     
+        });
+        
         chart.XBindingPath = "FoodName";
         chart.YBindingPath = "Calories";
         chart.Header = "The Food Comparison Pyramid";
