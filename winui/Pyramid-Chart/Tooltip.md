@@ -128,9 +128,9 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 SfPyramidChart chart = new SfPyramidChart();
 chart.EnableTooltip = true;
 
-Style style = new Style(typeof(Shape));
-style.Setters.Add(new Setter(Shape.StrokeProperty, new SolidColorBrush(Colors.Black)));
-style.Setters.Add(new Setter(Shape.FillProperty, new SolidColorBrush(Colors.Gray)));
+Style style = new Style(typeof(Path));
+style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
+style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
 
 ...
 

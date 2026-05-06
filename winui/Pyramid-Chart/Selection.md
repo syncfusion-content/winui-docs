@@ -207,7 +207,7 @@ Pyramid chart provides support to select multiple points programmatically on a c
 		    SelectedIndexes="{Binding SelectedIndexes}"/>
     </chart:SfPyramidChart.SelectionBehavior>
     . . .
-<chart:SfPyramidChart.DataContext>
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 

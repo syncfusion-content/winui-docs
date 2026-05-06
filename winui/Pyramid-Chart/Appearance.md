@@ -87,12 +87,12 @@ SfPyramidChart chart = new SfPyramidChart();
 
 List<Brush>CustomBrushes = new List<Brush>();
 
-CustomBrushes.Add(new SolidColorBrush(Windows.UI.Color.FromArgb(255, 77, 208, 225)));
-CustomBrushes.Add(new SolidColorBrush(Windows.UI.Color.FromArgb(255, 38, 198, 218)));
-CustomBrushes.Add(new SolidColorBrush(Windows.UI.Color.FromArgb(255, 0, 188, 212)));
-CustomBrushes.Add(new SolidColorBrush(Windows.UI.Color.FromArgb(255, 0, 172, 193)));
-CustomBrushes.Add(new SolidColorBrush(Windows.UI.Color.FromArgb(255, 0, 151, 167)));
-CustomBrushes.Add(new SolidColorBrush(Windows.UI.Color.FromArgb(255, 0, 131, 143)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 77, 208, 225)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
+CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() 
 { 
@@ -168,13 +168,13 @@ LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 GradientStop stop1 = new GradientStop() 
 { 
     Offset = 1, 
-    Color =  Windows.UI.Color.FromArgb(255, 255, 231, 199) 
+    Color =  Color.FromArgb(255, 255, 231, 199) 
 };
 
 GradientStop stop2 = new GradientStop()
 { 
     Offset = 0, 
-    Color = Windows.UI.Color.FromArgb(255, 252, 182, 159) 
+    Color = Color.FromArgb(255, 252, 182, 159) 
 };
 
 gradientColor1.GradientStops.Add(stop1);
@@ -185,12 +185,12 @@ LinearGradientBrush gradientColor2 = new LinearGradientBrush();
 stop1 = new GradientStop() 
 {
     Offset = 1, 
-    Color = Windows.UI.Color.FromArgb(255, 250, 221, 125) 
+    Color = Color.FromArgb(255, 250, 221, 125) 
 };
 stop2 = new GradientStop() 
 { 
     Offset = 0, 
-    Color = Windows.UI.Color.FromArgb(255, 252, 204, 45) 
+    Color = Color.FromArgb(255, 252, 204, 45) 
 };
 
 gradientColor2.GradientStops.Add(stop1);
