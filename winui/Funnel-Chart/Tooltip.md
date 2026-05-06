@@ -117,10 +117,10 @@ SfFunnelChart chart = new SfFunnelChart();
 
 chart.EnableTooltip = true;
 . . .
-Style style = new Style(typeof(Shape));
+Style style = new Style(typeof(Path));
 
-style.Setters.Add(new Setter(Shape.StrokeProperty,new SolidColorBrush(Colors.Black)));
-style.Setters.Add(new Setter(Shape.FillProperty,new SolidColorBrush(Colors.Gray)));
+style.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Black)));
+style.Setters.Add(new Setter(Path.FillProperty,new SolidColorBrush(Colors.Gray)));
 
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 

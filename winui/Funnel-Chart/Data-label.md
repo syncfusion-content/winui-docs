@@ -150,7 +150,7 @@ chart.DataLabelSettings = new FunnelDataLabelSettings()
 {
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 30, 136, 229)),
+    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
     BorderThickness = new Thickness(1),
     Margin = new Thickness(1),
     FontStyle = FontStyle.Italic,
