@@ -19,12 +19,13 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      ShowDataLabels="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category"
-                      YBindingPath="Value">
-. . .
+<chart:SfPyramidChart 
+    x:Name="chart" 
+    ShowDataLabels="True"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
+
  </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -32,11 +33,19 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.ShowDataLabels = true;
-chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
+{ 
+    Path = new PropertyPath("Data") 
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -53,25 +62,29 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      ShowDataLabels="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category"
-                      YBindingPath="Value">
-. . .
+<chart:SfPyramidChart 
+    x:Name="chart" 
+    ShowDataLabels="True"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
+    . . .
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Context="Percentage" />
+        <chart:PyramidDataLabelSettings Context="Percentage"/>
     </chart:SfPyramidChart.DataLabelSettings>
-. . .
- </chart:SfPyramidChart>
+    . . .
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
         
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.ShowDataLabels = true;
+
 . . . 
+
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Context = LabelContext.Percentage 
@@ -103,23 +116,25 @@ The following properties are used to customize the data label:
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      ShowDataLabels="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category"
-                      YBindingPath="Value">
-. . .
+<chart:SfPyramidChart
+    x:Name="chart"
+    ShowDataLabels="True"
+    ItemsSource="{Binding Data}"
+    XBindingPath="Category"
+    YBindingPath="Value">
+    . . .
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Foreground="White" 
-					FontSize="16"
-					FontFamily="Calibri"
-					BorderBrush="White" 
-					BorderThickness="1" 
-					Margin="1"
-					FontStyle="Italic"
-					Background="#1E88E5" />
+        <chart:PyramidDataLabelSettings
+            Foreground="White"
+            FontSize="16"
+            FontFamily="Calibri"
+            BorderBrush="White"
+            BorderThickness="1"
+            Margin="1"
+            FontStyle="Italic"
+            Background="#1E88E5"/>
     </chart:SfPyramidChart.DataLabelSettings>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -127,13 +142,16 @@ The following properties are used to customize the data label:
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.ShowDataLabels = true;
+
 . . .
+
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
+    Background = new SolidColorBrush(Colors.Blue),
     BorderThickness = new Thickness(1),
     Margin = new Thickness(1),
     FontStyle = FontStyle.Italic,
@@ -161,42 +179,51 @@ The appearance of the data label can be customized by using the [ContentTemplate
     <Grid.Resources>
         <DataTemplate x:Key="dataLabelTemplate">
             <StackPanel Orientation="Vertical">
-                <Path Grid.Row="0"
-		      Stretch="Uniform"
-		      Fill="LightGreen"
-		      Width="15" 
-		      Height="15" 
-		      Margin="0,0,0,0" 
-		      RenderTransformOrigin="0.5,0.5"
-		      Data="M11.771002,1.993L5.0080013,14.284 10.752002,14.284 6.6450019,22.804 17.900003,11.921 11.655003,11.921 18.472004,1.993z M10.593002,0L22.256004,0 15.440003,9.9280005 22.827004,9.9280005 0,32 7.5790019,16.277 1.637001,16.277z">
+                <Path
+                    Grid.Row="0"
+                    Stretch="Uniform"
+                    Fill="LightGreen"
+                    Width="15"
+                    Height="15"
+                    Margin="0,0,0,0"
+                    RenderTransformOrigin="0.5,0.5"
+                    Data="M11.771002,1.993L5.0080013,14.284 10.752002,14.284 6.6450019,22.804 17.900003,
+                          11.921 11.655003,11.921 18.472004,1.993z M10.593002,0L22.256004,0 15.440003,
+                          9.9280005 22.827004, 9.9280005 0,32 7.5790019,16.277 1.637001,16.277z">
+
                     <Path.RenderTransform>
                         <TransformGroup>
                             <TransformGroup.Children>
-                                <RotateTransform Angle="0" />
-                                <ScaleTransform ScaleX="1"
-						ScaleY="1" />
+                                <RotateTransform Angle="0"/>
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
                             </TransformGroup.Children>
                         </TransformGroup>
                     </Path.RenderTransform>
                 </Path>
-                <TextBlock Grid.Row="1"
-			   Text="{Binding}"
-			   FontSize="12" 
-			   Foreground="White">
-	       </TextBlock>
+
+                <TextBlock
+                    Grid.Row="1"
+                    Text="{Binding}"
+                    FontSize="12"
+                    Foreground="White">
+                </TextBlock>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>
 
-    <chart:SfPyramidChart x:Name="chart" 
-                          ShowDataLabels="True"
-                          ItemsSource="{Binding Data}" 
-                          XBindingPath="Category"
-                          YBindingPath="Value">
+    <chart:SfPyramidChart
+        x:Name="chart"
+        ShowDataLabels="True"
+        ItemsSource="{Binding Data}"
+        XBindingPath="Category"
+        YBindingPath="Value">
+
         <chart:SfPyramidChart.DataLabelSettings>
-                <chart:PyramidDataLabelSettings Context="YValue"
-						ContentTemplate="{StaticResource dataLabelTemplate}" />
+            <chart:PyramidDataLabelSettings
+                Context="YValue"
+                ContentTemplate="{StaticResource dataLabelTemplate}"/>
         </chart:SfPyramidChart.DataLabelSettings>
+
     </chart:SfPyramidChart>
 </Grid>
 
@@ -231,15 +258,15 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      ShowDataLabels="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category"
-                      YBindingPath="Value">
+<chart:SfPyramidChart 
+    x:Name="chart" 
+    ShowDataLabels="True"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
 
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Format="#.000"
-					Foreground="White" />
+        <chart:PyramidDataLabelSettings Format="#.000" Foreground="White"/>
     </chart:SfPyramidChart.DataLabelSettings>
 
 </chart:SfPyramidChart>
@@ -249,8 +276,11 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.ShowDataLabels = true;
+
 . . . 
+
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 {  
     Format = "#.000",
@@ -273,17 +303,19 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      ShowDataLabels="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category"
-                      YBindingPath="Value">
+<chart:SfPyramidChart 
+    x:Name="chart" 
+    ShowDataLabels="True"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
 
     <chart:SfPyramidChart.DataLabelSettings>
-        <chart:PyramidDataLabelSettings Rotation="45"
-					BorderBrush="White"
-					BorderThickness="1"
-					Background="#1E88E5"/>
+        <chart:PyramidDataLabelSettings 
+            Rotation="45"
+            BorderBrush="White"
+            BorderThickness="1"
+            Background="#1E88E5"/>
     </chart:SfPyramidChart.DataLabelSettings>
 
 </chart:SfPyramidChart>
@@ -293,13 +325,16 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.ShowDataLabels = true;
+
 . . . 
+
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Rotation = 45,
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
+    Background = new SolidColorBrush(Colors.Blue),
     BorderThickness = new Thickness(1)
 };
 

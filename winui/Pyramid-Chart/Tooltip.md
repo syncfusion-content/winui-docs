@@ -19,11 +19,12 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 
 {% highlight xaml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      EnableTooltip="True"
-                      ItemsSource="{Binding Data}" 
-                      XBindingPath="Category"
-                      YBindingPath="Value">
+<chart:SfPyramidChart 
+    x:Name="chart" 
+    EnableTooltip="True"
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -31,11 +32,18 @@ To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfus
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
+{
+    Path = new PropertyPath("Data")
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -63,11 +71,11 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .        
+    . . .        
     <chart:SfPyramidChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior />
+        <chart:ChartTooltipBehavior/>
     </chart:SfPyramidChart.TooltipBehavior>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -75,10 +83,13 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.EnableTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 chart.TooltipBehavior = behavior;
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -93,20 +104,21 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 
 {% highlight xml %}
 
-<chart:SfPyramidChart x:Name="chart" 
-                      EnableTooltip="True">          
-. . . 
-    <chart:SfPyramidChart.Resources>
-        <Style TargetType="Path" x:Key="style">
-            <Setter Property="Stroke" Value="Black"/>
-            <Setter Property="Fill" Value="Gray"/>
-        </Style>
-    </chart:SfPyramidChart.Resources>
+<chart:SfPyramidChart
+     x:Name="chart"
+     EnableTooltip="True">
+     . . .
+     <chart:SfPyramidChart.Resources>
+         <Style TargetType="Path" x:Key="style">
+             <Setter Property="Stroke" Value="Black"/>
+             <Setter Property="Fill" Value="Gray"/>
+         </Style>
+     </chart:SfPyramidChart.Resources>
 
-    <chart:SfPyramidChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
-    </chart:SfPyramidChart.TooltipBehavior>
-. . . 
+     <chart:SfPyramidChart.TooltipBehavior>
+         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+     </chart:SfPyramidChart.TooltipBehavior>
+     . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -115,14 +127,20 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 
 SfPyramidChart chart = new SfPyramidChart();
 chart.EnableTooltip = true;
-Style style = new Style(typeof(Path));
-style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
-style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
+
+Style style = new Style(typeof(Shape));
+style.Setters.Add(new Setter(Shape.StrokeProperty, new SolidColorBrush(Colors.Black)));
+style.Setters.Add(new Setter(Shape.FillProperty, new SolidColorBrush(Colors.Gray)));
+
 ...
+
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -139,8 +157,8 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
 
 {% highlight xml %}
 
-<chart:SfPyramidChart x:Name="chart" EnableTooltip="True">          
-. . . 
+<chart:SfPyramidChart x:Name="chart" EnableTooltip="True">
+    . . .
     <chart:SfPyramidChart.Resources>
         <Style TargetType="TextBlock" x:Key="labelStyle">
             <Setter Property="FontSize" Value="14"/>
@@ -152,25 +170,34 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     <chart:SfPyramidChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfPyramidChart.TooltipBehavior>
-. . . 
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfPyramidChart chart = new SfPyramidChart();
-chart.EnableTooltip = true;
-Style labelStyle = new Style(typeof(TextBlock));
-labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
-labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
-labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-...
-ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
-tooltipBehavior.LabelStyle = labelStyle;
-chart.TooltipBehavior = tooltipBehavior;
-. . . 
-this.Content = chart;
+ SfPyramidChart chart = new SfPyramidChart();
+
+ chart.EnableTooltip = true;
+
+ Style labelStyle = new Style(typeof(TextBlock));
+ 
+ labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
+ labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
+ labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+ 
+ . . . 
+
+ ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+
+ tooltipBehavior.LabelStyle = labelStyle;
+
+ chart.TooltipBehavior = tooltipBehavior;
+
+ . . . 
+ 
+ this.Content = chart;
 
 {% endhighlight %}
 
@@ -190,24 +217,27 @@ The pyramid chart provides support to customize the appearance of the tooltip by
     <Grid.Resources>
         <DataTemplate x:Key="tooltipTemplate" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Category}"
-                           Foreground="Black"
-                           FontWeight="Medium" 
-                           FontSize="12"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"/>
-                <TextBlock Text=" : "
-                           Foreground="Black"
-                           FontWeight="Medium"
-                           FontSize="12" 
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.Value}"
-                           Foreground="Black"
-                           FontWeight="Medium"
-                           FontSize="12"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"/>
+                <TextBlock 
+                   Text="{Binding Item.Category}"
+                   Foreground="Black"
+                   FontWeight="Medium" 
+                   FontSize="12"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+                <TextBlock 
+                   Text=" : "
+                   Foreground="Black"
+                   FontWeight="Medium"
+                   FontSize="12" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+                <TextBlock 
+                   Text="{Binding Item.Value}"
+                   Foreground="Black"
+                   FontWeight="Medium"
+                   FontSize="12"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
@@ -218,16 +248,18 @@ The pyramid chart provides support to customize the appearance of the tooltip by
         </Style>
     </Grid.Resources>
 
-    <chart:SfPyramidChart x:Name="chart"
-                          ItemsSource="{Binding Data}" 
-                          XBindingPath="Category"  
-                          YBindingPath="Value" 
-                          EnableTooltip="True"
-                          TooltipTemplate="{StaticResource tooltipTemplate}">
+    <chart:SfPyramidChart
+        x:Name="chart"
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Category"  
+        YBindingPath="Value" 
+        EnableTooltip="True"
+        TooltipTemplate="{StaticResource tooltipTemplate}">
 
         <chart:SfPyramidChart.TooltipBehavior>
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfPyramidChart.TooltipBehavior>
+        
     </chart:SfPyramidChart>
 </Grid>
 
@@ -236,12 +268,19 @@ The pyramid chart provides support to customize the appearance of the tooltip by
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding() 
+{ 
+    Path = new PropertyPath("Data") 
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
 chart.EnableTooltip = true;
+
 . . .
+
 this.Content = chart;
         
 {% endhighlight %}

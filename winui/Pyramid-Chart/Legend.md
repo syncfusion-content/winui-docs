@@ -18,11 +18,11 @@ The following code example shows how to enable legend in the chart.
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -30,6 +30,7 @@ The following code example shows how to enable legend in the chart.
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend();
 . . . 
 this.Content = chart;
@@ -38,7 +39,7 @@ this.Content = chart;
 
 {% endtabs %}
 
-N> The x-value of data points in the pyramid chart will be the legend items ‘Label’.
+N> The x-value of data points in the pyramid chart will be the legend items' label.
 
 ![Legend support in WinUI Chart](Legend_Images/WinUI_chart_legend.png)
 
@@ -51,18 +52,19 @@ The pyramid chart provides support to add any `UIElement` as a title for legend.
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
-                <TextBox Text="Foods" 
-                         HorizontalAlignment="Center"
-                         FontWeight="Bold"
-                         Foreground="Blue"/>
+                <TextBox 
+                    Text="Foods" 
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -70,6 +72,7 @@ The pyramid chart provides support to add any `UIElement` as a title for legend.
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 ChartLegend legend = new ChartLegend();
 
 TextBlock textBlock = new TextBlock()
@@ -104,14 +107,15 @@ The legend icon represents a symbol associated with each legend item. The appear
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend IconWidth="15"
-			   IconHeight="15" 
-                           IconVisibility="Visible">
+        <chart:ChartLegend 
+            IconWidth="15"
+	        IconHeight="15" 
+            IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -119,13 +123,16 @@ The legend icon represents a symbol associated with each legend item. The appear
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
     IconWidth = 15,
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -143,11 +150,11 @@ this.Content = chart;
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend ItemMargin="10"/>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -155,11 +162,14 @@ this.Content = chart;
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -177,11 +187,11 @@ Pyramid chart provides support to enable the checkbox for each legend item to vi
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend CheckBoxVisibility="Visible"/>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -189,11 +199,14 @@ Pyramid chart provides support to enable the checkbox for each legend item to vi
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -211,11 +224,11 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend ToggleSeriesVisibility="True"/>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -223,11 +236,14 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -245,12 +261,11 @@ By using the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend ItemMargin="10" 
-			   Placement="Left"/>
+        <chart:ChartLegend ItemMargin="10" Placement="Left"/>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -258,12 +273,15 @@ By using the [Placement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
    Placement = LegendPlacement.Left,
-   ItemMargin = new Thickness(10),
+   ItemMargin = new Thickness(10)
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -286,15 +304,16 @@ The legend background appearance can be customized by using the following proper
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart">
-. . .
+    . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend Background="LightGray" 
-                           BorderBrush="Black" 
-                           BorderThickness="1" 
-                           CornerRadius="5">
+        <chart:ChartLegend 
+            Background="LightGray" 
+            BorderBrush="Black" 
+            BorderThickness="1" 
+            CornerRadius="5">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
-. . .
+    . . .
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -302,6 +321,7 @@ The legend background appearance can be customized by using the following proper
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
     Background = new SolidColorBrush(Colors.LightGray),
@@ -309,7 +329,9 @@ chart.Legend = new ChartLegend()
     BorderThickness = new Thickness(1),
     CornerRadius = new CornerRadius(5)
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -326,24 +348,33 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 
 <chart:SfPyramidChart x:Name="chart">
     <chart:SfPyramidChart.Resources>
-        <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
-            <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" 
-                         Width="15" 
-                         Fill="{Binding IconBrush}" 
-                         Stroke="#4a4a4a" 
-                         StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" 
-                           FontSize="12"
-                           Foreground="Black" 
-                           FontWeight="SemiBold" 
-                           Text="{Binding Item._XAxesData}"/>
+        <DataTemplate
+            x:Key="labelTemplate"
+            x:DataType="chart:LegendItem">
+
+            <StackPanel
+                Margin="10"
+                Orientation="Vertical">
+
+                <Ellipse
+                    Height="15"
+                    Width="15"
+                    Fill="{Binding IconBrush}"
+                    Stroke="#4a4a4a"
+                    StrokeThickness="2"/>
+
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="12"
+                    Foreground="Black"
+                    FontWeight="SemiBold"
+                    Text="{Binding Item._XAxesData}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfPyramidChart.Resources>
     . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
+        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}" />
     </chart:SfPyramidChart.Legend>
 
 </chart:SfPyramidChart>
@@ -353,11 +384,14 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 {% highlight c# %}
 
 SfPyramidChart chart = new SfPyramidChart();
+
 chart.Legend = new ChartLegend()
 {
    ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}
