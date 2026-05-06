@@ -151,7 +151,7 @@ chart.DataLabelSettings = new PyramidDataLabelSettings()
 { 
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = new SolidColorBrush(Colors.Blue),
+    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
     BorderThickness = new Thickness(1),
     Margin = new Thickness(1),
     FontStyle = FontStyle.Italic,
@@ -334,7 +334,7 @@ chart.DataLabelSettings = new PyramidDataLabelSettings()
 { 
     Rotation = 45,
     BorderBrush = new SolidColorBrush(Colors.White),
-    Background = new SolidColorBrush(Colors.Blue),
+    Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
     BorderThickness = new Thickness(1)
 };
 
