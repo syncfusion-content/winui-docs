@@ -23,13 +23,14 @@ Exploding a segment is used to pull attention to a specific area of the circular
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-    <chart:PieSeries x:Name="PieSeries" 
-		     ItemsSource="{Binding Data}"
-		     ExplodeIndex="2"
-		     ExplodeRadius="10"
-		     XBindingPath="Utilization"
-		     YBindingPath="ResponseTime" />
+    . . .
+    <chart:PieSeries 
+         x:Name="PieSeries" 
+         ItemsSource="{Binding Data}"
+         ExplodeIndex="2"
+         ExplodeRadius="10"
+         XBindingPath="Utilization"
+         YBindingPath="ResponseTime"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -64,7 +65,7 @@ N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
+    . . .
     <chart:PieSeries ExplodeAll="True"
 		     ExplodeRadius="15"
 		     XBindingPath="Category"

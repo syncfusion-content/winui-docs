@@ -42,6 +42,7 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         this.InitializeComponent();
+
         SfCircularChart chart = new SfCircularChart();
         . . .
         this.Content = chart;
@@ -64,7 +65,6 @@ Now, let us define a simple data model that represents a data point in chart.
 public class Sales
 {
     public string Product { get; set; }
-
     public double SalesRate { get; set; }
 }
 
@@ -141,11 +141,12 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
+    . . .
     <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}" 
-                         XBindingPath="Product" 
-                         YBindingPath="SalesRate"/>
+        <chart:PieSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Product" 
+            YBindingPath="SalesRate"/>
     </chart:SfCircularChart.Series>
 </chart:SfCircularChart>
 
@@ -156,10 +157,15 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
 SfCircularChart chart = new SfCircularChart();
 
 ChartViewModel viewModel = new ChartViewModel();
+
 chart.DataContext = viewModel;
 
 PieSeries series = new PieSeries();
-series.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+series.SetBinding(PieSeries.ItemsSourceProperty, new Binding()
+{
+    Path = new PropertyPath("Data")
+});
+
 series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
@@ -202,11 +208,12 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 <chart:SfCircularChart>
-. . .
-    <chart:PieSeries ShowDataLabels="True"
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Product" 
-                     YBindingPath="SalesRate"/>
+    . . .
+    <chart:PieSeries
+        ShowDataLabels="True"
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Product" 
+        YBindingPath="SalesRate"/>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -260,7 +267,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
+    . . .
     <chart:PieSeries EnableTooltip="True"/>
 </chart:SfCircularChart>
 
@@ -271,6 +278,7 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
+
 series.EnableTooltip = true;
 
 chart.Series.Add(series);
@@ -289,15 +297,18 @@ The following code example gives you the complete code of above configurations.
     <chart:SfCircularChart.DataContext>
         <model:ChartViewModel/>
     </chart:SfCircularChart.DataContext>
+    
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCircularChart.Legend>
+    
     <chart:SfCircularChart.Series>
-        <chart:PieSeries ItemsSource="{Binding Data}"
-		         ShowDataLabels="True"
-                         XBindingPath="Product"
-			 EnableTooltip="True"
-                         YBindingPath="SalesRate">
+        <chart:PieSeries 
+            ItemsSource="{Binding Data}"
+            ShowDataLabels="True"
+            XBindingPath="Product"
+	        EnableTooltip="True"
+            YBindingPath="SalesRate">
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
 </chart:SfCircularChart>
@@ -316,17 +327,25 @@ public sealed partial class MainWindow : Window
 
         chart.Header = "PRODUCT SALES";
         chart.Legend = new ChartLegend();
+
         ChartViewModel viewModel = new ChartViewModel();
+
         chart.DataContext = viewModel;
 
         PieSeries series = new PieSeries();
-        series.SetBinding(PieSeries.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        
+        series.SetBinding(PieSeries.ItemsSourceProperty, new Binding()
+        { 
+            Path = new PropertyPath("Data")
+        });
+        
         series.XBindingPath = "Product";
         series.YBindingPath = "SalesRate";
         series.EnableTooltip = true;
         series.ShowDataLabels = true;
 
         chart.Series.Add(series);
+        
         this.Content = chart;
     }
 }
@@ -337,4 +356,4 @@ public sealed partial class MainWindow : Window
 
 ![Pie chart in WinUI Chart](Getting-Started_Images/WinUI_pie_chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CircularChartGettingStarted)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CircularChartGettingStarted).

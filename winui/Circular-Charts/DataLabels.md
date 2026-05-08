@@ -25,12 +25,13 @@ Each data label can be represented by the following:
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries ShowDataLabels="True"
-                 ItemsSource="{Binding Data}"  
-                 XBindingPath="Product" 
-                 YBindingPath="SalesRate"/>
-. . .
+    . . .
+    <chart:PieSeries 
+        ShowDataLabels="True"
+        ItemsSource="{Binding Data}"  
+        XBindingPath="Product" 
+        YBindingPath="SalesRate"/>
+    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -59,13 +60,13 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Context="Percentage"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
-. . .
+    . . .
+    <chart:PieSeries ShowDataLabels="True">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings Context="Percentage"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
+    . . .
 </chart:SfCircularChart>
 {% endhighlight %}
 
@@ -75,7 +76,12 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
-series.DataLabelSettings = new CircularDataLabelSettings() {Context = LabelContext.Percentage };
+
+series.DataLabelSettings = new CircularDataLabelSettings()
+{
+    Context = LabelContext.Percentage
+};
+
 . . .
 chart.Series.Add(series);
 
@@ -103,20 +109,21 @@ The following properties are used to customize the data label.
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries.DataLabelSettings>
-    <chart:CircularDataLabelSettings Position="Outside"
-                                     Foreground="White"
-                                     FontSize="11" 
-                                     FontFamily="Calibri" 
-                                     BorderBrush="Black" 
-                                     BorderThickness="1"
-				     Margin="1" 
-                                     FontStyle="Italic"
-				     Background="#1E88E5"
-                                     Context="Percentage"/>
-</chart:PieSeries.DataLabelSettings>
-. . .
+    . . .
+    <chart:PieSeries.DataLabelSettings>
+        <chart:CircularDataLabelSettings 
+            Position="Outside"
+            Foreground="White"
+            FontSize="11" 
+            FontFamily="Calibri" 
+            BorderBrush="Black" 
+            BorderThickness="1"
+		    Margin="1" 
+            FontStyle="Italic"
+            Background="#1E88E5"
+            Context="Percentage"/>
+    </chart:PieSeries.DataLabelSettings>
+    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -127,6 +134,7 @@ SfCircularChart chart = new SfCircularChart();
 . . . 
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Position = CircularSeriesLabelPosition.Outside,
@@ -158,30 +166,36 @@ The appearance of the data label can be customized using [ContentTemplate](https
 {% highlight xaml %}
 
 <Grid x:Name="grid">
-    <GridResources>
+    <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" Width="15" Fill="Cyan" 
-                 Stroke="#4a4a4a" StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" 
-			   FontSize="12"
-                           Foreground="Black" 
-                           FontWeight="SemiBold"
-			   Text="{Binding Item.Product}"/>
+                <Ellipse 
+                    Height="15" 
+                    Width="15" 
+                    Fill="Cyan" 
+                    Stroke="#4a4a4a" 
+                    StrokeThickness="2"/>
+                <TextBlock 
+                    HorizontalAlignment="Center" 
+	                FontSize="12"
+                    Foreground="Black" 
+                    FontWeight="SemiBold"
+	                Text="{Binding Item.Product}"/>
             </StackPanel>
         </DataTemplate>
     </Grid.Resources>
 
-    <chart:SfCircularChart >
-    ...
-    <chart:PieSeries ShowDataLabels="True">
-        <chart:PieSeries.DataLabelSettings>
-            <chart:CircularDataLabelSettings Position="Inside"
-					     ContentTemplate="{StaticResource labelTemplate}"
-                                             Context="DataLabelItem"/>
-        </chart:PieSeries.DataLabelSettings>
-    </chart:PieSeries>
-   ...
+    <chart:SfCircularChart>
+        ...
+        <chart:PieSeries ShowDataLabels="True">
+            <chart:PieSeries.DataLabelSettings>
+                <chart:CircularDataLabelSettings 
+                        Position="Inside"
+			            ContentTemplate="{StaticResource labelTemplate}"
+                        Context="DataLabelItem"/>
+            </chart:PieSeries.DataLabelSettings>
+        </chart:PieSeries>
+        ...
     </chart:SfCircularChart>
 </Grid>
 
@@ -193,12 +207,14 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Position = CircularSeriesLabelPosition.Inside,
     Context = LabelContext.DataLabelItem,
     ContentTemplate = grid.Resources["labelTemplate"] as DataTemplate,
 };
+
 . . .
 chart.Series.Add(series);
 
@@ -227,15 +243,16 @@ The following are the values for this property:
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="OutsideExtended"
-					 ShowConnectorLine="True"
-					 Context="Percentage"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
-. . .
+    . . .
+    <chart:PieSeries ShowDataLabels="True">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings 
+                Position="OutsideExtended"
+			    ShowConnectorLine="True"
+			    Context="Percentage"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
+    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -246,6 +263,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Position = CircularSeriesLabelPosition.OutsideExtended,
@@ -270,15 +288,16 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Context="Percentage"
-					 Position="Outside"
-					 Rotation="335"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
-. . .
+    . . .
+    <chart:PieSeries ShowDataLabels="True">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings 
+                Context="Percentage"
+			    Position="Outside"
+			    Rotation="335"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
+    . . .
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -289,6 +308,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Context = LabelContext.Percentage,
@@ -325,19 +345,20 @@ The connector line can be customized using the below properties.
             <Setter Property="Stroke" Value="Black"/>
         </Style>
     </Grid.Resources>
-<chart:SfCircularChart>
-. . . 
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings Position="Outside"
-					 Context="Percentage"
-					 ShowConnectorLine="True"
-					 ConnectorHeight="40"
-					 ConnectorType="StraightLine"
-					 ConnectorLineStyle="{StaticResource lineStyle}"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
-</chart:SfCircularChart>
+    <chart:SfCircularChart>
+        . . .
+        <chart:PieSeries ShowDataLabels="True">
+            <chart:PieSeries.DataLabelSettings>
+                <chart:CircularDataLabelSettings
+                    Position="Outside"
+			         Context="Percentage"
+			         ShowConnectorLine="True"
+			         ConnectorHeight="40"
+			         ConnectorType="StraightLine"
+			         ConnectorLineStyle="{StaticResource lineStyle}"/>
+            </chart:PieSeries.DataLabelSettings>
+        </chart:PieSeries>
+    </chart:SfCircularChart>
 </Grid>
 
 {% endhighlight %}
@@ -348,6 +369,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Context = LabelContext.Percentage,
@@ -356,6 +378,7 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     ConnectorHeight = 40,
     ConnectorLineStyle = grid.Resources["lineStyle"] as Style,
 };
+
 . . .
 chart.Series.Add(series);
 
@@ -374,16 +397,16 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings ConnectorType="Bezier"
-					 ConnectorHeight="40"
-                                         Position="Outside"
-                                         ShowConnectorLine="True"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
-
+    . . .
+    <chart:PieSeries ShowDataLabels="True">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings
+                ConnectorType="Bezier"
+			    ConnectorHeight="40"
+                Position="Outside"
+                ShowConnectorLine="True"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -394,11 +417,12 @@ SfCircularChart chart = new SfCircularChart();
 
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     ShowConnectorLine = true,
     ConnectorHeight = 40,
-    ConnectorType = ConnectorMode.Bezier, 
+    ConnectorType = ConnectorMode.Bezier,
     Position = CircularSeriesLabelPosition.Outside,
 };
 
@@ -421,16 +445,16 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:PieSeries ShowDataLabels="True">
-    <chart:PieSeries.DataLabelSettings>
-        <chart:CircularDataLabelSettings UseSeriesPalette="True" 
-					 ShowConnectorLine="True" 
-					 ConnectorHeight="40"
-					 Position="Outside"/>
-    </chart:PieSeries.DataLabelSettings>
-</chart:PieSeries>
-
+    . . .
+    <chart:PieSeries ShowDataLabels="True">
+        <chart:PieSeries.DataLabelSettings>
+            <chart:CircularDataLabelSettings
+                 UseSeriesPalette="True" 
+			     ShowConnectorLine="True" 
+			     ConnectorHeight="40"
+			     Position="Outside"/>
+        </chart:PieSeries.DataLabelSettings>
+    </chart:PieSeries>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -441,6 +465,7 @@ SfCircularChart chart = new SfCircularChart();
 . . .
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     UseSeriesPalette = true,
