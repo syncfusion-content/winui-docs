@@ -112,6 +112,7 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
             </Border>
         </DataTemplate>
     </Grid.Resources>
+    
     <chart:SfPolarChart x:Name="chart">
         ...
         <chart:SfPolarChart.PrimaryAxis>

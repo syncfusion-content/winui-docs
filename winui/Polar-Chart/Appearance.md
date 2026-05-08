@@ -146,6 +146,7 @@ Gradient for the polar chart can be set by using the [PaletteBrushes](https://he
             </LinearGradientBrush>
         </BrushCollection>
     </Grid.Resources>
+
     <chart:SfPolarChart x:Name="chart" PaletteBrushes="{StaticResource customBrushes}">
     ...
     </chart:SfPolarChart>

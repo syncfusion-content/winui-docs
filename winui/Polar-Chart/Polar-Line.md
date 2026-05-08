@@ -16,21 +16,24 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-...
+    ...
     <chart:SfPolarChart.Series>
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" />
+        <chart:PolarLineSeries 
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Tree"/>
 
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Weed" />
+        <chart:PolarLineSeries
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Weed"/>
 
-        <chart:PolarLineSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Flower" />
+        <chart:PolarLineSeries 
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Flower"/>
     </chart:SfPolarChart.Series>
-...
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}

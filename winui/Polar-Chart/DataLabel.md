@@ -189,6 +189,7 @@ The appearance of the data label can be customized using the [ContentTemplate](h
             </Grid>
         </DataTemplate>
     </Grid.Resources>
+
     <chart:SfPolarChart x:Name="chart">
         <chart:PolarAreaSeries ShowDataLabels="True">
             <chart:PolarAreaSeries.DataLabelSettings>
