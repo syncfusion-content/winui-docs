@@ -20,7 +20,6 @@ The legend contains list of series in the chart. The information provided in eac
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
-    
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -49,10 +48,11 @@ Polar chart provides support to add any `UIElement` as a title for legend. [Head
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
-                <TextBlock Text="Plant Details" 
-                           HorizontalAlignment="Center"
-                           FontWeight="Bold"
-                           Foreground="Blue"/>
+                <TextBlock 
+                    Text="Plant Details" 
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
@@ -98,9 +98,10 @@ The legend icon represents a symbol associated with each legend item. The appear
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.Legend>
-        <chart:ChartLegend IconWidth="15"
-			   IconHeight="15" 
-			   IconVisibility="Visible">
+        <chart:ChartLegend 
+            IconWidth="15"
+            IconHeight="15" 
+            IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
     ...
@@ -209,7 +210,6 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-
 chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
@@ -272,8 +272,9 @@ The legend background appearance can be customized by using the following proper
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.Legend>
-        <chart:ChartLegend Background="LightGray"
-                           BorderBrush="Black" 
+        <chart:ChartLegend                 
+            Background="LightGray"
+                        BorderBrush="Black" 
                            BorderThickness="1" 
                            CornerRadius="5">
         </chart:ChartLegend>
@@ -307,28 +308,29 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-<chart:SfPolarChart x:Name="chart" x:DataType="chart:LegendItem">
+<chart:SfPolarChart x:Name="chart">
     <chart:SfPolarChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" 
-                         Width="15" 
-                         Fill="{Binding IconBrush}" 
-                         Stroke="#4a4a4a" 
-                         StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" 
-                           FontSize="12"
-                           Foreground="Black" 
-                           FontWeight="SemiBold" 
-                           Text="{Binding Item._XAxesData}"/>
+                <Ellipse                            
+                    Height="15" 
+                    Width="15" 
+                    Fill="{Binding IconBrush}" 
+                    Stroke="#4a4a4a" 
+                    StrokeThickness="2"/>
+                <TextBlock
+                    HorizontalAlignment="Center"                            
+                    FontSize="12"
+                    Foreground="Black" 
+                    FontWeight="SemiBold" 
+                    Text="{Binding Item._XAxesData}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfPolarChart.Resources>
-    . . .
+    ...
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfPolarChart.Legend>
-
 </chart:SfPolarChart>
 
 {% endhighlight %}

@@ -25,7 +25,6 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-
     <chart:SfPolarChart.PrimaryAxis>
         <chart:CategoryAxis/>
     </chart:SfPolarChart.PrimaryAxis>
@@ -33,8 +32,7 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
-...
-
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -61,7 +59,6 @@ The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-
     <chart:SfPolarChart.PrimaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.PrimaryAxis>
@@ -70,7 +67,6 @@ The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
     ...
-    
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -101,9 +97,10 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.SecondaryAxis>
-        <chart:NumericalAxis Minimum="10"
-			     Maximum="90"
-			     Interval="20" />
+        <chart:NumericalAxis
+            Minimum="10"
+	        Maximum="90"
+	        Interval="20"/>
     </chart:SfPolarChart.SecondaryAxis>
     ...
 </chart:SfPolarChart>
@@ -137,21 +134,18 @@ The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-            
     <chart:SfPolarChart.PrimaryAxis>
-        <chart:DateTimeAxis Interval="1"
-			    IntervalType="Months">
-        <chart:DateTimeAxis.LabelStyle>
-            <chart:LabelStyle LabelFormat="MMM/dd" />
-        </chart:DateTimeAxis.LabelStyle>
-    </chart:DateTimeAxis>
+        <chart:DateTimeAxis Interval="1" IntervalType="Months">
+            <chart:DateTimeAxis.LabelStyle>
+                <chart:LabelStyle LabelFormat="MMM/dd"/>
+            </chart:DateTimeAxis.LabelStyle>
+        </chart:DateTimeAxis>
     </chart:SfPolarChart.PrimaryAxis>
-            
+
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
     ...
-
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -185,11 +179,10 @@ The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-. . .
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:LogarithmicAxis />
-</chart:SfPolarChart.SecondaryAxis>
-
+    ...
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:LogarithmicAxis/>
+    </chart:SfPolarChart.SecondaryAxis>
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -216,11 +209,10 @@ The Axis interval can be customized using the [Interval](https://help.syncfusion
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-. . .
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:LogarithmicAxis Interval="10" />
-</chart:SfPolarChart.SecondaryAxis>
-
+    ...
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:LogarithmicAxis Interval="10"/>
+    </chart:SfPolarChart.SecondaryAxis>
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -228,7 +220,7 @@ The Axis interval can be customized using the [Interval](https://help.syncfusion
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . .
+...
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     Interval = 10,
@@ -248,11 +240,10 @@ The range of the logarithmic axis can be customized using the [Minimum](https://
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-. . .
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:LogarithmicAxis Minimum="100" Maximum="10000" />
-</chart:SfPolarChart.SecondaryAxis>
-
+    ...
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:LogarithmicAxis Minimum="100" Maximum="10000"/>
+    </chart:SfPolarChart.SecondaryAxis>
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -260,7 +251,7 @@ The range of the logarithmic axis can be customized using the [Minimum](https://
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . .
+...
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     Minimum = 100,
@@ -281,11 +272,10 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-. . .
-<chart:SfPolarChart.SecondaryAxis>
-    <chart:LogarithmicAxis LogarithmicBase="2" />
-</chart:SfPolarChart.SecondaryAxis>
-
+    ...
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:LogarithmicAxis LogarithmicBase="2"/>
+    </chart:SfPolarChart.SecondaryAxis>
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -293,7 +283,7 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . .
+...
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     LogarithmicBase = 2,
