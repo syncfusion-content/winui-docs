@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rendering mode in WinUI Chart control | Syncfusion
+title: Rendering Mode in WinUI Chart (SfFunnelChart) | Syncfusion
 description: This sections explains about the rendering mode types of Syncfusion® WinUI Chart(SfFunnelChart) control
 platform: WinUI
 control: SfFunnelChart
@@ -19,11 +19,12 @@ The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunn
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart"
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category" 
-                     YBindingPath="Value" 
-                     Mode="ValueIsHeight">
+<chart:SfFunnelChart 
+    x:Name="chart"
+    ItemsSource="{Binding Data}"
+    XBindingPath="Category"
+    YBindingPath="Value"
+    Mode="ValueIsHeight">
 </chart:SfFunnelChart>
  
 {% endhighlight %}
@@ -31,12 +32,20 @@ The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunn
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty,new Binding() 
+{ 
+    Path = new PropertyPath("Data") 
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartFunnelMode.ValueIsHeight;
-. . . 
+
+. . .
+
 this.Content = chart;
+
 
 {% endhighlight %}
 
@@ -52,23 +61,31 @@ this.Content = chart;
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart"
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category" 
-                     YBindingPath="Value" 
-                     Mode="ValueIsWidth">
-</chart:SfFunnelChart>
+<chart:SfFunnelChart 
+    x:Name="chart"
+    ItemsSource="{Binding Data}"
+    XBindingPath="Category"
+    YBindingPath="Value"
+    Mode="ValueIsWidth">
+</chart:SfFunnelChart>  
  
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() 
+{
+    Path = new PropertyPath("Data") 
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartFunnelMode.ValueIsWidth;
+
 . . . 
+
 this.Content = chart;
 
 {% endhighlight %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfFunnelChart)
 
-The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradient which allows enriching the application.
+The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradients which allows enriching the application.
 
 ## Predefined PaletteBrushes
 
@@ -19,10 +19,11 @@ Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.U
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" 
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
+<chart:SfFunnelChart 
+    x:Name="chart" 
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -30,10 +31,17 @@ Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.U
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
+{ 
+    Path = new PropertyPath("Data")
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -62,12 +70,13 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
         </BrushCollection>
     </Grid.Resources>
 
-     <chart:SfFunnelChart x:Name="chart" 
-                          ItemsSource="{Binding Data}" 
-                          XBindingPath="Category"
-                          YBindingPath="Value"
-                          PaletteBrushes="{StaticResource customBrushes}">
-     . . .
+    <chart:SfFunnelChart 
+        x:Name="chart" 
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Category"
+        YBindingPath="Value"
+        PaletteBrushes="{StaticResource customBrushes}">
+        . . .
     </chart:SfFunnelChart>
 </Grid>
 
@@ -76,7 +85,7 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-...
+. . . 
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 77, 208, 225)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
@@ -85,12 +94,17 @@ CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() 
+{ 
+    Path = new PropertyPath("Data") 
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = CustomBrushes;
 
 . . .            
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -111,34 +125,35 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
     <Grid.Resources>
         <BrushCollection x:Key="customBrushes">
             <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#FFE7C7" />
-                    <GradientStop Offset="0" Color="#FCB69F" />
+                <GradientStop Offset="1" Color="#FFE7C7"/>
+                <GradientStop Offset="0" Color="#FCB69F"/>
             </LinearGradientBrush>
             <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#fadd7d" />
-                    <GradientStop Offset="0" Color="#fccc2d" />
+                <GradientStop Offset="1" Color="#fadd7d"/>
+                <GradientStop Offset="0" Color="#fccc2d"/>
             </LinearGradientBrush>
             <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#DCFA97" />
-                    <GradientStop Offset="0" Color="#96E6A1" />
+                <GradientStop Offset="1" Color="#DCFA97"/>
+                <GradientStop Offset="0" Color="#96E6A1"/>
             </LinearGradientBrush>
             <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#DDD6F3" />
-                    <GradientStop Offset="0" Color="#FAACA8" />
+                <GradientStop Offset="1" Color="#DDD6F3"/>
+                <GradientStop Offset="0" Color="#FAACA8"/>
             </LinearGradientBrush>
             <LinearGradientBrush>
-                    <GradientStop Offset="1" Color="#A8EAEE" />
-                    <GradientStop Offset="0" Color="#7BB0F9" />
+                <GradientStop Offset="1" Color="#A8EAEE"/>
+                <GradientStop Offset="0" Color="#7BB0F9"/>
             </LinearGradientBrush>
         </BrushCollection>
     </Grid.Resources>
 
-     <chart:SfFunnelChart x:Name="chart" 
-                          ItemsSource="{Binding Data}" 
-                          XBindingPath="Category"
-                          YBindingPath="Value"
-                          PaletteBrushes="{StaticResource customBrushes}">
-     . . .
+    <chart:SfFunnelChart 
+        x:Name="chart" 
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Category"
+        YBindingPath="Value"
+        PaletteBrushes="{StaticResource customBrushes}">
+
     </chart:SfFunnelChart>
 </Grid>
 
@@ -147,27 +162,61 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-...
+
 List<Brush> customBrushes = new List<Brush>();
+
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 255, 231, 199) };
-GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 252, 182, 159) };
+
+GradientStop stop1 = new GradientStop()
+{ 
+    Offset = 1, 
+    Color = Color.FromArgb(255, 255, 231, 199) 
+};
+
+GradientStop stop2 = new GradientStop()
+{ 
+    Offset = 0, 
+    Color = Color.FromArgb(255, 252, 182, 159) 
+};
+
 gradientColor1.GradientStops.Add(stop1);
 gradientColor1.GradientStops.Add(stop2);
+
 LinearGradientBrush gradientColor2 = new LinearGradientBrush();
-stop1 = new GradientStop() { Offset = 1, Color = Color.FromArgb(255, 250, 221, 125) };
-stop2 = new GradientStop() { Offset = 0, Color = Color.FromArgb(255, 252, 204, 45) };
+
+stop1 = new GradientStop()
+{ 
+    Offset = 1, 
+    Color = Color.FromArgb(255, 250, 221, 125) 
+};
+
+stop2 = new GradientStop() 
+{ 
+    Offset = 0, 
+    Color = Color.FromArgb(255, 252, 204, 45) 
+};
+
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-...
+
+. . .
+
 customBrushes.Add(gradientColor1);
 customBrushes.Add(gradientColor2);
-...
-chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+
+. . .
+
+chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
+{ 
+    Path = new PropertyPath("Data")
+});
+
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
+
 . . .            
+
 this.Content = chart;
 
 {% endhighlight %}
