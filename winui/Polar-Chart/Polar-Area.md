@@ -16,21 +16,24 @@ To render a area series in polar chart, create an instance of the [PolarAreaSeri
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-...
+    ...
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" Label="Tree" />
+        <chart:PolarAreaSeries
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Tree" Label="Tree"/>
 
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Weed" Label="Weed" />
+        <chart:PolarAreaSeries
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Weed" Label="Weed"/>
 
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Flower" Label="Flower" />
+        <chart:PolarAreaSeries
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Flower" Label="Flower"/>
     </chart:SfPolarChart.Series>
-...
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -74,13 +77,14 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfPolarChart GridLineType="Polygon">
-...
+    ...
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" />
+        <chart:PolarAreaSeries 
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
-...
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -113,14 +117,15 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfPolarChart GridLineType="Polygon">
-...
+    ...
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-                               YBindingPath="Tree" 
-                               IsClosed="False" />
+        <chart:PolarAreaSeries
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+            YBindingPath="Tree" 
+            IsClosed="False"/>
     </chart:SfPolarChart.Series>
-...
+    ...
 </chart:SfPolarChart>
 
 {% endhighlight %}

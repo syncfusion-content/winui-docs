@@ -18,11 +18,11 @@ N> The x-value of data points in the funnel chart will be the legend items ‘La
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend/>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
  </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -30,6 +30,7 @@ N> The x-value of data points in the funnel chart will be the legend items ‘La
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend();
 . . .
 this.Content = chart;
@@ -49,18 +50,19 @@ The funnel chart provides support to add any `UIElement` as a title for legend. 
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
-                <TextBox Text="Products" 
-                         HorizontalAlignment="Center"
-                         FontWeight="Bold"
-                         Foreground="Blue"/>
+                <TextBox 
+                    Text="Products" 
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Foreground="Blue"/>
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -68,6 +70,7 @@ The funnel chart provides support to add any `UIElement` as a title for legend. 
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 ChartLegend legend = new ChartLegend();
 
 TextBlock textBlock = new TextBlock()
@@ -80,7 +83,9 @@ TextBlock textBlock = new TextBlock()
 
 legend.Header = textBlock;
 chart.Legend = legend;
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -102,14 +107,15 @@ The legend icon represents a symbol associated with each legend item. The appear
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend IconWidth="15" 
-			   IconHeight="15" 
-			   IconVisibility="Visible">
+        <chart:ChartLegend 
+            IconWidth="15" 
+            IconHeight="15" 
+            IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -117,13 +123,16 @@ The legend icon represents a symbol associated with each legend item. The appear
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
     IconWidth = 15,
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -141,11 +150,11 @@ this.Content = chart;
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ItemMargin="10"/>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -153,11 +162,14 @@ this.Content = chart;
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -175,11 +187,11 @@ Funnel chart provides support to enable the checkbox for each legend item to vis
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend CheckBoxVisibility="Visible"/>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -187,11 +199,14 @@ Funnel chart provides support to enable the checkbox for each legend item to vis
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -209,11 +224,11 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ToggleSeriesVisibility="True"/>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -221,11 +236,14 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -245,12 +263,11 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend ItemMargin="10"
-		           Placement="Right"/>
+        <chart:ChartLegend ItemMargin="10" Placement="Right"/>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -258,12 +275,15 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
    Placement = LegendPlacement.Right,
    ItemMargin = new Thickness(10),
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -286,15 +306,16 @@ The legend background appearance can be customized by using the following proper
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart">
-. . .
+    . . .
     <chart:SfFunnelChart.Legend>
-        <chart:ChartLegend Background="Gray" 
-			   BorderBrush="Black"
-			   BorderThickness="1"
-			   CornerRadius="5" >
-    </chart:ChartLegend>
+        <chart:ChartLegend 
+           Background="Gray" 
+	       BorderBrush="Black"
+	       BorderThickness="1"
+	       CornerRadius="5">
+        </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
-. . .
+    . . .
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -302,6 +323,7 @@ The legend background appearance can be customized by using the following proper
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
     Background = new SolidColorBrush(Colors.Gray),
@@ -309,7 +331,9 @@ chart.Legend = new ChartLegend()
     BorderThickness = new Thickness(1),
     CornerRadius = new CornerRadius(5)
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -328,16 +352,18 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
     <chart:SfFunnelChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:LegendItem">
             <StackPanel Margin="10" Orientation="Vertical">
-                <Ellipse Height="15" 
-                         Width="15" 
-                         Fill="{Binding IconBrush}" 
-                         Stroke="#4a4a4a" 
-                         StrokeThickness="2"/>
-                <TextBlock HorizontalAlignment="Center" 
-                           FontSize="12"
-                           Foreground="Black" 
-                           FontWeight="SemiBold" 
-                           Text="{Binding Item._XAxesData}"/>
+                <Ellipse 
+                    Height="15"                             
+                    Width="15"                             
+                    Fill="{Binding IconBrush}" 
+                    Stroke="#4a4a4a" 
+                    StrokeThickness="2"/>
+                <TextBlock 
+                    HorizontalAlignment="Center" 
+                    FontSize="12"
+                    Foreground="Black" 
+                    FontWeight="SemiBold" 
+                    Text="{Binding Item._XAxesData}"/>
             </StackPanel>
         </DataTemplate>
     </chart:SfFunnelChart.Resources>
@@ -345,7 +371,6 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfFunnelChart.Legend>
-
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -353,11 +378,14 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 chart.Legend = new ChartLegend()
 {
    ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
+
 . . .
+
 this.Content = chart;
 
 {% endhighlight %}

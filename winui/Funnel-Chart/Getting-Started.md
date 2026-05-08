@@ -14,7 +14,7 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 ## Creating an application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+2. Add a reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4. Initialize [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) control.
 
@@ -25,11 +25,9 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 
 <Window
     x:Class="ChartDemo.MainWindow"
-
-    . . .
+    . . .    
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     <chart:SfFunnelChart/>
-
 </Window>
  
 {% endhighlight %}
@@ -46,7 +44,9 @@ public sealed partial class MainWindow : Window
     {
         this.InitializeComponent();
         SfFunnelChart chart = new SfFunnelChart();
+
         . . .
+        
         this.Content = chart;
     }
 }   
@@ -68,7 +68,6 @@ Now, let us define a simple data model that represents a data point in the chart
 public class Model
 {
     public string Category { get; set; }
-
     public double Value { get; set; }
 }
 
@@ -212,7 +211,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment, when the mouse is moved over it. Enable tooltip by setting funnel chart [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property as true.
+Tooltips are used to display information about a segment when the mouse is moved over it. Enable tooltip by setting funnel chart [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property as true.
 
 {% tabs %} 
 
@@ -242,23 +241,23 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 {% highlight xaml %}
 
-<chart:SfFunnelChart x:Name="chart" 
-		     Header="PRODUCT SALES" 
-                     EnableTooltip="True"
-                     ShowDataLabels="True"
-                     Height="388" Width="500" 
-                     ItemsSource="{Binding Data}" 
-                     XBindingPath="Category"
-                     YBindingPath="Value">
+<chart:SfFunnelChart 
+    x:Name="chart" 
+    Header="PRODUCT SALES" 
+    EnableTooltip="True"
+    ShowDataLabels="True"
+    Height="388" Width="500" 
+    ItemsSource="{Binding Data}" 
+    XBindingPath="Category"
+    YBindingPath="Value">
 
-        <chart:SfFunnelChart.DataContext>
-            <model:ChartViewModel />
-        </chart:SfFunnelChart.DataContext>
+    <chart:SfFunnelChart.DataContext>
+        <model:ChartViewModel/>
+    </chart:SfFunnelChart.DataContext>
 
-        <chart:SfFunnelChart.Legend>
-            <chart:ChartLegend />
-        </chart:SfFunnelChart.Legend>
-            
+    <chart:SfFunnelChart.Legend>
+        <chart:ChartLegend/>
+    </chart:SfFunnelChart.Legend>
 </chart:SfFunnelChart>
  
 {% endhighlight %}
@@ -274,9 +273,15 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         SfFunnelChart chart = new SfFunnelChart();
+
         ChartViewModel viewModel = new ChartViewModel();
+        
         chart.DataContext = viewModel;
-        chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding() { Path = new PropertyPath("Data") });
+        chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
+        { 
+            Path = new PropertyPath("Data") 
+        });
+        
         chart.XBindingPath = "Category";
         chart.YBindingPath = "Value";
         chart.Header = "PRODUCT SALES";
