@@ -15,9 +15,8 @@ documentation: ug
 
 {% highlight xaml %}
 
-<chart:SfCircularChart x:Name="chart" 
-		       Header="Circular Chart Header">
- . . .           
+<chart:SfCircularChart x:Name="chart" Header="Circular Chart Header">
+ . . .  
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -44,21 +43,22 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-. . .
-<chart:SfCircularChart.Header>
-    <Border BorderThickness="0.5"
-	    BorderBrush="Black"
-	    Margin="10"
-	    CornerRadius="5">
-        <TextBlock Text="Circular Chart Header"
-                   Margin="5" 
-                   FontFamily="Verdana"
-		   FontSize="14" 
-                   Foreground="Blue">
-        </TextBlock>
-    </Border>
-</chart:SfCircularChart.Header>
-
+    . . .
+    <chart:SfCircularChart.Header>
+        <Border 
+            BorderThickness="0.5"
+            BorderBrush="Black"
+            Margin="10"
+            CornerRadius="5">
+            <TextBlock 
+                Text="Circular Chart Header"
+                Margin="5" 
+                FontFamily="Verdana"
+                FontSize="14" 
+                Foreground="Blue">
+            </TextBlock>
+        </Border>
+    </chart:SfCircularChart.Header>
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -66,6 +66,7 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
+
 Border border = new Border()
 {
     BorderThickness = new Thickness(0.5),
@@ -84,6 +85,7 @@ TextBlock textBlock = new TextBlock()
 };
 
 border.Child = textBlock;
+
 chart.Header = border;
 
 {% endhighlight %}
@@ -100,23 +102,24 @@ The title text content can be aligned horizontally to the left, center or right 
 
 {% highlight xaml %}
 
-<chart:SfCircularChart x:Name="chart" 
-                       HorizontalHeaderAlignment="Right">
-
+<chart:SfCircularChart 
+    x:Name="chart"
+    HorizontalHeaderAlignment="Right">
     <chart:SfCircularChart.Header>
-        <Border BorderThickness="0.5"
-		BorderBrush="Black"
-		Margin="10" 
-		CornerRadius="5">
-            <TextBlock Text="Circular Chart Header"
-                       Margin="5" 
-                       HorizontalTextAlignment="Center"
-                       FontFamily="Verdana"
-		       FontSize="14" 
-                       Foreground="Blue"/>
+        <Border 
+            BorderThickness="0.5"
+            BorderBrush="Black"
+            Margin="10"
+            CornerRadius="5">
+            <TextBlock 
+               Text="Circular Chart Header"
+               Margin="5"
+               HorizontalTextAlignment="Center"
+               FontFamily="Verdana"
+               FontSize="14"
+               Foreground="Blue"/>
         </Border>
     </chart:SfCircularChart.Header>
-
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -124,6 +127,7 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
+
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
 . . .
 Border border = new Border()
@@ -145,6 +149,7 @@ TextBlock textBlock = new TextBlock()
 };
 
 border.Child = textBlock;
+
 chart.Header = border;
 
 {% endhighlight %}

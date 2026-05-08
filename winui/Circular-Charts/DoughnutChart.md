@@ -16,13 +16,12 @@ documentation: ug
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
     <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                              XBindingPath="Product" 
-                              YBindingPath="SalesRate" />
+        <chart:DoughnutSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Product" 
+            YBindingPath="SalesRate"/>
     </chart:SfCircularChart.Series>
-
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -52,24 +51,23 @@ Circular chart provides support add the multiple doughnut series in a single cha
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
     <chart:SfCircularChart.Series>
-         <chart:SfCircularChart.Series>
-                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                         	      XBindingPath="Product" 
-                                      YBindingPath="SalesRate1">
-                </chart:DoughnutSeries>
-                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                                      XBindingPath="Product"
-				      YBindingPath="SalesRate2">
-                </chart:DoughnutSeries>
-                <chart:DoughnutSeries ItemsSource="{Binding Data}" 
-                                      XBindingPath="Product" 
-                                      YBindingPath="SalesRate3">
-                </chart:DoughnutSeries>
-            </chart:SfCircularChart.Series>
+        <chart:DoughnutSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Product" 
+            YBindingPath="SalesRate1">
+        </chart:DoughnutSeries>
+        <chart:DoughnutSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Product"
+            YBindingPath="SalesRate2">
+        </chart:DoughnutSeries>
+        <chart:DoughnutSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Product" 
+            YBindingPath="SalesRate3">
+        </chart:DoughnutSeries>
     </chart:SfCircularChart.Series>
-
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -109,13 +107,13 @@ The [InnerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
     <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries ItemsSource="{Binding Data}" InnerRadius="0.7"
-                              XBindingPath="Product" 
-                              YBindingPath="SalesRate" />
+        <chart:DoughnutSeries 
+            ItemsSource="{Binding Data}" 
+            InnerRadius="0.7"
+            XBindingPath="Product" 
+            YBindingPath="SalesRate"/>
     </chart:SfCircularChart.Series>
-
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -146,14 +144,14 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-
     <chart:SfCircularChart.Series>
-        <chart:DoughnutSeries StartAngle="180" EndAngle="360"
-                              ItemsSource="{Binding Data}"
-                              XBindingPath="Product" 
-                              YBindingPath="SalesRate" />
+        <chart:DoughnutSeries 
+            StartAngle="180" 
+            EndAngle="360"
+            ItemsSource="{Binding Data}"
+            XBindingPath="Product" 
+            YBindingPath="SalesRate"/>
     </chart:SfCircularChart.Series>
-
 </chart:SfCircularChart>
     
 {% endhighlight %}
