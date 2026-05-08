@@ -23,25 +23,21 @@ This section explains how to populate the [WinUI Polar Chart](https://www.syncfu
 
 {% highlight xaml %}
 
-<Window
-   x:Class="ChartDemo.MainWindow"
+<Window            
+    x:Class="ChartDemo.MainWindow"
    ...
    xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
-
-<chart:SfPolarChart/>
-
- </Window>  
+    <chart:SfPolarChart/>
+</Window>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-
 ...
 public sealed partial class MainWindow : Window
 {
-    
     public MainWindow()
     {
         this.InitializeComponent();
@@ -123,7 +119,6 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
             <model:ChartViewModel/>
         </chart:SfPolarChart.DataContext>
     </chart:SfPolarChart>
-
 </Window>
 
 {% endhighlight %}
@@ -148,7 +143,7 @@ chart.DataContext = viewModel;
 
 <chart:SfPolarChart> 
       <chart:SfPolarChart.PrimaryAxis> 
-           <chart:CategoryAxis /> 
+           <chart:CategoryAxis/> 
       </chart:SfPolarChart.PrimaryAxis> 
       <chart:SfPolarChart.SecondaryAxis> 
            <chart:NumericalAxis/> 
@@ -161,8 +156,10 @@ chart.DataContext = viewModel;
 {% highlight C# %} 
 
 SfPolarChart chart = new SfPolarChart();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.PrimaryAxis = primaryAxis;    
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 ...
@@ -182,16 +179,17 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    <chart:SfPolarChart.PrimaryAxis> 
-        <chart:CategoryAxis /> 
-    </chart:SfPolarChart.PrimaryAxis> 
-    <chart:SfPolarChart.SecondaryAxis> 
-        <chart:NumericalAxis/> 
+    <chart:SfPolarChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfPolarChart.PrimaryAxis>
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction" 
-                               YBindingPath="Tree"/>
+        <chart:PolarAreaSeries 
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction" 
+            YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
     ...
 </chart:SfPolarChart>
@@ -206,7 +204,8 @@ ChartViewModel viewModel = new ChartViewModel();
 chart.DataContext = viewModel;
 
 CategoryAxis primaryAxis = new CategoryAxis();
-chart.PrimaryAxis = primaryAxis;    
+chart.PrimaryAxis = primaryAxis;
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
 
@@ -214,13 +213,13 @@ PolarAreaSeries series = new PolarAreaSeries();
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 
-series.SetBinding(
-    ChartSeriesBase.ItemsSourceProperty, 
-    new Binding() 
-    { Path = new PropertyPath("PlantDetails") });
+series.SetBinding(ChartSeries.ItemsSourceProperty, new Binding()
+{
+    Path = new PropertyPath("PlantDetails")
+});
 
 chart.Series.Add(series);
-. . .
+...
 
 {% endhighlight %}
 
@@ -260,10 +259,11 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfPolarChart>
     ...
-    <chart:PolarAreaSeries ShowDataLabels="True"
-                           ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction" 
-                           YBindingPath="Tree">
+    <chart:PolarAreaSeries 
+        ShowDataLabels="True"
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree">
     </chart:PolarAreaSeries>
 </chart:SfPolarChart>
 
@@ -272,6 +272,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight C# %}
 
 SfPolarChart chart = new SfPolarChart();
+
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 ...
@@ -301,7 +302,7 @@ The legend provides information about the data point displayed in the polar char
 {% highlight C# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . .
+...
 chart.Legend = new ChartLegend();
 ...
 
@@ -316,11 +317,12 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    . . .
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction" 
-                           YBindingPath="Tree"
-                           Label="Tree"/>
+    ...
+    <chart:PolarAreaSeries 
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree"
+        Label="Tree"/>
     ...
 </chart:SfPolarChart>
 
@@ -351,30 +353,36 @@ The following code example gives you the complete code of above configurations.
     <chart:SfPolarChart.DataContext>
         <model:ChartViewModel/>
     </chart:SfPolarChart.DataContext>
-    <chart:SfPolarChart.PrimaryAxis> 
-           <chart:CategoryAxis /> 
-      </chart:SfPolarChart.PrimaryAxis> 
-      <chart:SfPolarChart.SecondaryAxis> 
-           <chart:NumericalAxis/> 
-      </chart:SfPolarChart.SecondaryAxis>
+    
+    <chart:SfPolarChart.PrimaryAxis>
+        <chart:CategoryAxis/>
+    </chart:SfPolarChart.PrimaryAxis>
+    
+    <chart:SfPolarChart.SecondaryAxis>
+        <chart:NumericalAxis/>
+    </chart:SfPolarChart.SecondaryAxis>
+    
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
+    
     <chart:SfPolarChart.Series>
-        <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                               XBindingPath="Direction"
-			       YBindingPath="Tree"
-                               Label="Tree"
-			       ShowDataLabels="True"
-                               LegendIcon="Pentagon">
+        <chart:PolarAreaSeries
+            ItemsSource="{Binding PlantDetails}" 
+            XBindingPath="Direction"
+	        YBindingPath="Tree"
+            Label="Tree"
+	        ShowDataLabels="True"
+            LegendIcon="Pentagon">
             <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings Foreground="White"
-					      FontSize="12" 
-                                              FontFamily="Calibri"
-					      BorderBrush="White" 
-                                              BorderThickness="1"
-					      Margin="1"/>
-                </chart:PolarAreaSeries.DataLabelSettings>
+                <chart:PolarDataLabelSettings 
+                    Foreground="White"
+			        FontSize="12"
+                    FontFamily="Calibri"
+                    BorderBrush="White"
+                    BorderThickness="1"
+			        Margin="1"/>
+            </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
     </chart:SfPolarChart.Series>
 </chart:SfPolarChart>
@@ -384,20 +392,21 @@ The following code example gives you the complete code of above configurations.
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-. . .
+...
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
     {
         SfPolarChart chart = new SfPolarChart();
-
         chart.Header = "Polar Chart";
         chart.Legend = new ChartLegend();
+
         ChartViewModel viewModel = new ChartViewModel();
         chart.DataContext = viewModel;
-        
+
         CategoryAxis primaryAxis = new CategoryAxis();
-        chart.PrimaryAxis = primaryAxis;    
+        chart.PrimaryAxis = primaryAxis;
+
         NumericalAxis secondaryAxis = new NumericalAxis();
         chart.SecondaryAxis = secondaryAxis;
 
@@ -407,8 +416,8 @@ public sealed partial class MainWindow : Window
         series.Label = "Tree";
         series.LegendIcon = ChartLegendIcon.Pentagon;
         series.ShowDataLabels = true;
-        series.DataLabelSettings = new PolarDataLabelSettings() 
-        { 
+        series.DataLabelSettings = new PolarDataLabelSettings()
+        {
             Foreground = new SolidColorBrush(Colors.White),
             BorderBrush = new SolidColorBrush(Colors.White),
             BorderThickness = new Thickness(1),
@@ -417,10 +426,10 @@ public sealed partial class MainWindow : Window
             FontSize = 12
         };
 
-        series.SetBinding(
-            ChartSeriesBase.ItemsSourceProperty, 
-            new Binding() 
-            { Path = new PropertyPath("PlantDetails") });
+        series.SetBinding(ChartSeries.ItemsSourceProperty, new Binding()
+        { 
+            Path = new PropertyPath("PlantDetails") 
+        });
 
         chart.Series.Add(series);
         this.Content = chart;
@@ -435,6 +444,6 @@ The following chart is created as a result of the previous codes.
 
 ![Getting Started WinUI Chart](Getting-Started_Images/WinUI_Chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PolarChartGettingStarted)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/PolarChartGettingStarted).
 
 N> You can also explore our [WinUI Polar Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Polar%20Charts) that shows how to easily configure with built-in support for creating stunning visual effects.
