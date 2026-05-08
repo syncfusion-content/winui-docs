@@ -62,7 +62,7 @@ To customize the content of data labels, need to define [DataLabelSettings](http
         ShowDataLabels="True"
         ItemsSource="{Binding PlantDetails}" 
         XBindingPath="Direction"
-        YBindingPath="Tree">
+        YBindingPath="Tree">        
         <chart:PolarAreaSeries.DataLabelSettings>
             <chart:PolarDataLabelSettings Context="Percentage"/>
         </chart:PolarAreaSeries.DataLabelSettings>
@@ -139,6 +139,7 @@ SfPolarChart chart = new SfPolarChart();
 ...
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
     Foreground = new SolidColorBrush(Colors.White),
@@ -207,6 +208,7 @@ SfPolarChart chart = new SfPolarChart();
 ...
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
     Context = LabelContext.YValue,
@@ -248,6 +250,7 @@ SfPolarChart chart = new SfPolarChart();
 . . . 
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
     Format = "#.0",
@@ -290,6 +293,7 @@ SfPolarChart chart = new SfPolarChart();
 . . . 
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
     Rotation = -45,
@@ -332,6 +336,7 @@ SfPolarChart chart = new SfPolarChart();
 ... 
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
     UseSeriesPalette = true,
@@ -383,6 +388,7 @@ SfPolarChart chart = new SfPolarChart();
 ... 
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
     ShowConnectorLine = true,

@@ -25,8 +25,8 @@ This section explains how to populate the [WinUI Polar Chart](https://www.syncfu
 
 <Window            
     x:Class="ChartDemo.MainWindow"
-   ...
-   xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
+    ...
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     <chart:SfPolarChart/>
 </Window>
  
@@ -145,6 +145,7 @@ chart.DataContext = viewModel;
       <chart:SfPolarChart.PrimaryAxis> 
            <chart:CategoryAxis/> 
       </chart:SfPolarChart.PrimaryAxis> 
+
       <chart:SfPolarChart.SecondaryAxis> 
            <chart:NumericalAxis/> 
       </chart:SfPolarChart.SecondaryAxis>
@@ -182,9 +183,11 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
     <chart:SfPolarChart.PrimaryAxis>
         <chart:CategoryAxis/>
     </chart:SfPolarChart.PrimaryAxis>
+
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
+    
     <chart:SfPolarChart.Series>
         <chart:PolarAreaSeries 
             ItemsSource="{Binding PlantDetails}" 

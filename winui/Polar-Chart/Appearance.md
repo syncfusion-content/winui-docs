@@ -159,6 +159,7 @@ Gradient for the polar chart can be set by using the [PaletteBrushes](https://he
 SfPolarChart chart = new SfPolarChart();
 ...
 List<Brush> customBrushes = new List<Brush>();
+
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 GradientStop stop1 = new GradientStop()
 { 
