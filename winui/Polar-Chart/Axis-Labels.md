@@ -55,20 +55,18 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-            
     <chart:SfPolarChart.PrimaryAxis>
         <chart:CategoryAxis/>
     </chart:SfPolarChart.PrimaryAxis>
-                
+
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis>
             <chart:NumericalAxis.LabelStyle>
-                <chart:LabelStyle LabelFormat="0.0" />
+                <chart:LabelStyle LabelFormat="0.0"/>
             </chart:NumericalAxis.LabelStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
     ...
-
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -76,9 +74,7 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-
 chart.PrimaryAxis = new CategoryAxis();
-
 chart.SecondaryAxis = new NumericalAxis()
 {
     LabelStyle = new LabelStyle() { LabelFormat= "0.0" }
@@ -102,20 +98,23 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <Border Background="Blue"
-		    CornerRadius="5"
-		    BorderThickness="1">
-                <TextBlock Text="{Binding Content}"
-			   Foreground="White"
-			   FontStyle="Italic" 
-			   FontSize="10"
-			   FontWeight="Bold" 
-			   Margin="3"/>
+            <Border
+                Background="Blue"
+                CornerRadius="5"
+                BorderThickness="1">
+                <TextBlock
+                    Text="{Binding Content}"
+	                Foreground="White"
+	                FontStyle="Italic" 
+	                FontSize="10"
+	                FontWeight="Bold" 
+	                Margin="3"/>
             </Border>
         </DataTemplate>
     </Grid.Resources>
+    
     <chart:SfPolarChart x:Name="chart">
-    ...
+        ...
         <chart:SfPolarChart.PrimaryAxis>
             <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
         </chart:SfPolarChart.PrimaryAxis>
@@ -123,7 +122,7 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
         <chart:SfPolarChart.SecondaryAxis>
             <chart:NumericalAxis/>
         </chart:SfPolarChart.SecondaryAxis>
-    ...
+        ...
     </chart:SfPolarChart>
 </Grid>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data labels in WinUI Chart control | Syncfusion
+title: Data labels in WinUI Chart (SfPolarChart) | Syncfusion
 description: This section explains about how to configure the data labels and its features in Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
@@ -26,12 +26,13 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfPolarChart>
     ...
-    <chart:PolarAreaSeries ShowDataLabels="True"
-                           ItemsSource="{Binding Data}"  
-                           XBindingPath="Product" 
-                           YBindingPath="SalesRate"/>
+    <chart:PolarAreaSeries
+        ShowDataLabels="True"
+        ItemsSource="{Binding Data}"  
+        XBindingPath="Product" 
+        YBindingPath="SalesRate"/>
     ...
-</chart:SfPolarChart>                 
+</chart:SfPolarChart>              
 
 {% endhighlight %}
 
@@ -57,14 +58,14 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    <chart:PolarAreaSeries ShowDataLabels="True"
-                           ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction"
-                           YBindingPath="Tree">
-    <chart:PolarAreaSeries.DataLabelSettings>
-        <chart:PolarDataLabelSettings Context="Percentage"/>
-    </chart:PolarAreaSeries.DataLabelSettings>
-
+    <chart:PolarAreaSeries
+        ShowDataLabels="True"
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction"
+        YBindingPath="Tree">        
+        <chart:PolarAreaSeries.DataLabelSettings>
+            <chart:PolarDataLabelSettings Context="Percentage"/>
+        </chart:PolarAreaSeries.DataLabelSettings>
     </chart:PolarAreaSeries>
 </chart:SfPolarChart>
 
@@ -76,7 +77,12 @@ SfPolarChart chart = new SfPolarChart();
 ...
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
-series.DataLabelSettings = new PolarDataLabelSettings() {Context = LabelContext.Percentage };
+
+series.DataLabelSettings = new PolarDataLabelSettings()
+{
+    Context = LabelContext.Percentage
+};
+
 ...
 
 {% endhighlight %}
@@ -104,21 +110,23 @@ The following properties are used to customize the data label.
 
 <chart:SfPolarChart>
     ...
-    <chart:PolarAreaSeries ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction" 
-                           YBindingPath="Tree"
-                           ShowDataLabels="True">
-                <chart:PolarAreaSeries.DataLabelSettings>
-                    <chart:PolarDataLabelSettings  Foreground="White"
-						   FontSize="12" 
-						   BorderBrush="White"                             
-						   BorderThickness="1" 
-						   Margin="1" 
-						   FontStyle="Italic"
-						   FontFamily="Calibri"
-						   Background="#1E88E5">
-                    </chart:PolarDataLabelSettings>
-                </chart:PolarAreaSeries.DataLabelSettings>
+    <chart:PolarAreaSeries
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree"
+        ShowDataLabels="True">
+        <chart:PolarAreaSeries.DataLabelSettings>
+            <chart:PolarDataLabelSettings 
+                Foreground="White"
+				FontSize="12" 
+				BorderBrush="White"
+				BorderThickness="1" 
+				Margin="1" 
+				FontStyle="Italic"
+				FontFamily="Calibri"
+				Background="#1E88E5">
+            </chart:PolarDataLabelSettings>
+        </chart:PolarAreaSeries.DataLabelSettings>
     </chart:PolarAreaSeries>
     ...
 </chart:SfPolarChart>
@@ -131,8 +139,9 @@ SfPolarChart chart = new SfPolarChart();
 ...
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
-series.DataLabelSettings = new PolarDataLabelSettings() 
-{ 
+
+series.DataLabelSettings = new PolarDataLabelSettings()
+{
     Foreground = new SolidColorBrush(Colors.White),
     BorderBrush = new SolidColorBrush(Colors.White),
     Background = new SolidColorBrush(Color.FromArgb(255, 30, 136, 229)),
@@ -161,32 +170,33 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 <Grid x:Name="grid">
     <Grid.Resources>
         <DataTemplate x:Key="datalabelTemplate">
-                <Grid>
-                    <Ellipse Width="30"
-                             Height="30"
-                             HorizontalAlignment="Left"
-                             VerticalAlignment="Top"
-                             Fill="White"
-                             Stroke="#0078DE"
-                             StrokeThickness="2" />
-                    <TextBlock HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               FontFamily="Segoe UI"
-                               FontSize="12"
-                               Foreground="#FF585858"
-                               Text="{Binding}"
-                               TextWrapping="Wrap" />
-                </Grid>
+            <Grid>
+                <Ellipse 
+                    Width="30"
+                    Height="30"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Fill="White"
+                    Stroke="#0078DE"
+                    StrokeThickness="2"/>
+                <TextBlock 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontFamily="Segoe UI"
+                    FontSize="12"
+                    Foreground="#FF585858"
+                    Text="{Binding}"
+                    TextWrapping="Wrap"/>
+            </Grid>
         </DataTemplate>
     </Grid.Resources>
+
     <chart:SfPolarChart x:Name="chart">
-    ...
         <chart:PolarAreaSeries ShowDataLabels="True">
             <chart:PolarAreaSeries.DataLabelSettings>
-                <chart:PolarDataLabelSettings Context="YValue" ContentTemplate="{StaticResource datalabelTemplate}" />
+                <chart:PolarDataLabelSettings Context="YValue" ContentTemplate="{StaticResource datalabelTemplate}"/>
             </chart:PolarAreaSeries.DataLabelSettings>
         </chart:PolarAreaSeries>
-    ...
     </chart:SfPolarChart>
 </Grid>
 
@@ -262,11 +272,12 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-...
-    <chart:PolarLineSeries ShowDataLabels="True"  
-                           ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction" 
-                           YBindingPath="Tree">
+    ...
+    <chart:PolarLineSeries
+        ShowDataLabels="True"  
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree">
         <chart:PolarLineSeries.DataLabelSettings>
             <chart:PolarDataLabelSettings Rotation="-45"/>
         </chart:PolarLineSeries.DataLabelSettings>
@@ -304,11 +315,12 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-...
-    <chart:PolarLineSeries ShowDataLabels="True"  
-                           ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction" 
-                           YBindingPath="Tree">
+    ...
+    <chart:PolarLineSeries
+        ShowDataLabels="True"  
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree">
         <chart:PolarLineSeries.DataLabelSettings>
             <chart:PolarDataLabelSettings UseSeriesPalette="True"/>
         </chart:PolarLineSeries.DataLabelSettings>
@@ -321,9 +333,10 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . . 
+... 
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
     UseSeriesPalette = true,
@@ -351,15 +364,17 @@ The connector line can be customized using the following properties:
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-...
-    <chart:PolarLineSeries ShowDataLabels="True"  
-                           ItemsSource="{Binding PlantDetails}" 
-                           XBindingPath="Direction" 
-                           YBindingPath="Tree">
+    ...
+    <chart:PolarLineSeries
+        ShowDataLabels="True"  
+        ItemsSource="{Binding PlantDetails}" 
+        XBindingPath="Direction" 
+        YBindingPath="Tree">
         <chart:PolarLineSeries.DataLabelSettings>
-            <chart:PolarDataLabelSettings ShowConnectorLine="True" 
-					  ConnectorHeight="25" 
-                                          ConnectorRotation="45"/>
+            <chart:PolarDataLabelSettings
+                ShowConnectorLine="True" 
+			    ConnectorHeight="25" 
+                ConnectorRotation="45"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
     ...
@@ -370,9 +385,10 @@ The connector line can be customized using the following properties:
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . . 
+... 
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
+
 series.DataLabelSettings = new PolarDataLabelSettings()
 {
     ShowConnectorLine = true,
