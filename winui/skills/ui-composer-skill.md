@@ -141,7 +141,7 @@ After installing WinUI UI Composer with APM, the relevant agent and skill files 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `winui-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the `syncfusion-winui-ui-composer` agent from the **Agent dropdown**.
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
@@ -156,7 +156,7 @@ Create a CMS Admin Dashboard UI featuring a collapsible NavigationView in a left
 {% endpromptcard %}
 {% endpromptcards %}
 
-Generated code follows WinUI best practices with well-structured XAML markup, proper data binding patterns, strong C# typing, and built-in security measures such as input validation and avoidance of hardcoded secrets.
+Generated code follows WinUI best practices with well-structured XAML markup, proper data binding patterns, strong C# typing, and built-in security measures such as input validation and avoidance of hardcore secrets.
 
 ## Best Practices
 
