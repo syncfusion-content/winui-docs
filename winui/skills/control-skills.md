@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WinUI Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WinUI control guidance.
+description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WinUI component guidance.
 control: Skills
 platform: WinUI
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This guide introduces **Syncfusion WinUI Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate WinUI code using official APIs, patterns, and theming guidelines.
 
-These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate control usage patterns, API structures, supported features, and project‑specific configuration.
+These skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate component usage patterns, API structures, supported features, and project‑specific configuration.
 
 ## Prerequisites
 
@@ -25,10 +25,10 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI Agent S
 
 ## Key Benefits
 
-**Control Usage & API Knowledge**
-- Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI controls
+**Component Usage & API Knowledge**
+- Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI components
 - Component‑specific properties, events, and required feature modules
-- Guidance for XAML markup patterns and control initialization in WinUI applications
+- Guidance for XAML markup patterns and component initialization in WinUI applications
 
 **Patterns & Best Practices**
 - Recommended API structures and composition patterns for WinUI applications
@@ -40,16 +40,16 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI Agent S
 **Design‑System Guidance**
 - WinUI theme support including Fluent Light and Fluent Dark variants
 - ResourceDictionary and styling patterns for WinUI applications
-- Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI controls
+- Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI components
 - DPI awareness and high-resolution display support for Windows desktop
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI controls skills](https://github.com/syncfusion/winui-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion/).
+Install [Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI components skills](https://github.com/syncfusion/winui-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://www.skills.sh/syncfusion/).
 
 ### Install all skills
 
-Use the following command to install all control skills at once in the `.agents/skills` directory:
+Use the following command to install all component skills at once in the `.agents/skills` directory:
 
 {% tabs %}
 {% highlight bash tabtitle="NPM" %}
@@ -127,13 +127,13 @@ To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 
 ## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
 
-1. **Reads relevant Skill files based on queries**, retrieving control usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
+1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
 2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
 
-   - Using the required NuGet packages and assemblies for each control.
-   - Injecting applicable control features (for example, sorting, filtering, and other feature configurations).
+   - Using the required NuGet packages and assemblies for each component.
+   - Injecting applicable component features (for example, sorting, filtering, and other feature configurations).
    - Adding correct theme and ResourceDictionary configurations for WinUI.
-   - Proper event wiring and binding setup for XAML controls.
+   - Proper event wiring and binding setup for XAML components.
 3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns specific to WinUI.
 
 ### Using the AI Assistant
@@ -142,7 +142,7 @@ Once skills are installed, the assistant can be used to generate and update Sync
 
 - "Add a DataGrid with grouping, sorting, and filtering features."
 - "Create a Bar chart with data points, header, legend and data labels."
-- "Apply the Fluent Dark theme to all Syncfusion WinUI controls."
+- "Apply the Fluent Dark theme to all Syncfusion WinUI components."
 - "Configure a ComboBox with ItemsSource binding and selection handling."
 
 ## Skills CLI Commands
