@@ -19,7 +19,6 @@ These skills eliminate common issues with generic AI suggestions by grounding th
 Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI Agent Skills, ensure the following:
 
 - Required [Node.js](https://nodejs.org/en/) version >= 16
-- Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version >= 6 for WinUI development
 - WinUI application (existing or new); see [Overview](https://help.syncfusion.com/winui/overview)
 - A supported AI agent or IDE that integrates with the Skills CLI (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, etc.)
 
@@ -27,21 +26,19 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI Agent S
 
 **Component Usage & API Knowledge**
 - Accurate guidance for adding and configuring Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI components
-- Component‑specific properties, events, and required feature modules
-- Guidance for XAML markup patterns and component initialization in WinUI applications
+- Component‑specific props, events, and required feature modules
+- Guidance for injecting services/modules (where applicable)
 
 **Patterns & Best Practices**
-- Recommended API structures and composition patterns for WinUI applications
-- XAML binding and data binding approaches using INotifyPropertyChanged and ObservableCollection
-- Feature‑injection workflows (for example, grouping, sorting, filtering)
-- Event handling and command patterns aligned with WinUI standards
+- Recommended API structures and composition patterns
+- State‑handling approaches for common scenarios
+- Feature‑injection workflows (for example, paging, sorting, filtering)
 - All guidance is authored directly in Skill files and does not rely on external documentation fetches
 
 **Design‑System Guidance**
-- WinUI theme support including Fluent Light and Fluent Dark variants
-- ResourceDictionary and styling patterns for WinUI applications
+- Light and dark themes
+- Styling and icon usage patterns
 - Consistent design alignment across Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI components
-- DPI awareness and high-resolution display support for Windows desktop
 
 ## Installation
 
@@ -130,20 +127,18 @@ To learn more about the Skills CLI, refer [here](https://www.skills.sh/docs).
 1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from installed Syncfusion<sup style="font-size:70%">&reg;</sup> Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
 2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
 
-   - Using the required NuGet packages and assemblies for each component.
-   - Injecting applicable component features (for example, sorting, filtering, and other feature configurations).
-   - Adding correct theme and ResourceDictionary configurations for WinUI.
-   - Proper event wiring and binding setup for XAML components.
-3. **Generates component‑accurate code**, avoiding invalid properties or unsupported patterns specific to WinUI.
+   - Using the required feature modules for each component.
+   - Injecting applicable component modules (for example, sorting, filtering, and other feature modules).
+   - Adding the correct theme and style imports.
+3. **Generates component‑accurate code**, avoiding invalid props or unsupported patterns.
 
 ### Using the AI Assistant
 
 Once skills are installed, the assistant can be used to generate and update Syncfusion<sup style="font-size:70%">&reg;</sup> WinUI code for tasks such as:
 
-- "Add a DataGrid with grouping, sorting, and filtering features."
-- "Create a Bar chart with data points, header, legend and data labels."
-- "Apply the Fluent Dark theme to all Syncfusion WinUI components."
-- "Configure a ComboBox with ItemsSource binding and selection handling."
+- “Add a DataGrid with grouping, sorting, and filtering.”
+- “Create a Cartesian chart with data, header, data labels and legend.”
+- “Apply the light theme."
 
 ## Skills CLI Commands
 
