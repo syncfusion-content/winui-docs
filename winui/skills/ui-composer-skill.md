@@ -141,7 +141,7 @@ After installing WinUI UI Composer with APM, the relevant agent and skill files 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the `syncfusion-winui-ui-composer` agent from the **Agent dropdown**.
+2. In the chat panel, select the WinUI UI composer agent from the **Agent dropdown**.
 
 ![Set Agent](images/UI-Composer-Agent.png)
 
