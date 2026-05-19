@@ -43,9 +43,7 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -82,9 +80,7 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Context = LabelContext.Percentage 
@@ -144,9 +140,7 @@ The following properties are used to customize the data label:
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-
 . . .
-
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Foreground = new SolidColorBrush(Colors.White),
@@ -278,9 +272,7 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 {  
     Format = "#.000",
@@ -327,9 +319,7 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Rotation = 45,

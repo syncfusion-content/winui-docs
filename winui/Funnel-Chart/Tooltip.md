@@ -41,9 +41,7 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty,new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -171,9 +169,7 @@ Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-
-...
-
+. . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.LabelStyle = labelStyle;
@@ -260,9 +256,7 @@ chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
-
 . . .
-
 this.Content = chart;
         
 {% endhighlight %}

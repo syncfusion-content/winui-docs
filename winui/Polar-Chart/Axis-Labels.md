@@ -104,15 +104,15 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
                 BorderThickness="1">
                 <TextBlock
                     Text="{Binding Content}"
-	                Foreground="White"
-	                FontStyle="Italic" 
-	                FontSize="10"
-	                FontWeight="Bold" 
-	                Margin="3"/>
+                    Foreground="White"
+                    FontStyle="Italic" 
+                    FontSize="10"
+                    FontWeight="Bold" 
+                    Margin="3"/>
             </Border>
         </DataTemplate>
     </Grid.Resources>
-    
+
     <chart:SfPolarChart x:Name="chart">
         ...
         <chart:SfPolarChart.PrimaryAxis>

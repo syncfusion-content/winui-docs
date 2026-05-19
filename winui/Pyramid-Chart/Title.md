@@ -26,9 +26,7 @@ documentation: ug
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.Header = "The Food Comparison Pyramid";
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -52,7 +50,6 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
             BorderBrush="Black"
             Margin="10"
             CornerRadius="5">
-
             <TextBlock 
                 FontSize="14"
                 Text="The Food Comparison Pyramid"
@@ -134,9 +131,7 @@ public sealed partial class MainPage : Page
 
         chart.XBindingPath = "FoodName";
         chart.YBindingPath = "Calories";
-
         . . .
-
         this.Content = chart;
     }
 }
