@@ -12,5 +12,5 @@ keywords: fast charts in winui, fast charts, winui fast charts customization, sy
 
 Chart includes functionality for rendering the large number of data points with fast plotting and it supports 5 fast chart types. Each chart type is easily configurable with built-in support for creating high performance charts.
 
-* FastLine Series -  It is rendering by using a polyline segment.
+* FastLine Series -  It is rendering by using a `polyline segment`.
 * Fast Bitmap Series - It is rendering by using `WriteableBitmap`.

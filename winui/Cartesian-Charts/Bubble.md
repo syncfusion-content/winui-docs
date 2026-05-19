@@ -21,23 +21,23 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes> 
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:BubbleSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="XValue" 
-                        YBindingPath="YValue" 
-                        Size="Size" 
-                        MinimumRadius="5" 
-                        MaximumRadius="10"/>
-    ...
-<chart:SfCartesianChart>
+    <chart:BubbleSeries 
+        ItemsSource="{Binding Data}" 
+        XBindingPath="XValue" 
+        YBindingPath="YValue" 
+        Size="Size" 
+        MinimumRadius="5" 
+        MaximumRadius="10"/>
+    . . .
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
@@ -46,6 +46,7 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 . . .

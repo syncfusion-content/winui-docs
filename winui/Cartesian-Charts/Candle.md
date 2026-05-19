@@ -12,12 +12,12 @@ keywords: winui candle chart, candle chart customization winui, syncfusion winui
 
 Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart is made up of a series of rectangular bars, called candlesticks, that represent a specific time, typically one day. To render a candle chart, create an instance of [CandleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CandleSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
-To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
+To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
 
-ObservableCollection<Model> StockData = new ObservableCollection<Model>();
+public ObservableCollection<Model> StockData { get; set; } = new ObservableCollection<Model>();
 StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
 StockData.Add(new Model { Year = "2001", High = 50, Low = 35, Open = 45, Close = 40 });
 StockData.Add(new Model { Year = "2002", High = 40, Low = 30, Open = 37, Close = 40 });
@@ -40,22 +40,21 @@ Set ItemsSource to your data collection and map XBindingPath and Open/High/Low/C
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes> 
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:CandleSeries ItemsSource="{Binding StockData}"
-                        XBindingPath="Year"
-                        Open="Open"
-                        High="High"
-                        Low="Low"
-                        Close="Close"/>
-
+    <chart:CandleSeries 
+        ItemsSource="{Binding StockData}"                
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -98,24 +97,23 @@ Set [BullishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes>   
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:CandleSeries ItemsSource="{Binding StockData}"
-                        XBindingPath="Year"
-                        Open="Open"
-                        High="High"
-                        Low="Low"
-                        Close="Close"
-                        BullishBrush="Blue"
-                        BearishBrush="Orange"/>
-
+    <chart:CandleSeries 
+        ItemsSource="{Binding StockData}"
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"
+        BullishBrush="Blue"
+        BearishBrush="Orange"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -165,23 +163,22 @@ In Candle Series, the [EnableSolidCandle](https://help.syncfusion.com/cr/winui/S
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes>   
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:CandleSeries ItemsSource="{Binding StockData}"
-                        XBindingPath="Year"
-                        Open="Open"
-                        High="High"
-                        Low="Low"
-                        Close="Close"
-                        EnableSolidCandle="True"/>
-
+    <chart:CandleSeries 
+        ItemsSource="{Binding StockData}"
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"
+        EnableSolidCandle="True"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -225,23 +222,22 @@ The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes>   
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:CandleSeries ItemsSource="{Binding StockData}"
-                        XBindingPath="Year"
-                        Open="Open"
-                        High="High"
-                        Low="Low"
-                        Close="Close"
-                        SegmentWidth="0.4"/>
-
+    <chart:CandleSeries 
+        ItemsSource="{Binding StockData}"                
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"
+        SegmentWidth="0.4"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}

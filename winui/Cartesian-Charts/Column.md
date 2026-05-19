@@ -17,21 +17,20 @@ keywords: winui column chart, winui sfcartesianchart, winui column chart customi
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>   
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="XValue" 
-                            YBindingPath="YValue"/>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -41,6 +40,7 @@ keywords: winui column chart, winui sfcartesianchart, winui column chart customi
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -69,22 +69,21 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes> 
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="XValue" 
-                            YBindingPath="YValue" 
-                            SegmentSpacing="0.5"/>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue" 
+            SegmentSpacing="0.5"/>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -94,6 +93,7 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 

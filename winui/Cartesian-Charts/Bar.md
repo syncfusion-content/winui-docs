@@ -19,21 +19,20 @@ N> By default, [IsTransposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% highlight xaml %}
 
 <chart:SfCartesianChart IsTransposed="True">
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>   
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="XValue" 
-                            YBindingPath="YValue"/>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue"/>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -42,8 +41,10 @@ N> By default, [IsTransposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.IsTransposed = true;
+
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -65,29 +66,28 @@ this.Content = chart;
 
 ## Segment spacing
 
-The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property is used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to **100%** and **0%** of the available space, respectively.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart IsTransposed="True">
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes> 
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="XValue" 
-                            YBindingPath="YValue" 
-                            SegmentSpacing="0.5"/>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue" 
+            SegmentSpacing="0.5"/>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -96,8 +96,10 @@ The [SegmentSpacing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.IsTransposed = true;
+
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
