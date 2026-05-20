@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Syncfusion® WinUI UI Composer Skill for AI Assistants | Syncfusion®
-description: Install Syncfusion® WinUI UI Composer to generate production-ready WinUI controls from natural-language prompts.
+title: Syncfusion® WinUI UI Builder Skill for AI Assistants | Syncfusion®
+description: Install Syncfusion® WinUI UI Builder to generate production-ready WinUI controls from natural-language prompts.
 control: Skills
 platform: winui
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® WinUI UI Composer Skill for AI Assistants
+# Syncfusion® WinUI UI Builder Skill for AI Assistants
 
-**Syncfusion® WinUI UI Composer** is an AI-powered skill and companion agent that accelerates WinUI application development by transforming natural-language UI requirements into production-ready controls using Syncfusion® WinUI libraries. 
+**Syncfusion® WinUI UI Builder** is an AI-powered skill and companion agent that accelerates WinUI application development by transforming natural-language UI requirements into production-ready controls using Syncfusion® WinUI libraries. 
 
 Integrated with your AI-powered IDE, it leverages deep knowledge of **Syncfusion® controls** to deliver accurate and ready-to-use code.
-By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, WinUI UI Composer helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
+By combining intelligent code generation with best practices, accessibility standards, and design-system consistency, WinUI UI Builder helps you rapidly build scalable dashboards and user interfaces without leaving your development workflow.
 
 ## Prerequisites
 
-Before installing WinUI UI Composer, ensure the following:
+Before installing WinUI UI Builder, ensure the following:
 
 - Install [APM (Agent Package Manager)](https://microsoft.github.io/apm/getting-started/installation/#quick-install-recommended)
 - Required [.NET SDK](https://dotnet.microsoft.com/en-us/download) version ≥ 6
@@ -59,7 +59,7 @@ Before installing WinUI UI Composer, ensure the following:
 
 ## Installation
 
-Before installing WinUI UI Composer, ensure that APM (Agent Package Manager) is installed and available in your environment.
+Before installing WinUI UI Builder, ensure that APM (Agent Package Manager) is installed and available in your environment.
 
 ### Verify APM Installation
 
@@ -69,29 +69,29 @@ Run the following command to confirm APM is installed:
 apm --version
 ```
 
-### Install the Syncfusion® WinUI UI Composer package using APM
+### Install the Syncfusion® WinUI UI Builder package using APM
 
-Use the APM CLI to install the WinUI UI Composer skill for your preferred environment:
+Use the APM CLI to install the WinUI UI Builder skill for your preferred environment:
 
 {% tabs %}
 {% highlight bash tabtitle="Copilot" %}
 
-apm install syncfusion/winui-ui-composer -t copilot
+apm install syncfusion/winui-ui-builder -t copilot
 
 {% endhighlight %}
 {% highlight bash tabtitle="Cursor" %}
 
-apm install syncfusion/winui-ui-composer -t cursor
+apm install syncfusion/winui-ui-builder -t cursor
 
 {% endhighlight %}
 {% highlight bash tabtitle="Code Studio" %}
 
-apm install syncfusion/winui-ui-composer -t copilot
+apm install syncfusion/winui-ui-builder -t copilot
 
 {% endhighlight %}
 {% highlight bash tabtitle="Claude" %}
 
-apm install syncfusion/winui-ui-composer -t claude
+apm install syncfusion/winui-ui-builder -t claude
 
 {% endhighlight %}
 {% endtabs %}
@@ -103,9 +103,9 @@ After installation, the following artifacts are added to your project for the Gi
 
 Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targets/#detection-signals) for details about supported deployment targets.
 
-> For Syncfusion® Code Studio, use the Copilot command above to install the WinUI UI Composer.
+> For Syncfusion® Code Studio, use the Copilot command above to install the WinUI UI Builder.
 
-## How the Syncfusion® WinUI UI Composer Skill Works
+## How the Syncfusion® WinUI UI Builder Skill Works
 
 1. **Intent Analysis** — Parse the user's prompt to identify control types and high-level page/window layout intent.
 2. **Project Detection** — Automatically detects .NET framework version (net6.0+) and existing Syncfusion® WinUI configurations.
@@ -133,17 +133,17 @@ Key enforcement points:
 
 ## Using the AI Assistant
 
-After installing WinUI UI Composer with APM, the relevant agent and skill files are added to your project under:
+After installing WinUI UI Builder with APM, the relevant agent and skill files are added to your project under:
 
 - `.agent/skills/` (skill files)
-- `.github/agents/` (WinUI UI composer agent configuration, based on the selected target)
+- `.github/agents/` (WinUI UI builder agent configuration, based on the selected target)
 
 To start using the skill:
 
 1. Open your supported IDE.
-2. In the chat panel, select the WinUI UI composer agent from the **Agent dropdown**.
+2. In the chat panel, select the WinUI UI builder agent from the **Agent dropdown**.
 
-![Set Agent](images/UI-Composer-Agent.png)
+![Set Agent](images/UI-Builder-Agent.png)
 
 3. Start prompting the agent with a clear description of your UI requirements.
 
@@ -162,7 +162,7 @@ Generated code follows WinUI best practices with well-structured XAML markup, pr
 
 ## Best Practices
 
-Follow these guidelines to get the most out of UI Composer and ensure high-quality production-ready results:
+Follow these guidelines to get the most out of UI Builder and ensure high-quality production-ready results:
 
 - **Stay consistent** — Maintain consistent file organization, naming conventions (PascalCase for classes, camelCase for properties), and WinUI coding standards throughout your project.
 - **Use advanced AI models** — For best results, use **Claude Sonnet 4.6 or higher** capability models to produce better code quality and more accurate implementations.
