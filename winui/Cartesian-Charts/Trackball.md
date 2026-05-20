@@ -24,7 +24,7 @@ To add the trackball in the chart, create an instance [ChartTrackballBehavior](h
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior/>
     </chart:SfCartesianChart.TrackballBehavior>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
 chart.TrackballBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 
@@ -71,8 +71,9 @@ CategoryAxis primaryAxis = new CategoryAxis()
 {
     ShowTrackballLabel = true
 };
+
 chart.XAxes.Add(primaryAxis);
-...
+. . .
 
 {% endhighlight %}
 
@@ -115,7 +116,7 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.TrackballBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 
@@ -132,7 +133,7 @@ By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-. . .
+    . . .
     <chart:SfCartesianChart.Resources>
         <Style TargetType="Line" x:Key="lineStyle">
             <Setter Property="StrokeDashArray" Value="5,2"/>
@@ -144,7 +145,7 @@ By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior LineStyle="{StaticResource lineStyle}"/>
     </chart:SfCartesianChart.TrackballBehavior>
-. . .   
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -152,13 +153,14 @@ By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 ChartTrackballBehavior Trackball = new ChartTrackballBehavior()
 {
     LineStyle = chart.Resources["lineStyle"] as Style
 };
 
 chart.TrackballBehavior = Trackball;
-...
+. . .
 
 {% endhighlight %}
 
@@ -175,17 +177,16 @@ By default, the trackball symbol is displayed as ellipse. To change the default 
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-. . 
+    . . .
     <chart:SfCartesianChart.Resources>
-        <Style TargetType="chart:ChartTrackballControl" x:Key="trackballStyle">
+        <Style TargetType="chart:ChartTrackballControl" x:Key="trackballStyle">        
             <Setter Property="Background" Value="Red"></Setter>
         </Style>
     </chart:SfCartesianChart.Resources>
-    . . .
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior ChartTrackballStyle="{StaticResource trackballStyle}"/>
     </chart:SfCartesianChart.TrackballBehavior>
-. . .
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -238,7 +239,7 @@ CategoryAxis primaryAxis = new CategoryAxis()
     ShowTrackballLabel = true
 };
 chart.XAxes.Add(primaryAxis);
-...
+. . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
 chart.TrackballBehavior = behavior;
 . . .
@@ -268,26 +269,26 @@ The appearance of the axis label can be customized by using the [TrackballLabelT
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate">
-            <Border CornerRadius="4"
-		    BorderThickness="1"
-	            BorderBrush="Black"
-                    Background="LightGreen"
-		    Padding="6,0,6,6">
-                <TextBlock Foreground="Black"
-			   Text="{Binding ValueX}"
-			   FontSize="15"/>
+            <Border
+                CornerRadius="4"
+                BorderThickness="1"
+                BorderBrush="Black"
+                Background="LightGreen"
+                Padding="6,0,6,6">
+                <TextBlock 
+                    Foreground="Black"
+                    Text="{Binding ValueX}"
+                    FontSize="15"/>
             </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis ShowTrackballLabel="True" 
-                            TrackballLabelTemplate="{StaticResource labelTemplate}"/>
+        <chart:CategoryAxis ShowTrackballLabel="True" TrackballLabelTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.XAxes>
-. . .
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -301,6 +302,7 @@ NumericalAxis primaryAxis = new NumericalAxis()
     ShowTrackballLabel = true,
     TrackballLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
+
 chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}
@@ -323,18 +325,23 @@ The [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 <chart:SfCartesianChart>
     <chart:SfCartesianChart.Series>
-        <chart:SplineSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand" 
-                            YBindingPath="Year2010"/>
-        <chart:SplineSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand" 
-                            YBindingPath="Year2011" 
-                            ShowTrackballLabel="False"/>
-        <chart:SplineSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand" 
-                            YBindingPath="Year2012">
+        <chart:SplineSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand" 
+            YBindingPath="Year2010"/>
+        
+        <chart:SplineSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand" 
+            YBindingPath="Year2011" 
+            ShowTrackballLabel="False"/>
+        
+        <chart:SplineSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand" 
+            YBindingPath="Year2012"/>
     </chart:SfCartesianChart.Series>
-    ...
+    . . .
 </chart:SfCartesianChart>
  
 {% endhighlight %}
@@ -345,14 +352,16 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 SplineSeries series1 = new SplineSeries();
 chart.Series.Add(series1);
+
 SplineSeries series2 = new SplineSeries()
 {
     ShowTrackballLabel = false
 };
+
 chart.Series.Add(series2);
 SplineSeries series3 = new SplineSeries();
 chart.Series.Add(series3);
-...
+. . .
 
 {% endhighlight %}
 
@@ -369,12 +378,11 @@ The trackball label displayed over the series can be aligned using the [LabelHor
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior LabelHorizontalAlignment="Center" 
-                                      LabelVerticalAlignment="Center"/>
+        <chart:ChartTrackballBehavior LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center"/>
     </chart:SfCartesianChart.TrackballBehavior>
-. . .
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -411,7 +419,7 @@ When there is a multiple series, the trackball series label will be displayed on
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior DisplayMode="FloatAllPoints"/>
     </chart:SfCartesianChart.TrackballBehavior>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -426,7 +434,7 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.TrackballBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 
@@ -458,7 +466,7 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.TrackballBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 
@@ -478,7 +486,7 @@ chart.TrackballBehavior = behavior;
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior DisplayMode="GroupAllPoints"/>
     </chart:SfCartesianChart.TrackballBehavior>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -493,7 +501,7 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.TrackballBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 
@@ -512,31 +520,33 @@ The following screenshot illustrates the trackball label for multiple series, wh
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:ChartPointInfo">
-            <Border CornerRadius="5"
-            	    BorderThickness="1" 
-                    BorderBrush="Black"
-                    Background="LightGreen"
-                    Padding="5">
-            <TextBlock Foreground="Black" Text="{Binding ValueY}"/>
+            <Border 
+                CornerRadius="5"
+                BorderThickness="1" 
+                BorderBrush="Black"
+                Background="LightGreen"
+                Padding="5">
+                <TextBlock Foreground="Black" Text="{Binding ValueY}"/>
             </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .
     <chart:SfCartesianChart.TrackballBehavior>
-        <chart:ChartTrackballBehavior />
+        <chart:ChartTrackballBehavior/>
     </chart:SfCartesianChart.TrackballBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand" 
-                            YBindingPath="Year2010"
-                            TrackballLabelTemplate="{StaticResource labelTemplate}">
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand" 
+            YBindingPath="Year2010"
+            TrackballLabelTemplate="{StaticResource labelTemplate}">
         </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -557,7 +567,7 @@ ColumnSeries series = new ColumnSeries()
 };
 
 chart.Series.Add(series);
-...
+. . .
 
 {% endhighlight %}
 
@@ -579,7 +589,7 @@ Interior color of the series is applied to the series label by setting [UseSerie
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior UseSeriesPalette="True"/>
     </chart:SfCartesianChart.TrackballBehavior>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -590,11 +600,11 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 {
-     UseSeriesPalette = true
+    UseSeriesPalette = true
 };
 
 chart.TrackballBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 

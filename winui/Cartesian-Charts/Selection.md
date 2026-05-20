@@ -35,14 +35,15 @@ To enable the datapoint selection in chart, create an instance of [DataPointSele
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-    <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand"
-                        YBindingPath="Year2010">
-		<chart:ColumnSeries.SelectionBehavior>
-		    <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
-		</chart:ColumnSeries.SelectionBehavior>
-    </chart:ColumnSeries>				
+    . . .
+    <chart:ColumnSeries
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Demand"
+        YBindingPath="Year2010">
+        <chart:ColumnSeries.SelectionBehavior>
+            <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
+        </chart:ColumnSeries.SelectionBehavior>
+    </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -51,7 +52,6 @@ To enable the datapoint selection in chart, create an instance of [DataPointSele
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -83,15 +83,16 @@ The following code example demonstrates the spline series segment selection by c
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-    <chart:SplineSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand"
-                        YBindingPath="Year2010"
-                        ShowDataLabels="True">
-		<chart:SplineSeries.SelectionBehavior>
-		    <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
-		</chart:SplineSeries.SelectionBehavior>
-    </chart:SplineSeries>				
+    . . .
+    <chart:SplineSeries
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Demand"
+        YBindingPath="Year2010"
+        ShowDataLabels="True">
+        <chart:SplineSeries.SelectionBehavior>
+            <chart:DataPointSelectionBehavior SelectionBrush="Red"/>
+        </chart:SplineSeries.SelectionBehavior>
+    </chart:SplineSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -100,7 +101,6 @@ The following code example demonstrates the spline series segment selection by c
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-
 SplineSeries series = new SplineSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -131,11 +131,11 @@ Series selection is used to highlight a particular series when using multiple se
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.SelectionBehavior>
-	    <chart:SeriesSelectionBehavior SelectionBrush="Red"/>
-    </chart:SfCartesianChart.SelectionBehavior>	
-. . .
+        <chart:SeriesSelectionBehavior SelectionBrush="Red"/>
+    </chart:SfCartesianChart.SelectionBehavior>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -165,16 +165,16 @@ Cartesian chart provides support to select single or multiple segments/series by
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . . 
+    . . .
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010">
+        <chart:ColumnSeries                        
+            ItemsSource="{Binding Data}"  
+            XBindingPath="Demand"
+            YBindingPath="Year2010">
             <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="Red" 
-						  Type="Multiple"/>
+                <chart:DataPointSelectionBehavior SelectionBrush="Red" Type="Multiple"/>
             </chart:ColumnSeries.SelectionBehavior>
-        </chart:ColumnSeries>				
+        </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -184,7 +184,6 @@ Cartesian chart provides support to select single or multiple segments/series by
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -213,12 +212,11 @@ The following code snippet demonstrates multiple series selection.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.SelectionBehavior>
-        <chart:SeriesSelectionBehavior SelectionBrush="Red"
-                                       Type="Multiple"/>
+        <chart:SeriesSelectionBehavior SelectionBrush="Red" Type="Multiple"/>
     </chart:SfCartesianChart.SelectionBehavior>	
-. . .
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -251,16 +249,16 @@ Cartesian chart provides support to select a point programmatically on a chart u
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .   
+    . . .
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010">
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010">
             <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectedIndex="3" 
-						  SelectionBrush="Red"/>
+                <chart:DataPointSelectionBehavior SelectedIndex="3" SelectionBrush="Red"/>
             </chart:ColumnSeries.SelectionBehavior>
-        </chart:ColumnSeries>	
+        </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -270,7 +268,6 @@ Cartesian chart provides support to select a point programmatically on a chart u
 
 SfCartesianChart chart = new SfCartesianChart();
 . . .
-
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -299,12 +296,11 @@ Select a series programmatically on a chart using the [SelectedIndex](https://he
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.SelectionBehavior>
-        <chart:SeriesSelectionBehavior SelectionBrush="Red" 
-				       SelectedIndex="1"/>
-    </chart:SfCartesianChart.SelectionBehavior>	
-. . .
+        <chart:SeriesSelectionBehavior SelectionBrush="Red" SelectedIndex="1"/>
+    </chart:SfCartesianChart.SelectionBehavior>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -335,23 +331,25 @@ Cartesian chart provides support to select multiple points programmatically on a
 {% highlight xml %}
 
 <chart:SfCartesianChart>
-. . .
-    <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Demand"
-                        YBindingPath="Year2010">
-            <chart:ColumnSeries.SelectionBehavior>
-                <chart:DataPointSelectionBehavior SelectionBrush="BlueViolet" 
-						  Type="Multiple" 
-						  SelectedIndexes="{Binding SelectedIndexes}" />
-            </chart:ColumnSeries.SelectionBehavior>
+    . . .
+    <chart:ColumnSeries
+        ItemsSource="{Binding Data}" 
+        XBindingPath="Demand"
+        YBindingPath="Year2010">
+        <chart:ColumnSeries.SelectionBehavior>
+            <chart:DataPointSelectionBehavior 
+                SelectionBrush="BlueViolet" 
+                Type="Multiple" 
+                SelectedIndexes="{Binding SelectedIndexes}"/>
+        </chart:ColumnSeries.SelectionBehavior>
     </chart:ColumnSeries>
-</chart:SfCircularChart>
+</chart:SfCartesianChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularChart chart = new SfCircularChart();
+SfCartesianChart chart = new SfCartesianChart();
 . . .
 ColumnSeries series = new ColumnSeries()
 {

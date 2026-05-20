@@ -44,18 +44,18 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.Header>
-        <Border BorderThickness="2" 
-                BorderBrush="Black" 
-                Margin="10" 
-                CornerRadius="5">
-            <TextBlock FontSize="14"
-		       Text="Chart Area Header"
-		       Margin="5"/>
+        <Border 
+            BorderThickness="2" 
+            BorderBrush="Black" 
+            Margin="10" 
+            CornerRadius="5">
+            <TextBlock 
+                FontSize="14"		               
+                Text="Chart Area Header"
+                Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>
-            
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -99,18 +99,20 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" HorizontalHeaderAlignment="Left">
-. . .
+    . . .
     <chart:SfCartesianChart.Header>
-        <Border BorderThickness="2" 
-                BorderBrush="Black" 
-                Margin="0, 0, 0, 10" 
-                CornerRadius="5">
-            <TextBlock FontSize="14" 
-		       Text="Chart Area Header"
-	               Margin="5"/>
+        <Border 
+            BorderThickness="2" 
+            BorderBrush="Black" 
+            Margin="0, 0, 0, 10" 
+            CornerRadius="5">
+            <TextBlock 
+                FontSize="14"
+		        Text="Chart Area Header"
+	            Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>
-. . . 
+    . . . 
 </chart:SfCartesianChart>
 
 {% endhighlight %}
