@@ -24,7 +24,7 @@ To add the crosshair in the chart, create an instance [ChartCrosshairBehavior](h
     <chart:SfCartesianChart.CrosshairBehavior>
         <chart:ChartCrosshairBehavior/>
     </chart:SfCartesianChart.CrosshairBehavior>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 ChartCrosshairBehavior behavior = new ChartCrosshairBehavior();
 chart.CrosshairBehavior = behavior;
-...
+. . .
 
 {% endhighlight %}
 
@@ -64,6 +64,7 @@ To view the crosshair label in the particular axis, you have to enable the [Show
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 ChartCrosshairBehavior behavior = new ChartCrosshairBehavior();
 chart.CrosshairBehavior = behavior;
 
@@ -71,8 +72,9 @@ CategoryAxis primaryAxis = new CategoryAxis()
 {
     ShowTrackballLabel = true
 };
+
 chart.XAxes.Add(primaryAxis);
-...
+. . .
 
 {% endhighlight %}
 
@@ -189,7 +191,6 @@ The following code snippet demonstrates how to customize the horizontal axis lab
     <chart:ChartCrosshairBehavior HorizontalAxisLabelAlignment="Far"/>
 </chart:SfCartesianChart.CrosshairBehavior>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -245,7 +246,7 @@ The default appearance of the crosshair axis labels can be customized by using t
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="xaxesCrossHairTemplate" x:DataType="chart:ChartPointInfo">
             <Border Background="Orange" CornerRadius="4" BorderThickness="1" BorderBrush="Black">
@@ -260,7 +261,6 @@ The default appearance of the crosshair axis labels can be customized by using t
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     . . .
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis ShowTrackballLabel="True" CrosshairLabelTemplate="{StaticResource xaxesCrossHairTemplate}" />
     </chart:SfCartesianChart.XAxes>
@@ -270,9 +270,9 @@ The default appearance of the crosshair axis labels can be customized by using t
     </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.CrosshairBehavior>
-        <chart:ChartCrosshairBehavior />
+        <chart:ChartCrosshairBehavior/>
     </chart:SfCartesianChart.CrosshairBehavior>
-    ...
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -280,6 +280,7 @@ The default appearance of the crosshair axis labels can be customized by using t
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 ChartCrosshairBehavior behavior = new ChartCrosshairBehavior();
 chart.CrosshairBehavior = behavior;
 
@@ -296,7 +297,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
     CrosshairLabelTemplate = chart.Resources["yaxesCrossHairTemplate"] as DataTemplate
 };
 chart.XAxes.Add(secondaryAxis);
-...
+. . .
 
 {% endhighlight %}
 
