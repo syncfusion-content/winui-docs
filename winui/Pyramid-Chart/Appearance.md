@@ -39,9 +39,7 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -187,6 +185,7 @@ stop1 = new GradientStop()
     Offset = 1, 
     Color = Color.FromArgb(255, 250, 221, 125) 
 };
+
 stop2 = new GradientStop() 
 { 
     Offset = 0, 
@@ -195,9 +194,7 @@ stop2 = new GradientStop()
 
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-
-...
-
+. . .
 customBrushes.Add(gradientColor1);
 customBrushes.Add(gradientColor2);
 
@@ -209,9 +206,7 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
-
-. . .      
-      
+. . . 
 this.Content = chart;
 
 {% endhighlight %}

@@ -64,9 +64,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -117,9 +115,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-
 . . .
-
 this.Content = chart;
 
 
@@ -172,9 +168,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -227,9 +221,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
