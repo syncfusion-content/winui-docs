@@ -92,7 +92,8 @@ The title text content can be aligned horizontally to the left, center or right 
 
 <chart:SfPolarChart HorizontalHeaderAlignment="Left">
     <chart:SfPolarChart.Header>
-        <Border BorderThickness="2"
+        <Border 
+            BorderThickness="2"
             BorderBrush="Black"
             Background="LightBlue"
             Margin="10"

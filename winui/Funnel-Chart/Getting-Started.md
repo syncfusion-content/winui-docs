@@ -35,18 +35,14 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-
 . . .
-
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
     {
         this.InitializeComponent();
         SfFunnelChart chart = new SfFunnelChart();
-
         . . .
-        
         this.Content = chart;
     }
 }   
