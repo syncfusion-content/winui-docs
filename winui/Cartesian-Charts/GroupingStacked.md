@@ -17,35 +17,37 @@ Chart provides support to group the stacked similar series by using the [GroupNa
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
-    
-    <chart:StackedColumnSeries GroupName="Group1" 
-                               XBindingPath="Year" 
-                               YBindingPath="Quarter1" 
-                               ItemsSource="{Binding AnnualDetails}"/>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:StackedColumnSeries GroupName="Group1" 
-                               XBindingPath="Year" 
-                               YBindingPath="Quarter2"
-                               ItemsSource="{Binding AnnualDetails}"/>
+    <chart:StackedColumnSeries 
+        GroupName="Group1" 
+        XBindingPath="Year" 
+        YBindingPath="Quarter1" 
+        ItemsSource="{Binding AnnualDetails}"/>
 
-    <chart:StackedColumnSeries GroupName="Group2" 
-                               XBindingPath="Year"  
-                               YBindingPath="Quarter3" 
-                               ItemsSource="{Binding AnnualDetails}"/>
+    <chart:StackedColumnSeries 
+        GroupName="Group1" 
+        XBindingPath="Year" 
+        YBindingPath="Quarter2"
+        ItemsSource="{Binding AnnualDetails}"/>
 
-    <chart:StackedColumnSeries GroupName="Group2" 
-                               XBindingPath="Year"
-                               YBindingPath="Quarter4" 
-                               ItemsSource="{Binding AnnualDetails}"/>
+    <chart:StackedColumnSeries 
+        GroupName="Group2" 
+        XBindingPath="Year"  
+        YBindingPath="Quarter3" 
+        ItemsSource="{Binding AnnualDetails}"/>
 
+    <chart:StackedColumnSeries 
+        GroupName="Group2" 
+        XBindingPath="Year"
+        YBindingPath="Quarter4" 
+        ItemsSource="{Binding AnnualDetails}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -54,9 +56,11 @@ Chart provides support to group the stacked similar series by using the [GroupNa
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 

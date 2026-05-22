@@ -21,17 +21,19 @@ To define the tooltip in the series, set the [EnableTooltip](https://help.syncfu
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+    . . .
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
@@ -115,23 +117,24 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
             <Setter Property="Fill" Value="Gray"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -143,7 +146,7 @@ SfCartesianChart chart = new SfCartesianChart();
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
-...
+. . .
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
@@ -190,23 +193,24 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
             <Setter Property="FontStyle" Value="Italic"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -263,23 +267,24 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -327,23 +332,24 @@ Tooltip can be positioned vertically top, bottom, or center to the cursor positi
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior VerticalAlignment="Bottom"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -391,23 +397,24 @@ The tooltip can be positioned at a particular distance from the cursor by using 
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalOffset="40" VerticalOffset="40"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -457,24 +464,25 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500">
-. . .
+<chart:SfCartesianChart Height="388" Width="500">
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Duration="5000"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -520,23 +528,24 @@ Animation for tooltip can be set by using the [EnableAnimation](https://help.syn
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior EnableAnimation="True"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
-    </chart:SfCartesianChart.Series>
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2010" 
+            EnableTooltip="True"/>
 
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand"
+            YBindingPath="Year2011"
+            EnableTooltip="True"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -585,24 +594,27 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="tooltipTemplate1" x:DataType="chart:ChartSegment">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="{Binding Item.Category}"
-			   Foreground="Black"
-			   FontWeight="Medium" 
-			   FontSize="12"
-			   HorizontalAlignment="Center"
-			   VerticalAlignment="Center"/>
-                <TextBlock Text=" : "
-			   Foreground="Black"
-			   FontWeight="Medium"
-			   FontSize="12" 
-			   HorizontalAlignment="Center"
-			   VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding Item.Value}"
-			   Foreground="Black"
-			   FontWeight="Medium"
-			   FontSize="12"
-			   HorizontalAlignment="Center"
-			   VerticalAlignment="Center"/>
+                <TextBlock
+                    Text="{Binding Item.Category}"
+                    Foreground="Black"
+                    FontWeight="Medium" 
+                    FontSize="12"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+                <TextBlock 
+                    Text=" : "
+                    Foreground="Black"
+                    FontWeight="Medium"
+                    FontSize="12" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+                <TextBlock
+                    Text="{Binding Item.Value}"
+                    Foreground="Black"
+                    FontWeight="Medium"
+                    FontSize="12"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
         . . .
@@ -612,23 +624,23 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-. . .
+    . . .
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            TooltipTemplate="{StaticResource tooltipTemplate1}"
-                            XBindingPath="Demand"
-                            YBindingPath="Year2010" 
-                            EnableTooltip="True"/>
-                
+                    TooltipTemplate="{StaticResource tooltipTemplate1}"
+                    XBindingPath="Demand"
+                    YBindingPath="Year2010" 
+                    EnableTooltip="True"/>
+
         <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            TooltipTemplate="{StaticResource tooltipTemplate2}"
-                            XBindingPath="Demand"
-                            YBindingPath="Year2011"
-                            EnableTooltip="True"/>
+                    TooltipTemplate="{StaticResource tooltipTemplate2}"
+                    XBindingPath="Demand"
+                    YBindingPath="Year2011"
+                    EnableTooltip="True"/>
     </chart:SfCartesianChart.Series>
 
 </chart:SfCartesianChart>

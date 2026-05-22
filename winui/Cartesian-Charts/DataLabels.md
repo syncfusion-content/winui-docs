@@ -26,15 +26,16 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                        XBindingPath="Category"
-                        YBindingPath="Value" 
-                        ShowDataLabels="True">
-    </chart:ColumnSeries>
-</chart:SfCartesianChart.Series>
-
+    . . .
+    <chart:SfCartesianChart.Series>
+        <chart:ColumnSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Category"
+            YBindingPath="Value" 
+            ShowDataLabels="True">
+        </chart:ColumnSeries>
+    </chart:SfCartesianChart.Series>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -68,12 +69,12 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Context="YValue"/>
-    </chart:ColumnSeries.DataLabelSettings>
-</chart:ColumnSeries>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings Context="YValue"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
 
 </chart:SfCartesianChart>
 
@@ -113,21 +114,22 @@ The following properties are used to customize the data label.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-<chart:ColumnSeries.DataLabelSettings>
-    <chart:CartesianDataLabelSettings Position="Outer" 
-                                      Foreground="White" 
-                                      FontSize="11" 
-                                      FontFamily="Calibri" 
-                                      BorderBrush="Black" 
-                                      BorderThickness="1" 
-                                      Margin="1"
-                                      FontStyle="Italic" 
-                                      Background="#1E88E5" />
-</chart:ColumnSeries.DataLabelSettings>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings 
+                Position="Outer" 
+                Foreground="White" 
+                FontSize="11" 
+                FontFamily="Calibri" 
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Margin="1"
+                FontStyle="Italic" 
+                Background="#1E88E5"/>
+        </chart:ColumnSeries.DataLabelSettings>
 
-</chart:ColumnSeries>
+    </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -167,48 +169,54 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.Resources>
-    <DataTemplate x:Key="dataLabelTemplate">
-        <StackPanel Orientation="Vertical">
-            <Path Grid.Row="0" 
-                  Stretch="Uniform"
-		  Fill="#1E88E5"                              
-		  Width="15"
-		  Height="15"
-		  Margin="0,0,0,0"                              
-		  RenderTransformOrigin="0.5,0.5"
-		  Data="M22.5,15.8899993896484L37.5,                                
-		  30.8899993896484 7.5,
-		  30.8899993896484 22.5,
-		  15.8899993896484z">
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <TransformGroup.Children>
-                            <RotateTransform Angle="0" />
-                            <ScaleTransform ScaleX="1" ScaleY="1" />
-                        </TransformGroup.Children>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
-            <TextBlock Grid.Row="1"
-		       Text="{Binding}" 
-		       FontSize="11"
-		       Foreground="Black">
-            </TextBlock>
-        </StackPanel>
-    </DataTemplate>
-</chart:SfCartesianChart.Resources>
-. . . 
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Position="Outer"
-                                          Context="YValue"
-                                          ContentTemplate="{StaticResource dataLabelTemplate}"/>
-    </chart:ColumnSeries.DataLabelSettings>
-. . .
-</chart:ColumnSeries>
-
+    . . .
+    <chart:SfCartesianChart.Resources>
+        <DataTemplate x:Key="dataLabelTemplate">
+            <StackPanel Orientation="Vertical">                
+                <Path 
+                    Grid.Row="0" 
+                    Stretch="Uniform"
+                    Fill="#1E88E5"
+                    Width="15"
+                    Height="15"
+                    Margin="0,0,0,0"    
+                    RenderTransformOrigin="0.5,0.5"
+                    Data="M22.5,15.8899993896484L37.5,
+                          30.8899993896484 7.5,
+                          30.8899993896484 22.5,
+                          15.8899993896484z">
+                    
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0"/>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            </TransformGroup.Children>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                
+                <TextBlock 
+                   Grid.Row="1"
+                   Text="{Binding}" 
+                   FontSize="11"
+                   Foreground="Black">
+                </TextBlock>
+                
+            </StackPanel>
+        </DataTemplate>
+    </chart:SfCartesianChart.Resources>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings 
+                Position="Outer"
+                Context="YValue"
+                ContentTemplate="{StaticResource dataLabelTemplate}"/>
+        </chart:ColumnSeries.DataLabelSettings>
+        . . .
+    </chart:ColumnSeries>
+    
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -244,15 +252,16 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Background="Transparent" 
-                                          Position="Outer" 
-                                          Format="#.000" />
-    </chart:ColumnSeries.DataLabelSettings>
-
-</chart:ColumnSeries>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings
+                Background="Transparent" 
+                Position="Outer" 
+                Format="#.000"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
+    . . .
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -286,13 +295,12 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Rotation="45"
-                                          Position="Outer" />
-    </chart:ColumnSeries.DataLabelSettings>
-</chart:ColumnSeries>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings Rotation="45" Position="Outer"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -331,12 +339,12 @@ N> This behavior varies based on the chart series type.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings BarLabelAlignment="Middle"/>
-    </chart:ColumnSeries.DataLabelSettings>
-</chart:ColumnSeries>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings BarLabelAlignment="Middle"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -381,24 +389,23 @@ The connector line can be customized using the below properties.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-
-<chart:SfCartesianChart.Resources>
-    <Style TargetType="Path" x:Key="lineStyle">
-        <Setter Property="StrokeDashArray" Value="10,7,5"/>
-        <Setter Property="Stroke" Value="Black"/>
-    </Style>
-</chart:SfCartesianChart.Resources>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings Position="Outer" 
-                                          ConnectorHeight="40"
-                                          ShowConnectorLine="True"
-                                          ConnectorLineStyle="{StaticResource lineStyle}" />
-    </chart:ColumnSeries.DataLabelSettings>
-</chart:ColumnSeries>
-
+    . . .
+    <chart:SfCartesianChart.Resources>
+        <Style TargetType="Path" x:Key="lineStyle">
+            <Setter Property="StrokeDashArray" Value="10,7,5"/>
+            <Setter Property="Stroke" Value="Black"/>
+        </Style>
+    </chart:SfCartesianChart.Resources>
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings
+                Position="Outer" 
+                ConnectorHeight="40"
+                ShowConnectorLine="True"
+                ConnectorLineStyle="{StaticResource lineStyle}"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -432,13 +439,12 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:ColumnSeries ShowDataLabels="True">
-    <chart:ColumnSeries.DataLabelSettings>
-        <chart:CartesianDataLabelSettings UseSeriesPalette="True"/>
-    </chart:ColumnSeries.DataLabelSettings>
-</chart:ColumnSeries>
-
+    . . .
+    <chart:ColumnSeries ShowDataLabels="True">
+        <chart:ColumnSeries.DataLabelSettings>
+            <chart:CartesianDataLabelSettings UseSeriesPalette="True"/>
+        </chart:ColumnSeries.DataLabelSettings>
+    </chart:ColumnSeries>
 </chart:SfCartesianChart>
 
 {% endhighlight %}

@@ -19,26 +19,28 @@ The [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:StackedColumnSeries XBindingPath="CountryName"    
-                               YBindingPath="GoldMedals" 
-                               ItemsSource="{Binding MedalDetails}"/>
+    <chart:StackedColumnSeries 
+        XBindingPath="CountryName"    
+        YBindingPath="GoldMedals" 
+        ItemsSource="{Binding MedalDetails}"/>
 
-    <chart:StackedColumnSeries XBindingPath="CountryName" 
-                               YBindingPath="SilverMedals" 
-                               ItemsSource="{Binding MedalDetails}"/> 
+    <chart:StackedColumnSeries 
+        XBindingPath="CountryName" 
+        YBindingPath="SilverMedals" 
+        ItemsSource="{Binding MedalDetails}"/>
 
-    <chart:StackedColumnSeries XBindingPath="CountryName" 
-                               YBindingPath="BronzeMedals" 
-                               ItemsSource="{Binding MedalDetails}"/>
+    <chart:StackedColumnSeries 
+        XBindingPath="CountryName" 
+        YBindingPath="BronzeMedals" 
+        ItemsSource="{Binding MedalDetails}"/>
     ...
 </chart:SfCartesianChart>
 
@@ -48,9 +50,11 @@ The [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
@@ -97,26 +101,28 @@ The [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:StackedLineSeries XBindingPath="MonthlyExpenses"    
-                             YBindingPath="Father" 
-                             ItemsSource="{Binding Data}"/>
+    <chart:StackedLineSeries 
+        XBindingPath="MonthlyExpenses"    
+        YBindingPath="Father" 
+        ItemsSource="{Binding Data}"/>
 
-    <chart:StackedLineSeries XBindingPath="MonthlyExpenses" 
-                             YBindingPath="Mother"
-                             ItemsSource="{Binding Data}"/> 
+    <chart:StackedLineSeries 
+        XBindingPath="MonthlyExpenses" 
+        YBindingPath="Mother"
+        ItemsSource="{Binding Data}"/>
 
-    <chart:StackedLineSeries XBindingPath="MonthlyExpenses" 
-                             YBindingPath="Son"
-                             ItemsSource="{Binding Data}" />
+    <chart:StackedLineSeries 
+        XBindingPath="MonthlyExpenses" 
+        YBindingPath="Son"
+        ItemsSource="{Binding Data}"/>
     ...
 </chart:SfCartesianChart>
 
@@ -126,9 +132,11 @@ The [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
@@ -175,26 +183,28 @@ The [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:StackedAreaSeries XBindingPath="Month" 
-                             YBindingPath="Bus" 
-                             ItemsSource="{Binding Accidents}" />
+    <chart:StackedAreaSeries 
+        XBindingPath="Month" 
+        YBindingPath="Bus" 
+        ItemsSource="{Binding Accidents}"/>
 
-    <chart:StackedAreaSeries XBindingPath="Month"         
-                             YBindingPath="Car" 
-                             ItemsSource="{Binding Accidents}" />
+    <chart:StackedAreaSeries 
+        XBindingPath="Month"         
+        YBindingPath="Car" 
+        ItemsSource="{Binding Accidents}"/>
 
-    <chart:StackedAreaSeries XBindingPath="Month"                 
-                             YBindingPath="Truck" 
-                             ItemsSource="{Binding Accidents}" />
+    <chart:StackedAreaSeries 
+        XBindingPath="Month"                 
+        YBindingPath="Truck" 
+        ItemsSource="{Binding Accidents}"/>
     ...
 </chart:SfCartesianChart>
 
@@ -204,9 +214,11 @@ The [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 SfCartesianChart chart = new SfCartesianChart();
 ViewModel viewModel = new ViewModel();
+
 CategoryAxis primaryAxis = new CategoryAxis();
 primaryAxis.LabelPlacement = LabelPlacement.BetweenTicks;
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 
