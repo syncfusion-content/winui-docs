@@ -118,13 +118,13 @@ The following properties are used to customize the data label.
         <chart:PolarAreaSeries.DataLabelSettings>
             <chart:PolarDataLabelSettings 
                 Foreground="White"
-				FontSize="12" 
-				BorderBrush="White"
-				BorderThickness="1" 
-				Margin="1" 
-				FontStyle="Italic"
-				FontFamily="Calibri"
-				Background="#1E88E5">
+                FontSize="12" 
+                BorderBrush="White"
+                BorderThickness="1" 
+                Margin="1" 
+                FontStyle="Italic"
+                FontFamily="Calibri"
+                Background="#1E88E5">
             </chart:PolarDataLabelSettings>
         </chart:PolarAreaSeries.DataLabelSettings>
     </chart:PolarAreaSeries>
@@ -373,7 +373,7 @@ The connector line can be customized using the following properties:
         <chart:PolarLineSeries.DataLabelSettings>
             <chart:PolarDataLabelSettings
                 ShowConnectorLine="True" 
-			    ConnectorHeight="25" 
+                ConnectorHeight="25" 
                 ConnectorRotation="45"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>

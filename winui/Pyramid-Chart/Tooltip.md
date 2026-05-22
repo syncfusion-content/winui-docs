@@ -41,9 +41,7 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -87,9 +85,7 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.EnableTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 chart.TooltipBehavior = behavior;
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -131,16 +127,13 @@ chart.EnableTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
-
-...
+. . .
 
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -177,27 +170,23 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
 
 {% highlight c# %}
 
- SfPyramidChart chart = new SfPyramidChart();
+SfPyramidChart chart = new SfPyramidChart();
 
- chart.EnableTooltip = true;
+chart.EnableTooltip = true;
 
- Style labelStyle = new Style(typeof(TextBlock));
- 
- labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
- labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
- labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
- 
- . . . 
+Style labelStyle = new Style(typeof(TextBlock));
 
- ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
+labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
+labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
+labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+. . . 
+ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
- tooltipBehavior.LabelStyle = labelStyle;
+tooltipBehavior.LabelStyle = labelStyle;
 
- chart.TooltipBehavior = tooltipBehavior;
-
- . . . 
- 
- this.Content = chart;
+chart.TooltipBehavior = tooltipBehavior;
+. . . 
+this.Content = chart;
 
 {% endhighlight %}
 
@@ -278,9 +267,7 @@ chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
 chart.EnableTooltip = true;
-
 . . .
-
 this.Content = chart;
         
 {% endhighlight %}

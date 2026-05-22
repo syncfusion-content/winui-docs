@@ -43,9 +43,7 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-
-. . . 
-
+. . .
 this.Content = chart;
 
 {% endhighlight %}
@@ -82,9 +80,7 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Context = LabelContext.Percentage 
@@ -143,9 +139,7 @@ The following properties are used to customize the data label:
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-
 . . .
-
 chart.DataLabelSettings = new FunnelDataLabelSettings()
 {
     Foreground = new SolidColorBrush(Colors.White),
@@ -231,9 +225,7 @@ The appearance of the data label can be customized by using the [ContentTemplate
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Context = LabelContext.YValue,
@@ -276,9 +268,7 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 {  
     Format = "#.000",
@@ -310,9 +300,9 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
     <chart:SfFunnelChart.DataLabelSettings>
         <chart:FunnelDataLabelSettings 
             Rotation="45" 
-		    BorderBrush="White"
-		    BorderThickness="1"
-		    Background="#1E88E5"/>
+            BorderBrush="White"
+            BorderThickness="1"
+            Background="#1E88E5"/>  
     </chart:SfFunnelChart.DataLabelSettings>
 </chart:SfFunnelChart>
 
@@ -323,9 +313,7 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-
 . . . 
-
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Rotation = 45,

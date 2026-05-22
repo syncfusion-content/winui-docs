@@ -64,8 +64,8 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
             <chart:NumericalAxis.HeaderStyle>
                 <chart:LabelStyle 
                     FontFamily="Algerian"
-		            FontSize="13"
-		            Foreground="Black"/>
+                    FontSize="13"
+                    Foreground="Black"/>
             </chart:NumericalAxis.HeaderStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>

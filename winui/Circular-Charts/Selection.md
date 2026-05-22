@@ -170,8 +170,8 @@ The circular chart provides support to select multiple points programmatically o
             <chart:PieSeries.SelectionBehavior>
                 <chart:DataPointSelectionBehavior
                     SelectionBrush="BlueViolet"
-				    Type="Multiple" 
-				    SelectedIndexes="{Binding SelectedIndexes}"/>
+                    Type="Multiple" 
+                    SelectedIndexes="{Binding SelectedIndexes}"/>
             </chart:PieSeries.SelectionBehavior>
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
