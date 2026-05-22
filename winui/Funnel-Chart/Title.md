@@ -51,9 +51,9 @@ this.Content = chart;
             Margin="10"
             CornerRadius="5">
             <TextBlock 
-            FontSize="14" 
-            Text="PRODUCT SALES"
-            Margin="5"/>
+                FontSize="14" 
+                Text="PRODUCT SALES"
+                Margin="5"/>
         </Border>
     </chart:SfFunnelChart.Header>
 </chart:SfFunnelChart>
@@ -115,7 +115,6 @@ The title text content can be aligned horizontally to the left, center or right 
             BorderBrush="Black"
             Margin="10"
             CornerRadius="5">
-
             <TextBlock
                 FontSize="14"
                 Text="PRODUCT SALES"
@@ -130,7 +129,6 @@ The title text content can be aligned horizontally to the left, center or right 
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend/>
     </chart:SfFunnelChart.Legend>
-
 </chart:SfFunnelChart>
 
 {% endhighlight %}

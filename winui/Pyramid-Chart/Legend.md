@@ -111,7 +111,7 @@ The legend icon represents a symbol associated with each legend item. The appear
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend 
             IconWidth="15"
-	        IconHeight="15" 
+            IconHeight="15" 
             IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
@@ -130,9 +130,7 @@ chart.Legend = new ChartLegend()
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -167,9 +165,7 @@ chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -204,9 +200,7 @@ chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -241,9 +235,7 @@ chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
-
-. . . 
-
+. . .
 this.Content = chart;
 
 {% endhighlight %}
@@ -279,9 +271,7 @@ chart.Legend = new ChartLegend()
    Placement = LegendPlacement.Left,
    ItemMargin = new Thickness(10)
 };
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -329,9 +319,7 @@ chart.Legend = new ChartLegend()
     BorderThickness = new Thickness(1),
     CornerRadius = new CornerRadius(5)
 };
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -351,7 +339,6 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
         <DataTemplate
             x:Key="labelTemplate"
             x:DataType="chart:LegendItem">
-
             <StackPanel
                 Margin="10"
                 Orientation="Vertical">
@@ -374,9 +361,8 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
     </chart:SfPyramidChart.Resources>
     . . .
     <chart:SfPyramidChart.Legend>
-        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}" />
+        <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfPyramidChart.Legend>
-
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -389,9 +375,7 @@ chart.Legend = new ChartLegend()
 {
    ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
-
 . . . 
-
 this.Content = chart;
 
 {% endhighlight %}

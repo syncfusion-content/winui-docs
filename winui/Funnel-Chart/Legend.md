@@ -11,7 +11,7 @@ documentation: ug
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data series in the chart.
 
-N> The x-value of data points in the funnel chart will be the legend items ‘Label’.
+N> The x-value of data points in the funnel chart will be the legend items `Label`.
 
 {% tabs %}
 
@@ -83,9 +83,7 @@ TextBlock textBlock = new TextBlock()
 
 legend.Header = textBlock;
 chart.Legend = legend;
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -130,9 +128,7 @@ chart.Legend = new ChartLegend()
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -167,9 +163,7 @@ chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -204,9 +198,7 @@ chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -241,9 +233,7 @@ chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -281,9 +271,7 @@ chart.Legend = new ChartLegend()
    Placement = LegendPlacement.Right,
    ItemMargin = new Thickness(10),
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -331,9 +319,7 @@ chart.Legend = new ChartLegend()
     BorderThickness = new Thickness(1),
     CornerRadius = new CornerRadius(5)
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -383,9 +369,7 @@ chart.Legend = new ChartLegend()
 {
    ItemTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
-
 . . .
-
 this.Content = chart;
 
 {% endhighlight %}
