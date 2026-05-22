@@ -14,7 +14,7 @@ This section provides a step-by-step guide to integrate and use the [SfMarkdownV
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/winui/control-dependencies#sfmarkdownviewer) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/winui) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 Refer to this [documentation](https://help.syncfusion.com/winui/installation/install-nuget-packages) to find more details about installing nuget packages in a WinUI application.
 
