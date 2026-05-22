@@ -19,24 +19,24 @@ keywords: winui line chart, winui sfcartesianchart, winui line chart customizati
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:LineSeries XBindingPath="Demand" 
-	                  ItemsSource="{Binding Data}" 
-                          YBindingPath="Year2010"/>
-        <chart:LineSeries XBindingPath="Demand" 
-                          ItemsSource="{Binding Data}" 
-                          YBindingPath="Year2011"/>
+        <chart:LineSeries 
+            XBindingPath="Demand" 
+            ItemsSource="{Binding Data}" 
+            YBindingPath="Year2010"/>
+        <chart:LineSeries 
+            XBindingPath="Demand"                    
+            ItemsSource="{Binding Data}" 
+            YBindingPath="Year2011"/>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -44,8 +44,10 @@ keywords: winui line chart, winui sfcartesianchart, winui line chart customizati
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -83,26 +85,27 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:LineSeries XBindingPath="Demand" 
-                          ItemsSource="{Binding Data}" 
-                          YBindingPath="Year2010" 
-                          StrokeDashArray="5,2"/>
-        <chart:LineSeries XBindingPath="Demand" 
-                          ItemsSource="{Binding Data}" 
-                          YBindingPath="Year2011" 
-                          StrokeDashArray="5,2"/>
-    </chart:SfCartesianChart.Series>
+        <chart:LineSeries 
+            XBindingPath="Demand" 
+            ItemsSource="{Binding Data}" 
+            YBindingPath="Year2010" 
+            StrokeDashArray="5,2"/>
 
+        <chart:LineSeries 
+            XBindingPath="Demand" 
+            ItemsSource="{Binding Data}" 
+            YBindingPath="Year2011" 
+            StrokeDashArray="5,2"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -110,8 +113,10 @@ The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -155,24 +160,25 @@ The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:StepLineSeries ItemsSource="{Binding Data}" 
-                              XBindingPath="XValue" 
-                              YBindingPath="YValue"/>
-        <chart:StepLineSeries ItemsSource="{Binding Data}" 
-                              XBindingPath="XValue" 
-                              YBindingPath="YValue1"/>
-    </chart:SfCartesianChart.Series>
+        <chart:StepLineSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue"/>
 
+        <chart:StepLineSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue1"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -180,8 +186,10 @@ The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -189,12 +197,13 @@ StepLineSeries series1 = new StepLineSeries();
 series1.ItemsSource = new ViewModel().Data;
 series1.XBindingPath = "XValue";
 series1.YBindingPath = "YValue";
-chart.Series.Add(series);
 
 StepLineSeries series2 = new StepLineSeries();
 series2.ItemsSource = new ViewModel().Data;
 series2.XBindingPath = "XValue";
 series2.YBindingPath = "YValue1";
+
+chart.Series.Add(series);
 chart.Series.Add(series2);
 
 this.Content = chart;
@@ -216,24 +225,25 @@ The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:CategoryAxis />
+        <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
-    </chart:SfCartesianChart.YAxes>  
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 
     <chart:SfCartesianChart.Series>
-        <chart:SplineSeries XBindingPath="Demand" 
-                            ItemsSource="{Binding Data}" 
-                            YBindingPath="Year2010"/>
-        <chart:SplineSeries XBindingPath="Demand" 
-                            ItemsSource="{Binding Data}" 
-                            YBindingPath="Year2011"/>
-    </chart:SfCartesianChart.Series>
+        <chart:SplineSeries 
+            XBindingPath="Demand" 
+            ItemsSource="{Binding Data}" 
+            YBindingPath="Year2010"/>
 
+        <chart:SplineSeries 
+            XBindingPath="Demand" 
+            ItemsSource="{Binding Data}" 
+            YBindingPath="Year2011"/>
+    </chart:SfCartesianChart.Series>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -241,8 +251,10 @@ The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -312,6 +324,7 @@ The following types are used in SplineSeries:
 SfCartesianChart chart = new SfCartesianChart();
 CategoryAxis xAxis = new CategoryAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
@@ -324,7 +337,6 @@ SplineSeries series = new SplineSeries()
 };
 
 chart.Series.Add(series);
-
 this.Content = chart;
 
 {% endhighlight %}

@@ -20,12 +20,13 @@ Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Header="Chart Area Header" 
-                        PlotAreaBackground="LightCyan" 
-                        Background="LightBlue"
-                        PlotAreaBorderBrush="Blue" 
-                        PlotAreaBorderThickness="3">
-. . .
+<chart:SfCartesianChart
+    Header="Chart Area Header"             
+    PlotAreaBackground="LightCyan"             
+    Background="LightBlue"            
+    PlotAreaBorderBrush="Blue"             
+    PlotAreaBorderThickness="3">
+    . . .
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -39,13 +40,13 @@ Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion
     </chart:SfCartesianChart.Legend>
 
     <chart:SfCartesianChart.Series>
-        <chart:ColumnSeries ItemsSource="{Binding Data}" 
-                            XBindingPath="Demand" 
-                            YBindingPath="Year2010" 
-                            Label="Year 2010">
+        <chart:ColumnSeries
+            ItemsSource="{Binding Data}" 
+            XBindingPath="Demand" 
+            YBindingPath="Year2010" 
+            Label="Year 2010">
         </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -61,6 +62,7 @@ chart.PlotAreaBorderThickness = new Thickness(3);
 
 CategoryAxis primaryAxis = new CategoryAxis();
 chart.XAxes.Add(primaryAxis);
+
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.YAxes.Add(secondaryAxis);
 

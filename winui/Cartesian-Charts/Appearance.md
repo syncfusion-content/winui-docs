@@ -33,7 +33,6 @@ Currently, Chart supports only one predefined palette and it is the default pale
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-
 . . .
 this.Content = chart;
 
@@ -60,6 +59,7 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+. . .
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
@@ -95,10 +95,11 @@ Cartesian chart provides support to set the palette to series for applying prede
 </chart:SfCartesianChart.Resources>
 
 <chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010" 
-                        PaletteBrushes="{StaticResource customBrushes}">        
+    <chart:ColumnSeries
+        ItemsSource="{Binding Data}"  
+        XBindingPath="Demand" 
+        YBindingPath="Year2010" 
+        PaletteBrushes="{StaticResource customBrushes}">
     </chart:ColumnSeries>
 </chart:SfCartesianChart.Series>
 
@@ -145,33 +146,34 @@ The following code sample and screenshot illustrates how to apply the gradient b
 <chart:SfCartesianChart.Resources>
     <BrushCollection x:Key="customBrushes">
         <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#FFE7C7" />
-            <GradientStop Offset="0" Color="#FCB69F" />
+            <GradientStop Offset="1" Color="#FFE7C7"/>
+            <GradientStop Offset="0" Color="#FCB69F"/>
         </LinearGradientBrush>
         <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#fadd7d" />
-            <GradientStop Offset="0" Color="#fccc2d" />
+            <GradientStop Offset="1" Color="#fadd7d"/>
+            <GradientStop Offset="0" Color="#fccc2d"/>
         </LinearGradientBrush>
         <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#DCFA97" />
-            <GradientStop Offset="0" Color="#96E6A1" />
+            <GradientStop Offset="1" Color="#DCFA97"/>
+            <GradientStop Offset="0" Color="#96E6A1"/>
         </LinearGradientBrush>
         <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#DDD6F3" />
-            <GradientStop Offset="0" Color="#FAACA8" />
+            <GradientStop Offset="1" Color="#DDD6F3"/>
+            <GradientStop Offset="0" Color="#FAACA8"/>
         </LinearGradientBrush>
         <LinearGradientBrush>
-            <GradientStop Offset="1" Color="#A8EAEE" />
-            <GradientStop Offset="0" Color="#7BB0F9" />
+            <GradientStop Offset="1" Color="#A8EAEE"/>
+            <GradientStop Offset="0" Color="#7BB0F9"/>
         </LinearGradientBrush>
     </BrushCollection>
 </chart:SfCartesianChart.Resources>
 
 <chart:SfCartesianChart.Series>
-    <chart:ColumnSeries ItemsSource="{Binding Data}"  
-                        XBindingPath="Demand" 
-                        YBindingPath="Year2010" 
-                        PaletteBrushes="{StaticResource customBrushes}">        
+    <chart:ColumnSeries
+        ItemsSource="{Binding Data}"  
+        XBindingPath="Demand" 
+        YBindingPath="Year2010" 
+        PaletteBrushes="{StaticResource customBrushes}">
     </chart:ColumnSeries>
 </chart:SfCartesianChart.Series>
 
@@ -180,18 +182,18 @@ The following code sample and screenshot illustrates how to apply the gradient b
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-...
+. . .
 List<Brush> CustomBrushes = new List<Brush>();
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
-GradientStop stop1 = new GradientStop() 
+GradientStop stop1 = new GradientStop()
 {
-    Offset = 1, 
-    Color = Color.FromArgb(255, 255, 231, 199) 
+    Offset = 1,
+    Color = Color.FromArgb(255, 255, 231, 199)
 };
 
-GradientStop stop2 = new GradientStop() 
+GradientStop stop2 = new GradientStop()
 {
-    Offset = 0, 
+    Offset = 0,
     Color = Color.FromArgb(255, 252, 182, 159)
 };
 
@@ -199,25 +201,24 @@ gradientColor1.GradientStops.Add(stop1);
 gradientColor1.GradientStops.Add(stop2);
 
 LinearGradientBrush gradientColor2 = new LinearGradientBrush();
-stop1 = new GradientStop() 
+stop1 = new GradientStop()
 {
-    Offset = 1, 
-    Color = Color.FromArgb(255, 250, 221, 125) 
+    Offset = 1,
+    Color = Color.FromArgb(255, 250, 221, 125)
 };
 
-stop2 = new GradientStop() 
+stop2 = new GradientStop()
 {
-    Offset = 0, 
-    Color = Color.FromArgb(255, 252, 204, 45) 
+    Offset = 0,
+    Color = Color.FromArgb(255, 252, 204, 45)
 };
 
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-
-...
+. . .
 CustomBrushes.Add(gradientColor1);
 CustomBrushes.Add(gradientColor2);
-...
+. . .
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -225,6 +226,7 @@ ColumnSeries series = new ColumnSeries()
     YBindingPath = "Year2010",
     PaletteBrushes = CustomBrushes,
 };
+
 chart.Series.Add(series);
 . . .            
 this.Content = chart;
