@@ -30,23 +30,22 @@ The available shapes are
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes> 
 
     <chart:SfCartesianChart.Series>
-        <chart:FastScatterBitmapSeries ItemsSource="{Binding Data}" 
-                                       XBindingPath="XValue" 
-                                       YBindingPath="YValue" 
-                                       PointHeight="7" 
-                                       PointWidth="7"/>
+        <chart:FastScatterBitmapSeries 
+            ItemsSource="{Binding Data}" 
+            XBindingPath="XValue" 
+            YBindingPath="YValue" 
+            PointHeight="7" 
+            PointWidth="7"/>
     </chart:SfCartesianChart.Series>
-
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -54,8 +53,10 @@ The available shapes are
 {% highlight C# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 NumericalAxis xAxis = new NumericalAxis();
 chart.XAxes.Add(xAxis);
+
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 

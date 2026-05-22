@@ -12,12 +12,12 @@ keywords: winui ohlc chart, winui chart ohlc type, ohlc chart customization winu
 
 OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
-To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection
+To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
 
-ObservableCollection<Model> StockData = new ObservableCollection<Model>();
+public ObservableCollection<Model> StockData { get; set; } = new ObservableCollection<Model>();
 StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
 StockData.Add(new Model { Year = "2001", High = 50, Low = 35, Open = 45, Close = 40 });
 StockData.Add(new Model { Year = "2002", High = 40, Low = 30, Open = 37, Close = 40 });
@@ -40,21 +40,21 @@ Set ItemsSource to your data collection and map XBindingPath and Open/High/Low/C
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes> 
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:HiLoOpenCloseSeries  ItemsSource="{Binding StockData}"
-                                XBindingPath="Year"
-                                Open="Open"
-                                High="High"
-                                Low="Low"
-                                Close="Close"/>
+    <chart:HiLoOpenCloseSeries  
+        ItemsSource="{Binding StockData}"
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -97,23 +97,23 @@ Use [BullishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes> 
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:HiLoOpenCloseSeries  ItemsSource="{Binding StockData}"
-                                XBindingPath="Year"
-                                Open="Open"
-                                High="High"
-                                Low="Low"
-                                Close="Close"
-                                BullishBrush="Blue"
-                                BearishBrush="Orange"/>
+    <chart:HiLoOpenCloseSeries 
+        ItemsSource="{Binding StockData}"
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"
+        BullishBrush="Blue"
+        BearishBrush="Orange"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -142,6 +142,7 @@ var series = new HiLoOpenCloseSeries()
 
 chart.Series.Add(series);
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -157,22 +158,22 @@ The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
-    </chart:SfCartesianChart.YAxes> 
+    </chart:SfCartesianChart.YAxes>
 
-    <chart:HiLoOpenCloseSeries  ItemsSource="{Binding StockData}"
-                                XBindingPath="Year"
-                                Open="Open"
-                                High="High"
-                                Low="Low"
-                                Close="Close"
-                                SegmentWidth="0.4"/>
+    <chart:HiLoOpenCloseSeries 
+        ItemsSource="{Binding StockData}"
+        XBindingPath="Year"
+        Open="Open"
+        High="High"
+        Low="Low"
+        Close="Close"
+        SegmentWidth="0.4"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -200,6 +201,7 @@ var series = new HiLoOpenCloseSeries()
 
 chart.Series.Add(series);
 this.Content = chart;
+
 {% endhighlight %}
 
 {% endtabs %}
