@@ -53,8 +53,11 @@ Before installing WinUI UI Builder, ensure the following:
 - High DPI awareness and resolution support
 
 ### **Design-System Integration**
-- Supports Syncfusion® WinUI themes (Fluent Light, Fluent Dark, Material Light, Material Dark, etc.)
-- ResourceDictionary-based theming for consistent styling across applications
+- Supports Syncfusion® WinUI **Light** and **Dark** themes for consistent styling
+- Applies themes at application level via `RequestedTheme` property (set in App.xaml) or at individual control level
+- ResourceDictionary-based theming with customizable theme resource keys for advanced styling
+- Respects system theme settings when `RequestedTheme` is not explicitly configured
+- Ensures theme inheritance across nested UI elements for visual consistency
 - Ensures consistent Syncfusion® styling and theme usage
 
 ## Installation
@@ -112,9 +115,12 @@ Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targe
 3. **Control Mapping** — Map intent to Syncfusion® WinUI controls and required feature modules.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - Syncfusion® theme (Fluent Light, Fluent Dark, Material Light, Material Dark, etc.)
+   - Syncfusion® WinUI Themes: Supports **Light** and **Dark** themes for visual consistency across Windows applications
+   - Application-level theming via `RequestedTheme` property (set in App.xaml or individual framework elements)
+   - Theme resource customization using ResourceDictionary keys for advanced styling
+   - Ensures theme inheritance across nested UI elements when `RequestedTheme` is applied to parent elements
    - Core design basics (colors, fonts, control appearance, DPI awareness)
-   - Light and Dark mode support
+   - Light and Dark mode support with automatic theme resource file reference
 5. **Code Generation** — Produce C# and XAML WinUI controls, data bindings, event handlers, and styling.
 6. **Dependency Management** — Recommend or install required Syncfusion® NuGet packages and .NET dependencies.
 7. **Validation** — Run code compatibility and basic security checks, request confirmation for changes.
@@ -122,7 +128,11 @@ Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targe
 
 Key enforcement points:
 
-- Adds correct theme ResourceDictionaries and styling configuration for chosen Syncfusion® themes
+- Adds correct theme ResourceDictionaries and styling configuration for chosen Syncfusion® themes (Light or Dark)
+- Applies themes at application level using `RequestedTheme` property in App.xaml, or at individual control level
+- Leverages Syncfusion® theme resource files from [GitHub repository](https://github.com/syncfusion/winui-controls-theme-resource-files) for customization
+- Supports custom theme resource keys (e.g., `SyncfusionRibbonTabMenuButtonBackground`) for advanced styling at application root level
+- Ensures theme consistency respects system settings when `RequestedTheme` is not explicitly set
 - Injects only the feature controls and behaviors required by generated controls
 - Generates well-structured XAML markup with proper binding and command setup
 - Follows WinUI patterns for control initialization and event handling
@@ -151,7 +161,7 @@ Examples Prompts:
 
 {% promptcards %}
 {% promptcard Authentication %}
-Create a login page using the Fluent Light theme with a centered StackPanel containing email and password TextBox controls with validation. Include a "Remember Me" CheckBox, a forgot password Hyperlink, and a primary login Button. Add a secondary "Create Account" button below. Ensure the layout is well-organized and follows Windows desktop UI standards.
+Create a login page using the Light theme with a centered StackPanel containing email and password TextBox controls with validation. Include a "Remember Me" CheckBox, a forgot password Hyperlink, and a primary login Button. Add a secondary "Create Account" button below. Ensure the layout is well-organized and follows Windows desktop UI standards.
 {% endpromptcard %}
 {% promptcard Admin Dashboard %}
 Create a CMS Admin Dashboard UI featuring a collapsible NavigationView in a left panel with menu items for Dashboard, Content, Users, Analytics, and Settings; a CommandBar header showing the title "CMS Admin Dashboard" on the left and user information on the right; and a main content area with a Grid layout containing three summary cards in a row displaying Total Content, Total Users, and Active Sessions (each showing a label, count value, and percentage change), followed by a "Content Management" section with a DataGrid containing columns for Title, Author, Status, Date, and Actions, and finally two charts displayed side by side—a bar chart titled "Content Over Time" and a pie chart titled "Content by Category"—using realistic sample data.
