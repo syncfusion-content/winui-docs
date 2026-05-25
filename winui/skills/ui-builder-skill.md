@@ -115,12 +115,9 @@ Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targe
 3. **Control Mapping** — Map intent to Syncfusion® WinUI controls and required feature modules.
 4. **Theming & Design System**  
    Load required theming guidelines and confirm key design choices:
-   - Syncfusion® WinUI Themes: Supports **Light** and **Dark** themes for visual consistency across Windows applications
-   - Application-level theming via `RequestedTheme` property (set in App.xaml or individual framework elements)
-   - Theme resource customization using ResourceDictionary keys for advanced styling
-   - Ensures theme inheritance across nested UI elements when `RequestedTheme` is applied to parent elements
+   - Applies Syncfusion® WinUI **Light** or **Dark** themes with `RequestedTheme` property configuration
+   - Customizes theme resources using ResourceDictionary keys for control styling
    - Core design basics (colors, fonts, control appearance, DPI awareness)
-   - Light and Dark mode support with automatic theme resource file reference
 5. **Code Generation** — Produce C# and XAML WinUI controls, data bindings, event handlers, and styling.
 6. **Dependency Management** — Recommend or install required Syncfusion® NuGet packages and .NET dependencies.
 7. **Validation** — Run code compatibility and basic security checks, request confirmation for changes.
@@ -128,11 +125,9 @@ Refer to the [documentation](https://microsoft.github.io/apm/reference/cli/targe
 
 Key enforcement points:
 
-- Adds correct theme ResourceDictionaries and styling configuration for chosen Syncfusion® themes (Light or Dark)
-- Applies themes at application level using `RequestedTheme` property in App.xaml, or at individual control level
-- Leverages Syncfusion® theme resource files from [GitHub repository](https://github.com/syncfusion/winui-controls-theme-resource-files) for customization
-- Supports custom theme resource keys (e.g., `SyncfusionRibbonTabMenuButtonBackground`) for advanced styling at application root level
-- Ensures theme consistency respects system settings when `RequestedTheme` is not explicitly set
+- Configures theme ResourceDictionaries for Syncfusion® Light/Dark themes at application or control level
+- Leverages Syncfusion® theme resource files from [GitHub repository](https://github.com/syncfusion/winui-controls-theme-resource-files) with custom resource keys (e.g., `SyncfusionRibbonTabMenuButtonBackground`)
+- Respects system theme settings when `RequestedTheme` is not explicitly configured
 - Injects only the feature controls and behaviors required by generated controls
 - Generates well-structured XAML markup with proper binding and command setup
 - Follows WinUI patterns for control initialization and event handling
