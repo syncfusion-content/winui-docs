@@ -272,11 +272,11 @@ The legend background appearance can be customized by using the following proper
 
 <chart:SfPolarChart>
     <chart:SfPolarChart.Legend>
-        <chart:ChartLegend                 
+        <chart:ChartLegend
             Background="LightGray"
-                        BorderBrush="Black" 
-                           BorderThickness="1" 
-                           CornerRadius="5">
+            BorderBrush="Black" 
+            BorderThickness="1" 
+            CornerRadius="5">
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
     ...

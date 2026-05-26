@@ -103,16 +103,16 @@ The [StackedLine100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>  
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}" 
                                 XBindingPath="MonthlyExpenses" 
-                                YBindingPath="Father" />
+                                YBindingPath="Father"/>
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}"
                                 XBindingPath="MonthlyExpenses"  
-                                YBindingPath="Mother" />
+                                YBindingPath="Mother"/>
 
     <chart:StackedLine100Series ItemsSource="{Binding Data}"
                                 XBindingPath="MonthlyExpenses" 
@@ -186,15 +186,15 @@ The [StackedArea100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
     
     <chart:StackedArea100Series XBindingPath="Month"         
                                 YBindingPath="Bus" 
-                                ItemsSource="{Binding Accidents}" />
+                                ItemsSource="{Binding Accidents}"/>
 
     <chart:StackedArea100Series XBindingPath="Month" 
                                 YBindingPath="Car" 
-                                ItemsSource="{Binding Accidents}" />
+                                ItemsSource="{Binding Accidents}"/>
 
     <chart:StackedArea100Series XBindingPath="Month" 
                                 YBindingPath="Truck" 
-                                ItemsSource="{Binding Accidents}" />
+                                ItemsSource="{Binding Accidents}"/>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
