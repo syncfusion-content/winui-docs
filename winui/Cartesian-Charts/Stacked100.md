@@ -106,7 +106,7 @@ The [StackedLine100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
     <chart:StackedLine100Series 
