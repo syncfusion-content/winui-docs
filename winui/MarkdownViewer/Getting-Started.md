@@ -26,7 +26,7 @@ Refer to this [documentation](https://help.syncfusion.com/winui/installation/ins
 ## Install the Syncfusion<sup>&reg;</sup> WinUI MarkdownViewer NuGet Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.SfMarkdownViewer.WinUI](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) and install the latest version.
+2. Search for [Syncfusion.MarkdownViewer.WinUI](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ## Adding WinUI SfMarkdownViewer via XAML
@@ -37,7 +37,7 @@ To add the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 2. Add the following required assembly references to the project:
 
-    * Syncfusion.SfMarkdownViewer.WinUI
+    * Syncfusion.MarkdownViewer.WinUI
     * Syncfusion.Markdown
     * Syncfusion.Core.WinUI
 
@@ -69,7 +69,7 @@ To add the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 2. Add the following required assembly references to the project:
 
-    * Syncfusion.SfMarkdownViewer.WinUI
+    * Syncfusion.MarkdownViewer.WinUI
     * Syncfusion.Markdown
     * Syncfusion.Core.WinUI
 
