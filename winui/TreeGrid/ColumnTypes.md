@@ -718,6 +718,34 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 <img src="Column-Type-images/winui-treegrid-NumericColumn-column.png" alt="WinUI TreeGrid Column with NumericColumn" width="100%" Height="Auto"/>
 
+### Supported Numeric DataTypes in TreeGridNumericColumn
+
+[TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html) supports the following numeric data types: Byte, Decimal, Double, Float, Int, Long, SByte, Short, UInt, ULong, and UShort.
+
+The numeric data type for the `TreeGridNumericColumn` is specified using the `ValueType` property. This property allows the column to accept values of the defined data type. By default, the `ValueType` property is set to `Double`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid x:Name="sfTreeGrid" 
+                     ColumnWidthMode="Auto" 
+                     AllowEditing="True" 
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     ItemsSource="{Binding Items}" 
+                     AutoGenerateColumns="False">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridNumericColumn x:Name="decimalNumericColumn" PlaceholderText="Enter the Value" MappingName="DecimalValue" ValueType="Decimal" HeaderText="Decimal Value"/>
+        <treeGrid:TreeGridNumericColumn x:Name="doubleNumericColumn" MappingName="DoubleValue" ValueType="Double" HeaderText="Double Value"/>
+        <treeGrid:TreeGridNumericColumn x:Name="floatNumericColumn" MappingName="FloatValue" ValueType="Float" HeaderText="Float Value"/>
+        <treeGrid:TreeGridNumericColumn x:Name="intNumericColumn" MappingName="IntValue" ValueType="Int" HeaderText="Int Value"/>
+        <treeGrid:TreeGridNumericColumn x:Name="longNumericColumn" MappingName="LongValue" ValueType="Long" HeaderText="Long Value"/>
+        </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-NumericColumn-ValueType.png" alt="WinUI TreeGrid Column with NumericColumn ValueType" width="100%" Height="Auto"/>
+
 ### Change the format of numeric value
 
 You can format the value of a `TreeGridNumericColumn` using the [DisplayNumberFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_DisplayNumberFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberFormatter) property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
