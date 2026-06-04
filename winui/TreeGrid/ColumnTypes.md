@@ -739,7 +739,7 @@ The numeric data type for the `TreeGridNumericColumn` is specified using the `Va
         <treeGrid:TreeGridNumericColumn x:Name="floatNumericColumn" MappingName="FloatValue" ValueType="Float" HeaderText="Float Value"/>
         <treeGrid:TreeGridNumericColumn x:Name="intNumericColumn" MappingName="IntValue" ValueType="Int" HeaderText="Int Value"/>
         <treeGrid:TreeGridNumericColumn x:Name="longNumericColumn" MappingName="LongValue" ValueType="Long" HeaderText="Long Value"/>
-        </treeGrid:SfTreeGrid.Columns>
+    </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
