@@ -42,7 +42,7 @@ The appearance of headings and body content in [SfMarkdownViewer](https://help.s
 
 <Grid>
     <syncfusion:SfMarkdownViewer x:Name="markdownviewer" Height="550" MaxWidth="900">
-        <markdown:SfMarkdownViewer.Source>
+        <syncfusion:SfMarkdownViewer.Source>
             <x:String xml:space="preserve">
                 <![CDATA[
 
@@ -69,7 +69,7 @@ Used to define major sections within your Markdown content.
                             
                 ]]>
             </x:String>
-        </markdown:SfMarkdownViewer.Source>
+        </syncfusion:SfMarkdownViewer.Source>
         <syncfusion:SfMarkdownViewer.Settings>
             <syncfusion:MarkdownStyleSettings>
                 <syncfusion:MarkdownStyleSettings.InlineQuoteStyle>
