@@ -41,7 +41,35 @@ The appearance of headings and body content in [SfMarkdownViewer](https://help.s
 {% highlight xaml %}
 
 <Grid>
-    <syncfusion:SfMarkdownViewer x:Name="markdownviewer" Height="550" MaxWidth="900" Source={Binding MarkdownContent}>
+    <syncfusion:SfMarkdownViewer x:Name="markdownviewer" Height="550" MaxWidth="900">
+        <markdown:SfMarkdownViewer.Source>
+            <x:String xml:space="preserve">
+                <![CDATA[
+
+# What is the Markdown Viewer ?
+                        
+The Markdown Viewer is a UI control in WinUI that allows developers to render Markdown content with full formatting support. It was designed to
+work efficiently on both mobile and desktop platforms. The viewer supports headings, bold and italic text, lists, tables, images, code blocks and more.                        
+ 
+# Header 1
+                        
+Used for the Main title or top-level heading in a Markdown document.
+                        
+## Header 2
+                        
+Used to define major sections within your Markdown content. 
+                        
+### Table
+
+|  No  | Column1 | Column2 | Column3 | 
+|------|---------|---------|---------|
+| Row1 | Content | Content | Content | 
+| Row1 | Content | Content | Content |
+| Row1 | Content | Content | Content | 
+                            
+                ]]>
+            </x:String>
+        </markdown:SfMarkdownViewer.Source>
         <syncfusion:SfMarkdownViewer.Settings>
             <syncfusion:MarkdownStyleSettings>
                 <syncfusion:MarkdownStyleSettings.InlineQuoteStyle>
@@ -75,7 +103,79 @@ The appearance of headings and body content in [SfMarkdownViewer](https://help.s
 
 {% highlight C# %}
 
+    public sealed partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
 
+            SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
+
+            markdownViewer.Source =
+@"
+# What is the Markdown Viewer ?
+                        
+The Markdown Viewer is a UI control in WinUI that allows developers to render Markdown content with full formatting support. It was designed to
+work efficiently on both mobile and desktop platforms. The viewer supports headings, bold and italic text, lists, tables, images, code blocks and more.                        
+ 
+# Header 1
+                        
+Used for the Main title or top-level heading in a Markdown document.
+                        
+## Header 2
+                        
+Used to define major sections within your Markdown content. 
+                        
+### Table
+
+|  No  | Column1 | Column2 | Column3 | 
+|------|---------|---------|---------|
+| Row1 | Content | Content | Content | 
+| Row1 | Content | Content | Content |
+| Row1 | Content | Content | Content | 
+";
+            markdownViewer.Settings = new MarkdownStyleSettings
+            {
+                H1Style = new HeaderSettings
+                {
+                    FontWeight = FontWeights.Normal,
+                    FontSize = 70,
+                    Foreground = new SolidColorBrush(Microsoft.UI.Colors.Blue),
+                    FontDecoration = TextDecorations.Underline
+                },
+
+                H2Style = new HeaderSettings
+                {
+                    FontWeight = FontWeights.Normal,
+                    FontSize = 70,
+                    Foreground = new SolidColorBrush(Microsoft.UI.Colors.Blue),
+                    FontDecoration = TextDecorations.Underline
+                },
+
+                ParagraphStyle = new ParagraphSettings
+                {
+                    FontStyle = FontStyle.Normal,
+                    FontSize = 15,
+                },
+
+                TableStyle = new TableSettings
+                {
+                    HeaderStyle = new HeaderSettings
+                    {
+                        FontWeight = FontWeights.Normal,
+                    },
+                    Background = new SolidColorBrush(Colors.LightSkyBlue)
+                },
+
+                CodeBlockStyle = new CodeBlockSettings
+                {
+                    Background = new SolidColorBrush(Colors.LightYellow)
+                },
+            };
+
+            Content = markdownViewer;
+        }
+    }
 
 {% endhighlight %}
 {% endtabs %}
