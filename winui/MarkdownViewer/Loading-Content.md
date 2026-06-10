@@ -108,7 +108,7 @@ public partial class MainWindow : Window
 
 ## Loading from URL
 
-The [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) can load Markdown content directly from publicly accessible URLs. This is particularly useful for displaying remote documentation, release notes, or any Markdown content hosted online.
+The SfMarkdownViewer can load Markdown content directly from publicly accessible URLs. This is particularly useful for displaying remote documentation, release notes, or any Markdown content hosted online.
 
 {% tabs %}
 {% highlight xaml %}
