@@ -9,31 +9,31 @@ documentation: ug
 
 # Customize Appearance in WinUI SfMarkdownViewer
 
-The [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in WinUI provides a powerful styling system through the [MarkdownStyleSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) class. This allows developers to customize the visual presentation of Markdown content with precision and flexibility.
+The SfMarkdownViewer control in WinUI offers a robust styling system through the MarkdownStyleSettings class. This enables developers to precisely and flexibly customize the visual appearance of Markdown content.
 
 ## Customization with MarkdownStyleSettings
 
-The appearance of headings and body content in [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) can be customized using the [MarkdownStyleSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) class.
+The MarkdownStyleSettings class allows you to customize the appearance of headings and body text in the SfMarkdownViewer, giving you control over how the content is visually presented.
 
-* [ParagraphStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for paragraph elements.
+* ParagraphStyle – Gets or sets the style for paragraph elements.
 
-* [H1Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html), [H2Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html), [H3Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html), [H4Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html), [H5Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html), [H6Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for H1 to H6 heading elements respectively.
+* H1Style, H2Style, H3Style, H4Style, H5Style, H6Style – Gets or sets the style for H1 to H6 heading elements respectively.
 
-* [TableStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for table elements, including headers and data rows.
+* TableStyle – Gets or sets the style for table elements, including headers and data rows.
 
-* [ListStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for ordered and unordered list elements.
+* ListStyle – Gets or sets the style for ordered and unordered list elements.
 
-* [LinkStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for hyperlink elements.
+* LinkStyle – Gets or sets the style for hyperlink elements.
 
-* [InlineQuoteStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for inline quote (blockquote within text) elements.
+* InlineQuoteStyle – Gets or sets the style for inline quote (blockquote within text) elements.
 
-* [BlockQuoteStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for block quote elements.
+* BlockQuoteStyle – Gets or sets the style for block quote elements.
 
-* [CodeBlockStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for code block elements.
+* CodeBlockStyle – Gets or sets the style for code block elements.
 
-* [ThematicStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for thematic break (horizontal rule) elements.
+* ThematicStyle – Gets or sets the style for thematic break (horizontal rule) elements.
 
-* [MermaidStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) – Gets or sets the style for rendering Mermaid diagram content.
+* MermaidStyle – Gets or sets the style for rendering Mermaid diagram content.
 
 ## Add MarkdownStyleSettings to the SfMarkdownViewer
 
@@ -44,7 +44,7 @@ The appearance of headings and body content in [SfMarkdownViewer](https://help.s
     <syncfusion:SfMarkdownViewer x:Name="markdownviewer">
         <syncfusion:SfMarkdownViewer.Source>
             <x:String xml:space="preserve">
-                <![CDATA[
+                <!CDATA
 
 # What is the Markdown Viewer ?
                         
@@ -61,16 +61,16 @@ Used to define major sections within your Markdown content.
                         
 ![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-Customization.WEBP)
                             
-                ]]>
+                >
             </x:String>
         </syncfusion:SfMarkdownViewer.Source>
         <markdown:SfMarkdownViewer.Settings>
             <markdown:MarkdownStyleSettings>
                 <markdown:MarkdownStyleSettings.H1Style>
-                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="Blue" />
+                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
                 </markdown:MarkdownStyleSettings.H1Style>
                 <markdown:MarkdownStyleSettings.H2Style>
-                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="Blue" />
+                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
                 </markdown:MarkdownStyleSettings.H2Style>
                 <markdown:MarkdownStyleSettings.ParagraphStyle>
                     <markdown:ParagraphSettings FontStyle="Italic" FontSize="15" />
@@ -112,13 +112,13 @@ Used to define major sections within your Markdown content.
                 H1Style = new HeaderSettings
                 {
                     FontSize = 50,
-                    Foreground = new SolidColorBrush(Microsoft.UI.Colors.Blue),
+                    Foreground = new SolidColorBrush(Microsoft.UI.Colors.MediumPurple),
                     FontStyle = FontStyle.Normal,
                 },
                 H2Style = new HeaderSettings
                 {
                     FontSize = 50,
-                    Foreground = new SolidColorBrush(Microsoft.UI.Colors.Blue),
+                    Foreground = new SolidColorBrush(Microsoft.UI.Colors.MediumPurple),
                     FontStyle = FontStyle.Normal,
                 },
                 ParagraphStyle = new ParagraphSettings

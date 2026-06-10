@@ -10,13 +10,13 @@ keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer
 
 # Getting Started with WinUI Markdown Viewer (SfMarkdownViewer)
 
-This section provides a step-by-step guide to integrate and use the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in your WinUI applications.
+This section outlines a step‑by‑step guide for integrating and using the SfMarkdownViewer control in your WinUI applications.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/winui) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the Control Dependencies section for a list of required assemblies or NuGet packages that must be added as references to use the control in any application.
 
-Refer to this [documentation](https://help.syncfusion.com/winui/installation/install-nuget-packages) to find more details about installing nuget packages in a WinUI application.
+Refer to this documentation for detailed guidance on installing NuGet packages in a WinUI application.
 
 ## Create a New WinUI Project
 
@@ -26,12 +26,12 @@ Refer to this [documentation](https://help.syncfusion.com/winui/installation/ins
 ## Install the Syncfusion<sup>&reg;</sup> WinUI MarkdownViewer NuGet Package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.MarkdownViewer.WinUI](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) and install the latest version.
+2. Search for Syncfusion.MarkdownViewer.WinUI and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 ## Adding WinUI SfMarkdownViewer via XAML
 
-To add the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) manually in XAML, follow these steps:
+To manually add the SfMarkdownViewer control in XAML, follow these steps:
 
 1. Create a new WinUI project in Visual Studio.
 
@@ -63,7 +63,7 @@ To add the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 
 ## Adding WinUI SfMarkdownViewer via C#
 
-To add the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) manually in C#, follow these steps:
+To manually add the SfMarkdownViewer control in C#, follow these steps:
 
 1. Create a new WinUI project in Visual Studio.
 
@@ -100,7 +100,7 @@ namespace MarkdownViewerGettingStarted
 
 ## Add Source to the SfMarkdownViewer
 
-The `Source` property is used to provide Markdown content to the control. The Source accepts raw Markdown text, file paths, or HTTP/HTTPS URLs.
+The `Source` property is used to supply Markdown content to the control. It supports raw Markdown text, file paths, and HTTP/HTTPS URLs as input.
 
 {% tabs %} 
 {% highlight xaml %}

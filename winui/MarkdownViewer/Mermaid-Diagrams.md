@@ -9,16 +9,16 @@ documentation: ug
 
 # Mermaid Diagram Support in WinUI Markdown Viewer
  
-The [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control provides built-in support for rendering Mermaid diagrams and flowcharts within Markdown content, Mermaid is a text-based diagramming tool that allows you to define diagrams using simple syntax. The viewer parses Mermaid code blocks and renders them as visual diagrams directly within the Markdown content.
+The SfMarkdownViewer control includes built‑in support for displaying Mermaid diagrams and flowcharts within Markdown content. Mermaid is a text‑based diagramming tool that allows diagrams to be defined using simple syntax. The viewer interprets Mermaid code blocks and renders them as visual diagrams directly within the Markdown content.
  
 ## Rendering Mermaid Diagrams
  
-The [MermaidBlockTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_MermaidBlockTemplate) property allows you to define how Mermaid code blocks are rendered. It accepts a DataTemplate that replaces the default rendering for code blocks with the mermaid language identifier.
+The MermaidBlockTemplate property enables you to customize how Mermaid code blocks are displayed. It accepts a DataTemplate that overrides the default rendering of code blocks identified with the Mermaid language.
 
-When a Markdown code block marked as mermaid is encountered, the specified template is used to render the diagram.
+When a Markdown code block labeled as mermaid is detected, the defined template is applied to render the diagram accordingly.
 
 **Example:**
-The following example demonstrates how to render Mermaid flowcharts using [SfDiagram](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Diagram.SfDiagram.html) within the [MermaidBlockTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_MermaidBlockTemplate).
+The following example shows how to use the SfDiagram within the MermaidBlockTemplate to render Mermaid flowcharts.
 
 {% tabs %} 
 {% highlight xaml %}

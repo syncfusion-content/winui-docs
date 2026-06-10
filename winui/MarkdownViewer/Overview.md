@@ -9,15 +9,15 @@ documentation: ug
 
 # Overview of WinUI Markdown Viewer (SfMarkdownViewer)
 
-The [WinUI Markdown Viewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) is a UI control that converts Markdown input into a fully formatted visual representation without requiring external rendering engines or manual formatting. It provides a flexible way to display rich Markdown content within WinUI applications, making it ideal for presenting documentation, release notes, help content, and other Markdown‑based information.
+The WinUI Markdown Viewer is a user interface control that transforms Markdown text into a visually formatted display without the need for external rendering tools or manual styling. It offers a convenient way to present rich Markdown content within WinUI applications, making it well-suited for displaying documentation, release notes, help information, and other content written in Markdown.
 
 ## Key Features
 
-* **Markdown rendering** – Converts Markdown syntax such as headings, lists, links, images, tables, code blocks, block quotes, and more into styled, readable content.
+* **Markdown rendering** – Transforms Markdown elements—such as headings, lists, links, images, tables, code blocks, and block quotes—into well‑formatted and easily readable content.
 
-* **Multiple content sources** – Supports loading Markdown from a string, file, or URL.
+* **Multiple content sources** – Allows Markdown content to be loaded from a string, a file, or a URL source.
 
-* **Hyperlink navigation** – Supports clickable links that open external URLs or trigger in-app navigation.
+* **Hyperlink navigation** – Enables support for clickable links that can either open external web pages or navigate within the application.
 
 * **Content customization** – Supports options to customize appearance, including content colors, fonts, and text styles..
 
