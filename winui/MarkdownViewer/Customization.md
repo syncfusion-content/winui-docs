@@ -134,6 +134,6 @@ Used to define major sections within your Markdown content.
 {% endhighlight %}
 {% endtabs %}
 
-The following output shows how these style settings enhance the appearance of rendered Markdown content:
+The image below illustrates how these style settings improve the visual appearance of the rendered Markdown content:
 
 ![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-Customization.WEBP)
