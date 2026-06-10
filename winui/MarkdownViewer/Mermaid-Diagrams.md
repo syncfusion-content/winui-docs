@@ -99,4 +99,4 @@ namespace MarkdownViewerGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Mermaid Diagrams in WinUI Markdown Viewer](Images/WinUI-markdown-mermaid-block.gif)
+![Mermaid Diagrams in WinUI Markdown Viewer](Images/WinUI-markdown-mermaid-block.WEBP)

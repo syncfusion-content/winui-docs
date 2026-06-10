@@ -19,4 +19,6 @@ The [WinUI Markdown Viewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 
 * **Hyperlink navigation** – Supports clickable links that open external URLs or trigger in-app navigation.
 
-![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-overview.png)
+* **Content customization** – Supports options to customize appearance, including content colors, fonts, and text styles..
+
+![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-overview.WEBP)

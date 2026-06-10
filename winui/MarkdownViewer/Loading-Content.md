@@ -23,14 +23,21 @@ Assign a Markdown-formatted string to the Source property of the [SfMarkdownView
         <markdown:SfMarkdownViewer.Source>
             <x:String xml:space="preserve">
                 <![CDATA[
-    # What is the Markdown Viewer?  
-    The Markdown Viewer control is used to render and preview Markdown files. It converts markdown syntax into a clean, readable format and supports elements such as headings, lists, code blocks, tables, and other common markdown structures.
 
-    # Header 1  
-    Used for the main title or top-level heading in a Markdown document. 
-
-    ## Header 2  
-    Used to define major sections within your Markdown content.
+# What is the Markdown Viewer ?
+                        
+The Markdown Viewer is a UI control in WinUI that allows developers to render Markdown content with full formatting support. It was designed to
+work efficiently on both mobile and desktop platforms. The viewer supports headings, bold and italic text, lists, tables, images, code blocks and more.                        
+ 
+# Header 1
+                        
+Used for the Main title or top-level heading in a Markdown document.
+                        
+## Header 2
+                        
+Used to define major sections within your Markdown content. 
+                        
+![image](https://cdn.syncfusion.com/content/images/Xamarin/Mascot-1.png)
                 ]]>
             </x:String>
         </markdown:SfMarkdownViewer.Source>
@@ -47,22 +54,28 @@ namespace MarkdownViewerGettingStarted
 {
     public partial class MainWindow : Window
     {
-        private const string markdownContent = @"
-# What is the Markdown Viewer?  
-The Markdown Viewer control is used to render and preview Markdown files. It converts markdown syntax into a clean, readable format and supports elements such as headings, lists, code blocks, tables, and other common markdown structures.
-
-# Header 1  
-Used for the main title or top-level heading in a Markdown document. 
-
-## Header 2  
-Used to define major sections within your Markdown content.";
-        
         public MainWindow()
         {
-            InitializeComponent();  
+            InitializeComponent();
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
-            markdownViewer.Source = markdownContent;
-            this.Content = markdownViewer;      
+            markdownViewer.Source =
+@"
+# What is the Markdown Viewer ?
+                        
+The Markdown Viewer is a UI control in WinUI that allows developers to render Markdown content with full formatting support. It was designed to
+work efficiently on both mobile and desktop platforms. The viewer supports headings, bold and italic text, lists, tables, images, code blocks and more.                        
+ 
+# Header 1
+                        
+Used for the Main title or top-level heading in a Markdown document.
+                        
+## Header 2
+                        
+Used to define major sections within your Markdown content. 
+                        
+![image](https://cdn.syncfusion.com/content/images/Xamarin/Mascot-1.png)
+";
+            this.Content = markdownViewer;
         }
     }   
 }
