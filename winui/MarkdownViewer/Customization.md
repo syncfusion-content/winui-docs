@@ -59,7 +59,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![image](https://cdn.syncfusion.com/content/images/Xamarin/Mascot-1.png)
+![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-Customization.WEBP)
                             
                 ]]>
             </x:String>
@@ -105,7 +105,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![image](https://cdn.syncfusion.com/content/images/Xamarin/Mascot-1.png)
+![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-Customization.WEBP)
 ";
             markdownViewer.Settings = new MarkdownStyleSettings
             {
@@ -115,14 +115,12 @@ Used to define major sections within your Markdown content.
                     Foreground = new SolidColorBrush(Microsoft.UI.Colors.Blue),
                     FontStyle = FontStyle.Normal,
                 },
-
                 H2Style = new HeaderSettings
                 {
                     FontSize = 50,
                     Foreground = new SolidColorBrush(Microsoft.UI.Colors.Blue),
                     FontStyle = FontStyle.Normal,
                 },
-
                 ParagraphStyle = new ParagraphSettings
                 {
                     FontStyle = FontStyle.Italic,

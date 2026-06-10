@@ -123,7 +123,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![image](https://cdn.syncfusion.com/content/images/Xamarin/Mascot-1.png)
+![WinUi SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
             ]]>
         </x:String>
     </markdown:SfMarkdownViewer.Source>
@@ -154,7 +154,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![image](https://cdn.syncfusion.com/content/images/Xamarin/Mascot-1.png)
+![WinUi SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
 ";
         this.Content = markdownViewer;
     }
