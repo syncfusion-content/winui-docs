@@ -1234,7 +1234,7 @@ public class ViewModel
 
 ## Column Drag and Drop
 
-The Kanban control also supports column reordering through drag-and-drop. To enable this functionality, set the AllowColumnDrag property of the SfKanban class to true. The default value is false.
+The Kanban control also supports column reordering through drag-and-drop. To enable this functionality, set the `AllowColumnDrag` property of the SfKanban class to true. The default value is false.
 
 {% tabs %}
 
