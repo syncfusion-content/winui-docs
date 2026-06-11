@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WinUI Kanban control | Syncfusion<sup>®</sup>
+title: Getting Started with WinUI Kanban control | Syncfusion
 description: Learn here all about getting started with Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control, its elements, and more.
 platform: winui
 control: SfKanban
