@@ -7,18 +7,20 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Overview of WinUI Markdown Viewer (SfMarkdownViewer)
+# Overview of WinUI Markdown Viewer 
 
-The WinUI Markdown Viewer is a user interface control that transforms Markdown text into a visually formatted display without the need for external rendering tools or manual styling. It offers a convenient way to present rich Markdown content within WinUI applications, making it well-suited for displaying documentation, release notes, help information, and other content written in Markdown.
+The WinUI MarkdownViewer control is a UI component that renders Markdown text as visually formatted content without requiring external tools or manual styling. It provides a convenient way to display rich Markdown content within WinUI applications, making it ideal for scenarios such as documentation, release notes, help content, and more.
 
 ## Key Features
 
-* **Markdown rendering** – Transforms Markdown elements—such as headings, lists, links, images, tables, code blocks, and block quotes—into well‑formatted and easily readable content.
+- **Markdown rendering** – Renders Markdown elements such as headings, lists, links, images, tables, code blocks, and block quotes into structured and readable content.
 
-* **Multiple content sources** – Allows Markdown content to be loaded from a string, a file, or a URL source.
+- **Multiple content sources** – Supports loading Markdown content from strings, files, or URLs.
 
-* **Hyperlink navigation** – Enables support for clickable links that can either open external web pages or navigate within the application.
+- **Hyperlink navigation** – Enables clickable links that can open external web pages or support in-app navigation.
 
-* **Content customization** – Supports options to customize appearance, including content colors, fonts, and text styles..
+- **Content customization** – Provides styling options to customize fonts, colors, and text appearance.
 
-![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-overview.WEBP)
+The following image shows the rendered output of Markdown content in the `SfMarkdownViewer` control:
+
+![SfMarkdownViewer Overview](Images/WinUI-markdown-viewer-overview.WEBP)

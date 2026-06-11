@@ -7,35 +7,26 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Customize Appearance in WinUI SfMarkdownViewer
+# Customization in WinUI Markdown Viewer
 
-The SfMarkdownViewer control in WinUI offers a robust styling system through the MarkdownStyleSettings class. This enables developers to precisely and flexibly customize the visual appearance of Markdown content.
+The `SfMarkdownViewer` control in WinUI provides a flexible styling system through the `MarkdownStyleSettings` class. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 
-## Customization with MarkdownStyleSettings
+## Style settings for SfMarkdownViewer
 
-The MarkdownStyleSettings class allows you to customize the appearance of headings and body text in the SfMarkdownViewer, giving you control over how the content is visually presented.
+The `MarkdownStyleSettings` class provides style customization for different Markdown elements through the following properties:
 
-* ParagraphStyle – Gets or sets the style for paragraph elements.
+- `ParagraphStyle` – Defines the style for paragraph text.  
+- `H1Style` to `H6Style` – Defines styles for heading levels.  
+- `ListStyle` – Applies to ordered and unordered lists.  
+- `TableStyle` – Applies to tables, including headers and rows.  
+- `BlockQuoteStyle` – Used for block-level quotes.  
+- `InlineQuoteStyle` – Used for inline quoted text.  
+- `ThematicStyle` – Used for horizontal rules.  
+- `LinkStyle` – Defines hyperlink appearance.  
+- `CodeBlockStyle` – Applies to code blocks.  
+- `MermaidStyle` – Applies to Mermaid diagram rendering.  
 
-* H1Style, H2Style, H3Style, H4Style, H5Style, H6Style – Gets or sets the style for H1 to H6 heading elements respectively.
-
-* TableStyle – Gets or sets the style for table elements, including headers and data rows.
-
-* ListStyle – Gets or sets the style for ordered and unordered list elements.
-
-* LinkStyle – Gets or sets the style for hyperlink elements.
-
-* InlineQuoteStyle – Gets or sets the style for inline quote (blockquote within text) elements.
-
-* BlockQuoteStyle – Gets or sets the style for block quote elements.
-
-* CodeBlockStyle – Gets or sets the style for code block elements.
-
-* ThematicStyle – Gets or sets the style for thematic break (horizontal rule) elements.
-
-* MermaidStyle – Gets or sets the style for rendering Mermaid diagram content.
-
-## Add MarkdownStyleSettings to the SfMarkdownViewer
+You can apply these custom styles by assigning a `MarkdownStyleSettings` instance to the `Settings` property of `SfMarkdownViewer`, as shown in the following code example.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -134,6 +125,6 @@ Used to define major sections within your Markdown content.
 {% endhighlight %}
 {% endtabs %}
 
-The image below illustrates how these style settings improve the visual appearance of the rendered Markdown content:
+The following image shows the rendered output with customized heading and paragraph styles:
 
-![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-Customization.WEBP)
+![Customized Markdown Rendering](Images/WinUI-markdown-viewer-Customization.WEBP)
