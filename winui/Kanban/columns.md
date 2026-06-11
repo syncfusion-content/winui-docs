@@ -1232,6 +1232,28 @@ public class ViewModel
 
 ![disable-card-drag-drop-in-winui-kanban](images/columns/disable-card-drag-drop-in-winui-kanban.gif)
 
+## Column Drag and Drop
+
+The Kanban control also supports column reordering through drag-and-drop. To enable this functionality, set the AllowColumnDrag property of the SfKanban class to true. The default value is false.
+
+{% tabs %}
+
+{% highlight xaml hl_lines="2" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 AllowColumnDrag="True">
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight C#  hl_lines="1" %} 
+
+this.kanban.AllowColumnDrag = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Placeholder in WinUI Kanban control
 
 The placeholders in the WinUI Kanban control visually indicate the exact position where a card is dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
