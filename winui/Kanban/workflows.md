@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Workflows in .NET WinUI Kanban Board control | Syncfusion<sup>®</sup>
+title: Workflows in .NET WinUI Kanban Board control | Syncfusion
 description: Learn here all about Workflows support in Syncfusion<sup>®</sup> .NET WinUI Kanban Board (SfKanban) control and more.
 platform: WinUI
 control: SfKanban
