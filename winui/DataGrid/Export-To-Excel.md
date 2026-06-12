@@ -9,7 +9,7 @@ documentation: ug
 
 # Export To Excel in WinUI DataGrid
 
-The [WinUI DataGrid](https://help.syncfusion.com/winui/datagrid/overview) supports exporting data to excel. Export unbound rows, unbound columns, merged cells, stacked headers, and Details View while exporting.
+The [WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) supports exporting data to excel. Export unbound rows, unbound columns, merged cells, stacked headers, and Details View while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 

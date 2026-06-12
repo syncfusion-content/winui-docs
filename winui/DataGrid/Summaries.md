@@ -10,7 +10,7 @@ documentation: ug
 
 # Summaries in WinUI DataGrid
 
-SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
 * **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid. 
 

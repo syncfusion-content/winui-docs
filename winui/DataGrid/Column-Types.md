@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Types in WinUI DataGrid
 
-SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
+[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
 You can also add or override existing columns and renderers as you need.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WinUI DataGrid
 
-DataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Print) method.
+[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Print) method.
 To display the print preview window, you need to pass the `Window` instance as a parameter to this method.
  
 {% tabs %}

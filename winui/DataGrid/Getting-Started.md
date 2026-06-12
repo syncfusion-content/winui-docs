@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI DataGrid
 
-This section explains the steps required to add the DataGrid control and binding data in datagrid control. This section covers only basic features needed to get started with Syncfusion<sup>®</sup> datagrid control.
+This section explains the steps required to add the DataGrid control and binding data in datagrid control. This section covers only basic features needed to get started with [WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) control.
 
 ## Creating an application with WinUI DataGrid
 
@@ -469,7 +469,7 @@ Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syn
 
 <img src="Getting-Started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid Filtering" width="100%" Height="Auto"/>
 
-
+N> Looking for the full JavaScript DataGrid control overview, features, pricing, and documentation? Visit the [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagrid) page.
 
 
 

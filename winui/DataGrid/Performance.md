@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance in WinUI DataGrid
 
-SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
+[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
                                
 ## Improving loading performance
 
