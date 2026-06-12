@@ -12,16 +12,19 @@ keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer
 
 This section outlines a step‑by‑step guide for integrating and using the SfMarkdownViewer control in your WinUI applications.
 
-## Creating an application with WinUI MarkdownViewer
+## Creating an application with SfMarkdownViewer (WinUI)
 
-1. Create a **WinUI 3 desktop app for C# and .NET 6**.
+1. Create a WinUI 3 desktop application.
 
-2. Download and refer the following NuGet package in the project:
-   - Syncfusion.MarkdownViewer.WinUI 
+2. Install the following NuGet package in your project:
+   - Syncfusion.MarkdownViewer.WinUI
 
-3. Import the control namespace `Syncfusion.UI.Xaml.Markdown` in XAML or C# code.
+3. Import the following namespace in XAML or C# code:
+   - Syncfusion.UI.Xaml.Markdown
 
-4. Initialize the **SfMarkdownViewer** control.
+4. Initialize an instance of the `SfMarkdownViewer` control.
+
+You can initialize the control in both XAML and C# as shown below:
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,14 +33,13 @@ This section outlines a step‑by‑step guide for integrating and using the SfM
     x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Markdown">
+
     <Grid>
         <syncfusion:SfMarkdownViewer />
     </Grid>
 </Window>
-    
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -51,6 +53,7 @@ namespace MarkdownViewerGettingStarted
         public MainWindow()
         {
             InitializeComponent();
+
             // Creating an instance of the SfMarkdownViewer control
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
             this.Content = markdownViewer;
@@ -63,7 +66,7 @@ namespace MarkdownViewerGettingStarted
 
 ## Populating Source to the SfMarkdownViewer
 
-The `Source` property is used to supply Markdown content to the control. It supports raw Markdown text, file paths, and HTTP/HTTPS URLs as input.
+The `Source` property is used to supply Markdown content to the control. It supports raw Markdown text, file paths, and HTTP/HTTPS URLs.
 
 {% tabs %} 
 {% highlight xaml %}
