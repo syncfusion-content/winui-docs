@@ -32,9 +32,9 @@ This section outlines a step‑by‑step guide for integrating and using the SfM
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-    xmlns:markdown="using:Syncfusion.UI.Xaml.Markdown">
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Markdown">
     <Grid>
-        <markdown:SfMarkdownViewer />
+        <syncfusion:SfMarkdownViewer />
     </Grid>
 </Window>
     
@@ -54,7 +54,6 @@ namespace MarkdownViewerGettingStarted
             // Creating an instance of the SfMarkdownViewer control
             SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
             this.Content = markdownViewer;
-
         }
     }
 }
@@ -69,8 +68,8 @@ The `Source` property is used to supply Markdown content to the control. It supp
 {% tabs %} 
 {% highlight xaml %}
 
-<markdown:SfMarkdownViewer>
-    <markdown:SfMarkdownViewer.Source>
+<syncfusion:SfMarkdownViewer>
+    <syncfusion:SfMarkdownViewer.Source>
         <x:String xml:space="preserve">
             <![CDATA[
 
@@ -90,8 +89,8 @@ Used to define major sections within your Markdown content.
 ![WinUi SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
             ]]>
         </x:String>
-    </markdown:SfMarkdownViewer.Source>
-</markdown:SfMarkdownViewer>
+    </syncfusion:SfMarkdownViewer.Source>
+</syncfusion:SfMarkdownViewer>
 
 {% endhighlight %}
 

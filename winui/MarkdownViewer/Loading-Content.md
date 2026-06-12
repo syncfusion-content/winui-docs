@@ -19,8 +19,8 @@ Assign a Markdown-formatted string to the Source property of the SfMarkdownViewe
 {% highlight xaml %}
 
 <Grid>
-    <markdown:SfMarkdownViewer>
-        <markdown:SfMarkdownViewer.Source>
+    <syncfusion:SfMarkdownViewer>
+        <syncfusion:SfMarkdownViewer.Source>
             <x:String xml:space="preserve">
                 <![CDATA[
 
@@ -40,8 +40,8 @@ Used to define major sections within your Markdown content.
 ![WinUI SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
                 ]]>
             </x:String>
-        </markdown:SfMarkdownViewer.Source>
-    </markdown:SfMarkdownViewer>
+        </syncfusion:SfMarkdownViewer.Source>
+    </syncfusion:SfMarkdownViewer>
 </Grid>
 
 {% endhighlight %}
@@ -114,8 +114,8 @@ The SfMarkdownViewer control is capable of loading Markdown content directly fro
 {% highlight xaml %}
 
 <Window>
-    <markdown:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/WinUI-tabsplitter-example/refs/heads/master/README.md">
-    </markdown:SfMarkdownViewer>
+    <syncfusion:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/WinUI-tabsplitter-example/refs/heads/master/README.md">
+    </syncfusion:SfMarkdownViewer>
 </Window>
 
 {% endhighlight %}

@@ -21,8 +21,8 @@ The following XAML and C# examples demonstrate how to assign Markdown content co
 {% highlight xaml %}
 
 <Grid>
-    <markdown:SfMarkdownViewer>
-        <markdown:SfMarkdownViewer.Source>
+    <syncfusion:SfMarkdownViewer>
+        <syncfusion:SfMarkdownViewer.Source>
             <x:String xml:space="preserve">
                 <![CDATA[
 
@@ -43,8 +43,8 @@ flowchart TD
 ```   
                 ]]>
             </x:String>
-        </markdown:SfMarkdownViewer.Source>
-    </markdown:SfMarkdownViewer>
+        </syncfusion:SfMarkdownViewer.Source>
+    </syncfusion:SfMarkdownViewer>
 </Grid>
 
 {% endhighlight %}

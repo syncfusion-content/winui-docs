@@ -35,7 +35,7 @@ You can apply these custom styles by assigning a `MarkdownStyleSettings` instanc
     <syncfusion:SfMarkdownViewer x:Name="markdownviewer">
         <syncfusion:SfMarkdownViewer.Source>
             <x:String xml:space="preserve">
-                <!CDATA
+                <![CDATA[
 
 # What is the Markdown Viewer ?
                         
@@ -52,22 +52,22 @@ Used to define major sections within your Markdown content.
                         
 ![Syncfusion WinUI Markdown Viewer](Images/WinUI-markdown-viewer-Customization.WEBP)
                             
-                >
+                ]]>
             </x:String>
         </syncfusion:SfMarkdownViewer.Source>
-        <markdown:SfMarkdownViewer.Settings>
-            <markdown:MarkdownStyleSettings>
-                <markdown:MarkdownStyleSettings.H1Style>
-                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
-                </markdown:MarkdownStyleSettings.H1Style>
-                <markdown:MarkdownStyleSettings.H2Style>
-                    <markdown:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
-                </markdown:MarkdownStyleSettings.H2Style>
-                <markdown:MarkdownStyleSettings.ParagraphStyle>
-                    <markdown:ParagraphSettings FontStyle="Italic" FontSize="15" />
-                </markdown:MarkdownStyleSettings.ParagraphStyle>
-            </markdown:MarkdownStyleSettings>
-        </markdown:SfMarkdownViewer.Settings>
+        <syncfusion:SfMarkdownViewer.Settings>
+            <syncfusion:MarkdownStyleSettings>
+                <syncfusion:MarkdownStyleSettings.H1Style>
+                    <syncfusion:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
+                </syncfusion:MarkdownStyleSettings.H1Style>
+                <syncfusion:MarkdownStyleSettings.H2Style>
+                    <syncfusion:HeaderSettings FontStyle="Normal" FontSize="50" Foreground="MediumPurple" />
+                </syncfusion:MarkdownStyleSettings.H2Style>
+                <syncfusion:MarkdownStyleSettings.ParagraphStyle>
+                    <syncfusion:ParagraphSettings FontStyle="Italic" FontSize="15" />
+                </syncfusion:MarkdownStyleSettings.ParagraphStyle>
+            </syncfusion:MarkdownStyleSettings>
+        </syncfusion:SfMarkdownViewer.Settings>
     </syncfusion:SfMarkdownViewer>
 </Grid>
 
