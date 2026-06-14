@@ -1094,6 +1094,64 @@ public class ViewModel
 
 ![expand-collapse-column-in-winui-kanban](images/columns/expand-collapse-column-in-winui-kanban.png)
 
+## Column Drag and Drop
+
+Columns can be reordered in the .NET WinUI Kanban control using built-in drag-and-drop.
+Enable this by setting the `AllowColumnDrag` property of SfKanban to true. The default value is false.
+
+{% tabs %}
+
+{% highlight xaml hl_lines="3" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 AutoGenerateColumns="False" 
+                 AllowColumnDrag="True"
+                 ItemsSource="{Binding TaskDetails}">
+        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight C#  hl_lines="3" %} 
+
+this.kanban.AutoGenerateColumns = false;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+this.kanban.AllowColumnDrag = true;
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
+
+{% endhighlight %}
+
+{% highlight C# tabtitle="ViewModel.cs" %}
+
+public class ViewModel
+{
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskDetails = new ObservableCollection<KanbanModel>();
+        this.GetTaskDetails();
+    }
+
+    private void GetTaskDetails()
+    { 
+        this.TaskDetails.Add(new KanbanModel() { Title = "UWP Issue", Id = "651", Description = "Crosshair label template not visible in UWP", Category = "Open", IndicatorColorKey = "High", Tags = new List<string>() { "Bug Fixing" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "Kanban Feature", Description = "Provide drag and drop support", Category = "In Progress", IndicatorColorKey = "Low", Tags = new List<string>() { "New control" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "WF Issue", Description = "HorizontalAlignment for tooltip is not working", Category = "Done", IndicatorColorKey = "High", Tags = new List<string>() { "Bug fixing" } });
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Card drag and drop
 
 Cards can be dragged and dropped across columns, within columns, or across swimlane rows to modify the card's status. To enable drag-and-drop functionality within the kanban, set the [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to `true`. The default value is `true`.
@@ -1231,28 +1289,6 @@ public class ViewModel
 {% endtabs %}
 
 ![disable-card-drag-drop-in-winui-kanban](images/columns/disable-card-drag-drop-in-winui-kanban.gif)
-
-## Column Drag and Drop
-
-The Kanban control also supports column reordering through drag-and-drop. To enable this functionality, set the `AllowColumnDrag` property of the SfKanban class to true. The default value is false.
-
-{% tabs %}
-
-{% highlight xaml hl_lines="2" %}
-
-<kanban:SfKanban x:Name="kanban"
-                 AllowColumnDrag="True">
-</kanban:SfKanban>
-
-{% endhighlight %}
-
-{% highlight C#  hl_lines="1" %} 
-
-this.kanban.AllowColumnDrag = true;
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ### Placeholder in WinUI Kanban control
 
