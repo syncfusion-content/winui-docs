@@ -27,3 +27,5 @@ The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a p
 * Cartesian chart provides support for rendering multiple series at same time, with options to compare and visualize two different series simultaneously.
 
 * User friendly and provides various options for you to customize chart features like axis, legends and data markers.
+
+N> Looking for the full WinUI Charts component overview, features, pricing, and documentation? Visit the [WinUI Charts](https://help.syncfusion.com/winui/cartesian-charts/overview) page.
