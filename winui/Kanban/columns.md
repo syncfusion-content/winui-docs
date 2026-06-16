@@ -1097,7 +1097,7 @@ public class ViewModel
 ## Column Drag and Drop
 
 Columns can be reordered in the .NET WinUI Kanban control using built-in drag-and-drop.
-Enable this by setting the `AllowColumnDrag` property of SfKanban to true. The default value is false.
+Enable this by setting the `AllowColumnReorder ` property of SfKanban to true. The default value is false.
 
 {% tabs %}
 
@@ -1105,7 +1105,7 @@ Enable this by setting the `AllowColumnDrag` property of SfKanban to true. The d
 
 <kanban:SfKanban x:Name="kanban"
                  AutoGenerateColumns="False" 
-                 AllowColumnDrag="True"
+                 AllowColumnReorder ="True"
                  ItemsSource="{Binding TaskDetails}">
         <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
         <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
@@ -1121,7 +1121,7 @@ Enable this by setting the `AllowColumnDrag` property of SfKanban to true. The d
 
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-this.kanban.AllowColumnDrag = true;
+this.kanban.AllowColumnReorder  = true;
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
@@ -1142,7 +1142,7 @@ public class ViewModel
 
     private void GetTaskDetails()
     { 
-        this.TaskDetails.Add(new KanbanModel() { Title = "UWP Issue", Id = "651", Description = "Crosshair label template not visible in UWP", Category = "Open", IndicatorColorKey = "High", Tags = new List<string>() { "Bug Fixing" } });
+        this.TaskDetails.Add(new KanbanModel() { Title = "UWP Issue", Description = "Crosshair label template not visible in UWP", Category = "Open", IndicatorColorKey = "High", Tags = new List<string>() { "Bug Fixing" } });
         this.TaskDetails.Add(new KanbanModel() { Title = "Kanban Feature", Description = "Provide drag and drop support", Category = "In Progress", IndicatorColorKey = "Low", Tags = new List<string>() { "New control" } });
         this.TaskDetails.Add(new KanbanModel() { Title = "WF Issue", Description = "HorizontalAlignment for tooltip is not working", Category = "Done", IndicatorColorKey = "High", Tags = new List<string>() { "Bug fixing" } });
     }
