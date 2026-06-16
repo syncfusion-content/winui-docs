@@ -83,6 +83,8 @@ Used to define major sections within your Markdown content.
 {% endhighlight %}
 {% endtabs %}
 
+![WinUI SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+
 ## Loading from Local File
 
 To load Markdown content from a local file, simply set the file path as the value of the Source property. The control automatically recognizes valid file paths and reads the file content accordingly.
@@ -106,6 +108,8 @@ public partial class MainWindow : Window
 
 {% endhighlight %}
 
+![WinUI SfMarkdownViewer - Load from local file](Images/WinUI-markdown-mermaid-LoadFromLocalFile.PNG)
+
 ## Loading from URL
 
 The SfMarkdownViewer control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
@@ -114,7 +118,7 @@ The SfMarkdownViewer control is capable of loading Markdown content directly fro
 {% highlight xaml %}
 
 <Window>
-    <syncfusion:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/WinUI-tabsplitter-example/refs/heads/master/README.md">
+    <syncfusion:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/blazor-markdown-editor-preview/refs/heads/master/README.md">
     </syncfusion:SfMarkdownViewer>
 </Window>
 
@@ -128,10 +132,12 @@ public partial class MainWindow : Window
     {
         InitializeComponent();  
         SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
-        markdownViewer.Source = "https://raw.githubusercontent.com/SyncfusionExamples/WinUI-tabsplitter-example/refs/heads/master/README.md";
+        markdownViewer.Source = "https://raw.githubusercontent.com/SyncfusionExamples/blazor-markdown-editor-preview/refs/heads/master/README.md";
         this.Content = markdownViewer;       
     }
 } 
 
 {% endhighlight %}
 {% endtabs %}
+
+![WinUI SfMarkdownViewer - Load from URL](Images/WinUI-markdown-mermaid-LoadFromURL.PNG)
