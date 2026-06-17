@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About WinUI DataGrid control | Syncfusion®
+canonical_url: "https://www.syncfusion.com/winui-controls/datagrid"
 description: Learn here all about introduction of Syncfusion® WinUI DataGrid(SfDataGrid) control with key features and more.
 platform: WinUI
 control: DataGrid
