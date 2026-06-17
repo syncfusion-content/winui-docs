@@ -167,7 +167,7 @@ NumberBox.Culture = ci;
 
 ## Customize percentage display
 
-When the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) is in percentage format, the value can be displayed in two ways as follows:
+When the percentage format is applied to the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html), the value can be displayed in the following two ways:
 
 `Value`: Displays the actual value with percentage symbol.
 
