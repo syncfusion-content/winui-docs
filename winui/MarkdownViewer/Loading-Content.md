@@ -108,7 +108,7 @@ public partial class MainWindow : Window
 
 {% endhighlight %}
 
-![Loading from local file in WinUI MarkdownViewer](Images/WinUI-markdown-mermaid-LoadFromLocalFile.PNG)
+![Loading from local file in WinUI MarkdownViewer](Images/WinUI-markdown-viewer-LoadFromLocalFile.PNG)
 
 ## Loading from URL
 
@@ -140,4 +140,4 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![Loading from URL in WinUI MarkdownViewer](Images/WinUI-markdown-mermaid-LoadFromURL.PNG)
+![Loading from URL in WinUI MarkdownViewer](Images/WinUI-markdown-viewer-LoadFromURL.PNG)
