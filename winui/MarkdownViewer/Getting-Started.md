@@ -10,7 +10,7 @@ keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer
 
 # Getting Started with WinUI Markdown Viewer (SfMarkdownViewer)
 
-This section outlines a step‑by‑step guide for integrating and using the SfMarkdownViewer control in your WinUI applications.
+This section outlines a step‑by‑step guide for integrating and using the `SfMarkdownViewer` control in your WinUI applications.
 
 ## Creating an application with SfMarkdownViewer (WinUI)
 
