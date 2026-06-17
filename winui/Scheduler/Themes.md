@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Themes in WinUI Scheduler (SfScheduler)
- The WinUI Scheduler allows you to apply different themes to customize its appearance for a better user experience.
+ The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) allows you to apply different themes to customize its appearance for a better user experience.
 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes) 
 
