@@ -1094,10 +1094,10 @@ public class ViewModel
 
 ![expand-collapse-column-in-winui-kanban](images/columns/expand-collapse-column-in-winui-kanban.png)
 
-## Column Drag and Drop
+## Column drag and drop
 
 Columns can be reordered in the .NET WinUI Kanban control using built-in drag-and-drop.
-Enable this by setting the `AllowColumnReorder ` property of SfKanban to true. The default value is false.
+Enable this by setting the `AllowColumnReorder` property of `SfKanban` to `true`. The default value is `false`.
 
 {% tabs %}
 
@@ -1107,12 +1107,12 @@ Enable this by setting the `AllowColumnReorder ` property of SfKanban to true. T
                  AutoGenerateColumns="False" 
                  AllowColumnReorder ="True"
                  ItemsSource="{Binding TaskDetails}">
-        <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
-        <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
-        <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
-    <kanban:SfKanban.DataContext>
-        <local:ViewModel/>
-    </kanban:SfKanban.DataContext>
+   <kanban:KanbanColumn HeaderText="To Do" Categories="Open" />
+   <kanban:KanbanColumn HeaderText="In Progress" Categories="In Progress" />
+   <kanban:KanbanColumn HeaderText="Done" Categories="Done" />
+   <kanban:SfKanban.DataContext>
+      <local:ViewModel/>
+   </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 
 {% endhighlight %}
@@ -1122,7 +1122,7 @@ Enable this by setting the `AllowColumnReorder ` property of SfKanban to true. T
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AllowColumnReorder  = true;
-this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open", AllowDrag = false, AllowDrop = false });
+this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "To Do", Categories = "Open" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "In Progress", Categories = "In Progress" });
 this.kanban.Columns.Add(new KanbanColumn() { HeaderText = "Done", Categories = "Done" });
 
