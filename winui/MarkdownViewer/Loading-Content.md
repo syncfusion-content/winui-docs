@@ -108,7 +108,7 @@ public partial class MainWindow : Window
 
 {% endhighlight %}
 
-![WinUI SfMarkdownViewer - Load from local file](Images/WinUI-markdown-mermaid-LoadFromLocalFile.PNG)
+![Loading from local file in WinUI MarkdownViewer](Images/WinUI-markdown-mermaid-LoadFromLocalFile.PNG)
 
 ## Loading from URL
 
@@ -118,7 +118,7 @@ The SfMarkdownViewer control is capable of loading Markdown content directly fro
 {% highlight xaml %}
 
 <Window>
-    <syncfusion:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/blazor-markdown-editor-preview/refs/heads/master/README.md">
+    <syncfusion:SfMarkdownViewer Source="https://help.syncfusion.com/winui/ai-assistview/overview.md">
     </syncfusion:SfMarkdownViewer>
 </Window>
 
@@ -132,7 +132,7 @@ public partial class MainWindow : Window
     {
         InitializeComponent();  
         SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
-        markdownViewer.Source = "https://raw.githubusercontent.com/SyncfusionExamples/blazor-markdown-editor-preview/refs/heads/master/README.md";
+        markdownViewer.Source = "https://help.syncfusion.com/winui/ai-assistview/overview.md";
         this.Content = markdownViewer;       
     }
 } 
@@ -140,4 +140,4 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI SfMarkdownViewer - Load from URL](Images/WinUI-markdown-mermaid-LoadFromURL.PNG)
+![Loading from URL in WinUI MarkdownViewer](Images/WinUI-markdown-mermaid-LoadFromURL.PNG)
