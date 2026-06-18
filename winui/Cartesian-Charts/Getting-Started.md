@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Getting started with WinUI Cartesian Chart control | Syncfusion
+canonical_url: "https://www.syncfusion.com/winui-controls/cartesian-charts"
 description: This section explains about the getting started with Syncfusion® WinUI Cartesian Chart (SfCartesianChart) control, its elements, and more.
 platform: WinUI
 control: SfCartesianChart
