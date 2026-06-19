@@ -1,6 +1,7 @@
 ---
 layout: post
 title: About WinUI Scheduler control | Syncfusion
+canonical_url: "https://www.syncfusion.com/winui-controls/scheduler"
 description: Learn here all about introduction of Syncfusion WinUI Scheduler(SfScheduler) control , its features, and more.
 platform: winui
 control: Scheduler
