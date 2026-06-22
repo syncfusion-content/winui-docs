@@ -491,6 +491,4 @@ The following chart is created as a result of the previous codes.
 
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted).
-
-N> Looking for the full WinUI Charts component overview, features, pricing, and documentation? Visit the [WinUI Charts](https://help.syncfusion.com/winui/circular-charts/getting-started) page.
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted). Looking for the full WinUI Charts component overview, features, pricing, and documentation? Visit the [WinUI Charts](https://www.syncfusion.com/winui-controls/cartesian-charts) page.
