@@ -169,7 +169,7 @@ NumberBox.Culture = ci;
 
 When the percentage format is applied to the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html), the value can be displayed in the following two ways:
 
-`Value`: Displays the actual value with percentage symbol.
+**Value**: Displays the actual value with percentage symbol.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ sfNumberBox.Width = 200;
 
 ![WinUI SfNumberBox PercentDisplayMode](Formatting_images/winui-numberbox-percentDisplayMode-Value.png)
 
-`Compute`: Displays the computed value with percentage symbol.
+**Compute** : Displays the computed value with percentage symbol.
 
 {% tabs %}
 {% highlight xaml %}
