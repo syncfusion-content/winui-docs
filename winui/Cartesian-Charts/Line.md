@@ -12,7 +12,7 @@ keywords: winui line chart, winui sfcartesianchart, winui line chart customizati
 
 ## Line Chart
 
-[WinUI Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-line-chart) is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+[WinUI Line Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-line-chart) is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}
 
@@ -214,7 +214,7 @@ this.Content = chart;
 
 ![Step line Chart in WinUI](Chart-types_images/WinUI_step_line_chart.png)
 
-N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepLine) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepLine) that shows how to easily configure with built-in support for creating stunning visual effects.
 
 ## Spline Chart 
 
@@ -345,4 +345,4 @@ this.Content = chart;
 
 ![Spline types chart in WinUI Chart](Chart-types_images/WinUI_spline_types_chart.png)
 
-N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Spline) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can refer to our [WinUI Spline Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-spline-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Spline Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Spline) that shows how to easily configure with built-in support for creating stunning visual effects.

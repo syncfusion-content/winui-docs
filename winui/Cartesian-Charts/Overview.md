@@ -11,7 +11,7 @@ keywords: winui chart overview, introduction to winui charts, exploring winui ch
 
 # WinUI Chart Overview
 
-The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
+The [WinUI Chart](https://www.syncfusion.com/winui-controls/cartesian-charts) provides a perfect way to visualize data with a high level of user interactivity that focus on development, productivity and simplicity of use. Chart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
 ![Overview of WinUI Chart](Overview_images/chart_overview.png)
 
@@ -28,3 +28,5 @@ The [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides a p
 * Cartesian chart provides support for rendering multiple series at same time, with options to compare and visualize two different series simultaneously.
 
 * User friendly and provides various options for you to customize chart features like axis, legends and data markers.
+
+N> Looking for the full WinUI Charts component overview, features, pricing, and documentation? Visit the [WinUI Charts](https://www.syncfusion.com/winui-controls/cartesian-charts) page.
