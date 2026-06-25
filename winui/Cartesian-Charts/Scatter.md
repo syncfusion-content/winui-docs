@@ -10,7 +10,7 @@ keywords: winui scatter chart, winui sfcartesianchart, winui scatter chart custo
 
 # Scatter Chart in WinUI Charts (SfCartesianChart)
 
-The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/charts/winui-scatter-chart) is similar to bubble chart, where each data point being represented by a circle with equal size.
+The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-scatter-chart) is similar to bubble chart, where each data point being represented by a circle with equal size.
 
 ## Scatter Chart
 
