@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Calendar Types in WinUI Scheduler (SfScheduler)
-This section describes how to localize the [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) control by using [Language](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.language?view=net-5.0) and [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) properties in [SfScheduler.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html)
+This section describes how to localize the Scheduler control by using [Language](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.language?view=net-5.0) and [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) properties in [SfScheduler.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html)
 
 ## Types of Calendar
 The Scheduler control supports different types of calendars such as Gregorian, Korean, Hebrew, and more. You can change the calendar types by using the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CalendarIdentifier) property in [SfScheduler.](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) The default value of the `CalendarIdentifier` property is [GregorianCalendar.](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.gregoriancalendar?view=net-5.0)
