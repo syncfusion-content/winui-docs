@@ -9,7 +9,7 @@ documentation: ug
 
 # Time Zone in WinUI Scheduler (SfScheduler)
 
-The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) allows to create appointments in various time zones and display them in your time zone or any other time zone. Use the time zone in the following four different ways:
+The Scheduler allows to create appointments in various time zones and display them in your time zone or any other time zone. Use the time zone in the following four different ways:
 
 * Create appointments in the different time zones.
 * Display appointments based on the client’s time zone.
