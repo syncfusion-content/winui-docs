@@ -9,7 +9,7 @@ documentation: ug
 
 # Load On Demand in WinUI Scheduler (SfScheduler)
 
-The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) supports loading appointments on-demand with loading indicator and it improves the loading performance when there is appointments range for multiple years.
+The WinUI Scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there is appointments range for multiple years.
 
 ![load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler](LoadOnDemand_Images/load-appointments-on-demand-from-visible-date-ranges-in-winui-scheduler.gif)
 
