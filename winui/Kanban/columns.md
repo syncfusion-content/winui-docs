@@ -1117,7 +1117,7 @@ Enable this by setting the `AllowColumnReorder` property of `SfKanban` to `true`
 
 {% endhighlight %}
 
-{% highlight C#  hl_lines="3" %} 
+{% highlight C# hl_lines="3" %} 
 
 this.kanban.AutoGenerateColumns = false;
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
