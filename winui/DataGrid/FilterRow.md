@@ -9,7 +9,7 @@ documentation: ug
 
 # Filter Row in WinUI DataGrid
 
-[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html) property.
+SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html) property.
 
 The `FilterRowPosition` property contains the below positions to load the FilterRow in SfDataGrid.
 

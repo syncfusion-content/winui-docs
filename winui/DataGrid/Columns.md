@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in WinUI DataGrid
 
-[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
+SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 
 Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
 

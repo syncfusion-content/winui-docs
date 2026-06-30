@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Flyout in WinUI DataGrid
 
-[WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for different rows in an efficient manner. 
+DataGrid provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for different rows in an efficient manner. 
 
 The below code example shows the context flyout with command bindings.
 

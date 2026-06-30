@@ -9,7 +9,7 @@ documentation: ug
 
 # UI Customization of the WinUI DataGrid (SfDataGrid)
 
-The appearance of [WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and using key's.
+The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and using key's.
  
 ## Styling Record row
 
