@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Getting Started with WinUI Scheduler control | Syncfusion
-canonical_url: "https://www.syncfusion.com/winui-controls/scheduler"
 description: Learn here all about getting started with Syncfusion WinUI Scheduler(SfScheduler) control, its elements, and more.
 platform: winui
 control: SfScheduler
@@ -401,3 +400,5 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 {% endtabs %}  
 
 ![change-first-day-of-week-in-winui-scheduler](GettingStarted_Images/change-first-day-of-week-in-winui-scheduler.png)
+
+N> Looking for the full WinUI Scheduler component overview, features, pricing, and documentation? Visit the [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) page.
