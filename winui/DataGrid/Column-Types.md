@@ -739,6 +739,32 @@ this.dataGrid.Columns.Add(new GridNumericColumn()
 
 <img src="Column-Types_images/winui-datagrid-NumericColumn-column.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
 
+### Supported Numeric DataTypes in GridNumericColumn
+
+[GridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html) supports the following numeric data types: Byte, Decimal, Double, Float, Int, Long, SByte, Short, UInt, ULong, and UShort.
+
+The numeric data type for the `GridNumericColumn` is specified using the `ValueType` property. This property allows the column to accept values of the defined data type. By default, the `ValueType` property is set to `Double`.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfDataGrid x:Name="sfDataGrid" 
+                     ColumnWidthMode="Auto" 
+                     AllowEditing="True" 
+                     ItemsSource="{Binding Items}" 
+                     AutoGenerateColumns="False">
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridNumericColumn x:Name="decimalNumericColumn" MappingName="DecimalValue"  ValueType="Decimal" HeaderText="Decimal Value"/>
+        <dataGrid:GridNumericColumn x:Name="doubleNumericColumn" MappingName="DoubleValue" ValueType="Double" HeaderText="Double Value"/>
+        <dataGrid:GridNumericColumn x:Name="floatNumericColumn" MappingName="FloatValue" ValueType="Float" HeaderText="Float Value"/>
+        <dataGrid:GridNumericColumn x:Name="intNumericColumn" MappingName="IntValue" ValueType="Int" HeaderText="Int Value"/>
+        <dataGrid:GridNumericColumn x:Name="longNumericColumn" MappingName="LongValue" ValueType="Long" HeaderText="Long Value"/>
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Types_images/winui-datagrid-NumericColumn-ValueType.png" alt="WinUI DataGrid Column with NumericColumn ValueType" width="100%" Height="Auto"/>
+
 ### Change the format of numeric value
 
 You can format the value of a [GridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html) using the [DisplayNumberFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_DisplayNumberFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_NumberFormatter) property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.

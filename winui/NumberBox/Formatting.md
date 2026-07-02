@@ -165,3 +165,58 @@ NumberBox.Culture = ci;
 
 ![WinUI NumberBox culture based custom format](Formatting_images/winui-numberbox-culture_support.png)
 
+## Customize percentage display
+
+When the percentage format is applied to the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html), the value can be displayed in the following two ways:
+
+**Value**: Displays the actual value with percentage symbol.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumberBox x:Name="numberBox" Width="200"
+                        CustomFormat="p" 
+                        Value="1000"  
+                        PercentDisplayMode="Value">
+</editors:SfNumberBox>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumberBox sfNumberBox= new SfNumberBox();
+sfNumberBox.CustomFormat = "p";
+sfNumberBox.Value = 1000;
+sfNumberBox.PercentDisplayMode = PercentDisplayMode.Value;
+sfNumberBox.Width = 200;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI SfNumberBox PercentDisplayMode](Formatting_images/winui-numberbox-percentDisplayMode-Value.png)
+
+**Compute** : Displays the computed value with percentage symbol.
+
+{% tabs %}
+{% highlight xaml %}
+
+<editors:SfNumberBox x:Name="numberBox" Width="200"
+                        CustomFormat="p" 
+                        Value="1000"  
+                        PercentDisplayMode="Compute">
+</editors:SfNumberBox>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfNumberBox sfNumberBox= new SfNumberBox();
+sfNumberBox.Value = 1000;
+sfNumberBox.CustomFormat = "p";
+sfNumberBox.PercentDisplayMode = PercentDisplayMode.Compute;
+sfNumberBox.Width = 200;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI SfNumberBox PercentDisplayMode](Formatting_images/winui-numberbox-percentDisplayMode-Compute.png)
+
+N> Default value of PercentDisplayMode is `Compute`.
