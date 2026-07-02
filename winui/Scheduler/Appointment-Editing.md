@@ -9,7 +9,7 @@ documentation: ug
 
 # Appointment Editing in WinUI Scheduler (SfScheduler)
 
-This section explains how to handle appointment editing in WinUI scheduler and also explains about the appointment resizing.
+This section explains how to handle appointment editing in [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) and also explains about the appointment resizing.
 
 ## Creating appointments
 
