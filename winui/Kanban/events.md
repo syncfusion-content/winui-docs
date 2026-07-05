@@ -151,7 +151,7 @@ The `ColumnDrop` event occurs when a dragged column is dropped into a new positi
 `TargetColumn` - Returns the column from which the dragged column is dropped.
 
 {% tabs %}
-{% highlight XAML hl_lines="4" %}
+{% highlight XAML hl_lines="5" %}
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
@@ -167,7 +167,7 @@ The `ColumnDrop` event occurs when a dragged column is dropped into a new positi
 </kanban:SfKanban>
 
 {% endhighlight %}
-{% highlight C# hl_lines="4" %}
+{% highlight C# hl_lines="3" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.AutoGenerateColumns = false;
