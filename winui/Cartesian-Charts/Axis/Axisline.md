@@ -5,14 +5,14 @@ description: Learn here all about the chart axis line and its customization in S
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
-keywords: axis line in winui chart, winui sfcartesianchart axis line, syncfusion winui chart axis line, customizing axis line in winui, winui sfcartesianchart axis line configuration.
+keywords: axis line in winui chart, winui sfcartesianchart axis line, syncfusion winui chart axis line, customize axis line in winui, winui sfcartesianchart axis line configuration.
 ---
 
 # Axis line in WinUI Chart (SfCartesianChart)
 
 ## Customization
 
-Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
+You can customize the axis line style using the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property, as shown below.
 
 {% tabs %}
 
@@ -49,11 +49,11 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-![Axis line customization support in WinUI Chart](Axis_images/WinUI_Chart_Axis_line_styles.png)
+![Axis line customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_line_styles.png)
 
 ## Offset
 
-The padding to the axis line is defined by using the [AxisLineOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property.
+The [AxisLineOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property is used to add offset (padding) to the axis line. The default value is `0`.
 
 {% tabs %}
 
@@ -83,4 +83,4 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-![Padding support for axis line in WinUI](Axis_images/WinUI_Chart_Axis_line_styles_offset.png)
+![Axis line offset support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_line_styles_offset.png)
