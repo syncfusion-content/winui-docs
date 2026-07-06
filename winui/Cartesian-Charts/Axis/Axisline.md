@@ -12,7 +12,7 @@ keywords: axis line in winui chart, winui sfcartesianchart axis line, syncfusion
 
 ## Customization
 
-You can customize the axis line style using the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property, as shown below.
+You can customize the axis line style using the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property, as shown in the following code snippet.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ chart.XAxes.Add(primaryAxis);
 
 ## Offset
 
-The [AxisLineOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property is used to add offset (padding) to the axis line. The default value is `0`.
+The [AxisLineOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineOffset) property is used to add offset to the axis line. The default value is `0`.
 
 {% tabs %}
 
