@@ -236,7 +236,7 @@ Customize the default appearance of the month view header by using the [ViewHead
 
 ![customize-month-view-header-appearance-in-winui-scheduler-month-view](Month-View_Imges/customize-month-view-header-appearance-in-winui-scheduler.png)
 
-## Leading and trailing days visibility
+## Leading and Trailing days visibility
 
 Customize the leading and trailing days visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties of `MonthViewSettings`. By default, `LeadingDaysVisibility` and `TrailingDaysVisibility` are set to `Visible`.
 

@@ -36,7 +36,7 @@ The Scheduler supports editing recurring appointments. The following editor dial
 
 Handle the opening of the recurrence popup window using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
 
-#### RecurringAppointmentBeginningEdit event
+#### RecurringAppointmentBeginningEdit Event
 
 The opening of the recurrence popup editor dialog can be handled using the `EditMode` property in the `RecurringAppointmentBeginningEditEventArgs` by handling the `RecurringAppointmentBeginningEdit` event.
 

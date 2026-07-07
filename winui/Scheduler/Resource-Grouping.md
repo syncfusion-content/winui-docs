@@ -412,7 +412,7 @@ You can customize the minimum row height of visible resources in TimelineDay, Ti
 
 N> The minimum resource row height is adjusted based on the viewport size, and the [VisibleResourceCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) will not be applicable. 
 
-## Visible Resource Count
+## Visible resource count
 
 Customize the number of visible resources in the Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek, and TimelineMonth views by using the [VisibleResourceCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_VisibleResourceCount) property of `DaysViewSettings` or `TimelineViewSettings` in SfScheduler.
 
