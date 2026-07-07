@@ -191,7 +191,7 @@ meeting.BackgroundColor = new SolidColorBrush(Colors.MediumPurple);
 meeting.ForegroundColor = new SolidColorBrush(Colors.White);
 // Adding a business object in the business object collection.
 Meetings.Add(meeting);
-//Adding schedule appointment collection to the ItemsSource of SfSchedule.
+//Adding schedule appointment collection to the ItemsSource of SfScheduler.
 Schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {% endtabs%}

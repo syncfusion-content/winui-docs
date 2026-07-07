@@ -270,7 +270,7 @@ The number of weeks visible in the month view can be changed by setting the [`Nu
 <scheduler:SfScheduler x:Name="Schedule" 
                        ViewType="Month">
     <scheduler:SfScheduler.MonthViewSettings>
-        <scheduler:MonthViewSetting NumberOfVisibleWeeks="3"
+        <scheduler:MonthViewSettings NumberOfVisibleWeeks="3"
                                     ShowAgendaView="True"/>
     </scheduler:SfScheduler.MonthViewSettings>
 </scheduler:SfScheduler>
@@ -310,7 +310,7 @@ this.Schedule.BlackoutDates = GetBlackoutDates();
 /// <summary>
 /// Method to get blackout date collections.
 /// </summary>
-// <returns>The blackoutDateCollection.</returns>
+/// <returns>The blackoutDateCollection.</returns>
 private ObservableCollection<DateTime> GetBlackoutDates()
 {
      var blackoutDateCollection = new ObservableCollection<DateTime>()

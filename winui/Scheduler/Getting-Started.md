@@ -316,7 +316,7 @@ public class SchedulerViewModel
     /// <returns>The foreground brush.</returns>
     private Brush GetAppointmentForeground(Brush backgroundColor)
     {
-        if ((backgroundColor as SolidColorBrush).Color.ToString().Equals("#FF8551F2") || (backgroundColor as SolidColorBrush).ToString().Equals("#FF5363FA") || (backgroundColor as SolidColorBrush).ToString().Equals("#FF2D99FF"))
+        if ((backgroundColor as SolidColorBrush).Color.ToString().Equals("#FF8551F2") || (backgroundColor as SolidColorBrush).Color.ToString().Equals("#FF5363FA") || (backgroundColor as SolidColorBrush).Color.ToString().Equals("#FF2D99FF"))
             return new SolidColorBrush(Microsoft.UI.Colors.White);
         else
             return new SolidColorBrush(Color.FromArgb(255, 51, 51, 51));

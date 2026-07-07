@@ -55,7 +55,7 @@ Month Agenda view with No events<br/><br/></td><td>dddd, MMMM d, yyyy No Events<
 <td>Wednesday, June 2, 2021 No Events<br/><br></td></tr>
 <tr>
 <td>
-Month Agenda view list appointment<br/><br/></td><td>dddd, dddd, MMMM d, yyyy<br/><br/></td>
+Month Agenda view list appointment<br/><br/></td><td>dddd, MMMM d, yyyy<br/><br/></td>
 <td>Thursday, June 24, 2021<br/><br></td></tr>
 <tr>
 <td>

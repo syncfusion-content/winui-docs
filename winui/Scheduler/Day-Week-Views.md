@@ -121,7 +121,7 @@ The `AllowSpannedAppointmentsInTimeSlots` property determines whether appointmen
 {% endhighlight %}
 {% highlight C# tabtitle="C#" hl_lines="3" %}
 SfScheduler scheduler = new SfScheduler();
-scheduler.ViewType = SchedulerView.Week;
+scheduler.ViewType = SchedulerViewType.Week;
 scheduler.DaysViewSettings.AllowSpannedAppointmentsInTimeSlots = true;
 this.Content = scheduler;
 {% endhighlight %}
@@ -292,7 +292,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 
 ## Full screen scheduler
 
-The WinUI Scheduler time interval height can be adjusted based on the screen height by changing the value of the [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1`. It will auto-fit to the screen height and width.
+The WinUI Scheduler time interval height can be adjusted based on the screen height by changing the value of the [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1`. It will auto-fit to the screen height and width.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}

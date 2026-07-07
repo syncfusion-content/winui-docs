@@ -120,6 +120,6 @@ You can localize the scheduler using the [Language](https://docs.microsoft.com/e
                        Language="fr-FR" />
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
-this.Schedule..Language = "fr-FR";
+this.Schedule.Language = "fr-FR";
 {% endhighlight %}
 {% endtabs %}

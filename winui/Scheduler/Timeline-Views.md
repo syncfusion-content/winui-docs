@@ -93,7 +93,7 @@ The default values for `StartHour` and `EndHour` are 0 and 24, respectively, to 
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.StartHour = 8;
-this.Schedule.TimelineViewSettings.EndHour = 16;
+this.Schedule.TimelineViewSettings.EndHour = 13;
 {% endhighlight %}
 {% endtabs %}
 
@@ -239,7 +239,7 @@ DateTime recurrenceExceptionDates1 = DateTime.Now.Date.AddDays(2);
 this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
     StartTime = new System.DateTime(2021, 03, 26, 12, 0, 0),
-    EndTime = new System.DateTime(2020, 03, 26, 13, 0, 0),
+    EndTime = new System.DateTime(2021, 03, 26, 13, 0, 0),
     Text = "Lunch",
     CanEdit = false,
     Background = new SolidColorBrush(Colors.LightGray),
@@ -301,7 +301,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 
 ## Full screen scheduler
 
-The WinUI scheduler time interval width can be adjusted based on the screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1.` It will auto-fit to the screen width in timeline day, timeline week and timeline workweek views.
+The WinUI scheduler time interval width can be adjusted based on the screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1.` It will auto-fit to the screen width in timeline day, timeline week and timeline workweek views.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
@@ -401,7 +401,6 @@ Customize the date and day format of the ViewHeader by using the [ViewHeaderDate
      <scheduler:SfScheduler.TimelineViewSettings>
         <scheduler:TimelineViewSettings 
             ViewHeaderDateFormat="dd-MMMM"/>
-        </scheduler:SfScheduler.TimelineViewSettings>
     </scheduler:SfScheduler.TimelineViewSettings>
 </scheduler:SfScheduler>
 {% endhighlight %}

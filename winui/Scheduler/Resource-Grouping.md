@@ -34,7 +34,7 @@ var ResourceCollection = new ObservableCollection<SchedulerResource>()
    new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 139,31,169)), Id = "1002" },
 };
 
-// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+// Adding the scheduler resource collection to the schedule resources of SfScheduler.
 this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -69,7 +69,7 @@ var ResourceCollection = new ObservableCollection<SchedulerResource>()
    new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 139,31,169)), Id = "1002" },
 };
 
-// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+// Adding the scheduler resource collection to the schedule resources of SfScheduler.
 this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -99,7 +99,7 @@ var ResourceCollection = new ObservableCollection<SchedulerResource>()
    new SchedulerResource() { Name = "James William", Foreground = new SolidColorBrush(Colors.White), Background = new SolidColorBrush(Color.FromArgb(255, 139,31,169)), Id = "1002" },
 };
 
-// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+// Adding the scheduler resource collection to the schedule resources of SfScheduler.
 this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -207,7 +207,7 @@ public class Employee
 
 N> 
 * Inherit this class from `NotificationObject` for dynamic changes in custom data.
-* The [SchedulerResource.Data](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data) property is used to get the details of custom data.
+* The [SchedulerResource.Data](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerResource.html#Syncfusion_UI_Xaml_Scheduler_SchedulerResource_Data) property is used to get the details of custom data.
 
 Map the properties of the `Employee` class with the SfScheduler control by using the Scheduler `ResourceMapping`.
 
@@ -251,7 +251,7 @@ var ResourceCollection = new ObservableCollection<Employee>()
    new Employee () {Name = "James William", BackgroundColor = new SolidColorBrush(Color.FromArgb(255,103, 155, 155)), Id = "1002" , ForegroundColor = new SolidColorBrush(Colors.White)},
 };
 
-// Adding the scheduler resource collection to the schedule resources of SfSchedule.
+// Adding the scheduler resource collection to the schedule resources of SfScheduler.
 this.Schedule.ResourceCollection = ResourceCollection;
 {% endhighlight %}
 {% endtabs %}
@@ -311,7 +311,7 @@ Meeting meeting = new Meeting ();
 meeting.From = new DateTime(2020, 07, 01, 10, 0, 0);
 meeting.To = meeting.From.AddHours(1);
 meeting.EventName = "Meeting";
-meeting.Resources = new ObservableCollection<object> { (Resources[0] as Employee).Id, (Resources[1] as Employee).Id };
+meeting.Resources = new ObservableCollection<object> { (ResourceCollection[0] as Employee).Id, (ResourceCollection[1] as Employee).Id };
 var Meetings = new ObservableCollection<Meeting> ();
 Meetings.Add(meeting);
 this.Schedule.ItemsSource = Meetings;
@@ -369,17 +369,17 @@ The resource row height is auto-adjusted based on the number of overlapping appo
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<Schedule:SfScheduler Name="schedule" 
+<scheduler:SfScheduler x:Name="Schedule" 
                       ViewType="TimelineWeek"
                       ResourceGroupType="Resource">
-   <Schedule:SfScheduler.TimelineViewSettings>
-      <Schedule:TimelineViewSettings 
+   <scheduler:SfScheduler.TimelineViewSettings>
+      <scheduler:TimelineViewSettings 
                       RowAutoHeight="True" />
-   </Schedule:SfScheduler.TimelineViewSettings>
-</Schedule:SfScheduler>
+   </scheduler:SfScheduler.TimelineViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
- schedule.TimelineViewSettings.RowAutoHeight = true;
+ Schedule.TimelineViewSettings.RowAutoHeight = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -396,17 +396,17 @@ You can customize the minimum row height of visible resources in TimelineDay, Ti
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<Schedule:SfScheduler Name="schedule" 
+<scheduler:SfScheduler x:Name="Schedule" 
                       ViewType="TimelineWeek" 
                       ResourceGroupType="Resource">
-   <Schedule:SfScheduler.TimelineViewSettings>
-      <Schedule:TimelineViewSettings 
+   <scheduler:SfScheduler.TimelineViewSettings>
+      <scheduler:TimelineViewSettings 
                      RowMinHeight="100" />
-   </Schedule:SfScheduler.TimelineViewSettings>
-</Schedule:SfScheduler>
+   </scheduler:SfScheduler.TimelineViewSettings>
+</scheduler:SfScheduler>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
- schedule.TimelineViewSettings.RowMinHeight = 100;
+ Schedule.TimelineViewSettings.RowMinHeight = 100;
 {% endhighlight %}
 {% endtabs %} 
 

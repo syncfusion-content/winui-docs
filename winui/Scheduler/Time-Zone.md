@@ -486,7 +486,6 @@ UTC + 01:00
 </td>
 </tr>
 <tr>
-<tr>
 <td>
 Egypt Standard Time
 </td>
@@ -1182,7 +1181,7 @@ appointment.Add(new ScheduleAppointment()
     // Setting the EndTimeZone for an event.
     EndTimeZone = "India Standard Time"
 });
-//Adding the schedule appointment collection to the ItemsSource of SfSchedule.
+//Adding the schedule appointment collection to the ItemsSource of SfScheduler.
 this.Schedule.ItemsSource = appointment;
 {% endhighlight %}
 {% endtabs %}

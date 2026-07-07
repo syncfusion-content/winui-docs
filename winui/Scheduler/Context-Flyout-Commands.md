@@ -26,7 +26,7 @@ N>
 * By default, the cell context flyout will be opened when holding on any timeslot or month cell. The appointment menu flyout will be opened by holding, only if the appointment's drag and drop is disabled using the `AppointmentEditFlag` property.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10 11 1213 14 15 16 17" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17" %}
 <scheduler:SfScheduler x:Name="Schedule" 
                        ViewType="Week">
     <scheduler:SfScheduler.CellContextFlyout>

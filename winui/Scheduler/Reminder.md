@@ -67,17 +67,21 @@ Configure the appointment reminders with [SchedulerReminder](https://help.syncfu
  {
     ...
     public ScheduleAppointmentCollection Events { get; set; } = new ScheduleAppointmentCollection();
-    this.Events.Add(new ScheduleAppointment()
+
+    public ReminderViewModel()
     {
-        StartTime = DateTime.Now,
-        EndTime = DateTime.Now.AddHours(1),
-        AppointmentBackground = new SolidColorBrush(Color.FromArgb(255, 83, 99, 250)),
-        Subject = "Conference",
-        Reminders = new ObservableCollection<SchedulerReminder>
+        this.Events.Add(new ScheduleAppointment()
         {
-            new SchedulerReminder { ReminderTimeInterval = new TimeSpan(0)},
-        }
-    });
+            StartTime = DateTime.Now,
+            EndTime = DateTime.Now.AddHours(1),
+            AppointmentBackground = new SolidColorBrush(Color.FromArgb(255, 83, 99, 250)),
+            Subject = "Conference",
+            Reminders = new ObservableCollection<SchedulerReminder>
+            {
+                new SchedulerReminder { ReminderTimeInterval = new TimeSpan(0)},
+            }
+        });
+    }
  }
 {% endhighlight %}
 {% endtabs %}
@@ -174,17 +178,21 @@ public class ReminderViewModel
 {
   ...
   public ObservableCollection<Event> Events { get; set; } = new ObservableCollection<Event>();
-  this.Events.Add(new Event()
+
+  public ReminderViewModel()
   {
-    From = DateTime.Now,
-    To = DateTime.Now.AddHours(1),
-    Color = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
-    EventName = "Conference",
-    Reminders = new ObservableCollection<Reminder>
+    this.Events.Add(new Event()
     {
-        new Reminder { TimeInterval = new TimeSpan(0)},
-    }
+      From = DateTime.Now,
+      To = DateTime.Now.AddHours(1),
+      Color = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")),
+      EventName = "Conference",
+      Reminders = new ObservableCollection<Reminder>
+      {
+          new Reminder { TimeInterval = new TimeSpan(0)},
+      }
     });
+  }
 }
 {% endhighlight %}
 {% endtabs %}
