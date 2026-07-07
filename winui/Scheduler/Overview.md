@@ -2,7 +2,7 @@
 layout: post
 title: About WinUI Scheduler control | Syncfusion
 canonical_url: "https://www.syncfusion.com/scheduler-sdk/winui-scheduler"
-description: Learn here all about introduction of Syncfusion WinUI Scheduler(SfScheduler) control , its features, and more.
+description: Learn here all about the introduction of Syncfusion WinUI Scheduler (SfScheduler) control, its features, and more.
 platform: winui
 control: Scheduler
 documentation: ug
@@ -10,27 +10,27 @@ documentation: ug
 
 # WinUI Scheduler (SfScheduler) Overview
 
-The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-scheduler) displays appointments in different views and allows users to create and manage appointments. It's rich feature set includes functionalities like viewing daily/all day/spanned appointments, complete customization using the custom Templates, efficient performance, and Data binding to different sources.
+The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-scheduler) displays appointments in different views and allows users to create and manage appointments. Its rich feature set includes functionalities like viewing daily, all-day, and spanned appointments, complete customization using custom templates, efficient performance, and data binding to different sources.
 
 ![show-week-view-in-winui-scheduler](Overview_Images/week-view-in-winui-scheduler.png)
 
 ## Key features
 
-*  **Built-in Views**: The WinUI Scheduler provides eight different types of views such as Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek, TimelineMonth, and Month.
+*  **Built-in Views**: The WinUI Scheduler provides eight different types of views, such as Day, Week, WorkWeek, TimelineDay, TimelineWeek, TimelineWorkWeek, TimelineMonth, and Month.
 
-* **Events**: Appointments contain information on events scheduled at specific times. In addition to default appointments, the users can use their own collections to connect a business entity to an appointment by mapping their fields such as start time, end time, subject, notes, and recurrence.
+* **Events**: Appointments contain information on events scheduled at specific times. In addition to default appointments, users can use their own collections to connect a business entity to an appointment by mapping their fields such as start time, end time, subject, notes, and recurrence.
 
-* **Recurrence Events**: Easily configure the recurring events on a daily, weekly, monthly, or yearly basis. Also skip or change the occurrence of a recurring appointment.
+* **Recurrence Events**: Easily configure recurring events on a daily, weekly, monthly, or yearly basis. Also skip or change the occurrence of a recurring appointment.
 
 ![recurring-events-with-exceptions-dates-in-winui-scheduler](Overview_Images/recurring-events-with-exceptions-dates-in-winui-scheduler.png)
 
-* **Appointment Mapping**: The WinUI Scheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
+* **Appointment Mapping**: The WinUI Scheduler control supports mapping any collection that implements the `IEnumerable` interface to populate appointments.
 
 * **Appointment Editor**: Easily create, edit, or delete appointments using the built-in appointment editor.
 
 ![appointment-editor-in-winui-scheduler](Overview_Images/appointment-editor-in-winui-scheduler.png)
 
-* **Timezone**: The Display appointments can be created in various time zones in the system time zone. The appointment start and end times are also automatically adjusted and displayed based on the daylight savings time.
+* **Timezone**: Appointments can be created in various time zones, and the system time zone is also supported. The appointment start and end times are also automatically adjusted and displayed based on the daylight savings time.
 
 * **First day of the week** - Customize the first day of the week as needed. The default first day is Sunday.
 
@@ -40,6 +40,6 @@ The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-
 
 * **Localization**: Display the current date and time by following the globalized date and time formats, and localize all available static texts in the WinUI Scheduler.
 
-* **LoadOnDemand**: The WinUI Scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
+* **LoadOnDemand**: The WinUI Scheduler supports loading appointments on-demand with a loading indicator, and it improves the loading performance when there are appointment ranges for multiple years.
 
 N> Looking for the full WinUI Scheduler component overview, features, pricing, and documentation? Visit the [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) page.

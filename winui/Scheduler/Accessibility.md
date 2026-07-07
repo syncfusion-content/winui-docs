@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility  Support in  WinUI Scheduler control | Syncfusion
-description: Learn here about Accessibility support with the Syncfusion WinUI Scheduler (SfScheduler), its elements and more.
+title: Accessibility Support in WinUI Scheduler control | Syncfusion
+description: Learn here about accessibility support with the Syncfusion WinUI Scheduler (SfScheduler), its elements, and more.
 platform: WinUI
 control: SfScheduler
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Screen reader support
 
-The `Scheduler` can easily be accessed by the screen readers. Please find the following table to get the spoken feedback about the inner element contents of the screen.
+The `Scheduler` can be easily accessed by screen readers. Please refer to the following table to get the spoken feedback about the inner element contents of the screen.
 
 #### Month view
 
@@ -352,21 +352,21 @@ Moves the view to work week view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 4 => MonthView<br/><br/></td><td>
-Moves the view to work week view.<br/><br/></td></tr>
+Moves the view to month view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 5 => TimelineDayView<br/><br/></td><td>
-Moves the view to Timeline day view.<br/><br/></td></tr>
+Moves the view to timeline day view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 6 => TimelineWeekView<br/><br/></td><td>
-Moves the view to Timeline week view.<br/><br/></td></tr>
+Moves the view to timeline week view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 7 => TimelineWorkWeekView<br/><br/></td><td>
-Moves the view to Timeline work week view.<br/><br/></td></tr>
+Moves the view to timeline work week view.<br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Alt + 8 => TimelineMonthView<br/><br/></td><td>
-Moves the view to Timeline month view.<br/><br/></td></tr>
+Moves the view to timeline month view.<br/><br/></td></tr>
 </table>
