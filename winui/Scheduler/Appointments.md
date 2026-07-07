@@ -198,7 +198,7 @@ Schedule.ItemsSource = Meetings;
 
 ![spanned-appointment-in-winui-scheduler](Appointment_Images/spanned-appointment-in-winui-scheduler.png)
 
-## All-day appointments
+## All day appointments
 
 An all-day appointment is an appointment that is scheduled for a whole day. It can be set by using the [IsAllDay](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_IsAllDay) property in the [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
 
@@ -412,7 +412,7 @@ var date0 = 28-03-2021 09:00:00;
 var date1 = 29-03-2021 09:00:00;
 var date2 = 30-03-2021 09:00:00;
 
-#### How to get pattern appointment for the specified occurrence
+#### How to get pattern appointment for the specified occurrence?
 
 Gets the [pattern appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetPatternAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_) for the specified occurrence.
 
@@ -436,7 +436,7 @@ N>
 * For a business object, pass `e.Appointment.Data` as a parameter and get the business object details from the `Data` property of `ScheduleAppointment.`
 * If a specified occurrence is changed, the [GetPatternAppointment()](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetPatternAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_) returns the pattern appointment of the exception appointment.
 
-#### How to get occurrence appointment at the specified date
+#### How to get occurrence appointment at the specified date?
 
 Get an [occurrence appointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetOccurrenceAppointment_Syncfusion_UI_Xaml_Scheduler_SfScheduler_System_Object_System_DateTime_) at the specified date within a series of recurring appointments.
 

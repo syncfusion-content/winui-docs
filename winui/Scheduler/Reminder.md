@@ -82,7 +82,7 @@ Configure the appointment reminders with [SchedulerReminder](https://help.syncfu
 {% endhighlight %}
 {% endtabs %}
 
-## Creating business object for reminder
+## Creating business object for reminder  
 [Reminders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html#Syncfusion_UI_Xaml_Scheduler_AppointmentMapping_Reminders) supports mapping the custom object with the [ScheduleAppointment.Reminders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders).
 
 {% tabs %}
