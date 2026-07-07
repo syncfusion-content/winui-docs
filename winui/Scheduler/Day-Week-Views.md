@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Day and Week views in WinUI Scheduler Control | Syncfusion
-description: Learn here all about customizing the Day, Week, and WorkWeek view settings and their appearance in the Syncfusion WinUI Scheduler (SfScheduler) control, and more.
+description: Learn here all about to customize the Day, Week, Work Week views settings and its appearance in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
 control: SfScheduler
 documentation: ug
@@ -51,7 +51,7 @@ this.Schedule.DaysViewSettings.TimeIntervalSize = 120;
 
 ![change-time-interval-height-in-winui-scheduler-timeslot-views](DayandWeekViews_Images/change-time-interval-height-in-winui-scheduler.png)
 
-## Flexible working days
+## Flexible working days 
 
 By default, the `WinUI Scheduler` considers weekdays from Monday to Friday as working days. The days defined in the `NonWorkingDays` collection are considered as [non-working days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_NonWorkingDays). Therefore, when weekend days are set, they are hidden from the Scheduler.
 
@@ -355,7 +355,7 @@ N>
 * The `TimeInterval` value will be applied when `MinimumAppointmentDuration` is greater than `TimeInterval` with a lesser appointment duration.
 * All-day appointments do not support `MinimumAppointmentDuration`.
 
-## Minimum display appointments count in all-day panel
+## Minimum display appointments count in all day panel
 
 You can customize the number of appointments displayed in an all-day panel using the [MinimumAllDayAppointmentsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_MinimumAllDayAppointmentsCount) property of `DaysViewSettings` in the Scheduler. By default, the appointment display count is 2. If an all-day panel has more than 2 appointments, two appointments will be displayed and the remaining appointments will be displayed as an appointment count.
 
@@ -374,7 +374,7 @@ this.Schedule.DaysViewSettings.MinimumAllDayAppointmentsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-### Customize more appointments indicator in all-day panel
+### Customize more appointments indicator in all day panel
 
 You can customize the default appearance of the "more appointments" indicator in an all-day panel by using the [AllDayMoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayMoreAppointmentsIndicatorTemplate) property of `DaysViewSettings`.
 

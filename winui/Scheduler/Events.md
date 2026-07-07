@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in WinUI Scheduler (SfScheduler)
 
-## CellTapped event
+## CellTapped
 
 The [CellTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellTapped) event occurs when the user clicks or touches a cell in the Scheduler. This event receives two arguments: the `sender` that handles SfScheduler and [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html) as objects.
 

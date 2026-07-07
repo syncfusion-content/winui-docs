@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointments in WinUI Scheduler control | Syncfusion
-description: Learn here all about planning, configuring, and managing all-day, recurring, and spanning appointments in Syncfusion WinUI Scheduler (SfScheduler) control, and more.
+description: Learn here all about to plan, configure and manage all day, recurrence and spanning appointments in Syncfusion WinUI Scheduler (SfScheduler) control and more.
 platform: winui
 control: SfScheduler
 documentation: ug
@@ -396,7 +396,7 @@ recurrenceProperties.Interval = 1;
 recurrenceProperties.RecurrenceCount = 3;
 recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 
-#### How to get the recurrence dates from RRULE
+#### How to get the recurrence dates from RRULE?
 
 Get the occurrence date-time list of a recurring appointment from the RRULE using the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) method of SfScheduler.
 

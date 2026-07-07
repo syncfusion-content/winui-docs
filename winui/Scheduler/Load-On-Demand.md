@@ -111,7 +111,7 @@ The `QueryAppointments` event is triggered when the Schedule [ResourceCollection
 
 The `QueryAppointments` event will be triggered when the [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceGroupType) is changed.
 
-## Load on demand command
+## Load On Demand command
 
 The Scheduler notifies the [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_LoadOnDemandCommand) when the user changes the visible date range. Get a visible date range from the [QueryAppointmentsEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.QueryAppointmentsEventArgs.html). The default value for this `ICommand` is `null`. The `QueryAppointmentsEventArgs` is passed as a command parameter.
 
@@ -248,7 +248,7 @@ The [LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 * The `LoadOnDemandCommand` will be triggered when the `ResourceGroupType` is changed.
 
-## Load on demand for recurring appointment
+## Load On Demand for recurring appointment
 
 The scheduler will add the occurrences of the recurrence series based on the visible date range. Use the [RecurrenceHelper.GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.RecurrenceHelper.html#Syncfusion_UI_Xaml_Scheduler_RecurrenceHelper_GetRecurrenceDateTimeCollection_System_String_System_DateTime_System_Nullable_System_DateTime__System_Nullable_System_DateTime__) to compare and load the recurrence appointment on-demand in the `ItemsSource`.
 

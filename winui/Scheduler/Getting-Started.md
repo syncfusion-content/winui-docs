@@ -325,7 +325,7 @@ public class SchedulerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-#### Mapping the Data Object to the Appointment
+#### Mapping the data object to ScheduleAppointment
 Map the properties of the `Meeting` class to our `WinUI Scheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) property.
 
 {% tabs %}
@@ -360,7 +360,7 @@ Schedule.AppointmentMapping = appointmentMapping;
 {% endhighlight %}
 {% endtabs %}
 
-#### Binding the Item Source to the Scheduler
+#### Bind item source for Scheduler
 Create meetings of type `ObservableCollection<Appointments>` and assign that `Appointments` collection to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ItemsSource) property of `SfScheduler`.
 
 {% tabs %}
