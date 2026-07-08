@@ -1097,7 +1097,7 @@ public class ViewModel
 ## Column drag and drop
 
 Columns can be reordered in the .NET WinUI Kanban control using built-in drag-and-drop.
-Enable this by setting the `AllowColumnReorder` property of `SfKanban` to `true`. The default value is `false`.
+Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
 
 {% tabs %}
 
