@@ -10,23 +10,23 @@ keywords: winui chart title, winui sfcartesianchart title, winui chart title cus
 
 # Chart Title in WinUI Chart (SfCartesianChart)
 
-[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" Header="Chart Area Header">
- . . .           
+<!-- Configure axes, legend, and series here -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Header = "Chart Area Header";
-. . . 
+// Configure axes, legend, and series here
 this.Content = chart;
 
 {% endhighlight %}
@@ -37,7 +37,7 @@ this.Content = chart;
 
 ## Customization
 
-Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+Chart provides support to add any `UIElement` as a title. The following code example defines a `TextBlock` as the chart header.
 
 {% tabs %}   
 
@@ -51,7 +51,7 @@ Chart provides support to add any `UIElement` as a title. The following code exa
             Margin="10" 
             CornerRadius="5">
             <TextBlock 
-                FontSize="14"		               
+                FontSize="14"		            	
                 Text="Chart Area Header"
                 Margin="5"/>
         </Border>
@@ -60,10 +60,10 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+// Configure axes, legend, and series here
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -81,7 +81,7 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-. . .
+// Add the chart to the page content
 this.Content = chart;
 
 {% endhighlight %}
@@ -99,7 +99,7 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" HorizontalHeaderAlignment="Left">
-    . . .
+    <!-- Configure axes, legend, and series here -->
     <chart:SfCartesianChart.Header>
         <Border 
             BorderThickness="2" 
@@ -108,20 +108,20 @@ The title text content can be aligned horizontally to the left, center or right 
             CornerRadius="5">
             <TextBlock 
                 FontSize="14"
-		        Text="Chart Area Header"
-	            Margin="5"/>
+                Text="Chart Area Header"
+                Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>
-    . . . 
+    <!-- Configure axes, legend, and series here -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
-. . .
+// Configure axes, legend, and series here
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -139,7 +139,7 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-. . . 
+// Add the chart to the page content
 this.Content = chart;
 
 {% endhighlight %}

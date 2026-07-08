@@ -10,7 +10,7 @@ keywords: axis title in winui chart, winui sfcartesianchart axis title, winui ch
 
 # Axis Title in WinUI Chart (SfCartesianChart)
 
-The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to set the title for the chart axis. It accepts any `UIElement` as content of axis title. 
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to set the title for the chart axis. It accepts any `UIElement` as the content of the axis title. 
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ chart.YAxes.Add(new NumericalAxis() { Header = "Values" });
 
 ## Style
 
-The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to provide style for the axis header.
+The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_HeaderStyle) property is used to style the axis header.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ CategoryAxis primaryAxis = new CategoryAxis()
 
 primaryAxis.HeaderStyle = new LabelStyle()
 {
-    FontFamily = new FontFamily("Calibri"),
+    FontFamily = new FontFamily("Algerian"),
     FontSize = 13,
     Foreground = new SolidColorBrush(Colors.Blue),
 };
@@ -126,6 +126,7 @@ SfCartesianChart chart = new SfCartesianChart();
 . . .
 CategoryAxis primaryAxis = new CategoryAxis()
 {
+    // The 'lineStyle' resource is defined in XAML Resources and referenced here.
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
 chart.XAxes.Add(primaryAxis);
@@ -134,4 +135,4 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-![HeaderTemplate support for ChartAxis in WinUI Chart](Axis_images/WinUI_Chart_Axis_Header_template.png)
+![HeaderTemplate support for ChartAxis in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header_template.png)

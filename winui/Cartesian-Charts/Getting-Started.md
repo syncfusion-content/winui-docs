@@ -36,7 +36,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
  
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.UI.Xaml.Charts;
 
@@ -65,7 +65,7 @@ Define a simple data model that represents a data point in chart.
 
 {% tabs %}  
 
-{% highlight C# %}
+{% highlight c# %}
 
 public class Person   
 {   
@@ -81,7 +81,7 @@ Next, create a view model class and initialize a list of `Person` objects as fol
 
 {% tabs %}  
 
-{% highlight C# %}
+{% highlight c# %}
 
 public class ViewModel
 {
@@ -131,7 +131,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 grid.DataContext = new ViewModel();
 
@@ -159,7 +159,7 @@ grid.DataContext = new ViewModel();
 
 {% endhighlight %}
 
-{% highlight C# %} 
+{% highlight c# %} 
 
 SfCartesianChart chart = new SfCartesianChart();
 
@@ -205,7 +205,7 @@ N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusio
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 
@@ -248,7 +248,7 @@ The title of the chart provides quick information to the user about the data bei
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Header = "Height Comparison";
@@ -274,7 +274,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 // Previous chart configuration (axes, data binding, etc.) omitted for brevity
@@ -304,7 +304,7 @@ The legend provides information about the data point displayed in the chart. The
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Legend = new ChartLegend(); 
@@ -332,7 +332,7 @@ N> Additionally, set a label for each series using the [Label](https://help.sync
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 ColumnSeries series = new ColumnSeries(); 
 series.ItemsSource = (new ViewModel()).Data;
@@ -364,7 +364,7 @@ Tooltips are used to show information about the segment, when the user hovers ov
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 ColumnSeries series = new ColumnSeries();
 series.ItemsSource = (new ViewModel()).Data;
@@ -430,7 +430,7 @@ The following code example gives you the complete code of above configurations.
  
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 using CartesianChart_CS;
 using Microsoft.UI.Xaml;

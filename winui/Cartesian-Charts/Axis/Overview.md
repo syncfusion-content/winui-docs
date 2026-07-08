@@ -12,16 +12,16 @@ keywords: axis in winui chart, winui sfcartesianchart axis, winui chart axis cus
 
 [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 
-Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the following types of scale:
+Vertical (Y) axis typically uses a numerical scale. Horizontal (X) axis supports the following types of scale:
 
 * Category
 * Numeric
-* Date time
+* DateTime
 
 ## Key features
 
-* Axis supports different type of axis such as Category, Numeric and Date time.
-* Allow you to customize the chart axis line such as gridlines, tick lines, and support to customize the style of the axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle). 
-* Axis allow you to customize the origin of the chart axis. 
-* Provides options to set padding for axis and axis visible range.
-* Multiple axes support provides a way to arrange multiple series inside the same chart area, gives more space for X and Y axis.
+* Axis supports different types of axis such as Category, Numeric, and DateTime.
+* Allows you to customize chart axis elements such as gridlines and tick lines, and supports customizing the style of the axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle). 
+* Axis allows you to customize the origin of the chart axis. 
+* Provides options to set padding for the axis and the axis's visible range.
+* Multiple axes support provides a way to arrange multiple series inside the same chart area, giving more space for the X and Y axes.
