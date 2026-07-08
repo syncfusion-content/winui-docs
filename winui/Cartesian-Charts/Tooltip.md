@@ -272,11 +272,11 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
 
 {% highlight xaml %}
 
-<chart:SfCartesianChart Height="388"  Width="500">
+<chart:SfCartesianChart Height="388" Width="500">
 
     <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
-        <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
+    <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
     </chart:SfCartesianChart.TooltipBehavior>
 
     <chart:SfCartesianChart.Series>

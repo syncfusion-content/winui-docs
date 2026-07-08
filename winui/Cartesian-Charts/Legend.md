@@ -18,12 +18,12 @@ The legend contains a list of series data points in the chart. The information p
 
 <chart:SfCartesianChart>
 
-    <!-- Initialize the chart legend -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <!-- Add a spline series with bound data -->
+    <!-- Configure additional chart elements -->
     <chart:SplineSeries 
         Label="Spline"
         ItemsSource="{Binding Data}" 
@@ -31,7 +31,7 @@ The legend contains a list of series data points in the chart. The information p
         YBindingPath="India">
     </chart:SplineSeries>
 
-    <!-- Additional series can be added here -->
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -70,7 +70,7 @@ The chart supports adding any `UIElement` as a title for legend. [Header](https:
 
 <chart:SfCartesianChart>
 
-    <!-- Add a title to the legend header -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend>
             <chart:ChartLegend.Header>
@@ -93,7 +93,8 @@ The chart supports adding any `UIElement` as a title for legend. [Header](https:
 SfCartesianChart chart = new SfCartesianChart();
 
 ChartLegend legend = new ChartLegend();
-// Add a title to the legend header
+
+// Configure additional chart elements
 TextBlock textBlock = new TextBlock()
 {
     Text = "Foods",
@@ -104,7 +105,8 @@ TextBlock textBlock = new TextBlock()
 
 legend.Header = textBlock;
 chart.Legend = legend;
-// Additional chart setup (axes, data context, etc.)
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -123,12 +125,12 @@ Legend icon represents a symbol associated with each legend item. [LegendIcon](h
 
 <chart:SfCartesianChart>
 
-    <!-- Initialize the chart legend -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <!-- Add a spline series with a circle legend icon -->
+    <!-- Configure additional chart elements -->
     <chart:SplineSeries 
         LegendIcon="Circle"
         Label="Gold"
@@ -144,11 +146,11 @@ Legend icon represents a symbol associated with each legend item. [LegendIcon](h
 
 SfCartesianChart chart = new SfCartesianChart();
 
-// Initialize the chart legend
+// Configure additional chart elements
 ChartLegend legend = new ChartLegend();
 chart.Legend = legend;
 
-// Add a spline series with a circle legend icon
+// Configure additional chart elements
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Year";
@@ -220,12 +222,12 @@ The chart supports adding a custom icon for the legend using [LegendIconTemplate
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Initialize the chart legend -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
     
-    <!-- Add a column series with a custom legend icon template -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries 
             ItemsSource="{Binding Data}" 
@@ -272,7 +274,7 @@ The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 <chart:SfCartesianChart>
 
-    <!-- Initialize the chart legend -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
@@ -301,7 +303,7 @@ The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 SfCartesianChart chart = new SfCartesianChart();
 
-// Initialize the chart legend
+// Configure additional chart elements
 chart.Legend = new ChartLegend();
 
 ColumnSeries columnSeries = new ColumnSeries()
@@ -332,7 +334,7 @@ this.Content = chart;
 
 ![Legend icon visibility support in WinUI Chart](Legend_images/WinUI_chart_series_icon_visibility.png)
 
-## Item Spacing(ItemMargin)
+## Item spacing
 
 [ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to provide spacing between legend items.
 
@@ -450,7 +452,7 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend at right in WinUI Chart](Legend_images/WinUI_chart_legend_placement.png)
 
-## Background Customization 
+## Background customization
 
 The legend background appearance can be customized by using the following properties:
 
@@ -518,7 +520,7 @@ Customize each legend item by using the [`ItemTemplate`](https://help.syncfusion
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
     
-    <!-- Apply a custom item template to the legend -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.Legend>

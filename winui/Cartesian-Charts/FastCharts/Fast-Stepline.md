@@ -97,7 +97,8 @@ DateTimeAxis xAxis = new DateTimeAxis();
 chart.XAxes.Add(xAxis);
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
-. . .
+
+// Configure additional chart elements
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
     ItemsSource = new ViewModel().Data,

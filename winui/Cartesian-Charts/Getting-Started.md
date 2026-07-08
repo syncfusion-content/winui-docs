@@ -25,8 +25,9 @@ This section explains how to populate the Cartesian chart with data, a header, d
 
 {% highlight xaml %}
 
-<!-- XAML attributes (x:Class, xmlns, mc:Ignorable) hidden in this snippet -->
 <Window
+
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     
     <Grid x:Name="grid">
@@ -267,11 +268,11 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfCartesianChart>
 
-    <!-- Existing axis configuration -->
+    <!-- Configure additional chart elements -->
     <chart:ColumnSeries ShowDataLabels="True">
     </chart:ColumnSeries>
 
-    <!-- Existing legend configuration -->
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -280,7 +281,7 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 SfCartesianChart chart = new SfCartesianChart();
 
-// Previous chart configuration (axes, data binding, etc.) is not shown here
+// Configure additional chart elements
 ColumnSeries series = new ColumnSeries();
 series.ShowDataLabels = true;
 chart.Series.Add(series);
@@ -299,12 +300,12 @@ The legend provides information about the data point displayed in the chart. The
 
 <chart:SfCartesianChart>
     
-    <!-- Existing axis configuration -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <!-- Existing legend configuration -->    
+    <!-- Configure additional chart elements -->  
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -326,7 +327,7 @@ N> Additionally, set a label for each series using the [Label](https://help.sync
 
 <chart:SfCartesianChart>
     
-    <!-- Existing axis configuration -->
+    <!-- Configure additional chart elements -->
     <chart:ColumnSeries
         Label="Heights"
         ItemsSource="{Binding Data}"
@@ -334,7 +335,7 @@ N> Additionally, set a label for each series using the [Label](https://help.sync
         YBindingPath="Height">
     </chart:ColumnSeries>
     
-    <!-- Existing legend configuration -->
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -361,14 +362,14 @@ Tooltips are used to show information about the segment, when the user hovers ov
 
 <chart:SfCartesianChart>
 
-    <!-- Existing axis configuration -->
+    <!-- Configure additional chart elements -->
     <chart:ColumnSeries 
         EnableTooltip="True" 
         ItemsSource="{Binding Data}" 
         XBindingPath="Name" 
         YBindingPath="Height"/>
 
-    <!-- Existing legend configuration -->
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}

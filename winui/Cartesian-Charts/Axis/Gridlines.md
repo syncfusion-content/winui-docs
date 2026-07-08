@@ -36,7 +36,7 @@ By default, major gridlines are automatically added to the [ChartAxis](https://h
 
 SfCartesianChart chart = new SfCartesianChart();
 
-<!-- Configure axes, legend, and series here -->
+// Configure additional chart elements
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     ShowMajorGridLines = false
@@ -133,7 +133,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 };
 chart.YAxes.Add(secondaryAxis);
 
-<!-- Configure additional chart elements -->
+// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -176,6 +176,7 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 SfCartesianChart chart = new SfCartesianChart();
 chart.XAxes.Add(new NumericalAxis());
 
+// The 'lineStyle' resource is defined in XAML Resources and referenced here.
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
     MinorTicksPerInterval = 3,
@@ -183,7 +184,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 };
 chart.YAxes.Add(secondaryAxis);
 
-<!-- Configure axes, legend, and series here -->
+// Configure additional chart elements
 
 {% endhighlight %}
 

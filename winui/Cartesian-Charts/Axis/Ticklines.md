@@ -38,7 +38,7 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 
 SfCartesianChart chart = new SfCartesianChart();
 
-<!-- Configure additional chart elements -->
+// Configure additional chart elements
 NumericalAxis primaryAxis = new NumericalAxis()
 {
    MinorTicksPerInterval = 4 
@@ -77,7 +77,7 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 
 SfCartesianChart chart = new SfCartesianChart();
 
-<!-- Configure additional chart elements -->
+// Configure additional chart elements
 NumericalAxis primaryAxis = new NumericalAxis()
 {
    TickLineSize = 15,

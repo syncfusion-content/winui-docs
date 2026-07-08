@@ -18,7 +18,7 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 <chart:SfCartesianChart x:Name="chart" Header="Chart Area Header">
 
-<!-- Configure axes, legend, and series here -->
+<!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -27,7 +27,8 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Header = "Chart Area Header";
-// Configure axes, legend, and series here
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -64,6 +65,7 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 // Configure axes, legend, and series here
 Border border = new Border()
 {
@@ -82,7 +84,8 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-// Add the chart to the page content
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -101,7 +104,7 @@ The title text content can be aligned horizontally to the left, center or right 
 
 <chart:SfCartesianChart x:Name="chart" HorizontalHeaderAlignment="Left">
 
-    <!-- Configure axes, legend, and series here -->
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Header>
         <Border 
             BorderThickness="2" 
@@ -115,7 +118,7 @@ The title text content can be aligned horizontally to the left, center or right 
         </Border>
     </chart:SfCartesianChart.Header>
 
-    <!-- Configure axes, legend, and series here -->
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -125,7 +128,7 @@ The title text content can be aligned horizontally to the left, center or right 
 SfCartesianChart chart = new SfCartesianChart();
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
 
-// Configure axes, legend, and series here
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -143,7 +146,8 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-// Add the chart to the page content
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

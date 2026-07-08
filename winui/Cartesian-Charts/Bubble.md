@@ -51,7 +51,7 @@ chart.XAxes.Add(xAxis);
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
 
-<!-- Configure additional chart elements -->
+// Configure additional chart elements
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -64,7 +64,7 @@ BubbleSeries series = new BubbleSeries()
 
 chart.Series.Add(series);
 
-<!-- Configure additional chart elements -->
+// Configure additional chart elements
 
 {% endhighlight %}
 

@@ -19,7 +19,6 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 <chart:SfCartesianChart>
 
     <!-- Configure additional chart elements -->
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Header="Category"/>
     </chart:SfCartesianChart.XAxes>
@@ -35,8 +34,7 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 
 SfCartesianChart chart = new SfCartesianChart();
 
-//Add the chart series to the chart.
-
+// Configure additional chart elements
 chart.XAxes.Add(new CategoryAxis() { Header = "Category" });
 chart.YAxes.Add(new NumericalAxis() { Header = "Values" });
 
@@ -57,7 +55,6 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 <chart:SfCartesianChart>
 
     <!-- Configure additional chart elements -->
-
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Header="Category">
             <chart:CategoryAxis.HeaderStyle>
@@ -73,8 +70,7 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 
 SfCartesianChart chart = new SfCartesianChart();
 
-//Add the chart series to the chart.
-
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 { 
     Header = "Category"
@@ -134,8 +130,7 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 
 SfCartesianChart chart = new SfCartesianChart();
 
-//Add the chart series to the chart.
-
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     // The 'headerTemplate' resource is defined in XAML Resources and referenced here.

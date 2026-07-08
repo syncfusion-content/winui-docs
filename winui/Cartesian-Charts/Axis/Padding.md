@@ -47,6 +47,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
    PlotOffsetStart = 30
 };
 chart.YAxes.Add(secondaryAxis);
+
 // Setting chart as the content of the page
 this.Content = chart;
 

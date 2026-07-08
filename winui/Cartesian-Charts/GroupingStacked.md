@@ -100,7 +100,8 @@ chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
 chart.Series.Add(series4);
-...
+
+// Configure additional chart elements
 
 {% endhighlight %}
 
