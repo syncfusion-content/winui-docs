@@ -25,7 +25,8 @@ This section explains how to populate the circular chart with data, header, data
 
 <Window
     x:Class="ChartDemo.MainWindow"
-    . . .
+
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
 
     <chart:SfCircularChart/>
@@ -36,7 +37,8 @@ This section explains how to populate the circular chart with data, header, data
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-. . .
+
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
@@ -44,10 +46,11 @@ public sealed partial class MainWindow : Window
         this.InitializeComponent();
 
         SfCircularChart chart = new SfCircularChart();
-        . . .
+
+        // Configure additional chart elements
         this.Content = chart;
     }
-}   
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -108,13 +111,16 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 {% highlight xaml %} 
 
 <Window
-    . . .
+
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">
 
     <chart:SfCircularChart>
         <chart:SfCircularChart.DataContext>
             <model:ChartViewModel/>
+
+            <!-- Configure additional chart elements -->
         </chart:SfCircularChart.DataContext>
     </chart:SfCircularChart>
 </Window>
@@ -141,7 +147,8 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Series>
         <chart:PieSeries 
             ItemsSource="{Binding Data}" 
@@ -170,7 +177,8 @@ series.XBindingPath = "Product";
 series.YBindingPath = "SalesRate";
 
 chart.Series.Add(series);
-. . .
+
+// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -185,7 +193,8 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight xaml %}
 
 <chart:SfCircularChart Header="PRODUCT SALES">
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -193,7 +202,8 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
@@ -208,7 +218,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries
         ShowDataLabels="True"
         ItemsSource="{Binding Data}" 
@@ -221,7 +232,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
@@ -240,7 +252,8 @@ The legend provides information about the data point displayed in the circular c
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCircularChart.Legend>
@@ -251,7 +264,8 @@ The legend provides information about the data point displayed in the circular c
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 chart.Legend = new ChartLegend();
 
 {% endhighlight %}
@@ -267,7 +281,8 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries EnableTooltip="True"/>
 </chart:SfCircularChart>
 
@@ -276,7 +291,8 @@ Tooltips are used to show information about the segment, when mouse over on it. 
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 series.EnableTooltip = true;
@@ -318,7 +334,8 @@ The following code example gives you the complete code of above configurations.
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-. . .
+
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()

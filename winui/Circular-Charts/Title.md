@@ -16,7 +16,8 @@ documentation: ug
 {% highlight xaml %}
 
 <chart:SfCircularChart x:Name="chart" Header="Circular Chart Header">
- . . .  
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -25,7 +26,8 @@ documentation: ug
 
 SfCircularChart chart = new SfCircularChart();
 chart.Header = "Circular Chart Header";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -43,7 +45,8 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Header>
         <Border 
             BorderThickness="0.5"
@@ -129,7 +132,8 @@ The title text content can be aligned horizontally to the left, center or right 
 SfCircularChart chart = new SfCircularChart();
 
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
-. . .
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(0.5),

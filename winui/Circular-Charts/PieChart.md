@@ -190,7 +190,8 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Series>
         <chart:DoughnutSeries 
             ItemsSource="{Binding Data}" 
@@ -211,7 +212,8 @@ chart.Series.Add(series);
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 DoughnutSeries series1 = new DoughnutSeries();
 
 series1.SetBinding(DoughnutSeries.ItemsSourceProperty, new Binding()

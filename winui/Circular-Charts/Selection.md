@@ -34,7 +34,8 @@ To enable the selection in chart, create an instance of the [DataPointSelectionB
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
@@ -49,7 +50,8 @@ To enable the selection in chart, create an instance of the [DataPointSelectionB
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
@@ -76,7 +78,8 @@ The circular chart allows to select single or multiple segments using the [Type]
 {% highlight xml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
@@ -91,7 +94,8 @@ The circular chart allows to select single or multiple segments using the [Type]
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
@@ -121,7 +125,8 @@ The circular chart provides support to select a point programmatically on a char
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
@@ -136,7 +141,8 @@ The circular chart provides support to select a point programmatically on a char
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
@@ -164,7 +170,8 @@ The circular chart provides support to select multiple points programmatically o
 {% highlight xml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Series>
         <chart:PieSeries>
             <chart:PieSeries.SelectionBehavior>
@@ -182,7 +189,8 @@ The circular chart provides support to select multiple points programmatically o
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 DataPointSelectionBehavior selection = new DataPointSelectionBehavior()

@@ -23,7 +23,8 @@ Exploding a segment is used to pull attention to a specific area of the circular
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries 
          x:Name="PieSeries" 
          ItemsSource="{Binding Data}"
@@ -38,7 +39,8 @@ Exploding a segment is used to pull attention to a specific area of the circular
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -65,7 +67,8 @@ N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries ExplodeAll="True"
 		     ExplodeRadius="15"
 		     XBindingPath="Category"
@@ -78,7 +81,8 @@ N> By default [ExplodeRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries()
 {
     ItemsSource = new ViewModel().Data,

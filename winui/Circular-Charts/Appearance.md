@@ -35,7 +35,8 @@ PieSeries series = new PieSeries()
     XBindingPath = "Product",
     YBindingPath = "SalesRate"
 };
-. . .
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -53,7 +54,8 @@ The [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Resources>
         <BrushCollection x:Key="customBrushes">
             <SolidColorBrush Color="#4dd0e1"/>
@@ -77,7 +79,8 @@ The [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 List<Brush> CustomBrushes = new List<Brush>();
@@ -89,7 +92,8 @@ CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 series.PaletteBrushes = CustomBrushes;
-. . .
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -107,7 +111,8 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Resources>
         <BrushCollection x:Key="customBrushes">
             <LinearGradientBrush>
@@ -145,7 +150,8 @@ The gradient for the circular chart can be set by using the [PaletteBrushes](htt
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 
 List<Brush> customBrushes = new List<Brush>();
@@ -170,7 +176,8 @@ gradientColor1.GradientStops.Add(stop2);
 customBrushes.Add(gradientColor1);
 
 series.PaletteBrushes = customBrushes;
-. . .
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
