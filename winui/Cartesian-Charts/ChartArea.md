@@ -10,11 +10,11 @@ keywords: chart area in winui chart, winui sfcartesianchart chart area, winui ch
 
 # Chart Area in WinUI Chart (SfCartesianChart)
 
-Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like title, axis, legends, series, etc.
+Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements such as the title, axes, legends, and series.
 
 ## Customization
 
-Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
+The chart provides properties such as [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
 
 {% tabs %}
 
@@ -26,7 +26,7 @@ Chart provides the properties like [PlotAreaBorderBrush](https://help.syncfusion
     Background="LightBlue"            
     PlotAreaBorderBrush="Blue"             
     PlotAreaBorderThickness="3">
-    . . .
+    <!-- Configure axes, legend, and series below -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
