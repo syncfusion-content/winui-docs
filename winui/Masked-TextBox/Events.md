@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WinUI Masked TextBox control | Syncfusion
-description: Learn all about the events in the Masked TextBox (SfMaskedTextBox) control.
+description: Learn all about the events available in the Syncfusion WinUI Masked TextBox (SfMaskedTextBox) Control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
