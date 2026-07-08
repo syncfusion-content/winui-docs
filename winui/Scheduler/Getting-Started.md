@@ -118,10 +118,10 @@ N> The CustomAppointment class should contain two DateTime fields and a string f
 
 Here are the steps to render meetings using the [WinUI Scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control with respective custom data properties created in a class `Meeting.`
 
-* [Creating a custom class to map with the appointment](#creating-a-custom-class-to-map-with-the-appointment)
-* [Creating the view model](#creating-the-view-model)
-* [Mapping the data object to the appointment](#mapping-the-data-object-to-the-appointment)
-* [Binding the item source to the Scheduler](#binding-the-item-source-to-the-scheduler)
+* [Creating a custom class to map that objects with ScheduleAppointment](#creating-custom-class-to-map-that-objects-with-ScheduleAppointment)
+* [Creating the view model](#create-view-model)
+* [Mapping the data object to ScheduleAppointment](#mapping-the-data-object-to-ScheduleAppointment)
+* [Bind item source for Scheduler](#binding-item-source-for-Scheduler-control
 
 #### Creating custom class to map that object with appointment
 Create a custom class `Meeting` with the mandatory fields `From`, `To`, and `EventName`.
