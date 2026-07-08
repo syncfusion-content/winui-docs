@@ -12,13 +12,13 @@ documentation: ug
 This section explains how to perform selection and its related operations in the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html).
 
 ## UI Selection
-The `TreeView` allows selecting the items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows.
+The `TreeView` allows you to select the items either programmatically or by touch interaction by setting the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) property value to a value other than `None`. The control has different selection modes to perform selection operations as listed below.
 
 * `None`: Allows disabling the selection.
-* `Single`: Allows selecting the single item only. When clicking on the selected item, selection will not be cleared. This is the default value for `SelectionMode`.
-* `SingleDeselect`: Allows selecting the single item only. When clicking on the selected item, selection gets cleared.
-* `Multiple`: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
-* `Extended`: Allows to select the multiple items using the common key modifiers.
+* `Single`: Allows selecting a single item only. When clicking on the selected item, the selection will not be cleared. This is the default value for `SelectionMode`.
+* `SingleDeselect`: Allows selecting a single item only. When clicking on the selected item, the selection is cleared.
+* `Multiple`: Allows selecting more than one item. The selection is not cleared when selecting more than one item. When clicking on a selected item, the selection is cleared.
+* `Extended`: Allows selecting multiple items using the common key modifiers.
 
 {% tabs %}
 {% highlight xaml %}
@@ -276,7 +276,7 @@ The [FocusBorderColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.T
 The [FocusBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderThickness) property is used to set the border thickness for the current focused item. The default thickness is `2`.
 
 ## How to add selection on right click
-By default, TreeView doesn't allow selection on right click. However, selection can be added in application level by adding the tree node content to `TreeView.SelectedItems` collection, for this we retrieve the node at the specified mouse point using [GetNodeAt](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_GetNodeAt_System_Windows_Point_) method. 
+By default, the TreeView does not allow selection on right click. However, selection can be added at the application level by adding the tree node content to the `TreeView.SelectedItems` collection. To do this, we retrieve the node at the specified mouse point using the [GetNodeAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_GetNodeAt) method.
 
 Below is the code example, which adds the node content to selected items upon right click on the tree node by checking the exact behavior of `FullRowSelect` support.
 
@@ -319,5 +319,5 @@ Below is the code example, which adds the node content to selected items upon ri
 {% endtabs %}
 
 ## Limitation
-* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionBackgroundColor) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of grid in the  `ItemTemplate`.
+* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) with a background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionBackgroundColor) will not be displayed because it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of the grid in the `ItemTemplate`.
 * When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.

@@ -9,11 +9,11 @@ documentation: ug
 
 # CRUD Operations in WinUI TreeView
 
-TreeView listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports `editing`, `delete` by pressing <kbd>Delete</kbd> key.
+The `TreeView` listens and responds to the CRUD operations such as add, delete, and data update (property change) at runtime. It also supports `editing` and `delete` by pressing the <kbd>Delete</kbd> key.
 
 ## Add nodes
 
-TreeView allows user to add new node directly by adding new data object to underlying collection in bound mode and by adding [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) to [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
+The TreeView allows the user to add a new node directly by adding a new data object to the underlying collection in bound mode and by adding a [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ sfTreeView.Nodes.Add(new TreeViewNode(){ Content = "Germany" });
 
 ## Delete nodes
 
-TreeView provides built-in support to delete the selected nodes in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
+The TreeView provides built-in support to delete the selected nodes in the user interface (UI) by pressing the <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -42,7 +42,7 @@ sfTreeView.AllowDeleting = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can delete node directly in underlying collection also using Remove () or RemoveAt (int index).
+You can delete a node directly in the underlying collection also using `Remove()` or `RemoveAt(int index)`.
 
 {% tabs %}
 {% highlight c# %}
@@ -51,7 +51,7 @@ You can delete node directly in underlying collection also using Remove () or Re
 (sfTreeView.DataContext as ViewModel).Countries.Remove(sfTreeView.SelectedItem as Country);
 
 // OR
-(sfTreeView.DataContext as ViewModel).Orders.RemoveAt(2);
+(sfTreeView.DataContext as ViewModel).Countries.RemoveAt(2);
 
 // For Unbound mode
 sfTreeView.Nodes.Remove(sfTreeView.Nodes[0]);
@@ -65,7 +65,7 @@ sfTreeView.Nodes.RemoveAt(2);
 
 #### Delete selected nodes conditionally
 
-You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` of [ItemDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleting) event. This event occurs when the node is being deleted using <kbd>Delete</kbd> key. You can skip certain nodes when deleting more than one node by removing items from [ItemDeletingEventArgs.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemDeletingEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemDeletingEventArgs_Nodes).
+You can cancel the node deletion by using the `ItemDeletingEventArgs.Cancel` property of the [ItemDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleting) event. This event occurs when the node is being deleted using the <kbd>Delete</kbd> key. You can skip certain nodes when deleting more than one node by removing items from [ItemDeletingEventArgs.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemDeletingEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemDeletingEventArgs_Nodes).
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void TreeView_ItemDeleting (object sender, ItemDeletingEventArgs e)
 
 #### Reset selection after deleting the selected node
 
-You can handle the selection after remove the nodes through [SfTreeView.SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property in [ItemDeleted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleted) event. This event occurs after the node is deleted using <kbd>Delete</kbd> key.
+You can handle the selection after removing the nodes through the [SfTreeView.SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property in the [ItemDeleted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDeleted) event. This event occurs after the node is deleted using the <kbd>Delete</kbd> key.
 
 {% tabs %}
 {% highlight c# %}
@@ -110,4 +110,4 @@ private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 
 ## Modify nodes
 
-Treeview allows user to modify the data in a node by `editing`.
+The TreeView allows the user to modify the data in a node by using [editing](https://help.syncfusion.com/winui/treeview/editing). For more information, see the [Editing](https://help.syncfusion.com/winui/treeview/editing) documentation.
