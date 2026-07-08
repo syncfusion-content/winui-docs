@@ -21,7 +21,8 @@ To define the tooltip in the series, set the [EnableTooltip](https://help.syncfu
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries 
             ItemsSource="{Binding Data}" 
@@ -42,7 +43,8 @@ To define the tooltip in the series, set the [EnableTooltip](https://help.syncfu
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 ColumnSeries series1 = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -117,7 +119,8 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
             <Setter Property="Fill" Value="Gray"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -146,7 +149,8 @@ SfCartesianChart chart = new SfCartesianChart();
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
@@ -193,7 +197,8 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
             <Setter Property="FontStyle" Value="Italic"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -223,7 +228,8 @@ Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyles.Italic));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-...
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 chart.TooltipBehavior = tooltipBehavior;
@@ -267,7 +273,8 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalAlignment="Left"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -292,7 +299,8 @@ Tooltip can be positioned horizontally left, right, or center to the cursor posi
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.HorizontalAlignment = HorizontalAlignment.Left;
 chart.TooltipBehavior = tooltipBehavior;
@@ -332,7 +340,8 @@ Tooltip can be positioned vertically top, bottom, or center to the cursor positi
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior VerticalAlignment="Bottom"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -357,7 +366,8 @@ Tooltip can be positioned vertically top, bottom, or center to the cursor positi
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.VerticalAlignment = VerticalAlignment.Bottom;
 chart.TooltipBehavior = tooltipBehavior;
@@ -397,7 +407,8 @@ The tooltip can be positioned at a particular distance from the cursor by using 
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior HorizontalOffset="40" VerticalOffset="40"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -422,7 +433,8 @@ The tooltip can be positioned at a particular distance from the cursor by using 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.HorizontalOffset = 40;
 tooltipBehavior.VerticalOffset = 40;
@@ -465,7 +477,8 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388" Width="500">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Duration="5000"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -490,7 +503,8 @@ N> By default, the tooltip will be displayed for 1000 milliseconds.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Duration = 5000;
 chart.TooltipBehavior = tooltipBehavior;
@@ -528,7 +542,8 @@ Animation for tooltip can be set by using the [EnableAnimation](https://help.syn
 {% highlight xaml %}
 
 <chart:SfCartesianChart Height="388"  Width="500">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior EnableAnimation="True"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -553,7 +568,8 @@ Animation for tooltip can be set by using the [EnableAnimation](https://help.syn
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.EnableAnimation = true;
 chart.TooltipBehavior = tooltipBehavior;
@@ -617,14 +633,16 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
                     VerticalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
-        . . .
+
+        <!-- Configure additional chart elements -->
         <Style TargetType="Path" x:Key="style">
             <Setter Property="Stroke" Value="Black"/>
             <Setter Property="Fill" Value="LightGreen"/>
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
     </chart:SfCartesianChart.TooltipBehavior>
@@ -650,7 +668,8 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// The 'tooltipTemplate1' resource is defined in XAML Resources and referenced here.
 ColumnSeries series1 = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -660,6 +679,7 @@ ColumnSeries series1 = new ColumnSeries()
     TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate
 };
 
+// The 'tooltipTemplate2' resource is defined in XAML Resources and referenced here.
 ColumnSeries series2 = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,

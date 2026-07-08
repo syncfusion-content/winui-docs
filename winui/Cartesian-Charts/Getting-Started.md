@@ -25,7 +25,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
 
 {% highlight xaml %}
 
-<!-- Existing XAML attributes (e.g., x:Class, xmlns, mc:Ignorable) omitted for brevity -->
+<!-- XAML attributes (x:Class, xmlns, mc:Ignorable) hidden in this snippet -->
 <Window
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     
@@ -266,10 +266,12 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <!-- Existing chart configuration omitted for brevity -->
+
+    <!-- Existing axis configuration -->
     <chart:ColumnSeries ShowDataLabels="True">
     </chart:ColumnSeries>
-    <!-- Existing chart configuration omitted for brevity -->
+
+    <!-- Existing legend configuration -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -277,7 +279,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-// Previous chart configuration (axes, data binding, etc.) omitted for brevity
+
+// Previous chart configuration (axes, data binding, etc.) is not shown here
 ColumnSeries series = new ColumnSeries();
 series.ShowDataLabels = true;
 chart.Series.Add(series);
@@ -295,11 +298,13 @@ The legend provides information about the data point displayed in the chart. The
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <!-- Existing chart configuration omitted for brevity -->
+    
+    <!-- Existing axis configuration -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
-    <!-- Existing chart configuration omitted for brevity -->
+
+    <!-- Existing legend configuration -->    
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -320,14 +325,16 @@ N> Additionally, set a label for each series using the [Label](https://help.sync
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <!-- Existing chart configuration omitted for brevity -->
+    
+    <!-- Existing axis configuration -->
     <chart:ColumnSeries
         Label="Heights"
         ItemsSource="{Binding Data}"
         XBindingPath="Name" 
         YBindingPath="Height">
     </chart:ColumnSeries>
-    <!-- Existing chart configuration omitted for brevity -->
+    
+    <!-- Existing legend configuration -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -353,13 +360,15 @@ Tooltips are used to show information about the segment, when the user hovers ov
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    <!-- Existing chart configuration omitted for brevity -->
+
+    <!-- Existing axis configuration -->
     <chart:ColumnSeries 
         EnableTooltip="True" 
         ItemsSource="{Binding Data}" 
         XBindingPath="Name" 
         YBindingPath="Height"/>
-    <!-- Existing chart configuration omitted for brevity -->
+
+    <!-- Existing legend configuration -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}

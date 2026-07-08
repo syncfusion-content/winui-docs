@@ -21,7 +21,8 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis MinorTicksPerInterval="4"/>
     </chart:SfCartesianChart.XAxes>
@@ -36,7 +37,8 @@ N> For category axis, minor tick lines are not applicable. Since it is rendered 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 NumericalAxis primaryAxis = new NumericalAxis()
 {
    MinorTicksPerInterval = 4 
@@ -58,7 +60,8 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis MinorTickLineSize="10" MinorTicksPerInterval="4" TickLineSize="15"/>
     </chart:SfCartesianChart.XAxes>
@@ -73,7 +76,8 @@ Both major and minor tick lines height can be customized by using the [TickLineS
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 NumericalAxis primaryAxis = new NumericalAxis()
 {
    TickLineSize = 15,
@@ -99,7 +103,8 @@ Both major and minor tick lines can be customized by using the [MajorTickStyle](
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Resources>
         <Style TargetType="Line" x:Key="lineStyle">
             <Setter Property="StrokeThickness" Value="1"/>
@@ -124,7 +129,8 @@ Both major and minor tick lines can be customized by using the [MajorTickStyle](
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// The 'lineStyle' resource is defined in XAML Resources and referenced here.
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     MinorTicksPerInterval = 4,

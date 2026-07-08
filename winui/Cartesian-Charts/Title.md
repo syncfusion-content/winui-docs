@@ -17,6 +17,7 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" Header="Chart Area Header">
+
 <!-- Configure axes, legend, and series here -->
 </chart:SfCartesianChart>
 
@@ -99,6 +100,7 @@ The title text content can be aligned horizontally to the left, center or right 
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" HorizontalHeaderAlignment="Left">
+
     <!-- Configure axes, legend, and series here -->
     <chart:SfCartesianChart.Header>
         <Border 
@@ -112,6 +114,7 @@ The title text content can be aligned horizontally to the left, center or right 
                 Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>
+
     <!-- Configure axes, legend, and series here -->
 </chart:SfCartesianChart>
 
@@ -121,6 +124,7 @@ The title text content can be aligned horizontally to the left, center or right 
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
+
 // Configure axes, legend, and series here
 Border border = new Border()
 {

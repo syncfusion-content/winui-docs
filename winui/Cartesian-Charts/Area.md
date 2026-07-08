@@ -139,7 +139,8 @@ The [StepAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
             YBindingPath="YValue" 
             ItemsSource="{Binding Data}"/> 
     </chart:SfCartesianChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}

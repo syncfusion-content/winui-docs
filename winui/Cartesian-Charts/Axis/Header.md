@@ -17,7 +17,9 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
+
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Header="Category"/>
     </chart:SfCartesianChart.XAxes>
@@ -32,7 +34,9 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+//Add the chart series to the chart.
+
 chart.XAxes.Add(new CategoryAxis() { Header = "Category" });
 chart.YAxes.Add(new NumericalAxis() { Header = "Values" });
 
@@ -51,7 +55,9 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
+
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Header="Category">
             <chart:CategoryAxis.HeaderStyle>
@@ -66,7 +72,9 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+//Add the chart series to the chart.
+
 CategoryAxis primaryAxis = new CategoryAxis()
 { 
     Header = "Category"
@@ -96,7 +104,8 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="headerTemplate">
             <Border 
@@ -112,7 +121,8 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
             </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis HeaderTemplate="{StaticResource headerTemplate}"/>        
     </chart:SfCartesianChart.XAxes>
@@ -123,12 +133,15 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+//Add the chart series to the chart.
+
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    // The 'lineStyle' resource is defined in XAML Resources and referenced here.
+    // The 'headerTemplate' resource is defined in XAML Resources and referenced here.
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
+
 chart.XAxes.Add(primaryAxis);
 
 {% endhighlight %}

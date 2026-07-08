@@ -21,7 +21,8 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelRotation="90"/>
     </chart:SfCartesianChart.XAxes>
@@ -32,7 +33,8 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     LabelRotation = 90
@@ -56,7 +58,8 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+   <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis>
             <chart:DateTimeAxis.LabelStyle>
@@ -71,7 +74,8 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
@@ -89,7 +93,8 @@ chart.XAxes.Add(primaryAxis);
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+    
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis>
             <chart:NumericalAxis.LabelStyle>
@@ -104,7 +109,8 @@ chart.XAxes.Add(primaryAxis);
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
     LabelStyle = new LabelStyle() { LabelFormat= "0.00" }
@@ -126,7 +132,6 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
     <chart:SfCartesianChart.Resources>
         <DataTemplate x:Key="labelTemplate" x:DataType="chart:ChartAxisLabel">
             <Border 
@@ -142,7 +147,8 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
             </Border>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
-    . . .
+    
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
     </chart:SfCartesianChart.XAxes>
@@ -153,7 +159,8 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// The 'labelTemplate' resource is defined in XAML Resources and referenced here.
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
@@ -177,7 +184,8 @@ The [LabelExtent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
+
+    <!-- Configure additional chart elements --> 
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Header="Demand" LabelExtent="50"/>
     </chart:SfCartesianChart.XAxes>
@@ -241,7 +249,8 @@ Chart axis provides support to customize the rendering position of the edge labe
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+    
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis EdgeLabelsDrawingMode="Shift"/>
     </chart:SfCartesianChart.XAxes>
@@ -252,7 +261,8 @@ Chart axis provides support to customize the rendering position of the edge labe
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . . 
+
+<!-- Configure additional chart elements -->
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift
@@ -278,7 +288,8 @@ The visibility of the edge labels of the axis can be controlled using the [EdgeL
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis EdgeLabelsVisibilityMode="AlwaysVisible"/>
     </chart:SfCartesianChart.XAxes>
@@ -289,7 +300,8 @@ The visibility of the edge labels of the axis can be controlled using the [EdgeL
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVisible
@@ -309,7 +321,8 @@ chart.XAxes.Add(primaryAxis);
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis EdgeLabelsVisibilityMode="Visible"/>
     </chart:SfCartesianChart.XAxes>
@@ -320,7 +333,8 @@ chart.XAxes.Add(primaryAxis);
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure additional chart elements -->
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.Visible

@@ -41,7 +41,8 @@ The [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
         XBindingPath="CountryName" 
         YBindingPath="BronzeMedals" 
         ItemsSource="{Binding MedalDetails}"/>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -82,7 +83,8 @@ StackedColumnSeries series3 = new StackedColumnSeries()
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 
@@ -123,7 +125,8 @@ The [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         XBindingPath="MonthlyExpenses" 
         YBindingPath="Son"
         ItemsSource="{Binding Data}"/>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -164,7 +167,8 @@ StackedLineSeries series3 = new StackedLineSeries()
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 
@@ -205,7 +209,8 @@ The [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         XBindingPath="Month"                 
         YBindingPath="Truck" 
         ItemsSource="{Binding Accidents}"/>
-    ...
+    
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -246,7 +251,8 @@ StackedAreaSeries series3 = new StackedAreaSeries()
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 

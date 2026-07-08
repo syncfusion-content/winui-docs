@@ -41,7 +41,8 @@ The [StackedColumn100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
         XBindingPath="CountryName" 
         YBindingPath="BronzeMedals" 
         ItemsSource="{Binding MedalDetails}"/>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -82,7 +83,8 @@ StackedColumn100Series series3 = new StackedColumn100Series()
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 
@@ -163,7 +165,8 @@ StackedLine100Series series3 = new StackedLine100Series()
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 
@@ -244,7 +247,8 @@ StackedArea100Series series3 = new StackedArea100Series()
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 

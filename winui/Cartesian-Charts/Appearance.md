@@ -33,7 +33,8 @@ Currently, Chart supports only one predefined palette and it is the default pale
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -51,7 +52,8 @@ this.Content = chart;
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" PaletteBrushes="{Binding CustomBrushes}">
-. . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -59,7 +61,8 @@ this.Content = chart;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 172, 193)));
@@ -67,7 +70,8 @@ CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 this.chart.PaletteBrushes = CustomBrushes;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -108,7 +112,8 @@ Cartesian chart provides support to set the palette to series for applying prede
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 188, 212)));
@@ -123,7 +128,8 @@ ColumnSeries series = new ColumnSeries()
     YBindingPath = "Year2010",
     PaletteBrushes = CustomBrushes,
 };
-. . .
+
+// Configure additional chart elements
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -182,7 +188,8 @@ The following code sample and screenshot illustrates how to apply the gradient b
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 List<Brush> CustomBrushes = new List<Brush>();
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
 GradientStop stop1 = new GradientStop()
@@ -215,10 +222,12 @@ stop2 = new GradientStop()
 
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-. . .
+
+// Configure additional chart elements
 CustomBrushes.Add(gradientColor1);
 CustomBrushes.Add(gradientColor2);
-. . .
+
+// Configure additional chart elements
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -228,7 +237,8 @@ ColumnSeries series = new ColumnSeries()
 };
 
 chart.Series.Add(series);
-. . .            
+
+// Configure additional chart elements            
 this.Content = chart;
 
 {% endhighlight %}

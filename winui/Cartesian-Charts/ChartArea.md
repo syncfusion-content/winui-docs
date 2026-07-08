@@ -26,6 +26,7 @@ The chart provides properties such as [PlotAreaBorderBrush](https://help.syncfus
     Background="LightBlue"            
     PlotAreaBorderBrush="Blue"             
     PlotAreaBorderThickness="3">
+    
     <!-- Configure axes, legend, and series below -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>

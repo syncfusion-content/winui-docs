@@ -19,7 +19,7 @@ Cartesian chart axis provides support to customize the style of axis line by def
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
     <chart:SfCartesianChart.Resources>
         <Style TargetType="Line" x:Key="lineStyle">
             <Setter Property="StrokeThickness" Value="2"/>
@@ -27,7 +27,8 @@ Cartesian chart axis provides support to customize the style of axis line by def
             <Setter Property="StrokeDashArray" Value="6,2,3"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis AxisLineStyle="{StaticResource lineStyle}"/>
     </chart:SfCartesianChart.XAxes>
@@ -38,7 +39,8 @@ Cartesian chart axis provides support to customize the style of axis line by def
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// The 'lineStyle' resource is defined in XAML Resources and referenced here.
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     AxisLineStyle = chart.Resources["lineStyle"] as Style 
@@ -60,7 +62,8 @@ The padding to the axis line is defined by using the [AxisLineOffset](https://he
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis AxisLineOffset="25" AxisLineStyle="{StaticResource lineStyle}"/>
     </chart:SfCartesianChart.XAxes>
@@ -71,7 +74,8 @@ The padding to the axis line is defined by using the [AxisLineOffset](https://he
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// The 'lineStyle' resource is defined in XAML Resources and referenced here.
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     AxisLineOffset = 25,

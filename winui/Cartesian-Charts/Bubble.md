@@ -36,7 +36,8 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
         Size="Size" 
         MinimumRadius="5" 
         MaximumRadius="10"/>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -49,7 +50,8 @@ chart.XAxes.Add(xAxis);
 
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
-. . .
+
+<!-- Configure additional chart elements -->
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -61,7 +63,8 @@ BubbleSeries series = new BubbleSeries()
 };
 
 chart.Series.Add(series);
-...
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 

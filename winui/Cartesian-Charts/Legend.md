@@ -17,6 +17,7 @@ The legend contains a list of series data points in the chart. The information p
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
+
     <!-- Initialize the chart legend -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
@@ -29,6 +30,7 @@ The legend contains a list of series data points in the chart. The information p
         XBindingPath="Year"
         YBindingPath="India">
     </chart:SplineSeries>
+
     <!-- Additional series can be added here -->
 </chart:SfCartesianChart>
 
@@ -37,6 +39,7 @@ The legend contains a list of series data points in the chart. The information p
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 // Initialize the chart legend
 ChartLegend legend = new ChartLegend();
 chart.Legend = legend;
@@ -66,6 +69,7 @@ The chart supports adding any `UIElement` as a title for legend. [Header](https:
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
+
     <!-- Add a title to the legend header -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend>
@@ -78,6 +82,7 @@ The chart supports adding any `UIElement` as a title for legend. [Header](https:
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfCartesianChart.Legend>
+
     <!-- Add series with bound data -->
 </chart:SfCartesianChart>
 
@@ -117,6 +122,7 @@ Legend icon represents a symbol associated with each legend item. [LegendIcon](h
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
+
     <!-- Initialize the chart legend -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
@@ -137,6 +143,7 @@ Legend icon represents a symbol associated with each legend item. [LegendIcon](h
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 // Initialize the chart legend
 ChartLegend legend = new ChartLegend();
 chart.Legend = legend;
@@ -212,10 +219,12 @@ The chart supports adding a custom icon for the legend using [LegendIconTemplate
                 StrokeThickness="2"/>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
+
     <!-- Initialize the chart legend -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
+    
     <!-- Add a column series with a custom legend icon template -->
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries 
@@ -233,6 +242,7 @@ The chart supports adding a custom icon for the legend using [LegendIconTemplate
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Legend = new ChartLegend();
+
 // The 'iconTemplate' resource is defined in XAML Resources and referenced here.
 ColumnSeries series = new ColumnSeries()
 {
@@ -261,6 +271,7 @@ The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
+
     <!-- Initialize the chart legend -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
@@ -289,6 +300,7 @@ The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 // Initialize the chart legend
 chart.Legend = new ChartLegend();
 
@@ -505,6 +517,7 @@ Customize each legend item by using the [`ItemTemplate`](https://help.syncfusion
             </StackPanel>
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
+    
     <!-- Apply a custom item template to the legend -->
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>

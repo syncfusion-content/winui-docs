@@ -26,7 +26,8 @@ By default, major gridlines are automatically added to the [ChartAxis](https://h
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
-    . . .
+    
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -34,7 +35,8 @@ By default, major gridlines are automatically added to the [ChartAxis](https://h
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+<!-- Configure axes, legend, and series here -->
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     ShowMajorGridLines = false
@@ -66,7 +68,8 @@ The [MajorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
             <Setter Property="StrokeDashArray" Value="3,3"/>
         </Style>
     </chart:SfCartesianChart.Resources>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis MajorGridLineStyle="{StaticResource lineStyle}"/>
     </chart:SfCartesianChart.XAxes>
@@ -81,7 +84,8 @@ The [MajorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// The 'lineStyle' resource is defined in XAML Resources and referenced here.
 chart.PrimaryAxis = new NumericalAxis()
 {
     MajorGridLineStyle = chart.Resources["lineStyle"] as Style 
@@ -112,7 +116,8 @@ Minor gridlines will be added automatically when the minor tick lines is defined
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis MinorTicksPerInterval="3"/>
     </chart:SfCartesianChart.YAxes>
-    . . .
+
+    <!-- Configure legend and series here -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -127,7 +132,8 @@ NumericalAxis secondaryAxis = new NumericalAxis()
     MinorTicksPerInterval = 3,
 };
 chart.YAxes.Add(secondaryAxis);
-. . .
+
+<!-- Configure additional chart elements -->
 
 {% endhighlight %}
 
@@ -142,7 +148,7 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+    
     <chart:SfCartesianChart.Resources>
         <Style TargetType="Line" x:Key="lineStyle">
             <Setter Property="StrokeThickness" Value="0.8"/>
@@ -159,7 +165,8 @@ The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
         <chart:NumericalAxis MinorTicksPerInterval="3" 
                  MinorGridLineStyle="{StaticResource lineStyle}"/>
     </chart:SfCartesianChart.YAxes>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -175,7 +182,8 @@ NumericalAxis secondaryAxis = new NumericalAxis()
     MinorGridLineStyle = chart.Resources["lineStyle"] as Style
 };
 chart.YAxes.Add(secondaryAxis);
-. . .
+
+<!-- Configure axes, legend, and series here -->
 
 {% endhighlight %}
 

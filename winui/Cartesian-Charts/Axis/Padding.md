@@ -19,7 +19,8 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis PlotOffsetStart="30"/>
     </chart:SfCartesianChart.XAxes>
@@ -34,7 +35,7 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
    PlotOffsetStart = 30
@@ -46,7 +47,7 @@ NumericalAxis secondaryAxis = new NumericalAxis()
    PlotOffsetStart = 30
 };
 chart.YAxes.Add(secondaryAxis);
-. . .
+// Setting chart as the content of the page
 this.Content = chart;
 
 {% endhighlight %}
@@ -64,7 +65,8 @@ The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis PlotOffsetEnd="30"/>
     </chart:SfCartesianChart.XAxes>
@@ -79,7 +81,8 @@ The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
    PlotOffsetEnd = 30
@@ -91,7 +94,8 @@ NumericalAxis secondaryAxis = new NumericalAxis()
    PlotOffsetEnd = 30
 };
 chart.YAxes.Add(secondaryAxis);
-. . .
+
+// Setting chart as the content of the page
 this.Content = chart;
 
 {% endhighlight %}
