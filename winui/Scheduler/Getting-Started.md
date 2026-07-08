@@ -121,7 +121,7 @@ Here are the steps to render meetings using the [WinUI Scheduler](https://help.s
 * [Creating a custom class to map that objects with ScheduleAppointment](#creating-custom-class-to-map-that-objects-with-ScheduleAppointment)
 * [Creating the view model](#create-view-model)
 * [Mapping the data object to ScheduleAppointment](#mapping-the-data-object-to-ScheduleAppointment)
-* [Bind item source for Scheduler](#binding-item-source-for-Scheduler-control
+* [Bind item source for Scheduler](#binding-item-source-for-Scheduler-control)
 
 #### Creating custom class to map that object with appointment
 Create a custom class `Meeting` with the mandatory fields `From`, `To`, and `EventName`.
