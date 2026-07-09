@@ -365,6 +365,8 @@ The [`LabelTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ga
 {% highlight c# %}
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+// The 'labelTemplate' resource is defined in XAML Resources and referenced here.
 sfLinearGauge.Axis.LabelTemplate = this.Resources["labelTemplate"] as DataTemplate;
 this.Content = sfLinearGauge;
 
@@ -529,6 +531,8 @@ The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.G
 {% highlight c# %}
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+// The 'MajorTickLineStyle' resource is defined in XAML Resources and referenced here.
 sfLinearGauge.Axis.MajorTickStyle = this.Resources["MajorTickLineStyle"] as Style;
 this.Content = sfLinearGauge;
 
@@ -567,6 +571,8 @@ The [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.G
 {% highlight c# %}
 
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+// The 'MinorTickLineStyle' resource is defined in XAML Resources and referenced here.
 sfLinearGauge.Axis.MinorTickStyle = this.Resources["MinorTickLineStyle"] as Style;
 this.Content = sfLinearGauge;
 
@@ -618,7 +624,11 @@ By defining `StrokeDashArray` property in both the [`MajorTickStyle`](https://he
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.MajorTickLength = 15;
 sfLinearGauge.Axis.MinorTickLength = 10;
+
+// The 'MajorTickLineStyle' resource is defined in XAML Resources and referenced here.
 sfLinearGauge.Axis.MajorTickStyle = this.Resources["MajorTickLineStyle"] as Style;
+
+// The 'MinorTickLineStyle' resource is defined in XAML Resources and referenced here.
 sfLinearGauge.Axis.MinorTickStyle = this.Resources["MinorTickLineStyle"] as Style;
 this.Content = sfLinearGauge;
 

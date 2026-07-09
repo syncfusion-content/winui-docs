@@ -151,7 +151,8 @@ Bar pointers contains a list of bar pointer elements, where you can add any numb
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
-            ...
+
+            <!-- Configure additional axis elements -->
             <gauge:LinearAxis.BarPointers>
                 <gauge:BarPointer Value="90" />
             </gauge:LinearAxis.BarPointers>
@@ -166,7 +167,8 @@ Bar pointers contains a list of bar pointer elements, where you can add any numb
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
-...
+
+// Configure additional axis elements
 BarPointer barPointer1 = new BarPointer();
 barPointer1.Value = 90;
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
@@ -195,7 +197,8 @@ Shape pointer is to highlight current values by using the different types of sha
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
-            ...
+
+            <!-- Configure additional axis elements -->
             <gauge:LinearAxis.MarkerPointers>
                 <gauge:LinearShapePointer Value="90"
                                     VerticalAnchor="End"
@@ -212,7 +215,8 @@ Shape pointer is to highlight current values by using the different types of sha
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
-...
+
+// Configure additional axis elements
 LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 90;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
@@ -239,7 +243,8 @@ Content pointer is used to highlight values using an image, icon, text, or any o
     <gauge:SfLinearGauge.Axis>
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
-            ...
+
+            <!-- Configure additional axis elements -->
             <gauge:LinearContentPointer Value="90"
                       VerticalAnchor="End"
                       OffsetPoint="0,-28">
@@ -258,7 +263,8 @@ Content pointer is used to highlight values using an image, icon, text, or any o
 SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
-...
+
+// Configure additional axis elements
 LinearContentPointer linearContentPointer1 = new LinearContentPointer();
 linearContentPointer1.Value = 90;
 linearContentPointer1.VerticalAnchor = GaugeAnchor.End;

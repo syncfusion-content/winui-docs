@@ -94,6 +94,8 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
 LinearShapePointer linearShapePointer = new LinearShapePointer();
 linearShapePointer.Value = 60;
+
+// The 'CustomShapePointer' resource is defined in XAML Resources and referenced here.
 linearShapePointer.ShapeTemplate = this.Resources["CustomShapePointer"] as DataTemplate;
 sfLinearGauge.Axis.MarkerPointers.Add(linearShapePointer);
 
