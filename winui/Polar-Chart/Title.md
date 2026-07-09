@@ -38,7 +38,7 @@ this.Content = chart;
 
 ## Customization
 
-Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+The chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as the chart header.
 
 {% tabs %}
 
