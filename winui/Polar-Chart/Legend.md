@@ -16,7 +16,8 @@ The legend contains list of series in the chart. The information provided in eac
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
@@ -28,8 +29,8 @@ The legend contains list of series in the chart. The information provided in eac
 
 SfPolarChart chart = new SfPolarChart();
 chart.Legend = new ChartLegend();
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -56,7 +57,8 @@ Polar chart provides support to add any `UIElement` as a title for legend. [Head
             </chart:ChartLegend.Header>
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -76,8 +78,8 @@ TextBlock textBlock = new TextBlock()
 
 legend.Header = textBlock;
 chart.Legend = legend;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -104,7 +106,8 @@ The legend icon represents a symbol associated with each legend item. The appear
             IconVisibility="Visible">
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -118,8 +121,8 @@ chart.Legend = new ChartLegend()
     IconHeight = 15,
     IconVisibility = Visibility.Visible,
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -138,7 +141,8 @@ chart.Legend = new ChartLegend()
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend ItemMargin="10"/>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -150,8 +154,8 @@ chart.Legend = new ChartLegend()
 {
     ItemMargin = new Thickness(10)
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -170,7 +174,8 @@ Polar chart provides support to enable the checkbox for each legend item to visi
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend CheckBoxVisibility="Visible"/>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -182,8 +187,8 @@ chart.Legend = new ChartLegend()
 {
    CheckBoxVisibility = Visibility.Visible
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -202,7 +207,8 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend ToggleSeriesVisibility="True"/>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -214,8 +220,8 @@ chart.Legend = new ChartLegend()
 {
    ToggleSeriesVisibility = true
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -236,7 +242,8 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend ItemMargin="10" Placement="Right"/>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -249,8 +256,8 @@ chart.Legend = new ChartLegend()
    Placement = LegendPlacement.Right,
    ItemMargin = new Thickness(10),
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -279,7 +286,8 @@ The legend background appearance can be customized by using the following proper
             CornerRadius="5">
         </chart:ChartLegend>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -294,8 +302,8 @@ chart.Legend = new ChartLegend()
     BorderThickness = new Thickness(1),
     CornerRadius = new CornerRadius(5)
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -327,7 +335,8 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
             </StackPanel>
         </DataTemplate>
     </chart:SfPolarChart.Resources>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend ItemTemplate="{StaticResource labelTemplate}"/>
     </chart:SfPolarChart.Legend>
@@ -338,12 +347,14 @@ Customize each legend item by using the [ItemTemplate](https://help.syncfusion.c
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
+
+// The 'labelTemplate' resource is defined in XAML Resources and referenced here.
 chart.Legend = new ChartLegend()
 {
    ItemTemplate = chart.Resources["labelTemplate"] as DataTemplate
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

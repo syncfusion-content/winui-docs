@@ -16,7 +16,8 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 {% highlight xaml %}
 
 <chart:SfPolarChart StartAngle="Rotate0">
-...
+
+<!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 
@@ -26,8 +27,8 @@ By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 
 SfPolarChart chart = new SfPolarChart();
 chart.StartAngle = ChartPolarAngle.Rotate0;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

@@ -16,7 +16,8 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries 
             ItemsSource="{Binding PlantDetails}" 
@@ -33,7 +34,8 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
             XBindingPath="Direction"
             YBindingPath="Flower"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -41,7 +43,8 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 PolarLineSeries series1 = new PolarLineSeries();
 series1.XBindingPath = "Direction";
 series1.YBindingPath = "Tree";
@@ -56,7 +59,8 @@ PolarLineSeries series3 = new PolarLineSeries();
 series3.XBindingPath = "Direction";
 series3.YBindingPath = "Flower";
 series3.ItemsSource = viewModel.PlantDetails;
-...
+
+// Configure additional chart elements
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
@@ -76,14 +80,16 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfPolarChart GridLineType="Polygon">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries 
             ItemsSource="{Binding PlantDetails}" 
             XBindingPath="Direction"
             YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -92,12 +98,14 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 SfPolarChart chart = new SfPolarChart();
 chart.GridLineType= PolarChartGridLineType.Polygon;
-...
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.ItemsSource = viewModel.PlantDetails;
-...
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -115,7 +123,8 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SfPolarChart GridLineType="Polygon">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries
             ItemsSource="{Binding PlantDetails}" 
@@ -123,7 +132,8 @@ chart.Series.Add(series);
             YBindingPath="Tree" 
             IsClosed="False"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -132,13 +142,15 @@ chart.Series.Add(series);
 
 SfPolarChart chart = new SfPolarChart();
 chart.GridLineType= PolarChartGridLineType.Polygon;
-...
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.ItemsSource = viewModel.PlantDetails;
 series.IsClosed = false;
-...
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}

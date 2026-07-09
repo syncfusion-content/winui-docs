@@ -25,7 +25,8 @@ This section explains how to populate the [WinUI Polar Chart](https://www.syncfu
 
 <Window            
     x:Class="ChartDemo.MainWindow"
-    ...
+
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     <chart:SfPolarChart/>
 </Window>
@@ -35,14 +36,16 @@ This section explains how to populate the [WinUI Polar Chart](https://www.syncfu
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-...
+
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
     {
         this.InitializeComponent();
         SfPolarChart chart = new SfPolarChart();
-        ...
+
+        // Configure additional chart elements
         this.Content = chart;
     }
 }
@@ -110,7 +113,8 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 {% highlight xaml %} 
 
 <Window
-    ...
+
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">
 
@@ -127,8 +131,8 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 
 ChartViewModel viewModel = new ChartViewModel();
 chart.DataContext = viewModel;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %} 
@@ -149,7 +153,8 @@ chart.DataContext = viewModel;
       <chart:SfPolarChart.SecondaryAxis> 
            <chart:NumericalAxis/> 
       </chart:SfPolarChart.SecondaryAxis>
-      ...
+
+      <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -163,8 +168,8 @@ chart.PrimaryAxis = primaryAxis;
 
 NumericalAxis secondaryAxis = new NumericalAxis();
 chart.SecondaryAxis = secondaryAxis;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %} 
@@ -194,7 +199,8 @@ N> To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/S
             XBindingPath="Direction" 
             YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -222,8 +228,8 @@ series.SetBinding(ChartSeries.ItemsSourceProperty, new Binding()
 });
 
 chart.Series.Add(series);
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %} 
@@ -237,7 +243,8 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight xaml %}
 
 <chart:SfPolarChart Header="Polar Chart"> 
-...
+
+<!-- Configure additional chart elements -->
 </chart:SfPolarChart> 
 
 {% endhighlight %}
@@ -246,8 +253,8 @@ The title of the chart provide quick information to the user about the data bein
 
 SfPolarChart chart = new SfPolarChart();
 chart.Header = "Polar Chart";
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  
@@ -261,7 +268,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarAreaSeries 
         ShowDataLabels="True"
         ItemsSource="{Binding PlantDetails}" 
@@ -278,8 +286,8 @@ SfPolarChart chart = new SfPolarChart();
 
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  
@@ -293,11 +301,13 @@ The legend provides information about the data point displayed in the polar char
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -305,10 +315,11 @@ The legend provides information about the data point displayed in the polar char
 {% highlight C# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
-chart.Legend = new ChartLegend();
-...
 
+// Configure additional chart elements
+chart.Legend = new ChartLegend();
+
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  
@@ -320,13 +331,15 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarAreaSeries 
         ItemsSource="{Binding PlantDetails}" 
         XBindingPath="Direction" 
         YBindingPath="Tree"
         Label="Tree"/>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -334,14 +347,15 @@ N> Additionally, set label for each series using the [Label](https://help.syncfu
 {% highlight C# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 PolarAreaSeries series = new PolarAreaSeries();
 series.ItemsSource = viewModel.PlantDetails;
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.Label = "Tree";
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  
@@ -395,7 +409,8 @@ The following code example gives you the complete code of above configurations.
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-...
+
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()

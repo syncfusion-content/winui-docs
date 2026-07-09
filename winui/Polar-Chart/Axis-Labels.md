@@ -20,11 +20,13 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis LabelRotation="30"/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -32,14 +34,15 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 chart.PrimaryAxis = new CategoryAxis();
 chart.SecondaryAxis = new NumericalAxis()
 {
     LabelRotation = 30,
 }
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -66,7 +69,8 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
             </chart:NumericalAxis.LabelStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -79,8 +83,8 @@ chart.SecondaryAxis = new NumericalAxis()
 {
     LabelStyle = new LabelStyle() { LabelFormat= "0.0" }
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -114,7 +118,8 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
     </Grid.Resources>
 
     <chart:SfPolarChart x:Name="chart">
-        ...
+
+        <!-- Configure additional chart elements -->
         <chart:SfPolarChart.PrimaryAxis>
             <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
         </chart:SfPolarChart.PrimaryAxis>
@@ -122,7 +127,8 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
         <chart:SfPolarChart.SecondaryAxis>
             <chart:NumericalAxis/>
         </chart:SfPolarChart.SecondaryAxis>
-        ...
+
+        <!-- Configure additional chart elements -->
     </chart:SfPolarChart>
 </Grid>
 
@@ -132,14 +138,15 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 
 SfPolarChart chart = new SfPolarChart();
 
+// The 'labelTemplate' resource is defined in XAML Resources and referenced here.
 chart.PrimaryAxis = new CategoryAxis()
 {
     LabelTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
 
 chart.SecondaryAxis = new NumericalAxis();
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
