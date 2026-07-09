@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Explode segments in WinUI Funnel Chart control | Syncfusion
-description: This section explains about how to explode single segment or all segments in Syncfusion® WinUI Chart (SfFunnelChart) control.
+description: This section explains how to explode a single segment or all segments in the Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI 
 control: SfFunnelChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Explode Segments in WinUI Chart (SfFunnelChart)
 
-Exploding a segment is used to pull attention to a specific area of the funnel. The following properties are used to explode the segments in the funnel chart.
+Exploding a segment is used to draw attention to a specific area of the funnel. The following properties are used to explode the segments in the funnel chart.
 
 * [ExplodeIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ExplodeIndex) - Used to explode any specific segment.
-* [ExplodeOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ExplodeOffset) - Used to define the explode distance of segment.
-* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ExplodeOnTap) - Used to explode the segment when segment is tapped/clicked.
+* [ExplodeOffset](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ExplodeOffset) - Used to define the explode distance of a segment.
+* [ExplodeOnTap](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ExplodeOnTap) - Used to explode the segment when the segment is tapped/clicked.
 
 {% tabs %} 
 
