@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pie Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the pie chart and its features in Syncfusion® WinUI Chart (SfCircularChart) control.
+description: Learn here all about the pie chart and its features in the Syncfusion® WinUI Chart (SfCircularChart) control.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Pie Chart in WinUI Chart (SfCircularChart)
 
-To render a [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) in circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
+To render a [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) in the circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ chart.Series.Add(series);
 
 ## Radius
 
-The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_Radius) property as shown in the following code sample.
+The rendering size of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) can be controlled using the [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_Radius) property, as shown in the following code sample.
 
 {% tabs %}
 
@@ -83,10 +83,10 @@ chart.Series.Add(series);
 
 The small segments in the pie chart can be grouped into the “others” category using the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) and [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) properties of [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
-* [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) - used to specify the grouping type based on slice [Angle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Angle), actual data point [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Value), or [Percentage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Percentage). 
-* [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) - used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as other segment. 
+* [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) - Used to specify the grouping type based on the slice [Angle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Angle), actual data point [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Value), or [Percentage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieGroupMode.html#Syncfusion_UI_Xaml_Charts_PieGroupMode_Percentage). 
+* [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) - Used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in the legend and is toggled as the other segment. 
 
-The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) property is `double.NAN`, and the default value of the [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) property is Value.
+The default value of the [GroupTo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupTo) property is `double.NaN`, and the default value of the [GroupMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_GroupMode) property is `Value`.
 
 **Pie series without grouping**
 
@@ -246,3 +246,9 @@ chart.Series.Add(series2);
 ![Combination Chart of WinUI chart](Series_images/winui_combination_chart.png)
 
 N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-controls/charts/winui-pie-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Pie Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/Pie/PieChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+
+## See Also
+
+- [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
+- [How to Show the "others" category values in WinUI Pie Chart data label?](https://support.syncfusion.com/kb/article/12681/how-to-show-the-others-category-values-in-winui-pie-chart-data-label)
+- [How to explode the pie chart slice in WinUI Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12987/how-to-explode-the-pie-chart-slice-in-winui-chart-sfcircularchart)
