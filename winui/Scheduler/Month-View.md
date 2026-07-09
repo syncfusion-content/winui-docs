@@ -513,7 +513,7 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
 #### Using the DataTemplateSelector
 
 Customize the default appearance of the month cell by using the [MonthCellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplateSelector) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
-The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate). It lets to choose a different data template for each monthâ€™s cell, customizing the appearance of a particular month cell based on certain conditions.
+The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate). It lets to choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="32" %}
@@ -638,7 +638,7 @@ Customize the default appearance of the month cell appointment by using the [App
 #### Using the DataTemplateSelector
 
 Customize the default appearance of the month view appointments by using the [AppointmentTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) property of [MonthViewSetting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
-The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It lets to choose a different data template for each monthâ€™s cell, customizing the appearance of a particular appointment based on certain conditions.
+The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It lets to choose a different data template for each month’s cell, customizing the appearance of a particular appointment based on certain conditions.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="37" %}
