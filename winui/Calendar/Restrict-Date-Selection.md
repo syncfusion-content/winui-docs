@@ -38,7 +38,8 @@ If you want to block particular dates from selection, use the [BlackoutDates](ht
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
 
-using Syncfusion.UI.Xaml.Calendar;
+﻿using Syncfusion.UI.Xaml.Core;
+using Syncfusion.UI.Xaml.Editors;
 
 public class ViewModel
 {       

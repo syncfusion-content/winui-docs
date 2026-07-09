@@ -48,8 +48,6 @@ You can change the UI of specific cells in the `Calendar` by using the [Calendar
 {% tabs %}
 {% highlight C# tabtitle="EventDataConverter.cs" %}
 
-using Syncfusion.UI.Xaml.Calendar;
-
 public class EventDataConverter : IValueConverter
 {
     Dictionary<DateTimeOffset, string> SpecialDates;
