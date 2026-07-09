@@ -19,6 +19,8 @@ Visible dates can be restricted between a certain range of dates by using the [M
 
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.MinimumDate = new DateTime(2021, 03, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
@@ -29,6 +31,8 @@ this.Schedule.MinimumDate = new DateTime(2021, 03, 05, 10, 0, 0);
 
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.MaximumDate = new DateTime(2021, 05, 05, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
@@ -39,6 +43,8 @@ Programmatically navigate the dates in the scheduler by using the [DisplayDate](
 
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.DisplayDate = new DateTime(2021, 04, 07, 9, 0, 0);
 {% endhighlight %}
 {% endtabs %}
@@ -51,6 +57,8 @@ Programmatically select the dates in the scheduler by using the [SelectedDate](h
 
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.SelectedDate = new DateTime(2021, 04, 07, 10, 0, 0);
 {% endhighlight %}
 {% endtabs %}
@@ -67,16 +75,23 @@ Use the [Forward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Schedu
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week">
-</scheduler:SfScheduler>
 
-<Button x:Name="Forward"
-        Content="Forward"
-        Click="Forward_Click">
-</Button>
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week">
+    </scheduler:SfScheduler>
+
+    <Button x:Name="Forward"
+            Content="Forward"
+            Click="Forward_Click">
+    </Button>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="5" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Forward_Click(object sender, RoutedEventArgs e)
 {
     this.Schedule.Forward();
@@ -90,16 +105,23 @@ Use the [Backward](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sched
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week">
-</scheduler:SfScheduler>
 
-<Button x:Name="Backward"
-        Content="Backward"
-        Click="Backward_Click">
-</Button>
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week">
+    </scheduler:SfScheduler>
+
+    <Button x:Name="Backward"
+            Content="Backward"
+            Click="Backward_Click">
+    </Button>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="5" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 private void Backward_Click(object sender, RoutedEventArgs e)
 {
     this.Schedule.Backward();
@@ -112,13 +134,20 @@ private void Backward_Click(object sender, RoutedEventArgs e)
 You can quickly navigate to the respective day or timeline day view by single-clicking on the date in the month cell or view header of the following scheduler views: week, work week, month, timeline week, timeline work week, and timeline month views, by using the [AllowViewNavigation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AllowViewNavigation) property of the scheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler  x:Name="Schedule"
-                        ViewType="Week"
-                        AllowViewNavigation="True">
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler  x:Name="Schedule"
+                            ViewType="Week"
+                            AllowViewNavigation="True">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.AllowViewNavigation = true;
 {% endhighlight %}
@@ -132,13 +161,20 @@ N>
 You can enable the date picker for the scheduler by using the [ShowDatePickerButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ShowDatePickerButton) property in the [scheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html), which displays the date picker and `Today` button in the header view. It allows you to quickly navigate to today and different scheduler views.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Week"
-                        ShowDatePickerButton="True">
-</syncfusion:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           ViewType="Week"
+                           ShowDatePickerButton="True">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.ShowDatePickerButton = true;
 {% endhighlight %}
@@ -152,12 +188,19 @@ N> The header `DatePicker` uses the calendar for your app's default language, or
 You can quickly navigate to the different scheduler views by using the [AllowedViewTypes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_AllowedViewTypes) property in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). The views set to this property will display as a view button in the scheduler header view. This UI is responsive, showing more icons, and is updated based on the window size change.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
-</syncfusion:SfScheduler>                        
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           AllowedViewTypes="Month,Week,WorkWeek,Day,TimelineDay,TimelineWeek,TimelineWorkWeek,TimelineMonth" >
+    </scheduler:SfScheduler>                        
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AllowedViewTypes = AllowedSchedulerViewTypes.Week | AllowedSchedulerViewTypes.WorkWeek | AllowedSchedulerViewTypes.Day | AllowedSchedulerViewTypes.Month | AllowedSchedulerViewTypes.TimelineDay | AllowedSchedulerViewTypes.TimelineMonth | AllowedSchedulerViewTypes.TimelineWeek | AllowedSchedulerViewTypes.TimelineWorkWeek;
 {% endhighlight %}
 {% endtabs %}

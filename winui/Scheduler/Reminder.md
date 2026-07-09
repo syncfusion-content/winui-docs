@@ -13,11 +13,16 @@ The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) notif
 A reminder can be enabled by setting the [EnableReminder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_EnableReminder) property to `true`, which is used to trigger the `ReminderAlertOpening` event to notify the appointment reminder. The reminder can be set by using the [Reminders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_Reminders) property of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<syncfusion:SfScheduler x:Name="Scheduler"
-                        ViewType="Week"
-                        EnableReminder="True" >
-</syncfusion:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Scheduler"
+                           ViewType="Week"
+                           EnableReminder="True" >
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,16 +58,23 @@ Configure the appointment reminders with [SchedulerReminder](https://help.syncfu
 </table>
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
- <Grid.DataContext>
-    <local:ReminderViewModel/>
- </Grid.DataContext>
- <syncfusion:SfScheduler x:Name="Schedule" 
-                ItemsSource="{Binding Events}"
-                EnableReminder="True">
-  </syncfusion:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <Grid.DataContext>
+        <local:ReminderViewModel/>
+    </Grid.DataContext>
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           ItemsSource="{Binding Events}"
+                           EnableReminder="True">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="ReminderViewModel.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
  public class ReminderViewModel 
  {
     ...
@@ -91,6 +103,8 @@ Configure the appointment reminders with [SchedulerReminder](https://help.syncfu
 
 {% tabs %}
 {% highlight c# tabtitle="Event.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
@@ -125,6 +139,8 @@ The [ReminderMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sc
 
 {% tabs %}
 {% highlight c# tabtitle="Reminder.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 /// <summary>
 /// Represents custom data properties.
 /// </summary>
@@ -148,32 +164,39 @@ public class Reminder
 Map those properties of the `Meeting` class with the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html) control by using the [AppointmentMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) and map `CustomReminder` properties with the [SchedulerReminder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SchedulerReminder.html) by using the [ReminderMapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ReminderMapping.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 17 18 19 20" %}
- <syncfusion:SfScheduler x:Name="Schedule" 
-                ItemsSource="{Binding Events}"
-                EnableReminder="True">
-            <syncfusion:SfScheduler.AppointmentMapping>
-                <syncfusion:AppointmentMapping
-                    Subject="EventName"
-                    StartTime="From"
-                    EndTime="To"
-                    AppointmentBackground="Color"
-                    IsAllDay="IsAllDay"
-                    StartTimeZone="StartTimeZone"
-                    EndTimeZone="EndTimeZone"
-                    RecurrenceExceptionDates="RecurrenceExceptions"
-                    RecurrenceRule="RecurrenceRule"
-                    RecurrenceId="RecurrenceId"
-                    Reminders="Reminders">
-                    <syncfusion:AppointmentMapping.ReminderMapping>
-                        <syncfusion:ReminderMapping IsDismissed="Dismissed"
-                                                    ReminderTimeInterval="TimeInterval"/>
-                    </syncfusion:AppointmentMapping.ReminderMapping>
-                </syncfusion:AppointmentMapping>
-            </syncfusion:SfScheduler.AppointmentMapping>
-        </syncfusion:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 20 21 22 23" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           ItemsSource="{Binding Events}"
+                           EnableReminder="True">
+        <scheduler:SfScheduler.AppointmentMapping>
+            <scheduler:AppointmentMapping
+                Subject="EventName"
+                StartTime="From"
+                EndTime="To"
+                AppointmentBackground="Color"
+                IsAllDay="IsAllDay"
+                StartTimeZone="StartTimeZone"
+                EndTimeZone="EndTimeZone"
+                RecurrenceExceptionDates="RecurrenceExceptions"
+                RecurrenceRule="RecurrenceRule"
+                RecurrenceId="RecurrenceId"
+                Reminders="Reminders">
+                <scheduler:AppointmentMapping.ReminderMapping>
+                    <scheduler:ReminderMapping IsDismissed="Dismissed"
+                                                ReminderTimeInterval="TimeInterval"/>
+                </scheduler:AppointmentMapping.ReminderMapping>
+            </scheduler:AppointmentMapping>
+        </scheduler:SfScheduler.AppointmentMapping>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="ReminderViewModel.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 public class ReminderViewModel 
 {
   ...
@@ -203,7 +226,9 @@ The Scheduler notifies the appointment's reminder by the [ReminderAlertOpening](
 * `Cancel`: Cancels the reminder notification by setting this property to `true`.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 scheduler.ReminderAlertOpening += Scheduler_ReminderAlertOpening;
 
 private void Scheduler_ReminderAlertOpening(object sender, ReminderAlertOpeningEventArgs e)

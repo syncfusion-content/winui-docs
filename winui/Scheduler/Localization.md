@@ -47,11 +47,18 @@ N>
 * The Scheduler time mode (12-hour or 24-hour) does not change depending on the calendar type; however, the time format can be changed depending on the calendar type by using [Day view time text formatting](https://help.syncfusion.com/winui/scheduler/day-week-views#time-ruler-text-formatting) and [Timeline view time text formatting](https://help.syncfusion.com/winui/scheduler/timeline-views#time-ruler-text-formatting).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule"
-                       CalendarIdentifier="HijriCalendar" />
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"
+                           CalendarIdentifier="HijriCalendar" />
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.CalendarIdentifier = "HijriCalendar";
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +72,9 @@ All the DateTime values can be given such as [DisplayDate,](https://help.syncfus
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9 10" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="11 12" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var appointments = new ScheduleAppointmentCollection();
 
@@ -89,7 +98,9 @@ this.scheduler.ItemsSource = appointments;
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9 10" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="11 12" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var appointments = new ScheduleAppointmentCollection();
 
@@ -115,11 +126,18 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 You can localize the scheduler using the [Language](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.language?view=net-5.0) property. The default value of the `Language` property is `en-US`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
-<scheduler:SfScheduler x:Name="Schedule"
-                       Language="fr-FR" />
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"
+                           Language="fr-FR" />
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.Language = "fr-FR";
 {% endhighlight %}
 {% endtabs %}

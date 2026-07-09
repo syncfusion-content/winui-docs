@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Resource Grouping in WinUI Scheduler control | Syncfusion
 description: Learn here all about grouping the appointments based on the resources in the day, week, and timeline views in Syncfusion WinUI Scheduler (SfScheduler) control.
@@ -18,14 +18,21 @@ Resources can be added to the scheduler by setting the [ResourceGroupType](https
 N> No resource view will be displayed even if a resource is added using the [ResourceCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) property when the [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) property value is set to [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html#Syncfusion_UI_Xaml_Scheduler_ResourceGroupType_None).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Resource"
-                       ResourceCollection="{Binding ResourceCollection}">
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           ResourceGroupType="Resource"
+                           ResourceCollection="{Binding ResourceCollection}">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="10" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="12" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Adding schedule resource in the scheduler resource collection.
 var ResourceCollection = new ObservableCollection<SchedulerResource>()
 {
@@ -57,7 +64,9 @@ The [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 {% include_relative code-snippet/resourceview.xaml %}
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 13" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4 15" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.ResourceGroupType = ResourceGroupType.Resource;
 
@@ -81,13 +90,20 @@ this.Schedule.ResourceCollection = ResourceCollection;
 The [ResourceGroupType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ResourceGroupType.html) is set to `Date` to group the resources under each date.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Date">
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           ResourceGroupType="Date">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 13" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4 15" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.ResourceGroupType = ResourceGroupType.Date;
 
@@ -116,7 +132,9 @@ Appointments associated with the scheduler [ResourceCollection](https://help.syn
 {% include_relative code-snippet/resourceview.xaml %}
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="11" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for the schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in the schedule appointment collection. 
@@ -149,7 +167,9 @@ Multiple resources can share the same events or appointments. If the appointment
 {% include_relative code-snippet/resourceview.xaml %}
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="11" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection.
 var scheduleAppointmentCollection = new ScheduleAppointmentCollection();
 //Adding schedule appointment in the schedule appointment collection. 
@@ -190,7 +210,9 @@ N> Custom resource class should contain a mandatory field for resource `Id`.
 Create a custom class `Employee` with the mandatory fields `Name`, `Id`, `ForegroundColor`, and `BackgroundColor`. Also assign the resources to recurring appointments.
 
 {% tabs %}
-{% highlight c# tabtitle="Employee.cs" hl_lines="6" %}
+{% highlight c# tabtitle="Employee.cs" hl_lines="8" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 public class Employee
 {
    public string Name {get; set;}
@@ -212,14 +234,21 @@ N>
 Map the properties of the `Employee` class with the SfScheduler control by using the Scheduler `ResourceMapping`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
-<scheduler:SfScheduler Name="Schedule" ViewType="Week" ResourceGroupType="Resource">
-    <scheduler:SfScheduler.ResourceMapping>
-       <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
-    </scheduler:SfScheduler.ResourceMapping>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler Name="Schedule" ViewType="Week" ResourceGroupType="Resource">
+        <scheduler:SfScheduler.ResourceMapping>
+           <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
+        </scheduler:SfScheduler.ResourceMapping>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 7" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4 9" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
  // Schedule data mapping for custom resource.
 ResourceMapping resourceMapping = new ResourceMapping();
 resourceMapping.Name = "Name";
@@ -235,14 +264,21 @@ this.Schedule.ResourceMapping = resourceMapping;
 Add the resources of the `Employee` collection that can be assigned to the scheduler by using the [ResourceCollection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_ResourceCollection) property, which is of `IEnumerable` type. Also add or remove scheduler resources dynamically.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
-<scheduler:SfScheduler Name="Schedule" ViewType="Week" ResourceGroupType="Resource">
-    <scheduler:SfScheduler.ResourceMapping>
-       <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
-    </scheduler:SfScheduler.ResourceMapping>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler Name="Schedule" ViewType="Week" ResourceGroupType="Resource">
+        <scheduler:SfScheduler.ResourceMapping>
+           <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundColor" Foreground="ForegroundColor"/>
+        </scheduler:SfScheduler.ResourceMapping>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="10" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="12" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating and Adding custom resource in scheduler resource collection.
 var ResourceCollection = new ObservableCollection<Employee>()
 {
@@ -262,6 +298,8 @@ Associate the scheduler [ResourceMapping](https://help.syncfusion.com/cr/winui/S
 
 {% tabs %}
 {% highlight c# tabtitle="Meeting.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 /// <summary>   
 /// Represents the custom data properties.   
 /// </summary> 
@@ -280,18 +318,25 @@ N> Inherit this class from the `NotificationObject` for dynamic changes in custo
 Map those properties of the `Meeting` class to the schedule appointments by using the `AppointmentMapping` properties.
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8" %}
-<scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
-         <scheduler:SfScheduler.AppointmentMapping>
-            <scheduler:AppointmentMapping
-            Subject="EventName"
-            StartTime="From"
-            EndTime="To"
-            ResourceIdCollection ="Resources"/>
-        </scheduler:SfScheduler.AppointmentMapping>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8 9 10 11 12" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" ItemsSource="{Binding Appointments}" ViewType="Week">
+             <scheduler:SfScheduler.AppointmentMapping>
+                <scheduler:AppointmentMapping
+                Subject="EventName"
+                StartTime="From"
+                EndTime="To"
+                ResourceIdCollection ="Resources"/>
+            </scheduler:SfScheduler.AppointmentMapping>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 8" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4 10" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 //Schedule data mapping for custom appointments
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.Subject = "EventName";
@@ -307,6 +352,8 @@ Schedule meetings for a resource by setting `From`, `To`, and `Resources` of the
 
 {%tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 Meeting meeting = new Meeting ();
 meeting.From = new DateTime(2020, 07, 01, 10, 0, 0);
 meeting.To = meeting.From.AddHours(1);
@@ -327,17 +374,24 @@ Customize the resource header size in the Day, Week, WorkWeek, TimelineDay, Time
 The [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) is applicable for `Day`, `Week`, and `WorkWeek` views. By default, the value of this property is set to `50`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Resource">
-   <scheduler:SfScheduler.DaysViewSettings>
-      <scheduler:DaysViewSettings 
-                        ResourceHeaderSize="100"/>
-   </scheduler:SfScheduler.DaysViewSettings>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           ResourceGroupType="Resource">
+       <scheduler:SfScheduler.DaysViewSettings>
+          <scheduler:DaysViewSettings 
+                            ResourceHeaderSize="100"/>
+       </scheduler:SfScheduler.DaysViewSettings>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.ResourceHeaderSize = 100;
 {% endhighlight %}
@@ -348,17 +402,24 @@ this.Schedule.DaysViewSettings.ResourceHeaderSize = 100;
 The [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) is applicable for TimelineDay, TimelineWeek, TimelineWorkWeek, and TimelineMonth views. By default, the value of this property is set to `50`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="TimelineWeek"
-                       ResourceGroupType="Resource">
-   <scheduler:SfScheduler.TimelineViewSettings>
-         <scheduler:TimelineViewSettings 
-                        ResourceHeaderSize="100"/>
-   </scheduler:SfScheduler.TimelineViewSettings>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="TimelineWeek"
+                           ResourceGroupType="Resource">
+       <scheduler:SfScheduler.TimelineViewSettings>
+             <scheduler:TimelineViewSettings 
+                            ResourceHeaderSize="100"/>
+       </scheduler:SfScheduler.TimelineViewSettings>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.ResourceHeaderSize = 100;
 {% endhighlight %}
@@ -368,17 +429,24 @@ this.Schedule.TimelineViewSettings.ResourceHeaderSize = 100;
 The resource row height is auto-adjusted based on the number of overlapping appointments occupied in the same time range by setting the [RowAutoHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_RowAutoHeight) property to `true` in [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html). By default, the value of this property is set to `false`. 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule" 
-                      ViewType="TimelineWeek"
-                      ResourceGroupType="Resource">
-   <scheduler:SfScheduler.TimelineViewSettings>
-      <scheduler:TimelineViewSettings 
-                      RowAutoHeight="True" />
-   </scheduler:SfScheduler.TimelineViewSettings>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                          ViewType="TimelineWeek"
+                          ResourceGroupType="Resource">
+       <scheduler:SfScheduler.TimelineViewSettings>
+          <scheduler:TimelineViewSettings 
+                          RowAutoHeight="True" />
+       </scheduler:SfScheduler.TimelineViewSettings>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
  Schedule.TimelineViewSettings.RowAutoHeight = true;
 {% endhighlight %}
 {% endtabs %}
@@ -395,17 +463,24 @@ N>
 You can customize the minimum row height of visible resources in TimelineDay, TimelineWeek, TimelineWorkWeek, and TimelineMonth views by using the [RowMinHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_RowMinHeight) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) in [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, the value of this property is set to `50`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule" 
-                      ViewType="TimelineWeek" 
-                      ResourceGroupType="Resource">
-   <scheduler:SfScheduler.TimelineViewSettings>
-      <scheduler:TimelineViewSettings 
-                     RowMinHeight="100" />
-   </scheduler:SfScheduler.TimelineViewSettings>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                          ViewType="TimelineWeek" 
+                          ResourceGroupType="Resource">
+       <scheduler:SfScheduler.TimelineViewSettings>
+          <scheduler:TimelineViewSettings 
+                         RowMinHeight="100" />
+       </scheduler:SfScheduler.TimelineViewSettings>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
  Schedule.TimelineViewSettings.RowMinHeight = 100;
 {% endhighlight %}
 {% endtabs %} 
@@ -423,17 +498,24 @@ N> If the visible resource count exceeds the count of the schedule `ResourceColl
 The `DaysViewSettings` is applicable for Day, Week, and WorkWeek views. By default, the value of this property is set to `3`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       ResourceGroupType="Resource">
-   <scheduler:SfScheduler.DaysViewSettings>
-      <scheduler:DaysViewSettings 
-                     VisibleResourceCount="2"/>
-   </scheduler:SfScheduler.DaysViewSettings>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           ResourceGroupType="Resource">
+       <scheduler:SfScheduler.DaysViewSettings>
+          <scheduler:DaysViewSettings 
+                         VisibleResourceCount="2"/>
+       </scheduler:SfScheduler.DaysViewSettings>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.Week;
 this.Schedule.DaysViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
@@ -446,17 +528,24 @@ this.Schedule.DaysViewSettings.VisibleResourceCount = 2;
 The [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) is applicable for TimelineDay, TimelineWeek, TimelineWorkWeek, and TimelineMonth views. By default, the value of this property is set to `3`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="TimelineWeek"
-                       ResourceGroupType="Resource">
-   <scheduler:SfScheduler.TimelineViewSettings>
-      <scheduler:TimelineViewSettings 
-                        VisibleResourceCount="2"/>
-   </scheduler:SfScheduler.TimelineViewSettings>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="TimelineWeek"
+                           ResourceGroupType="Resource">
+       <scheduler:SfScheduler.TimelineViewSettings>
+          <scheduler:TimelineViewSettings 
+                            VisibleResourceCount="2"/>
+       </scheduler:SfScheduler.TimelineViewSettings>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.ViewType = SchedulerViewType.TimelineWeek;
 this.Schedule.TimelineViewSettings.VisibleResourceCount = 2;
 {% endhighlight %}
@@ -474,7 +563,9 @@ A special time region can be created based on the resources in the Day, Week, Wo
 {% include_relative code-snippet/resourceview.xaml %}
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="11" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
    StartTime = new System.DateTime(2021, 04, 04, 13, 0, 0),
@@ -501,7 +592,9 @@ N> The [SpecialTimeRegion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% include_relative code-snippet/resourceview.xaml %}
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="9" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="11" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.TimelineViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
    StartTime = new System.DateTime(2021, 04, 04, 13, 0, 0),
@@ -524,40 +617,45 @@ The resource appearance customization can be achieved by using the [ResourceHead
 #### Customize resource appearance using ResourceHeaderTemplate
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="28" %}
-<!--used to find Image Source and Name properties.-->
-<Grid>
-   <Grid.DataContext>
-      <local:Employee />
-   </Grid.DataContext>
-   <Grid.Resources>
-      <DataTemplate  x:Key="DayViewResourceTemplate">
-         <Grid Background="Transparent">
-            <Border Background="Transparent" >
-               <StackPanel VerticalAlignment="Center" Orientation="Vertical">
-                  <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
-                        <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
-                        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
-                          Height="55" Source="{Binding Data.ImageSource}" />
-                        </Border>
-                  </Border>
-                  <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
-                  Foreground="Black" Text="{Binding Data.Name}" />
-               </StackPanel>
-            </Border>
-         </Grid>
-      </DataTemplate>
-   </Grid.Resources>
-   <scheduler:SfScheduler x:Name="Schedule"  
-                          ViewType="Week"
-                          ResourceGroupType="Resource" 
-                          ResourceCollection="{Binding ResourceCollection}"
-                          ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
-      <scheduler:SfScheduler.ResourceMapping>
-         <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundBrush" Foreground="ForegroundBrush"/>
-      </scheduler:SfScheduler.ResourceMapping>
-   </scheduler:SfScheduler>
-</Grid>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="32" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <!--used to find Image Source and Name properties.-->
+    <Grid>
+       <Grid.DataContext>
+          <local:Employee />
+       </Grid.DataContext>
+       <Grid.Resources>
+          <DataTemplate  x:Key="DayViewResourceTemplate">
+             <Grid Background="Transparent">
+                <Border Background="Transparent" >
+                   <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                      <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
+                            <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+                            <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                              Height="55" Source="{Binding Data.ImageSource}" />
+                            </Border>
+                      </Border>
+                      <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                      Foreground="Black" Text="{Binding Data.Name}" />
+                   </StackPanel>
+                </Border>
+             </Grid>
+          </DataTemplate>
+       </Grid.Resources>
+       <scheduler:SfScheduler x:Name="Schedule"  
+                              ViewType="Week"
+                              ResourceGroupType="Resource" 
+                              ResourceCollection="{Binding ResourceCollection}"
+                              ResourceHeaderTemplate="{StaticResource DayViewResourceTemplate}">
+          <scheduler:SfScheduler.ResourceMapping>
+             <scheduler:ResourceMapping Id="Id" Name="Name" Background="BackgroundBrush" Foreground="ForegroundBrush"/>
+          </scheduler:SfScheduler.ResourceMapping>
+       </scheduler:SfScheduler>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -572,59 +670,66 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 #### Customize resource appearance using ResourceHeaderTemplateSelector
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="48" %}
-<Grid>
-   <Grid.Resources>
-        <DataTemplate  x:Key="DayViewResourceTemplate">
-            <Grid Background="Transparent">
-                <Border Background="Transparent" >
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="52" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <Grid>
+       <Grid.Resources>
+            <DataTemplate  x:Key="DayViewResourceTemplate">
+                <Grid Background="Transparent">
+                    <Border Background="Transparent" >
+                        <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                            <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
+                                <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
+                                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
+                              Height="55" Source="{Binding Data.ImageSource}" />
+                                </Border>
+                            </Border>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
+                       Foreground="Black" Text="{Binding Data.Name}" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="TimelineViewResourceTemplate">
+                <Grid Background="Transparent">
                     <StackPanel VerticalAlignment="Center" Orientation="Vertical">
                         <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
-                            <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="White">
-                                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Width="55"
-                          Height="55" Source="{Binding Data.ImageSource}" />
+                            <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
+                                <Image HorizontalAlignment="Center" VerticalAlignment="Center"
+                                       Width="55"
+                                       Height="55"
+                                       Source="{Binding Data.ImageSource}" />
                             </Border>
                         </Border>
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"
-                   Foreground="Black" Text="{Binding Data.Name}" />
+                        <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="15"
+                                   Text="{Binding Data.Name}"/>
                     </StackPanel>
-                </Border>
-            </Grid>
-        </DataTemplate>
-        <DataTemplate x:Key="TimelineViewResourceTemplate">
-            <Grid Background="Transparent">
-                <StackPanel VerticalAlignment="Center" Orientation="Vertical">
-                    <Border CornerRadius="36" Height="72" Width="72" BorderThickness="4" BorderBrush="{Binding Data.BackgroundBrush}">
-                        <Border CornerRadius="36" Height="64" Width="64" BorderThickness="4" BorderBrush="Transparent">
-                            <Image HorizontalAlignment="Center" VerticalAlignment="Center"
-                                   Width="55"
-                                   Height="55"
-                                   Source="{Binding Data.ImageSource}" />
-                        </Border>
-                    </Border>
-                    <TextBlock HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               FontSize="15"
-                               Text="{Binding Data.Name}"/>
-                </StackPanel>
-            </Grid>
-        </DataTemplate>
-        <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayViewResourceTemplate="{StaticResource DaysViewResourceTemplate}" TimelineViewResourceTemplate="{StaticResource TimelineResourceTemplate}"/>
-    <Grid.Resources>
-      <Grid.DataContext>
-         <local:BindingViewModel/>
-      </Grid.DataContext>
-        <scheduler:SfScheduler x:Name="Schedule"
-                                ViewType="Week"
-                                ResourceGroupType="Resource}"
-                                ResourceCollection="{Binding Resources}"
-                                ItemsSource="{Binding ResourceAppointments}" HeaderHeight="32"
-                                DisplayDate="{Binding DisplayDate}" 
-                                ResourceHeaderTemplateSelector="{StaticResource resourceTemplateSelector}"/>
+                </Grid>
+            </DataTemplate>
+            <local:ResourceTemplateSelector x:Key="resourceTemplateSelector" DayViewResourceTemplate="{StaticResource DaysViewResourceTemplate}" TimelineViewResourceTemplate="{StaticResource TimelineResourceTemplate}"/>
+        <Grid.Resources>
+          <Grid.DataContext>
+             <local:BindingViewModel/>
+          </Grid.DataContext>
+            <scheduler:SfScheduler x:Name="Schedule"
+                                    ViewType="Week"
+                                    ResourceGroupType="Resource}"
+                                    ResourceCollection="{Binding Resources}"
+                                    ItemsSource="{Binding ResourceAppointments}" HeaderHeight="32"
+                                    DisplayDate="{Binding DisplayDate}" 
+                                    ResourceHeaderTemplateSelector="{StaticResource resourceTemplateSelector}"/>
     
-</Grid>
+    </Grid>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="ResourceTemplateSelector.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 public class ResourceTemplateSelector : DataTemplateSelector
 {
    /// <summary>
