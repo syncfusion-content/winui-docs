@@ -45,7 +45,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 var stackedHeaderRow2 = new StackedHeaderRow();
 stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details", MappingName = "OrderDetails" });
-stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductrDetails" });
+stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductDetails" });
 stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "ShipCity,Country", HeaderText = "Shipping Details", MappingName = "ShippingDetails" });
 sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
@@ -191,11 +191,11 @@ foreach (var stackedColumnName in removingColumns.ToList())
         removingColumns.Remove(stackedColumnName);
     }
     else
+    {
         childColumns = childColumns + stackedColumnName + ",";
     }
     this.sfDataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns = childColumns;
 }
-this.sfDataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns = childColumns;
 {% endhighlight %}
 {% endtabs %}
 

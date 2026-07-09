@@ -20,7 +20,7 @@ DataGrid has [GridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion
 <table>
 <tr>
 <th>
-ProtoType</th><th>
+Prototype</th><th>
 Description</th></tr>
 <tr>
 <td>

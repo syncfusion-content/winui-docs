@@ -9,7 +9,7 @@ documentation: ug
 
 # Serialization and Deserialization in WinUI DataGrid (SfDataGrid)
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
+SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.datacontractserializer).
  
 ## Serialization 
 You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Serialize_Windows_Storage_StorageFile_) method which exports the current DataGrid control properties to an XML file.
@@ -190,7 +190,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize filtering
 
-By default, SfDataGrid allows you to deserialize the filtering. you can disable the filtering deserialization by setting [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeFiltering) to `false`.
+By default, SfDataGrid allows you to deserialize the filtering. You can disable the filtering deserialization by setting [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeFiltering) to `false`.
 
 {% tabs %}
 {% highlight c# %}

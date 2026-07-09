@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional styling in WinUI TreeGrid
 
-You can style the treegrid and its inner elements conditionally based on data Using StyleSelector.
+You can style the treegrid and its inner elements conditionally based on data using StyleSelector.
 
 ## Cells
 
@@ -62,7 +62,7 @@ public class SelectorClass : StyleSelector
 
 ### Add image to cell
 
-You can add the image to tree gird cell by using TreeGridTemplateColumn,
+You can add the image to tree grid cell by using TreeGridTemplateColumn:
 
 {% tabs %}
 {% highlight xaml %}

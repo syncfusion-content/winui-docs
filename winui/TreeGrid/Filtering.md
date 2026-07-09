@@ -58,7 +58,7 @@ View filtering can be achieved by setting the [SfTreeGrid.View.Filter](https://h
 {% tabs %}
 {% highlight c# %}
 
-public bool FilerNodes(object o)
+public bool FilterNodes(object o)
 {
     var data = o as Employee;
 
@@ -71,7 +71,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {   
     if (treeGrid != null && treeGrid.View != null)
     {
-    	treeGrid.View.Filter = FilerNodes;
+    	treeGrid.View.Filter = FilterNodes;
     	treeGrid.View.RefreshFilter();
     }
 }

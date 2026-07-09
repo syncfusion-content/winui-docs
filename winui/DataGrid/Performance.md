@@ -73,7 +73,7 @@ SfDataGrid considers only the `removed` item value and the current summary value
 
 ### Property Change in a record
 
-SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.INotifyPropertyChanging.html) and [INotifyPropertyChanged](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifypropertychanged) interface to your Data Model.
+SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanging) and [INotifyPropertyChanged](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifypropertychanged) interface to your Data Model.
 
 Below code to enable summary calculation optimization by inheriting `INotifyPropertyChanging` and `INotifyPropertyChanged` interface to Data Model.
 
