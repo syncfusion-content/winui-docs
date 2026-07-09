@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Spacing in WinUI Chart (SfFunnelChart) | Syncfusion
-description: This section explains about how to set segment spacing for the Syncfusion® WinUI Chart (SfFunnelChart) control
+description: This section explains how to set segment spacing for the Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Segment Spacing in WinUI Chart (SfFunnelChart)
 
-The gap between each segment in the funnel chart can be set using the [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_GapRatio) property. The default value of [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_GapRatio) property property is 0 and its value ranges from 0 to 1.
+The gap between each segment in the funnel chart can be set using the [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_GapRatio) property. The default value of the [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_GapRatio) property is 0, and its value ranges from 0 to 1.
 
 {% tabs %} 
 
@@ -37,7 +37,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.GapRatio = 0.5;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
