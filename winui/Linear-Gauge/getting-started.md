@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Linear Gauge
 
-This section explains the steps required to add the [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control and its elements such as axis, range, and pointer. This section covers only basic features needed to get started with Syncfusion Linear Gauge control.
+This section explains the steps required to add the [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control and its elements such as axis, range, and pointer. This section covers only the basic features needed to get started with the Syncfusion Linear Gauge control.
 
 ## Creating an application with WinUI Linear Gauge
 
@@ -48,7 +48,7 @@ N> Default axis will be added when initializing the Linear Gauge control.
 
 ## Add axis to the linear gauge
 
-You can set a linear axis for the gauge using the [`Axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Axis) property of [`SfLinearGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) and also you can specify the minimum and maximum values of axis using the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) properties as demonstrated in the following code sample.
+You can set a linear axis for the gauge using the [`Axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Axis) property of [`SfLinearGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html). You can also specify the minimum and maximum values of the axis using the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearAxis.html?tabs=tabid-1#Syncfusion_UI_Xaml_Gauges_LinearAxis_Maximum) properties, as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ this.Content = sfLinearGauge;
 
 ## Add range to the linear gauge
 
-Ranges contains a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, mid value, end value, and background color for the range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_EndValue) and `Background` properties as demonstrated in the following code sample.
+Ranges contain a list of range elements, where you can add any number of ranges inside the axis. You can specify the start value, end value, and background color for the range using the [`StartValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_StartValue), [`EndValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_EndValue), and [`Background`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugeRange.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeRange_Background) properties, as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ this.Content = sfLinearGauge;
 
 ## Add bar pointer to the linear gauge
 
-Bar pointers contains a list of bar pointer elements, where you can add any number of bar pointers inside the axis to indicate the value.
+Bar pointers contain a list of bar pointer elements, where you can add any number of bar pointers inside the axis to indicate the value.
 
 {% tabs %}
 
@@ -183,11 +183,11 @@ this.Content = sfLinearGauge;
 
 ## Add marker pointer to the linear gauge
 
-MarkerPointers contains a list of pointer elements, where you can add any number of gauge pointers such as [`LinearShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html), and [`LinearContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearContentPointer.html), inside the axis to indicate the value.
+MarkerPointers contain a list of pointer elements, where you can add any number of gauge pointers, such as [`LinearShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html) and [`LinearContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearContentPointer.html), inside the axis to indicate the value.
 
 ### Add shape pointer to the linear gauge
 
-Shape pointer is to highlight current values by using the different types of shape pointers.
+The shape pointer is used to highlight current values by using the different types of shape pointers.
 
 {% tabs %}
 
@@ -280,7 +280,7 @@ this.Content = sfLinearGauge;
 
 ![gauge content pointer to linear gauge](images/getting-started/gauge_contentPointer.png)
 
-The following code example gives you the complete code of above configurations.
+The following code example gives you the complete code of the above configurations.
 
 {% tabs %}
 
@@ -374,3 +374,8 @@ this.Content = sfLinearGauge;
 {% endtabs %}
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI-Linear-Gauge-Getting-Started-)
+
+## See Also
+
+* [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)
+* [How to create a progress bar with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)
