@@ -13,7 +13,7 @@ This section describes about the various customization options available in the 
 
 ## Hide days that are out of scope
 
-You can hide the days that are out of scope of the current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value to **Hidden**. The default value of the `OutOfScopeVisibility` property is **Enabled**.
+You can hide the days that are out of scope of the current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is **Enabled**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -37,7 +37,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom UI for specific cell in calendar
 
-You can change the UI of specific cells in the `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of the `CalendarItem.ContentTemplate` is `Calendar`. 
+You can change the UI of specific cells in `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of `CalendarItem.ContentTemplate` is `Calendar`. 
 
 {% tabs %}
 {% highlight C# tabtitle="EventDataConverter.cs" %}
@@ -173,7 +173,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a `ResourceDictionary` used in the `Calendar` control.
+You can customize the colors of day names and headers of month, year, decade and century by changing the theme keys values in a `ResourceDictionary` used in the `Calendar` control.
 
 <table>
 <tr>
@@ -182,47 +182,47 @@ You can customize the colors of day names and headers of month, year, decade, an
 </tr>
 <tr>
 <td>SyncfusionCalendarNavigationButtonForeground</td>
-<td>Key to change the calendar navigation button foreground color.</td>
+<td>Key to change the color of calendar navigation button foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarWeekItemForeground</td>
-<td>Key to change the calendar week days name foreground color.</td>
+<td>Key to change the color of calendar week days name foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemForeground</td>
-<td>Key to change the calendar today date foreground color.</td>
+<td>Key to change the color of calendar today date foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemBackground</td>
-<td>Key to change the calendar date cell background color except the today date cell.</td>
+<td>Key to change the color of calendar date cells background color except today date cell.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemBorderBrush</td>
-<td>Key to change the calendar date cell border brush.</td>
+<td>Key to change the color of calendar date cells border brush.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemBackground</td>
-<td>Key to change the calendar today date cell background color.</td>
+<td>Key to change the color of calendar today date cell background color</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemBorderBrush</td>
-<td>Key to change the calendar today date cell border brush.</td>
+<td>Key to change the color of calendar today date cell border brush.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemOutOfScopeForeground</td>
-<td>Key to change the calendar date cell foreground color which is out of scope.</td>
+<td>Key to change the color of calendar date cells foreground color which are out of scope.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemMargin</td>
-<td>Key to change the margin of the calendar item.</td>
+<td>Key to change the margin of calendar item.</td>
 </tr>
 <tr>
 <td>SyncfusionSubtitleAltFontSize</td>
-<td>Key to change the font size of the calendar header region.</td>
+<td>Key to change the font size of calendar header region.</td>
 </tr>
 <tr>
 <td>SyncfusionBodyFontSize</td>
-<td>Key to change the font size of the calendar items region.</td>
+<td>Key to change the font size of calendar items region.</td>
 </tr>
 </table>
 
@@ -280,4 +280,4 @@ You can customize the colors of day names and headers of month, year, decade, an
 
 ![customize-ui-using-theme-keys-in-winui-calendar](Images/UI-customization/customize-ui-using-theme-keys-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).

@@ -14,7 +14,7 @@ This section describes how to localize [Calendar](https://help.syncfusion.com/cr
 
 ## Types of calendar
 
-The `Calendar` control supports different types of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) property. The default value of the `CalendarIdentifier` property is **GregorianCalendar**.
+The `Calendar` control supports different type of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) property. The default value of `CalendarIdentifier` property is **GregorianCalendar**.
 
 You can select the required `CalendarIdentifier` value from the following types.
 
@@ -28,9 +28,9 @@ You can select the required `CalendarIdentifier` value from the following types.
  * UmAlQuraCalendar
  * PersianCalendar
 
-N> Japanese and Lunar type calendars are not supported in the `Calendar` control.
+N> Japanese and Lunar type calendars are not supported in `Calendar` control.
 
-N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property takes precedence.
+N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property is given higher precedence.
 
 N> The `Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
@@ -56,7 +56,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the language
 
-You can localize the calendar using the `Language` property. The default value of the `Language` property is **en-US**.
+You can localize the calendar using the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -80,7 +80,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## First day of week
 
-By default, **Sunday** is shown as the first day of the week. If you want to change the first day of the week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_FirstDayOfWeek) property value.
+By default, **Sunday** is shown as the first day of the week. If you want to change the first day of week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_FirstDayOfWeek) property value.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -104,9 +104,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change flow direction
 
-You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value to **RightToLeft**. The default value of the `FlowDirection` property is **LeftToRight**.
+You can change the flow direction of the `Calendar` layout from right to left by setting the `FlowDirection` property value as **RightToLeft**. The default value of `FlowDirection` property is **LeftToRight**.
 
-N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property takes precedence.
+N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the FlowDirection property is given higher precedence.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -130,9 +130,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change date display format
 
-You can use different date formats such as abbreviated or full names for a day, month, week names, or header name of month and year by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat), and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
+You can use different date formats such as an abbreviated or full names for a day, month, week names or header name of month and year by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat), and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
 
-N> Refer to the [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page for more date formatting options.
+N> Refer to this [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
@@ -162,7 +162,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Number of weeks in a view
 
-If you want to increase or decrease the number of weeks shown in a month view, use the [NumberOfWeeksInView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NumberOfWeeksInView) property. The default value of the `NumberOfWeeksInView` property is **6**.
+If you want to increase or decrease the number of weeks shown in a month view, use the [NumberOfWeeksInView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NumberOfWeeksInView) property. The default value of `NumberOfWeeksInView` property is **6**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
