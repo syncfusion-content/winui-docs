@@ -41,7 +41,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty,new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartFunnelMode.ValueIsHeight;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 
@@ -81,7 +82,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartFunnelMode.ValueIsWidth;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

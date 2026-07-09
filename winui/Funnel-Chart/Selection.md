@@ -64,7 +64,8 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -91,7 +92,8 @@ N> The `Series` and `MultiSeries` selection types are not supported for the funn
     <chart:SfFunnelChart.SelectionBehavior>
         <chart:DataPointSelectionBehavior SelectionBrush="Red" Type="Multiple"/>
     </chart:SfFunnelChart.SelectionBehavior>
-    . . .
+
+<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -115,7 +117,8 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 
@@ -168,7 +171,8 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -196,7 +200,8 @@ Funnel chart provides support to select multiple points programmatically on a ch
             Type="Multiple"
             SelectedIndexes="{Binding SelectedIndexes}"/>
     </chart:SfFunnelChart.SelectionBehavior>
-    . . .
+
+<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -221,7 +226,8 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

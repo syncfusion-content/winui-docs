@@ -25,7 +25,8 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
     ItemsSource="{Binding Data}"
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -43,7 +44,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -66,11 +68,13 @@ To customize the content of data labels, need to define [DataLabelSettings](http
     ItemsSource="{Binding Data}"
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfFunnelChart.DataLabelSettings>
         <chart:FunnelDataLabelSettings Context="Percentage"/>
     </chart:SfFunnelChart.DataLabelSettings>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -80,7 +84,8 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Context = LabelContext.Percentage 
@@ -117,7 +122,8 @@ The following properties are used to customize the data label:
     ItemsSource="{Binding Data}" 
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfFunnelChart.DataLabelSettings>
         <chart:FunnelDataLabelSettings 
             Foreground="White"
@@ -129,7 +135,8 @@ The following properties are used to customize the data label:
             FontStyle="Italic" 
             Background="#1E88E5"/>
     </chart:SfFunnelChart.DataLabelSettings>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -139,7 +146,8 @@ The following properties are used to customize the data label:
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . .
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings()
 {
     Foreground = new SolidColorBrush(Colors.White),
@@ -225,7 +233,8 @@ The appearance of the data label can be customized by using the [ContentTemplate
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// The 'dataLabelTemplate' resource is defined in XAML Resources and referenced here.
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Context = LabelContext.YValue,
@@ -268,7 +277,8 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 {  
     Format = "#.000",
@@ -313,7 +323,8 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Rotation = 45,

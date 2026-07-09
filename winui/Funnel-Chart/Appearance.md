@@ -39,7 +39,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -74,7 +75,8 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
         XBindingPath="Category"
         YBindingPath="Value"
         PaletteBrushes="{StaticResource customBrushes}">
-        . . .
+
+        <!-- Configure additional chart elements -->
     </chart:SfFunnelChart>
 </Grid>
 
@@ -83,7 +85,8 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . . 
+
+// Configure additional chart elements
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 77, 208, 225)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
@@ -100,7 +103,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = CustomBrushes;
-. . .            
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -150,6 +154,7 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
         YBindingPath="Value"
         PaletteBrushes="{StaticResource customBrushes}">
 
+        <!-- Configure additional chart elements -->
     </chart:SfFunnelChart>
 </Grid>
 
@@ -194,10 +199,12 @@ stop2 = new GradientStop()
 
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-. . .
+
+// Configure additional chart elements
 customBrushes.Add(gradientColor1);
 customBrushes.Add(gradientColor2);
-. . .
+
+// Configure additional chart elements
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 { 
     Path = new PropertyPath("Data")
@@ -206,7 +213,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
-. . .            
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

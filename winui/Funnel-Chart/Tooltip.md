@@ -41,7 +41,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty,new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -114,7 +115,8 @@ The following code example explains how to apply the style for tooltip backgroun
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.EnableTooltip = true;
-. . .
+
+// Configure additional chart elements
 Style style = new Style(typeof(Path));
 
 style.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Black)));
@@ -169,7 +171,8 @@ Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-. . .
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.LabelStyle = labelStyle;
@@ -255,8 +258,11 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
+
+// The 'tooltipTemplate' resource is defined in XAML Resources and referenced here.
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
         
 {% endhighlight %}

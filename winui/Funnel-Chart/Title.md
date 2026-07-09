@@ -16,7 +16,8 @@ documentation: ug
 {% highlight xaml %}
 
 <chart:SfFunnelChart x:Name="chart" Header="PRODUCT SALES">
- . . .           
+
+<!-- Configure additional chart elements -->           
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -26,7 +27,8 @@ documentation: ug
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.Header = "PRODUCT SALES";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -63,7 +65,8 @@ this.Content = chart;
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -81,7 +84,8 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
