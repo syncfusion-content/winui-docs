@@ -13,7 +13,7 @@ You can easily navigate to the month, year, decade, or century views to select d
 
 ## Bring a date into view
 
-You can navigate to the month containing the required date using the [`SetDisplayDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SetDisplayDate_System_DateTimeOffset_) method. To navigate to the required date of any month or year, pass the **DateTime** value in the `SetDisplayDate` method argument.
+You can navigate to the month containing the required date using the [`SetDisplayDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SetDisplayDate_System_DateTimeOffset_) method. To navigate to the required date of any month or year, pass the **DateTimeOffset** value in the `SetDisplayDate` method argument.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}

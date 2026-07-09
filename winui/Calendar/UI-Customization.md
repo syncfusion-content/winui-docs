@@ -37,7 +37,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom UI for specific cell in calendar
 
-You can change the UI of specific cells in the `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of the `CalendarItem.ContentTemplate` is `Calendar`. 
+You can change the UI of specific cells in the `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of the `CalendarItem.ContentTemplate` is `CalendarItemInfo`. 
 
 {% tabs %}
 {% highlight C# tabtitle="EventDataConverter.cs" %}
@@ -63,12 +63,11 @@ public class EventDataConverter : IValueConverter
     }
     public object Convert(object value, Type targetType, object parameter, string language)
     {
-        DateTimeOffset dateTimeOffset = SpecialDates.Keys.FirstOrDefault(x => x.Date == (DateTime)value);
+        DateTimeOffset dateTimeOffset = SpecialDates.Keys.FirstOrDefault(x => x.Date == ((DateTimeOffset)value).Date);
 
         if (dateTimeOffset != DateTimeOffset.MinValue)
         {
             string template = SpecialDates[dateTimeOffset];
-            StackPanel stackPanel;
             switch (template)
             {
                 case "SingleEvent_1":

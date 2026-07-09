@@ -109,7 +109,7 @@ N> The `SelectedDate` property value will be the same as the first date value in
 
 ## Select a date range
 
-You can select a range of dates in the `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. You can also get the selected range of dates from the [SelectedRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. By default, the value of the `SelectedDate` property is **null** and the `SelectedDates` collection is empty.
+You can select a range of dates in the `Calendar` control by changing the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionMode) property value to `Range`. You can also get the selected range of dates from the [SelectedDates](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) property. By default, the value of the `SelectedDate` property is **null** and the `SelectedDates` collection is empty.
 
 N> The `SelectedDates` collection is empty and the `SelectedDate` property value is **null** when a date range is selected.
 
