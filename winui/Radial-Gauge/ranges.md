@@ -411,7 +411,11 @@ radialAxis.TickLengthUnit = SizeUnit.Factor;
 radialAxis.MajorTickLength = 0.15;
 radialAxis.MinorTickLength = 0.04;
 radialAxis.MinorTicksPerInterval = 4;
+
+// The 'AxisMajorTickStyle' resource is defined in XAML Resources and referenced here.
 radialAxis.MajorTickStyle = this.Resources["AxisMajorTickStyle"] as Style;
+
+// The 'AxisMinorTickStyle' resource is defined in XAML Resources and referenced here.
 radialAxis.MinorTickStyle = this.Resources["AxisMinorTickStyle"] as Style;
 sfRadialGauge.Axes.Add(radialAxis);
 
@@ -690,6 +694,8 @@ GaugeRange gaugeRange1 = new GaugeRange();
 gaugeRange1.StartValue = 0;
 gaugeRange1.EndValue = 33;
 gaugeRange1.Label = "Slow";
+
+// The 'RangeLabelTemplate' resource is defined in XAML Resources and referenced here.
 gaugeRange1.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
 gaugeRange1.WidthUnit = SizeUnit.Factor;
 gaugeRange1.StartWidth = 0.65;
@@ -702,6 +708,8 @@ GaugeRange gaugeRange2 = new GaugeRange();
 gaugeRange2.StartValue = 33;
 gaugeRange2.EndValue = 66;
 gaugeRange2.Label = "Moderate";
+
+// The 'RangeLabelTemplate' resource is defined in XAML Resources and referenced here.
 gaugeRange2.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
 gaugeRange2.WidthUnit = SizeUnit.Factor;
 gaugeRange2.StartWidth = 0.65;
@@ -714,6 +722,8 @@ GaugeRange gaugeRange3 = new GaugeRange();
 gaugeRange3.StartValue = 66;
 gaugeRange3.EndValue = 99;
 gaugeRange3.Label = "Fast";
+
+// The 'RangeLabelTemplate' resource is defined in XAML Resources and referenced here.
 gaugeRange3.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
 gaugeRange3.WidthUnit = SizeUnit.Factor;
 gaugeRange3.StartWidth = 0.65;
