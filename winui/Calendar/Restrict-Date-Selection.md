@@ -16,7 +16,9 @@ You can restrict users from selecting a date within a particular range by specif
 N> Dates that appear outside the minimum and maximum date range will be disabled (blackout).
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.MinDate = new DateTimeOffset(new DateTime(2021, 03, 9));
@@ -35,6 +37,8 @@ If you want to block particular dates from selection, use the [BlackoutDates](ht
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 public class ViewModel
 {       
@@ -63,17 +67,23 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 7" %}
 
-<calendar:SfCalendar x:Name="sfCalendar" 
-                     BlackoutDates="{Binding BlockedDates}">
-    <calendar:SfCalendar.DataContext>
-        <local:ViewModel/>
-    </calendar:SfCalendar.DataContext>
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar" 
+                         BlackoutDates="{Binding BlockedDates}">
+        <calendar:SfCalendar.DataContext>
+            <local:ViewModel/>
+        </calendar:SfCalendar.DataContext>
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 sfCalendar.DataContext = new ViewModel();
 sfCalendar.BlackoutDates = (sfCalendar.DataContext as ViewModel).BlockedDates;
@@ -90,14 +100,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can prevent users from selecting any dates or days (example: all weekend days) by handling the [ItemPrepared](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event and setting the [ItemInfo.IsBlackout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Calendar_CalendarItemPreparedEventArgs_ItemInfo) property value to **true** for those specific days or dates.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar" 
-                     ItemPrepared="SfCalendar_ItemPrepared">
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar" 
+                         ItemPrepared="SfCalendar_ItemPrepared">
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ItemPrepared += SfCalendar_ItemPrepared;
@@ -108,7 +124,9 @@ sfCalendar.ItemPrepared += SfCalendar_ItemPrepared;
 You can handle the event as shown below.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="10" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -129,7 +147,9 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 You can also use the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property to change the text displayed for specific days or dates in the `Calendar`. 
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8 9" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="10 11" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {

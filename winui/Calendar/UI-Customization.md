@@ -16,14 +16,20 @@ This section describes about the various customization options available in the 
 You can hide the days that are out of scope of the current view by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_OutOfScopeVisibility) property value to **Hidden**. The default value of the `OutOfScopeVisibility` property is **Enabled**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar"
-                     OutOfScopeVisibility="Hidden" 
-                     />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar"
+                         OutOfScopeVisibility="Hidden" 
+                         />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
@@ -41,6 +47,8 @@ You can change the UI of specific cells in the `Calendar` by using the [Calendar
 
 {% tabs %}
 {% highlight C# tabtitle="EventDataConverter.cs" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 public class EventDataConverter : IValueConverter
 {
@@ -101,67 +109,71 @@ public class EventDataConverter : IValueConverter
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" %}
 
-<Grid>
-<Grid.Resources>
-    <local:EventDataConverter x:Key="EventDataConverterKey" />
-    <DataTemplate x:Key="customTemplate">
-        <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate >
-                    <Ellipse MinHeight="4" MinWidth="4" Margin="2" Fill="{Binding}"/>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Horizontal"/>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-        </ItemsControl>
-    </DataTemplate>
-</Grid.Resources>
-    <calendar:SfCalendar
-                        CornerRadius="14"
-                        DayOfWeekFormat="{}{dayofweek.abbreviated(3)}">
-        <calendar:SfCalendar.Resources>
-            <ResourceDictionary>
-                <!--  Resources and color keys for Calendar Control  -->
-                <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
-                                                 Color="SlateGray" Opacity="0.5" />
-                <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
-                                                 Color="{ThemeResource SystemBaseMediumLowColor}" />
-                <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
-                <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
-                <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <Grid>
+    <Grid.Resources>
+        <local:EventDataConverter x:Key="EventDataConverterKey" />
+        <DataTemplate x:Key="customTemplate">
+            <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate >
+                        <Ellipse MinHeight="4" MinWidth="4" Margin="2" Fill="{Binding}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </DataTemplate>
+    </Grid.Resources>
+        <calendar:SfCalendar
+                            CornerRadius="14"
+                            DayOfWeekFormat="{}{dayofweek.abbreviated(3)}">
+            <calendar:SfCalendar.Resources>
+                <ResourceDictionary>
+                    <!--  Resources and color keys for Calendar Control  -->
+                    <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                                                     Color="SlateGray" Opacity="0.5" />
+                    <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                                                     Color="{ThemeResource SystemBaseMediumLowColor}" />
+                    <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
+                    <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
+                    <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
 
-                <Style TargetType="calendar:CalendarItem">
-                    <Setter Property="CornerRadius" Value="14"/>
-                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-                    <Setter Property="ContentTemplate">
-                        <Setter.Value>
-                            <DataTemplate>
-                                <Grid MinWidth="40" MinHeight="40">
-                                    <ContentControl
-                                                        HorizontalAlignment="Center"
-                                                        VerticalAlignment="Center"
-                                                        Margin="2"
-                                                        Content="{Binding DisplayText}"/>
-                                    <ContentControl
-                                                        Margin="3"
-                                                        HorizontalAlignment="Center"
-                                                        VerticalAlignment="Bottom"
-                                                        Content="{Binding Date}"
-                                                        ContentTemplate="{StaticResource customTemplate}"
-                                                       />
-                                </Grid>
-                            </DataTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </ResourceDictionary>
-        </calendar:SfCalendar.Resources>
-    </calendar:SfCalendar>
-</Grid>
+                    <Style TargetType="calendar:CalendarItem">
+                        <Setter Property="CornerRadius" Value="14"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                        <Setter Property="ContentTemplate">
+                            <Setter.Value>
+                                <DataTemplate>
+                                    <Grid MinWidth="40" MinHeight="40">
+                                        <ContentControl
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            Margin="2"
+                                                            Content="{Binding DisplayText}"/>
+                                        <ContentControl
+                                                            Margin="3"
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Bottom"
+                                                            Content="{Binding Date}"
+                                                            ContentTemplate="{StaticResource customTemplate}"
+                                                           />
+                                    </Grid>
+                                </DataTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ResourceDictionary>
+            </calendar:SfCalendar.Resources>
+        </calendar:SfCalendar>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -228,51 +240,55 @@ You can customize the colors of day names and headers of month, year, decade, an
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" %}
 
-<calendar:SfCalendar CornerRadius="6">
-     <calendar:SfCalendar.Resources>
-        <ResourceDictionary>
-                    <!--Theme Key customization-->
-            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
-                                         Color="#FF248D92" />
-            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
-                                         Color="#FF248D92" />
-            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
-                                         Color="{ThemeResource SystemBaseHighColor}" />
-            <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
-                                         Color="{ThemeResource SystemChromeMediumLowColor}" />
-            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
-                                         Color="{ThemeResource SystemChromeMediumLowColor}"/>
-            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
-                                         Color="#FF9BC5ED" />
-            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
-                                         Color="#FF9BC5ED" />
-            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
-                                         Color="SlateGray" Opacity="0.5" />
-            <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
-            <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
-            <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
-            <FontFamily x:Key="SyncfusionControlThemeFontFamily">SimSun</FontFamily>
-            <Style TargetType="calendar:CalendarItem">
-                <Setter Property="CornerRadius" Value="5"/>
-                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-                <Setter Property="ContentTemplate">
-                    <Setter.Value>
-                        <DataTemplate>
-                            <Grid MinWidth="40" MinHeight="40">
-                                <ContentControl
-                                                HorizontalAlignment="Center"
-                                                VerticalAlignment="Center"
-                                                Margin="3"
-                                                Content="{Binding DisplayText}"/>
-                            </Grid>
-                        </DataTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-        </ResourceDictionary>
-    </calendar:SfCalendar.Resources>
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar CornerRadius="6">
+         <calendar:SfCalendar.Resources>
+            <ResourceDictionary>
+                        <!--Theme Key customization-->
+                <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
+                                             Color="#FF248D92" />
+                <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                                             Color="#FF248D92" />
+                <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
+                                             Color="{ThemeResource SystemBaseHighColor}" />
+                <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
+                                             Color="{ThemeResource SystemChromeMediumLowColor}" />
+                <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
+                                             Color="{ThemeResource SystemChromeMediumLowColor}"/>
+                <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
+                                             Color="#FF9BC5ED" />
+                <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
+                                             Color="#FF9BC5ED" />
+                <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                                             Color="SlateGray" Opacity="0.5" />
+                <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
+                <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
+                <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
+                <FontFamily x:Key="SyncfusionControlThemeFontFamily">SimSun</FontFamily>
+                <Style TargetType="calendar:CalendarItem">
+                    <Setter Property="CornerRadius" Value="5"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                    <Setter Property="ContentTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <Grid MinWidth="40" MinHeight="40">
+                                    <ContentControl
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Margin="3"
+                                                    Content="{Binding DisplayText}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ResourceDictionary>
+        </calendar:SfCalendar.Resources>
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}

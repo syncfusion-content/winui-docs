@@ -35,14 +35,20 @@ N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, th
 N> The `Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar"
-                     CalendarIdentifier="HebrewCalendar">
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar"
+                         CalendarIdentifier="HebrewCalendar">
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.CalendarIdentifier = "HebrewCalendar";
@@ -59,14 +65,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can localize the calendar using the `Language` property. The default value of the `Language` property is **en-US**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar"
-                     Language="fr-FR">
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar"
+                         Language="fr-FR">
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.Language = "fr-FR";
@@ -83,14 +95,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 By default, **Sunday** is shown as the first day of the week. If you want to change the first day of the week, use the [FirstDayOfWeek](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_FirstDayOfWeek) property value.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar" 
-                     FirstDayOfWeek="Monday">
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar" 
+                         FirstDayOfWeek="Monday">
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.FirstDayOfWeek = FirstDayOfWeek.Monday;
@@ -109,14 +127,20 @@ You can change the flow direction of the `Calendar` layout from right to left by
 N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property takes precedence.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar"
-                     FlowDirection="RightToLeft">
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar"
+                         FlowDirection="RightToLeft">
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.FlowDirection = FlowDirection.RightToLeft;
@@ -135,17 +159,23 @@ You can use different date formats such as abbreviated or full names for a day, 
 N> Refer to the [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page for more date formatting options.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8" %}
 
-<calendar:SfCalendar 
-                     DayFormat="{}{day.integer(2)}"
-                     MonthFormat="{}{month.full}"
-                     DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
-                     MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
-                     x:Name="sfCalendar"/>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar 
+                         DayFormat="{}{day.integer(2)}"
+                         MonthFormat="{}{month.full}"
+                         DayOfWeekFormat="{}{dayofweek.abbreviated(3)}"
+                         MonthHeaderFormat="{}{month.abbreviated} {year.abbreviated}‎"
+                         x:Name="sfCalendar"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5 6 7" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.DayFormat = "{day.integer(2)}";
@@ -165,14 +195,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to increase or decrease the number of weeks shown in a month view, use the [NumberOfWeeksInView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NumberOfWeeksInView) property. The default value of the `NumberOfWeeksInView` property is **6**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar"
-                     NumberOfWeeksInView="3">
-</calendar:SfCalendar>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar"
+                         NumberOfWeeksInView="3">
+    </calendar:SfCalendar>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.NumberOfWeeksInView = 3;

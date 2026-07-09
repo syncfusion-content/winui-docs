@@ -23,7 +23,9 @@ If you want to restrict date selection or select multiple dates, set the [`Selec
 You can select a single date interactively by clicking on a specific date or programmatically using the [`SelectedDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDate) property. By default, the value of the `SelectedDate` property is **null** and the `SelectedDates` collection is empty.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
@@ -36,20 +38,26 @@ sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
 If the [`SelectedDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectedDates) collection is used instead of the `SelectedDate` property, the first date value in the `SelectedDates` collection is set as the selected date, and this value changes upon selection by interaction.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 6 7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 9 10" %}
 
-<Grid>
-    <Grid.DataContext>
-        <local:ViewModel x:Name="viewModel" />
-    </Grid.DataContext>
-    <calendar:SfCalendar x:Name="calendar"
-                        SelectionMode="Single" 
-                        SelectedDates="{x:Bind viewModel.SelectedDates, Mode=TwoWay}"
-                        />
-</Grid>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <Grid>
+        <Grid.DataContext>
+            <local:ViewModel x:Name="viewModel" />
+        </Grid.DataContext>
+        <calendar:SfCalendar x:Name="calendar"
+                            SelectionMode="Single" 
+                            SelectedDates="{x:Bind viewModel.SelectedDates, Mode=TwoWay}"
+                            />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 public class ViewModel
 {
@@ -87,13 +95,19 @@ You can select one or more dates from a different month, year, decade, or centur
 N> If the `SelectionMode` value is **None**, the `SelectedDates` collection will be empty. 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar Name="sfCalendar" 
-                     SelectionMode="Multiple" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar Name="sfCalendar" 
+                         SelectionMode="Multiple" />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
@@ -114,13 +128,19 @@ You can select a range of dates in the `Calendar` control by changing the [Selec
 N> The `SelectedDates` collection is empty and the `SelectedDate` property value is **null** when a date range is selected.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar Name="sfCalendar" 
-                     SelectionMode="Range" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar Name="sfCalendar" 
+                         SelectionMode="Range" />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectionMode = CalendarSelectionMode.Range;
@@ -137,14 +157,20 @@ N> Download demo application from [Github](https://github.com/SyncfusionExamples
 You can highlight the today and selected date using the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionHighlightMode) property to update the background and border of the dates. The default value of the `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar" 
-                     SelectionHighlightMode="Filled"
-                     />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar" 
+                         SelectionHighlightMode="Filled"
+                         />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectionHighlightMode = SelectionHighlightMode.Filled;
@@ -161,14 +187,20 @@ N> Download demo application from [Github](https://github.com/SyncfusionExamples
 You can customize the today and selected date cell shape using the [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_SelectionShape) property to customize the shape of the date cell border. The default value of the `SelectionShape` property is **Circle**.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendar x:Name="sfCalendar"
-                     SelectionShape="Rectangle"
-                     />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendar x:Name="sfCalendar"
+                         SelectionShape="Rectangle"
+                         />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.SelectionShape = SelectionShape.Rectangle;
