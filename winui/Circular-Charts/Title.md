@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header in WinUI Chart control | Syncfusion
-description: Learn here all about title with Syncfusion® WinUI Chart (SfCircularChart) control and its customization.
+description: Learn here all about the title with the Syncfusion® WinUI Chart (SfCircularChart) control and its customization.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
@@ -9,14 +9,15 @@ documentation: ug
 
 # Header in WinUI Charts (SfCircularChart)
 
-[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <chart:SfCircularChart x:Name="chart" Header="Circular Chart Header">
- . . .  
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -25,7 +26,8 @@ documentation: ug
 
 SfCircularChart chart = new SfCircularChart();
 chart.Header = "Circular Chart Header";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -36,14 +38,15 @@ this.Content = chart;
 
 ## Customization
 
-Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+The chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as the chart header.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCircularChart.Header>
         <Border 
             BorderThickness="0.5"
@@ -96,7 +99,7 @@ chart.Header = border;
 
 ## Alignment
 
-The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
+The title text content can be aligned horizontally to the left, center, or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
 {% tabs %}
 
@@ -129,7 +132,8 @@ The title text content can be aligned horizontally to the left, center or right 
 SfCircularChart chart = new SfCircularChart();
 
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Right;
-. . .
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(0.5),

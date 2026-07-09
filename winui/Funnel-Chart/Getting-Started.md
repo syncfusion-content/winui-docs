@@ -14,9 +14,9 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 ## Creating an application with WinUI Chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add a reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
+2. Add a reference to the [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet package. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
-4. Initialize [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) control.
+4. Initialize the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %} 
@@ -25,7 +25,8 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 
 <Window
     x:Class="ChartDemo.MainWindow"
-    . . .    
+
+    <!-- Configure additional chart elements --> 
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
     <chart:SfFunnelChart/>
 </Window>
@@ -35,14 +36,15 @@ This section explains how to populate the [WinUI Funnel Chart](https://www.syncf
 {% highlight C# %}
 
 using Syncfusion.UI.Xaml.Charts;
-. . .
+
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
     {
         this.InitializeComponent();
         SfFunnelChart chart = new SfFunnelChart();
-        . . .
+
+        // Configure additional chart elements
         this.Content = chart;
     }
 }   
@@ -107,7 +109,8 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 {% highlight xaml %} 
 
 <Window
-    . . .
+    
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">
 
@@ -132,14 +135,15 @@ chart.DataContext = viewModel;
 
 ## Add Title
 
-The title of the chart provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the funnel chart as follows.
+The title of the chart provides quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the funnel chart as follows.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
 <chart:SfFunnelChart Header="PRODUCT SALES">
-. . .
+
+<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -147,7 +151,7 @@ The title of the chart provide quick information to the user about the data bein
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+// Configure additional chart elements
 chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
@@ -163,7 +167,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfFunnelChart ShowDataLabels="True">
-. . . 
+
+<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -171,7 +176,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+
+// Configure additional chart elements
 chart.ShowDataLabels = true;
 
 {% endhighlight %}
@@ -180,14 +186,15 @@ chart.ShowDataLabels = true;
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the funnel chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
+The legend provides information about the data point displayed in the funnel chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
 <chart:SfFunnelChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend/>
     </chart:SfFunnelChart.Legend>
@@ -198,7 +205,8 @@ The legend provides information about the data point displayed in the funnel cha
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+
+// Configure additional chart elements
 chart.Legend = new ChartLegend();
 
 {% endhighlight %}
@@ -207,14 +215,15 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to display information about a segment when the mouse is moved over it. Enable tooltip by setting funnel chart [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property as true.
+Tooltips are used to display information about a segment when the mouse is moved over it. Enable the tooltip by setting the funnel chart [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 
 {% tabs %} 
 
 {% highlight xaml %}
 
 <chart:SfFunnelChart EnableTooltip="True">
-    . . . 
+
+<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -222,16 +231,17 @@ Tooltips are used to display information about a segment when the mouse is moved
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . .
+
+// Configure additional chart elements
 chart.EnableTooltip = true;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-The following code example gives you the complete code of above configurations.
+The following code example gives you the complete code for the above configurations.
 
-N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_YBindingPath) properties must be configured so that the chart may get values from the respective properties in the data model.
+N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_YBindingPath) properties must be configured so that the chart can get values from the respective properties in the data model.
 
 {% tabs %} 
 
@@ -262,8 +272,7 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 using Syncfusion.UI.Xaml.Charts;
 
-. . .
-
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
@@ -299,4 +308,4 @@ public sealed partial class MainWindow : Window
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/FunnelChartGettingStarted).
 
-N> You can also explore our [WinUI Funnel Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20Charts/DefaultFunnelChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
+N> You can also explore our [WinUI Funnel Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Funnel%20Charts/DefaultFunnelChart.xaml) that shows how to easily configure the chart with built-in support for creating stunning visual effects.

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pointer animation
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_EnableAnimation) property of pointer allows to enable or disable animation for pointer.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_EnableAnimation) property of the pointer allows you to enable or disable the animation for the pointer.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ this.Content = sfRadialGauge;
 
 ## Animation duration
 
-The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationDuration) property of pointer allows to control the animation duration (in milliseconds). The default value of animation duration is 1500ms.
+The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationDuration) property of the pointer allows you to control the animation duration (in milliseconds). The default value of the animation duration is 1500ms.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ this.Content = sfRadialGauge;
 
 ## Animation Easing Function
 
-The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property of pointer allows you to change the easing function. The default value [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property is null.
+The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property of the pointer allows you to change the easing function. The default value of the [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_AnimationEasingFunction) property is null.
 
 {% tabs %}
 
@@ -255,4 +255,10 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Animation Easing Function](images/animation/winui-radial-gauge-animation-easing-function.gif)
 
-N> Refer to the [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase), to learn about available easing functions in WinUI.
+N> Refer to the [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase) to learn about the available easing functions in WinUI.
+
+## See Also
+
+* [How to design radial timer picker using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12036/how-to-design-radial-timer-picker-using-winui-radial-gauge)
+* [How to design a circular timer using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12081/how-to-design-a-circular-timer-using-winui-radial-gauge-sfradialgauge)
+* [How to create an analog clock with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)
