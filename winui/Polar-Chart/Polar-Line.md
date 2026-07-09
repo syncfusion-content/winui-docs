@@ -9,14 +9,15 @@ documentation: ug
 
 # Polar Line Chart in WinUI Charts (SfPolarChart)
 
-To render a line series in polar chart, create an instance of the [PolarLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html).
+To render a line series in the polar chart, create an instance of the [PolarLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html). To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_YBindingPath) properties must be configured, and the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) property can be set for legend purposes.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries 
             ItemsSource="{Binding PlantDetails}" 
@@ -33,7 +34,8 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
             XBindingPath="Direction"
             YBindingPath="Flower"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -41,7 +43,8 @@ To render a line series in polar chart, create an instance of the [PolarLineSeri
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 PolarLineSeries series1 = new PolarLineSeries();
 series1.XBindingPath = "Direction";
 series1.YBindingPath = "Tree";
@@ -56,7 +59,8 @@ PolarLineSeries series3 = new PolarLineSeries();
 series3.XBindingPath = "Direction";
 series3.YBindingPath = "Flower";
 series3.ItemsSource = viewModel.PlantDetails;
-...
+
+// Configure additional chart elements
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
@@ -69,21 +73,23 @@ chart.Series.Add(series3);
 
 ## Grid line type
 
-The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Circle). By changing the grid line type as [Polygon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Polygon), we can shown the polar chart similar like radar chart or spider chart or web chart. 
+The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) property is used to change the rendering type of axis grid lines. The default value of [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_GridLineType) is [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Circle). By changing the grid line type to [Polygon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarChartGridLineType.html#Syncfusion_UI_Xaml_Charts_PolarChartGridLineType_Polygon), the polar chart can be shown similar to a radar chart, spider chart, or web chart. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPolarChart GridLineType="Polygon">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries 
             ItemsSource="{Binding PlantDetails}" 
             XBindingPath="Direction"
             YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -92,12 +98,14 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 SfPolarChart chart = new SfPolarChart();
 chart.GridLineType= PolarChartGridLineType.Polygon;
-...
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.ItemsSource = viewModel.PlantDetails;
-...
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -108,14 +116,15 @@ chart.Series.Add(series);
 
 ## Closing Path
 
-[IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) property is used to render the series with or without closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) is `true`. 
+[IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) property is used to render the series with or without a closed path. The default value of [IsClosed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_IsClosed) is `true`. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPolarChart GridLineType="Polygon">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.Series>
         <chart:PolarLineSeries
             ItemsSource="{Binding PlantDetails}" 
@@ -123,7 +132,8 @@ chart.Series.Add(series);
             YBindingPath="Tree" 
             IsClosed="False"/>
     </chart:SfPolarChart.Series>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -132,13 +142,15 @@ chart.Series.Add(series);
 
 SfPolarChart chart = new SfPolarChart();
 chart.GridLineType= PolarChartGridLineType.Polygon;
-...
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.ItemsSource = viewModel.PlantDetails;
 series.IsClosed = false;
-...
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
