@@ -67,8 +67,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 
 chart.SelectionBehavior = selection;
 
-. . .
-
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -121,8 +120,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 
 chart.SelectionBehavior = selection;
 
-. . .
-
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -176,8 +174,7 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 
 chart.SelectionBehavior = selection;
 
-. . .
-
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -206,7 +203,8 @@ Pyramid chart provides support to select multiple points programmatically on a c
             SelectionBrush="Red"
             SelectedIndexes="{Binding SelectedIndexes}"/>
     </chart:SfPyramidChart.SelectionBehavior>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -231,7 +229,8 @@ DataPointSelectionBehavior selection = new DataPointSelectionBehavior()
 };
 
 chart.SelectionBehavior = selection;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

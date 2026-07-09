@@ -41,7 +41,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartPyramidMode.Surface;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -79,7 +80,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.Mode = ChartPyramidMode.Linear;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

@@ -39,7 +39,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -74,7 +75,8 @@ The [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
         XBindingPath="Category"
         YBindingPath="Value"
         PaletteBrushes="{StaticResource customBrushes}">
-    . . .
+
+    <!-- Configure additional chart elements -->
     </chart:SfPyramidChart>
 </Grid>
 {% endhighlight %}
@@ -149,7 +151,8 @@ Gradient for the pyramid chart can be set by using the [PaletteBrushes](https://
         XBindingPath="Category"
         YBindingPath="Value"
         PaletteBrushes="{StaticResource customBrushes}">
-    . . .     
+
+    <!-- Configure additional chart elements -->
     </chart:SfPyramidChart>    
 </Grid>
 
@@ -194,7 +197,8 @@ stop2 = new GradientStop()
 
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-. . .
+
+// Configure additional chart elements
 customBrushes.Add(gradientColor1);
 customBrushes.Add(gradientColor2);
 
@@ -206,7 +210,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

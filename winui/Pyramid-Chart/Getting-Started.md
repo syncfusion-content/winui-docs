@@ -25,7 +25,8 @@ This section explains how to populate the [WinUI Pyramid Chart](https://www.sync
 
 <Window
     x:Class="ChartDemo.MainWindow"
-    . . .
+    
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts">
 
     <chart:SfPyramidChart/>
@@ -38,18 +39,18 @@ This section explains how to populate the [WinUI Pyramid Chart](https://www.sync
 
 using Syncfusion.UI.Xaml.Charts;
 
-. . .
-
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()
     {
         this.InitializeComponent();
         SfPyramidChart chart = new SfPyramidChart();
-        . . .
+
+        // Configure additional chart elements
         this.Content = chart;
     }
-}   
+}
 
 {% endhighlight %}
 
@@ -112,7 +113,8 @@ N> If you prefer to set `DataContext` in XAML, add the namespace of the `ViewMod
 {% highlight xaml %} 
 
 <Window
-    . . .
+
+    <!-- Configure additional chart elements -->
     xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     xmlns:model="using:ChartDemo.ViewModel">
 
@@ -145,7 +147,8 @@ The title of the chart provides quick information to the user about the data bei
 {% highlight xaml %}
 
 <chart:SfPyramidChart Header="Calories in food">
-. . .
+
+<!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -153,7 +156,8 @@ The title of the chart provides quick information to the user about the data bei
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-. . .
+
+// Configure additional chart elements
 chart.Header = "Calories in food";
 
 {% endhighlight %}
@@ -169,15 +173,16 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfPyramidChart ShowDataLabels="True">
-    . . . 
-</chart:SfPyramidChart>
+
+<!-- Configure additional chart elements </chart:SfPyramidChart>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-. . .
+
+// Configure additional chart elements
 chart.ShowDataLabels = true;
 
 {% endhighlight %}
@@ -193,7 +198,8 @@ The legend provides information about the data point displayed in the pyramid ch
 {% highlight xaml %}
 
 <chart:SfPyramidChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.Legend>
         <chart:ChartLegend/>
     </chart:SfPyramidChart.Legend>
@@ -204,7 +210,8 @@ The legend provides information about the data point displayed in the pyramid ch
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-. . .
+
+// Configure additional chart elements
 chart.Legend = new ChartLegend();
 
 {% endhighlight %}
@@ -220,7 +227,8 @@ Tooltips are used to display information about a segment, when the mouse is move
 {% highlight xaml %}
 
 <chart:SfPyramidChart EnableTooltip="True">
-    . . . 
+
+<!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -228,7 +236,8 @@ Tooltips are used to display information about a segment, when the mouse is move
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-. . .
+
+// Configure additional chart elements
 chart.EnableTooltip = true;
 
 {% endhighlight %}
@@ -267,8 +276,7 @@ N> To plot the chart, the [XBindingPath](https://help.syncfusion.com/cr/winui/Sy
 
 using Syncfusion.UI.Xaml.Charts;
 
-. . .
-
+// Configure additional chart elements
 public sealed partial class MainWindow : Window
 {
     public MainWindow()

@@ -41,7 +41,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -69,11 +70,14 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart">
-    . . .        
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.TooltipBehavior>
         <chart:ChartTooltipBehavior/>
     </chart:SfPyramidChart.TooltipBehavior>
-    . . .
+	
+
+    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -85,7 +89,8 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.EnableTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 chart.TooltipBehavior = behavior;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -103,7 +108,8 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 <chart:SfPyramidChart
      x:Name="chart"
      EnableTooltip="True">
-     . . .
+
+     <!-- Configure additional chart elements -->
      <chart:SfPyramidChart.Resources>
          <Style TargetType="Path" x:Key="style">
              <Setter Property="Stroke" Value="Black"/>
@@ -114,7 +120,8 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
      <chart:SfPyramidChart.TooltipBehavior>
          <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
      </chart:SfPyramidChart.TooltipBehavior>
-     . . .
+
+     <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -127,13 +134,14 @@ chart.EnableTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
-. . .
 
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -151,7 +159,8 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart" EnableTooltip="True">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.Resources>
         <Style TargetType="TextBlock" x:Key="labelStyle">
             <Setter Property="FontSize" Value="14"/>
@@ -163,7 +172,8 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     <chart:SfPyramidChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfPyramidChart.TooltipBehavior>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -179,13 +189,15 @@ Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-. . . 
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.LabelStyle = labelStyle;
 
 chart.TooltipBehavior = tooltipBehavior;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -265,9 +277,12 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
+
+// The 'tooltipTemplate' resource is defined in XAML Resources and referenced here.
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
 chart.EnableTooltip = true;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
         
 {% endhighlight %}

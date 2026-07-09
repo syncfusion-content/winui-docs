@@ -37,7 +37,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.GapRatio = 0.3;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

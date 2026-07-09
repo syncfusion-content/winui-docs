@@ -16,7 +16,8 @@ documentation: ug
 {% highlight xaml %}
 
 <chart:SfPyramidChart x:Name="chart" Header="The Food Comparison Pyramid">
- . . .           
+
+    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -26,7 +27,8 @@ documentation: ug
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.Header = "The Food Comparison Pyramid";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -64,7 +66,8 @@ The pyramid chart provides support to add any `UIElement` as a title. The follow
 {% highlight C# %}
 
 SfPyramidChart chart = new SfPyramidChart();
-. . .
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -82,7 +85,8 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -131,7 +135,8 @@ public sealed partial class MainPage : Page
 
         chart.XBindingPath = "FoodName";
         chart.YBindingPath = "Calories";
-        . . .
+
+        // Configure additional chart elements
         this.Content = chart;
     }
 }

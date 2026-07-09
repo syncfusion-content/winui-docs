@@ -43,7 +43,8 @@ chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.ExplodeIndex = 3;
 chart.ExplodeOffset = 30;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

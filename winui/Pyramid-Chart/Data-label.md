@@ -43,7 +43,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -66,11 +67,13 @@ To customize the content of data labels, need to define [DataLabelSettings](http
     ItemsSource="{Binding Data}" 
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.DataLabelSettings>
         <chart:PyramidDataLabelSettings Context="Percentage"/>
     </chart:SfPyramidChart.DataLabelSettings>
-    . . .
+	
+	<!-- Configure additional chart elements 
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -80,7 +83,8 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Context = LabelContext.Percentage 
@@ -118,7 +122,8 @@ The following properties are used to customize the data label:
     ItemsSource="{Binding Data}"
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.DataLabelSettings>
         <chart:PyramidDataLabelSettings
             Foreground="White"
@@ -130,7 +135,8 @@ The following properties are used to customize the data label:
             FontStyle="Italic"
             Background="#1E88E5"/>
     </chart:SfPyramidChart.DataLabelSettings>
-    . . .
+
+	<!-- Configure additional chart elements 
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -140,7 +146,8 @@ The following properties are used to customize the data label:
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-. . .
+
+// Configure additional chart elements
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Foreground = new SolidColorBrush(Colors.White),
@@ -227,7 +234,8 @@ The appearance of the data label can be customized by using the [ContentTemplate
 
 SfPyramidChart chart = new SfPyramidChart();
 chart.ShowDataLabels = true;
-. . . 
+
+// The 'dataLabelTemplate' resource is defined in XAML Resources and referenced here.
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Context = LabelContext.YValue,
@@ -272,7 +280,8 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 {  
     Format = "#.000",
@@ -319,7 +328,8 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 SfPyramidChart chart = new SfPyramidChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new PyramidDataLabelSettings() 
 { 
     Rotation = 45,
