@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Barcode control | Syncfusion
-description: Learn here all about Customization feature in Syncfusion WinUI Barcode control with more background, foreground, Module custom support etc.
+description: Learn here all about the Customization feature in the Syncfusion WinUI Barcode control with more background, foreground, and Module custom support etc.
 platform: WinUI
 control: Barcode
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Customization in WinUI Barcode
 
 ## Background
-The Barcode background color can be changed using [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
+The Barcode background color can be changed using the [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ The Barcode background color can be changed using [Background](https://docs.micr
 {% endtabs %} 
 
 ## Foreground
-The Barcode foreground color can be changed using [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
+The Barcode foreground color can be changed using the [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,10 +41,10 @@ The Barcode foreground color can be changed using [Foreground](https://docs.micr
 
 ![Barcode_Customization](Customization_Images/Barcode_Customization.png)
 
-N> To be recognized by a scanner, a barcode symbol must have adequate contrast between the dark bars and the light spaces, and not all barcode scanners support colored barcodes.
+N> To be recognized by a scanner, a barcode symbol must have adequate contrast between the dark bars and the light spaces. Not all barcode scanners support colored barcodes.
 
 ## Module
-The width ratio of the wide and narrow bars can be customized using the [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property. 
+The width ratio of the wide and narrow bars can be customized using the [Module](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Module) property for supported (linear) symbologies.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ The width ratio of the wide and narrow bars can be customized using the [Module]
 ![Module](Customization_Images/BarWidth.png)
 
 ## AutoModule
-The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be rendered based on the available control size, if [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) is set to **True**.
+The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) render based on the available control size when [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) is set to **True**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -79,9 +79,9 @@ AutoModule="True" ShowValue="False" Value="QRBarcode">
 ![AutoModule](Customization_Images/AutoModule.png)
 
 ### Rotation angle
-The [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) rotation can be changed by using the[RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property. The various angles can be set to [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) using [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enum values. 
+The [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) rotation can be changed by using the [RotationAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_RotationAngle) property. Various angles can be set for the [Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html) using the [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enumeration values.
 
-The [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enumeration has following four angles:
+The [BarcodeRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.BarcodeRotation.html) enumeration has the following four angles:
 
 <table>
 <tr>
