@@ -2,7 +2,7 @@
 layout: post
 title: Conditional Styling | TreeGrid | WinUI | Syncfusion®
 description: Learn here all about conditional styling support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
-platform: winUI
+platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
