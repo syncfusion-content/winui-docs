@@ -16,30 +16,34 @@ This section describes various drop-down customization options available in the 
 You can customize the UI of the drop-down button by using the [`DropDownButtonTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property. The `DataContext` of the `DropDownButtonTemplate` property is `SfDatePicker`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23" %}
 
-<editors:SfDatePicker
-    x:Name="sfDatePicker"
-    PlaceholderText="pick a travel date">
-    <editors:SfDatePicker.DropDownButtonTemplate>
-       <DataTemplate>
-            <Grid>
-                <Grid.Resources>
-                    <x:String x:Key="flight">M11.294993,2L15.378997,14 15.277995,14 13.188995,14 9.1429941,14 7.6250149,14 6.9399958,14 6.0199964,11.5 3.2099977,11.5 4.725997,16.014 3.2099977,20.5 6.0199964,20.5 6.8039956,18 7.6250201,18 8.8379947,18 15.288014,18 15.365021,18.000015 11.436984,30.000015 14.368989,30.000015 20.100004,18.000015 20.273989,18.000015 27.989002,18C29.084003,18 29.975004,17.121 29.975004,15.96 29.975004,14.879 29.084003,14 27.989002,14L22.309006,14 20.211995,14 20.096004,14 14.368996,2z M8.6259891,0L15.719998,0 21.367719,12 27.989002,12C30.205004,12,32.001007,13.773,32.001007,15.96L32.001007,16.04C32.001007,18.227,30.205004,20,27.989002,20L21.366735,20 15.719025,32.000015 8.6260106,32.000015 12.536309,20 8.2531061,20 7.5219953,22.5 0,22.5 2.5709982,16.013 0,9.5 7.4539952,9.5 8.3923279,12 12.537137,12z</x:String>
-                </Grid.Resources>
-                <Path
-                    Width="20"
-                    Height="20"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Data="{StaticResource flight}"
-                    Fill="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}"
-                    RenderTransformOrigin="0.5,0.5"
-                    Stretch="Uniform" />
-            </Grid>
-        </DataTemplate>
-    </editors:SfDatePicker.DropDownButtonTemplate>
-</editors:SfDatePicker>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker
+        x:Name="sfDatePicker"
+        PlaceholderText="pick a travel date">
+        <editors:SfDatePicker.DropDownButtonTemplate>
+           <DataTemplate>
+                <Grid>
+                    <Grid.Resources>
+                        <x:String x:Key="flight">M11.294993,2L15.378997,14 15.277995,14 13.188995,14 9.1429941,14 7.6250149,14 6.9399958,14 6.0199964,11.5 3.2099977,11.5 4.725997,16.014 3.2099977,20.5 6.0199964,20.5 6.8039956,18 7.6250201,18 8.8379947,18 15.288014,18 15.365021,18.000015 11.436984,30.000015 14.368989,30.000015 20.100004,18.000015 20.273989,18.000015 27.989002,18C29.084003,18 29.975004,17.121 29.975004,15.96 29.975004,14.879 29.084003,14 27.989002,14L22.309006,14 20.211995,14 20.096004,14 14.368996,2z M8.6259891,0L15.719998,0 21.367719,12 27.989002,12C30.205004,12,32.001007,13.773,32.001007,15.96L32.001007,16.04C32.001007,18.227,30.205004,20,27.989002,20L21.366735,20 15.719025,32.000015 8.6260106,32.000015 12.536309,20 8.2531061,20 7.5219953,22.5 0,22.5 2.5709982,16.013 0,9.5 7.4539952,9.5 8.3923279,12 12.537137,12z</x:String>
+                    </Grid.Resources>
+                    <Path
+                        Width="20"
+                        Height="20"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Data="{StaticResource flight}"
+                        Fill="{Binding Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                        RenderTransformOrigin="0.5,0.5"
+                        Stretch="Uniform" />
+                </Grid>
+            </DataTemplate>
+        </editors:SfDatePicker.DropDownButtonTemplate>
+    </editors:SfDatePicker>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -55,14 +59,20 @@ You can hide the drop-down button in the `Date Picker` by setting the [`ShowDrop
 N> To open the drop-down date spinner, press the `Alt` + `Down Arrow` keys.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker  
-                      x:Name="sfDatePicker"
-                      ShowDropDownButton="False" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker  
+                          x:Name="sfDatePicker"
+                          ShowDropDownButton="False" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.ShowDropDownButton = false;
@@ -81,14 +91,20 @@ You can change the alignment of the drop-down date spinner as full, center, left
 N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `Date Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      x:Name="sfDatePicker"
-                      DropDownPlacement="BottomEdgeAlignedLeft" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          x:Name="sfDatePicker"
+                          DropDownPlacement="BottomEdgeAlignedLeft" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
@@ -105,14 +121,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can open or close the drop-down date spinner programmatically by setting the [IsOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_IsOpen) property value to **true** or **false**. The default value of the `IsOpen` property is **false**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      x:Name="sfDatePicker"
-                      IsOpen="True"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          x:Name="sfDatePicker"
+                          IsOpen="True"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.IsOpen = true;
@@ -129,14 +151,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the height of the drop-down date spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of the `DropDownHeight`, `ItemWidth`, and `ItemHeight` properties, particular date items will be visible. The default value of the `DropDownHeight` property is `NaN`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      x:Name="sfDatePicker"
-                      DropDownHeight="200"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          x:Name="sfDatePicker"
+                          DropDownHeight="200"/>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DropDownHeight = 200;
@@ -153,14 +181,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the number of dates to be shown in the drop-down date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of the `VisibleItemsCount` property is `7`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      x:Name="sfDatePicker"
-                      VisibleItemsCount="5" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          x:Name="sfDatePicker"
+                          VisibleItemsCount="5" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.VisibleItemsCount = 5;

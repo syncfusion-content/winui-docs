@@ -100,7 +100,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can set or change the selected date programmatically by using the [`SelectedDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property. If you do not assign any value to the `SelectedDate` property, the `Date Picker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
@@ -119,10 +121,16 @@ You can change the selected date interactively by entering the date value using 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
-<editors:SfDatePicker Name="sfDatePicker" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker Name="sfDatePicker" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 
@@ -140,22 +148,28 @@ You can restrict users from:
 * Selecting a date from blocked dates using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_BlackoutDates) property.
 * Selecting a date from a specifically blocked set of dates (example: blocking weekend dates) using the [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event.
 
-For further reference, [click here](date-restriction).
+For further reference [click_here](date-restriction).
 
 ## Setting null value
 
 If you want to set a null value for the `Date Picker`, set the [`AllowNull`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNull) property to `true` and set the `SelectedDate` property to `null`. If the `AllowNull` property is `false`, then the current system date is updated in the `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6" %}
 
-<editors:SfDatePicker Name="sfDatePicker"
-                      SelectedDate="{x:Null}"
-                      AllowNull="True"
-                       />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker Name="sfDatePicker"
+                          SelectedDate="{x:Null}"
+                          AllowNull="True"
+                           />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.SelectedDate = null;
@@ -174,15 +188,21 @@ This section explains the `Header` and `Description` properties of the `Date Pic
 The `Header` property is used to display the title for the `Date Picker` control.
      
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
-<editors:SfDatePicker x:Name="datePicker" 
-                      Height="75" 
-                      Width="200"
-                      Header="Enter your interview date" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker x:Name="datePicker" 
+                          Height="75" 
+                          Width="200"
+                          Header="Enter your interview date" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker datePicker = new SfDatePicker();
 datePicker.Header = "Enter your interview date";
@@ -196,18 +216,22 @@ datePicker.Header = "Enter your interview date";
 By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12" %}
 
-<editors:SfDatePicker  Width="250" Height="75">
-    <editors:SfDatePicker.HeaderTemplate>
-        <DataTemplate>
-            <StackPanel Orientation="Horizontal">
-                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
-                <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
-            </StackPanel>
-        </DataTemplate>
-    </editors:SfDatePicker.HeaderTemplate>
-</editors:SfDatePicker>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker  Width="250" Height="75">
+        <editors:SfDatePicker.HeaderTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE80B;"/>
+                    <TextBlock Text="Interview Date" FontSize="14" Margin="5"/>
+                </StackPanel>
+            </DataTemplate>
+        </editors:SfDatePicker.HeaderTemplate>
+    </editors:SfDatePicker>
+</Window>
 
 
 {% endhighlight %}
@@ -219,16 +243,22 @@ By using the control's `HeaderTemplate` property, you can customize the appearan
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8" %}
 
-<editors:SfDatePicker x:Name="DatePicker" 
-                      Height="75" 
-                      Width="300" 
-                      Header="Enter your interview date" 
-                      Description="The chosen date must be within the next 5 days."/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker x:Name="DatePicker" 
+                          Height="75" 
+                          Width="300" 
+                          Header="Enter your interview date" 
+                          Description="The chosen date must be within the next 5 days."/>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker datePicker = new SfDatePicker();
 datePicker.Description = "The chosen date must be within the next 5 days.";
@@ -244,16 +274,22 @@ datePicker.Description = "The chosen date must be within the next 5 days.";
 You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceholderText) property. This will be displayed only when the `Date Picker` contains the `SelectedDate` property as `null` and the `AllowNull` property as `true`. If the `AllowNull` property is `false`, then the current system date is updated in the `SelectedDate` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7" %}
 
-<editors:SfDatePicker Name="sfDatePicker"
-                      PlaceholderText="select a journey date"
-                      SelectedDate="{x:Null}"
-                      AllowNull="True"
-                       />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker Name="sfDatePicker"
+                          PlaceholderText="select a journey date"
+                          SelectedDate="{x:Null}"
+                          AllowNull="True"
+                           />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5 6" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.PlaceholderText = "select a journey date";
@@ -275,14 +311,20 @@ You will be notified when the selected date changes in the `Date Picker` by usin
 * `NewDateTime` - Gets the date that is currently selected.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      Name="sfDatePicker"
-                      SelectedDateChanged="SfDatePicker_DateChanged" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          Name="sfDatePicker"
+                          SelectedDateChanged="SfDatePicker_DateChanged" />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.SelectedDateChanged += SfDatePicker_DateChanged;
@@ -294,6 +336,8 @@ You can handle the event as follows:
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 private void SfDatePicker_DateChanged(object sender, SelectedDateTimeChangedEventArgs e) {          
     Console.WriteLine("The previously selected Date: " + e.OldDateTime.ToString());

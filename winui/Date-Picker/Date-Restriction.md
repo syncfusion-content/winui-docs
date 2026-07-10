@@ -59,15 +59,19 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 8" %}
 
-<editors:SfDatePicker  
-                      x:Name="sfDatePicker"
-                      BlackoutDates="{Binding BlockedDates}">
-    <editors:SfDatePicker.DataContext>
-        <local:ViewModel/>
-    </editors:SfDatePicker.DataContext>
-</editors:SfDatePicker>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker  
+                          x:Name="sfDatePicker"
+                          BlackoutDates="{Binding BlockedDates}">
+        <editors:SfDatePicker.DataContext>
+            <local:ViewModel/>
+        </editors:SfDatePicker.DataContext>
+    </editors:SfDatePicker>
+</Window>
 
 {% endhighlight  %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
@@ -87,10 +91,14 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to block all weekend dates or any dates from date selection, handle the [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event and set the [`DateTimeFieldItemPreparedEventArgs.ItemInfo.IsEnabled`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemPreparedEventArgs.html#Syncfusion_UI_Xaml_Editors_DateTimeFieldItemPreparedEventArgs_ItemInfo) property value to `false`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<editors:SfDatePicker x:Name="sfDatePicker" 
-                      DateFieldItemPrepared = "SfDatePicker_DateFieldItemPrepared"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker x:Name="sfDatePicker" 
+                          DateFieldItemPrepared = "SfDatePicker_DateFieldItemPrepared"/>
+</Window>
 
 {% endhighlight  %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
@@ -127,11 +135,15 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to hide the submit button and select the date directly from the drop-down date spinner without clicking the `Ok` button, set the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value to `false`. The default value of the `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      x:Name="sfDatePicker"
-                      ShowSubmitButtons="False"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          x:Name="sfDatePicker"
+                          ShowSubmitButtons="False"/>
+</Window>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
@@ -159,11 +171,15 @@ Users are restricted from selecting a blackout date from the dropdown; however, 
 N> `SelectedDateChanging` event is called before the `SelectedDateChanged` event when a date is selected.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker Height="35" 
-                     Width="150" 
-                     SelectedDateChanging="SfDatePicker_DateChanging" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker Height="35" 
+                         Width="150" 
+                         SelectedDateChanging="SfDatePicker_DateChanging" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}

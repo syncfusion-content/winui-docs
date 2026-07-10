@@ -20,17 +20,23 @@ You can also restrict the width of the drop-down date spinner cells to particula
 N> The `ItemWidth` value must be within the `MinItemWidth` and `MaxItemWidth` values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5 6 7 8" %}
 
-<editors:SfDatePicker x:Name="sfDatePicker" 
-                      MinItemWidth="70" 
-                      MaxItemWidth="120"
-                      ItemWidth="100"
-                      ItemHeight="50"
-                      />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker x:Name="sfDatePicker" 
+                          MinItemWidth="70" 
+                          MaxItemWidth="120"
+                          ItemWidth="100"
+                          ItemHeight="50"
+                          />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4 5" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4 5 6 7" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.MinItemWidth = 70;
@@ -50,17 +56,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can customize all the drop-down date spinner cells by using the `ItemContainerStyle` property. The `ItemContainerStyle` is applied to the [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html) generated for each item, and the `DataContext` of the `ItemTemplate` is [`DateTimeFieldItemInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemInfo.html).
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6 7 8 9 10 11" %}
 
-<editors:SfDatePicker
-    x:Name="sfDatePicker">
-    <editors:SfDatePicker.ItemContainerStyle>
-        <Style TargetType="editors:SpinnerItem">
-            <Setter Property="Foreground" Value="Red"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-        </Style>
-    </editors:SfDatePicker.ItemContainerStyle>
-</editors:SfDatePicker>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker
+        x:Name="sfDatePicker">
+        <editors:SfDatePicker.ItemContainerStyle>
+            <Style TargetType="editors:SpinnerItem">
+                <Setter Property="Foreground" Value="Red"/>
+                <Setter Property="FontStyle" Value="Italic"/>
+            </Style>
+        </editors:SfDatePicker.ItemContainerStyle>
+    </editors:SfDatePicker>
+</Window>
 
 
 {% endhighlight %}
@@ -76,6 +86,8 @@ You can change the UI of specific date, month, or year cells in the drop-down sp
 
 {% tabs %}
 {% highlight C# tabtitle="DateItemTemplateSelector.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 public class DateItemTemplateSelector : DataTemplateSelector
 {
@@ -115,6 +127,9 @@ public class DateItemTemplateSelector : DataTemplateSelector
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" %}
 
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
  <Grid>
     <Grid.Resources>
         <x:String x:Key="birthday">M24.188005,24.530994C24.999008,24.530994 25.657011,25.188997 25.657011,26 25.657011,26.811003 24.999008,27.469006 24.188005,27.469006 23.377003,27.469006 22.719,26.811003 22.719,26 22.719,25.188997 23.377003,24.530994 24.188005,24.530994z M16.000006,24.530994C16.811008,24.530994 17.469011,25.188997 17.469011,26 17.469011,26.811003 16.811008,27.469006 16.000006,27.469006 15.189002,27.469006 14.530999,26.811003 14.530999,26 14.530999,25.188997 15.189002,24.530994 16.000006,24.530994z M7.813005,24.405994C8.6240082,24.405994 9.282011,25.063997 9.282011,25.875 9.282011,26.686003 8.6240082,27.344006 7.813005,27.344006 7.0020018,27.344006 6.3439994,26.686003 6.3439994,25.875 6.3439994,25.063997 7.0020018,24.405994 7.813005,24.405994z M3,22.5C2.4490051,22.5,2,22.949005,2,23.5L2,29.5 30,29.5 30,23.5C30,22.949005,29.550995,22.5,29,22.5z M5,14.5C4.4489999,14.5,4,14.949,4,15.5L4,20.5 28,20.5 28,15.5C28,14.949,27.551001,14.5,27,14.5L16,14.5z M16,8.5C16.552,8.5,17,8.948,17,9.5L17,12.5 27,12.5C28.653999,12.5,30,13.846,30,15.5L30,20.672067 30.030354,20.68236C31.178461,21.103616,32,22.207819,32,23.5L32,30.5C32,31.052002,31.552002,31.5,31,31.5L1,31.5C0.44799805,31.5,0,31.052002,0,30.5L0,23.5C0,22.207819,0.82153827,21.103616,1.969646,20.68236L2,20.672067 2,15.5C2,13.846,3.346,12.5,5,12.5L15,12.5 15,9.5C15,8.948,15.448,8.5,16,8.5z M16.019098,0C16.450115,1.7290001 18.144182,3.5890007 18.144182,4.7290001 18.219185,6.1879997 17.684164,7 16.019098,7 14.354033,7 13.856012,6.0419998 13.856012,4.7290001 13.856012,3.323 14.56604,1.3330002 16.019098,0z</x:String>
@@ -185,6 +200,7 @@ public class DateItemTemplateSelector : DataTemplateSelector
     <editors:SfDatePicker Name="sfDatePicker" ItemTemplateSelector="{StaticResource selector}" VerticalAlignment="Top" Width="150" Height="30">
     </editors:SfDatePicker>
 </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -202,14 +218,20 @@ Here, the date format, header, and cell size of the drop-down date field are cus
 N> This will be effective only for the date field cells.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfDatePicker 
-                      x:Name="sfDatePicker"
-                      DateFieldPrepared="SfDatePicker_DateFieldPrepared"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfDatePicker 
+                          x:Name="sfDatePicker"
+                          DateFieldPrepared="SfDatePicker_DateFieldPrepared"/>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.DateFieldPrepared += SfDatePicker_DateFieldPrepared;
@@ -221,6 +243,8 @@ You can handle the event as follows:
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPreparedEventArgs e)
 {
