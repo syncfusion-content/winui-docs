@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Gap Ratio in WinUI Pyramid Chart | Syncfusion
-description: This section explains about how to set segment spacing for the Syncfusion® WinUI Chart (SfPyramidChart) control.
+description: This section explains how to set segment spacing for the Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
@@ -37,7 +37,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.GapRatio = 0.3;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

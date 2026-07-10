@@ -722,7 +722,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 [TreeGridNumericColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html) supports the following numeric data types: Byte, Decimal, Double, Float, Int, Long, SByte, Short, UInt, ULong, and UShort.
 
-The numeric data type for the `TreeGridNumericColumn` is specified using the `ValueType` property. This property allows the column to accept values of the defined data type. By default, the `ValueType` property is set to `Double`.
+The numeric data type for the `TreeGridNumericColumn` is specified using the [ValueType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_ValueType) property. This property allows the column to accept values of the defined data type. By default, the `ValueType` property is set to [Double](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.NumericType.html#Syncfusion_UI_Xaml_Editors_NumericType_Double).
 
 {% tabs %}
 {% highlight xaml %}

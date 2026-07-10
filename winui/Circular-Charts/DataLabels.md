@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data label in WinUI Chart control | WinUI | Syncfusion
-description: This section explains about how to configure the data labels and its features in WinUI Chart (SfCircularChart).
+description: This section explains how to configure the data labels and their features in the WinUI Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
@@ -9,29 +9,31 @@ documentation: ug
 
 # Data Label in WinUI Chart (SfCircularChart)
 
-Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+Data labels are used to display values related to a chart segment. Values from a data point (x, y) or other custom properties from a data source can be displayed. 
 
 Each data label can be represented by the following:
 
-* Label - displays the segment label content at the (X, Y) point.
-* Connector line - used to connect the (X, Y) point and the label element.
+* Label - Displays the segment label content at the (X, Y) point.
+* Connector line - Used to connect the (X, Y) point and the label element.
 
 ## Enable Data Label 
 
-[ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of series is used to enable the data labels.
+The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of the series is used to enable the data labels.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries 
         ShowDataLabels="True"
         ItemsSource="{Binding Data}"  
         XBindingPath="Product" 
         YBindingPath="SalesRate"/>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -39,10 +41,12 @@ Each data label can be represented by the following:
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
-. . .
+
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -53,27 +57,30 @@ chart.Series.Add(series);
 
 ## Context
 
-To customize the content of data labels, need to define [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) of series and set [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) to define the value to be displayed as label content.
+To customize the content of data labels, you need to define the [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) of the series and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) to define the value to be displayed as the label content.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings Context="Percentage"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
@@ -82,7 +89,7 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     Context = LabelContext.Percentage
 };
 
-. . .
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -95,21 +102,22 @@ chart.Series.Add(series);
 
 The following properties are used to customize the data label.
 
-* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush)- used to change the border color.
-* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness)- used to change the thickness of the border.
-* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin)- used to change the margin size for label.
-* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle)-  used to change font style of the label.
-* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize)-  used to change font size of the label.
-* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground)- used to change the color of the label.
-* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily)-  used to change the font family of the label.
-* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background)- used to change the label background color.
+* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush) - Used to change the border color.
+* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness) - Used to change the thickness of the border.
+* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin) - Used to change the margin size for the label.
+* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle) - Used to change the font style of the label.
+* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize) - Used to change the font size of the label.
+* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground) - Used to change the color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily) - Used to change the font family of the label.
+* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background) - Used to change the label background color.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries.DataLabelSettings>
         <chart:CircularDataLabelSettings 
             Position="Outside"
@@ -123,7 +131,8 @@ The following properties are used to customize the data label.
             Background="#1E88E5"
             Context="Percentage"/>
     </chart:PieSeries.DataLabelSettings>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -131,7 +140,8 @@ The following properties are used to customize the data label.
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . . 
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
@@ -159,7 +169,7 @@ chart.Series.Add(series);
 
 ## Template
 
-The appearance of the data label can be customized using [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) as in the below code example:
+The appearance of the data label can be customized using the [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property of [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) as in the following code example:
 
 {% tabs %}
 
@@ -204,10 +214,12 @@ The appearance of the data label can be customized using [ContentTemplate](https
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
+// The 'labelTemplate' resource is defined in XAML Resources and referenced here.
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Position = CircularSeriesLabelPosition.Inside,
@@ -215,7 +227,7 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     ContentTemplate = grid.Resources["labelTemplate"] as DataTemplate,
 };
 
-. . .
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -228,22 +240,23 @@ N> The binding context for the DataLabelSettings `ContentTemplate` is [Context](
 
 ## Position
 
-[SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) providing additional customization option to position the data label smartly based on series types using [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_Position) property.
+The [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) provides an additional customization option to position the data label smartly based on series types using the [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_Position) property.
 
 The following are the values for this property:
 
-[Inside](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_Inside) - Data labels will be  placed inside over the CircularSeries.
+[Inside](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_Inside) - Data labels will be placed inside the CircularSeries.
 
-[Outside](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_Outside) - Data labels will be  placed just outside over the CircularSeries.
+[Outside](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_Outside) - Data labels will be placed just outside the CircularSeries.
 
-[OutsideExtended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_OutsideExtended) - Data labels will be placed outside over the CircularSeries at a certain distance.
+[OutsideExtended](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html#Syncfusion_UI_Xaml_Charts_CircularSeriesLabelPosition_OutsideExtended) - Data labels will be placed outside the CircularSeries at a certain distance.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings 
@@ -252,7 +265,8 @@ The following are the values for this property:
                 Context="Percentage"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -260,7 +274,8 @@ The following are the values for this property:
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
@@ -281,14 +296,15 @@ chart.Series.Add(series);
 
 ## Rotation
 
-[Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to define the angle at which the label should be rotated. The following code demonstrates the label rotating angle.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings 
@@ -297,7 +313,8 @@ chart.Series.Add(series);
                 Rotation="335"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -305,7 +322,8 @@ chart.Series.Add(series);
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
@@ -326,13 +344,13 @@ chart.Series.Add(series);
 
 ## Connector Line
 
-Connector line is used to connect label and data point using a line. [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) is used to enable the connector line in the circular chart. 
+The connector line is used to connect the label and data point using a line. The [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) is used to enable the connector line in the circular chart. 
 
-The connector line can be customized using the below properties.
+The connector line can be customized using the following properties.
 
-* [ConnectorHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorHeight) - used to set height for connector line.
-* [ConnectorLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorLineStyle) - used to customize the style of line.
-* [ConnectorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_ConnectorType) - used to connector line type.
+* [ConnectorHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorHeight) - Used to set the height for the connector line.
+* [ConnectorLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorLineStyle) - Used to customize the style of the line.
+* [ConnectorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_ConnectorType) - Used to set the connector line type.
 
 {% tabs %}
 
@@ -346,7 +364,8 @@ The connector line can be customized using the below properties.
         </Style>
     </Grid.Resources>
     <chart:SfCircularChart>
-        . . .
+
+        <!-- Configure additional chart elements -->
         <chart:PieSeries ShowDataLabels="True">
             <chart:PieSeries.DataLabelSettings>
                 <chart:CircularDataLabelSettings
@@ -366,10 +385,12 @@ The connector line can be customized using the below properties.
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
+// The 'lineStyle' resource is defined in XAML Resources and referenced here.
 series.DataLabelSettings = new CircularDataLabelSettings()
 {
     Context = LabelContext.Percentage,
@@ -379,7 +400,7 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     ConnectorLineStyle = grid.Resources["lineStyle"] as Style,
 };
 
-. . .
+// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -390,14 +411,15 @@ chart.Series.Add(series);
 
 ### Connector Line Type
 
-[ConnectorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_ConnectorType) property in [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) is used to specify the connector line type such as [Line](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line) or [Bezier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier) or [StraightLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_StraightLine).
+The [ConnectorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_ConnectorType) property in [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) is used to specify the connector line type such as [Line](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line), [Bezier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier), or [StraightLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_StraightLine).
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings
@@ -445,7 +467,8 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight xaml %}
 
 <chart:SfCircularChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:PieSeries ShowDataLabels="True">
         <chart:PieSeries.DataLabelSettings>
             <chart:CircularDataLabelSettings
@@ -462,7 +485,8 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight c# %}
 
 SfCircularChart chart = new SfCircularChart();
-. . .
+
+// Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
 
@@ -481,3 +505,7 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_background.png)
+
+## See Also
+
+- [How to Show the "others" category values in WinUI Pie Chart data label?](https://support.syncfusion.com/kb/article/12681/how-to-show-the-others-category-values-in-winui-pie-chart-data-label)

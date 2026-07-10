@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WinUI Funnel Chart control | Syncfusion
-description: This section explains about how to apply palettes and gradient in the Syncfusion® WinUI Chart (SfFunnelChart) control
+description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in WinUI Chart (SfFunnelChart)
 
-The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradients which allows enriching the application.
+The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradients, which help enrich the application.
 
 ## Predefined PaletteBrushes
 
-Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) and it is the default brushes for the SfFunnelChart. The following screenshot shows the default appearance of the funnel chart.
+Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes), and it contains the default brushes for the SfFunnelChart. The following screenshot shows the default appearance of the funnel chart.
 
 {% tabs %}
 
@@ -39,7 +39,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -50,7 +51,7 @@ this.Content = chart;
 
 ## Custom PaletteBrushes
 
-The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property as shown in the following code example.
+The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides support to define your own brushes for the chart in the preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property, as shown in the following code example.
 
 {% tabs %}
 
@@ -74,7 +75,8 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
         XBindingPath="Category"
         YBindingPath="Value"
         PaletteBrushes="{StaticResource customBrushes}">
-        . . .
+
+        <!-- Configure additional chart elements -->
     </chart:SfFunnelChart>
 </Grid>
 
@@ -83,7 +85,8 @@ The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfFunnelChart chart = new SfFunnelChart();
-. . . 
+
+// Configure additional chart elements
 List<Brush> CustomBrushes = new List<Brush>();
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 77, 208, 225)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 38, 198, 218)));
@@ -100,7 +103,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = CustomBrushes;
-. . .            
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -111,7 +115,7 @@ this.Content = chart;
 
 ## Applying Gradient
 
-The gradient for the funnel chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property of the funnel chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
+The gradient for the funnel chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
 {% tabs %}
 
@@ -150,6 +154,7 @@ The gradient for the funnel chart can be set by using the [PaletteBrushes](https
         YBindingPath="Value"
         PaletteBrushes="{StaticResource customBrushes}">
 
+        <!-- Configure additional chart elements -->
     </chart:SfFunnelChart>
 </Grid>
 
@@ -194,10 +199,12 @@ stop2 = new GradientStop()
 
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
-. . .
+
+// Configure additional chart elements
 customBrushes.Add(gradientColor1);
 customBrushes.Add(gradientColor2);
-. . .
+
+// Configure additional chart elements
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 { 
     Path = new PropertyPath("Data")
@@ -206,7 +213,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
-. . .            
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
