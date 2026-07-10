@@ -173,7 +173,7 @@ The following code sample and screenshot illustrate how to apply the gradient br
 
 <chart:SfCartesianChart.Series>
     <chart:ColumnSeries
-        ItemsSource="{Binding Data}"  
+        ItemsSource="{Binding Data}"
         XBindingPath="Demand" 
         YBindingPath="Year2010" 
         PaletteBrushes="{StaticResource customBrushes}">
