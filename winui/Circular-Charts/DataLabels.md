@@ -55,7 +55,7 @@ chart.Series.Add(series);
 
 ## Context
 
-To customize the content of data labels, you need to define the [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) of the series and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) to define the value to be displayed as the label content.
+To customize the content of data labels, you need to define the [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) of the series and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) to define the value to be displayed as the label content.
 
 {% tabs %}
 

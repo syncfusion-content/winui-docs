@@ -151,6 +151,7 @@ The title of the chart provides quick information to the user about the data bei
 {% highlight C# %}
 
 SfFunnelChart chart = new SfFunnelChart();
+
 // Configure additional chart elements
 chart.Header = "PRODUCT SALES";
 

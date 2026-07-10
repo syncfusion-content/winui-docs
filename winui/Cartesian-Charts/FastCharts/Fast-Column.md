@@ -63,4 +63,3 @@ chart.Series.Add(series);
 ## See Also
 
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

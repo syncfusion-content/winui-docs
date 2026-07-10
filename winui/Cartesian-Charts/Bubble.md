@@ -71,7 +71,3 @@ chart.Series.Add(series);
 ![Bubble chart type in WinUI Chart](Bubble_Images/WinUI_bubble_chart.png)
 
 N> Refer to our [WinUI Bubble Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-bubble-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Bubble Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Bubble) that shows how to easily configure with built-in support for creating stunning visual effects.
-## See Also
-
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
-* [How to create a WinUI Chart using the JSON data (SfCartesianChart)](https://support.syncfusion.com/kb/article/12105)

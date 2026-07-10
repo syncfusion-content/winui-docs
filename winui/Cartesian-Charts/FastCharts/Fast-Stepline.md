@@ -118,4 +118,3 @@ chart.Series.Add(series);
 ## See Also
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

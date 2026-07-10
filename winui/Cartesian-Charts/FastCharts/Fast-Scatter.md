@@ -80,4 +80,3 @@ chart.Series.Add(series);
 ## See Also
 
 * [How to display custom data marker in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12166)
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

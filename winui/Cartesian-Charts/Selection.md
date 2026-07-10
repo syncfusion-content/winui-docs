@@ -411,5 +411,4 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 ## See Also
 
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 * [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)
