@@ -152,7 +152,7 @@ Bar pointers contain a list of bar pointer elements, where you can add any numbe
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
 
-            <!-- Configure additional axis elements -->
+            <!-- Code omitted for brevity -->
             <gauge:LinearAxis.BarPointers>
                 <gauge:BarPointer Value="90" />
             </gauge:LinearAxis.BarPointers>
@@ -168,7 +168,7 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
 
-// Configure additional axis elements
+// Code omitted for brevity
 BarPointer barPointer1 = new BarPointer();
 barPointer1.Value = 90;
 sfLinearGauge.Axis.BarPointers.Add(barPointer1);
@@ -198,7 +198,7 @@ The shape pointer is used to highlight current values by using the different typ
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
 
-            <!-- Configure additional axis elements -->
+            <!-- Code omitted for brevity -->
             <gauge:LinearAxis.MarkerPointers>
                 <gauge:LinearShapePointer Value="90"
                                     VerticalAnchor="End"
@@ -216,7 +216,7 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
 
-// Configure additional axis elements
+// Code omitted for brevity
 LinearShapePointer shapePointer1 = new LinearShapePointer();
 shapePointer1.Value = 90;
 shapePointer1.VerticalAnchor = GaugeAnchor.End;
@@ -244,7 +244,7 @@ Content pointer is used to highlight values using an image, icon, text, or any o
         <gauge:LinearAxis Maximum="140"
                           Interval="10">
 
-            <!-- Configure additional axis elements -->
+            <!-- Code omitted for brevity -->
             <gauge:LinearContentPointer Value="90"
                       VerticalAnchor="End"
                       OffsetPoint="0,-28">
@@ -264,7 +264,7 @@ SfLinearGauge sfLinearGauge = new SfLinearGauge();
 sfLinearGauge.Axis.Maximum = 140;
 sfLinearGauge.Axis.Interval = 10;
 
-// Configure additional axis elements
+// Code omitted for brevity
 LinearContentPointer linearContentPointer1 = new LinearContentPointer();
 linearContentPointer1.Value = 90;
 linearContentPointer1.VerticalAnchor = GaugeAnchor.End;

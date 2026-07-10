@@ -198,9 +198,10 @@ The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.
                 </gauge:LinearShapePointer>
 
                 <gauge:LinearContentPointer Value="70"
-                                      VerticalAnchor="End"                               OffsetPoint="0,-23"
-                                      EnableAnimation="True"
-                                      AnimationDuration="3000">
+                                    VerticalAnchor="End" 
+                                    OffsetPoint="0,-23"
+                                    EnableAnimation="True"
+                                    AnimationDuration="3000">
                     <gauge:LinearContentPointer.AnimationEasingFunction>
                         <CircleEase EasingMode="EaseIn" />
                     </gauge:LinearContentPointer.AnimationEasingFunction>
