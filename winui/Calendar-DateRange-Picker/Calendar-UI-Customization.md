@@ -9,13 +9,13 @@ documentation: ug
 
 # UI customization in WinUI Calendar DateRange Picker
 
-This section describes how to select a date range from drop-down calendar and customization options available in `Calendar DateRange Picker` control.
+This section describes how to select a date range from the drop-down calendar and the customization options available in the `Calendar DateRange Picker` control.
 
 ## Change drop-down alignment
 
 You can change the alignment of the drop-down calendar as full, center, left, right, top, or bottom edge by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is **Bottom**.
 
-N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, then `Calendar DateRange Picker` smartly shifts the drop-down calendar alignment.
+N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `Calendar DateRange Picker` smartly shifts the drop-down calendar alignment.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -36,7 +36,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Change drop-down size
 
-You can change the size of drop-down calendar in `Calendar DateRange Picker` by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownHeight` property is **Auto**.
+You can change the size of the drop-down calendar in the `Calendar DateRange Picker` by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of the `DropDownHeight` property is **Auto**.
 
 N> The drop-down size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -59,9 +59,9 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in `Calendar DateRange Picker` drop-down calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and `DropDownFlyout` control.
+You can change the UI of specific cells in the `Calendar DateRange Picker` drop-down calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and the `DropDownFlyout` control.
 
-1. Create a **EventDataConverter** class and set the special dates for specific events. 
+1. Create an **EventDataConverter** class and set the special dates for specific events. 
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -138,7 +138,7 @@ public class EventDataConverter : IValueConverter
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
             <ItemsControl.ItemTemplate>
-                <DataTemplate >
+                <DataTemplate>
                     <Ellipse MinHeight="4" MinWidth="4" Margin="2" Fill="{Binding}"/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
@@ -210,11 +210,11 @@ public class EventDataConverter : IValueConverter
 
 ![change-drop-down-item-template-in-winui-calendar-date-range-picker](Images/drop-down-calendar/change-drop-down-item-template-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI).
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade, and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 <table>
 <tr>
@@ -223,47 +223,47 @@ You can customize the colors of day names and headers of month, year, decade, an
 </tr>
 <tr>
 <td>SyncfusionCalendarNavigationButtonForeground</td>
-<td>Key to change the color of calendar navigation button foreground color.</td>
+<td>Key to change the calendar navigation button foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarWeekItemForeground</td>
-<td>Key to change the color of calendar week days name foreground color.</td>
+<td>Key to change the calendar week day name foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemForeground</td>
-<td>Key to change the color of calendar today date foreground color.</td>
+<td>Key to change the calendar today date foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemBackground</td>
-<td>Key to change the color of calendar date cells background color except today date cell.</td>
+<td>Key to change the calendar date cells background color except for the today date cell.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemBorderBrush</td>
-<td>Key to change the color of calendar date cells border brush.</td>
+<td>Key to change the calendar date cells border brush color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemBackground</td>
-<td>Key to change the color of calendar today date cell background color</td>
+<td>Key to change the calendar today date cell background color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemBorderBrush</td>
-<td>Key to change the color of calendar today date cell border brush.</td>
+<td>Key to change the calendar today date cell border brush color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemOutOfScopeForeground</td>
-<td>Key to change the color of calendar date cells foreground color which are out of scope.</td>
+<td>Key to change the calendar date cells foreground color that are out of scope.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemMargin</td>
-<td>Key to change the margin of calendar item.</td>
+<td>Key to change the margin of the calendar item.</td>
 </tr>
 <tr>
 <td>SyncfusionSubtitleAltFontSize</td>
-<td>Key to change the font size of calendar header region.</td>
+<td>Key to change the font size of the calendar header region.</td>
 </tr>
 <tr>
 <td>SyncfusionBodyFontSize</td>
-<td>Key to change the font size of calendar items region.</td>
+<td>Key to change the font size of the calendar items region.</td>
 </tr>
 </table>
 
@@ -330,4 +330,4 @@ You can customize the colors of day names and headers of month, year, decade, an
 
 ![calendar-template-customization-in-winui-calendar-date-range-picker](Images/calendar-UI-customization/calendar-template-customization-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/CustomUI).

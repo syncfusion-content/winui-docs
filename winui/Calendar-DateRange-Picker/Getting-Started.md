@@ -57,7 +57,7 @@ To add `Calendar DateRange Picker` control manually in XAML, follow these steps:
 
 ## Adding control manually in C#
 
-To add `Calendar DateRange Picker` control manually in C# , follow these steps:
+To add the `Calendar DateRange Picker` control manually in C#, follow these steps:
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Download and refer the following NuGet in the project.
@@ -82,7 +82,7 @@ namespace GettingStarted
         public MainWindow()
         {
             this.InitializeComponent();
-            // Creating an instance of the Calendar control
+            // Creating an instance of the Calendar DateRange Picker control
             SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
             this.Content = sfCalendarDateRangePicker;
         }
@@ -96,7 +96,7 @@ namespace GettingStarted
 
 ![daterange-picker-with-normal-view-winui-calendar-date-range-picker](Images/getting-started/daterange-picker-with-normal-view-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/GettingStarted).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/GettingStarted).
 
 ## Select the date range programmatically
 
@@ -113,7 +113,7 @@ sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOf
 
 ![programatic-date-range-selection-in-winui-calendar-date-range-picker](Images/getting-started/programatic-date-range-selection-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection).
 
 ## Select date range interactively
 
@@ -136,7 +136,7 @@ SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePick
 
 ## Header and description
 
-This section explains about `Header` and `Description` properties of CalendarDateRangePicker.
+This section explains the `Header` and `Description` properties of the `Calendar DateRange Picker` control.
 
 ### Header
 
@@ -164,7 +164,7 @@ dateRangePicker.Header = "Select the dates";
 
 #### Header customization
 
-By using the controls' `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
@@ -235,16 +235,16 @@ sfCalendarDateRangePicker.SelectedRange = null;
 
 ![date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker](Images/getting-started/date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection).
 
 ## Selection changed notification
 
-You will be notified when selected range is changed in `Calendar DateRange Picker` by using the [`SelectedDateRangeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedDateRangeChanged) event. The `SelectedDateRangeChanged` event contains the old and new start range values in the `RangeStartNewValue` and `RangeStartOldValue` properties, as well as the old and new end range values in the `RangeEndNewValue` and `RangeEndOldValue` properties.
+You will be notified when the selected range is changed in the `Calendar DateRange Picker` by using the [`SelectedDateRangeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedDateRangeChanged) event. The `SelectedDateRangeChanged` event contains the old and new start range values in the `RangeStartNewValue` and `RangeStartOldValue` properties, as well as the old and new end range values in the `RangeEndNewValue` and `RangeEndOldValue` properties.
 
-* `RangeStartOldValue` - Gets the date, which was previously selected as start value in range.
-* `RangeStartNewValue` - Gets the date, which is currently selected as start value in range.
-* `RangeEndOldValue` - Gets the date, which was previously selected as end value in range.
-* `RangeEndNewValue` - Gets the date, which is currently selected as end value in range.
+* `RangeStartOldValue` - Gets the date that was previously selected as the start value in the range.
+* `RangeStartNewValue` - Gets the date that is currently selected as the start value in the range.
+* `RangeEndOldValue` - Gets the date that was previously selected as the end value in the range.
+* `RangeEndNewValue` - Gets the date that is currently selected as the end value in the range.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -303,7 +303,7 @@ sfCalendarDateRangePicker.ShowDropDownButton = false;
 
 ![show-or-hide-drop-down-button-in-winui-calendar-date-range-picker](Images/drop-down-calendar/show-or-hide-drop-down-button-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown).
 
 ## Show the submit buttons
 
@@ -329,21 +329,21 @@ sfCalendarDateRangePicker.ShowSubmitButtons = true;
 
 ![show-or-hide-submit-buttons-in-winui-calendar-date-range-picker](Images/drop-down-calendar/show-or-hide-submit-buttons-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [Github](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/DropDown).
 
 ## Restrict date range selection
 
 You can restrict users from:
-* Selecting date range within a specific minimum and maximum range using [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDate) properties.
-* Selecting date range from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) property.
-* Selecting date range from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_ItemPrepared) event. 
+* Selecting a date range within a specific minimum and maximum range using the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDate) properties.
+* Selecting a date range from blocked dates using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) property.
+* Selecting a date range from a specifically blocked set of dates (example: blocking weekend dates) using the [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_ItemPrepared) event. 
 
 For further details, refer to [Restrict DateRange Selection](restrict-daterange-selection).
 
 ## Navigation in drop-down
 
-* You can navigate between month, year, decade, and century views in `Calendar DateRange Picker` control.
-* You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties.
+* You can navigate between month, year, decade, and century views in the `Calendar DateRange Picker` control.
+* You can also restrict users from navigating between specific views only (month and year selection for a credit card) using the [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties.
 
 ![view-navigation-in-winui-calendar-date-range-picker](Images/getting-started/view-navigation-in-winui-calendar-date-range-picker.gif)
 
