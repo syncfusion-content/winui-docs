@@ -16,7 +16,9 @@ This section explains the date selection in the [WinUI Calendar Date Picker](htt
 You can set or change the selected date programmatically by using the [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. By default, the `SelectedDate` property value is `null`.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
@@ -41,10 +43,16 @@ N> Dates that appear outside the minimum and maximum date range will be disabled
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
-<calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"/>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"/>
+</Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.MinDate = new DateTimeOffset(new DateTime(2021, 01, 5));
@@ -67,6 +75,8 @@ You can block particular dates from the date selection by adding respective date
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 public class ViewModel
 {       
@@ -95,18 +105,24 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 8" %}
 
-<calendar:SfCalendarDatePicker  
-                     x:Name="sfCalendarDatePicker"
-                     BlackoutDates="{Binding BlockedDates}">
-    <calendar:SfCalendarDatePicker.DataContext>
-        <local:ViewModel/>
-    </calendar:SfCalendarDatePicker.DataContext>
-</calendar:SfCalendarDatePicker>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDatePicker
+                         x:Name="sfCalendarDatePicker"
+                         BlackoutDates="{Binding BlockedDates}">
+        <calendar:SfCalendarDatePicker.DataContext>
+            <local:ViewModel/>
+        </calendar:SfCalendarDatePicker.DataContext>
+    </calendar:SfCalendarDatePicker>
+</Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 sfCalendarDatePicker.DataContext = new ViewModel();
 sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewModel).BlockedDates;
@@ -125,13 +141,19 @@ You can prevent users from selecting any dates or days (example: all weekend day
 N> You can also change the text displayed for specific days or dates in the drop-down calendar by using the `ItemInfo.DisplayText` property.  
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
-                               CalendarItemPrepared="SfCalendarDatePicker_CalendarItemPrepared"/>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
+                                   CalendarItemPrepared="SfCalendarDatePicker_CalendarItemPrepared"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.CalendarItemPrepared += SfCalendarDatePicker_CalendarItemPrepared;
@@ -142,7 +164,9 @@ sfCalendarDatePicker.CalendarItemPrepared += SfCalendarDatePicker_CalendarItemPr
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="10" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -165,7 +189,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can also change the text displayed for specific days or dates in the `Calendar Date Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="8 9" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="10 11" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarItemPreparedEventArgs e)
 {
@@ -187,13 +213,19 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 You can highlight the today and selected date in the drop-down calendar using the [SelectionHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionHighlightMode) property to update the background and border of the dates. The default value of the `SelectionHighlightMode` property is **Outline**.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker" 
-                               SelectionHighlightMode="Filled" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
+                                   SelectionHighlightMode="Filled" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectionHighlightMode = SelectionHighlightMode.Filled;
@@ -208,14 +240,20 @@ sfCalendarDatePicker.SelectionHighlightMode = SelectionHighlightMode.Filled;
 You can customize the today and selected date cell shape in the drop-down calendar using the [SelectionShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectionShape) property to customize the shape of the date cells' border. The default value of the `SelectionShape` property is **Circle**.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<calendar:SfCalendarDatePicker 
-                     x:Name="sfCalendarDatePicker"
-                     SelectionShape="Rectangle" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDatePicker
+                         x:Name="sfCalendarDatePicker"
+                         SelectionShape="Rectangle" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectionShape = SelectionShape.Rectangle;
