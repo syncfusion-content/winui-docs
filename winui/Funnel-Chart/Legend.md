@@ -24,7 +24,6 @@ N> The x-value of data points in the funnel chart will be the legend item's `Lab
         <chart:ChartLegend/>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
  </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -67,7 +66,6 @@ The funnel chart provides support to add any `UIElement` as a title for the lege
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -121,7 +119,6 @@ The legend icon represents a symbol associated with each legend item. The appear
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -161,7 +158,6 @@ this.Content = chart;
         <chart:ChartLegend ItemMargin="10"/>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -199,7 +195,6 @@ The funnel chart provides support to enable the checkbox for each legend item to
         <chart:ChartLegend CheckBoxVisibility="Visible"/>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -237,7 +232,6 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
         <chart:ChartLegend ToggleSeriesVisibility="True"/>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -277,7 +271,6 @@ To display the legend at the right, set the [Placement](https://help.syncfusion.
         <chart:ChartLegend ItemMargin="10" Placement="Right"/>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -326,7 +319,6 @@ The legend background appearance can be customized by using the following proper
         </chart:ChartLegend>
     </chart:SfFunnelChart.Legend>
 
-<!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}

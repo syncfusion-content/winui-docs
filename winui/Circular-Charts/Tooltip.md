@@ -241,7 +241,6 @@ The circular chart provides support to customize the appearance of the tooltip b
                      TooltipTemplate="{StaticResource tooltipTemplate}"/>
         </chart:SfCircularChart.Series>
 
-        <!-- Configure additional chart elements -->
         <chart:SfCircularChart.TooltipBehavior>
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfCircularChart.TooltipBehavior>
@@ -261,7 +260,6 @@ series.EnableTooltip = true;
 // The 'tooltipTemplate' resource is defined in XAML Resources and referenced here.
 series.TooltipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate;
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

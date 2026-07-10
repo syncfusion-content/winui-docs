@@ -44,10 +44,7 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         this.InitializeComponent();
-
         SfCircularChart chart = new SfCircularChart();
-
-        // Configure additional chart elements
         this.Content = chart;
     }
 }
@@ -119,9 +116,8 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
     <chart:SfCircularChart>
         <chart:SfCircularChart.DataContext>
             <model:ChartViewModel/>
-
-            <!-- Configure additional chart elements -->
         </chart:SfCircularChart.DataContext>
+
     </chart:SfCircularChart>
 </Window>
 
@@ -186,7 +182,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html?tabs=tabid-5%2Ctabid-7%2Ctabid-1%2Ctabid-3#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the circular chart as follows.
+The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the circular chart as follows.
 
 {% tabs %} 
 
@@ -202,8 +198,6 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-
-// Configure additional chart elements
 chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
@@ -245,7 +239,7 @@ chart.Series.Add(series);
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the circular chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html?tabs=tabid-5%2Ctabid-7%2Ctabid-1%2Ctabid-3#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
+The legend provides information about the data point displayed in the circular chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
 {% tabs %} 
 
@@ -274,7 +268,7 @@ chart.Legend = new ChartLegend();
 
 ## Enable Tooltip
 
-Tooltips are used to show information about the segment when the mouse hovers over it. Enable the tooltip by setting the series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html?tabs=tabid-24%2Ctabid-22%2Ctabid-4%2Ctabid-11%2Ctabid-6%2Ctabid-18%2Ctabid-8%2Ctabid-13%2Ctabid-15%2Ctabid-17%2Ctabid-1%2Ctabid-3%2Ctabid-10%2Ctabid-20#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
+Tooltips are used to show information about the segment when the mouse hovers over it. Enable the tooltip by setting the series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 
 {% tabs %} 
 

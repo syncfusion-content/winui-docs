@@ -10,23 +10,25 @@ keywords: winui chart title, winui sfcartesianchart title, winui chart title cus
 
 # Chart Title in WinUI Chart (SfCartesianChart)
 
-[Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" Header="Chart Area Header">
- . . .           
+
+<!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.Header = "Chart Area Header";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -37,7 +39,7 @@ this.Content = chart;
 
 ## Customization
 
-Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+Chart provides support to add any `UIElement` as a title. The following code example defines a `TextBlock` as the chart header.
 
 {% tabs %}   
 
@@ -51,7 +53,7 @@ Chart provides support to add any `UIElement` as a title. The following code exa
             Margin="10" 
             CornerRadius="5">
             <TextBlock 
-                FontSize="14"		               
+                FontSize="14"		            	
                 Text="Chart Area Header"
                 Margin="5"/>
         </Border>
@@ -60,10 +62,11 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure axes, legend, and series here
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -81,7 +84,8 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -92,14 +96,15 @@ this.Content = chart;
 
 ## Alignment
 
-The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+The title text content can be aligned horizontally to the left, center, or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}   
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart x:Name="chart" HorizontalHeaderAlignment="Left">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.Header>
         <Border 
             BorderThickness="2" 
@@ -108,20 +113,21 @@ The title text content can be aligned horizontally to the left, center or right 
             CornerRadius="5">
             <TextBlock 
                 FontSize="14"
-		        Text="Chart Area Header"
-	            Margin="5"/>
+                Text="Chart Area Header"
+                Margin="5"/>
         </Border>
     </chart:SfCartesianChart.Header>
-    . . . 
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
-. . .
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -139,7 +145,7 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-. . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -147,3 +153,6 @@ this.Content = chart;
 {% endtabs %} 
 
 ![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)
+## See Also
+
+* [How to wrap the title of the WinUI (SfCartesianChart)](https://support.syncfusion.com/kb/article/12680)

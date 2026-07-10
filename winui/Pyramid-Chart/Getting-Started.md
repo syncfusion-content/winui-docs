@@ -47,7 +47,6 @@ public sealed partial class MainWindow : Window
         this.InitializeComponent();
         SfPyramidChart chart = new SfPyramidChart();
 
-        // Configure additional chart elements
         this.Content = chart;
     }
 }
@@ -174,7 +173,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 
 <chart:SfPyramidChart ShowDataLabels="True">
 
-<!-- Configure additional chart elements </chart:SfPyramidChart>
+<!-- Configure additional chart elements -->
+</chart:SfPyramidChart>
 
 {% endhighlight %}
 
