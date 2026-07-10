@@ -427,8 +427,7 @@ private void SfTreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 
 ### NodeCollapsed Event
 
-You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed
-) event and here you can get the collapsed node.
+You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed) event and here you can get the collapsed node.
 
 {% tabs %}
 {% highlight c# %}
