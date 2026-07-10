@@ -337,7 +337,6 @@ You can handle the event as follows:
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-using Syncfusion.UI.Xaml.Editors;
 
 private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {         
     Console.WriteLine("The previously selected Date: " + e.OldDateTime.ToString());
