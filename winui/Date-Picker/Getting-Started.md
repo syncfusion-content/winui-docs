@@ -339,7 +339,7 @@ You can handle the event as follows:
 
 using Syncfusion.UI.Xaml.Editors;
 
-private void SfDatePicker_DateChanged(object sender, SelectedDateTimeChangedEventArgs e) {          
+private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {         
     Console.WriteLine("The previously selected Date: " + e.OldDateTime.ToString());
     Console.WriteLine("The newly selected Date: " + e.NewDateTime.ToString());            
 }
