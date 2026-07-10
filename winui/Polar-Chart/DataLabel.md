@@ -33,7 +33,6 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
         XBindingPath="Product" 
         YBindingPath="SalesRate"/>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>              
 
 {% endhighlight %}
@@ -86,7 +85,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     Context = LabelContext.Percentage
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -132,7 +130,6 @@ The following properties are used to customize the data label.
         </chart:PolarAreaSeries.DataLabelSettings>
     </chart:PolarAreaSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -157,7 +154,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     FontSize = 12
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -222,7 +218,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     ContentTemplate = grid.Resources["datalabelTemplate"] as DataTemplate,
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -248,7 +243,6 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -266,7 +260,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     Format = "#.0",
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -294,7 +287,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -312,7 +304,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     Rotation = -45,
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -340,7 +331,6 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -358,7 +348,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     UseSeriesPalette = true,
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -395,7 +384,6 @@ The connector line can be customized using the following properties:
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -415,7 +403,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     ConnectorRotation = 45,
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

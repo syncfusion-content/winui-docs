@@ -46,8 +46,7 @@ public sealed partial class MainWindow : Window
         this.InitializeComponent();
 
         SfCircularChart chart = new SfCircularChart();
-
-        // Configure additional chart elements
+        
         this.Content = chart;
     }
 }
@@ -118,10 +117,9 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 
     <chart:SfCircularChart>
         <chart:SfCircularChart.DataContext>
-            <model:ChartViewModel/>
-
-            <!-- Configure additional chart elements -->
+            <model:ChartViewModel/>        
         </chart:SfCircularChart.DataContext>
+
     </chart:SfCircularChart>
 </Window>
 

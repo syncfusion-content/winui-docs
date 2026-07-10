@@ -45,7 +45,6 @@ public sealed partial class MainWindow : Window
         this.InitializeComponent();
         SfPolarChart chart = new SfPolarChart();
 
-        // Configure additional chart elements
         this.Content = chart;
     }
 }
@@ -307,7 +306,6 @@ The legend provides information about the data point displayed in the polar char
         <chart:ChartLegend/>
     </chart:SfPolarChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -319,7 +317,6 @@ SfPolarChart chart = new SfPolarChart();
 // Configure additional chart elements
 chart.Legend = new ChartLegend();
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  
@@ -339,7 +336,6 @@ N> Additionally, set a label for each series using the [Label](https://help.sync
         YBindingPath="Tree"
         Label="Tree"/>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -355,7 +351,6 @@ series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.Label = "Tree";
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  

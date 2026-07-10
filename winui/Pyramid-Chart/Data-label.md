@@ -139,7 +139,6 @@ The following properties are used to customize the data label:
             Background="#1E88E5"/>
     </chart:SfPyramidChart.DataLabelSettings>
 
-	<!-- Configure additional chart elements 
 </chart:SfPyramidChart>
 
 {% endhighlight %}

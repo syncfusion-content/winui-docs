@@ -93,7 +93,6 @@ CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 series.PaletteBrushes = CustomBrushes;
 
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -177,7 +176,6 @@ customBrushes.Add(gradientColor1);
 
 series.PaletteBrushes = customBrushes;
 
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}

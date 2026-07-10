@@ -78,7 +78,6 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -144,7 +143,6 @@ TextBlock textBlock = new TextBlock()
 border.Child = textBlock;
 chart.Header = border;
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

@@ -26,7 +26,6 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
         <chart:NumericalAxis LabelRotation="30"/>
     </chart:SfPolarChart.SecondaryAxis>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -42,7 +41,6 @@ chart.SecondaryAxis = new NumericalAxis()
     LabelRotation = 30,
 }
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -127,8 +125,7 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
         <chart:SfPolarChart.SecondaryAxis>
             <chart:NumericalAxis/>
         </chart:SfPolarChart.SecondaryAxis>
-
-        <!-- Configure additional chart elements -->
+        
     </chart:SfPolarChart>
 </Grid>
 

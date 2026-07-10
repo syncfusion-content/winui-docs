@@ -35,7 +35,6 @@ To render an area series in the polar chart, create an instance of the [PolarAre
             YBindingPath="Flower" Label="Flower"/>
     </chart:SfPolarChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -60,12 +59,10 @@ series3.XBindingPath = "Direction";
 series3.YBindingPath = "Flower";
 series3.ItemsSource = viewModel.PlantDetails;
 
-// Configure additional chart elements
 chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -90,7 +87,6 @@ The [GridLineType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
             YBindingPath="Tree"/>
     </chart:SfPolarChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -108,7 +104,6 @@ series.ItemsSource = viewModel.PlantDetails;
 
 chart.Series.Add(series);
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -134,7 +129,6 @@ chart.Series.Add(series);
             IsClosed="False"/>
     </chart:SfPolarChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -151,7 +145,6 @@ series.YBindingPath = "Tree";
 series.ItemsSource = viewModel.PlantDetails;
 series.IsClosed= false;
 
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}

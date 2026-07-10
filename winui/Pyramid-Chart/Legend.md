@@ -24,7 +24,6 @@ The following code example shows how to enable legend in the chart.
         <chart:ChartLegend/>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -69,7 +68,6 @@ The pyramid chart provides support to add any `UIElement` as a title for the leg
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -123,7 +121,6 @@ The legend icon represents a symbol associated with each legend item. The appear
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -163,7 +160,6 @@ The [ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.
         <chart:ChartLegend ItemMargin="10"/>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -201,7 +197,6 @@ The pyramid chart provides support to enable the checkbox for each legend item t
         <chart:ChartLegend CheckBoxVisibility="Visible"/>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -239,7 +234,6 @@ By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Sy
         <chart:ChartLegend ToggleSeriesVisibility="True"/>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -284,7 +278,6 @@ By default, the chart legend is docked at the top of the chart.
         <chart:ChartLegend ItemMargin="10" Placement="Left"/>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -333,7 +326,6 @@ The legend background appearance can be customized by using the following proper
         </chart:ChartLegend>
     </chart:SfPyramidChart.Legend>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}

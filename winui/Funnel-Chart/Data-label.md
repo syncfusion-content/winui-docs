@@ -73,8 +73,7 @@ To customize the content of data labels, define the [DataLabelSettings](https://
     <chart:SfFunnelChart.DataLabelSettings>
         <chart:FunnelDataLabelSettings Context="Percentage"/>
     </chart:SfFunnelChart.DataLabelSettings>
-
-    <!-- Configure additional chart elements -->
+    
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -135,8 +134,7 @@ The following properties are used to customize the data label:
             FontStyle="Italic" 
             Background="#1E88E5"/>
     </chart:SfFunnelChart.DataLabelSettings>
-
-    <!-- Configure additional chart elements -->
+    
 </chart:SfFunnelChart>
 
 {% endhighlight %}

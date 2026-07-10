@@ -95,7 +95,6 @@ chart.SecondaryAxis = new NumericalAxis()
     LabelStyle = style
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -153,7 +152,7 @@ chart.SecondaryAxis = new NumericalAxis()
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
 
-// Configure additional chart elements
+
 {% endhighlight %}
 
 {% endtabs %}
