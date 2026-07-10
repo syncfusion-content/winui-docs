@@ -18,7 +18,7 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 ## Creating an application with WinUI Calendar Date Picker
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add reference to [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet. 
+2. Add reference to the [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML or C# code.
 4. Initialize the `SfCalendarDatePicker` control.
 
@@ -74,12 +74,12 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select the date programmatically
 
-You can set or change the selected date programmatically by using the [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. If no value is assigned to the `SelectedDate` property, `Calendar Date Picker` will automatically assign the current system date as the `SelectedDate`.
+You can set or change the selected date programmatically by using the [SelectedDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDate) property. If no value is assigned to the `SelectedDate` property, the `Calendar Date Picker` will automatically assign the current system date as the `SelectedDate`.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
-SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
 
 {% endhighlight %}
@@ -91,7 +91,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select date interactively
 
-You can change the selected date interactively by entering the date value using keyboard or selecting from the drop-down calendar menu. You can also get the selected date from the `SelectedDate` property.
+You can change the selected date interactively by entering the date value using the keyboard or by selecting from the drop-down calendar menu. You can also get the selected date from the `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
@@ -101,7 +101,7 @@ You can change the selected date interactively by entering the date value using 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 
 {% endhighlight %}
 {% endtabs %}
@@ -112,7 +112,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting null value
 
-If you want to set null value for the `Calendar Date Picker`, set the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_AllowNull) property as `true` and set `SelectedDate` property as `null`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
+If you want to set a null value for the `Calendar Date Picker`, set the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_AllowNull) property as `true` and set the `SelectedDate` property as `null`. If the `AllowNull` property is `false`, then the current system date is updated in the `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
@@ -125,7 +125,7 @@ If you want to set null value for the `Calendar Date Picker`, set the [AllowNull
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
-SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.SelectedDate = null;
 sfCalendarDatePicker.AllowNull = true;
 
@@ -137,9 +137,9 @@ sfCalendarDatePicker.AllowNull = true;
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection).
 
 ## Header and description
-This section explains about `header` and `description` properties of CalendarDatePicker.
+This section explains the `Header` and `Description` properties of the CalendarDatePicker.
 #### Header
-The `Header` property is used to display the title for the `CalendarDatePicker` Control.
+The `Header` property is used to display the title for the `CalendarDatePicker` control.
      
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
@@ -161,7 +161,7 @@ calendarDatePicker.Header = "Enter your date of birth";
 ![date-picker-with-header-description-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-header-description-in-winui-calendar-date-picker.png)
 
 #### Header customization
-By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
@@ -192,14 +192,14 @@ The `Description` support is used to display the content beneath the control as 
                               Header="Enter your date of birth" 
                               Width="300" 
                               Height="80" 
-                              Description="Candidate should born between 1990 to 2010." 
+                              Description="Candidate should be born between 1990 and 2010." 
                               />
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker calendarDatePicker = new SfCalendarDatePicker();
-calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
+calendarDatePicker.Description = "Candidate should be born between 1990 and 2010.";
 
 
 {% endhighlight %}
@@ -210,7 +210,7 @@ calendarDatePicker.Description = "Candidate should born between 1990 to 2010.";
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_PlaceholderText) property. This will be displayed only when the `Calendar Date Picker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.
+You can prompt the user with some information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_PlaceholderText) property. This will be displayed only when the `Calendar Date Picker` contains the `SelectedDate` property as `null` and the `AllowNull` property as `true`. If the `AllowNull` property is `false`, then the current system date is updated in the `SelectedDate` property and displayed instead of the `PlaceholderText`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
@@ -224,7 +224,7 @@ You can prompt the user with some information by using the [PlaceholderText](htt
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
-SfCalendarDatePicker sfCalendarDatePicker= new SfCalendarDatePicker();
+SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
 sfCalendarDatePicker.PlaceholderText = "Select the Date";
 sfCalendarDatePicker.SelectedDate = null;
 sfCalendarDatePicker.AllowNull = true;
@@ -238,10 +238,10 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Selection changed notification
 
-You will be notified when selected date is changed in `Calendar Date Picker` by using the [SelectedDateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [OldDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_OldDate) and [NewDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_NewDate) properties.
+You will be notified when the selected date is changed in the `Calendar Date Picker` by using the [SelectedDateChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_SelectedDateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [OldDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_OldDate) and [NewDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SelectedDateChangedEventArgs.html#Syncfusion_UI_Xaml_Calendar_SelectedDateChangedEventArgs_NewDate) properties.
 
-* `OldDate` - Gets a date, which is previously selected.
-* `NewDate` - Gets a date, which is currently selected.
+* `OldDate` - Gets the date that was previously selected.
+* `NewDate` - Gets the date that is currently selected.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -275,9 +275,9 @@ private void SfCalendarDatePicker_SelectedDateChanged(object sender, SelectedDat
 
 ## Edit date using free form editing
 
-Since, the default value of `EditMode` property is **Mask**, each input numbers entered in editor are automatically validated with the `DisplayDateFormat`'s formats and the proper value is assigned in current field. Then, focus will move to next input field of the date format.
+Since the default value of the `EditMode` property is **Mask**, each input number entered in the editor is automatically validated with the `DisplayDateFormat`'s formats and the proper value is assigned to the current field. Then, the focus will move to the next input field of the date format.
 
-If you want to perform the validation after the user completely entered their date inputs, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as **Normal**. Then, the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or lost focus. If the entered value does not suit the `DisplayDateFormat` property, the previously selected date value is set to the `SelectedDate` property.
+If you want to perform the validation after the user has completely entered their date inputs, set the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_EditMode) property value as **Normal**. Then, the entered date value is validated with the `DisplayDateFormat` property value by pressing the `Enter` key or when focus is lost. If the entered value does not suit the `DisplayDateFormat` property, the previously selected date value is set to the `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -303,11 +303,11 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 The `SelectedDateChanging` event will be triggered as soon as a date is selected but before the `SelectedDate` property is updated. If the change is considered invalid, it can be canceled. The `SelectedDateChanging` event contains the following properties:
 
-* `OldDate` - Gets a date, which is previously selected.
-* `NewDate` - Gets a date, which is currently selected.
+* `OldDate` - Gets the date that was previously selected.
+* `NewDate` - Gets the date that is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected date value update.
 
-Users are restricted to select a blackout date from a drop-down menu, but you can provide text input by the editor. Because selecting a blackout date leads to crash, you can cancel the change using the `SelectedDateChanging` event.
+Users are restricted from selecting a blackout date from the drop-down menu, but you can provide text input through the editor. Because selecting a blackout date leads to a crash, you can cancel the change using the `SelectedDateChanging` event.
 
 N> `SelectedDateChanging` event is called before the `SelectedDateChanged` event, when a date is selected.
 
@@ -372,9 +372,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Show submit button
 
-If you want to select the date from drop-down calendar only by clicking the **Ok** button, use the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as **true**. The default value of `ShowSubmitButtons` property is **false**.
+If you want to select the date from the drop-down calendar only by clicking the **Ok** button, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as **true**. The default value of the `ShowSubmitButtons` property is **false**.
 
-N> When the submit buttons are hidden, `SelectedDate` property will be updated as soon you choose start and end date from the drop-down.
+N> When the submit buttons are visible, the `SelectedDate` property will be updated only after choosing the start and end date from the drop-down and clicking the **Ok** button.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -399,17 +399,17 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Restrict selection
 
 You can restrict users from:
-* Selecting a date within a specific minimum and maximum range using [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties.
-* Selecting a date from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) property.
-* Selecting a date from specifically blocked set of dates (example : blocking weekend dates) using [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event. 
+* Selecting a date within a specific minimum and maximum range using the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties.
+* Selecting a date from blocked dates using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) property.
+* Selecting a date from a specifically blocked set of dates (example: blocking weekend dates) using the [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event. 
 
-For further details, refer [Date Selection and Restriction](date-selection-and-restriction).
+For further details, refer to [Date Selection and Restriction](date-selection-and-restriction).
 
 ## Navigation between views
 
-* You can navigate between month, year, decade, and century views in `Calendar Date Picker` control.
-* You can also restrict the users to navigate between specific views only (month and year selection for credit card) using [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
+* You can navigate between month, year, decade, and century views in the `Calendar Date Picker` control.
+* You can also restrict users from navigating between specific views only (month and year selection for credit card) using the [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
 
 ![view-navigation-in-winui-calendar-date-range-picker](Getting-Started_images/view-navigation-in-winui-calendar-date-range-picker.gif)
 
-For further details, refer [Navigation](navigation).
+For further details, refer to [Navigation](navigation).

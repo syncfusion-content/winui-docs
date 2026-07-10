@@ -1,15 +1,15 @@
 ---
 layout: post
 title: UI Customization in WinUI Calendar Date Picker control | Syncfusion
-description: Learn here all about how to customize drop-down calendar in Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control and more.
+description: Learn here all about how to customize the drop-down calendar in Syncfusion WinUI Calendar Date Picker (SfCalendarDatePicker) control and more.
 platform: winui
-control:  SfCalendarDatePicker
+control: SfCalendarDatePicker
 documentation: ug
 ---
 
 # UI customization in WinUI Calendar Date Picker (SfCalendarDatePicker)
 
-This section describes how to select a date from drop-down calendar and the customization options in the [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
+This section describes how to select a date from the drop-down calendar and the customization options in the [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control.
 
 ## Hide clear button in textbox
 
@@ -87,9 +87,9 @@ sfCalendarDatePicker.DropDownHeight = 500;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
 
-## Hide days that is out of scope
+## Hide days that are out of scope
 
-You can hide the days that are out of scope of the current view in the drop-down calendar by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_OutOfScopeVisibility) property value as **Hidden**. The default value of `OutOfScopeVisibility` property is set to **Enabled**.
+You can hide the days that are out of scope of the current view in the drop-down calendar by setting the [OutOfScopeVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_OutOfScopeVisibility) property value as **Hidden**. The default value of the `OutOfScopeVisibility` property is set to **Enabled**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -268,7 +268,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade, and century by changing the theme keys values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 <table>
 <tr>
@@ -277,27 +277,27 @@ You can customize the colors of day names and headers of month, year, decade, an
 </tr>
 <tr>
 <td>SyncfusionCalendarNavigationButtonForeground</td>
-<td>Key to change the color of calendar navigation button foreground color.</td>
+<td>Key to change the calendar navigation button foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarWeekItemForeground</td>
-<td>Key to change the color of calendar week days name foreground color.</td>
+<td>Key to change the calendar week days name foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemForeground</td>
-<td>Key to change the color of calendar today date foreground color.</td>
+<td>Key to change the calendar today date foreground color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemBackground</td>
-<td>Key to change the color of calendar date cells background color except today date cell.</td>
+<td>Key to change the calendar date cells background color except the today date cell.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemBorderBrush</td>
-<td>Key to change the color of calendar date cells border brush.</td>
+<td>Key to change the calendar date cells border brush.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemBackground</td>
-<td>Key to change the color of calendar today date cell background color</td>
+<td>Key to change the calendar today date cell background color.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarTodayItemBorderBrush</td>
@@ -305,19 +305,19 @@ You can customize the colors of day names and headers of month, year, decade, an
 </tr>
 <tr>
 <td>SyncfusionCalendarItemOutOfScopeForeground</td>
-<td>Key to change the color of calendar date cells foreground color which are out of scope.</td>
+<td>Key to change the calendar date cells foreground color which are out of scope.</td>
 </tr>
 <tr>
 <td>SyncfusionCalendarItemMargin</td>
-<td>Key to change the margin of calendar item.</td>
+<td>Key to change the margin of the calendar item.</td>
 </tr>
 <tr>
 <td>SyncfusionSubtitleAltFontSize</td>
-<td>Key to change the font size of calendar header region.</td>
+<td>Key to change the font size of the calendar header region.</td>
 </tr>
 <tr>
 <td>SyncfusionBodyFontSize</td>
-<td>Key to change the font size of calendar items region.</td>
+<td>Key to change the font size of the calendar items region.</td>
 </tr>
 </table>
 
@@ -375,7 +375,7 @@ You can customize the colors of day names and headers of month, year, decade, an
                     </ResourceDictionary>
                 </calendar:SfCalendar.Resources>
             </calendar:SfCalendar>
-        </editor:DropDownFlyout>
+            </editors:DropDownFlyout>
     </FlyoutBase.AttachedFlyout>
 </calendar:SfCalendarDatePicker>
 
