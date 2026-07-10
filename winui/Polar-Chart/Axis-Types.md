@@ -81,6 +81,7 @@ SfPolarChart chart = new SfPolarChart();
 chart.PrimaryAxis = new NumericalAxis();
 chart.SecondaryAxis = new NumericalAxis();
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -122,6 +123,7 @@ chart.SecondaryAxis = new NumericalAxis()
     Interval = 20,
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

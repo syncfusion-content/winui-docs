@@ -103,7 +103,6 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = CustomBrushes;
-
 this.Content = chart;
 
 {% endhighlight %}
@@ -211,7 +210,6 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
-
 this.Content = chart;
 
 {% endhighlight %}

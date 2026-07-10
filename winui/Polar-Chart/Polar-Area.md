@@ -63,6 +63,7 @@ chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -104,6 +105,7 @@ series.ItemsSource = viewModel.PlantDetails;
 
 chart.Series.Add(series);
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

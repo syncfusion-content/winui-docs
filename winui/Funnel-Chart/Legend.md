@@ -19,12 +19,12 @@ N> The x-value of data points in the funnel chart will be the legend item's `Lab
 
 <chart:SfFunnelChart x:Name="chart">
 
-    <!-- Configure additional chart elements -->
+<!-- Configure additional chart elements -->
     <chart:SfFunnelChart.Legend>
         <chart:ChartLegend/>
     </chart:SfFunnelChart.Legend>
 
-</chart:SfFunnelChart>
+ </chart:SfFunnelChart>
 
 {% endhighlight %}
 

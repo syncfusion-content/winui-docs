@@ -317,6 +317,7 @@ SfPolarChart chart = new SfPolarChart();
 // Configure additional chart elements
 chart.Legend = new ChartLegend();
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  
@@ -351,6 +352,7 @@ series.XBindingPath = "Direction";
 series.YBindingPath = "Tree";
 series.Label = "Tree";
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}  

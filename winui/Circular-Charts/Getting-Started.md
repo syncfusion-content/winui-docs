@@ -44,9 +44,7 @@ public sealed partial class MainWindow : Window
     public MainWindow()
     {
         this.InitializeComponent();
-
         SfCircularChart chart = new SfCircularChart();
-        
         this.Content = chart;
     }
 }
@@ -117,7 +115,7 @@ N> Add namespace of `ViewModel` class to your XAML Page if you prefer to set `Da
 
     <chart:SfCircularChart>
         <chart:SfCircularChart.DataContext>
-            <model:ChartViewModel/>        
+            <model:ChartViewModel/>
         </chart:SfCircularChart.DataContext>
 
     </chart:SfCircularChart>
@@ -200,8 +198,6 @@ The header of the chart acts as the title to provide quick information to the us
 {% highlight C# %}
 
 SfCircularChart chart = new SfCircularChart();
-
-// Configure additional chart elements
 chart.Header = "PRODUCT SALES";
 
 {% endhighlight %}
