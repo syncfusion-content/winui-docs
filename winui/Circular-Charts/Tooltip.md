@@ -122,10 +122,12 @@ Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
 
+// Configure additional chart elements
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 
 tooltip.Style = style;
 
+// Configure additional chart elements
 chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
@@ -171,9 +173,12 @@ labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
 
+// Configure additional chart elements
+
 ChartTooltipBehavior tooltip = new ChartTooltipBehavior();
 tooltip.LabelStyle = labelStyle;
 
+// Configure additional chart elements
 chart.TooltipBehavior = tooltip;
 
 {% endhighlight %}
@@ -235,7 +240,7 @@ The circular chart provides support to customize the appearance of the tooltip b
                      YBindingPath="SalesRate"
                      TooltipTemplate="{StaticResource tooltipTemplate}"/>
         </chart:SfCircularChart.Series>
-        
+
         <chart:SfCircularChart.TooltipBehavior>
             <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
         </chart:SfCircularChart.TooltipBehavior>

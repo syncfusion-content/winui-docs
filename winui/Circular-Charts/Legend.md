@@ -107,7 +107,7 @@ The legend icon represents a symbol associated with each legend item. The [Legen
             YBindingPath="SalesRate">
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
-    
+
 </chart:SfCircularChart>
 
 {% endhighlight %}

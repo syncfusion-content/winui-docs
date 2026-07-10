@@ -41,6 +41,7 @@ chart.SecondaryAxis = new NumericalAxis()
     LabelRotation = 30,
 }
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

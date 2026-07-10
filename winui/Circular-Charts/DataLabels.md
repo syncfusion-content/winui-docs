@@ -32,7 +32,6 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
         ItemsSource="{Binding Data}"  
         XBindingPath="Product" 
         YBindingPath="SalesRate"/>
-    
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -44,7 +43,6 @@ SfCircularChart chart = new SfCircularChart();
 // Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -69,7 +67,7 @@ To customize the content of data labels, you need to define the [DataLabelSettin
             <chart:CircularDataLabelSettings Context="Percentage"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-    
+
 </chart:SfCircularChart>
 {% endhighlight %}
 
@@ -127,7 +125,7 @@ The following properties are used to customize the data label.
             Background="#1E88E5"
             Context="Percentage"/>
     </chart:PieSeries.DataLabelSettings>
-    
+
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -260,7 +258,7 @@ The following are the values for this property:
                 Context="Percentage"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-    
+
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -307,7 +305,7 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
                 Rotation="335"/>
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
-    
+
 </chart:SfCircularChart>
 
 {% endhighlight %}

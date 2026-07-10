@@ -98,7 +98,7 @@ The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
     </Grid.Resources>
     <chart:SfPolarChart x:Name="chart" PaletteBrushes="{StaticResource customBrushes}">
 
-    <!-- Configure additional chart elements -->
+        <!-- Configure additional chart elements -->
     </chart:SfPolarChart>
 </Grid>
 
@@ -204,6 +204,7 @@ customBrushes.Add(gradientColor2);
 
 chart.PaletteBrushes = customBrushes;
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -259,6 +260,7 @@ gradientColor.GradientStops.Add(stop2);
 PolarAreaSeries series = new PolarAreaSeries();
 series.Fill = gradientColor;
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

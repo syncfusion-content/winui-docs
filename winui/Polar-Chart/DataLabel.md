@@ -154,6 +154,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     FontSize = 12
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -218,6 +219,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     ContentTemplate = grid.Resources["datalabelTemplate"] as DataTemplate,
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -260,6 +262,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     Format = "#.0",
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -304,6 +307,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     Rotation = -45,
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -348,6 +352,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     UseSeriesPalette = true,
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -403,6 +408,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     ConnectorRotation = 45,
 };
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
