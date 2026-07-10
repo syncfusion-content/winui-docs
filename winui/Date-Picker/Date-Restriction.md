@@ -13,7 +13,7 @@ This section explains how to restrict the date selection in WinUI [Date Picker](
 
 ## Limit the available dates
 
-You can restrict users from selecting a date within a particular range by specifying the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in the `Date Picker` control. The default value of the `MinDate` property is `1/1/1920` and the `MaxDate` property is `12/31/2120`.
+You can restrict users from selecting a date within a particular range by specifying the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in the `Date Picker` control. The default value of the `MinDate` property is `1/1/1921` and the `MaxDate` property is `12/31/2121`.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 2 3" %}
