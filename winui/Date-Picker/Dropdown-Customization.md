@@ -102,7 +102,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Open dropdown programmatically
 
-You can open or close the drop-down date spinner programmatically by setting the [IsOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property value to **true** or **false**. The default value of the `IsOpen` property is **false**.
+You can open or close the drop-down date spinner programmatically by setting the [IsOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_IsOpen) property value to **true** or **false**. The default value of the `IsOpen` property is **false**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -150,7 +150,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the number of dates to be shown in the dropdown
 
-You can change the number of dates to be shown in the drop-down date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of the `VisibleItemsCount` property is `-1`.
+You can change the number of dates to be shown in the drop-down date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of the `VisibleItemsCount` property is `7`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}

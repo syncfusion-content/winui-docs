@@ -72,11 +72,11 @@ using Syncfusion.UI.Xaml.Editors;
 namespace GettingStarted
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
             // Creating an instance of the Date Picker control
@@ -295,7 +295,7 @@ You can handle the event as follows:
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-private void SfDatePicker_DateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
+private void SfDatePicker_DateChanged(object sender, SelectedDateTimeChangedEventArgs e) {          
     Console.WriteLine("The previously selected Date: " + e.OldDateTime.ToString());
     Console.WriteLine("The newly selected Date: " + e.NewDateTime.ToString());            
 }

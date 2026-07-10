@@ -47,7 +47,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the cell's style in dropdown spinner
 
-You can customize all the drop-down date spinner cells by using the `ItemContainerStyle` property. The `DataContext` of the `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
+You can customize all the drop-down date spinner cells by using the `ItemContainerStyle` property. The `ItemContainerStyle` is applied to the [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html) generated for each item, and the `DataContext` of the `ItemTemplate` is [`DateTimeFieldItemInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemInfo.html).
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8" %}
@@ -72,7 +72,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the cell's appearance in dropdown spinner
 
-You can change the UI of specific date, month, or year cells in the drop-down spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SpinnerItem`.
+You can change the UI of specific date, month, or year cells in the drop-down spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is [`DateTimeFieldItemInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimeFieldItemInfo.html).
 
 {% tabs %}
 {% highlight C# tabtitle="DateItemTemplateSelector.cs" %}
