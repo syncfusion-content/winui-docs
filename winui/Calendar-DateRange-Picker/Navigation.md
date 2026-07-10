@@ -22,15 +22,21 @@ You can restrict navigation within a minimum and maximum view by using the [`Min
 By default, the value of the `MinDisplayMode` property is **Month** and the `MaxDisplayMode` property is **Century**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6" %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
-                                    MinDisplayMode="Month"
-                                    MaxDisplayMode="Year"
-                                    />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                        MinDisplayMode="Month"
+                                        MaxDisplayMode="Year"
+                                        />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Month;
@@ -50,15 +56,21 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 You can restrict users from selecting date ranges within specific views (example: choosing the manufactured and expiry date of a product) in the `Calendar DateRange Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7" %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
-                                    FormatString="{}{0:MM/yyyy} - {1:MM/yyyy}"
-                                    MinDisplayMode="Year"
-                                    MaxDisplayMode="Decade" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                        FormatString="{}{0:MM/yyyy} - {1:MM/yyyy}"
+                                        MinDisplayMode="Year"
+                                        MaxDisplayMode="Decade" />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5 6" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.MinDisplayMode = CalendarDisplayMode.Year;

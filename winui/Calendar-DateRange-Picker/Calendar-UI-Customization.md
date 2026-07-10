@@ -18,13 +18,19 @@ You can change the alignment of the drop-down calendar as full, center, left, ri
 N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `Calendar DateRange Picker` smartly shifts the drop-down calendar alignment.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
-                                    DropDownPlacement="Right" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                        DropDownPlacement="Right" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
@@ -41,13 +47,19 @@ You can change the size of the drop-down calendar in the `Calendar DateRange Pic
 N> The drop-down size will be automatically resized based on the calendar and preset items hosted in it.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker" 
-                                    DropDownHeight="500" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"
+                                        DropDownHeight="500" />
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.DropDownHeight = 500;
@@ -65,7 +77,9 @@ You can change the UI of specific cells in the `Calendar DateRange Picker` drop-
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight C# tabtitle="EventDataConverter.cs" %}
+{% highlight C# tabtitle="EventDataConverter.cs" hl_lines="3" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 public class EventDataConverter : IValueConverter
 {
@@ -130,10 +144,14 @@ public class EventDataConverter : IValueConverter
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<Grid>
-<Grid.Resources>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <Grid>
+    <Grid.Resources>
     <local:EventDataConverter x:Key="EventDataConverterKey" />
     <DataTemplate x:Key="customTemplate">
         <ItemsControl ItemsSource="{Binding Path=Date, Converter={StaticResource EventDataConverterKey}}">
@@ -201,7 +219,8 @@ public class EventDataConverter : IValueConverter
             </editors:DropDownFlyout>
         </FlyoutBase.AttachedFlyout>
     </calendar:SfCalendarDateRangePicker>
-</Grid>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -268,62 +287,67 @@ You can customize the colors of day names and headers of month, year, decade, an
 </table>
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<calendar:SfCalendarDateRangePicker
-                        x:Name="calendarDateRangePicker"
-                        MinWidth="180"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Top">
-    <FlyoutBase.AttachedFlyout>
-        <editors:DropDownFlyout>
-            <calendar:SfCalendar SelectionMode="Range" SelectedRange="{x:Bind calendarDateRangePicker.SelectedRange, Mode=TwoWay}" >
-                <calendar:SfCalendar.Resources>
-                    <ResourceDictionary>
-                        <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
-                                                     Color="#FF248D92" />
-                        <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
-                                                     Color="#FF248D92" />
-                        <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
-                                                     Color="{ThemeResource SystemBaseHighColor}" />
-                        <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
-                                                     Color="{ThemeResource SystemListLowColor}" />
-                        <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
-                                                     Color="{ThemeResource SystemListLowColor}"/>
-                        <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
-                                                     Color="#FF9BC5ED" />
-                        <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
-                                                     Color="#FF9BC5ED" />
-                        <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
-                                                     Color="SlateGray" Opacity="0.5" />
-                        <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
-                        <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
-                        <FontFamily x:Key="SyncfusionControlThemeFontFamily">SimSun</FontFamily>
-                        <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
-                        <Style TargetType="calendar:CalendarItem">
-                            <Setter Property="CornerRadius" Value="5"/>
-                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-                            <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-                            <Setter Property="ContentTemplate">
-                                <Setter.Value>
-                                    <DataTemplate>
-                                        <Grid MinWidth="40" MinHeight="40">
-                                            <ContentControl
-                                                            HorizontalAlignment="Center"
-                                                            VerticalAlignment="Center"
-                                                            Margin="3"
-                                                            Content="{Binding DisplayText}"/>
-                                        </Grid>
-                                    </DataTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </ResourceDictionary>
-                </calendar:SfCalendar.Resources>
-            </calendar:SfCalendar>
-        </editors:DropDownFlyout>
-    </FlyoutBase.AttachedFlyout>
-</calendar:SfCalendarDateRangePicker>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <calendar:SfCalendarDateRangePicker
+                            x:Name="calendarDateRangePicker"
+                            MinWidth="180"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top">
+        <FlyoutBase.AttachedFlyout>
+            <editors:DropDownFlyout>
+                <calendar:SfCalendar SelectionMode="Range" SelectedRange="{x:Bind calendarDateRangePicker.SelectedRange, Mode=TwoWay}" >
+                    <calendar:SfCalendar.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
+                                                         Color="#FF248D92" />
+                            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                                                         Color="#FF248D92" />
+                            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
+                                                         Color="{ThemeResource SystemBaseHighColor}" />
+                            <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
+                                                         Color="{ThemeResource SystemListLowColor}" />
+                            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
+                                                         Color="{ThemeResource SystemListLowColor}"/>
+                            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
+                                                         Color="#FF9BC5ED" />
+                            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
+                                                         Color="#FF9BC5ED" />
+                            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                                                         Color="SlateGray" Opacity="0.5" />
+                            <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
+                            <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
+                            <FontFamily x:Key="SyncfusionControlThemeFontFamily">SimSun</FontFamily>
+                            <x:Double x:Key="SyncfusionSubtitleAltFontSize">16</x:Double>
+                            <Style TargetType="calendar:CalendarItem">
+                                <Setter Property="CornerRadius" Value="5"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                                <Setter Property="ContentTemplate">
+                                    <Setter.Value>
+                                        <DataTemplate>
+                                            <Grid MinWidth="40" MinHeight="40">
+                                                <ContentControl
+                                                                HorizontalAlignment="Center"
+                                                                VerticalAlignment="Center"
+                                                                Margin="3"
+                                                                Content="{Binding DisplayText}"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ResourceDictionary>
+                    </calendar:SfCalendar.Resources>
+                </calendar:SfCalendar>
+            </editors:DropDownFlyout>
+        </FlyoutBase.AttachedFlyout>
+    </calendar:SfCalendarDateRangePicker>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}

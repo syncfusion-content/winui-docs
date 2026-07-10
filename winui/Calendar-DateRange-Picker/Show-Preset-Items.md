@@ -14,7 +14,9 @@ documentation: ug
 You can show a collection of preset items in the drop-down of the `Calendar DateRange Picker` control using the [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed to the `Preset` property and set the required template in the `PresetTemplate` property.
 
 {% tabs %}
-{% highlight c# tabtitle="ViewModel.cs" %}
+{% highlight c# tabtitle="ViewModel.cs" hl_lines="3" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 //ViewModel class
 class ViewModel
@@ -37,24 +39,30 @@ class ViewModel
 Add the `Syncfusion.UI.Xaml.Calendar` namespace reference in code-behind.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 7 8 9 10 11 12" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6 10 11 12 13 14 15" %}
 
-<Grid>
-    <Grid.DataContext>
-        <local:ViewModel x:Name="viewModel" />
-    </Grid.DataContext>
-    <calendar:SfCalendarDateRangePicker  x:Name="sfCalendarDateRangePicker" Height="35" Width="200"
-                                        Preset="{x:Bind viewModel.PresetCollection, Mode=TwoWay}" >
-        <calendar:SfCalendarDateRangePicker.PresetTemplate>
-            <DataTemplate>
-                <ListBox ItemsSource="{Binding}" SelectionChanged="ListBox_SelectionChanged" />
-            </DataTemplate>
-        </calendar:SfCalendarDateRangePicker.PresetTemplate>
-    </calendar:SfCalendarDateRangePicker>
-</Grid>
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <Grid>
+        <Grid.DataContext>
+            <local:ViewModel x:Name="viewModel" />
+        </Grid.DataContext>
+        <calendar:SfCalendarDateRangePicker  x:Name="sfCalendarDateRangePicker" Height="35" Width="200"
+                                            Preset="{x:Bind viewModel.PresetCollection, Mode=TwoWay}" >
+            <calendar:SfCalendarDateRangePicker.PresetTemplate>
+                <DataTemplate>
+                    <ListBox ItemsSource="{Binding}" SelectionChanged="ListBox_SelectionChanged" />
+                </DataTemplate>
+            </calendar:SfCalendarDateRangePicker.PresetTemplate>
+        </calendar:SfCalendarDateRangePicker>
+    </Grid>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
@@ -102,7 +110,9 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 
 You can hide the calendar in the drop-down when a user selects any preset items in the drop-down other than **CustomRange** using the `ShowCalendar` property. When a user wants to select a custom range of dates, the calendar is added to the drop-down of the `Calendar DateRange Picker` control after selecting the **CustomRange** preset item.
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {

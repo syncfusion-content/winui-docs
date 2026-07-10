@@ -18,15 +18,21 @@ You can show week numbers for each week in the drop-down calendar of the [Calend
 N> You can change the value of the [WeekNumberRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_WeekNumberRule) property with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0) and you can also add any prefix or suffix characters to **#** for the `WeekNumberFormat` property.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" 
-                                    VerticalAlignment="Center"
-                                    ShowWeekNumbers="True"
-                                    />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        ShowWeekNumbers="True"
+                                        />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
@@ -47,15 +53,21 @@ You can change the rule for determining the first week of the year in the drop-d
 * **FirstFullWeek** - Indicates that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7" %}
 
-<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" 
-                                    VerticalAlignment="Center"
-                                    ShowWeekNumbers="True" 
-                                    WeekNumberRule="FirstFullWeek" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        ShowWeekNumbers="True"
+                                        WeekNumberRule="FirstFullWeek" />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
@@ -73,16 +85,22 @@ You can customize the format in which week numbers are displayed in the drop-dow
 N> You can add any prefix or suffix characters to **#** in the `WeekNumberFormat` property to apply different custom formats.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8" %}
 
-<calendar:SfCalendarDateRangePicker HorizontalAlignment="Center" 
-                                    VerticalAlignment="Center"
-                                    ShowWeekNumbers="True" 
-                                    WeekNumberRule="FirstFullWeek"
-                                    WeekNumberFormat = "W #" />
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar">
+    <calendar:SfCalendarDateRangePicker HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        ShowWeekNumbers="True"
+                                        WeekNumberRule="FirstFullWeek"
+                                        WeekNumberFormat = "W #" />
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5 6" %}
+
+using Syncfusion.UI.Xaml.Calendar;
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.ShowWeekNumbers = true;
@@ -101,11 +119,15 @@ The [Calendar DateRange Picker](https://help.syncfusion.com/cr/winui/Syncfusion.
 In the following code, a `DataTemplate` is created for both the `WeekNumberTemplate` and `WeekNameTemplate` properties in the `CalendarItemTemplateSelector` class.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
 
-<Grid>
-    <Grid.Resources>
-        <DataTemplate x:Key="WeekNameAndNumberTemplate">
+<Window
+    ...
+     xmlns:calendar="using:Syncfusion.UI.Xaml.Calendar"
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="WeekNameAndNumberTemplate">
             <Viewbox >
                 <Grid>
                     <Ellipse Width="30" 
@@ -143,7 +165,8 @@ In the following code, a `DataTemplate` is created for both the `WeekNumberTempl
             </editors:DropDownFlyout>
         </FlyoutBase.AttachedFlyout>
     </calendar:SfCalendarDateRangePicker>
-</Grid>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
