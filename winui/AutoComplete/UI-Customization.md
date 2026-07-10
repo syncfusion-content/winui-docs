@@ -1,22 +1,24 @@
 ---
 layout: post
-title: UI Customization in WinUI AutoComplete control | Syncfusion
-description: Learn here all about UI customization support in Syncfusion WinUI AutoComplete (multi-select AutoComplete) control into WinUI application and its features.
+title: UI Customization in WinUI AutoComplete (SfAutoComplete) | Syncfusion
+description: Learn about the UI customization support in the Syncfusion WinUI AutoComplete control and its features.
 platform: winui
 control: SfAutoComplete
-documentation: ug
+documentation: UG
 ---
 
 # UI Customization in WinUI AutoComplete (SfAutoComplete)
 
-This section explains different UI customization available in the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
+This section explains the different UI customization options available in the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
+
+> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
 
 ## Header for AutoComplete
 
-The `AutoComplete` control header can be changed by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_Header) or [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_HeaderTemplate) properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.
+The `AutoComplete` control header can be set or customized by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_Header) or [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_HeaderTemplate) properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete
     Header="Favourite Social Media"
@@ -37,7 +39,7 @@ The `AutoComplete` control header can be changed by using the [Header](https://h
 </editors:SfAutoComplete>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.Header = "Favourite Social Media";
 
@@ -48,10 +50,10 @@ autoComplete.Header = "Favourite Social Media";
 
 ## Description for AutoComplete
 
-The `AutoComplete` control description can be changed by using the [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_Description) property. The default value of `Description` is `null`.
+The `AutoComplete` control description can be set by using the [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_Description) property. The default value of `Description` is `null`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete
     Description="This will be added to your profile."
@@ -63,7 +65,7 @@ The `AutoComplete` control description can be changed by using the [Description]
     x:Name="autoComplete"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.Description = "This will be added to your profile.";
 autoComplete.Header = "Favourite Social Media";
@@ -89,7 +91,7 @@ You can prompt the user with any information by using the [PlaceholderText](http
     x:Name="autoComplete"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.PlaceholderText = "Select a social media";
 
@@ -100,7 +102,7 @@ autoComplete.PlaceholderText = "Select a social media";
 
 ### Change foreground of placeholder text
 
-The placeholder texts’ foreground can be changed by using the [PlaceholderForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_PlaceholderForeground) property. The default value of `PlaceholderForeground` property is `null`.
+The foreground of the placeholder text can be changed by using the [PlaceholderForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_PlaceholderForeground) property. The default value of the `PlaceholderForeground` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -115,7 +117,7 @@ The placeholder texts’ foreground can be changed by using the [PlaceholderFore
     x:Name="autoComplete"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 
@@ -131,7 +133,7 @@ The appearance of the editing textbox in `AutoComplete` control can be customize
 N> `TextBoxStyle` will only have an effect in single selection mode.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete
     SelectionMode="Single"
@@ -156,13 +158,13 @@ N> `TextBoxStyle` will only have an effect in single selection mode.
 
 ![Styling the editing textBox using TextBoxStyle.](Styling_images/winui-autocomplete-textboxstyle.png)
 
-## Customize the DropDown (suggestion) item 
+## Customize the drop-down (suggestion) item
 
-The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplate) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to customize drop-down items using templates.
+The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplate) property helps you to decorate drop-down items using custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to customize drop-down items using templates.
 
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Model.cs
 public class Employee
@@ -203,7 +205,7 @@ public class EmployeeViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete
     TextMemberPath="Name"
@@ -254,12 +256,12 @@ public class EmployeeViewModel
 
 ![Custom UI of dropdown items using ItemTemplate.](Styling_images/winui-autocomplete-itemtemplate.png)
 
-### Customize DropDown (suggestion) items based on condition
+### Customize drop-down (suggestion) items based on condition
 
 The [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemTemplateSelector) property helps you to decorate drop-down items conditionally based on their content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class EmployeeTemplateSelector : DataTemplateSelector
 {
@@ -285,7 +287,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.Resources>
@@ -371,7 +373,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 The `AutoComplete` control allows you to customize the style of the [AutoCompleteTokenItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteTokenItem.html) generated in the selection area by using the `TokenItemStyle` property. The default value of [TokenItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyle) is `null`. 
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete 
     SelectionMode="Multiple"
@@ -427,7 +429,7 @@ public class SocialMediaStyleSelector : StyleSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.Resources>
@@ -464,7 +466,7 @@ public class SocialMediaStyleSelector : StyleSelector
 The [TokenItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplate) property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control into token items using templates.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Model.cs
 public class CountryInfo
@@ -477,7 +479,7 @@ public class CountryInfo
 public class CountryViewModel
 {
     public ObservableCollection<CountryInfo> Countries { get; set; }
-    public EmployeeViewModel()
+    public CountryViewModel()
     {
         this.Countries = new ObservableCollection<CountryInfo>();
         this.Countries.Add(new CountryInfo
@@ -534,7 +536,7 @@ public class CountryViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete 
     SelectionMode="Multiple"
@@ -582,7 +584,7 @@ public class CountryViewModel
 The [TokenItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateSelector) property helps you to decorate token items conditionally based on their content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class CountryTemplateSelector : DataTemplateSelector
 {
@@ -608,7 +610,7 @@ public class CountryTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.DataContext>
@@ -687,9 +689,9 @@ public class CountryTemplateSelector : DataTemplateSelector
 
 ![Different custom UI of AutoCompleteTokenItem using TokenItemTemplateSelector](Styling_images/winui-autocomplete-tokenitemtemplateselector.png)
 
-## How to change DropDown MaxHeight
+## Change the drop-down maximum height
 
-The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_MaxDropDownHeight) property of `AutoComplete` control. The default value of `MaxDropDownHeight` property is `288`. 
+The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_MaxDropDownHeight) property of the `AutoComplete` control. The default value of the `MaxDropDownHeight` property is `288`. 
 
 N> If the `MaxDropDownHeight` is too small compared to the populated items, the scroll viewer will be automatically shown to navigate the hidden items.
 
@@ -710,7 +712,7 @@ N> If the `MaxDropDownHeight` is too small compared to the populated items, the 
 </editors:SfAutoComplete>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.MaxDropDownHeight = 530;
 
@@ -718,3 +720,10 @@ autoComplete.MaxDropDownHeight = 530;
 {% endtabs %}
 
 ![WinUI AutoComplete maximum drop down height changed](Styling_images/winui-autocomplete-maxdropdownheight.png)
+
+## Troubleshooting
+
+* **Templates are not applied**: Verify that `ItemTemplate`, `TokenItemTemplate`, or `TokenItemStyle` is set to a valid `DataTemplate` or `Style`, and that the `DataContext` provides the expected properties.
+* **Token image does not load**: Confirm that the image `Uri` uses the `ms-appx:///` scheme and that the file is included in the project with `Build Action` set to `Content`.
+* **Style is overridden by theme resources**: Apply the style at the control level using `TokenItemStyle` or `TextBoxStyle` so that it takes precedence over the default theme.
+* **`TextBoxStyle` has no effect**: `TextBoxStyle` only applies in single selection mode.

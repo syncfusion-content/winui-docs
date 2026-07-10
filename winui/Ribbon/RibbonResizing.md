@@ -9,13 +9,13 @@ documentation: ug
 
 # Ribbon Resizing in WinUI Ribbon Control
 
-The Syncfusion<sup>&reg;</sup> WinUI SfRibbon supports expanding/collapsing the ribbon elements to the available space while resizing the control. It performs expand operation while the control size is increased and performs collapse operation while the control size decreased. It allows resizing ribbon elements for both normal and simplified layouts. By default, the ribbon elements are resized based on group size. Also, we have an option to resize the ribbon elements in the custom order.
+The Syncfusion<sup>&reg;</sup> WinUI SfRibbon supports expanding and collapsing the ribbon elements to the available space while resizing the control. It performs an expand operation when the control size increases and a collapse operation when the control size decreases. It allows resizing ribbon elements for both normal and simplified layouts. By default, the ribbon elements are resized based on group size. There is also an option to resize the ribbon elements in a custom order.
 
-We can specify the ribbon elements size using `AllowedSizeModes` property. It is a flagged enum to arrange the ribbon elements in varied sizes depending on available space. It has values Small, Normal, and Large to specify the size of the ribbon elements. As it is a flagged enum, we can give the combination of values to the AllowedSizeModes property. The default value is `Small, Normal, Large`.
+You can specify the ribbon elements' size using the `AllowedSizeModes` property. It is a flags enum used to arrange the ribbon elements in varied sizes depending on the available space. It has the values `Small`, `Normal`, and `Large` to specify the size of the ribbon elements. As it is a flags enum, you can give a combination of values to the `AllowedSizeModes` property. The default value is `Small, Normal, Large`.
 
 ## Default Resizing
 
-It resizes the ribbon elements based on the ribbon group size. It takes smallest group for expanding ribbon elements and takes largest group for collapsing ribbon elements.
+This mode resizes the ribbon elements based on the ribbon group size. It takes the smallest group for expanding ribbon elements and the largest group for collapsing ribbon elements.
 
 {% tabs %}
 {% highlight xaml %}
@@ -33,7 +33,7 @@ It resizes the ribbon elements based on the ribbon group size. It takes smallest
                 <ribbon:RibbonButton 
                     Content="Copy"
                     Icon="Copy"/>
-                // Add more elements here...
+                <!-- Add more elements here... -->
             </ribbon:RibbonGroup>
             <ribbon:RibbonGroup Header="File">
                 <ribbon:RibbonDropDownButton 
@@ -44,11 +44,11 @@ It resizes the ribbon elements based on the ribbon group size. It takes smallest
                 <ribbon:RibbonButton 
                     Content="Share"
                     Icon="Share"/>
-                // Add more elements here...
+                <!-- Add more elements here... -->
             </ribbon:RibbonGroup>
-            // Add more groups here...
+            <!-- Add more groups here... -->
         </ribbon:RibbonTab>
-        // Add more tabs here...
+        <!-- Add more tabs here... -->
     </ribbon:SfRibbon.Tabs>
 </ribbon:SfRibbon>
 {% endhighlight %}
@@ -58,7 +58,7 @@ It resizes the ribbon elements based on the ribbon group size. It takes smallest
 
 ## Custom resizing
 
-It resizes the ribbon elements based on the ribbon group priority. It takes the highest priority group for expanding ribbon elements and collapses the elements in reverse order. We can specify the resizing order by using the `Priority` property in RibbonGroup.
+This mode resizes the ribbon elements based on the ribbon group priority. It takes the highest-priority group for expanding ribbon elements and collapses the elements in reverse order of priority. You can specify the resizing order by using the `Priority` property on the `RibbonGroup` (an `int` value; lower numbers indicate higher priority).
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,7 +76,7 @@ It resizes the ribbon elements based on the ribbon group priority. It takes the 
                 <ribbon:RibbonButton 
                     Content="Copy"
                     Icon="Copy"/>
-                // Add more elements here...
+                <!-- Add more elements here... -->
             </ribbon:RibbonGroup>
             <ribbon:RibbonGroup Header="File" Priority="2">
                 <ribbon:RibbonDropDownButton 
@@ -87,11 +87,11 @@ It resizes the ribbon elements based on the ribbon group priority. It takes the 
                 <ribbon:RibbonButton 
                     Content="Share"
                     Icon="Share"/>
-                // Add more elements here...
+                <!-- Add more elements here... -->
             </ribbon:RibbonGroup>
-            // Add more groups here...
+            <!-- Add more groups here... -->
         </ribbon:RibbonTab>
-        // Add more tabs here...
+        <!-- Add more tabs here... -->
     </ribbon:SfRibbon.Tabs>
 </ribbon:SfRibbon>
 {% endhighlight %}

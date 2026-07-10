@@ -15,7 +15,7 @@ The [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribb
 
 ## Add gallery item
 
-The [RibbonGalleryItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGalleryItem.html) can be added by using the `Items` property of the RibbonGallery control. The RibbonGallery allows to view all gallery items in a Popup by clicking the expand button in a control.
+The [RibbonGalleryItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGalleryItem.html) can be added by using the `Items` property of the RibbonGallery control. The RibbonGallery allows you to view all gallery items in a popup by clicking the expand button in a control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,9 +90,9 @@ The [RibbonGalleryItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ![Adding RibbonGallery items to the RibbonGallery](RibbonGallery-images/add-ribbon-gallery-items.png)
 
-## Group Gallery Item
+## Grouping gallery items
 
-The [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) includes built-in grouping support, allowing to organize gallery items in a gallery popup based on the `GroupName` property value. By clicking the expand button in a RibbonGallery, the entire gallery (either grouped or non-grouped) items can be viewed in a resizable popup view. All gallery items can be viewed in a RibbonGallery view by using the scroll up and down buttons.
+The [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) includes built-in grouping support, allowing you to organize gallery items in a gallery popup based on the `GroupName` property value. By clicking the expand button in a RibbonGallery, the entire gallery (either grouped or non-grouped) items can be viewed in a resizable popup view. All gallery items can be viewed in a RibbonGallery view by using the scroll up and down buttons.
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,6 +237,13 @@ The [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribb
 
 The `SelectedItem` property specifies the currently selected gallery item in a RibbonGallery.
 
+### Detecting selection changes in ribbon gallery
+
+The `SelectionChanged` event occurs when a gallery item is clicked or the selected item is changed in a RibbonGallery. The `SelectionChanged` event handler receives two arguments:
+
+* The sender argument is the `RibbonGallery`. This argument is of type object but can be cast to the `RibbonGallery` type.
+* The second argument is a `SelectionChangedEventArgs` that receives the old and newly selected gallery items.
+
 {% tabs %}
 {% highlight xaml %}
 <ribbon:RibbonGallery ItemHeight="96"    
@@ -245,7 +252,7 @@ The `SelectedItem` property specifies the currently selected gallery item in a R
                       SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
                       ItemWidth="100">
     <ribbon:RibbonGallery.Items>
-       //Add gallery items here...
+       <!-- Add gallery items here... -->
     </ribbon:RibbonGallery.Items>
 </ribbon:RibbonGallery>
 {% endhighlight %}
@@ -259,7 +266,7 @@ private void RibbonGallery_SelectionChanged(object sender, SelectionChangedEvent
 
 ![Detecting selection changes in RibbonGallery](RibbonGallery-images/selected-ribbon-gallery-item.png)
 
-The `IsSelected` property returns true or false to the gallery item, indicating whether an item is currently selected or not. The property value associated with an item can be obtained from the `SelectionChanged` event.
+The `IsSelected` property returns `true` or `false` on the gallery item, indicating whether an item is currently selected or not. The property value associated with an item can be obtained from the `SelectionChanged` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -275,7 +282,7 @@ private void RibbonGallery_SelectionChanged(object sender, SelectionChangedEvent
 
 ![Indicating selection of gallery item](RibbonGallery-images/Indicate-selection-of-gallery-item.png)
 
-The `SelectsOnInvoked` property indicates whether a gallery item is selected or not, when it is invoked. It is not possible to interact with any gallery item if `SelectsOnInvoked` is set to false.
+The `SelectsOnInvoked` property indicates whether a gallery item is selected when it is invoked (default is `True`). It is not possible to interact with any gallery item if `SelectsOnInvoked` is set to `False`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -289,20 +296,13 @@ The `SelectsOnInvoked` property indicates whether a gallery item is selected or 
                           GroupName="Good, Bad and Neutral"
                           Content="Normal"
                           Foreground="Black" />
-        // Add more items here...
+        <!-- Add more items here... -->
     </ribbon:RibbonGallery.Items>
 </ribbon:RibbonGallery>
 {% endhighlight %}
 {% endtabs %}
 
 ![Handle the interaction on Gallery Item](RibbonGallery-images/handle-interaction-on-gallery-item.gif)
-
-### Detecting selection changes in ribbon gallery
-
-The `SelectionChanged` event occurs when a gallery item is clicked or the selected item is changed in a RibbonGallery. The SelectionChanged event handler receives two arguments:
-
-* The sender argument contains the `RibbonGallery`. This argument is of type object but can be casted to the RibbonGallery type.
-* The second argument is a `SelectionChangedEventArgs` that receives the old and newly selected gallery items in an argument.
 
 ## Customize the gallery item
 
@@ -313,7 +313,7 @@ Gallery items' width and height can be changed using the `ItemWidth` and `ItemHe
 <ribbon:RibbonGallery ItemHeight="96" 
                       ItemWidth="100">
     <ribbon:RibbonGallery.Items>
-        // Add gallery items here...                             
+        <!-- Add gallery items here... -->                             
     </ribbon:RibbonGallery.Items>
 </ribbon:RibbonGallery>
 {% endhighlight %}
@@ -321,7 +321,7 @@ Gallery items' width and height can be changed using the `ItemWidth` and `ItemHe
 
 ![Setting of ItemWidth and ItemHeight in RibbonGallery](RibbonGallery-images/ribbon-gallery-item-customization.png)
 
-The `MaxColumnCount` in a RibbonGallery allows to wrap the maximum number of gallery items in a column view. The default value is 5, which is a special value that indicates maximum.
+The `MaxColumnCount` in a RibbonGallery allows you to set the maximum number of gallery items displayed in a column. The default value is `5`, which indicates the maximum number of columns.
 
 {% tabs %}
 {% highlight xaml %}
@@ -329,7 +329,7 @@ The `MaxColumnCount` in a RibbonGallery allows to wrap the maximum number of gal
                       MaxColumnCount="4"
                       ItemWidth="100">
     <ribbon:RibbonGallery.Items>
-        //Add gallery items here...                              
+        <!-- Add gallery items here... -->                              
     </ribbon:RibbonGallery.Items>
 </ribbon:RibbonGallery>
 {% endhighlight %}
@@ -338,11 +338,11 @@ The `MaxColumnCount` in a RibbonGallery allows to wrap the maximum number of gal
 ![Setting of MaxColumnCount in RibbonGallery](RibbonGallery-images/ribbon-gallery-item-column-count-customization.png)
 
 
-## Ribbon galley in simplified layout
+## Ribbon gallery in simplified layout
 
-The `DisplayOptions` property in a RibbonGallery is an Enum type property that allows to display a RibbonGallery in a specific layout based on `LayoutModeOptions` such as Normal and Simplified state of Ribbon. The `DisplayOptions` property is set to Normal and Simplified mode by default.
+The `DisplayOptions` property in a RibbonGallery is an enum type property that allows you to display a RibbonGallery in a specific layout based on `LayoutModeOptions` such as `Normal` and `Simplified` state of the Ribbon. The `DisplayOptions` property is set to `Normal` and `Simplified` mode by default.
 
-The image below shows how the RibbonGallery can be displayed in a Simplified mode of Ribbon's LayoutModeOptions when DisplayOptions is set to `Simplified`.
+The image below shows how the RibbonGallery can be displayed in a Simplified mode of the Ribbon's `LayoutModeOptions` when `DisplayOptions` is set to `Simplified`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -351,7 +351,7 @@ The image below shows how the RibbonGallery can be displayed in a Simplified mod
                       DisplayOptions="Simplified"
                       ItemWidth="100">
     <ribbon:RibbonGallery.Items>
-        //Add gallery items here...                              
+        <!-- Add gallery items here... -->                              
     </ribbon:RibbonGallery.Items>
 </ribbon:RibbonGallery>
 {% endhighlight %}
@@ -361,7 +361,7 @@ The image below shows how the RibbonGallery can be displayed in a Simplified mod
 
 ## Ribbon gallery preview
 
-The RibbonGallery preview feature is used to inspect the items before we select them. Users can activate and deactivate the preview support using `ItemPointerEnter` and `ItemPointerExit` events respectively.
+The RibbonGallery preview feature is used to inspect the items before selecting them. Users can activate and deactivate the preview support using the `ItemPointerEnter` and `ItemPointerExit` events respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -379,7 +379,7 @@ The RibbonGallery preview feature is used to inspect the items before we select 
 {% endhighlight %}
 {% highlight c# %}
 
-private void OnItemPointerEnter(object sender, RibbonRoutedEventArgs e)
+private void fontGallery_ItemPointerEnter(object sender, RibbonRoutedEventArgs e)
 {
    FontInfo selecteditem = (FontInfo)(e.Source as RibbonGalleryItem).Content;
    if (selecteditem != null)
@@ -388,7 +388,7 @@ private void OnItemPointerEnter(object sender, RibbonRoutedEventArgs e)
       FontViewModel.FontWeight = selecteditem.FontWeight;
    }
 }
-private void OnItemPointerExit(object sender, RibbonRoutedEventArgs e)
+private void fontGallery_ItemPointerExit(object sender, RibbonRoutedEventArgs e)
 {
     FontInfo selecteditem = (FontInfo)(sender as RibbonGallery).SelectedItem;
     if (selecteditem != null)
@@ -408,9 +408,9 @@ The RibbonGallery preview support is demonstrated in the gif below.
 
 ## Populate ribbon gallery with MVVM
 
-The RibbonGallery provides MVVM that supports data binding and manual data populating.
+The RibbonGallery provides MVVM support that supports data binding and manual data population.
 
-The following example demonstrates how data items are populated using the `ItemsSource` property and wrapped using the `ItemTemplate` property. The `ItemContainerStyle` property allows to override the container style in a RibbonGallery.
+The following example demonstrates how data items are populated using the `ItemsSource` property and wrapped using the `ItemTemplate` property. The `ItemContainerStyle` property allows you to override the container style in a RibbonGallery.
 
 {% tabs %}
 {% highlight xaml %}
@@ -461,15 +461,15 @@ private List<FontStyleInfo> GetFontStyleCollection()
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Heading 1", FontSize = 17 });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Heading 2" });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaB", FontDescription = "Title", FontWeight = FontWeights.SemiBold, FontSize = 26, Margin = new Microsoft.UI.Xaml.Thickness() { Left = 0, Top = -10, Right = 2, Bottom = 0 } });
-    fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Subtile"  });
+    fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Subtitle"  });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Subtle Emphasis" , FontStyle = FontStyle.Italic });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Emphasis"  });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Intense Emphasis", FontStyle = FontStyle.Italic });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Strong", FontWeight = FontWeights.Bold });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Quote", FontStyle = FontStyle.Italic  });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Intense Quote" });
-    fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Subtle Referrence"  });
-    fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Intense Referrence"  });
+    fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Subtle Reference"  });
+    fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Intense Reference"  });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "Book Title", FontStyle = FontStyle.Italic, FontWeight = FontWeights.Bold });
     fontStyleCollection.Add(new FontStyleInfo() { FontText = "AaBbCcDd", FontDescription = "List Paragraph" });
     

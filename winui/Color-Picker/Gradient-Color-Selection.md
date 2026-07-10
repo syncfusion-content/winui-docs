@@ -36,6 +36,12 @@ Linear Gradient color brush can be selected by the multiple colors and their loc
 {% endhighlight %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Editors;
+using Microsoft.UI;
+using Microsoft.UI.Xaml.Media;
+using Windows.Foundation;
+using Windows.UI;
+
 //Creating the linear gradient brush
 LinearGradientBrush linearGradient = new LinearGradientBrush();
 linearGradient.StartPoint = new Point(0, 0);
@@ -61,13 +67,13 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Interactively select linear gradient brush
 
-You can directly select a required linear gradient color brush  as your wish at runtime by creating the multiple gradient stops and select color for that gradient stops. Then, created gradient stops will be combined together and form a linear gradient color brush. You can enable the linear gradient mode by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions)  property value as `LinearGradientBrush`. The default value of `BrushTypeOptions` property is `All`.
+You can directly select a linear gradient color brush at runtime by creating multiple gradient stops and selecting a color for each stop. The created gradient stops are then combined to form a linear gradient color brush. You can enable the linear gradient mode by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value to `LinearGradientBrush`. The default value of the `BrushTypeOptions` property is `All`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="LinearGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -83,19 +89,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change angle of linear gradient brush
 
-If you want to change the angle of selected linear gradient color brush, change the angle value in `Angle` value editor. Based on the value of `Angle` value editor, selected linear gradient color brush will be rotated. The angle option only shown on when [AxisInputOption](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AxisInputOption) property value is `Simple`. The `Angle` value editor accept the value from `0` to `359`. The default angle value is `0`.
+You can change the angle of the selected linear gradient color brush by entering a value in the `Angle` value editor, or programmatically by setting the `Angle` property of type `double`. The `Angle` value editor accepts values from `0` to `359`. The default angle value is `0`. The angle editor is shown only when the [AxisInputOption](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AxisInputOption) property value is `Simple`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker AxisInputOption="Simple" 
                        BrushTypeOptions="LinearGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-colorPicker.AxisInputOption= AxisInputOption.Simple;
+using Syncfusion.UI.Xaml.Editors;
+
+colorPicker.AxisInputOption = AxisInputOption.Simple;
 colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 
 {% endhighlight %}
@@ -107,19 +115,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change offset of linear gradient brush using value editor
 
-You can change the offset of selected linear gradient color brush by using dedicated start and end point value editors. By default, offset value editors are collapsed. If you want to show the offset value editors, use the `AxisInputOption` property value as `Advanced`. 
+You can change the offset of the selected linear gradient color brush by using the dedicated start- and end-point value editors. By default, the offset value editors are collapsed. To show them, set the `AxisInputOption` property value to `Advanced`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker AxisInputOption="Advanced" 
                        BrushTypeOptions="LinearGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-colorPicker.AxisInputOption= AxisInputOption.Advanced;
+using Syncfusion.UI.Xaml.Editors;
+
+colorPicker.AxisInputOption = AxisInputOption.Advanced;
 colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 
 {% endhighlight %}
@@ -152,6 +162,12 @@ Radial Gradient color brush is similar to Linear Gradient color brush, except fo
 {% endhighlight %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Editors;
+using Microsoft.UI;
+using Microsoft.UI.Xaml.Media;
+using Windows.Foundation;
+using Windows.UI;
+
 //Creating a radial gradient brush
 RadialGradientBrush radialGradient = new RadialGradientBrush();
 radialGradient.GradientOrigin = new Point(0.5, 0.5);
@@ -179,16 +195,18 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Interactively select radial gradient brush 
 
-You can directly select a required radial gradient color brush as your wish at runtime by creating the multiple gradient stops and select color for that gradient stops. Then, created gradient stops will be combined together and form a radial gradient color brush. You can enable the radial gradient mode by setting the `BrushTypeOptions` property value as `RadialGradientBrush`. 
+You can directly select a radial gradient color brush at runtime by creating multiple gradient stops and selecting a color for each stop. The created gradient stops are then combined to form a radial gradient color brush. You can enable the radial gradient mode by setting the `BrushTypeOptions` property value to `RadialGradientBrush`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="RadialGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
@@ -201,19 +219,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change direction of radial gradient brush
 
-If you want to change the direction of selected radial gradient color brush, select the any direction from the drop down option. The direction option only shown on when `AxisInputOption` property value is `Simple`. 
+You can change the direction of the selected radial gradient color brush by selecting a direction from the drop-down list, or programmatically by setting the `Direction` property of type `RadialGradientDirection`. The supported values are `TopLeft`, `TopRight`, `BottomLeft`, and `BottomRight`. The direction option is shown only when the `AxisInputOption` property value is `Simple`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker AxisInputOption="Simple" 
                        BrushTypeOptions="RadialGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-colorPicker.AxisInputOption= AxisInputOption.Simple;
+using Syncfusion.UI.Xaml.Editors;
+
+colorPicker.AxisInputOption = AxisInputOption.Simple;
 colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
 {% endhighlight %}
@@ -225,19 +245,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change offset of radial gradient brush using value editor
 
-You can change the offset of selected radial gradient color brush by using dedicated center, origin and radius value editors. If you want to show the offset value editors, use the `AxisInputOption` property value as `Advanced`.
+You can change the offset of the selected radial gradient color brush by using the dedicated center, origin, and radius value editors. To show the offset value editors, set the `AxisInputOption` property value to `Advanced`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker AxisInputOption="Advanced" 
                        BrushTypeOptions="RadialGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-colorPicker.AxisInputOption= AxisInputOption.Advanced;
+using Syncfusion.UI.Xaml.Editors;
+
+colorPicker.AxisInputOption = AxisInputOption.Advanced;
 colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
 {% endhighlight %}
@@ -249,16 +271,18 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change opacity of gradient brush
 
-You can change opacity of the selected gradient color brush by using the delicate slider in the `Color Picker`.
+You can change the opacity of the selected gradient color brush by using the dedicated slider in the `Color Picker`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="LinearGradientBrush,RadialGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfColorPicker colorPicker = new SfColorPicker();
 colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush | BrushTypeOptions.RadialGradientBrush;
@@ -272,17 +296,19 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Selected gradient brush changed notification
 
-You will be notified when selected gradient color brush changed in `Color Picker` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
+You will be notified when the selected gradient color brush changes in `Color Picker` by using the [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) event. You can get the old and newly selected brush by using the `OldBrush` and `NewBrush` properties of the `SelectedBrushChangedEventArgs` class.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
                        SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
 colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptions.RadialGradientBrush;
@@ -290,15 +316,25 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptio
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows,
+You can handle the event as follows.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
-private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs args) {
-    var old_selectedBrush = args.OldBrush;
-    var new_selectedBrush = args.NewBrush;
+private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs args)
+{
+    var oldSelectedBrush = args.OldBrush;
+    var newSelectedBrush = args.NewBrush;
 }
 
 {% endhighlight %}
 {% endtabs %}
+
+## Troubleshooting
+
+| Issue | Possible cause | Fix |
+|-------|----------------|-----|
+| Angle editor is hidden | `AxisInputOption` is not `Simple` | Set `AxisInputOption` to `Simple`. |
+| Offset editors are hidden | `AxisInputOption` is not `Advanced` | Set `AxisInputOption` to `Advanced`. |
+| Direction editor is hidden | `AxisInputOption` is not `Simple` | Set `AxisInputOption` to `Simple`. |
+| Gradient brush does not change at runtime | `BrushTypeOptions` does not include the brush type | Add the missing flag (e.g., `RadialGradientBrush`). |

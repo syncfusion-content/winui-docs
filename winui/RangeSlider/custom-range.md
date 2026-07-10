@@ -9,7 +9,13 @@ documentation: ug
 
 # Custom Range in WinUI RangeSlider (Range Slider)
 
-RangeSlider allows you to define a custom scale range by extending the RangeSlider based on your business logic.
+The RangeSlider allows you to define a custom scale range by extending the `SfRangeSlider` based on your business logic, such as rendering a logarithmic scale.
+
+To create a custom range scale, subclass [`SfRangeSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) and override the following protected virtual methods:
+
+* `GenerateVisibleLabels()` – Generates the list of labels to be displayed on the scale.
+* `ValueToFactor(double value)` – Converts a value on the scale to a normalized factor (0 to 1) used for positioning.
+* `FactorToValue(double factor)` – Converts a normalized factor back to a value on the scale.
 
 {% tabs %}
 
@@ -36,7 +42,7 @@ public class LogarithmicRangeSlider : SfRangeSlider
         int maximum = (int)LogBase(this.Maximum, 10);
         for (int i = minimum; i <= maximum; i++)
         {
-            double value = Math.Floor(Math.Pow(10, i)); // logBase  value is 10
+            double value = Math.Floor(Math.Pow(10, i)); // 10^i gives the label value
             SliderLabelInfo label = new SliderLabelInfo()
             {
                 Value = value,
@@ -49,6 +55,7 @@ public class LogarithmicRangeSlider : SfRangeSlider
         return labelInfos;
     }
 
+    // Converts a value to its logarithm with the given base.
     private double LogBase(double value, int baseValue)
     {
         return Math.Log(value) / Math.Log(baseValue);
@@ -56,12 +63,14 @@ public class LogarithmicRangeSlider : SfRangeSlider
 
     public override double ValueToFactor(double value)
     {
+        // Normalize the log of the value to a factor between 0 and 1.
         return LogBase(value, 10) / (labelsCount - 1);
     }
 
     public override double FactorToValue(double factor)
     {
-        return Math.Pow(Math.E, factor * (labelsCount - 1) * Math.Log(10));
+        // Convert the normalized factor back to a value on the logarithmic scale.
+        return Math.Pow(10, factor * (labelsCount - 1));
     }
 }
 

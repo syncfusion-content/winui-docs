@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI Badge control | Syncfusion
-description: Learn here all about Customization feature in Syncfusion WinUI Badge control with more colors, shapes, and UI custom support.
+description: Learn here all about the customization features in Syncfusion WinUI Badge control with more colors, shapes, and UI custom support.
 platform: WinUI
 control: SfBadge
 documentation: ug
@@ -18,7 +18,7 @@ If you want to change the background color of the `Badge` other than the default
 N> If you change the background color, `Badge` control will automatically assign a contrasting foreground to the `Badge` content.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -34,7 +34,7 @@ N> If you change the background color, `Badge` control will automatically assign
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Background = new SolidColorBrush(Colors.Black);
 badge.Foreground = new SolidColorBrush(Colors.Yellow);
@@ -52,7 +52,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to change the shape of the `Badge` other than the default shapes, use the [CustomShape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_CustomShape) property. You can enable the custom shapes by setting the `Shape` property value as `Custom`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -81,7 +81,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the appearance of `Badge` content by using the `ContentTemplate` property. The `DataContext` of `ContentTemplate` property is `Content`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -106,7 +106,7 @@ You can change the appearance of `Badge` content by using the `ContentTemplate` 
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying the custom UI of Bagde content](Getting-Started_images/ContentTemplate.png)
+![Displaying the custom UI of Badge content](Getting-Started_images/ContentTemplate.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
 
@@ -116,7 +116,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can format the content displayed in the `Badge` content by using the converters. For example, you can display the number as `99+`, which is greater than or equal to `100`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class CustomNumberConverter : IValueConverter {
     public object Convert(object value, Type targetType, object parameter, string language)
@@ -153,7 +153,7 @@ public class CustomNumberConverter : IValueConverter {
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Page.Resources>
     <local:CustomNumberConverter x:Key="customNumberConverter"/>
@@ -201,7 +201,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change stroke color and its thickness by using the [Stroke](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Stroke) and [StrokeThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_StrokeThickness) properties. The default value of `Stroke` property is `null` and `StrokeThickness` property is `0`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -217,7 +217,7 @@ You can change stroke color and its thickness by using the [Stroke](https://help
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Stroke = new SolidColorBrush(Colors.Red);
 badge.StrokeThickness = 3;
@@ -235,7 +235,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can hide the `Badge` by setting the `Visibility` property value as `Collapsed`. Badge will be hidden when its content is `null`. The default value of `Visibility` property is `Visible`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -250,7 +250,7 @@ You can hide the `Badge` by setting the `Visibility` property value as `Collapse
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Visibility = Visibility.Collapsed;
 badge.Content = "99+";
@@ -260,12 +260,14 @@ badge.Content = "99+";
 
 ![Visibility of the Badge control is restricted](Getting-Started_images/hidden.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Control).
+
 ## Change Badge size
 
 By default, the `Badge` control size will be automatically allocated based on the content. You can change the size of `Badge` by using the `Width` and `Height` properties. The default value of `Width` property is `40` and `Height` property is `30`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer">
     <notification:BadgeContainer.Badge>
@@ -281,7 +283,7 @@ By default, the `Badge` control size will be automatically allocated based on th
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Width = 60;
 badge.Height = 60;
@@ -296,10 +298,10 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Text formatting
 
-You can change the style, size, and font family of the `Badge` display content by using the `FontFamily`, `FontStyle`, and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal`, and  `FontSize` property is `14`.
+You can change the style, size, and font family of the `Badge` display content by using the `FontFamily`, `FontStyle`, and `FontSize` properties. The default value of `FontFamily` property is `Segoe UI`, `FontStyle` property is `Normal`, and `FontSize` property is `14`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -316,7 +318,7 @@ You can change the style, size, and font family of the `Badge` display content b
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.FontFamily = new FontFamily("Perpetua");
 badge.FontSize = 20;
@@ -335,7 +337,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can place the `Badge` with a specific rotation angle by using the `Rotation` property. The default value of `Rotation` property is `0`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -350,7 +352,7 @@ You can place the `Badge` with a specific rotation angle by using the `Rotation`
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Rotation = 30;
 badge.Content = "99+";
@@ -360,12 +362,14 @@ badge.Content = "99+";
 
 ![Displaying the rotated Badge](Getting-Started_images/Rotation.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Control).
+
 ## Change opacity of Badge
 
 You can change opacity of the `Badge` by using the `Opacity` property. The default value of `Opacity` property is `1`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -380,7 +384,7 @@ You can change opacity of the `Badge` by using the `Opacity` property. The defau
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Opacity = 0.6;
 badge.Content = "99+";

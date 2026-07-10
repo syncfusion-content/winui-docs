@@ -21,10 +21,11 @@ The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) 
 
 * **Ticks and dividers:** Provides the option to show ticks and dividers based on the slider interval. Also, minor ticks can be enabled to indicate the values between each interval. These options present the selected values in a more intuitive way for end users.
 
-* **Thumb icon:** Provides various built-in thumb icons and options to customize the thumb style.
+* **Thumb icon:** Provides thumb types such as circle, rectangle, and oval, with options to customize the thumb style.
 
-* **Tooltip:** Supports adding a tooltip to show the selected values clearly. You can customize the format of the text shown in the tooltip and place the tooltip on the top or bottom of the track. Also, you can show the tooltip on both thumbs or only on the active thumb.
-
+* **Tooltip:** Supports adding a tooltip to show the selected values clearly. You can customize the format of the text shown in the tooltip and place the tooltip above or below the track. Also, you can show the tooltip on both thumbs or only on the active thumb.
 * **Highly customizable:** Supports a wide range of options to customize the control completely.
 
-N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/sliders) link. 
+N> You can get the samples from [GitHub](https://github.com/syncfusion/winui-demos/tree/master/sliders).
+
+N> To get started with the WinUI Slider control, refer to the [Getting Started](https://help.syncfusion.com/winui/slider/getting-started) topic. 

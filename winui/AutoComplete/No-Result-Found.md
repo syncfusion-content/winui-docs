@@ -1,28 +1,37 @@
 ---
 layout: post
-title: No Result Found in WinUI AutoComplete control | Syncfusion
-description: Learn how to use NoResultsFoundTemplate and NoResultsFoundContent in Syncfusion WinUI AutoComplete control.
+title: No Result Found in WinUI AutoComplete (SfAutoComplete) | Syncfusion
+description: Learn how to use NoResultsFoundContent and NoResultsFoundTemplate in the Syncfusion WinUI AutoComplete control.
 platform: winui
 control: SfAutoComplete
-documentation: ug
+documentation: UG
 ---
 
 # No Result Found in WinUI AutoComplete (SfAutoComplete)
 
-When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundContent` and `NoResultsFoundTemplate` properties. 
+When the entered text does not match any item in the suggestion list, the SfAutoComplete control displays a message indicating that no search results are found. The desired text or UI can be set by using the `NoResultsFoundContent` and `NoResultsFoundTemplate` properties.
 
-## NoResultsFoundContent 
+> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
 
-We can customize the desire text to be displayed for indicating no results found by using the `NoResultsFoundContent` property. The below code shows how to include the `NoResultsFoundContent` in AutoComplete.
+* Use `NoResultsFoundContent` to display simple text.
+* Use `NoResultsFoundTemplate` to display custom UI, such as styled text or an icon.
+
+When both `NoResultsFoundContent` and `NoResultsFoundTemplate` are set, priority is given to `NoResultsFoundTemplate`. If neither property is set, the default text is displayed.
+
+The no-result content is shown only when the drop-down is open and the typed text does not match any item in the `ItemsSource`. To see it, type a value that is not present in the bound list.
+
+## NoResultsFoundContent
+
+The `NoResultsFoundContent` property accepts an `object`, so a simple string can be assigned directly. The following code shows how to include the `NoResultsFoundContent` in the AutoComplete control.
 
 {% tabs %}
 {% highlight xaml %}
 
- <editors:SfAutoComplete  Header="AutoComplete with No Result Found Text" 
-                          PlaceholderText="Search a country" 
-                          DisplayMemberPath="Country" 
+ <editors:SfAutoComplete Header="AutoComplete with No Result Found Text"
+                          PlaceholderText="Search a country"
+                          DisplayMemberPath="Country"
                           TextMemberPath="Country"
-                          Width="300"   
+                          Width="300"
                           NoResultsFoundContent="Not Found"
                           ItemsSource="{Binding ContinentList }">
  </editors:SfAutoComplete>
@@ -30,34 +39,36 @@ We can customize the desire text to be displayed for indicating no results found
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with NoResultsFoundContent](No_Results_Found_images\No-Results-Found-Content.png)
+![WinUI AutoComplete control with NoResultsFoundContent](No_Results_Found_images/No-Results-Found-Content.png)
 
-## NoResultsFoundTemplate 
+## NoResultsFoundTemplate
 
-We can customize the appearance of the desire text to be displayed for indicating no results found by using the `NoResultsFoundTemplate` property. The below code shows how to include the `NoResultsFoundTemplate` in AutoComplete.
+The `NoResultsFoundTemplate` property is a `DataTemplate` that lets you customize the appearance of the no-result content. The following code shows how to include the `NoResultsFoundTemplate` in the AutoComplete control.
 
 {% tabs %}
 {% highlight xaml %}
-
-  <editors:SfAutoComplete  Header="AutoComplete with No Result Found Template"
-                           PlaceholderText="Search a country" 
-                           DisplayMemberPath="Country" 
-                           TextMemberPath="Country"
-                           Width="300"    
-                           ItemsSource="{Binding ContinentList }">
-            <editors:SfAutoComplete.NoResultsFoundTemplate>
-                <DataTemplate>
-                    <TextBlock Text="Not Found" 
-                        Foreground="Red" 
-                        FontStyle="Italic" 
-                        FontSize="20"  />
-                </DataTemplate>
-            </editors:SfAutoComplete.NoResultsFoundTemplate>
- </editors:SfAutoComplete>
-
+<editors:SfAutoComplete Header="AutoComplete with No Result Found Template"
+                        PlaceholderText="Search a country"
+                        DisplayMemberPath="Country"
+                        TextMemberPath="Country"
+                        Width="300"
+                        ItemsSource="{Binding ContinentList}">
+    <editors:SfAutoComplete.NoResultsFoundTemplate>
+        <DataTemplate>
+            <TextBlock Text="Not Found"
+                       Foreground="Red"
+                       FontStyle="Italic"
+                       FontSize="20" />
+        </DataTemplate>
+    </editors:SfAutoComplete.NoResultsFoundTemplate>
+</editors:SfAutoComplete>
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete control with NoResultsFoundTemplate](No_Results_Found_images\No-Results-Found-Template.png)
+![WinUI AutoComplete control with NoResultsFoundTemplate](No_Results_Found_images/No-Results-Found-Template.png)
 
-N> While setting `NoResultsFoundContent` and `NoResultsFoundTemplate` properties. High priority is given to `NoResultsFoundTemplate`.
+## Troubleshooting
+
+* **No-result content does not appear**: Ensure the drop-down is open and the typed text does not match any item in `ItemsSource`.
+* **Template is not rendered**: Verify that `NoResultsFoundTemplate` is set to a valid `DataTemplate`.
+* **Content appears when items are present**: Confirm that the `MinimumPrefixCount` requirement is met and that the typed text does not match any item.
