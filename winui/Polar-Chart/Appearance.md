@@ -44,7 +44,6 @@ Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI
         </chart:PolarLineSeries>
     </chart:SfPolarChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -70,7 +69,6 @@ series3.XBindingPath = "Direction";
 series3.YBindingPath = "Flower";
 series3.ItemsSource = viewModel.PlantDetails;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -121,7 +119,6 @@ customBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 chart.PaletteBrushes = customBrushes;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -235,7 +232,6 @@ Gradient color using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.
         </chart:PolarAreaSeries.Fill>
     </chart:PolarAreaSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}

@@ -26,7 +26,8 @@ Cartesian chart supports the following types of chart axis.
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -41,7 +42,8 @@ Cartesian chart supports the following types of chart axis.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 chart.XAxes.Add(new NumericalAxis());
 chart.YAxes.Add(new NumericalAxis());
 
@@ -59,16 +61,16 @@ Axis interval can be customized by using the [Interval](https://help.syncfusion.
 
 {% highlight xaml %}
 
-    <chart:SfCartesianChart>
-        . . .
-        <chart:SfCartesianChart.XAxes>
-            <chart:NumericalAxis Interval="10"/>
-        </chart:SfCartesianChart.XAxes>
+<chart:SfCartesianChart>
 
-        <chart:SfCartesianChart.YAxes>
-            <chart:NumericalAxis/>
-        </chart:SfCartesianChart.YAxes>
-    </chart:SfCartesianChart>
+    <!-- Configure additional chart elements -->
+    <chart:SfCartesianChart.XAxes>
+        <chart:NumericalAxis Interval="10"/>
+    </chart:SfCartesianChart.XAxes>
+
+    <chart:SfCartesianChart.YAxes>
+        <chart:NumericalAxis/>
+    </chart:SfCartesianChart.YAxes>
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -76,7 +78,8 @@ Axis interval can be customized by using the [Interval](https://help.syncfusion.
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 NumericalAxis primaryAxis = new NumericalAxis()
 {
     Interval = 10, 
@@ -95,7 +98,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
 
-N> If  minimum or maximum value is set, the other value is calculated by default internally.
+N> If only the minimum or maximum is set, the other value is calculated automatically.
 
 {% tabs %}
 
@@ -135,7 +138,8 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis/>
     </chart:SfCartesianChart.XAxes>
@@ -146,7 +150,8 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 chart.XAxes.Add(new CategoryAxis());
 
 {% endhighlight %}
@@ -157,14 +162,15 @@ chart.XAxes.Add(new CategoryAxis());
 
 ### Label placement
 
-The [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property in [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is used to placed the axis labels based on ticks and between ticks. The default value of [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) is [OnTicks](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelPlacement.html#Syncfusion_UI_Xaml_Charts_LabelPlacement_OnTicks).
+The [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property in [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is used to place the axis labels based on ticks and between ticks. The default value of [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) is [OnTicks](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelPlacement.html#Syncfusion_UI_Xaml_Charts_LabelPlacement_OnTicks).
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis LabelPlacement="BetweenTicks"/>
     </chart:SfCartesianChart.XAxes>
@@ -175,7 +181,8 @@ The [LabelPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     LabelPlacement = LabelPlacement.BetweenTicks
@@ -190,14 +197,15 @@ chart.XAxes.Add(primaryAxis);
 
 ### Interval
 
-By default, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) axis labels are display with fixed interval 1. It can customized by using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) property of axis.
+By default, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) axis labels are displayed with a fixed interval of 1. It can be customized by using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_Interval) property of axis.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis Interval="2"/>
     </chart:SfCartesianChart.XAxes>
@@ -212,7 +220,8 @@ By default, the [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.U
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     Interval = 2, 
@@ -229,21 +238,22 @@ chart.YAxes.Add(new NumericalAxis());
 
 ## DateTime Axis
 
-[DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot `DateTime` values. The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
+[DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot `DateTime` values. The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is widely used to make financial charts in places like the Stock Market, where plotting is done daily.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-. . .
-<chart:SfCartesianChart.XAxes>
-    <chart:DateTimeAxis>
-        <chart:DateTimeAxis.LabelStyle>
-            <chart:LabelStyle LabelFormat="MMM-yy"/>
-        </chart:DateTimeAxis.LabelStyle>
-    </chart:DateTimeAxis>
-</chart:SfCartesianChart.XAxes>
+
+    <!-- Configure additional chart elements -->
+    <chart:SfCartesianChart.XAxes>
+        <chart:DateTimeAxis>
+            <chart:DateTimeAxis.LabelStyle>
+                <chart:LabelStyle LabelFormat="MMM-yy"/>
+            </chart:DateTimeAxis.LabelStyle>
+        </chart:DateTimeAxis>
+    </chart:SfCartesianChart.XAxes>
 
 </chart:SfCartesianChart>
 
@@ -252,7 +262,8 @@ chart.YAxes.Add(new NumericalAxis());
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
@@ -274,7 +285,8 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis Interval="6" IntervalType="Months">
             <chart:DateTimeAxis.LabelStyle>
@@ -293,7 +305,8 @@ In [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     Interval = 6, 
@@ -319,7 +332,8 @@ chart.YAxes.Add(new NumericalAxis());
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis Minimum="2021/05/1" Maximum="2021/11/01">
             <chart:DateTimeAxis.LabelStyle>
@@ -334,10 +348,11 @@ chart.YAxes.Add(new NumericalAxis());
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
-    Minimum = new DateTime(2021,05,10),
+    Minimum = new DateTime(2021,05,1),
     Maximum = new DateTime(2021,11,01),
     LabelStyle = new LabelStyle() { LabelFormat= "MMM-yy" }
 };
@@ -351,14 +366,15 @@ chart.XAxes.Add(primaryAxis);
 
 ## Logarithmic Axis
 
-The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) uses a logarithmic scale, ideal for visualizing data with large value differences. It can be applied to both the X and Y axes of a chart, allows customization of the logarithmic base, and dynamically calculates ranges to effectively display wide-ranging datasets.
+The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) uses a logarithmic scale, ideal for visualizing data with large value differences. It can be applied to both the X and Y axes of a chart, allows customization of the logarithmic base and dynamically calculates ranges to effectively display wide-ranging datasets.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis/>
     </chart:SfCartesianChart.YAxes>
@@ -369,8 +385,9 @@ The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
-LogarithmicAxis secondaryAxis = new LogarithmicAxis()
+
+// Configure additional chart elements
+LogarithmicAxis secondaryAxis = new LogarithmicAxis();
 chart.YAxes.Add(secondaryAxis);
 
 {% endhighlight %}
@@ -381,14 +398,15 @@ chart.YAxes.Add(secondaryAxis);
 
 ### Interval
 
-The Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Interval) property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data, with a default value of `1`.
+The Axis interval can be customized using the [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Interval) property of the axis. By default, the interval is calculated based on the minimum and maximum values of the provided data. The default value of the `Interval` property is `1`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis Interval="10"/>
     </chart:SfCartesianChart.YAxes>
@@ -399,7 +417,8 @@ The Axis interval can be customized using the [Interval](https://help.syncfusion
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     Interval = 10,
@@ -418,7 +437,8 @@ The range of the logarithmic axis can be customized using the [Minimum](https://
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis Minimum="100" Maximum="100000"/>
     </chart:SfCartesianChart.YAxes>
@@ -429,7 +449,8 @@ The range of the logarithmic axis can be customized using the [Minimum](https://
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     Minimum = 100,
@@ -440,7 +461,9 @@ chart.YAxes.Add(secondaryAxis);
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the Logarithmic base
+![LogarithmicAxis Customizing Range in WinUI Chart](Axis_Images/WinUI_Chart_LogarithmicAxis_custom_range.png)
+
+### Customizing the Logarithmic Base
 
 The logarithmic axis base can be customized using the [LogarithmicBase](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_LogarithmicBase) property. The default logarithmic base value is `10`.
 
@@ -449,7 +472,8 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:LogarithmicAxis LogarithmicBase="2"/>
     </chart:SfCartesianChart.YAxes>
@@ -460,7 +484,8 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     LogarithmicBase = 2,
@@ -481,7 +506,8 @@ Axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/wi
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis IsInversed="True"/>
     </chart:SfCartesianChart.YAxes>
@@ -492,7 +518,8 @@ Axis can be inverted by using the [IsInversed](https://help.syncfusion.com/cr/wi
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.IsInversed = true;
 
@@ -504,7 +531,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ![Inversed axis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_inverse.png)
 
-## Opposed Axis
+## Opposed Position
 
 Cartesian charts allow positioning the axis to opposite position by setting the [OpposedPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) property. The default value of this property is `False`.
 
@@ -513,7 +540,8 @@ Cartesian charts allow positioning the axis to opposite position by setting the 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.YAxes>
         <chart:NumericalAxis OpposedPosition="True"/>
     </chart:SfCartesianChart.YAxes>
@@ -524,7 +552,8 @@ Cartesian charts allow positioning the axis to opposite position by setting the 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.OpposedPosition = true;
 
@@ -547,7 +576,8 @@ By default, all the series are plotted based on the 0th index axis of XAxes and 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:DateTimeAxis ShowMajorGridLines="False"/>
     </chart:SfCartesianChart.XAxes>
@@ -577,7 +607,8 @@ By default, all the series are plotted based on the 0th index axis of XAxes and 
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-//. . .
+
+// Configure additional chart elements
 DateTimeAxis primaryAxis = new DateTimeAxis()
 {
     ShowMajorGridLines = false
@@ -637,3 +668,9 @@ The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 * [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of axis label.
 * [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to inverse the chart axis in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12130)
+* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)

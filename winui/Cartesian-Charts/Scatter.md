@@ -10,7 +10,7 @@ keywords: winui scatter chart, winui sfcartesianchart, winui scatter chart custo
 
 # Scatter Chart in WinUI Charts (SfCartesianChart)
 
-The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-scatter-chart) is similar to bubble chart, where each data point being represented by a circle with equal size.
+The [WinUI Scatter Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-scatter-chart) is similar to the bubble chart, where each data point is represented by a circle with equal size.
 
 ## Scatter Chart
 
@@ -69,3 +69,8 @@ this.Content = chart;
 ![Scatter chart type in WinUI Chart](Chart-types_images/WinUI_scatter_chart.png)
 
 N> You can also explore our [WinUI Scatter Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Scatter) that shows how to easily configure with built-in support for creating stunning visual effects.
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to display custom data marker in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12166)

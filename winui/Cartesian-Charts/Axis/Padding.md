@@ -12,14 +12,15 @@ keywords: axis padding in winui chart, winui sfcartesianchart axis padding, winu
 
 ## PlotOffsetStart
 
-The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
+The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at the start position. The following code sample demonstrates the padding applied to the start position for both x and y-axes.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis PlotOffsetStart="30"/>
     </chart:SfCartesianChart.XAxes>
@@ -34,7 +35,8 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
    PlotOffsetStart = 30
@@ -46,7 +48,8 @@ NumericalAxis secondaryAxis = new NumericalAxis()
    PlotOffsetStart = 30
 };
 chart.YAxes.Add(secondaryAxis);
-. . .
+
+// Setting chart as the content of the page
 this.Content = chart;
 
 {% endhighlight %}
@@ -57,14 +60,15 @@ this.Content = chart;
 
 ## PlotOffsetEnd
 
-The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at end position. The following code sample demonstrates the padding applied to end position for both x and y-axes.
+The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at the end position. The following code sample demonstrates the padding applied to the end position for both x and y-axes.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfCartesianChart>
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis PlotOffsetEnd="30"/>
     </chart:SfCartesianChart.XAxes>
@@ -79,7 +83,8 @@ The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
-. . .
+
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
    PlotOffsetEnd = 30
@@ -91,7 +96,8 @@ NumericalAxis secondaryAxis = new NumericalAxis()
    PlotOffsetEnd = 30
 };
 chart.YAxes.Add(secondaryAxis);
-. . .
+
+// Setting chart as the content of the page
 this.Content = chart;
 
 {% endhighlight %}
@@ -99,3 +105,7 @@ this.Content = chart;
 {% endtabs %}
 
 ![PlotOffsetEnd support in WinUI Chart](Axis_images/winui_chart_axis_plot-offset-end.png)
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

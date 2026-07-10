@@ -108,7 +108,6 @@ The legend icon represents a symbol associated with each legend item. The [Legen
         </chart:PieSeries>
     </chart:SfCircularChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
