@@ -36,7 +36,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Change drop-down size
 
-You can change the size of the drop-down calendar in the `Calendar DateRange Picker` by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of the `DropDownHeight` property is **Auto**.
+You can change the size of the drop-down calendar in the `Calendar DateRange Picker` by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of the `DropDownHeight` property is **Auto**.
 
 N> The drop-down size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -156,7 +156,7 @@ public class EventDataConverter : IValueConverter
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center">
         <FlyoutBase.AttachedFlyout>
-            <editor:DropDownFlyout>
+            <editors:DropDownFlyout>
                 <calendar:SfCalendar SelectionMode="Range"
                                          SelectedRange="{x:Bind calendarDateRangePicker.SelectedRange, Mode=TwoWay}" >
                     <calendar:SfCalendar.Resources>
@@ -198,7 +198,7 @@ public class EventDataConverter : IValueConverter
                         </ResourceDictionary>
                     </calendar:SfCalendar.Resources>
                 </calendar:SfCalendar>
-            </editor:DropDownFlyout>
+            </editors:DropDownFlyout>
         </FlyoutBase.AttachedFlyout>
     </calendar:SfCalendarDateRangePicker>
 </Grid>
@@ -295,7 +295,7 @@ You can customize the colors of day names and headers of month, year, decade, an
                         <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
                                                      Color="#FF9BC5ED" />
                         <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
-                                                     Color="SlateGray " Opacity="0.5" />
+                                                     Color="SlateGray" Opacity="0.5" />
                         <Thickness x:Key="SyncfusionCalendarItemMargin">1</Thickness>
                         <x:Double x:Key="SyncfusionBodyFontSize">13</x:Double>
                         <FontFamily x:Key="SyncfusionControlThemeFontFamily">SimSun</FontFamily>

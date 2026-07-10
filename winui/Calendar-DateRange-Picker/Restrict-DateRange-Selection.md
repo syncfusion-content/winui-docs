@@ -18,7 +18,7 @@ N> Dates that appear outside the minimum and maximum date range will be disabled
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
-<calendar:Calendar x:Name="sfCalendarDateRangePicker"/>
+<calendar:SfCalendarDateRangePicker x:Name="sfCalendarDateRangePicker"/>
 
 {% endhighlight  %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
@@ -194,6 +194,6 @@ sfCalendarDateRangePicker.MinDatesCountInRange = 28;
 
 ![display-mode-in-winui-calendar-date-range-picker](Images/navigate-between-views/display-mode-in-winui-calendar-date-range-picker.png)
 
-N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/blob/main/Samples/Selection).
+N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-daterange-picker-examples/tree/main/Samples/Selection).
 
 

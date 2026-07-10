@@ -76,7 +76,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Change editor display format
 
-You can modify and display the selected date range with various formatting like date, month, and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DisplayDateFormat) property. The default value of the `DisplayDateFormat` property is **{0:d}-{1:d}**.
+You can modify and display the selected date range with various formatting like date, month, and year formats by using the [`DisplayDateFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_DisplayDateFormat) property. The default value of the `DisplayDateFormat` property is **{0:d} - {1:d}**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
@@ -131,7 +131,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## First day of week
 
-By default, **Sunday** is shown as the first day of the week in the `Calendar DateRange Picker` control's drop-down calendar. You can change the first day of week by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
+By default, the `FirstDayOfWeek` property value is **Auto**, which selects the first day of the week based on the current culture. You can change the first day of week by changing the [`FirstDayOfWeek`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_FirstDayOfWeek) property value. 
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}

@@ -105,7 +105,7 @@ You can set or change the selected date range programmatically by using the [`Se
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
-SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.SelectedRange = new DateTimeOffsetRange(new DateTimeOffset(new DateTime(2021, 03,17)), new DateTimeOffset(new DateTime(2021, 03, 24)));
 
 {% endhighlight %}
@@ -127,7 +127,7 @@ You can change the selected date range interactively by selecting from the drop-
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 
 {% endhighlight %}
 {% endtabs %}
@@ -145,7 +145,7 @@ The `Header` property is used to display the title for the `CalendarDateRangePic
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
-<editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
+<calendar:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
                                    Header="Select the dates" 
                                    Width="300" 
                                    Height="70" />
@@ -169,16 +169,16 @@ By using the control's `HeaderTemplate` property, you can customize the appearan
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
 
-<editors:SfCalendarDateRangePicker  Width="250" Height="75">
-    <editors:SfCalendarDateRangePicker.HeaderTemplate>
+<calendar:SfCalendarDateRangePicker  Width="250" Height="75">
+    <calendar:SfCalendarDateRangePicker.HeaderTemplate>
         <DataTemplate>
             <StackPanel Orientation="Horizontal">
                 <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE163;"/>
                 <TextBlock Text="Training Dates" FontSize="14" Margin="5"/>
             </StackPanel>
         </DataTemplate>
-    </editors:SfCalendarDateRangePicker.HeaderTemplate>
-</editors:SfCalendarDateRangePicker>
+    </calendar:SfCalendarDateRangePicker.HeaderTemplate>
+</calendar:SfCalendarDateRangePicker>
 
 {% endhighlight %}
 {% endtabs %}
@@ -192,7 +192,7 @@ The `Description` support is used to display the content beneath the control as 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 5" %}
 
-<editors:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
+<calendar:SfCalendarDateRangePicker x:Name="CalendarDateRangePicker" 
                                    Header="Select the dates" 
                                    Width="300" 
                                    Height="70" 
@@ -202,7 +202,7 @@ The `Description` support is used to display the content beneath the control as 
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendarDateRangePicker dateRangePicker = new SfCalendarDateRangePicker();
-dateRangePicker.Header="Select the dates";
+dateRangePicker.Header = "Select the dates";
 dateRangePicker.Description = "The range should be greater than 5 days.";
 
 {% endhighlight %}
@@ -226,7 +226,7 @@ You can prompt the user with any information by using the [`PlaceholderText`](ht
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
-SfCalendarDateRangePicker sfCalendarDateRangePicker= new SfCalendarDateRangePicker();
+SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
 sfCalendarDateRangePicker.PlaceholderText = "Select the Date";
 sfCalendarDateRangePicker.SelectedRange = null;
 
@@ -250,13 +250,13 @@ You will be notified when the selected range is changed in the `Calendar DateRan
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDateRangePicker Name="sfCalendarDateRangePicker"
-                                    SelectedDateChanged="SfCalendarDateRangePicker_SelectedDateChanged" />
+                                    SelectedDateRangeChanged="SfCalendarDateRangePicker_SelectedDateRangeChanged" />
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDateRangePicker sfCalendarDateRangePicker = new SfCalendarDateRangePicker();
-sfCalendarDateRangePicker.SelectedDateChanged += SfCalendarDateRangePicker_SelectedDateChanged;
+sfCalendarDateRangePicker.SelectedDateRangeChanged += SfCalendarDateRangePicker_SelectedDateRangeChanged;
 
 {% endhighlight %}
 {% endtabs %}
@@ -266,7 +266,7 @@ You can handle the event as shown below.
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, SelectedDateChangedEventArgs e)
+private void SfCalendarDateRangePicker_SelectedDateRangeChanged(object sender, SelectedDateRangeChangedEventArgs e)
 {
     var StartOldValue = e.RangeStartOldValue;
     var StartNewValue = e.RangeStartNewValue;
@@ -282,7 +282,7 @@ private void SfCalendarDateRangePicker_SelectedDateChanged(object sender, Select
 
 You can hide the drop-down button in `Calendar DateRange Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as **false**. The default value of `ShowDropDownButton` property is **true**.
 
-N> When the drop-down button is hidden, you can still open the drop-down calendar using the **ALT + down** keyboard shortcut.
+N> When the drop-down button is hidden, you can still open the drop-down calendar using the **Alt + DownArrow** keyboard shortcut.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -307,7 +307,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Show the submit buttons
 
-You can show the submit buttons in the `Calendar DateRange Picker` drop-down by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as true. The default value of `ShowSubmitButtons` property is **false**.
+You can show the submit buttons in the `Calendar DateRange Picker` drop-down by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value to **true**. The default value of the `ShowSubmitButtons` property is **false**.
 
 N> When the submit buttons are hidden, you can change the `SelectedRange` property value by simply selecting a date range.
 
