@@ -9,11 +9,11 @@ documentation: ug
 
 # Dropdown Customization in WinUI Date Picker
 
-This section describes about various dropdown customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
+This section describes various drop-down customization options available in the [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
 
 ## Customize the dropdown button
 
-You can customize the UI of dropdown button by using the [`DropDownButtonTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property. The `DataContext` of `DropDownButtonTemplate` property is `SfDatePicker`.
+You can customize the UI of the drop-down button by using the [`DropDownButtonTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property. The `DataContext` of the `DropDownButtonTemplate` property is `SfDatePicker`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" %}
@@ -50,9 +50,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide dropdown button
 
-You can hide the dropdown button in `Date Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the drop-down button in the `Date Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value to `false`. The default value of the `ShowDropDownButton` property is `true`.
 
-N> To open a dropdown date spinner, press the `Alt` + `Down Arrow` keys.
+N> To open the drop-down date spinner, press the `Alt` + `Down Arrow` keys.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -76,9 +76,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown date spinner as full, center, left, right, top or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the drop-down date spinner as full, center, left, right, top, or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of the `DropDownPlacement` property is `Auto`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then `Date Picker` smartly shifts the spinner alignment.
+N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `Date Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -102,7 +102,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Open dropdown programmatically
 
-You can open or close the dropdown date spinner programmatically by setting [IsOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property value as **true** or **false**. The default value of `IsOpen` property is **false**.
+You can open or close the drop-down date spinner programmatically by setting the [IsOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property value to **true** or **false**. The default value of the `IsOpen` property is **false**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -126,7 +126,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown height
 
-You can change the height of dropdown date spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular date items will be visible. The default value of `DropDownHeight` property is `NaN`.
+You can change the height of the drop-down date spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of the `DropDownHeight`, `ItemWidth`, and `ItemHeight` properties, particular date items will be visible. The default value of the `DropDownHeight` property is `NaN`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -150,7 +150,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the number of dates to be shown in the dropdown
 
-You can change the number of dates to be shown in the dropdown date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
+You can change the number of dates to be shown in the drop-down date spinner by using the [VisibleItemsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_VisibleItemsCount) property. The default value of the `VisibleItemsCount` property is `-1`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -171,5 +171,5 @@ sfDatePicker.VisibleItemsCount = 5;
 ![show-number-of-dates-in-drop-down-in-winui-date-picker](Images/drop-down-date-spinner/show-number-of-dates-in-drop-down-in-winui-date-picker.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
-s
-N> When `DropDownHeight` and `VisibleItemsCount` properties are set, `VisibleItemsCount` property have higher precedence.
+
+N> When the `DropDownHeight` and `VisibleItemsCount` properties are set, the `VisibleItemsCount` property has higher precedence.

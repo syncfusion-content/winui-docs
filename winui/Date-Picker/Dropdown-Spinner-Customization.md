@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dropdown Spinner Customization in WinUI DatePicker | Syncfusion
-description: This section describes about how to customize the Date Picker (SfDatePicker) control dropdown spinner into WinUI application and its basic features.
+title: Dropdown Spinner Customization in WinUI Date Picker | Syncfusion
+description: This section describes how to customize the Date Picker (SfDatePicker) control dropdown spinner in a WinUI application and its basic features.
 platform: WinUI
 control: SfDatePicker
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Dropdown Spinner Customization in WinUI Date Picker
 
-This section describes about various spinner customization options available in [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
+This section describes various spinner customization options available in the [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control.
 
 ## Change the size of dropdown cells
 
-You can change the cell size in the dropdown date spinner by setting the values to [`ItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ItemWidth) and [`ItemHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ItemHeight) properties. The default value of the `ItemWidth` and `ItemHeight` properties is `80` and `40`. 
+You can change the cell size in the drop-down date spinner by setting the values for the [`ItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ItemWidth) and [`ItemHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_ItemHeight) properties. The default value of the `ItemWidth` property is `80` and the `ItemHeight` property is `40`. 
 
-You can also restrict the width of dropdown date spinner cells with particular pixels by using the [`MinItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinItemWidth) and [`MaxItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxItemWidth) properties. The default value of `MinItemWidth` property is `0` and `MaxItemWidth` property is `Infinity`.
+You can also restrict the width of the drop-down date spinner cells to particular pixels by using the [`MinItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinItemWidth) and [`MaxItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxItemWidth) properties. The default value of the `MinItemWidth` property is `0` and the `MaxItemWidth` property is `Infinity`.
 
-N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
+N> The `ItemWidth` value must be within the `MinItemWidth` and `MaxItemWidth` values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
@@ -47,7 +47,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the cell's style in dropdown spinner
 
-You can customize all the dropdown date spinner cells by using the `ItemContainerStyle` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
+You can customize all the drop-down date spinner cells by using the `ItemContainerStyle` property. The `DataContext` of the `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8" %}
@@ -72,7 +72,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the cell's appearance in dropdown spinner
 
-You can change the UI of specific date, month or year cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SpinnerItem`.
+You can change the UI of specific date, month, or year cells in the drop-down spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SpinnerItem`.
 
 {% tabs %}
 {% highlight C# tabtitle="DateItemTemplateSelector.cs" %}
@@ -195,11 +195,11 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the columns in dropdown spinner
 
-You can change the date format, header text, size of date field cells, customize the UI of date field cells and enables the date looping, etc., by using the [`DateFieldPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
+You can change the date format, header text, size of date field cells, customize the UI of date field cells, and enable date looping, etc., by using the [`DateFieldPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldPrepared) event.
 
-Here, date format, header and cell size of the dropdown date field is customized by using `DateFieldPrepared` event.
+Here, the date format, header, and cell size of the drop-down date field are customized by using the `DateFieldPrepared` event.
 
-N> This will effective only for the date field cells.
+N> This will be effective only for the date field cells.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -217,7 +217,7 @@ sfDatePicker.DateFieldPrepared += SfDatePicker_DateFieldPrepared;
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows,
+You can handle the event as follows:
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}

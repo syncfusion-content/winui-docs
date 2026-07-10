@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Date Picker
 
-This section explains the steps required to add the WINUI [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control and its date selection options. This section covers only basic features needed to get started with Syncfusion `Date Picker` control.
+This section explains the steps required to add the WinUI [Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html) control and its date selection options. This section covers only the basic features needed to get started with the Syncfusion `Date Picker` control.
 
 ## Structure of Date Picker control
 
@@ -21,10 +21,10 @@ In this walkthrough, you will create a WinUI application that contains the `Date
 
 ## Adding control manually in XAML
 
-To add `Date Picker` control manually in XAML , follow the below steps.
+To add the `Date Picker` control manually in XAML, follow the below steps.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Download and refer the following NuGet in the project.
+2. Download and refer to the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfDatePicker` control.
@@ -58,9 +58,9 @@ To add `Date Picker` control manually in XAML , follow the below steps.
 To add the `Date Picker` control manually in C#, follow the below steps.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Download and refer the following NuGet in the project.
+2. Download and refer to the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
-3. Import the `Date Picker` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
+3. Import the `Date Picker` namespace `Syncfusion.UI.Xaml.Editors` in the C# page.
 4. Initialize the `Date Picker` control.
 
 {% capture codesnippet2 %}
@@ -97,7 +97,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select date programmatically
 
-You can set or change the selected date programmatically by using [`SelectedDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property. If you not assign any value for the `SelectedDate` property, `Date Picker` will automatically assign the current system date as `SelectedDate`.
+You can set or change the selected date programmatically by using the [`SelectedDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_SelectedDate) property. If you do not assign any value to the `SelectedDate` property, the `Date Picker` will automatically assign the current system date as `SelectedDate`.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
@@ -114,7 +114,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select date interactively
 
-You can change the selected date interactively by enter the date value using keyboard or select from dropdown date spinner. You can get the selected date from the `SelectedDate` property.
+You can change the selected date interactively by entering the date value using the keyboard or selecting from the drop-down date spinner. You can get the selected date from the `SelectedDate` property.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
@@ -136,15 +136,15 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Restrict selection
 
 You can restrict users from:
-* Selecting date within a specific minimum and maximum range using [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties.
-* Selecting a date from blocked dates using [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_BlackoutDates) property.
-* Selecting a date from specifically blocked set of dates (example : blocking weekend dates) using [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event.
+* Selecting a date within a specific minimum and maximum range using the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties.
+* Selecting a date from blocked dates using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_BlackoutDates) property.
+* Selecting a date from a specifically blocked set of dates (example: blocking weekend dates) using the [`DateFieldItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateFieldItemPrepared) event.
 
-For further reference [click_here](date-restriction).
+For further reference, [click here](date-restriction).
 
 ## Setting null value
 
-If you want to set null value for the `Date Picker`, set the [`AllowNull`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNull) property as `true` and set `SelectedDate` property as `null`. If `AllowNull` property is `false`, then the current system date is updated in `SelectedDate` property and displayed instead of `null`.
+If you want to set a null value for the `Date Picker`, set the [`AllowNull`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_AllowNull) property to `true` and set the `SelectedDate` property to `null`. If the `AllowNull` property is `false`, then the current system date is updated in the `SelectedDate` property and displayed instead of `null`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3" %}
@@ -169,9 +169,9 @@ sfDatePicker.AllowNull = true;
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
 
 ## Header and description
-This section explains about `header` and `description` properties of DatePicker.
+This section explains the `Header` and `Description` properties of the `Date Picker`.
 ### Header
-The `Header` property is used to display the title for the `DatePicker` Control
+The `Header` property is used to display the title for the `Date Picker` control.
      
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
@@ -193,7 +193,7 @@ datePicker.Header = "Enter your interview date";
 ![customize-header-text-in-winui-date-picker](Images/getting-started/customize-header-text-in-winui-date-picker.png)
 
 #### Header customization
-By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
@@ -241,7 +241,7 @@ datePicker.Description = "The chosen date must be within the next 5 days.";
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceholderText) property. This will be displayed only when the `TimePicker` contains the `SelectedDate` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedDate` property and displayed instead of `PlaceholderText`.
+You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_PlaceholderText) property. This will be displayed only when the `Date Picker` contains the `SelectedDate` property as `null` and the `AllowNull` property as `true`. If the `AllowNull` property is `false`, then the current system date is updated in the `SelectedDate` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
@@ -269,10 +269,10 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Date changed notification
 
-You will be notified when selected date changed in `Date Picker` by using [`SelectedDateChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime), [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
+You will be notified when the selected date changes in the `Date Picker` by using the [`SelectedDateChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DateChanged) event. The `SelectedDateChanged` event contains the old and newly selected date in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime) and [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
 
-* `OldDateTime` - Gets a date which is previously selected.
-* `NewDateTime` - Gets a date which is currently selected.
+* `OldDateTime` - Gets the date that was previously selected.
+* `NewDateTime` - Gets the date that is currently selected.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
