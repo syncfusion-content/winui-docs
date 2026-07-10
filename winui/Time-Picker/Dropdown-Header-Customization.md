@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Header Customization in WinUI Time Picker | Syncfusion
-description: This section describes about how to customize the Time Picker (SfTimePicker) control dropdown header into WinUI application and its basic features.
+description: This section describes how to customize the Time Picker (SfTimePicker) control dropdown header in a WinUI application and its basic features.
 platform: WinUI
 control: SfTimePicker
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Dropdown Header Customization in WinUI Time Picker
 
-This section describes about various dropdown header customization options available in [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
+This section describes various dropdown header customization options available in the [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
 
 ## Setting hints in dropdown header
 
-You can add a hints in dropdown header by using the [`DropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hints will be shown only by setting the [`ShowDropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property values as `true`. Otherwise, dropdown header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
+You can add a hint in the dropdown header by using the [`DropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeader) property. The dropdown hint will be shown only by setting the [`ShowDropDownHeader`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowDropDownHeader) property value as `true`. Otherwise, the dropdown header will not be shown. The default value of `DropDownHeader` property is `null` and `ShowDropDownHeader` property is `false`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3" %}
@@ -39,7 +39,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the dropdown header
 
-You can customize the header of dropdown time spinner by using the [`DropDownHeaderTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeaderTemplate) property. The `DataContext` of `DropDownHeaderTemplate` property is `SfTimePicker.DropDownHeader`.
+You can customize the header of the dropdown time spinner by using the [`DropDownHeaderTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DropDownHeaderTemplate) property. The `DataContext` of `DropDownHeaderTemplate` property is `SfTimePicker.DropDownHeader`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" %}
@@ -80,7 +80,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to hide the dropdown hour, minute and meridiem field spinner's column headers, use the [`ShowColumnHeaders`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ShowColumnHeaders) property value as `false`. The default value of `ShowColumnHeaders` property is `true`.
 
-N> To customize the column headers, refer the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/time-picker/dropdown-spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
+N> To customize the column headers, refer to the [Customize the columns in dropdown spinner](https://help.syncfusion.com/winui/time-picker/dropdown-spinner-customization#customize-the-columns-in-dropdown-spinner) topic.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}

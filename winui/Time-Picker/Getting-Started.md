@@ -7,9 +7,9 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started with WinUI Time Picker
+# Getting Started with WinUI Time Picker control
 
-This section explains the steps required to add the [WinUI Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control and its time selection options. This section covers only basic features needed to get started with Syncfusion `Time Picker` control.
+This section explains the steps required to add the [WinUI Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control and its time selection options. This section covers only the basic features needed to get started with Syncfusion `Time Picker` control.
 
 ## Structure of Time Picker control
 
@@ -21,7 +21,7 @@ In this walkthrough, you will create a WinUI application that contains the `Time
 
 ## Adding control manually in XAML
 
-To add `Time Picker` control manually in XAML , follow the below steps.
+To add `Time Picker` control manually in XAML, follow the below steps.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer the following NuGet in the project.
@@ -97,7 +97,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select time programmatically
 
-You can set or change the selected time programmatically by using [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you not assign any value for the `SelectedTime` property, `Time Picker` will automatically assign the current system time as `SelectedTime`.
+You can set or change the selected time programmatically by using [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you do not assign any value for the `SelectedTime` property, the `Time Picker` will automatically assign the current system time as `SelectedTime`.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
@@ -114,7 +114,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select time interactively
 
-You can change the selected time interactively by enter the time value using keyboard or from the dropdown time spinner. You can get the selected time from the `SelectedTime` property.
+You can change the selected time interactively by entering the time value using keyboard or from the dropdown time spinner. You can get the selected time from the `SelectedTime` property.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
@@ -137,9 +137,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can restrict users from:
 * Selecting time within a specific minimum and maximum time limit using [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties.
-* Selecting a date from blocked dates using [`BlackoutTimes`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) property.
+* Selecting a time from blocked times using [`BlackoutTimes`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) property.
 
-For further reference [Time Restriction](time-restriction).
+For further reference, see [Time Restriction](time-restriction).
 
 ## Setting null value
 
@@ -168,9 +168,9 @@ sfTimePicker.AllowNull = true;
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Header and description
-This section explains about `header` and `description` properties of TimePicker.
+This section explains about `Header` and `Description` properties of the Time Picker.
 #### Header
-The `Header` property is used to display the title for the `TimePicker` Control
+The `Header` property is used to display the title for the `TimePicker` control.
      
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
@@ -191,7 +191,7 @@ timePicker.Header = "Select your convenient order delivery time";
 
 ![customize-header-text-in-winui-time-picker](Getting-Started_images/customize-header-text-in-winui-time-picker.png)
 #### Header customization
-By using the controls `HeaderTemplate` property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
@@ -266,7 +266,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Time changed notification
 
-You will be notified when selected time changed in `Time Picker` by using [`SelectedTimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeChanged) event. The `SelectedTimeChanged` event contains the old and newly selected time in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime) and [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
+You will be notified when the selected time changes in the `Time Picker` by using [`SelectedTimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeChanged) event. The `SelectedTimeChanged` event contains the old and newly selected time in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime) and [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
 
 * `OldDateTime` - Gets a time which is previously selected.
 * `NewDateTime` - Gets a time which is currently selected.
@@ -292,7 +292,7 @@ You can handle the event as follows:
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
+private void SfTimePicker_TimeChanged(object sender, SelectedDateTimeChangedEventArgs e) {          
     Console.WriteLine("The previously selected Time: " + e.OldDateTime.ToString());
     Console.WriteLine("The newly selected Time: " + e.NewDateTime.ToString());            
 }

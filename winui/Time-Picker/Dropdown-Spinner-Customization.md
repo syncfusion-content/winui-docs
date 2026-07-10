@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Spinner Customization in WinUI Time Picker | Syncfusion
-description: This section describes about how to customize the Time Picker (SfTimePicker) control dropdown spinner into WinUI application and its basic features.
+description: This section describes how to customize the Time Picker (SfTimePicker) control dropdown spinner in a WinUI application and its basic features.
 platform: WinUI
 control: SfTimePicker
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Dropdown Spinner Customization in WinUI Time Picker
 
-This section describes about various dropdown spinner customization options available in [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
+This section describes various dropdown spinner customization options available in the [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
 
 ## Change the size of dropdown cells
 
-You can change the cell size in the dropdown time spinner by setting the values to [`ItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ItemWidth) and [`ItemHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ItemHeight) properties. The default value of the `ItemWidth` and `ItemHeight` properties is `80` and `40`. 
+You can change the cell size in the dropdown time spinner by setting the values to [`ItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ItemWidth) and [`ItemHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_ItemHeight) properties. The default value of the `ItemWidth` and `ItemHeight` properties are `80` and `40`. 
 
-You can also restrict the width of dropdown time spinner cells with particular pixels by using the [`MinItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinItemWidth) and [`MaxItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxItemWidth) properties. The default value of `MinItemWidth` property is `0` and `MaxItemWidth` property is `Infinity`.
+You can also restrict the width of the dropdown time spinner cells to particular pixels by using the [`MinItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinItemWidth) and [`MaxItemWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxItemWidth) properties. The default value of `MinItemWidth` property is `0` and `MaxItemWidth` property is `Infinity`.
 
-N> `ItemWidth` values must be within the `MinItemWidth` and `MaxItemWidth`values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
+N> The `ItemWidth` value must be within the `MinItemWidth` and `MaxItemWidth` values. Otherwise, `ItemWidth` will take the closest value from `MinItemWidth` or `MaxItemWidth` value.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5" %}
@@ -47,7 +47,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the cell's style in dropdown spinner
 
-You can customize all the dropdown time spinner cells by using the `ItemContainerStyle` or `ItemTemplate` properties. The `DataContext` of `ItemContainerStyle` or `ItemTemplate` properties is [`SpinnerItem`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SpinnerItem.html).
+You can customize all the dropdown time spinner cells by using the `ItemContainerStyle` or `ItemTemplate` properties. The `DataContext` of `ItemContainerStyle` and `ItemTemplate` properties is `SpinnerItem`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7" %}
@@ -70,7 +70,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize the cell's appearance in dropdown spinner
 
-You can change the UI of specific hour, minutes or seconds cells in dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SfTimePicker`. 
+You can change the UI of specific hour, minute or second cells in the dropdown spinner by using the `ItemTemplateSelector` property. The `DataContext` of `ItemTemplateSelector` is `SfTimePicker`. 
 
 {% tabs %}
 {% highlight C# tabtitle="TimeItemTemplateSelector.cs" %}
@@ -198,7 +198,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the time interval, header text, size of time field cells and customize the UI of time field cells, etc., by using the [`TimeFieldPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeFieldPrepared) event.
 
-Here, time interval, header and cell size of the dropdown time fields is customized by using `TimeFieldPrepared` event.
+Here, the time interval, header and cell size of the dropdown time fields are customized by using the `TimeFieldPrepared` event.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
