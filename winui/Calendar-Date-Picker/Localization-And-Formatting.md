@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization and Formatting in WinUI Calendar Date Picker
 
-This section describes how to change the display formats and to localize the [Calendar Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control using the [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_CalendarIdentifier) and `Language` properties.
+This section describes how to change the display formats and to localize the [Calendar Date Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control using the [`CalendarIdentifier`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) and `Language` properties.
 
 ## Types of calendar
 
@@ -62,13 +62,13 @@ If you want to localize the drop-down calendar, use the `Language` property. The
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
 
 <calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"
-                               Language="ar-AR"/>
+                               Language="ar-SA"/>
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 SfCalendarDatePicker sfCalendarDatePicker = new SfCalendarDatePicker();
-sfCalendarDatePicker.Language = "ar-AR";
+sfCalendarDatePicker.Language = "ar-SA";
 
 {% endhighlight %}
 {% endtabs %}

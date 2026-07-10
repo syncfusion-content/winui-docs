@@ -144,7 +144,7 @@ The `Header` property is used to display the title for the `CalendarDatePicker` 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4" %}
 
-<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
+<calendar:SfCalendarDatePicker x:Name="CalendarDatePicker" 
                               Header="Enter your date of birth"
                               Width="180" 
                               Height="60" />
@@ -166,16 +166,16 @@ By using the control's `HeaderTemplate` property, you can customize the appearan
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 4 5 6 7 8 9" %}
 
-<editors:SfCalendarDatePicker  Width="180" Height="75" >
-            <editors:SfCalendarDatePicker.HeaderTemplate>
+<calendar:SfCalendarDatePicker  Width="180" Height="75" >
+            <calendar:SfCalendarDatePicker.HeaderTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xED55;"/>
                         <TextBlock Text="Birthday Date" FontSize="14" Margin="5"/>
                     </StackPanel>
                 </DataTemplate>
-            </editors:SfCalendarDatePicker.HeaderTemplate>
-</editors:SfCalendarDatePicker>
+            </calendar:SfCalendarDatePicker.HeaderTemplate>
+</calendar:SfCalendarDatePicker>
 
 {% endhighlight %}
 {% endtabs %}
@@ -188,7 +188,7 @@ The `Description` support is used to display the content beneath the control as 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 5" %}
 
-<editors:SfCalendarDatePicker x:Name="CalendarDatePicker" 
+<calendar:SfCalendarDatePicker x:Name="CalendarDatePicker" 
                               Header="Enter your date of birth" 
                               Width="300" 
                               Height="80" 
@@ -374,7 +374,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 If you want to select the date from the drop-down calendar only by clicking the **Ok** button, set the [ShowSubmitButtons](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as **true**. The default value of the `ShowSubmitButtons` property is **false**.
 
-N> When the submit buttons are visible, the `SelectedDate` property will be updated only after choosing the start and end date from the drop-down and clicking the **Ok** button.
+N> When the submit buttons are visible, the `SelectedDate` property will be updated only after choosing the date from the drop-down and clicking the **Ok** button.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -399,16 +399,16 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 ## Restrict selection
 
 You can restrict users from:
-* Selecting a date within a specific minimum and maximum range using the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDate) properties.
-* Selecting a date from blocked dates using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_BlackoutDates) property.
-* Selecting a date from a specifically blocked set of dates (example: blocking weekend dates) using the [`ItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ItemPrepared) event. 
+* Selecting a date within a specific minimum and maximum range using the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MaxDate) properties.
+* Selecting a date from blocked dates using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_BlackoutDates) property.
+* Selecting a date from a specifically blocked set of dates (example: blocking weekend dates) using the [`CalendarItemPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarItemPrepared) event. 
 
 For further details, refer to [Date Selection and Restriction](date-selection-and-restriction).
 
 ## Navigation between views
 
 * You can navigate between month, year, decade, and century views in the `Calendar Date Picker` control.
-* You can also restrict users from navigating between specific views only (month and year selection for credit card) using the [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
+* You can also restrict users from navigating between specific views only (month and year selection for credit card) using the [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MaxDisplayMode) properties.
 
 ![view-navigation-in-winui-calendar-date-range-picker](Getting-Started_images/view-navigation-in-winui-calendar-date-range-picker.gif)
 

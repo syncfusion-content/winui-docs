@@ -41,7 +41,7 @@ N> Dates that appear outside the minimum and maximum date range will be disabled
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
-<calendar:Calendar x:Name="sfCalendarDatePicker"/>
+<calendar:SfCalendarDatePicker x:Name="sfCalendarDatePicker"/>
 
 {% endhighlight  %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
@@ -63,7 +63,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Block dates using BlackoutDates
 
-You can block particular dates from the date selection by adding respective dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
+You can block particular dates from the date selection by adding respective dates in the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_BlackoutDates) collection property. The default value of `BlackoutDates` property is **null**.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
