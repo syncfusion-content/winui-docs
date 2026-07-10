@@ -10,9 +10,9 @@ keywords: zooming and panning in winui chart, winui sfcartesianchart zooming and
 
 # Zooming and Panning in WinUI Chart (SfCartesianChart)
 
-[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are large number of data points inside the chart.
+[SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data points in the specific area, when there are large number of data points inside the chart.
 
-Zooming and panning provides you to take a close-up look of the data point plotted in the series.
+Zooming and panning provides you to take a close-up look at the data points plotted in the series.
 
 ## Enable Zooming
 
@@ -52,7 +52,7 @@ Zooming the chart area can be achieved in different ways by pinch zooming, mouse
 
 ### Pinch Zooming
 
-Pinch zooming is enable by using the [EnablePinchZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to `true` as shown in the below code snippet.
+Pinch zooming is enabled by using the [EnablePinchZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to `true` as shown in the below code snippet.
 
 {% tabs %}
 
@@ -88,7 +88,7 @@ chart.ZoomPanBehavior = zooming;
 
 ### Mouse Wheel Zooming
 
-Zooming can be performed by mouse wheel action by setting [EnableMouseWheelZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableMouseWheelZooming) property to `true`.
+Zooming can be performed by mouse wheel action by setting the [EnableMouseWheelZooming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableMouseWheelZooming) property to `true`.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ chart.XAxes.Add(primaryAxis);
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined by using the [ZoomMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property.
 
-Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis.
+The following code example illustrates how to restrict the chart to be zoomed only along the horizontal axis.
 
 {% tabs %}
 
@@ -200,7 +200,7 @@ chart.ZoomPanBehavior = zooming;
 
 ![Zoom mode support in WinUI Chart](Zooming-and-panning_images/WinUI_chart_zoom_modeX.png)
 
-Following code example illustrates how to restrict the chart to be zoomed only along vertical axis.
+The following code example illustrates how to restrict the chart to be zoomed only along the vertical axis.
 
 {% tabs %}
 
@@ -272,3 +272,8 @@ chart.ZoomPanBehavior = zooming;
 {% endhighlight %}
 
 {% endtabs %}
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)

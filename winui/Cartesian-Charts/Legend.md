@@ -543,3 +543,8 @@ chart.Legend = new ChartLegend()
 ![Legend ItemTemplate support in WinUI Chart](Legend_images/WinUI_chart_legend_itemTemplate.png)
 
 N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html#Syncfusion_UI_Xaml_Charts_LegendItem_Item) can be used to access the data linked to the associated model class. The binding context for ChartLegend `ItemTemplate` is [LegendItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html), which provides the necessary data for the legend labels.
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

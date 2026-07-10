@@ -18,7 +18,7 @@ This section explains how to populate the Cartesian chart with data, a header, d
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. To initialize the control, import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C#.
-4. Initialize [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html?) control.
+4. Initialize [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %} 
@@ -142,7 +142,7 @@ grid.DataContext = new ViewModel();
 
 ## Initialize Chart Axis
 
-[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html?) is used to locate the data points inside the chart area. The [XAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_YAxes) collection of the chart is used to initialize the axis for the chart.
+[ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [XAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_YAxes) collection of the chart is used to initialize the axis for the chart.
 
 {% tabs %} 
 
@@ -180,7 +180,7 @@ Run the project and check if you get the following output to make sure you have 
 
 ## Populate Chart with Data
 
-As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html?tabs=tabid-1%2Ctabid-8%2Ctabid-6%2Ctabid-28) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
+As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
 N> You need to set [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties, so that the chart will fetch values from the respective properties in the data model to plot the series.
 
@@ -236,7 +236,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-The title of the chart provides quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html?tabs=tabid-5%2Ctabid-7%2Ctabid-1%2Ctabid-3#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set title for the chart as follows.
+The title of the chart provides quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set title for the chart as follows.
 
 {% tabs %} 
 
@@ -292,7 +292,7 @@ chart.Series.Add(series);
 
 ## Enable Legend
 
-The legend provides information about the data point displayed in the chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html?tabs=tabid-5%2Ctabid-7%2Ctabid-1%2Ctabid-3#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
+The legend provides information about the data point displayed in the chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
 
 {% tabs %} 
 
@@ -506,3 +506,8 @@ The following chart is created as a result of the previous codes.
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_chart.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted). Looking for the full WinUI Charts component overview, features, pricing, and documentation? Visit the [WinUI Charts](https://www.syncfusion.com/winui-controls/cartesian-charts) page.
+## See Also
+
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

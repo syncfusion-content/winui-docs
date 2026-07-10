@@ -10,7 +10,7 @@ keywords: winui fast step line chart, winui sfcartesianchart, winui fast step li
 
 # Fast Step Line Chart in WinUI (SfCartesianChart)
 
-A fast stepline bitmap series is a special kind of series that can render a collection with huge number of data points using `WriteableBitmap`. [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of step line series.
+A fast stepline bitmap series is a special kind of series that can render a collection with a huge number of data points using `WriteableBitmap`. [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of the step line series.
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ chart.Series.Add(series);
 
 ### Anti-aliasing
 
-The anti aliasing mode can be enabled using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) as shown in the following code sample.
+The anti-aliasing mode can be enabled using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of [FastStepLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) as shown in the following code sample.
 
 {% tabs %}
 
@@ -114,3 +114,8 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Anti-aliasing support for FastStepLineBitmap chart in WinUI](FastChart_images/faststeplinebitmap_chart_antialiasing.png)
+
+## See Also
+
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

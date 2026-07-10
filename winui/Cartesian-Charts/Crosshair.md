@@ -14,7 +14,7 @@ The Chart crosshair behavior allows you to view the data values at the current m
 
 ## Define crosshair
 
-To add the crosshair in the chart, create an instance [ChartCrosshairBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html) and set it to the [CrosshairBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_CrosshairBehavior) property of the chart.
+To add the crosshair in the chart, create an instance of [ChartCrosshairBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html) and set it to the [CrosshairBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_CrosshairBehavior) property of the chart.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ chart.CrosshairBehavior = behavior;
 
 ![Crosshair support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair.png)
 
-To view the crosshair label in the particular axis, you have to enable the [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballLabel) property in that axis as in the following code snippet.
+To view the crosshair label in a particular axis, you have to enable the [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballLabel) property in that axis as in the following code snippet.
 
 {% tabs %}
 
@@ -175,7 +175,7 @@ chart.Behaviors.Add(crosshair);
 
 ## Horizontal and vertical axis label
 
-The horizontal axis label appears when the vertical line intersects the X-axis, and the vertical axis label appears when the horizontal line intersects the Y-axis. These labels can be customized using the [HorizontalAxisLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalAxisLabelAlignment) and [VerticalAxisLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) properties. By default the axis label will positioned in center.
+The horizontal axis label appears when the vertical line intersects the X-axis, and the vertical axis label appears when the horizontal line intersects the Y-axis. These labels can be customized using the [HorizontalAxisLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_HorizontalAxisLabelAlignment) and [VerticalAxisLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartCrosshairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrosshairBehavior_VerticalAxisLabelAlignment) properties. By default, the axis label will be positioned in the center.
 
 Axis label can be aligned by Near, Far, Center, and Auto options.
 
@@ -244,7 +244,7 @@ chart.Behaviors.Add(crosshair);
 
 ## Template
 
-The default appearance of the crosshair axis labels can be customized by using the [CrosshairLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CrosshairLabelTemplate) property of chart axis. The following example demonstrates how to set the crosshair label template.
+The default appearance of the crosshair axis labels can be customized by using the [CrosshairLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CrosshairLabelTemplate) property of the chart axis. The following example demonstrates how to set the crosshair label template.
 
 {% tabs %}
 
@@ -314,4 +314,9 @@ chart.XAxes.Add(secondaryAxis);
 
 ![Crosshair Template support in WinUI chart](Crosshair_images/WinUI_Chart_Crosshair_Template.png)
 
-N> The binding context for `CrosshairLabelTemplate` is [ChartPointInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html), which provides the necessary data for the cross hair labels.
+N> The binding context for `CrosshairLabelTemplate` is [ChartPointInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html), which provides the necessary data for the crosshair labels.
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711)

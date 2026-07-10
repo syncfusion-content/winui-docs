@@ -14,9 +14,6 @@ Candle charts are a type of financial chart used to represent the price movement
 
 To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection.
 
-{% tabs %}
-{% highlight c# tabtitle="ViewModel.cs" %}
-
 public ObservableCollection<Model> StockData { get; set; } = new ObservableCollection<Model>();
 StockData.Add(new Model { Year = "2000", High = 50, Low = 40, Open = 47, Close = 45 });
 StockData.Add(new Model { Year = "2001", High = 50, Low = 35, Open = 45, Close = 40 });
@@ -271,3 +268,8 @@ this.Content = chart;
 {% endtabs %}
 
 ![Candle chart segment width in WinUI Chart](Chart-types_images/CandleSegmentWidth.png)
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Trackball in WinUI Chart control | Syncfusion
-description: Learn here all about trackball and its customziation in Syncfusion® WinUI Chart (SfCartesianChart) control
+description: Learn here all about trackball and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,11 +10,11 @@ keywords: trackball in winui chart, winui sfcartesianchart trackball, winui char
 
 # Trackball in WinUI Chart (SfCartesianChart)
 
-The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
+The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis, and the y values are determined from the points touching the vertical line in the series.
 
 ## Define Trackball
 
-To add the trackball in the chart, create an instance [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_TrackballBehavior) property of the chart.
+To add the trackball in the chart, create an instance of [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_TrackballBehavior) property of the chart.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-The default appearance of the Trackball in primary axis (CategoryAxis).
+The default appearance of the Trackball on the primary axis (CategoryAxis).
 
 ![Axis trackball support in WinUI chart](Trackball_images/WinUI_chart_axis_trackball.png)
 
@@ -97,7 +97,7 @@ The Trackball is composed of the following parts:
 
 ## Trackball Line
 
-The trackball line is visible, when you initialize the [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html). If you want to collapse the visibility of the trackball line, then you have to set [ShowLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_ShowLine) to `false`.
+The trackball line is visible when you initialize the [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html). If you want to collapse the visibility of the trackball line, then you have to set [ShowLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_ShowLine) to `false`.
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ chart.TrackballBehavior = behavior;
 
 ### Customization of trackball line
 
-By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LineStyle) property, you can customize the appearance of trackball line.
+By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_LineStyle) property, you can customize the appearance of the trackball line.
 
 {% tabs %}
 
@@ -181,7 +181,7 @@ chart.TrackballBehavior = Trackball;
 
 ## Symbol
 
-By default, the trackball symbol is displayed as ellipse. To change the default style of the symbol by using the [ChartTrackballStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_ChartTrackballStyle) property.
+By default, the trackball symbol is displayed as an ellipse. You can change the default style of the symbol by using the [ChartTrackballStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_ChartTrackballStyle) property.
 
 {% tabs %}
 
@@ -273,16 +273,16 @@ this.Content = chart;
 
 ### Axis label alignment 
 
-The alignment of the axis label can be defined using the [AxisLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_AxisLabelAlignment) property. By default, the axis label will positioned in center.
+The alignment of the axis label can be defined using the [AxisLabelAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_AxisLabelAlignment) property. By default, the axis label will be positioned in the center.
 
 * `Auto` - used to align in Near/Far positions based on the trackball movement.
-* `Far` - used to align in far from the position of trackball.
-* `Near` -used to align in near to the position of trackball.
+* `Far` - used to align far from the position of the trackball.
+* `Near` - used to align near to the position of the trackball.
 * `Center` - used to align to the center of the trackball.
 
 ### Customization of axis label
 
-The appearance of the axis label can be customized by using the [TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackballLabelTemplate) property in the chart axis as in the below code snippet.
+The appearance of the axis label can be customized by using the [TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackballLabelTemplate) property in the chart axis as shown in the below code snippet.
 
 {% tabs %}
 
@@ -335,11 +335,11 @@ chart.XAxes.Add(primaryAxis);
 
 ## Series Label
 
-When the mouse hovered in the chart area, you can view the label displayed over the series in addition the axis label.
+When the mouse is hovered in the chart area, you can view the label displayed over the series in addition to the axis label.
 
 **ShowTrackballLabel**
 
-The [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballLabel) property is used to enable or disable the label for corresponding series. By default, [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballLabel) property is `true`.
+The [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballLabel) property is used to enable or disable the label for the corresponding series. By default, the [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballLabel) property is `true`.
 
 {% tabs %}
 
@@ -435,7 +435,7 @@ chart.TrackballBehavior = behavior;
 
 ## Display Mode
 
-When there is a multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_DisplayMode) property is set to [FloatAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_LabelDisplayMode_FloatAllPoints).
+When there are multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value, then the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_DisplayMode) property should be set to [FloatAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_LabelDisplayMode_FloatAllPoints).
 
 **FloatAllPoints**
 
@@ -509,7 +509,7 @@ chart.TrackballBehavior = behavior;
 
 **GroupAllPoints**
 
-[ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) supports to group the multiple trackball points, and allows to display the trackball points in a single trackball label. It can be achieved by setting the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_DisplayMode) property of [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) as [GroupAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_LabelDisplayMode_GroupAllPoints).
+[ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) supports grouping the multiple trackball points, and allows you to display the trackball points in a single trackball label. It can be achieved by setting the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_DisplayMode) property of [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) as [GroupAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_LabelDisplayMode_GroupAllPoints).
 
 {% tabs %}
 
@@ -549,7 +549,7 @@ The following screenshot illustrates the trackball label for multiple series, wh
 
 ## Template
 
-[TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_TrackballLabelTemplate) property is used to customize the appearance of series label in trackball.
+The [TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_TrackballLabelTemplate) property is used to customize the appearance of the series label in the trackball.
 
 {% tabs %}
 
@@ -621,7 +621,7 @@ N> The binding context for Chart `TrackballLabelTemplate` is [ChartPointInfo](ht
 
 ### Applying Series Interior
 
-Interior color of the series is applied to the series label by setting [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_UseSeriesPalette) to true as shown in the following code snippet.
+The interior color of the series is applied to the series label by setting [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_UseSeriesPalette) to true as shown in the following code snippet.
 
 {% tabs %}
 
@@ -656,4 +656,9 @@ chart.TrackballBehavior = behavior;
 {% endtabs %}
 
 ![Applying interior color to series label in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_series_palette.png)
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711)
 

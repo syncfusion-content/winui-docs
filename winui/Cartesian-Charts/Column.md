@@ -115,3 +115,8 @@ this.Content = chart;
 ![Column segment spacing in WinUI Chart](Chart-Types_images/WinUI_column_chart_segment_spacing.png)
 
 N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Column) that shows how to easily configure with built-in support for creating stunning visual effects.
+
+## See Also
+
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
+* [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)

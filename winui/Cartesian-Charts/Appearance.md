@@ -10,7 +10,7 @@ keywords: appearance in winui chart, winui sfcartesianchart appearance, winui ch
 
 # Appearance in WinUI Chart (SfCartesianChart)
 
-The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) can be customized by using the predefined brushes, custom brushes and gradient, which allows to enrich the application.
+The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) can be customized by using the predefined brushes, custom brushes, and gradient, which allows you to enrich the application.
 
 ## Applying PaletteBrushes for Chart
 
@@ -143,7 +143,7 @@ this.Content = chart;
 
 Gradient for the chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_PaletteBrushes) property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
-The following code sample and screenshot illustrates how to apply the gradient brushes for the series using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_PaletteBrushes) property.
+The following code sample and screenshot illustrate how to apply the gradient brushes for the series using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_PaletteBrushes) property.
 
 {% tabs %}
 
@@ -238,7 +238,7 @@ ColumnSeries series = new ColumnSeries()
 
 chart.Series.Add(series);
 
-// Configure additional chart elements            
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -246,3 +246,8 @@ this.Content = chart;
 {% endtabs %}
 
 ![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
+
+## See Also
+
+* [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

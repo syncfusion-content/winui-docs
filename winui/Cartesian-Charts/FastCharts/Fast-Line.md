@@ -12,7 +12,7 @@ keywords: winui fast line chart, winui sfcartesianchart, fast line chart, winui 
 
 ## Fast Line Chart
 
-The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with huge number of datapoints using the polyline segment. 
+The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a huge number of datapoints using the polyline segment. 
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ chart.Series.Add(series);
 
 ## Fast Line Bitmap Chart
 
-The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments, rendered using `WriteableBitmap`. The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is, it renders a million data point in a fraction of seconds.
+The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments, rendered using `WriteableBitmap`. The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is that it renders a million data points in a fraction of seconds.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ chart.Series.Add(series);
 
 ### Anti-aliasing
 
-As it was rendered using bitmap, there might be some jagged lines at the edges. This is can be reduced using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
+As it is rendered using a bitmap, there might be some jagged lines at the edges. This can be reduced using the [EnableAntiAliasing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
 
 {% tabs %}
 
@@ -167,3 +167,8 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Anti-aliasing in fast line bitmap chart in WinUI](FastChart_images/fastlinebitmap_chart_antialiasing.png)
+
+## See Also
+
+* [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

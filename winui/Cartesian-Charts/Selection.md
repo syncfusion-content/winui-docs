@@ -10,7 +10,7 @@ keywords: selection in winui chart, winui sfcartesianchart selection, winui char
 
 # Selection in WinUI Chart (SfCartesianChart)
 
-Cartesian chart supports selection that allows to select a segment or series in the chart by using [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property. 
+Cartesian chart supports selection that allows you to select a segment or series in the chart by using the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property. 
 
 ## Properties
 
@@ -28,7 +28,7 @@ The following `ChartSelectionType` can be achieved during Selection:
 
 ## Enable DataPoint Selection
 
-To enable the datapoint selection in chart, create an instance of [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html) and set it to the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_SelectionBehavior) property of chart series. And also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property to highlight the segment in the chart.
+To enable the datapoint selection in the chart, create an instance of [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html) and set it to the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_SelectionBehavior) property of the chart series. You also need to set the [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property to highlight the segment in the chart.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ this.Content = chart;
 
 ## Segment Selection in Linear Series
 
-In linear type series the segment selection can be viewed by changing the data label interior.
+In linear type series, the segment selection can be viewed by changing the data label interior.
 
 The following code example demonstrates the spline series segment selection by changing the data label interior.
 
@@ -128,7 +128,7 @@ this.Content = chart;
 
 ## Enable Series Selection
 
-Series selection is used to highlight a particular series when using multiple series. Series selection is enabled by create an instance of [SeriesSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SeriesSelectionBehavior.html) and set it to the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). The [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property is used to set the brush color to highlight the series.
+Series selection is used to highlight a particular series when using multiple series. Series selection is enabled by creating an instance of [SeriesSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SeriesSelectionBehavior.html) and setting it to the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html). The [SelectionBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionBrush) property is used to set the brush color to highlight the series.
 
 {% tabs %}
 
@@ -305,7 +305,7 @@ this.Content = chart;
 
 ![Initial selection rendering support in WinUI Chart](Selection_images/WinUI_chart_selected_index.png)
 
-Select a series programmatically on a chart using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndex) property of the [SeriesSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SeriesSelectionBehavior.html).
+You can select a series programmatically on a chart using the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectedIndex) property of the [SeriesSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SeriesSelectionBehavior.html).
 
 {% tabs %}
 
@@ -414,3 +414,8 @@ The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 
 * [NewIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_NewIndexes) - Gets the collection of selected data point or series index. Here, NewIndexes[0] is the current selected index.
 * [OldIndexes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_OldIndexes) - Gets the collection of previous selected data point or series index. Here, OldIndexes[0] is the current unselected index.
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)

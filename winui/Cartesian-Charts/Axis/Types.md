@@ -668,3 +668,9 @@ The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 * [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of axis label.
 * [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to inverse the chart axis in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12130)
+* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)

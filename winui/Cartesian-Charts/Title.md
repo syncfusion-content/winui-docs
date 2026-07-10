@@ -96,7 +96,7 @@ this.Content = chart;
 
 ## Alignment
 
-The title text content can be aligned horizontally to the left, center or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+The title text content can be aligned horizontally to the left, center, or right of the chart using the [HorizontalHeaderAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property of the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
 {% tabs %}   
 
@@ -155,3 +155,6 @@ this.Content = chart;
 {% endtabs %} 
 
 ![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)
+## See Also
+
+* [How to wrap the title of the WinUI (SfCartesianChart)](https://support.syncfusion.com/kb/article/12680)

@@ -12,7 +12,7 @@ keywords: axis line in winui chart, winui sfcartesianchart axis line, syncfusion
 
 ## Customization
 
-Cartesian chart axis provides support to customize the style of axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
+Cartesian chart axis provides support to customize the style of the axis line by defining the [AxisLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AxisLineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -88,3 +88,7 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![Padding support for axis line in WinUI](Axis_images/WinUI_Chart_Axis_line_styles_offset.png)
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

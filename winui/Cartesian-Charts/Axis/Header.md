@@ -144,3 +144,8 @@ chart.XAxes.Add(primaryAxis);
 {% endtabs %}
 
 ![HeaderTemplate support for ChartAxis in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header_template.png)
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)

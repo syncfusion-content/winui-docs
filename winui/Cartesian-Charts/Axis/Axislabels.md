@@ -10,7 +10,7 @@ keywords: axis labels in winui chart, winui sfcartesianchart axis labels, winui 
 
 # Axis Labels in WinUI Chart (SfCartesianChart)
 
-Axis labels are used to show the units, measures, or category values of the axis to visualize the data in a user-friendly way. They are generated based on the range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of the series.
+Axis labels are used to show the units, measures, or category values of the axis to visualize the data in a user-friendly way. They are generated based on the range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of the series.
 
 ## Rotation Angle
 
@@ -49,7 +49,7 @@ chart.XAxes.Add(primaryAxis);
 
 ## Format
 
-Axis labels can be formatted using predefined formatting types with the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis type.
+Axis labels can be formatted using predefined formatting types with the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis type.
 
 **DateTimeAxis**
 
@@ -344,3 +344,7 @@ chart.XAxes.Add(primaryAxis);
 {% endhighlight %}
 
 {% endtabs %}
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

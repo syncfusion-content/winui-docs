@@ -10,11 +10,11 @@ keywords: chart area in winui chart, winui sfcartesianchart chart area, winui ch
 
 # Chart Area in WinUI Chart (SfCartesianChart)
 
-Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements such as the title, axes, legends, and series.
+Chart area represents the entire chart and all its elements. It is a virtual rectangular area that includes all the chart elements such as the title, axes, legends, and series.
 
 ## Customization
 
-The chart provides properties such as [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness) and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
+The chart provides properties such as [PlotAreaBorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderBrush), [PlotAreaBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBorderThickness), and [PlotAreaBackground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PlotAreaBackground) for customizing the plot area.
 
 {% tabs %}
 
@@ -86,3 +86,8 @@ this.Content = chart;
 {% endtabs %}
 
 ![Chart area customization in WinUI chart](Chart-Area_images/WinUI_chart_area.png)
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

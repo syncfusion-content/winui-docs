@@ -25,3 +25,8 @@ Vertical (Y) axis typically uses a numerical scale. Horizontal (X) axis supports
 * Axis allows you to customize the origin of the chart axis. 
 * Provides options to set padding for the axis and the axis's visible range.
 * Multiple axes support provides a way to arrange multiple series inside the same chart area, giving more space for the X and Y axes.
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to inverse the chart axis in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12130)
+* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)

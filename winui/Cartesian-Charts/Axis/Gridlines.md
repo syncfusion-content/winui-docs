@@ -102,7 +102,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ## Minor Grid Lines
 
-Minor gridlines will be added automatically when the minor tick lines is defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
+Minor gridlines will be added automatically when the minor tick lines are defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
 
 {% tabs %}
 
@@ -141,7 +141,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ### Customization
 
-The [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorGridLineStyle) property in the chart axis is used to customize the appearance of minor gridlines.
+* [MinorGridLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorGridLineStyle) - used to customize the appearance of the minor gridlines.
 
 {% tabs %}
 
@@ -191,4 +191,9 @@ chart.YAxes.Add(secondaryAxis);
 {% endtabs %}
 
 ![Gridlines customization support in WinUI Chart](Axis_Images/winui_chart_axis_minor_gridlines_style.png)
+
+## See Also
+
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 
