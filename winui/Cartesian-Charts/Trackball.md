@@ -38,8 +38,6 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
 chart.TrackballBehavior = behavior;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -149,12 +147,10 @@ By using the [LineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
         </Style>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior LineStyle="{StaticResource lineStyle}"/>
     </chart:SfCartesianChart.TrackballBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -199,7 +195,6 @@ By default, the trackball symbol is displayed as an ellipse. You can change the 
         <chart:ChartTrackballBehavior ChartTrackballStyle="{StaticResource trackballStyle}"/>
     </chart:SfCartesianChart.TrackballBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -242,7 +237,6 @@ The axis label will be viewed when the [ShowTrackballLabel](https://help.syncfus
         <chart:ChartTrackballBehavior/>
     </chart:SfCartesianChart.TrackballBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -258,11 +252,9 @@ CategoryAxis primaryAxis = new CategoryAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
-// Configure additional chart elements
 ChartTrackballBehavior behavior = new ChartTrackballBehavior();
 chart.TrackballBehavior = behavior;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -386,8 +378,6 @@ chart.Series.Add(series2);
 SplineSeries series3 = new SplineSeries();
 chart.Series.Add(series3);
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -409,7 +399,6 @@ The trackball label displayed over the series can be aligned using the [LabelHor
         <chart:ChartTrackballBehavior LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center"/>
     </chart:SfCartesianChart.TrackballBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -465,8 +454,6 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 
 chart.TrackballBehavior = behavior;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -498,8 +485,6 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.TrackballBehavior = behavior;
-
-// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -537,8 +522,6 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 
 chart.TrackballBehavior = behavior;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -571,7 +554,6 @@ The [TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.TrackballBehavior>
         <chart:ChartTrackballBehavior/>
     </chart:SfCartesianChart.TrackballBehavior>
@@ -585,7 +567,6 @@ The [TrackballLabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
         </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -608,8 +589,6 @@ ColumnSeries series = new ColumnSeries()
 };
 
 chart.Series.Add(series);
-
-// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -648,8 +627,6 @@ ChartTrackballBehavior behavior = new ChartTrackballBehavior()
 };
 
 chart.TrackballBehavior = behavior;
-
-// Configure additional chart elements
 
 {% endhighlight %}
 

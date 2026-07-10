@@ -70,8 +70,6 @@ CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 151, 167)));
 CustomBrushes.Add(new SolidColorBrush(Color.FromArgb(255, 0, 131, 143)));
 
 this.chart.PaletteBrushes = CustomBrushes;
-
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -129,7 +127,6 @@ ColumnSeries series = new ColumnSeries()
     PaletteBrushes = CustomBrushes,
 };
 
-// Configure additional chart elements
 chart.Series.Add(series);
 this.Content = chart;
 
@@ -223,11 +220,9 @@ stop2 = new GradientStop()
 gradientColor2.GradientStops.Add(stop1);
 gradientColor2.GradientStops.Add(stop2);
 
-// Configure additional chart elements
 CustomBrushes.Add(gradientColor1);
 CustomBrushes.Add(gradientColor2);
 
-// Configure additional chart elements
 ColumnSeries series = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -237,8 +232,6 @@ ColumnSeries series = new ColumnSeries()
 };
 
 chart.Series.Add(series);
-
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

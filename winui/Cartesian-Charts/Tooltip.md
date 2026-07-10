@@ -642,7 +642,7 @@ The [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
         </Style>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
+    
     <chart:SfCartesianChart.TooltipBehavior>
         <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
     </chart:SfCartesianChart.TooltipBehavior>

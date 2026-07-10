@@ -47,7 +47,6 @@ By default, the [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.U
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
     
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -90,7 +89,6 @@ this.Content = chart;
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -133,7 +131,6 @@ this.Content = chart;
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -193,7 +190,6 @@ The [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
         <chart:NumericalAxis />
     </chart:SfCartesianChart.YAxes>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -241,7 +237,6 @@ this.Content = chart;
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -285,7 +280,6 @@ this.Content = chart;
         <chart:NumericalAxis/>
     </chart:SfCartesianChart.YAxes>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}

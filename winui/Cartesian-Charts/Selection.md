@@ -141,7 +141,6 @@ Series selection is used to highlight a particular series when using multiple se
         <chart:SeriesSelectionBehavior SelectionBrush="Red"/>
     </chart:SfCartesianChart.SelectionBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -155,7 +154,6 @@ SeriesSelectionBehavior selection = new SeriesSelectionBehavior();
 selection.SelectionBrush = new SolidColorBrush(Colors.Red);
 chart.SelectionBehavior = selection;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -228,7 +226,6 @@ The following code snippet demonstrates multiple series selection.
         <chart:SeriesSelectionBehavior SelectionBrush="Red" Type="Multiple"/>
     </chart:SfCartesianChart.SelectionBehavior>	
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -243,7 +240,6 @@ selection.SelectionBrush = new SolidColorBrush(Colors.Red);
 selection.Type = ChartSelectionType.Multiple;
 chart.SelectionBehavior = selection;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -318,7 +314,6 @@ You can select a series programmatically on a chart using the [SelectedIndex](ht
         <chart:SeriesSelectionBehavior SelectionBrush="Red" SelectedIndex="1"/>
     </chart:SfCartesianChart.SelectionBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -333,7 +328,6 @@ selection.SelectionBrush = new SolidColorBrush(Colors.Red);
 selection.SelectedIndex = 1;
 chart.SelectionBehavior = selection;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

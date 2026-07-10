@@ -37,8 +37,7 @@ By adding the [ChartZoomPanBehavior](https://help.syncfusion.com/cr/winui/Syncfu
     <chart:SfCartesianChart.ZoomPanBehavior>
         <chart:ChartZoomPanBehavior EnablePanning="True"/>
     </chart:SfCartesianChart.ZoomPanBehavior>
-
-    <!-- Configure additional chart elements -->
+    
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -65,7 +64,6 @@ chart.XAxes.Add(numericalAxis);
 chart.YAxes.Add(numericalAxis1);
 chart.ZoomPanBehavior = zoomPanBehavior;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -97,7 +95,6 @@ The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         <chart:ChartZoomPanBehavior EnablePanning="True"/>
     </chart:SfCartesianChart.ZoomPanBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -123,7 +120,6 @@ chart.XAxes.Add(numericalAxis);
 chart.YAxes.Add(numericalAxis1);
 chart.ZoomPanBehavior = zoomPanBehavior;
 
-// Configure additional chart elements
 this.Content = chart;
     
 {% endhighlight %}
@@ -159,7 +155,6 @@ In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
         <chart:ChartZoomPanBehavior EnablePanning="True"/>
     </chart:SfCartesianChart.ZoomPanBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -190,7 +185,6 @@ chart.XAxes.Add(primaryAxis);
 chart.YAxes.Add(numericalAxis1);
 chart.ZoomPanBehavior = zoomPanBehavior;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

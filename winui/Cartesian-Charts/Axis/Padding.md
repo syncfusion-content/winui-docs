@@ -35,6 +35,7 @@ The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
 // Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {

@@ -64,8 +64,6 @@ BubbleSeries series = new BubbleSeries()
 
 chart.Series.Add(series);
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}

@@ -40,8 +40,6 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior();
 chart.ZoomPanBehavior = zooming;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -80,8 +78,6 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 
 chart.ZoomPanBehavior = zooming;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -116,8 +112,6 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 
 chart.ZoomPanBehavior = zooming;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -143,6 +137,8 @@ chart.ZoomPanBehavior = zooming;
 {% highlight c# %}
 
 SfCartesianChart chart = new SfCartesianChart();
+
+// Configure additional chart elements
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     ShowMajorGridLines = false,
@@ -151,8 +147,6 @@ CategoryAxis primaryAxis = new CategoryAxis()
 };
 
 chart.XAxes.Add(primaryAxis);
-
-// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -192,8 +186,6 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 
 chart.ZoomPanBehavior = zooming;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -227,8 +219,6 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 };
 
 chart.ZoomPanBehavior = zooming;
-
-// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -266,8 +256,6 @@ ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 };
 
 chart.ZoomPanBehavior = zooming;
-
-// Configure additional chart elements
 
 {% endhighlight %}
 

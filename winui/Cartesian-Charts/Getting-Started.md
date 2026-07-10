@@ -272,7 +272,6 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
     <chart:ColumnSeries ShowDataLabels="True">
     </chart:ColumnSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -305,7 +304,6 @@ The legend provides information about the data point displayed in the chart. The
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <!-- Configure additional chart elements -->  
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -334,8 +332,7 @@ N> Additionally, set a label for each series using the [Label](https://help.sync
         XBindingPath="Name" 
         YBindingPath="Height">
     </chart:ColumnSeries>
-    
-    <!-- Configure additional chart elements -->
+
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -369,7 +366,6 @@ Tooltips are used to show information about the segment, when the user hovers ov
         XBindingPath="Name" 
         YBindingPath="Height"/>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}

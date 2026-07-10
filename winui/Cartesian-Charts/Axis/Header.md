@@ -118,7 +118,6 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis HeaderTemplate="{StaticResource headerTemplate}"/>        
     </chart:SfCartesianChart.XAxes>
@@ -130,10 +129,10 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 
 SfCartesianChart chart = new SfCartesianChart();
 
-// Configure additional chart elements
+// The 'headerTemplate' resource is defined in XAML Resources and referenced here.
 CategoryAxis primaryAxis = new CategoryAxis()
 {
-    // The 'headerTemplate' resource is defined in XAML Resources and referenced here.
+    
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
 

@@ -23,7 +23,6 @@ The legend contains a list of series data points in the chart. The information p
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <!-- Configure additional chart elements -->
     <chart:SplineSeries 
         Label="Spline"
         ItemsSource="{Binding Data}" 
@@ -31,7 +30,6 @@ The legend contains a list of series data points in the chart. The information p
         YBindingPath="India">
     </chart:SplineSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -106,7 +104,6 @@ TextBlock textBlock = new TextBlock()
 legend.Header = textBlock;
 chart.Legend = legend;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -130,7 +127,6 @@ Legend icon represents a symbol associated with each legend item. [LegendIcon](h
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
 
-    <!-- Configure additional chart elements -->
     <chart:SplineSeries 
         LegendIcon="Circle"
         Label="Gold"
@@ -150,7 +146,6 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartLegend legend = new ChartLegend();
 chart.Legend = legend;
 
-// Configure additional chart elements
 SplineSeries series = new SplineSeries();
 series.ItemsSource = (new ViewModel()).Data;
 series.XBindingPath = "Year";
@@ -226,8 +221,7 @@ The chart supports adding a custom icon for the legend using [LegendIconTemplate
     <chart:SfCartesianChart.Legend>
         <chart:ChartLegend/>
     </chart:SfCartesianChart.Legend>
-    
-    <!-- Configure additional chart elements -->
+
     <chart:SfCartesianChart.Series>
         <chart:ColumnSeries 
             ItemsSource="{Binding Data}" 

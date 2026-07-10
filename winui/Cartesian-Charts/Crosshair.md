@@ -38,8 +38,6 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartCrosshairBehavior behavior = new ChartCrosshairBehavior();
 chart.CrosshairBehavior = behavior;
 
-// Configure additional chart elements
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -69,6 +67,7 @@ To view the crosshair label in a particular axis, you have to enable the [ShowTr
 
 SfCartesianChart chart = new SfCartesianChart();
 
+// Configure additional chart elements
 ChartCrosshairBehavior behavior = new ChartCrosshairBehavior();
 chart.CrosshairBehavior = behavior;
 
@@ -78,8 +77,6 @@ CategoryAxis primaryAxis = new CategoryAxis()
 };
 
 chart.XAxes.Add(primaryAxis);
-
-// Configure additional chart elements
 
 {% endhighlight %}
 
@@ -119,6 +116,7 @@ The following code snippet demonstrates how to customize the line style for the 
 
 {% highlight c# %}
 
+// The 'horizontalLineStyle' resource is defined in XAML Resources and referenced here.
 ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior()
 {
     HorizontalLineStyle = chart.Resources["horizontalLineStyle"] as Style
@@ -160,6 +158,7 @@ The following code snippet demonstrates how to customize the line style for the 
 
 {% highlight c# %}
 
+// The 'verticalLineStyle' resource is defined in XAML Resources and referenced here.
 ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior()
 {
     VerticalLineStyle = chart.Resources["verticalLineStyle"] as Style
@@ -267,7 +266,6 @@ The default appearance of the crosshair axis labels can be customized by using t
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
     <chart:SfCartesianChart.XAxes>
         <chart:CategoryAxis ShowTrackballLabel="True" CrosshairLabelTemplate="{StaticResource xaxesCrossHairTemplate}" />
     </chart:SfCartesianChart.XAxes>
@@ -280,7 +278,6 @@ The default appearance of the crosshair axis labels can be customized by using t
         <chart:ChartCrosshairBehavior/>
     </chart:SfCartesianChart.CrosshairBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -292,6 +289,7 @@ SfCartesianChart chart = new SfCartesianChart();
 ChartCrosshairBehavior behavior = new ChartCrosshairBehavior();
 chart.CrosshairBehavior = behavior;
 
+// The 'xaxesCrossHairTemplate' resource is defined in XAML Resources and referenced here.
 CategoryAxis primaryAxis = new CategoryAxis()
 {
     ShowTrackballLabel = true,
@@ -299,6 +297,7 @@ CategoryAxis primaryAxis = new CategoryAxis()
 };
 chart.XAxes.Add(primaryAxis);
 
+// The 'yaxesCrossHairTemplate' resource is defined in XAML Resources and referenced here.
 NumericalAxis secondaryAxis = new NumericalAxis()
 {
     ShowTrackballLabel = true,
@@ -306,7 +305,6 @@ NumericalAxis secondaryAxis = new NumericalAxis()
 };
 chart.XAxes.Add(secondaryAxis);
 
-// Configure additional chart elements
 
 {% endhighlight %}
 

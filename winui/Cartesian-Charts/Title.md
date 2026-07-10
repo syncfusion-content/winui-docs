@@ -118,7 +118,6 @@ The title text content can be aligned horizontally to the left, center, or right
         </Border>
     </chart:SfCartesianChart.Header>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -147,7 +146,6 @@ TextBlock textBlock = new TextBlock()
 border.Child = textBlock;
 chart.Header = border;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

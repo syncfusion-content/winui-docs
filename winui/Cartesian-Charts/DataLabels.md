@@ -37,7 +37,6 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
         </chart:ColumnSeries>
     </chart:SfCartesianChart.Series>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -215,7 +214,6 @@ The appearance of the data label can be customized using the [ContentTemplate](h
         </DataTemplate>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
     <chart:ColumnSeries ShowDataLabels="True">
         <chart:ColumnSeries.DataLabelSettings>
             <chart:CartesianDataLabelSettings 
@@ -224,7 +222,6 @@ The appearance of the data label can be customized using the [ContentTemplate](h
                 ContentTemplate="{StaticResource dataLabelTemplate}"/>
         </chart:ColumnSeries.DataLabelSettings>
 
-        <!-- Configure additional chart elements -->
     </chart:ColumnSeries>
     
 </chart:SfCartesianChart>
@@ -274,7 +271,6 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
         </chart:ColumnSeries.DataLabelSettings>
     </chart:ColumnSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -416,7 +412,6 @@ The connector line can be customized using the below properties.
         </Style>
     </chart:SfCartesianChart.Resources>
 
-    <!-- Configure additional chart elements -->
     <chart:ColumnSeries ShowDataLabels="True">
         <chart:ColumnSeries.DataLabelSettings>
             <chart:CartesianDataLabelSettings
