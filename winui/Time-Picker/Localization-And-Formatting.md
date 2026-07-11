@@ -168,6 +168,7 @@ For example,
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.EditMode = DateTimeEditMode.Mask;
 
@@ -197,6 +198,7 @@ If you want to perform the validation after the user completely entering their t
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.EditMode = DateTimeEditMode.Normal;
 
@@ -226,6 +228,7 @@ By default, the clear button `X` will be displayed in the editor of the `Time Pi
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowClearButton = false;
 

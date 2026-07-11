@@ -189,6 +189,7 @@ If you want to hide the submit button and select the time directly from the drop
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowSubmitButtons = false;
 
@@ -225,6 +226,7 @@ N> `SelectedTimeChanging` event is called before the [`SelectedTimeChanged`](htt
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.SelectedTimeChanging += SfTimePicker_TimeChanging;
 

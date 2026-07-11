@@ -106,6 +106,7 @@ N> If you change the dropdown alignment by using `DropDownPlacement` property an
 
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
@@ -135,6 +136,7 @@ You can open or close the dropdown time spinner programmatically by setting [`Is
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.IsOpen = true;
 
@@ -164,6 +166,7 @@ You can change the height of the dropdown time spinner by using the [`DropDownHe
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownHeight = 200;
 
@@ -195,6 +198,7 @@ N> When the `DropDownHeight` and `VisibleItemsCount` properties are set, the `Vi
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.VisibleItemsCount = 5;
 

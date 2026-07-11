@@ -243,7 +243,6 @@ You can handle the event as follows,
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-using Syncfusion.UI.Xaml.Editors;
 
 /// <summary>
 /// Get the ItemsSource for minute or second column.
