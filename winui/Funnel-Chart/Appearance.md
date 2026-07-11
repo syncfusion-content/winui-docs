@@ -103,8 +103,6 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = CustomBrushes;
-
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -204,7 +202,6 @@ gradientColor2.GradientStops.Add(stop2);
 customBrushes.Add(gradientColor1);
 customBrushes.Add(gradientColor2);
 
-// Configure additional chart elements
 chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 { 
     Path = new PropertyPath("Data")
@@ -213,8 +210,6 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
-
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

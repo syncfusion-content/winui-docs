@@ -32,8 +32,6 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
         ItemsSource="{Binding Data}"  
         XBindingPath="Product" 
         YBindingPath="SalesRate"/>
-
-    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -45,8 +43,6 @@ SfCircularChart chart = new SfCircularChart();
 // Configure additional chart elements
 PieSeries series = new PieSeries();
 series.ShowDataLabels = true;
-
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -57,7 +53,7 @@ chart.Series.Add(series);
 
 ## Context
 
-To customize the content of data labels, you need to define the [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) of the series and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) to define the value to be displayed as the label content.
+To customize the content of data labels, you need to define the [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) of the series and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_DataLabelSettings) to define the value to be displayed as the label content.
 
 {% tabs %}
 
@@ -72,7 +68,6 @@ To customize the content of data labels, you need to define the [DataLabelSettin
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 {% endhighlight %}
 
@@ -89,7 +84,6 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     Context = LabelContext.Percentage
 };
 
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -132,7 +126,6 @@ The following properties are used to customize the data label.
             Context="Percentage"/>
     </chart:PieSeries.DataLabelSettings>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -196,7 +189,8 @@ The appearance of the data label can be customized using the [ContentTemplate](h
     </Grid.Resources>
 
     <chart:SfCircularChart>
-        ...
+
+        <!-- Configure additional chart elements -->        
         <chart:PieSeries ShowDataLabels="True">
             <chart:PieSeries.DataLabelSettings>
                 <chart:CircularDataLabelSettings 
@@ -205,7 +199,7 @@ The appearance of the data label can be customized using the [ContentTemplate](h
                         Context="DataLabelItem"/>
             </chart:PieSeries.DataLabelSettings>
         </chart:PieSeries>
-        ...
+
     </chart:SfCircularChart>
 </Grid>
 
@@ -227,7 +221,6 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     ContentTemplate = grid.Resources["labelTemplate"] as DataTemplate,
 };
 
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -266,7 +259,6 @@ The following are the values for this property:
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -314,7 +306,6 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
         </chart:PieSeries.DataLabelSettings>
     </chart:PieSeries>
 
-    <!-- Configure additional chart elements -->
 </chart:SfCircularChart>
 
 {% endhighlight %}
@@ -400,7 +391,6 @@ series.DataLabelSettings = new CircularDataLabelSettings()
     ConnectorLineStyle = grid.Resources["lineStyle"] as Style,
 };
 
-// Configure additional chart elements
 chart.Series.Add(series);
 
 {% endhighlight %}
