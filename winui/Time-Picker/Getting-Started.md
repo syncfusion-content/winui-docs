@@ -67,6 +67,7 @@ To add the `Time Picker` control manually in C#, follow the below steps.
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
+using Microsoft.UI.Xaml;
 using Syncfusion.UI.Xaml.Editors;
 
 namespace GettingStarted
@@ -102,6 +103,8 @@ You can set or change the selected time programmatically by using [`SelectedTime
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using System;
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45, 10));
 
@@ -124,6 +127,7 @@ You can change the selected time interactively by entering the time value using 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker= new SfTimePicker();
 
 {% endhighlight %}
@@ -156,6 +160,7 @@ If you want to set null value for the `Time Picker`, set the [`AllowNull`](https
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.SelectedTime = null;
 sfTimePicker.AllowNull = true;
@@ -183,6 +188,7 @@ The `Header` property is used to display the title for the `TimePicker` control.
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker timePicker = new SfTimePicker();
 timePicker.Header = "Select your convenient order delivery time";
 
@@ -228,6 +234,7 @@ The `Description` support is used to display the content beneath the control as 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker timePicker = new SfTimePicker();
 timePicker.Header = "Select your convenient order delivery time";
 timePicker.Description = "Your order will be delivered on time.";
@@ -252,6 +259,7 @@ You can prompt the user with some information by using the [`PlaceholderText`](h
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker= new SfTimePicker();
 sfTimePicker.PlaceholderText = "pick a travel time";
 sfTimePicker.SelectedTime = null;
@@ -266,7 +274,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Time changed notification
 
-You will be notified when the selected time changes in the `Time Picker` by using [`SelectedTimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeChanged) event. The `SelectedTimeChanged` event contains the old and newly selected time in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime) and [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
+You will be notified when the selected time changes in the `Time Picker` by using [`SelectedTimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTimeChanged) event. The `SelectedTimeChanged` event contains the old and newly selected time in the [`OldDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_OldDateTime) and [`NewDateTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SelectedDateTimeChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedDateTimeChangedEventArgs_NewDateTime) properties.
 
 * `OldDateTime` - Gets a time which is previously selected.
 * `NewDateTime` - Gets a time which is currently selected.
@@ -281,6 +289,7 @@ You will be notified when the selected time changes in the `Time Picker` by usin
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.SelectedTimeChanged += SfTimePicker_TimeChanged;
 

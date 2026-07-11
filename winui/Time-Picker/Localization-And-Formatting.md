@@ -30,6 +30,8 @@ You can select the required `ClockIdentifier` value from the below formats.
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ClockIdentifier = "24HourClock";
 
@@ -54,6 +56,8 @@ You can change the flow direction of the `Time Picker` layout from right to left
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 
@@ -77,6 +81,8 @@ You can localize the `Time Picker` using the `Language` property. The default va
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.Language = "ar";
@@ -104,6 +110,8 @@ You can edit and display the selected time with various formatting like hour, mi
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DisplayTimeFormat = "HH:mm";
@@ -139,6 +147,7 @@ For example,
 {% endhighlight  %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.EditMode = DateTimeEditMode.Mask;
 
@@ -163,8 +172,9 @@ If you want to perform the validation after the user completely entering their t
 {% endhighlight  %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.EditMode = DateTimeEditingMode.Normal;
+sfTimePicker.EditMode = DateTimeEditMode.Normal;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -187,6 +197,7 @@ By default, the clear button `X` will be displayed in the editor of the `Time Pi
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowClearButton = false;
 

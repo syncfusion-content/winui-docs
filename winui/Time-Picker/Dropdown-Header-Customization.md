@@ -26,6 +26,7 @@ You can add a hint in the dropdown header by using the [`DropDownHeader`](https:
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownHeader = "Select the Time";
 sfTimePicker.ShowDropDownHeader = true;
@@ -92,6 +93,7 @@ N> To customize the column headers, refer to the [Customize the columns in dropd
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowColumnHeaders = false;
 

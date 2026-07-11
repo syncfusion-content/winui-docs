@@ -64,6 +64,8 @@ N> To open a dropdown time spinner, press the `Alt` + `Down Arrow` keys.
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowDropDownButton = false;
 
@@ -76,7 +78,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `Time Picker` by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `Time Picker` by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Bottom`.
 
 N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then the `Time Picker` smartly shifts the spinner alignment.
 
@@ -90,6 +92,8 @@ N> If you change the dropdown alignment by using `DropDownPlacement` property an
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Microsoft.UI.Xaml.Controls.Primitives;
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
@@ -114,6 +118,7 @@ You can open or close the dropdown time spinner programmatically by setting [`Is
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.IsOpen = true;
 
@@ -126,7 +131,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown height
 
-You can change the height of the dropdown time spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular time cells will be visible. The default value of `DropDownHeight` property is `NaN`.
+You can change the height of the dropdown time spinner by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. Based on the value of `DropDownHeight`, `ItemWidth` and `ItemHeight` properties, particular time cells will be visible. The default value of `DropDownHeight` property is `Auto`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
@@ -138,6 +143,7 @@ You can change the height of the dropdown time spinner by using the [`DropDownHe
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.DropDownHeight = 200;
 
@@ -150,7 +156,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the number of time cells to be shown in the dropdown
 
-You can change the number of dropdown cells to be shown in the dropdown time spinner by using the [`VisibleItemsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `-1`.
+You can change the number of dropdown cells to be shown in the dropdown time spinner by using the [`VisibleItemsCount`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_VisibleItemsCount) property. The default value of `VisibleItemsCount` property is `7`.
 
 N> When the `DropDownHeight` and `VisibleItemsCount` properties are set, the `VisibleItemsCount` property has higher precedence.
 
@@ -164,6 +170,7 @@ N> When the `DropDownHeight` and `VisibleItemsCount` properties are set, the `Vi
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.VisibleItemsCount = 5;
 
