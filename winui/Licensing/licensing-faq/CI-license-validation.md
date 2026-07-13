@@ -28,21 +28,26 @@ The following section shows how to validate the Syncfusion license key in CI ser
 * Open the LicenseKeyValidation.ps1 PowerShell script in a text or code editor as shown in the example below.
 
 {% tabs %}
-{% highlight powershell tabtitle="PowerShell" %}
+{% highlight c# tabtitle="v34.1.29 and later" %}
+# Replace the parameters with the desired platform, version, and actual license key.
+
+$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponent" /version:"34.1.29" /licensekey:"Your License Key"
+
+Write-Host $result
+{% endhighlight %}
+
+{% highlight c# tabtitle="Before v34.1.29" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
 $result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"WinUI" /version:"26.2.4" /licensekey:"Your License Key"
 
 Write-Host $result
-exit $LASTEXITCODE
 {% endhighlight %}
 {% endtabs %}
 
-![LicenseKeyValidation script](licensing-images/license-validation.png)
-
-* Update the parameters in the LicenseKeyValidation.ps1 script file as described below.
-
-  **Platform:** Modify the value for /platform: to the actual platform "WinUI". 
+* Update the parameters in the script:
+  
+  **Platform:** Set /platform:"**UIComponent**" for v34.1.29 and later, or /platform:"**WinUI**" for earlier versions (use the relevant Syncfusion platform as needed).
   
   **Version:**  Change the value for /version: to the required version (e.g., "26.2.4").
   
@@ -137,7 +142,7 @@ SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
 //Validate the registered license key.
 // The array overload allows validating against multiple platforms in a single call.
-bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.WinUI });
+bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.UIComponent });
 {% endhighlight %}
 
 {% highlight c# tabtitle="Before v34.1.29" %}
@@ -151,11 +156,7 @@ bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.WinUI);
 {% endhighlight %}
 {% endtabs %}
 
-**v34.1.29 and later:**
-![License key validation method (new)](licensing-images/license-validation-method-new.png)
-
-**Before v34.1.29:**
-![License key validation method](licensing-images/license-validation-method.png)
+N> Use `Platform.UIComponent` for UI component license validation in v34.1.29 and later. `Platform.WinUI` is not supported from v34.1.29 onwards.
 
 * If the ValidateLicense() method returns true, registered license key is valid and can proceed with deployment.
 
@@ -177,29 +178,21 @@ bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.WinUI);
 The following example demonstrates how to register and validate the license key in the unit test project.
 
 {% tabs %}
-{% highlight c# tabtitle="NUnit" %}
-private TestContext _testContext;
-public TestContext TestContext
-{
-    get { return _testContext; }
-    set { _testContext = value; }
-}
-
+{% highlight c# %}
 public void TestSyncfusionWinUILicense()
 {
-    var platform = Platform.WinUI;
-    // Register the Syncfusion license key
-    SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+	var platform = Platform.WinUI;
+	// Register the Syncfusion license key
+	SyncfusionLicenseProvider.RegisterLicense("Your License Key");
 
-    bool isValidLicense = SyncfusionLicenseProvider.ValidateLicense(platform, out string validationMessage);
-    Assert.That(isValidLicense, Is.True, $"Validation failed for {platform}. Validation Message: {validationMessage}");
+	bool isValidLicense = SyncfusionLicenseProvider.ValidateLicense(platform, out var validationMessage);
+	Assert.That(isValidLicense, Is.True, $"Validation failed for {platform}." + $" Validation Message: {validationMessage}");
 
-    // Log validation messages to TestContext output
-    if (isValidLicense)
-    {
-        TestContext.Out.WriteLine($"Platform {platform} is correctly licensed for version " +
-            $"{typeof(SyncfusionLicenseProvider).Assembly.GetName().Version}");
-    }
+	// Log validation messages to TestContext output
+	if (isValidLicense)
+	{
+		TestContext.Out.WriteLine($"Platform {platform} is correctly licensed for version " + $"{typeof(SyncfusionLicenseProvider).Assembly.GetName().Version}");
+	}
 }
 {% endhighlight %}
 {% endtabs %}
