@@ -21,9 +21,9 @@ The [WinUI Calendar DateRange Picker](https://www.syncfusion.com/winui-controls/
 
 ## Key Features
 
-* `Calendar DateRange Picker` supports different cultures and languages.
+* The `Calendar DateRange Picker` supports different cultures and languages.
 * The drop-down region used for selecting the date range can be customized.
-* Displays the selected date range value in a various formats.
-* Drop-down display area in `Calendar DateRange Picker` control is limited using abbreviated days and months.
-* Supports blocking a certain dates from selection and user interaction.
+* Displays the selected date range value in various formats.
+* The drop-down display area in the `Calendar DateRange Picker` control is limited using abbreviated days and months.
+* Supports blocking certain dates from selection and user interaction.
 * Supports showing preset items containing predefined date range values in the drop-down.
