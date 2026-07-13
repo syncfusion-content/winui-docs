@@ -9,23 +9,23 @@ documentation: ug
 
 # Simplified Layout in WinUI Ribbon Control
 
-The Syncfusion<sup>&reg;</sup> Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. Quickly navigate to other commonly used commands in the overflow menu, and then switch to normal mode using the built-in toggle button. This section explains in detail about the simplified layout.
+The Syncfusion<sup>&reg;</sup> Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. Quickly navigate to other commonly used commands in the overflow menu, and then switch to normal mode using the built-in toggle button. This section explains the simplified layout in detail.
 
 ## Enabling simplified layout
 
-The `LayoutModeOptions` enumeration property provides an option to enable Simplified layout in Ribbon control. The `LayoutModeOptions` is of flag enumeration type that contains the following values:
+The `LayoutModeOptions` enumeration property provides an option to enable the Simplified layout in the Ribbon control. The `LayoutModeOptions` is a flags enumeration type that contains the following values:
 
 * Normal - The Ribbon items are arranged in the standard layout.
-* Simplified - The Ribbon items are arranged in the single line layout.
+* Simplified - The Ribbon items are arranged in the single-line layout.
 
-It also contains the following combination like:
+It also supports the following combination:
 
-* Normal, Simplified - The Ribbon items are arranged both in Normal and Simplified layout. This is the default value.
+* Normal, Simplified - The Ribbon items are arranged in both Normal and Simplified layouts. This is the default value.
 
-To load the Ribbon control in simplified layout, `ActiveLayoutMode` enumeration property can be used. It contains the following values:
+To load the Ribbon control in the simplified layout, the `ActiveLayoutMode` enumeration property can be used. It contains the following values:
 
-* Normal - Display the Ribbon in standard layout at startup. This is the default value.
-* Simplified - Display the Ribbon in single line  layout at startup.
+* Normal - Displays the Ribbon in the standard layout at startup. This is the default value.
+* Simplified - Displays the Ribbon in the single-line layout at startup.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ To load the Ribbon control in simplified layout, `ActiveLayoutMode` enumeration 
 
 ## Switching between normal and simplified layouts
 
-The Ribbon control allows to switch between simplified and normal layouts at the runtime using the toggle button located in the lower right corner of the Ribbon. To enable this option, set the `LayoutModeOptions` to "Normal,Simplified" as given in the below layout.
+The Ribbon control allows you to switch between simplified and normal layouts at runtime using the toggle button located in the lower right corner of the Ribbon. To enable this option, set the `LayoutModeOptions` to `Normal,Simplified` as shown below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -89,24 +89,24 @@ The Ribbon control allows to switch between simplified and normal layouts at the
     }
 
 {% endhighlight %}
-{% endtabs %}}
+{% endtabs %}
 
 ![Switch between normal and simplified layout using toggle button in Ribbon control](Simplified-Layout-images/Switch-Normal-Simplified-With-Ribbon-Control.gif)
 
 ## Visibility of ribbon items between normal and simplified layouts
 
-The Ribbon items can be set commonly between different layouts or can be made visible only in a particular layout using the `DisplayOptions` property. By default, items will be displayed in both normal and simplified layout. The DisplayMode is of flag enumeration type that contains the following values.
+The Ribbon items can be set commonly between different layouts or can be made visible only in a particular layout using the `DisplayOptions` property. By default, items are displayed in both normal and simplified layouts. The `DisplayOptions` property is a flags enumeration type that contains the following values:
 
 * Normal - The item will be displayed only in the normal layout.
 * Simplified - The item will be displayed only in the simplified layout.
-* OverflowMenu - The item will be displayed only inside the overflow menu when simplified layout is enabled.
+* OverflowMenu - The item will be displayed only inside the overflow menu when the simplified layout is enabled.
 
-Also, the DisplayMode property allows the following value combinations as well.
+The `DisplayOptions` property also allows the following value combinations:
 
-* Normal, Simplified – The item will be displayed in both normal and simplified layout.
-* Normal, OverflowMenu – The item will be displayed in both normal layout and inside overflow menu during simplified layout.
-* Simplified, OverflowMenu – The item will be displayed in simplified layout.
-* Normal, Simplified, OverflowMenu – The item will be displayed in both normal and simplified layout.
+* Normal, Simplified – The item will be displayed in both normal and simplified layouts.
+* Normal, OverflowMenu – The item will be displayed in the normal layout and inside the overflow menu during the simplified layout.
+* Simplified, OverflowMenu – The item will be displayed in the simplified layout and inside the overflow menu.
+* Normal, Simplified, OverflowMenu – The item will be displayed in both normal and simplified layouts and inside the overflow menu.
 
 {% tabs %}
 {% highlight xaml %}
@@ -165,24 +165,22 @@ Also, the DisplayMode property allows the following value combinations as well.
     copyButton.Icon = new SymbolIcon(Symbol.Copy);
     copyButton.DisplayOptions = DisplayOptions.Simplified;
     
-    //This item will be displayed only in normal layout-->
+    //This item will be displayed only in normal layout
     RibbonButton formatButton = new RibbonButton();
-    formatButton.Content = "Cut";
+    formatButton.Content = "Format Painter";
     formatButton.Icon = new SymbolIcon(Symbol.SyncFolder);
     formatButton.DisplayOptions = DisplayOptions.Normal;
-
-}
 {% endhighlight %}
-{% endtabs %}}
+{% endtabs %}
 
 ![Visibility of items in different layout in Ribbon control](Simplified-Layout-images/Simplified-Layout-With-Overflow-Menu.gif)
 
 ## Customizing overflow menu
 
-Overflow menu can be enabled either at the end of each `RibbonGroup` or placed at the end of content area. This can be customized using `OverflowItemDisplayMode` property. It contains two values,
+The overflow menu can be enabled either at the end of each `RibbonGroup` or placed at the end of the content area. This can be customized using the `OverflowItemDisplayMode` property. It contains the following values:
 
-* TabLevel - Group the overflow menu at the end of content area. This is the default value.
-* GroupLevel - Group the overflow menu at the end of `RibbonGroup`.
+* TabLevel - Groups the overflow menu at the end of the content area. This is the default value.
+* GroupLevel - Groups the overflow menu at the end of the `RibbonGroup`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -206,9 +204,9 @@ Overflow menu can be enabled either at the end of each `RibbonGroup` or placed a
 ![Group level overflow menu in Ribbon control](Simplified-Layout-images/Overflow-Menu-In-Ribbon-Group.png)
 
 
-## Display mode  
+## Minimized and adorner state
 
-Syncfusion<sup>&reg;</sup> Ribbon control provides a minimized and adorner state. Enable the `AllowMinimize` property to toggle between normal and minimized state. 
+Syncfusion<sup>&reg;</sup> Ribbon control provides a minimized and adorner state. Enable the `AllowMinimize` property to toggle between normal and minimized state. By default, `AllowMinimize` is `False`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -239,15 +237,15 @@ Syncfusion<sup>&reg;</sup> Ribbon control provides a minimized and adorner state
 
 ### Switching between normal and minimized state
 
-The Ribbon control allows to switch between normal and minimized state at the runtime using the toggle button located in the lower right corner of the Ribbon. To Switch, double click on the `RibbonTab`. To enter into the adorner state, single click on `RibbonTab`.
+The Ribbon control allows you to switch between normal and minimized state at runtime using the toggle button located in the lower right corner of the Ribbon. To switch, double-click on the `RibbonTab`. To enter the adorner state, single-click on the `RibbonTab`.
 
->N When simplified mode is enabled, toggle button is used to switch between normal and simplified layout. In that case, use the `RibbonTab` double click option to enter into minimized state. 
+N> When simplified mode is enabled, the toggle button is used to switch between normal and simplified layout. In that case, use the `RibbonTab` double-click option to enter the minimized state.
 
 ![Shows the Ribbon control in minimized and adorner state](Simplified-Layout-images/Minimized-Adorner-State-Ribbon.gif)
 
 ### Loading in minimized state
 
-The Ribbon control allows to load in minimized state by using `IsMinimized` property. By enabling this property, the Ribbon is loaded in minimized state. 
+The Ribbon control allows you to load in the minimized state by using the `IsMinimized` property. By enabling this property, the Ribbon is loaded in the minimized state. By default, `IsMinimized` is `False`.
 
 {% tabs %}
 {% highlight xaml %}

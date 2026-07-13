@@ -1164,7 +1164,9 @@ Create appointments at different time zones by using the [StartTimeZone](https:/
 Use the [StartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTime) and [EndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTime) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) to get the exact start time and end time of an appointment. By using the [ActualStartTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ActualStartTime) and [ActualEndTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_ActualEndTime) properties, get the exact appointment rendering time.
 
 {% tabs %}	
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="13 15" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="15 17" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 // Creating an instance for schedule appointment collection.
 var appointment = new ScheduleAppointmentCollection();
 //Adding the schedule appointment in the schedule appointment collection. 
@@ -1202,13 +1204,20 @@ Display the appointments based on the client's local time zone in the scheduler.
 Set the specific time zone for the schedule by using the [TimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_TimeZone) property of the scheduler. In this scenario, the appointments will be displayed in UTC time when the [StartTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_StartTimeZone) and [EndTimeZone](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html#Syncfusion_UI_Xaml_Scheduler_ScheduleAppointment_EndTimeZone) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) are set to null. The appointments will be displayed in UTC time based on the given scheduler time zone.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3"  %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       TimeZone="Central America Standard Time">
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6"  %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           TimeZone="Central America Standard Time">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.TimeZone = "Central America Standard Time";
 {% endhighlight %}
 {% endtabs %}

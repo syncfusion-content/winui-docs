@@ -271,3 +271,8 @@ this.Content = chart;
 {% endtabs %}
 
 ![Candle chart segment width in WinUI Chart](Chart-types_images/CandleSegmentWidth.png)
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058)

@@ -9,7 +9,7 @@ documentation: ug
 
 # UI Customization in WinUI Color Palette
 
-This section explains the different types of colors available in the [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and  how to choose the colors and its panel customizations.
+This section explains how to access and customize the colors available in the [Color Palette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html) and its panel customizations.
 
 ## Accessing a Color programmatically
 
@@ -22,7 +22,7 @@ You can set or change the selected color of the `ColorPalette` programmatically 
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
@@ -31,8 +31,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 ![Selecting Color Programmatically in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-color-selection.png)
 
-Here, `Yellow` color is selected color in the `Color Palette`.
-Here, `Yellow` color is selected color in the `Color Palette`.
+Here, `Yellow` color is the selected color in the `Color Palette`.
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
@@ -47,7 +46,7 @@ You can set a null color value for the selected color by setting the color code 
                         Name="colorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.SelectedBrush = new SolidColorBrush(Colors.Transparent);
 
@@ -68,7 +67,7 @@ If you want to select the `Transparent` color, click the `No Color` button. You 
                         Name="colorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.ShowNoColorButton = true;
 
@@ -81,7 +80,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting default color
 
-If you want to change the default selected color on application launching, set your color value to the  [DefaultBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_DefaultBrush) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `DefaultBrush` property is `Black`.
+If you want to change the default selected color on application launching, set your color value to the  [AutomaticBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_AutomaticBrush) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `AutomaticBrush` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,7 +89,7 @@ If you want to change the default selected color on application launching, set y
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
 
@@ -113,7 +112,7 @@ You can hide the default color button visibility by setting the [ShowDefaultColo
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
 colorPalette.ShowDefaultColorButton = false;
@@ -125,7 +124,7 @@ colorPalette.ShowDefaultColorButton = false;
 
 ## Selected color changed notification
 
-You will be notified when selected color changed in `Color Palette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties.
+You will be notified when selected color changed in `Color Palette` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_SelectedBrushChanged) event. The `SelectedBrushChanged` event contains the old and newly selected color values in the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_OldBrush) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_SelectedBrushChangedEventArgs_NewBrush) properties of the [SelectedBrushChangedEventArgs](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -134,7 +133,7 @@ You will be notified when selected color changed in `Color Palette` by using [Se
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 
@@ -144,13 +143,13 @@ colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 You can handle the event as follows,
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Invoked when the selected color is changed
-private void ColorPalette_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs e) {
-    var oldBrush= e.OldBrush;
-    var newBrush= e.NewBrush;
-
+private void ColorPalette_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs e)
+{
+    var oldBrush = e.OldBrush;
+    var newBrush = e.NewBrush;
 }
 
 {% endhighlight %}
@@ -174,7 +173,7 @@ N> The Colors that are selected from `More Colors` dialog will only be shown in 
 <editors:SfColorPalette Name="colorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfColorPalette colorPalette = new SfColorPalette();
 
@@ -186,7 +185,7 @@ var recentColors = colorPalette.RecentColors;
 
 ![WinUI Color Palette with Recent Color Items](Getting-Started_images/winui-colorpalette-recent-colors.png)
 
-## Customize the header text
+## Customize the header foreground
 
 You can customize the foreground of `Theme Colors`, `Standard Colors` and `Recent Colors` palette headers by using the `Foreground` property. The default value of `Foreground` property is `Black`.
 
@@ -197,7 +196,7 @@ You can customize the foreground of `Theme Colors`, `Standard Colors` and `Recen
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.Foreground = new SolidColorBrush(Colors.Red);
 
@@ -219,7 +218,7 @@ You can change the flow direction of the `Color Palette` layout from right to le
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.FlowDirection = FlowDirection.RightToLeft;
 

@@ -76,8 +76,6 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
         <chart:ChartTooltipBehavior/>
     </chart:SfPyramidChart.TooltipBehavior>
 	
-
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -121,7 +119,6 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
          <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
      </chart:SfPyramidChart.TooltipBehavior>
 
-     <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -141,7 +138,6 @@ ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -173,7 +169,6 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfPyramidChart.TooltipBehavior>
 
-    <!-- Configure additional chart elements -->
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -197,7 +192,6 @@ tooltipBehavior.LabelStyle = labelStyle;
 
 chart.TooltipBehavior = tooltipBehavior;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

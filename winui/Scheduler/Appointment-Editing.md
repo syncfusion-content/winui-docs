@@ -47,7 +47,9 @@ The opening of the recurrence popup editor dialog can be handled using the `Edit
 * Series: Edits the entire series in a recurrence appointment. The default editor content dialog will not appear.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.scheduler.RecurringAppointmentBeginningEdit += scheduler_RecurringAppointmentBeginningEdit;
 
 private void scheduler_RecurringAppointmentBeginningEdit(object sender, RecurringAppointmentBeginningEditEventArgs e)
@@ -75,7 +77,9 @@ The [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/winui/Syn
 For example, to use a custom appointment editor dialog instead of the default appointment editor content dialog, you can handle the `AppointmentEditorOpening` event.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
 
 private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
@@ -102,7 +106,9 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 Programmatically show or collapse the editors by setting the [AppointmentEditorOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html) property in `SchedulerAppointmentEditorView.` By default, the value of `AppointmentEditorOptions` is set to [AppointmentEditorOptions.All](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditorOptions_All) in the `SchedulerAppointmentEditorView`, which displays all the appointment editors. The following code shows how to collapse the [Recurrence](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditorOptions_Recurrence) editor by handling the [AppointmentEditorOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditorOptions.html) event.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
 
 private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
@@ -139,7 +145,9 @@ The [AppointmentEditorClosingEventArgs](https://help.syncfusion.com/cr/winui/Syn
 For example, to handle the appointment adding for today's date, the user can handle the `AppointmentEditorClosing` event.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AppointmentEditorClosing += Schedule_AppointmentEditorClosing;
 
 private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorClosingEventArgs e)
@@ -161,11 +169,16 @@ private void Schedule_AppointmentEditorClosing(object sender, AppointmentEditorC
 To disable appointment editing functionality, set the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property to `None`. In this case, adding, editing, resizing, and drag-and-drop of appointments cannot be performed.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       AppointmentEditFlag="None">
-</scheduler:SfScheduler> 
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           AppointmentEditFlag="None">
+    </scheduler:SfScheduler> 
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -193,7 +206,9 @@ The [AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusi
 `Cancel`: Cancels the appointment deleting by setting this property to `true`.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AppointmentDeleting += Schedule_AppointmentDeleting;
 
 private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEventArgs e)
@@ -213,13 +228,20 @@ The Scheduler supports resizing the selected appointment. This support is availa
 The Scheduler supports disabling appointment resizing by setting the [AppointmentEditFlag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html) property except [Resize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentEditFlag.html#Syncfusion_UI_Xaml_Scheduler_AppointmentEditFlag_Resize). In this case, the appointment resizing cannot be performed.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
-<scheduler:SfScheduler x:Name="Schedule"  
-                       ViewType="Week"
-                       AppointmentEditFlag="Add,DragDrop,Edit">
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule"  
+                           ViewType="Week"
+                           AppointmentEditFlag="Add,DragDrop,Edit">
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.DragDrop | AppointmentEditFlag.Edit;
 {% endhighlight %}
 {% endtabs %}
@@ -248,7 +270,9 @@ The [AppointmentResizingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusi
 [CanCommit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentResizingEventArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentResizingEventArgs_CanCommit): Gets or sets a value indicating whether to update the underlying appointment when the resize operation is completed. Set this property when `Action` is `Canceling` and `Committing`. This property will not have any effect when `Action` is `Starting` and `Progressing`.
 
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+using Syncfusion.UI.Xaml.Scheduler;
+
 this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
 
 private void Schedule_AppointmentResizing(object sender, AppointmentResizingEventArgs e)

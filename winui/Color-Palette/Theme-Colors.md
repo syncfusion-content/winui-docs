@@ -13,7 +13,7 @@ This section explains the different types of theme colors available in the [Colo
 
 ## Select a color from built-in theme colors
 
-You can select a various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
+You can select various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
 
 ![WinUI Color Palette displays Various Theme Palettes](Working-with-SfColorPalette_images/winui-colorpalette-theme-palette.jpg)
 
@@ -24,7 +24,7 @@ You can select a various theme colors by setting the value to the [ActivePalette
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 
@@ -37,7 +37,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Add your own custom colors in theme palette
 
-If you want to allow the user to select a color from own theme colors, add that color with its name and tooltip text into the `PaletteColors.Colors` collection using the [ColorModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorModel.html). It will generates color variants automatically. You can also customize the header text and show or hide its variants by using the [ColorPaletteModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorPaletteModel.html). 
+If you want to allow the user to select a color from your own theme colors, add that color with its name and tooltip text into the `PaletteColors.Colors` collection using the [ColorModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorModel.html). It will generate color variants automatically. You can also customize the header text and show or hide its variants by using the [ColorPaletteModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorPaletteModel.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,7 +66,7 @@ If you want to allow the user to select a color from own theme colors, add that 
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.Header = "Custom Theme Colors";
 colorPalette.PaletteColors.ShowColors = true;
@@ -93,7 +93,7 @@ If you want allow the user to select only the variants of theme color without it
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.ShowColors = false;
 
@@ -118,7 +118,7 @@ If you want allow the user to select only the base theme colors without its vari
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.ShowColorShades = false;
 
@@ -143,7 +143,7 @@ If you want to change header text of the theme color palette, use the `PaletteCo
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.Header = "My theme colors";
 
@@ -168,7 +168,7 @@ If you want to hide the header of theme color palette, use the `PaletteColors.Sh
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.ShowHeader = false;
 
@@ -215,7 +215,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Adjust space between base theme color and its variants
 
-If you wants to adjust the space between base theme color and its variants, use the `PaletteColors.ColorShadesSpacing` property. The default value of `PaletteColors.ColorShadesSpacing` property is `10`.
+If you want to adjust the space between base theme color and its variants, use the `PaletteColors.ColorShadesSpacing` property. The default value of `PaletteColors.ColorShadesSpacing` property is `10`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -227,7 +227,7 @@ If you wants to adjust the space between base theme color and its variants, use 
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.ColorShadesSpacing = 20;
 
@@ -253,7 +253,7 @@ If you want to hide the theme palette from the view, use the `PaletteColors.Show
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.ShowColors = false;
 colorPalette.PaletteColors.ShowColorShades = false;
