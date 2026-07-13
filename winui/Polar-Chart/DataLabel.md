@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data labels in WinUI Chart (SfPolarChart) | Syncfusion
-description: This section explains how to configure the data labels and their features in the Syncfusion® WinUI Chart (SfPolarChart) control.
+description: This section explains how to configure the data labels and its features in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug

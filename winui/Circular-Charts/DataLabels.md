@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data label in WinUI Chart control | WinUI | Syncfusion
-description: This section explains how to configure the data labels and their features in the WinUI Chart (SfCircularChart).
+description: This section explains how to configure the data labels and its features in the WinUI Chart (SfCircularChart).
 platform: WinUI
 control: SfCircularChart
 documentation: ug
