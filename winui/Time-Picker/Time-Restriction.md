@@ -13,11 +13,12 @@ This section explains how to restrict the time selection in WinUI [Time Picker](
 
 ## Limit the available times
 
-You can restrict the users from selecting a time within the particular range by specifying [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `Time Picker` control. The default value of `MinTime` property is `1/1/1921 10:37:16 PM` and `MaxTime` property is `12/31/2121 10:37:16 PM}`.
+You can restrict the users from selecting a time within the particular range by specifying [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `Time Picker` control. The default value of `MinTime` property is `1/1/1921 10:37:16 PM` and `MaxTime` property is `12/31/2121 10:37:16 PM`.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
+using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.MinTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 4, 00, 00));
 sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 6, 59, 59));
@@ -31,10 +32,12 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Disable times using BlackoutTimes
 
-If you want to block particular times from the time selection, then add that times into the [`BlackoutTimes`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) collection. You can add more block out times to the `BlackoutTimes` collection. The default value of `BlackoutTimes` property is `null`.
+If you want to block particular times from the time selection, then add those times to the [`BlackoutTimes`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_BlackoutTimes) collection. You can add more blackout times to the `BlackoutTimes` collection. The default value of `BlackoutTimes` property is `null`.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 public class ViewModel
 {       
@@ -57,19 +60,25 @@ public class ViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2 3 6" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 9" %}
 
-<editors:SfTimePicker 
-                      BlackoutTimes="{Binding BlackoutTimes}"
-                      SelectedTime="{Binding SelectedTime}" 
-                      x:Name="sfTimePicker">
-    <editors:SfTimePicker.DataContext>
-        <local:ViewModel/>
-    </editors:SfTimePicker.DataContext>
-</editors:SfTimePicker>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          BlackoutTimes="{Binding BlackoutTimes}"
+                          SelectedTime="{Binding SelectedTime}" 
+                          x:Name="sfTimePicker">
+        <editors:SfTimePicker.DataContext>
+            <local:ViewModel/>
+        </editors:SfTimePicker.DataContext>
+    </editors:SfTimePicker>
+</Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 sfTimePicker.DataContext = new ViewModel();
 sfTimePicker.SelectedTime = (sfTimePicker.DataContext as ViewModel).SelectedTime;
@@ -87,14 +96,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can restrict the users to select the times from specific minute or hour intervals by using the [`TimeFieldPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_TimeFieldPrepared) event.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      x:Name="sfTimePicker"
-                      TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          x:Name="sfTimePicker"
+                          TimeFieldPrepared="SfTimePicker_TimeFieldPrepared"/>
+</Window>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.TimeFieldPrepared = SfTimePicker_TimeFieldPrepared;
@@ -106,6 +121,8 @@ You can handle the event as follows,
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 /// <summary>
 /// Get the ItemsSource for minute or second column.
@@ -139,6 +156,7 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
         {
             e.Column.ItemsSource = GetMinutesOrSeconds(e.Column.Format);
         }
+    }
 }
 
 {% endhighlight %}
@@ -153,14 +171,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to hide the submit button and select the time directly from the dropdown time spinner without clicking the `Ok` button, use the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value as `false`. The default value of `ShowSubmitButtons` property is `true`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      x:Name="sfTimePicker"
-                      ShowSubmitButtons="False" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          x:Name="sfTimePicker"
+                          ShowSubmitButtons="False" />
+</Window>
 
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowSubmitButtons = false;
@@ -174,24 +198,30 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Cancel a time that is being changed
 
-The [`SelectedTimeChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTimeChanging) event will be triggered as soon as a date is selected but before [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property is updated. If the change is considered invalid, it can be canceled. The `SelectedTimeChanging` event contains the following properties.
+The [`SelectedTimeChanging`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTimeChanging) event will be triggered as soon as a time is selected but before [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property is updated. If the change is considered invalid, it can be canceled. The `SelectedTimeChanging` event contains the following properties.
 
 * `OldTime` - Gets a time which is previously selected.
 * `NewTime` - Gets a time which is currently selected.
 * `Cancel` - Gets or sets whether to cancel the selected time value update.
 
-Users are restricted to select a blackout time from dropdown, however user can give text input through editor. As selecting a blackout time leads to crash, we can cancel the change using `SelectedTimeChanging` event.
+Users are restricted from selecting a blackout time from the dropdown, however, users can enter text input through the editor. As selecting a blackout time leads to a crash, we can cancel the change using the `SelectedTimeChanging` event.
 
 N> `SelectedTimeChanging` event is called before the [`SelectedTimeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTimeChanged) event when a time is selected.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<editor:SfTimePicker Height="35" Width="150" 
-                     TimeChanging="SfTimePicker_TimeChanging" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker Height="35" Width="150" 
+                         SelectedTimeChanging="SfTimePicker_TimeChanging" />
+</Window>
 
 {% endhighlight %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.SelectedTimeChanging += SfTimePicker_TimeChanging;
@@ -203,6 +233,8 @@ You can handle the event as follows:
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
  private void SfTimePicker_TimeChanging(object sender, Syncfusion.UI.Xaml.Editors.TimeChangingEventArgs e)
 {
