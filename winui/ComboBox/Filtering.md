@@ -8,7 +8,9 @@ documentation: ug
 ---
 # Filtering in WinUI ComboBox (SfComboBox)
 
-The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) has built-in support to filter data items depending on the text entered in the editing text box. The filter operation starts as soon as you start typing characters in the component.
+The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) has built-in support to filter data items based on the text entered in the editing text box. The filter operation starts as soon as you start typing characters in the component.
+
+N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Refer to [Getting Started](https://help.syncfusion.com/winui/combobox/getting-started) for setup details.
 
 ## Enable filtering
 
@@ -66,7 +68,7 @@ public class CityViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     IsEditable="true"
@@ -81,7 +83,7 @@ public class CityViewModel
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.IsFilteringEnabled = true;
 
@@ -99,10 +101,10 @@ The string comparison for filtering suggestions can be changed using the [TextSe
 
 ### Filter with beginning text
 
-Filter the matching items based on the starting text and the first filtered item will be appended to the typed input and highlighted in the drop-down. 
+Filter the matching items based on the starting text, and the first filtered item will be appended to the typed input and highlighted in the drop-down.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     TextSearchMode="StartsWith"
@@ -114,7 +116,7 @@ Filter the matching items based on the starting text and the first filtered item
        
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
@@ -123,6 +125,8 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
 
+N> Add `using Syncfusion.UI.Xaml.Editors;` to access the `ComboBoxTextSearchMode` enum in C#.
+
 N> To disable the auto appending and highlighting feature, set the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`.
 
 ### Filter with contains text
@@ -130,7 +134,7 @@ N> To disable the auto appending and highlighting feature, set the [IsTextSearch
 Filter the matching items that contain specific text, and the first filtered item will be highlighted in the drop-down.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     TextSearchMode="Contains"
@@ -142,7 +146,7 @@ Filter the matching items that contain specific text, and the first filtered ite
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 
@@ -159,10 +163,12 @@ The ComboBox control provides support to apply your own custom filter logic to s
 
 Now, let us create custom filtering class to apply our own filter logic to ComboBox control by the following steps.
 
-**Step 1:** Create a class that derives from the [IComboBoxFilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxFilterBehavior.html) interface. 
+**Step 1:** Create a class that implements the [IComboBoxFilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.IComboBoxFilterBehavior.html) interface. 
+
+N> Add the required `using` directives: `using Syncfusion.UI.Xaml.Editors;`, `using System.Collections.Generic;`, and `using System.Linq;`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 /// <summary>
 /// Represents a custom filtering behavior for `ComboBox` control. 
@@ -183,7 +189,7 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 The following code demonstrates how to filter the cities based on the city or country name entered in the ComboBox control.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 /// <summary>
 /// Represents a custom filtering behavior for `ComboBox` control. 
@@ -210,10 +216,10 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
 {% endhighlight %}
 {% endtabs %}
 
-**Step3:** Apply custom filtering to the ComboBox control by using the `FilterBehavior` property. 
+**Step 3:** Apply custom filtering to the ComboBox control by using the `FilterBehavior` property.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox TextMemberPath="CityName"
                     DisplayMemberPath="CityName"
@@ -224,6 +230,12 @@ public class CityFilteringBehavior : IComboBoxFilterBehavior
             <local:CityFilteringBehavior/>
         </editors:SfComboBox.FilterBehavior>
 </editors:SfComboBox>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+comboBox.FilterBehavior = new CityFilteringBehavior();
 
 {% endhighlight %}
 {% endtabs %}

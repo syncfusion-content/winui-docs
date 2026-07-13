@@ -9,11 +9,11 @@ documentation: ug
 
 # ToolTip in WinUI Slider
 
-This section explains how to add the tooltip in the Slider.
+This section explains how to add the tooltip in the slider.
 
 ## Show Tooltip
 
-You can enable tooltip for the thumb using the [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of Slider. It is used to indicate the current selection of the value during interaction. The default value of [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
+You can enable the tooltip for the thumb using the [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property of the slider. It is used to indicate the current selection of the value during interaction. The tooltip is displayed only while interacting with the thumb. The default value of the [`ShowToolTip`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowToolTip) property is true.
 
 {% tabs %}
 
@@ -25,6 +25,8 @@ You can enable tooltip for the thumb using the [`ShowToolTip`](https://help.sync
 {% endhighlight %}
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Sliders;
 
 SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
@@ -39,7 +41,7 @@ this.Content = sfSlider;
 
 ## Tooltip Text Format
 
-The [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipFormat) property allows to customize the axis label with the globalized label format. The default value of [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipFormat) property is N2.
+The [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipFormat) property allows you to customize the tooltip text with a formatted string. The default value of the [`ToolTipFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ToolTipFormat) property is N2.
 
 {% tabs %}
 
@@ -137,4 +139,4 @@ this.Content = sfSlider;
 
 ![Slider with tooltip template](images/tooltip/slider-tooltiptemplate.png)
 
-N> Its DataContext is [`SliderToolTipInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderToolTipInfo.html).
+N> The DataContext of the tooltip template is [`SliderToolTipInfo`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderToolTipInfo.html).

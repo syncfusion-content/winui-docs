@@ -9,14 +9,16 @@ documentation: ug
 
 # Leading and Trailing View in WinUI ComboBox (SfComboBox)
 
-This section explains about the leading and trailing view support available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). The `LeadingView` appears before the `ComboBox` selection area, and `TrailingView` appears after the `ComboBox` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView.`
+This section describes the leading and trailing view support available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). The [LeadingView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_LeadingView) appears before the `ComboBox` selection area, and [TrailingView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TrailingView) appears after the `ComboBox` selection area. Any content, such as an icon, image, button, or control, can be displayed in the `LeadingView` and `TrailingView`.
+
+N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Import the `xmlns:editors="using:Syncfusion.UI.Xaml.Editors"` namespace in XAML.
 
 ## Leading View 
 
-The below code shows how to include the `LeadingView` in ComboBox.
+The following code shows how to include the `LeadingView` in ComboBox.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox Header="ComboBox with Leading View"                
                     PlaceholderText="Search a country">
@@ -32,14 +34,14 @@ The below code shows how to include the `LeadingView` in ComboBox.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI Combobox control with icon in leading view or front view](Leading_and_Trailing_view_images/Leading-View-in-ComboBox.png)
+![WinUI ComboBox control with icon in leading view or front view](Leading_and_Trailing_view_images/Leading-View-in-ComboBox.png)
 
 ## Trailing View 
 
-The below code shows how to include the `Trailingview` in ComboBox.
+The following code shows how to include the `TrailingView` in ComboBox.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox Header="ComboBox with Trailing View"
                     PlaceholderText="Search a country">
@@ -61,10 +63,10 @@ The below code shows how to include the `Trailingview` in ComboBox.
 
 ## Leading and Trailing View 
 
-The below code shows how to include both the `Leadingview` and `Trailingview` in ComboBox.
+The following code shows how to include both the `LeadingView` and `TrailingView` in ComboBox. The example nests a `SfComboBox` in the `LeadingView` to demonstrate that any control can be hosted in these slots.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
  <editors:SfComboBox Header="ComboBox with Leading and Trailing View"
                      PlaceholderText="Search a country">

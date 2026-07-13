@@ -69,7 +69,7 @@ table, td, th {
 </table>
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -85,7 +85,7 @@ table, td, th {
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.HorizontalAlignment = HorizontalAlignment.Left;
 badge.VerticalAlignment = VerticalAlignment.Center;
@@ -146,7 +146,7 @@ table, td, th {
 </table>
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -162,7 +162,7 @@ table, td, th {
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.HorizontalAnchor = BadgeAnchor.Outside;
 badge.VerticalAnchor = BadgeAnchor.Center;
@@ -175,12 +175,12 @@ badge.Content = "99+";
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
 
-## Place the Badge any where on the container
+## Place the Badge anywhere on the container
 
 If you want to place the `Badge` anywhere on the container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to `1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer>
     <notification:BadgeContainer.Content> 
@@ -199,10 +199,10 @@ If you want to place the `Badge` anywhere on the container, use the [HorizontalP
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-badge.HorizontalPosition = 0.9;
-badge.VerticalPosition = 0.8;
+badge3.HorizontalPosition = 0.9;
+badge3.VerticalPosition = 0.8;
 
 {% endhighlight %}
 {% endtabs %}
@@ -211,9 +211,9 @@ badge.VerticalPosition = 0.8;
 
 ## Custom alignment and positioning of Badge
 
-By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor`, and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at a custom position, use the `HorizontalPosition` and `VerticalPosition` properties, as well as the [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) and [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will be effective only on by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`. The value range for the `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to`1`. The default value of `HorizontalAnchorPosition`and `VerticalAnchorPosition` properties is `0`.
+By using the `HorizontalAlignment`, `VerticalAlignment`, `HorizontalAnchor`, and `VerticalAnchor` properties, you can place `Badge` only at particular position. If you want to place the `Badge` at a custom position, use the `HorizontalPosition` and `VerticalPosition` properties, as well as the [HorizontalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchorPosition) and [VerticalAnchorPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchorPosition) properties. This will be effective only by setting the `HorizontalAnchor` and `VerticalAnchor` properties value as `Custom`. The value range for the `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0` to `1`. The default value of `HorizontalAnchorPosition` and `VerticalAnchorPosition` properties is `0`.
 
-For example, you will see how the  `HorizontalPosition` and `HorizontalAnchorPosition` values work based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here,  `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
+For example, you will see how the `HorizontalPosition` and `HorizontalAnchorPosition` values work based on the `VerticalAnchorPosition` and `VerticalPosition` values. Here, `VerticalPosition` and `VerticalAnchorPosition` properties value is `0`.
 
 <style>
 table, td, th { 
@@ -259,7 +259,7 @@ table, td, th {
 </table>
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -279,14 +279,14 @@ table, td, th {
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.HorizontalAnchor = BadgeAnchor.Custom;
 badge.VerticalAnchor = BadgeAnchor.Custom;
 badge.HorizontalAnchorPosition = 0.2;
 badge.VerticalAnchorPosition = 0;
 badge.HorizontalPosition = 0;
-badge.VerticalPosition  0;
+badge.VerticalPosition = 0;
 badge.Content = "99+";
 
 {% endhighlight %}
@@ -296,10 +296,10 @@ badge.Content = "99+";
 
 ## Badge content alignment
 
-you can place the `Badge` content either horizontally or vertically by using the `HorizontalContentAlignment` or `VerticalContentAlignment` properties. The default value of `HorizontalContentAlignment` and `VerticalContentAlignment` properties is `Center`.
+You can place the `Badge` content either horizontally or vertically by using the `HorizontalContentAlignment` or `VerticalContentAlignment` properties. The default value of `HorizontalContentAlignment` and `VerticalContentAlignment` properties is `Center`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -315,7 +315,7 @@ you can place the `Badge` content either horizontally or vertically by using the
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.HorizontalContentAlignment = HorizontalAlignment.Right;
 badge.VerticalContentAlignment = VerticalAlignment.Top;
@@ -333,7 +333,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 By default, `Badge` control size automatically assigned based on its content. You can change the left, right, top, and bottom content spacing of a `Badge` control by using the `Padding` property. The default value of `Padding` property is `0,0,0,0`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer">
     <notification:BadgeContainer.Badge>
@@ -348,7 +348,7 @@ By default, `Badge` control size automatically assigned based on its content. Yo
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Padding = new Thickness() { Bottom = 10, Left = 10, Right = 10, Top = 10 };
 badge.Content = "10";
@@ -365,7 +365,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you change the container size, `Badge` will be repositioned automatically to the existing position on the container.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer">
     <notification:BadgeContainer.Badge>
@@ -379,7 +379,7 @@ If you change the container size, `Badge` will be repositioned automatically to 
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Content = "10";
 

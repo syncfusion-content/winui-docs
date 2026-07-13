@@ -9,7 +9,15 @@ documentation: ug
 
 # Custom Range in WinUI Slider
 
-Slider allows you to define a custom scale range by extending the Slider based on your business logic.
+The `SfSlider` allows you to define a custom scale range by extending the control based on your business logic.
+
+## Overriding GenerateVisibleLabels, ValueToFactor and FactorToValue
+
+Override the following methods of the [`SfSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfSlider.html?tabs=tabid-1) to define a custom scale range:
+
+* [`GenerateVisibleLabels`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Sliders_SliderBase_GenerateVisibleLabels) – Generates the visible labels for the custom scale range.
+* [`ValueToFactor`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ValueToFactor_System_Double_) – Converts the custom value to a factor (between 0 and 1) used to position the thumb.
+* [`FactorToValue`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_FactorToValue_System_Double_) – Converts the factor (between 0 and 1) back to the custom value.
 
 {% tabs %}
 
@@ -60,12 +68,14 @@ public class LogarithmicSlider : SfSlider
 
     public override double FactorToValue(double factor)
     {
-        return Math.Pow(Math.E, factor * (labelsCount - 1) * Math.Log(10));
+        return Math.Pow(10, factor * (labelsCount - 1));
     }
 }
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> In XAML, declare the `local` namespace pointing to the assembly that contains the `LogarithmicSlider` class (for example, `xmlns:local="using:SliderGettingStartedDesktop"`).
 
 ![Slider with custom range](images/custom-range/slider-customrange.png)

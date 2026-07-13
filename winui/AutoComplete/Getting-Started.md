@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI AutoComplete | Syncfusion
-description: Learn how to get started with Syncfusion WinUI AutoComplete control and its suggestion list, as well as other topics, in this section.
+description: Learn how to get started with the Syncfusion WinUI AutoComplete control, its suggestion list, and other essential topics.
 platform: WinUI
 control: SfAutoComplete
 documentation: ug
@@ -9,16 +9,17 @@ documentation: ug
 
 # Getting Started with WinUI AutoComplete (SfAutoComplete)
 
-This section explains how to add the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control and bind data to it. This section covers only the basic features needed to get started with the Syncfusion<sup>&reg;</sup> `AutoComplete` control.
+This section explains how to add the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control and bind data to it. It covers only the basic features needed to get started with the Syncfusion<sup>&reg;</sup> `AutoComplete` control.
 
 ## Creating an application with WinUI AutoComplete
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Download and refer to the following NuGet package in the project.
+1. Create a [WinUI 3 desktop app for C# and .NET 6+](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+2. Install the following NuGet package in the project (latest stable version):
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 
-3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
+
+3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML (via `xmlns:editors`) and in C# (via `using Syncfusion.UI.Xaml.Editors;`).
 4. Initialize the `SfAutoComplete` control.
 
 {% capture codesnippet1 %}
@@ -50,7 +51,7 @@ namespace GettingStarted
 {
     public sealed partial class MainWindow : Window
     {
-        public MainPage()
+        public MainWindow()
         {
             this.InitializeComponent();
 
@@ -66,16 +67,20 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-![WinUI AutoComplete populating items using data binding](GettingStarted_images/winui-autocomplete-control.png)
+![WinUI AutoComplete control added to the application](GettingStarted_images/winui-autocomplete-control.png)
 
 ## Populating items using data binding
 
-The `AutoComplete` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate items with social media details in `AutoComplete`.
+The `AutoComplete` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property. The following steps create `Model` and `ViewModel` classes to populate `AutoComplete` with social media details.
 
-**Step 1:** Create a simple model class 'SocialMedia' with fields 'ID' and 'Name', and then populate social media data in the 'SocialMediaViewModel'.
+**Step 1:** Create a simple model class `SocialMedia` with properties `ID` and `Name`, and then populate social media data in the `SocialMediaViewModel`.
+
+Add the following `using` directives to the file:
 
 {% tabs %}
 {% highlight c# %}
+
+using System.Collections.ObjectModel;
 
 //Model.cs
 public class SocialMedia
@@ -111,23 +116,22 @@ public class SocialMediaViewModel
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Populate data in `AutoComplete`. 
+**Step 2:** Populate data in `AutoComplete`.
 
-Now, populate this 'SocialMediaViewModel' data in the `AutoComplete` control by binding to the `ItemsSource` property.
+Now, populate the `SocialMediaViewModel` data in the `AutoComplete` control by binding to the `ItemsSource` property.
 
 {% tabs %}
 {% highlight xaml %}
 
 <Window
-    x:Class="GettingStarted.Window"
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid Name="grid">
        <Grid.DataContext>
             <local:SocialMediaViewModel />
@@ -142,20 +146,20 @@ Now, populate this 'SocialMediaViewModel' data in the `AutoComplete` control by 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.DataContext = new SocialMediaViewModel();
 SocialMediaViewModel socialMediaViewModel = (autoComplete.DataContext as SocialMediaViewModel);
-autoComplete.ItemsSource = SocialMediaViewModel.SocialMedias;
+autoComplete.ItemsSource = socialMediaViewModel.SocialMedias;
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Set the 'SocialMediaViewModel' instance as the `DataContext` of your control; this is done to bind properties of 'SocialMediaViewModel' to `AutoComplete`.
+N> Set the `SocialMediaViewModel` instance as the `DataContext` of the `AutoComplete` control so that the `SocialMedias` property can be resolved through the binding.
 
 **Step 3:** Set the `TextMemberPath` and `DisplayMemberPath`.
 
-The `AutoComplete` control is populated with the list of social media. However, because the 'SocialMedia' model contains two properties such as 'Name' and 'ID', it is necessary to intimate, which property should be a display value in the selection box portion and drop-down suggestion of the `AutoComplete` control.
+The `AutoComplete` control is populated with the list of social media. However, because the `SocialMedia` model contains two properties, `Name` and `ID`, you must specify which property should be displayed in the selection box and the drop-down suggestion of the `AutoComplete` control.
 
 [TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the `AutoComplete` control when an item is selected. The default value is `String.Empty`.
 
@@ -170,7 +174,7 @@ The `AutoComplete` control is populated with the list of social media. However, 
                         ItemsSource="{Binding SocialMedias}" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.DisplayMemberPath = "Name";
 autoComplete.TextMemberPath = "Name";
@@ -178,11 +182,11 @@ autoComplete.TextMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI AutoComplete populating items using data binding](GettingStarted_images/winui-autocomplete-populating-data-binding.png)
+![WinUI AutoComplete displaying bound social media data](GettingStarted_images/winui-autocomplete-populating-data-binding.png)
 
 ## Selection
 
-The `AutoComplete` allows the user to select single or multiple items from the drop-down list by clicking the `Enter` key or losing focus from the text box. To change the selection mode either single or multi-selection, set the `SelectionMode` property as `Single` or `Multiple`.
+The `AutoComplete` allows the user to select a single item or multiple items from the drop-down list by pressing the `Enter` key or moving focus away from the text box. To change the selection mode between single and multi-selection, set the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property to [AutoCompleteSelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.AutoCompleteSelectionMode.html).`Single` or `Multiple`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,9 +198,9 @@ The `AutoComplete` allows the user to select single or multiple items from the d
                         ItemsSource="{Binding SocialMedias}" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-autoComplete.SelectionMode= AutoCompleteSelectionMode.Multiple;
+autoComplete.SelectionMode = AutoCompleteSelectionMode.Multiple;
 autoComplete.DisplayMemberPath = "Name";
 autoComplete.TextMemberPath = "Name";
 
@@ -207,7 +211,7 @@ autoComplete.TextMemberPath = "Name";
 
 ## Filtering
 
-The `AutoComplete` control allows you to filter the data items based on their starting letter or whether they contain a specific letter entered in the editing text box. The string comparison for filtering suggestions can be changed using the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. It also supports the custom filtering option.
+The `AutoComplete` control allows you to filter the data items based on whether they start with the text entered in the text box or whether they contain that text. The string comparison for filtering suggestions can be changed using the [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_TextSearchMode) property. It also supports a custom filtering option. Supported modes include `StartsWith` and `Contains`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -219,7 +223,7 @@ The `AutoComplete` control allows you to filter the data items based on their st
                         ItemsSource="{Binding SocialMedias}" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 autoComplete.TextSearchMode = AutoCompleteTextSearchMode.Contains;
 autoComplete.DisplayMemberPath = "Name";
@@ -228,10 +232,10 @@ autoComplete.TextMemberPath = "Name";
 {% endhighlight %}
 {% endtabs %}
 
-**TextSearchMode="StartWith"**
+**TextSearchMode="StartsWith"**
 
-![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-startwith-filtering.gif)
+![WinUI AutoComplete filters the items based on the starting letters.](GettingStarted_images/winui-autocomplete-startwith-filtering.gif)
 
 **TextSearchMode="Contains"**
 
-![WinUI AutoComplete filters the items based on starting letters.](GettingStarted_images/winui-autocomplete-contains-filtering.gif)
+![WinUI AutoComplete filters the items based on whether they contain the entered text.](GettingStarted_images/winui-autocomplete-contains-filtering.gif)

@@ -9,11 +9,11 @@ documentation: ug
 
 # Quick Access Toolbar in WinUI Ribbon
 
-The Quick Access Toolbar (QAT) is used to render a set of ribbon items that are commonly used in applications. It renders at the top-left corner of a window or ribbon to make it more accessible. Users can place it above or below the ribbon, remove commands from it, or add commands to it.
+The Quick Access Toolbar (QAT) is used to render a set of ribbon items that are commonly used in applications. It renders at the top-left corner of a window or ribbon to make it more accessible. Users can place it above or below the ribbon, remove commands from it, or add commands to it. By default, the QAT is not shown; it must be added via the `QuickAccessToolBar` property.
 
-## Adding Quick Access Toolbar in Ribbon 
+## Adding the Quick Access Toolbar to the Ribbon
 
-To add Quick Access Toolbar in Ribbon control, set the `QuickAccessToolBar` property of Ribbon. The below code shows how to add the `Quick Access Toolbar` in Ribbon.
+To add the Quick Access Toolbar to the Ribbon control, set the `QuickAccessToolBar` property of the Ribbon. The following code shows how to add the `Quick Access Toolbar` to the Ribbon.
 
 {% tabs %}
 {% highlight xaml %}
@@ -28,20 +28,20 @@ To add Quick Access Toolbar in Ribbon control, set the `QuickAccessToolBar` prop
 
 ![WinUI Ribbon Quick Access Toolbar.](Ribbon-QAT-images/winui-ribbon-qat.png)
 
-## Adding items in Quick Access Toolbar
+## Adding items to the Quick Access Toolbar
 
-Ribbon items can be added in the Quick Access Toolbar (QAT) by following below ways:
+Ribbon items can be added to the Quick Access Toolbar (QAT) in the following ways:
 
- * Adding items through Code.
+ * Adding items through code.
  * Adding items using ContextMenu.
  * Adding items using QAT MenuItems.
- * Adding items using QAT Customize dialog window
+ * Adding items using the QAT Customize dialog window.
 
- N> Currently, Ribbon Gallery and RibbonItemHost are not supported as a QAT add-in.
+ N> Currently, Ribbon Gallery and RibbonItemHost are not supported as QAT add-ins.
 
-### Adding items through Code
+### Adding items through code
 
-To add the ribbon items in Quick Access Toolbar (QAT) through code behind, you need to populate the QuickAccessToolbar `Items` collection. The below code shows how to add the ribbon items in `Quick Access Toolbar` of Ribbon.
+To add ribbon items to the Quick Access Toolbar (QAT) via code-behind, you need to populate the Quick Access Toolbar `Items` collection. The following code shows how to add ribbon items to the `Quick Access Toolbar` of the Ribbon.
 
 {% tabs %}
 {% highlight xaml %}
@@ -82,7 +82,7 @@ To add the ribbon items to the Quick Access Toolbar (QAT) through context menu, 
 
 ### Adding items using QAT MenuItems
 
-The Ribbon also supports adding items to the QAT Menu items. To add items to the drop-down menu of the Quick Access Toolbar, use the `MenuItems` property of the Quick Access Toolbar. Items can be added to the Quick Access Toolbar (QAT) by making the selection.
+The Ribbon also supports adding items to the QAT `MenuItems` collection. To add items to the drop-down menu of the Quick Access Toolbar, use the `MenuItems` property of the Quick Access Toolbar. Items can be added to the Quick Access Toolbar (QAT) by making the selection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,11 +122,11 @@ The Ribbon also supports adding items to the QAT Menu items. To add items to the
 
 ![WinUI Ribbon QAT menu items.](Ribbon-QAT-images/winui-ribbon-qat-menu-items.png)
 
-## Adding items using QAT Customize dialog window
+### Adding items using the QAT Customize dialog window
 
-To open the QAT customize dialog window, select the `MoreCommands` option from the ContextMenu of the QAT. This dialog window showcases all available commands within the Ribbon control.
+To open the QAT customize dialog window, select the `More Commands` option from the context menu of the QAT. This dialog window displays all available commands within the Ribbon control.
 
-Filter the command based on ribbon tabs by using the `Choose commands from` option. Then, select the desired command and click `Add` to add the command to the right Pane of the QAT dialog window. Finally, click `OK`.
+Filter the commands based on ribbon tabs by using the `Choose commands from` option. Then, select the desired command and click `Add` to add the command to the right pane of the QAT dialog window. Finally, click `OK`.
 
 ![MoreCommands option in QAT drop-down context menu.](Ribbon-QAT-images/winui-ribbon-more-commands-option.png)
 
@@ -138,33 +138,33 @@ Finally, the Items are displayed in the QAT.
 
 ![Add commands to WinUI Ribbon QuickAccessToolbar.](Ribbon-QAT-images/winui-ribbon-add-commands-to-qat.png)
 
-N> To avoid adding duplicate items in QAT, set Content property for ribbon items.
+N> To avoid adding duplicate items to the QAT, set the `Content` property on ribbon items. The `Content` value is used as the unique key when the QAT checks for duplicates.
 
 ## Removing QAT items
 
-To remove an items from Quick Access Toolbar (QAT), right-click the required QAT item and select `Remove from Quick Access Toolbar` option. 
+To remove an item from the Quick Access Toolbar (QAT), right-click the required QAT item and select the `Remove from Quick Access Toolbar` option. 
 
 ![WinUI Ribbon QAT item context menu.](Ribbon-QAT-images/winui-ribbon-qat-item-context-menu.png)
 
 ![WinUI Ribbon QAT item removed.](Ribbon-QAT-images/winui-ribbon-qat-item-removed.png)
 
-QAT items can also be removed by using the Customize window. Select the QAT item in the right panel, then select `Remove`. 
+QAT items can also be removed by using the Customize window. Select the QAT item in the right panel, then select `Remove`.  
 
 ![WinUI Ribbon Items to QAT Customize Window.](Ribbon-QAT-images/winui-ribbon-remove-qat-item.png)
 
 ![WinUI Ribbon QAT item removed.](Ribbon-QAT-images/winui-ribbon-removed-qat-item.png)
 
-## Change Position of Quick Access Toolbar
+## Changing the Position of the Quick Access Toolbar
 
-The position of Quick Access Toolbar (QAT) can be changed by using it [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.QATPosition.html) property.
+The position of the Quick Access Toolbar (QAT) can be changed by using its [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.QATPosition.html) property.
 
-The Position enumeration comprises of following values: .
+The `Position` enumeration comprises the following values:
 
-* **Above the Ribbon** - Displays the Quick Access Toolbar above the ribbon. 
-* **Below the Ribbon** - Displays the Quick Access Toolbar below the ribbon.
-* **Hide** - Hide the Quick Access Toolbar in the ribbon.
+* **AboveRibbon** - Displays the Quick Access Toolbar above the ribbon. 
+* **BelowRibbon** - Displays the Quick Access Toolbar below the ribbon.
+* **Hide** - Hides the Quick Access Toolbar in the ribbon.
 
-The default value is **Above the Ribbon**. The below code shows how to change the position of [Quick Access Toolbar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.QuickAccessToolBar.html) in Ribbon.
+The default value is **AboveRibbon**. The following code shows how to change the position of the [Quick Access Toolbar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.QuickAccessToolBar.html) in the Ribbon.
 
 {% tabs %}
 {% highlight xaml %}
@@ -190,6 +190,14 @@ The default value is **Above the Ribbon**. The below code shows how to change th
     </ribbon:SfRibbon.QuickAccessToolBar>
     ...
 </ribbon:SfRibbon>
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Ribbon;
+
+if (ribbon.QuickAccessToolBar != null)
+{
+    ribbon.QuickAccessToolBar.Position = QATPosition.BelowRibbon;
+}
 {% endhighlight %}
 {% endtabs %}
 

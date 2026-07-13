@@ -1,21 +1,23 @@
 ---
 layout: post
 title: Ticks in WinUI RangeSlider control | Syncfusion
-description: Learn here all about Ticks feature of Syncfusion WinUI RangeSlider(sfRangeSlider) control with length support and more.
+description: Learn here all about Ticks feature of Syncfusion WinUI RangeSlider(SfRangeSlider) control with length support and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Ticks in WinUI RangeSlider 
+# Ticks in WinUI RangeSlider
 
 This section explains how to add major and minor ticks in the RangeSlider.
 
+I> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application.
+
 ## Show Major Ticks
 
-You can enable the major ticks on the track. It is a shape, which is used to represent the major interval points of the track. The default value of [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowTicks) property is false.
+You can enable major ticks on the track. Major ticks are shapes used to represent the major interval points on the track. Ticks are rendered based on the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) property; when no interval is set, the interval is auto-calculated. The default value of the [`ShowTicks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowTicks) property is false.
 
-For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 10, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 2, the RangeSlider will render the major ticks at 0, 2, 4 and so on.
+For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 10, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 2, the RangeSlider will render the major ticks at 0, 2, 4, and so on.
 
 {% tabs %}
 
@@ -49,11 +51,13 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-ticks.png)
+![Range slider with major ticks](images/ticks/slider-ticks.png)
 
 ## Show Minor Ticks
 
-It is used to represent the number of smaller ticks between two major ticks. For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 10 and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 2, the RangeSlider will render the major ticks as 0, 2, 4 and so on. If [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTicksPerInterval) is 1, then smaller ticks will be rendered as 1, 3 and so on.
+Minor ticks are used to represent the smaller intervals between two major ticks. The number of minor ticks rendered between each major tick is controlled by the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTicksPerInterval) property. The default value of the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTicksPerInterval) property is 0 (no minor ticks are rendered).
+
+For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 10, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 2, the RangeSlider will render the major ticks at 0, 2, 4, and so on. If [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTicksPerInterval) is 1, then smaller ticks will be rendered at 1, 3, and so on.
 
 {% tabs %}
 
@@ -87,11 +91,11 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-minorTicksPerInterval.png)
+![Range slider with minor ticks](images/ticks/slider-minorTicksPerInterval.png)
 
-## Tick Length
+## Tick Lengths
 
-You can change the major and minor ticks length of the range slider using the [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickLength) properties respectively. The default value of [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickLength) properties are 10 and 5 respectively.
+You can change the major and minor tick lengths of the range slider using the [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickLength) properties respectively. The default values of the [`MajorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickLength) and [`MinorTickLength`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickLength) properties are 10 and 5 respectively.
 
 {% tabs %}
 
@@ -129,11 +133,14 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-majorMinorTickLength.png)
+![Range slider with major and minor tick lengths](images/ticks/slider-majorMinorTickLength.png)
 
 ## Tick Placement
 
-The [`TickPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickPlacement) property is used to place the ticks either before or after the track. The default value of the [`TickPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickPlacement) property is [`Placement.After`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_After).
+The [`TickPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickPlacement) property is used to place ticks either before or after the track. The default value of the [`TickPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickPlacement) property is [`Placement.After`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_After). The available values are:
+
+* [`Placement.Before`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_Before) – Places the ticks before the track.
+* [`Placement.After`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.Placement.html#Syncfusion_UI_Xaml_Sliders_Placement_After) – Places the ticks after the track.
 
 {% tabs %}
 
@@ -161,9 +168,9 @@ this.Content = sfRangeSlider;
 
 ![Range slider with tick placement customization](images/ticks/slider-tickPlacement.png)
 
-## Ticks Offset
+## Tick Offset
 
-You can adjust the space between track and ticks of the range slider using the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickOffset) property. The default value of the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickOffset) property is 0.
+You can adjust the space between the track and ticks of the range slider using the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickOffset) property. The default value of the [`TickOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_TickOffset) property is 0.
 
 {% tabs %}
 
@@ -199,13 +206,13 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-tickOffset.png)
+![Range slider with tick offset](images/ticks/slider-tickOffset.png)
 
 ## Tick Style
 
 ### Setting a Style for Major and Minor Ticks
 
-The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickStyle) properties allows you to define the style for the major and minor tick’s respectively as shown in the following code example.
+The [`MajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MajorTickStyle) and [`MinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_MinorTickStyle) properties allow you to define the style for the major and minor ticks respectively, as shown in the following code example.
 
 {% tabs %}
 
@@ -254,11 +261,11 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-majorMinorTickStyle.png)
+![Range slider with major and minor tick styles](images/ticks/slider-majorMinorTickStyle.png)
 
-### Setting a Active Style for Major and Minor Ticks
+### Setting an Active Style for Major and Minor Ticks
 
-The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveMajorTickStyle) and [`ActiveMinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveMinorTickStyle) properties allows you to define the active style for the major and minor tick’s respectively as shown in the following code example.
+The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveMajorTickStyle) and [`ActiveMinorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveMinorTickStyle) properties allow you to define the active style for the major and minor ticks respectively, as shown in the following code example.
 
 {% tabs %}
 
@@ -282,6 +289,7 @@ The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 <slider:SfRangeSlider ShowTicks="True"
                       Interval="5"
+                      MinorTicksPerInterval="2"
                       RangeStart="30"
                       RangeEnd="70"
                       ActiveMajorTickStyle="{StaticResource ActiveMajorTickStyle}"
@@ -294,6 +302,7 @@ The [`ActiveMajorTickStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 SfRangeSlider sfRangeSlider = new SfRangeSlider();
 sfRangeSlider.ShowTicks = true;
 sfRangeSlider.Interval = 5;
+sfRangeSlider.MinorTicksPerInterval = 2;
 sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
 sfRangeSlider.ActiveMajorTickStyle = this.Resources["ActiveMajorTickStyle"] as Style;
@@ -304,4 +313,4 @@ this.Content = sfRangeSlider;
 
 {% endtabs %}
 
-![Range slider with ticks](images/ticks/slider-activeMajorMinorTickStyle.png)
+![Range slider with active major and minor tick styles](images/ticks/slider-activeMajorMinorTickStyle.png)
