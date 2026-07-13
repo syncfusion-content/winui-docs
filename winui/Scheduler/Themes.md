@@ -21,6 +21,9 @@ You can customize the default appearance of themes by overriding key values. Adj
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
     <scheduler:SfScheduler>
         <scheduler:SfScheduler.Resources>
             <ResourceDictionary>
@@ -34,6 +37,7 @@ You can customize the default appearance of themes by overriding key values. Adj
             </ResourceDictionary>
         </scheduler:SfScheduler.Resources>
     </scheduler:SfScheduler>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}

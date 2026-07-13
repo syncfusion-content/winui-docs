@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data labels in WinUI Chart (SfPolarChart) | Syncfusion
-description: This section explains about how to configure the data labels and its features in Syncfusion® WinUI Chart (SfPolarChart) control.
+description: This section explains how to configure the data labels and their features in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Label in WinUI Chart (SfPolarChart)
 
-Data labels are used to display values related to a chart segment. Values from data points(x, y) or other custom properties from a data source can be displayed.
+Data labels are used to display values related to a chart segment. Values from data points (x, y) or other custom properties from a data source can be displayed.
 
 Each data label can be represented by the following:
 
@@ -25,13 +25,14 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarAreaSeries
         ShowDataLabels="True"
         ItemsSource="{Binding Data}"  
         XBindingPath="Product" 
         YBindingPath="SalesRate"/>
-    ...
+
 </chart:SfPolarChart>              
 
 {% endhighlight %}
@@ -41,8 +42,8 @@ The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Cha
 SfPolarChart chart = new SfPolarChart();
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -51,7 +52,7 @@ series.ShowDataLabels = true;
 
 ## Context
 
-To customize the content of data labels, need to define [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_DataLabelSettings) of series and set [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_DataLabelSettings) to define the value to be displayed as label content.
+To customize the content of data labels, you need to define [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_DataLabelSettings) of the series and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_DataLabelSettings) to define the value to be displayed as the label content.
 
 {% tabs %}
 
@@ -74,7 +75,8 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 
@@ -82,8 +84,6 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {
     Context = LabelContext.Percentage
 };
-
-...
 
 {% endhighlight %}
 
@@ -95,21 +95,22 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 The following properties are used to customize the data label.
 
-* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush)- used to change the border color.
-* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness)- used to change the thickness of the border.
-* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin)- used to change the margin size for label.
-* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle)-  used to change font style of the label.
-* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize)-  used to change font size of the label.
-* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground)- used to change the text color of the label.
-* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily)-  used to change the font family of the label.
-* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background)- used to change the label background color.
+* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush) - used to change the border color.
+* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness) - used to change the thickness of the border.
+* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin) - used to change the margin size for the label.
+* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle) - used to change the font style of the label.
+* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize) - used to change the font size of the label.
+* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground) - used to change the text color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily) - used to change the font family of the label.
+* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background) - used to change the label background color.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarAreaSeries
         ItemsSource="{Binding PlantDetails}" 
         XBindingPath="Direction" 
@@ -128,7 +129,7 @@ The following properties are used to customize the data label.
             </chart:PolarDataLabelSettings>
         </chart:PolarAreaSeries.DataLabelSettings>
     </chart:PolarAreaSeries>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -136,7 +137,8 @@ The following properties are used to customize the data label.
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 
@@ -151,8 +153,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     FontFamily = new FontFamily("Calibri"),
     FontSize = 12
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -205,17 +207,19 @@ The appearance of the data label can be customized using the [ContentTemplate](h
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 PolarAreaSeries series = new PolarAreaSeries();
 series.ShowDataLabels = true;
 
+// The 'datalabelTemplate' resource is defined in XAML Resources and referenced here.
 series.DataLabelSettings = new PolarDataLabelSettings() 
 { 
     Context = LabelContext.YValue,
     ContentTemplate = grid.Resources["datalabelTemplate"] as DataTemplate,
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -233,13 +237,14 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarLineSeries ShowDataLabels="True">
         <chart:PolarLineSeries.DataLabelSettings>
             <chart:PolarDataLabelSettings Format="#.0"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -247,7 +252,8 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . . 
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
 
@@ -255,8 +261,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 { 
     Format = "#.0",
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -265,14 +271,15 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Rotation
 
-[Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to define the angle to which the label has to rotate.
+[Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to define the angle by which the label should be rotated.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarLineSeries
         ShowDataLabels="True"  
         ItemsSource="{Binding PlantDetails}" 
@@ -282,7 +289,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
             <chart:PolarDataLabelSettings Rotation="-45"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -290,7 +297,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . . 
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
 
@@ -298,8 +306,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 { 
     Rotation = -45,
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -315,7 +323,8 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarLineSeries
         ShowDataLabels="True"  
         ItemsSource="{Binding PlantDetails}" 
@@ -325,7 +334,7 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
             <chart:PolarDataLabelSettings UseSeriesPalette="True"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -333,7 +342,8 @@ The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.C
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-... 
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
 
@@ -341,8 +351,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 {
     UseSeriesPalette = true,
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -351,12 +361,12 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ## Connector Line
 
-Connector line is used to connect label and data point using a line. [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [PolarDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarDataLabelSettings.html) is used to enable the connector line in the polar chart.
+Connector line is used to connect the label and the data point using a line. The [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [PolarDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarDataLabelSettings.html) is used to enable the connector line in the polar chart.
 
 The connector line can be customized using the following properties:
 
-* [ConnectorHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorHeight) - used to set height for connector line.
-* [ConnectorLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorLineStyle) -  used to customize the style of line.
+* [ConnectorHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorHeight) - used to set the height for the connector line.
+* [ConnectorLineStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorLineStyle) - used to customize the style of the line.
 * [ConnectorRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ConnectorRotation) - used to rotate the connector line at any angle.
 
 {% tabs %}
@@ -364,7 +374,8 @@ The connector line can be customized using the following properties:
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart">
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:PolarLineSeries
         ShowDataLabels="True"  
         ItemsSource="{Binding PlantDetails}" 
@@ -377,7 +388,7 @@ The connector line can be customized using the following properties:
                 ConnectorRotation="45"/>
         </chart:PolarLineSeries.DataLabelSettings>
     </chart:PolarLineSeries>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -385,7 +396,8 @@ The connector line can be customized using the following properties:
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-... 
+
+// Configure additional chart elements
 PolarLineSeries series = new PolarLineSeries();
 series.ShowDataLabels = true;
 
@@ -395,8 +407,8 @@ series.DataLabelSettings = new PolarDataLabelSettings()
     ConnectorHeight = 25,
     ConnectorRotation = 45,
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

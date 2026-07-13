@@ -16,7 +16,8 @@ documentation: ug
 {% highlight xaml %}
 
 <chart:SfPolarChart x:Name="chart" Header="Polar Chart">
- . . .           
+
+<!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -25,7 +26,8 @@ documentation: ug
 
 SfPolarChart chart = new SfPolarChart();
 chart.Header = "Polar Chart";
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -36,7 +38,7 @@ this.Content = chart;
 
 ## Customization
 
-Chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as chart header.
+The chart provides support to add any `UIElement` as a title. The following code example defines `TextBlock` as the chart header.
 
 {% tabs %}
 
@@ -48,7 +50,8 @@ Chart provides support to add any `UIElement` as a title. The following code exa
             <TextBlock FontSize="14" Text="Polar Chart" Margin="5"/>
         </Border>
     </chart:SfPolarChart.Header>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -56,7 +59,8 @@ Chart provides support to add any `UIElement` as a title. The following code exa
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . .
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -73,7 +77,7 @@ TextBlock textBlock = new TextBlock()
 };
 
 border.Child = textBlock;
-. . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -107,7 +111,8 @@ The title text content can be aligned horizontally to the left, center or right 
             </TextBlock>
         </Border>
     </chart:SfPolarChart.Header>
-    ...
+
+    <!-- Configure additional chart elements -->
  </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -116,7 +121,8 @@ The title text content can be aligned horizontally to the left, center or right 
 
 SfPolarChart chart = new SfPolarChart();
 chart.HorizontalHeaderAlignment = HorizontalAlignment.Left;
-...
+
+// Configure additional chart elements
 Border border = new Border()
 {
     BorderThickness = new Thickness(2),
@@ -136,8 +142,8 @@ TextBlock textBlock = new TextBlock()
 
 border.Child = textBlock;
 chart.Header = border;
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

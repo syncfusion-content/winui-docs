@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in WinUI Pyramid Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion® WinUI Chart(SfPyramidChart) control.
+description: This section explains how to enable the tooltip and its customization in the Syncfusion® WinUI Chart (SfPyramidChart) control.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in WinUI Chart (SfPyramidChart)
 
-Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
+Tooltip is used to display information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
 ## Define Tooltip
 
-To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true. The default value of [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property is false.
+To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true. The default value of the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property is false.
 
 {% tabs %}
 
@@ -41,7 +41,8 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.EnableTooltip = true;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -52,7 +53,7 @@ this.Content = chart;
 
 ## Customization
 
-The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. For customizing the tooltip, create an instance [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and set it to the [TooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_TooltipBehavior) property of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html). The following properties are used to customize the tooltip:
+The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is used to customize the tooltip. To customize the tooltip, create an instance of [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and set it to the [TooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_TooltipBehavior) property of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html). The following properties are used to customize the tooltip:
 
 * [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) - Used to customize the fill and stroke of the tooltip.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) - Used to customize the tooltip label.
@@ -69,11 +70,12 @@ The [ChartTooltipBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xa
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart">
-    . . .        
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.TooltipBehavior>
         <chart:ChartTooltipBehavior/>
     </chart:SfPyramidChart.TooltipBehavior>
-    . . .
+	
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -85,7 +87,8 @@ SfPyramidChart chart = new SfPyramidChart();
 chart.EnableTooltip = true;
 ChartTooltipBehavior behavior = new ChartTooltipBehavior();
 chart.TooltipBehavior = behavior;
-. . . 
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -94,7 +97,7 @@ this.Content = chart;
 
 ## Background Style
 
-The tooltip's fill and stroke color can be customized by using the [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) for tooltip, specify the style of `TargetType` as `Path`.
+The tooltip's fill and stroke color can be customized by using the [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) for the tooltip, specify the style of `TargetType` as `Path`.
 
 {% tabs %}
 
@@ -103,7 +106,8 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
 <chart:SfPyramidChart
      x:Name="chart"
      EnableTooltip="True">
-     . . .
+
+     <!-- Configure additional chart elements -->
      <chart:SfPyramidChart.Resources>
          <Style TargetType="Path" x:Key="style">
              <Setter Property="Stroke" Value="Black"/>
@@ -114,7 +118,7 @@ The tooltip's fill and stroke color can be customized by using the [Style](https
      <chart:SfPyramidChart.TooltipBehavior>
          <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
      </chart:SfPyramidChart.TooltipBehavior>
-     . . .
+
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -127,13 +131,13 @@ chart.EnableTooltip = true;
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Black)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Gray)));
-. . .
 
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.Style = style;
 chart.TooltipBehavior = tooltipBehavior;
-. . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -151,7 +155,8 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
 {% highlight xml %}
 
 <chart:SfPyramidChart x:Name="chart" EnableTooltip="True">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfPyramidChart.Resources>
         <Style TargetType="TextBlock" x:Key="labelStyle">
             <Setter Property="FontSize" Value="14"/>
@@ -163,7 +168,7 @@ The tooltip label style can be customized by using the [LabelStyle](https://help
     <chart:SfPyramidChart.TooltipBehavior>
         <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
     </chart:SfPyramidChart.TooltipBehavior>
-    . . .
+
 </chart:SfPyramidChart>
 
 {% endhighlight %}
@@ -179,13 +184,14 @@ Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.FontStyleProperty, FontStyle.Italic));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-. . . 
+
+// Configure additional chart elements
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 
 tooltipBehavior.LabelStyle = labelStyle;
 
 chart.TooltipBehavior = tooltipBehavior;
-. . . 
+
 this.Content = chart;
 
 {% endhighlight %}
@@ -265,9 +271,12 @@ chart.SetBinding(SfPyramidChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
+
+// The 'tooltipTemplate' resource is defined in XAML Resources and referenced here.
 chart.TooltipTemplate = this.grid.Resources["tooltipTemplate"] as DataTemplate;
 chart.EnableTooltip = true;
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
         
 {% endhighlight %}
@@ -276,4 +285,4 @@ this.Content = chart;
 
 ![Tooltip template in WinUI Chart](Tooltip_Images/WinUI_chart_tooltip_template.png)
 
-N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tooltip labels.
+N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for the Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tooltip labels.

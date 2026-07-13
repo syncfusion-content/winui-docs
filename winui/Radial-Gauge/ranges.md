@@ -9,7 +9,7 @@ documentation: ug
 
 # Range in WinUI Radial Gauge
 
-Gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
+A gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
 ## Setting start and end value
 
@@ -68,7 +68,7 @@ The following properties are used for the range customization:
 
 ### Equal range width
 
-Range width can be controlled by [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) properties of range.
+Range width can be controlled using the [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) properties of the range.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ this.Content = sfRadialGauge;
 
 ### Different range width
 
-By setting different values to [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) property can create different width ranges. 
+By setting different values for the [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth) properties, you can create ranges with different widths. 
 
 {% tabs %}
 
@@ -156,13 +156,13 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Range Thickness](images/range/winui-radial-gauge-range-thickness.png)
 
-When the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) is set as pixels, the range will be rendered based on the provided pixel values in [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth)
+When the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) is set as pixels, the range will be rendered based on the provided pixel values in [`StartWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_EndWidth).
 
 If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_WidthUnit) is set as factor, the provided factor value in the start width and end width will be multiplied with the axis radius, respectively. The factor value ranges from 0 to 1.
 
 ### Setting gradient brush to the range
 
- The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_GradientStops) property of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html) allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
+ The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_GradientStops) property of the [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html) allows you to specify the smooth color transition to the range by specifying different colors based on the provided axis value.
 
 {% tabs %}
 
@@ -225,11 +225,11 @@ this.Content = sfRadialGauge;
 
 ### Position customization
 
- The range can be moved far or near to the axis line with using the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) property. The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) property of range allows to specify the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) either in factor or pixels, and the default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is Pixel.
+ The range can be moved far or near to the axis line using the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) property. The [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) property of the range allows you to specify the [`RangeOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_RangeOffset) either in factor or pixels, and the default value of [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is Pixel.
 
 ### Range offset in pixel
 
-If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is set as a pixels, the range will be moved based on the provided pixel value.
+If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_OffsetUnit) is set as pixels, the range will be moved based on the provided pixel value.
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ this.Content = sfRadialGauge;
 
 ## Setting range color to axis elements
 
-You can set range color to axis labels and ticks using the [`UseRangeColorForAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_UseRangeColorForAxisProperty) property of axis,
+You can set the range color to axis labels and ticks using the [`UseRangeColorForAxis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_UseRangeColorForAxisProperty) property of the axis.
 
 {% tabs %}
 
@@ -411,7 +411,11 @@ radialAxis.TickLengthUnit = SizeUnit.Factor;
 radialAxis.MajorTickLength = 0.15;
 radialAxis.MinorTickLength = 0.04;
 radialAxis.MinorTicksPerInterval = 4;
+
+// The 'AxisMajorTickStyle' resource is defined in XAML Resources and referenced here.
 radialAxis.MajorTickStyle = this.Resources["AxisMajorTickStyle"] as Style;
+
+// The 'AxisMinorTickStyle' resource is defined in XAML Resources and referenced here.
 radialAxis.MinorTickStyle = this.Resources["AxisMinorTickStyle"] as Style;
 sfRadialGauge.Axes.Add(radialAxis);
 
@@ -458,7 +462,7 @@ this.Content = sfRadialGauge;
 
 ## Range label
 
-A text can be displayed on range using the [`Label`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_Label) property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily` and `FontStyle` properties of [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html).
+A text can be displayed on the range using the [`Label`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html#Syncfusion_UI_Xaml_Gauges_GaugeRange_Label) property. The provided text can be customized using the `Foreground`, `FontSize`, `FontWeight`, `FontFamily`, and `FontStyle` properties of the [`range`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeRange.html).
 
 {% tabs %}
 
@@ -690,6 +694,8 @@ GaugeRange gaugeRange1 = new GaugeRange();
 gaugeRange1.StartValue = 0;
 gaugeRange1.EndValue = 33;
 gaugeRange1.Label = "Slow";
+
+// The 'RangeLabelTemplate' resource is defined in XAML Resources and referenced here.
 gaugeRange1.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
 gaugeRange1.WidthUnit = SizeUnit.Factor;
 gaugeRange1.StartWidth = 0.65;
@@ -702,6 +708,8 @@ GaugeRange gaugeRange2 = new GaugeRange();
 gaugeRange2.StartValue = 33;
 gaugeRange2.EndValue = 66;
 gaugeRange2.Label = "Moderate";
+
+// The 'RangeLabelTemplate' resource is defined in XAML Resources and referenced here.
 gaugeRange2.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
 gaugeRange2.WidthUnit = SizeUnit.Factor;
 gaugeRange2.StartWidth = 0.65;
@@ -714,6 +722,8 @@ GaugeRange gaugeRange3 = new GaugeRange();
 gaugeRange3.StartValue = 66;
 gaugeRange3.EndValue = 99;
 gaugeRange3.Label = "Fast";
+
+// The 'RangeLabelTemplate' resource is defined in XAML Resources and referenced here.
 gaugeRange3.LabelTemplate = this.Resources["RangeLabelTemplate"] as DataTemplate;
 gaugeRange3.WidthUnit = SizeUnit.Factor;
 gaugeRange3.StartWidth = 0.65;
@@ -749,3 +759,8 @@ this.Content = sfRadialGauge;
 {% endtabs %}
 
 ![WinUI Radial Gauge Range Label Template](images/range/winui-radial-gauge-range-label-template.png)
+
+## See Also
+
+* [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
+* [How to design various directional semi-circular gauge using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11959/how-to-design-various-directional-semi-circular-gauge-using-winui-radial-gauge)

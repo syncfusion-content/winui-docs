@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis labels in WinUI Polar Chart control  | Syncfusion
-description: Learn here all about the chart axis lables and its customization in Syncfusion® WinUI Chart (SfPolarChart) control.
+description: Learn here all about the chart axis labels and their customization in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis labels in WinUI Chart
 
-The axis labels are used to show the units, measures, or category values of the axis to visualize the data. It will be generated based on the range and values binded to the series in the chart.
+The axis labels are used to show the units, measures, or category values of the axis to visualize the data. They will be generated based on the range and values bound to the series in the chart.
 
 ## Rotation
 
@@ -20,11 +20,12 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis LabelRotation="30"/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -32,14 +33,15 @@ The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 chart.PrimaryAxis = new CategoryAxis();
 chart.SecondaryAxis = new NumericalAxis()
 {
     LabelRotation = 30,
 }
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -48,7 +50,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Format
 
-Axis labels can be formatted by predefined formatting types by using the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis types.
+Axis labels can be formatted using predefined formatting types by using the [LabelFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelStyle.html#Syncfusion_UI_Xaml_Charts_LabelStyle_LabelFormat) property based on the axis type.
 
 {% tabs %}
 
@@ -66,7 +68,8 @@ Axis labels can be formatted by predefined formatting types by using the [LabelF
             </chart:NumericalAxis.LabelStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -79,13 +82,13 @@ chart.SecondaryAxis = new NumericalAxis()
 {
     LabelStyle = new LabelStyle() { LabelFormat= "0.0" }
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
 
-![Axis label formart support in WinUI Chart](Axis_Images/WinUI_Chart_Numerical_LabelFormat.png)
+![Axis label format support in WinUI Chart](Axis_Images/WinUI_Chart_Numerical_LabelFormat.png)
 
 ## Template
 
@@ -114,7 +117,8 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
     </Grid.Resources>
 
     <chart:SfPolarChart x:Name="chart">
-        ...
+
+        <!-- Configure additional chart elements -->
         <chart:SfPolarChart.PrimaryAxis>
             <chart:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
         </chart:SfPolarChart.PrimaryAxis>
@@ -122,7 +126,7 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
         <chart:SfPolarChart.SecondaryAxis>
             <chart:NumericalAxis/>
         </chart:SfPolarChart.SecondaryAxis>
-        ...
+        
     </chart:SfPolarChart>
 </Grid>
 
@@ -132,14 +136,15 @@ The appearance of the axis labels can be customized by using the [LabelTemplate]
 
 SfPolarChart chart = new SfPolarChart();
 
+// The 'labelTemplate' resource is defined in XAML Resources and referenced here.
 chart.PrimaryAxis = new CategoryAxis()
 {
     LabelTemplate = grid.Resources["labelTemplate"] as DataTemplate
 };
 
 chart.SecondaryAxis = new NumericalAxis();
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

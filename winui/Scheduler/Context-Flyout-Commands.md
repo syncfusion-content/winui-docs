@@ -26,25 +26,30 @@ N>
 * By default, the cell context flyout will be opened when holding on any timeslot or month cell. The appointment menu flyout will be opened by holding, only if the appointment's drag and drop is disabled using the `AppointmentEditFlag` property.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10 11 12 13 14 15 16 17" %}
-<scheduler:SfScheduler x:Name="Schedule" 
-                       ViewType="Week">
-    <scheduler:SfScheduler.CellContextFlyout>
-        <MenuFlyout>
-            <MenuFlyoutItem Text="Add" 
-                            Foreground="{ThemeResource SystemBaseHighColor}" 
-                            Command="{x:Bind Path=scheduler:SchedulerCommands.Add}" 
-                            CommandParameter="{Binding}">
-                <MenuFlyoutItem.Icon>
-                    <FontIcon x:Name="Add" 
-                              Foreground="{ThemeResource SystemBaseHighColor}" 
-                              FontFamily="Segoe MDL2 Assets" 
-                              Glyph="&#xE710;"/>
-                </MenuFlyoutItem.Icon>
-            </MenuFlyoutItem>
-        </MenuFlyout>
-    </scheduler:SfScheduler.CellContextFlyout>
-</scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8 9 10 11 12 13 14 15 16 17 18 19 20" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           ViewType="Week">
+        <scheduler:SfScheduler.CellContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Add" 
+                                Foreground="{ThemeResource SystemBaseHighColor}" 
+                                Command="{x:Bind Path=scheduler:SchedulerCommands.Add}" 
+                                CommandParameter="{Binding}">
+                    <MenuFlyoutItem.Icon>
+                        <FontIcon x:Name="Add" 
+                                  Foreground="{ThemeResource SystemBaseHighColor}" 
+                                  FontFamily="Segoe MDL2 Assets" 
+                                  Glyph="&#xE710;"/>
+                    </MenuFlyoutItem.Icon>
+                </MenuFlyoutItem>
+            </MenuFlyout>
+        </scheduler:SfScheduler.CellContextFlyout>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,24 +66,29 @@ N>
 * To enable the touch context flyout for appointments in the scheduler, disable the appointment drag and drop by setting the `AppointmentEditFlag` property except for `DragDrop`. In this case, the appointment drag-and-drop cannot be performed. The `AppointmentContextFlyout` will be displayed only on appointments, and the appointment selection should be performed.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3 4 5 6 7 8 9 10 11 12 13 14 15 16" %}
-<scheduler:SfScheduler x:Name="Schedule" 
-                               ViewType="Week">
-            <scheduler:SfScheduler.AppointmentContextFlyout>
-                <MenuFlyout>
-                    <MenuFlyoutItem Text="Edit" Foreground="{ThemeResource SystemBaseHighColor}" Command="{x:Bind Path=scheduler:SchedulerCommands.Edit}" CommandParameter="{Binding}">
-                        <MenuFlyoutItem.Icon>
-                            <FontIcon x:Name="Edit" Foreground="{ThemeResource SystemBaseHighColor}" FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;"/>
-                        </MenuFlyoutItem.Icon>
-                    </MenuFlyoutItem>
-                    <MenuFlyoutItem Text="Delete" Foreground="{ThemeResource SystemBaseHighColor}" Command="{x:Bind Path=scheduler:SchedulerCommands.Delete}" CommandParameter="{Binding}">
-                        <MenuFlyoutItem.Icon>
-                            <FontIcon x:Name="Delete" Foreground="{ThemeResource SystemBaseHighColor}"  FontFamily="Segoe MDL2 Assets" Glyph="&#xE74D;"/>
-                        </MenuFlyoutItem.Icon>
-                    </MenuFlyoutItem>
-                </MenuFlyout>
-            </scheduler:SfScheduler.AppointmentContextFlyout>
-        </scheduler:SfScheduler>
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8 9 10 11 12 13 14 15 16 17 18 19" %}
+
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           ViewType="Week">
+        <scheduler:SfScheduler.AppointmentContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="Edit" Foreground="{ThemeResource SystemBaseHighColor}" Command="{x:Bind Path=scheduler:SchedulerCommands.Edit}" CommandParameter="{Binding}">
+                    <MenuFlyoutItem.Icon>
+                        <FontIcon x:Name="Edit" Foreground="{ThemeResource SystemBaseHighColor}" FontFamily="Segoe MDL2 Assets" Glyph="&#xE70F;"/>
+                    </MenuFlyoutItem.Icon>
+                </MenuFlyoutItem>
+                <MenuFlyoutItem Text="Delete" Foreground="{ThemeResource SystemBaseHighColor}" Command="{x:Bind Path=scheduler:SchedulerCommands.Delete}" CommandParameter="{Binding}">
+                    <MenuFlyoutItem.Icon>
+                        <FontIcon x:Name="Delete" Foreground="{ThemeResource SystemBaseHighColor}"  FontFamily="Segoe MDL2 Assets" Glyph="&#xE74D;"/>
+                    </MenuFlyoutItem.Icon>
+                </MenuFlyoutItem>
+            </MenuFlyout>
+        </scheduler:SfScheduler.AppointmentContextFlyout>
+    </scheduler:SfScheduler>
+</Window>
 {% endhighlight %}
 {% endtabs %}
 

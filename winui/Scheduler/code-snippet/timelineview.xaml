@@ -1,3 +1,7 @@
-﻿<scheduler:SfScheduler x:Name="Schedule" 
-                       ViewType="TimelineWeek" >
-</scheduler:SfScheduler>
+﻿<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
+    <scheduler:SfScheduler x:Name="Schedule" 
+                           ViewType="TimelineWeek" >
+    </scheduler:SfScheduler>
+</Window>

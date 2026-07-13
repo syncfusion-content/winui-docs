@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data label in WinUI Funnel Chart control | Syncfusion
-description: This section explains about how to add and customize the data labels in Syncfusion® WinUI Chart (SfFunnelChart) control.
+description: This section explains how to add and customize the data labels in the Syncfusion® WinUI Chart (SfFunnelChart) control.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
@@ -13,7 +13,7 @@ To improve the readability of data in the funnel chart, data points can be easil
 
 ## Define Data Label
 
-To define the data label in the chart, set the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property to true. The default value of [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property is false.
+To define the data label in the chart, set the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property to true. The default value of the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property is false.
 
 {% tabs %}
 
@@ -25,7 +25,8 @@ To define the data label in the chart, set the [ShowDataLabels](https://help.syn
     ItemsSource="{Binding Data}"
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -43,7 +44,8 @@ chart.SetBinding(SfFunnelChart.ItemsSourceProperty, new Binding()
 
 chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
-. . .
+
+// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}
@@ -54,7 +56,7 @@ this.Content = chart;
 
 ## Context
 
-To customize the content of data labels, need to define [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_DataLabelSettings) of chart and set [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [FunnelDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FunnelDataLabelSettings.html) to change the data label content value.
+To customize the content of data labels, define the [DataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_DataLabelSettings) of the chart and set the [Context](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Context) property of [FunnelDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FunnelDataLabelSettings.html) to change the data label content value.
 
 {% tabs %}
 
@@ -66,11 +68,13 @@ To customize the content of data labels, need to define [DataLabelSettings](http
     ItemsSource="{Binding Data}"
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfFunnelChart.DataLabelSettings>
         <chart:FunnelDataLabelSettings Context="Percentage"/>
     </chart:SfFunnelChart.DataLabelSettings>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -80,7 +84,8 @@ To customize the content of data labels, need to define [DataLabelSettings](http
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Context = LabelContext.Percentage 
@@ -98,14 +103,14 @@ this.Content = chart;
 
 The following properties are used to customize the data label:
 
-* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush)- used to change the border color.
-* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness)- used to change the thickness of the border.
-* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin)- used to change the margin of the label.
-* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle)-  used to change font style of the label.
-* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize)-  used to change font size of the label.
-* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground)- used to change the text color of the label.
-* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily)-  used to change the font family of the label.
-* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background)- used to change the label background color.
+* [BorderBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderBrush) - Used to change the border color.
+* [BorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_BorderThickness) - Used to change the thickness of the border.
+* [Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Margin) - Used to change the margin of the label.
+* [FontStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontStyle) - Used to change the font style of the label.
+* [FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontSize) - Used to change the font size of the label.
+* [Foreground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Foreground) - Used to change the text color of the label.
+* [FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_FontFamily) - Used to change the font family of the label.
+* [Background](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Background) - Used to change the label background color.
 
 {% tabs %}
 
@@ -117,7 +122,8 @@ The following properties are used to customize the data label:
     ItemsSource="{Binding Data}" 
     XBindingPath="Category"
     YBindingPath="Value">
-    . . .
+
+    <!-- Configure additional chart elements -->
     <chart:SfFunnelChart.DataLabelSettings>
         <chart:FunnelDataLabelSettings 
             Foreground="White"
@@ -129,7 +135,8 @@ The following properties are used to customize the data label:
             FontStyle="Italic" 
             Background="#1E88E5"/>
     </chart:SfFunnelChart.DataLabelSettings>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfFunnelChart>
 
 {% endhighlight %}
@@ -139,7 +146,8 @@ The following properties are used to customize the data label:
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . .
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings()
 {
     Foreground = new SolidColorBrush(Colors.White),
@@ -225,7 +233,8 @@ The appearance of the data label can be customized by using the [ContentTemplate
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// The 'dataLabelTemplate' resource is defined in XAML Resources and referenced here.
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Context = LabelContext.YValue,
@@ -268,7 +277,8 @@ The [Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 {  
     Format = "#.000",
@@ -285,7 +295,7 @@ this.Content = chart;
 
 ## Rotation
 
-The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to rotate the data labels based on the value as angle.
+The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_Rotation) property is used to rotate the data labels based on the angle value.
 
 {% tabs %}
 
@@ -313,7 +323,8 @@ The [Rotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Ch
 SfFunnelChart chart = new SfFunnelChart();
 
 chart.ShowDataLabels = true;
-. . . 
+
+// Configure additional chart elements
 chart.DataLabelSettings = new FunnelDataLabelSettings() 
 { 
     Rotation = 45,
