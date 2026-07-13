@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI AutoComplete (SfAutoComplete) | Syncfusion
-description: Learn about the selection modes supported in the Syncfusion WinUI AutoComplete control.
+description: Learn about single and multiple selection modes, auto-append behavior, selection events, and selected values in Syncfusion WinUI SfAutoComplete.
 platform: winui
 control: SfAutoComplete
 documentation: UG

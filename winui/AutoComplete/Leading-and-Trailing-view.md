@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leading and Trailing View in WinUI AutoComplete (SfAutoComplete) | Syncfusion
-description: Learn how to add leading and trailing views in the Syncfusion WinUI AutoComplete control.
+title: Leading and Trailing View in WinUI AutoComplete | Syncfusion
+description: Learn how to add and customize leading and trailing views in Syncfusion WinUI SfAutoComplete using icons and other UI elements.
 platform: winui
 control: SfAutoComplete
 documentation: UG
@@ -13,7 +13,7 @@ This section explains the leading and trailing view support available in [SfAuto
 
 > **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
 
-Both `LeadingView` and `TrailingView` are of type `object` and accept any `UIElement` as content. For best alignment of icons, wrap them in a `Viewbox` and set an explicit `Height` and `Width`.
+Both `LeadingView` and `TrailingView` are of type `object` and accept any `UIElement` as content. For best alignment of icons, wrap them in a `View box` and set an explicit `Height` and `Width`.
 
 ## Leading view
 
@@ -98,6 +98,6 @@ Use both properties together when you need content on both sides of the selectio
 
 ## Troubleshooting
 
-* **Content is not aligned**: Wrap icons in a `Viewbox` and set an explicit `Height` and `Width` so the content scales correctly.
+* **Content is not aligned**: Wrap icons in a `View box` and set an explicit `Height` and `Width` so the content scales correctly.
 * **Trailing view button steals focus**: Set `AllowFocusOnInteraction="False"` on the button so the AutoComplete retains focus.
-* **Content overflows the control**: Reduce the `Height` and `Width` of the `Viewbox`, or set `Margin` values to create space within the control.
+* **Content overflows the control**: Reduce the `Height` and `Width` of the `View box`, or set `Margin` values to create space within the control.
