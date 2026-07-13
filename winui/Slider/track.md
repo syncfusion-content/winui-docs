@@ -31,6 +31,8 @@ The inactive side of the slider is between the thumb and the [`Maximum`](https:/
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Sliders;
+
 SfSlider sfSlider = new SfSlider();
 sfSlider.Value = 50;
 sfSlider.ActiveTrackFill = new SolidColorBrush(ColorHelper.FromArgb(255, 0, 150, 136));
@@ -41,11 +43,13 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveFill.png)
+![Slider with active and inactive track color](images/track/slider-activeInactiveFill.png)
+
+N> When the [`IsInversed`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_IsInversed) property is set to true, the active and inactive sides are flipped.
 
 ## Track Hover Color
 
-You can change the active and inactive track hover color of the slider using the `SyncfusionSliderActiveTrackFillPointerOver` and `SyncfusionSliderInactiveTrackFillPointerOver` resource keys respectively. This color will be applied when hovering the cursor on the Slider control.
+You can change the active and inactive track hover color of the slider using the `SyncfusionSliderActiveTrackFillPointerOver` and `SyncfusionSliderInactiveTrackFillPointerOver` resource keys respectively. This color will be applied when the cursor hovers over the slider control.
 
 {% tabs %}
 
@@ -74,11 +78,11 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track hover color](images/track/slider-activeInactiveHoverFill.png)
+![Slider with active and inactive track hover color](images/track/slider-activeInactiveHoverFill.png)
 
 ## Track Pressed Color
 
-You can change the active and inactive track pressed color of the slider using the `SyncfusionSliderActiveTrackFillPressed` and `SyncfusionSliderInactiveTrackFillPressed` resource keys respectively. This color will be applied when pressed the cursor on the slider control.
+You can change the active and inactive track pressed color of the slider using the `SyncfusionSliderActiveTrackFillPressed` and `SyncfusionSliderInactiveTrackFillPressed` resource keys respectively. This color will be applied when the cursor presses on the slider control. The `SyncfusionSliderActiveTrackFillPointerOver` and `SyncfusionSliderInactiveTrackFillPointerOver` resource keys (covered in the previous section) should also be set so the hover state matches.
 
 {% tabs %}
 
@@ -87,14 +91,14 @@ You can change the active and inactive track pressed color of the slider using t
 <Page.Resources>
     <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver">#009688</SolidColorBrush>
     <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver">#C2E6E3</SolidColorBrush>
-    
+
     <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPressed">#018A7D</SolidColorBrush>
     <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPressed">#98B8B5</SolidColorBrush>
 </Page.Resources>
 
 <slider:SfSlider Value="50"
                  ActiveTrackFill="#006688"
-                 InactiveTrackFill="#A2E6E3"  />
+                 InactiveTrackFill="#A2E6E3" />
 
 {% endhighlight %}
 
@@ -110,11 +114,11 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track pressed color](images/track/slider-activeInactivePressedFill.png)
+![Slider with active and inactive track pressed color](images/track/slider-activeInactivePressedFill.png)
 
 ## Track Height
 
-You can change the track height of the slider using the [`ActiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHeight) and [`InactiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHeight) properties. The default value of the both properties are 2.
+You can change the track height of the slider using the [`ActiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHeight) and [`InactiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHeight) properties. The default values of both properties are 2.
 
 {% tabs %}
 
@@ -122,7 +126,7 @@ You can change the track height of the slider using the [`ActiveTrackHeight`](ht
 
 <slider:SfSlider Value="50"
                  ActiveTrackHeight="8"
-                 InactiveTrackHeight="8"  />
+                 InactiveTrackHeight="8" />
 
 {% endhighlight %}
 
@@ -138,11 +142,11 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveTrackHeight.png)
+![Slider with active and inactive track height customization](images/track/slider-activeInactiveTrackHeight.png)
 
 ## Track Style
 
-You can change the track style of the slider using the [`ActiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackStyle) and [`InactiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackStyle) properties. The default value of the both properties are null.
+You can change the track style of the slider using the [`ActiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackStyle) and [`InactiveTrackStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackStyle) properties. The default values of both properties are null.
 
 {% tabs %}
 
@@ -188,4 +192,4 @@ this.Content = sfSlider;
 
 {% endtabs %}
 
-![slider with active and inactive track color](images/track/slider-activeInactiveTrackStyle.png)
+![Slider with active and inactive track style customization](images/track/slider-activeInactiveTrackStyle.png)

@@ -13,6 +13,8 @@ This section explains the steps required to add the [WinUI NumberBox](https://ww
 
 ## Structure of NumberBox control
 
+The following image illustrates the structural elements of the `NumberBox` control. Refer to the [NumberBox overview](https://help.syncfusion.com/winui/numberbox/overview#control-structure) for a description of each element.
+
 ![WinUI NumberBox Structure](Overview_images/overview_img.png)
 
 ## Creating an application with WinUI NumberBox
@@ -28,8 +30,12 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 
+   N> You can also install the package using the Package Manager Console: `Install-Package Syncfusion.Editors.WinUI`.
+
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML page.
 4. Initialize the `NumberBox` control.
+
+N> The `Syncfusion.Editors.WinUI` NuGet package is supported on WinUI 3 with .NET 5 and later .NET versions.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -60,12 +66,14 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 
 ## Adding control manually in C#
 
-To add `NumberBox` control manually in C# , follow the below steps.
+To add `NumberBox` control manually in C#, follow the below steps.
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2.  Download and refer the following NuGet in the project.
+2.  Download and refer to the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
+
+   N> You can also install the package using the Package Manager Console: `Install-Package Syncfusion.Editors.WinUI`.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `NumberBox` control.
@@ -111,12 +119,15 @@ By default, the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
                      CustomFormat="0.000" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.CustomFormat = "0.000";
+grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}
@@ -145,12 +156,12 @@ You can assign the data type for [SfNumberBox](https://help.syncfusion.com/cr/wi
                      Maximum="5100000.24738787437884"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 datatype.ValueType = Syncfusion.UI.Xaml.Editors.NumericType.Decimal;
-datatype.Value = 3213124.20076757593434242423224356397;
-datatype.Minimum = 2000.87654678656765;
-datatype.Maximum = 5100000.24738787437884;
+datatype.Value = 3213124.20076757593434242423224356397M;
+datatype.Minimum = 2000.87654678656765M;
+datatype.Maximum = 5100000.24738787437884M;
 
 {% endhighlight %}
 {% endtabs %}
@@ -158,6 +169,8 @@ datatype.Maximum = 5100000.24738787437884;
 ![WinUI NumberBox DataType](GettingStarted_images/valuetype.png)
 
 N> Minimum and Maximum must match the ValueType. For example, when using ValueType="Decimal", specify Minimum and Maximum using decimal literals to avoid type‑casting issues and ensure correct validation.
+
+N> When changing `ValueType` at runtime, reassign `Value`, `Minimum`, and `Maximum` to values of the matching type to avoid validation errors.
 
 ## Change number format
 
@@ -172,7 +185,7 @@ You can change the format in which the value should be displayed using the [Cust
                      CustomFormat="C2" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
@@ -188,13 +201,16 @@ You can also change the format of the value of `NumberBox` control using `Number
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfNumberBox Name="sfNumberBox" 
+<editors:SfNumberBox x:Name="sfNumberBox" 
                      HorizontalAlignment="Center" 
                      VerticalAlignment="Center" 
                      Value="12.5" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using System.Globalization;
+using Windows.Globalization.NumberFormatting;
 
 CultureInfo ci = new CultureInfo("en-US");
 string currencyCode = new RegionInfo(ci.LCID).ISOCurrencySymbol;
@@ -208,7 +224,7 @@ sfNumberBox.NumberFormatter = new CurrencyFormatter(currencyCode, new string[] {
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox value editing](GettingStarted_images/custom_format.png)
+![WinUI NumberBox custom format](GettingStarted_images/custom_format.png)
 
 ## Accept null value
 
@@ -222,12 +238,15 @@ By default, `NumberBox` control allows **null** value. A null value is assigned 
                      AllowNull="False" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.AllowNull = false;
+grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}
@@ -235,9 +254,12 @@ sfNumberBox.AllowNull = false;
 ![WinUI NumberBox prevent empty textbox](GettingStarted_images/allowNull.gif)
 
 ## Header and description
-This section explains about `header` and `description` properties of NumberBox.
+
+This section explains the `Header` and `Description` properties of the `NumberBox` control.
+
 ### Header
-The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Header) property is used to display the title for the `NumberBox` Control.
+
+The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Header) property is used to display the title for the `NumberBox` control.
      
 {% tabs %}
 {% highlight xaml %}
@@ -252,16 +274,17 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfN
 {% endhighlight %}
 {% highlight c# %}
 
-SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.Header = "Amount to withdraw";
+SfNumberBox sfNumberBox = new SfNumberBox();
+sfNumberBox.Header = "Amount to withdraw";
 
 {% endhighlight %}
 {% endtabs %}
 
 ![WinUI NumberBox with Header](GettingStarted_images/header_text.png)
 
-#### Header customization
-By using the controls [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_HeaderTemplate) property, you can customize the appearance of controls' header. The following code sample shows how to use a header template to customize the header.
+### Header customization
+
+By using the control's [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_HeaderTemplate) property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -283,7 +306,8 @@ By using the controls [HeaderTemplate](https://help.syncfusion.com/cr/winui/Sync
 ![WinUI NumberBox with Header Template](GettingStarted_images/header_template.png)
 
 ### Description
-The [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Description) support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
+
+The [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Description) property is used to display content beneath the control and to provide guidance on the input that the control expects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -297,8 +321,8 @@ The [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editor
 {% endhighlight %}
 {% highlight c# %}
 
-SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.Description = “Please enter only positive digit.”;
+SfNumberBox sfNumberBox = new SfNumberBox();
+sfNumberBox.Description = "Please enter only positive digit.";
 
 
 {% endhighlight %}
@@ -307,9 +331,9 @@ SfNumberBox.Description = “Please enter only positive digit.”;
 ![WinUI NumberBox with Description](GettingStarted_images/description_text.png)
 
 
-## Setting watermark text
+## Setting placeholder text
 
-You can prompt the user with any information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_PlaceholderText) property. Watermark text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull) property is **true** and the value of `NumberBox` control is **null**. The default value of `PlaceholderText` property is **string.Empty** (No string will be displayed).
+You can prompt the user with any information by using the [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_PlaceholderText) property. Placeholder text will be displayed only when the value of the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull) property is **true** and the value of `NumberBox` control is **null**. The default value of `PlaceholderText` property is **string.Empty** (No string will be displayed).
 
 {% tabs %}
 {% highlight xaml %}
@@ -319,21 +343,24 @@ You can prompt the user with any information by using the [PlaceholderText](http
                      PlaceholderText="Enter input here..." />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-SfNumberBox SfNumberBox= new SfNumberBox();
-SfNumberBox.PlaceholderText = "Enter input here...";
+using Syncfusion.UI.Xaml.Editors;
+
+SfNumberBox sfNumberBox= new SfNumberBox();
+sfNumberBox.PlaceholderText = "Enter input here...";
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
+grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI NumberBox Watermark Text](GettingStarted_images/watermark_text.png)
+![WinUI NumberBox placeholder text](GettingStarted_images/watermark_text.png)
 
 ## Clear button visibility 
 
-The [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ShowClearButton) property is used to show or hide the clear button in `NumberBox`. By default, visibility of the clear button is enabled.
+The [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ShowClearButton) property is used to show or hide the clear button in the `NumberBox`. By default, visibility of the clear button is enabled.
 
 N> The clear button appears only when the text box is focused and the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_IsEditable) property value is set to **true**.
 {% tabs %}
@@ -348,28 +375,30 @@ N> The clear button appears only when the text box is focused and the [IsEditabl
 
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-SfNumberBox SfNumberBox = new SfNumberBox();
-SfNumberBox.ShowClearButton = true;
-SfNumberBox.IsEditable = true; 
+using Syncfusion.UI.Xaml.Editors;
+
+SfNumberBox sfNumberBox = new SfNumberBox();
+sfNumberBox.ShowClearButton = true;
+sfNumberBox.IsEditable = true; 
 
 
 {% endhighlight %}
 {% endtabs %}
 
-If IsEditable is true
+**When `IsEditable` is true**
 
 ![WinUI NumberBox with Clear Button](GettingStarted_images/clearbutton_visible.png)
 
-If IsEditable is false
+**When `IsEditable` is false**
 
 ![WinUI NumberBox without Clear Button](GettingStarted_images/clearbutton_collapsed.png)
 
 
 ## Value changed notification
 
-The [ValueChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ValueChanged) event is triggered, when the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Value) property of `NumberBox` control is changed. The value will not be changed when the user enters the input. The value of the `NumberBox` control will be changed after validation is performed on the `Enter` keypress or when the focus is lost in the control. The `ValueChanged` contains the following properties.
+The [ValueChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ValueChanged) event is triggered when the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Value) property of the `NumberBox` control is changed. The `Value` is updated after validation is performed on the `Enter` keypress or when the focus is lost in the control. The [ValueChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ValueChangedEventArgs.html) contains the following properties.
 
  * `NewValue` - Contains the new input value.
  * `OldValue` - Contains the previous input value.
@@ -383,7 +412,7 @@ The [ValueChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Edito
                      ValueChanged="sfNumberBox_ValueChanged" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
@@ -396,7 +425,7 @@ sfNumberBox.ValueChanged += sfNumberBox_ValueChanged;
 You can handle the event as follows.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 private void sfNumberBox_ValueChanged(object sender, ValueChangedEventArgs e)
 {

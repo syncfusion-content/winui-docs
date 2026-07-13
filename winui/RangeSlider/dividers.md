@@ -9,11 +9,11 @@ documentation: ug
 
 # Dividers in WinUI RangeSlider (Range Slider)
 
-This section explains about how to show the dividers in the range slider.
+This section explains how to show dividers in the range slider.
 
 ## Show Dividers
 
-The [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers) property is used to render the dividers on the track. The default value of the [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers) property is false. It is a shape, which is used to represent the major interval points of the track.
+The [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers) property is used to render the dividers on the track. The default value of the [`ShowDividers`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ShowDividers) property is false. Dividers are shapes used to represent the major interval points on the track. Dividers are rendered based on the [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) property, or the auto-calculated interval when no interval is specified.
 
 For example, if [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) is 0, [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) is 100, and [`Interval`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Interval) is 10, the slider will render the dividers at 0, 10, 20 and so on.
 
@@ -79,7 +79,7 @@ this.Content = sfRangeSlider;
 
 ## Divider Stroke Thickness and Stroke
 
-You can change the divider stroke thickness of the range slider using the [`DividerStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerStrokeThickness) property. The default value of [`DividerStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerStrokeThickness) is 0. Also, you can change the divider stroke of the range slider using the [`DividerStroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerStroke) property.
+You can change the divider stroke thickness of the range slider using the [`DividerStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerStrokeThickness) property. The default value of [`DividerStrokeThickness`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerStrokeThickness) is 0. Also, you can change the divider stroke of the range slider using the [`DividerStroke`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerStroke) property, which accepts a `Brush` value.
 
 {% tabs %}
 
@@ -119,6 +119,8 @@ this.Content = sfRangeSlider;
 
 You can change the divider fill of the range slider using the [`DividerFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerFill) property.
 
+N> The `ColorHelper` used in the C# example is part of the `Syncfusion.UI.Xaml.Core` namespace.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -155,7 +157,7 @@ this.Content = sfRangeSlider;
 
 ### Setting a Template for Dividers
 
-The [`DividerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerTemplate) property allows you to define the data template for the divider's as shown in the following code sample.
+The [`DividerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerTemplate) property allows you to define a data template for the dividers, as shown in the following code sample.
 
 {% tabs %}
 
@@ -199,19 +201,19 @@ this.Content = sfRangeSlider;
 
 ![Range slider with divider template customization](images/dividers/slider-dividerTemplate.png)
 
-N> Its DataContext is [`SliderBase`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html?tabs=tabid-1).
+N> The divider template's DataContext is [`SliderBase`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html?tabs=tabid-1).
 
-### Setting a Active Template for Dividers
+### Setting an Active Template for Dividers
 
-The [`DividerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerTemplate) property allows you to define the data template for the divider's as shown in the following code sample.
+The [`ActiveDividerTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveDividerTemplate) property allows you to define a custom data template for the active divider, as shown in the following code sample.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <DataTemplate x:Key="ActiveDividerTemplate">
-    <Rectangle Height="10"
-               Width="10"
+    <Rectangle Height="{Binding DividerHeight}"
+               Width="{Binding DividerWidth}"
                Fill="{ThemeResource SystemAltHighColor}"
                Stroke="{ThemeResource SystemAccentColorDark1}"
                StrokeThickness="2" />

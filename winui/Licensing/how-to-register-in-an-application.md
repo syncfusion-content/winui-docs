@@ -7,13 +7,33 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Register Syncfusion License key in WinUI application
+# Register Syncfusion license key in a WinUI application
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
+
+**Registering a single license key**
 
 {% tabs %}
 {% highlight c# %}
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+{% endhighlight %}
+{% endtabs %}
+
+**Registering multiple license keys**
+
+You can register multiple license keys using either a comma (,) or a semicolon (;) as the separator between keys.
+
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1,YOUR LICENSE KEY_2,...");
+{% endhighlight %}
+{% endtabs %}
+
+or
+
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1;YOUR LICENSE KEY_2;...");
 {% endhighlight %}
 {% endtabs %}
 

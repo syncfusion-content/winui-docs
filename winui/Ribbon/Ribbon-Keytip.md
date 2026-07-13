@@ -9,13 +9,13 @@ documentation: ug
 
 # Keyboard Navigation in WinUI Ribbon
 
-The Syncfusion<sup>&reg;</sup> WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports the keyboard navigation to activate the ribbon elements via KeyTipService, which represents the service that provides the attached properties to enable and manage the KeyTips to the ribbon control. 
+The Syncfusion<sup>&reg;</sup> WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports keyboard navigation to activate the ribbon elements via [KeyTipService](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.KeyTipService.html), which represents the service that provides the attached properties to enable and manage the KeyTips on the ribbon control. 
 
 KeyTips, also known as access keys or accelerators, are shortcut key combinations that are used to activate the ribbon's tabs and buttons, as well as the Backstage file menu.
 
-The key tip service can be enabled to the ribbon by setting the attached property `KeyTipService.EnableKeyTip` to `True`.
+The KeyTip service can be enabled on the ribbon by setting the attached property `KeyTipService.EnableKeyTip` to `True`. By default, `KeyTipService.EnableKeyTip` is `False`.
 
-The ribbon key tip service can be activated through the keyboard by pressing the `Alt` or `F10` keys, and the KeyTip for the ribbon elements will be displayed.
+The ribbon KeyTip service can be activated through the keyboard by pressing the `Alt` or `F10` keys, and the KeyTip for the ribbon elements will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -37,10 +37,10 @@ When a control's access text is activated, the following control action is execu
 
 ## Creating key tip for ribbon
 
-The access text can be attached to the ribbon elements by using the `KeyTipService.AccessText` attached property. 
+The access text can be set on the ribbon elements by using the `KeyTipService.AccessText` attached property. 
 
-* Ribbon tab access text can be defined in the [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html) class. 
-* Access text for ribbon items such as ribbon buttons, drop-down buttons, and split buttons can be set in the corresponding control class.
+* Ribbon tab access text can be set on the [RibbonTab](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonTab.html) class. 
+* Access text for ribbon items such as ribbon buttons, drop-down buttons, split buttons, `RibbonToggleButton`, `RibbonGallery`, and `RibbonItemHost` can be set on the corresponding control class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ The access text can be attached to the ribbon elements by using the `KeyTipServi
 
 ### Launcher button key tip
 
-The access text for the launcher button can be attached by using the `KeyTipService.LauncherButtonAccessText` attached property in a ribbon group.
+The access text for the launcher button can be set by using the `KeyTipService.LauncherButtonAccessText` attached property in a ribbon group.
 
 {% tabs %}
 {% highlight xaml %}
@@ -144,9 +144,9 @@ The access text for the launcher button can be attached by using the `KeyTipServ
 
 ## Backstage key tip
 
-The access text for the backstage menu button can be set in [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) using the `KeyTipService.AccessText` attached property. 
+The access text for the backstage menu button can be set on [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) using the `KeyTipService.AccessText` attached property. 
 
-The same property can be used to set the access text for backstage items such as backstage button items and tab items.
+The same property can be used to set the access text for backstage items such as backstage button items and tab items. The `Target` property of `RibbonBackstage` specifies the element over which the backstage view is rendered; see [Backstage](https://help.syncfusion.com/winui/ribbon/backstage) for details.
 
 {% tabs %}
 {% highlight xaml %}
@@ -192,21 +192,21 @@ The same property can be used to set the access text for backstage items such as
 {% endhighlight %}
 {% endtabs %}
 
-![Key tip for backsteage buttons and tab items](Ribbon-keytip-images/backstage-keytip.png)
+![Key tip for backstage buttons and tab items](Ribbon-keytip-images/backstage-keytip.png)
 
 ## Rules for defining key tips
 
-*	The access text to the ribbon elements can have a maximum of three letters. A deviation from the text count (>3)        results in an exception.
+* The access text on the ribbon elements can have a maximum of three letters. A key tip with more than three characters results in an exception.
 
-*	Avoid using the same key tip access text setting on multiple elements. 
+* Avoid using the same key tip access text on multiple elements within the same layer. 
 
-    For example, when you attach the access text H, H or HF, HF in the same layer, the first H key tip associated element in the layer is activated while the other H or HF associated element is ignored.
+    For example, when you set the access text `H` on two elements, or `HF` on two elements in the same layer, the first `H`-associated element in the layer is activated, while the other `H`-associated element is ignored.
 
-*	Furthermore, do not use the same first letter for the single and double access text elements.
+* Do not use the same first letter for single- and multi-character access text elements.
 
-    For example, if you attach the access text F, FP and FPF to the two elements and then press the F key, only the F key tip associated element will be activated, while the FP, FPF associated elements will be ignored.
+    For example, if you set the access text `F` on one element and `FP` or `FPF` on another element in the same layer, only the `F`-associated element will be activated when the `F` key is pressed, while the `FP`/`FPF`-associated elements will be ignored.
 
 
-N> The key tip action cannot be executed for ribbon disabled elements, but we can set access text to the disabled elements and have the key tip appear disabled.
+N> The key tip action cannot be executed for disabled ribbon elements, but access text can still be set on disabled elements. The key tip will appear visually disabled.
 
 

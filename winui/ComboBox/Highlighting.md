@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Highlighting Feature in WinUI Combobox control | Syncfusion
-description: Learn here all about Highlighting Feature in Syncfusion WinUI Combobox control into WinUI application.
+title: Highlighting Feature in WinUI ComboBox control | Syncfusion
+description: Learn here all about Highlighting Feature in Syncfusion WinUI ComboBox control in a WinUI application.
 platform: winui
 control: SfComboBox
 documentation: UG
 ---
 
-# Highlighting in WinUI ComboBox(SfComboBox)
+# Highlighting in WinUI ComboBox (SfComboBox)
 
 Highlight matching characters in the suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
 * **Highlight beginning text**
 * **Highlight all occurrences of the search text**
 
+N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Refer to [Getting Started](https://help.syncfusion.com/winui/combobox/getting-started) for setup details.
 
-The text highlight can be indicated with various customizing styles by enabling the following properties. They are
+N> Text highlighting requires `IsEditable="true"` and `IsFilteringEnabled="True"`. Add `using Syncfusion.UI.Xaml.Editors;` in C# to access the `ComboBoxTextHighlightMode` and `ComboBoxTextSearchMode` enums.
 
-* **HighlightedTextColor** - Sets the color of the highlighted text for differentiating the highlighted characters.
+The text highlight can be customized using the following properties:
 
+* **HighlightedTextForeground** - Sets the color of the highlighted text for differentiating the highlighted characters.
 * **HighlightedTextFontStyle** - Sets the font style of the highlighted text.
-        
 * **HighlightedTextFontWeight** - Sets the font weight of the highlighted text.
-
 * **HighlightedTextFontSize** - Sets the font size of the highlighted text.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
     <editors:SfComboBox 
                             x:Name="comboBox"
                             DisplayMemberPath="Name"
@@ -42,9 +42,9 @@ The text highlight can be indicated with various customizing styles by enabling 
     </editors:SfComboBox>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
         comboBox.DisplayMemberPath = "Name";
-        comboBox.IsEnabled=true;
+        comboBox.IsEnabled = true;
         comboBox.IsFilteringEnabled = true;          
         comboBox.TextHighlightMode = ComboBoxTextHighlightMode.Unmatched;
         comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
@@ -63,7 +63,7 @@ The text highlight can be indicated with various customizing styles by enabling 
 It highlights the matches that start with the typed characters in the suggestion list.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox     x:Name="comboBox"                        
                         DisplayMemberPath="Name" 
@@ -75,7 +75,7 @@ It highlights the matches that start with the typed characters in the suggestion
                         ItemsSource="{Binding Countries}">
 </editors:SfComboBox>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.DisplayMemberPath = "Name";
 comboBox.IsEnabled=true;
@@ -90,11 +90,11 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 ### Searching with one character
 
-![WinUI ComboBox text highlighting based on begining text one character](Highlighting_images/winui-combobox-textsearchmode-startswith-onecharacter.png)
+![WinUI ComboBox text highlighting based on beginning text one character](Highlighting_images/winui-combobox-textsearchmode-startswith-onecharacter.png)
 
 ### Searching with more than one character
 
-![WinUI ComboBox text highlighting based on begining text more than one character](Highlighting_images/winui-combobox-textsearchmode-startswith-morethanonecharacter.png)
+![WinUI ComboBox text highlighting based on beginning text more than one character](Highlighting_images/winui-combobox-textsearchmode-startswith-morethanonecharacter.png)
 
 
 
@@ -105,10 +105,10 @@ It highlights all the matches that contain the typed characters in the suggestio
 
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox  x:Name="comboBox"                         
-                DisplayMemberPath="Name” 
+                DisplayMemberPath="Name" 
                 IsEditable="true"
                 IsFilteringEnabled="True"                             
                 TextHighlightMode="Matched"
@@ -118,7 +118,7 @@ It highlights all the matches that contain the typed characters in the suggestio
 </editors:SfComboBox>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
         comboBox.DisplayMemberPath = "Name";
         comboBox.IsEnabled=true;
@@ -139,14 +139,14 @@ It highlights all the matches that contain the typed characters in the suggestio
 
 
 ## Highlighting search text mode
-The SfComboBox provides the following modes.
+The [TextHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextHighlightMode) property controls which portion of the text is highlighted. The default value is `None`. The available modes are:
 * **None** - This mode does not highlight any text.
 * **Matched** - This mode highlights the text that matches the user input.
-* **Unmatched** - This mode highlights the text that does not matches the user input.
+* **Unmatched** - This mode highlights the text that does not match the user input.
 
-###  TextSearchMode="StartsWith"          
+###  TextSearchMode="StartsWith"
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
                <editors:SfComboBox  x:Name="comboBox"                          
                                 DisplayMemberPath="Name"  
                                 IsEditable="true"
@@ -157,13 +157,13 @@ The SfComboBox provides the following modes.
                                 ItemsSource="{Binding OlympicGames}">
               </editors:SfComboBox>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
         comboBox.DisplayMemberPath = "Name";
         comboBox.IsEnabled=true;
         comboBox.IsFilteringEnabled = true;
         comboBox.TextHighlightMode = ComboBoxTextHighlightMode.Unmatched;
-        comboBox.TextSearchMode = AComboBoxTextSearchMode.StartsWith;
+        comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
         comboBox.HighlightedTextForeground = Color.Red;
 
 {% endhighlight %}
@@ -171,9 +171,9 @@ The SfComboBox provides the following modes.
 
 ![WinUI ComboBox text highlighting based on unmatched mode with one character](Highlighting_images/winui-combobox-texthighlightmode-unmatched-startswith.png)
 
-###  TextSearchMode="Contains"           
+###  TextSearchMode="Contains"
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
                <editors:SfComboBox   x:Name="comboBox"                         
                                 DisplayMemberPath="Name" 
                                 IsEditable="true"
@@ -184,7 +184,7 @@ The SfComboBox provides the following modes.
                                 ItemsSource="{Binding OlympicGames}">
               </editors:SfComboBox>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
         comboBox.DisplayMemberPath = "Name";
         comboBox.IsEnabled=true;
