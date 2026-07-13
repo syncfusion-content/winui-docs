@@ -10,9 +10,9 @@ keywords: winui ohlc chart, winui chart ohlc type, ohlc chart customization winu
 
 # OHLC Chart in WinUI Chart
 
-OHLC (Open-High-Low-Close) charts are the type of financial charts used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
+OHLC (Open-High-Low-Close) charts are a type of financial chart used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
-To plot a point on a candlestick chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection.
+To plot a point on an OHLC chart, a collection of five values is required, including the X-value, open value, high value, low value, and close value. You can use the below collection.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
@@ -207,3 +207,8 @@ this.Content = chart;
 {% endtabs %}
 
 ![OHLC chart segment width in WinUI Chart](Chart-types_images/OhlcSegmentWidth.png)
+
+## See Also
+
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058)

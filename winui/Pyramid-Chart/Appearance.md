@@ -211,7 +211,6 @@ chart.XBindingPath = "Category";
 chart.YBindingPath = "Value";
 chart.PaletteBrushes = customBrushes;
 
-// Configure additional chart elements
 this.Content = chart;
 
 {% endhighlight %}

@@ -153,7 +153,6 @@ chart.SecondaryAxis = new NumericalAxis()
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
 
-// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}

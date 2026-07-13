@@ -89,7 +89,7 @@ The [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode
 {% endhighlight  %}
 {% endtabs %}
 
-**DataMatrix Size Table**
+**Data matrix size table**
 
 <table>
 <tr>
