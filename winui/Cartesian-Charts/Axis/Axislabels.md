@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis labels in WinUI Chart control | Syncfusion
-description: Learn here all about axis labels and their customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
+description: Learn here all about axis labels and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
@@ -10,7 +10,7 @@ keywords: axis labels in winui chart, winui sfcartesianchart axis labels, winui 
 
 # Axis Labels in WinUI Chart (SfCartesianChart)
 
-Axis labels are used to show the units, measures, or category values of the axis to visualize the data in a user-friendly way. They are generated based on the range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of the series.
+Axis labels are used to show the units, measures, or category values of the axis to visualize the data in a user-friendly way. It will be generated based on the range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of the series.
 
 ## Rotation Angle
 
