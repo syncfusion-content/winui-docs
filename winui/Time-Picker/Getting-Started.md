@@ -336,7 +336,7 @@ You can handle the event as follows:
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-private void SfTimePicker_TimeChanged(object sender, SelectedDateTimeChangedEventArgs e) {          
+private void SfTimePicker_TimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {         
     Console.WriteLine("The previously selected Time: " + e.OldDateTime.ToString());
     Console.WriteLine("The newly selected Time: " + e.NewDateTime.ToString());            
 }

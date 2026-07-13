@@ -18,7 +18,6 @@ You can restrict the users from selecting a time within the particular range by 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
-using System;
 using Syncfusion.UI.Xaml.Editors;
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.MinTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 4, 00, 00));
@@ -38,7 +37,6 @@ If you want to block particular times from the time selection, then add those ti
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
 
-using System;
 using Syncfusion.UI.Xaml.Editors;
 
 public class ViewModel
@@ -124,8 +122,6 @@ You can handle the event as follows,
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
-using System.Collections.ObjectModel;
-using System.Globalization;
 using Syncfusion.UI.Xaml.Editors;
 
 /// <summary>
