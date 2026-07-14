@@ -25,6 +25,7 @@ This section explains the steps required to add the [WinUI RangeSlider](https://
 xmlns:slider="using:Syncfusion.UI.Xaml.Sliders"
 
 {% endhighlight %}
+{% endtabs %}
 
 4. Initialize the [`SfRangeSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) control.
 
