@@ -9,24 +9,24 @@ documentation: ug
 
 # Customization in WinUI Markdown Viewer
 
-The `SfMarkdownViewer` control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
+The [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in WinUI provides a flexible styling system through its [Settings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_Settings) property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 
 ## Style settings for MarkdownViewer
 
-The `MarkdownStyleSettings` class provides style customization for different Markdown elements through the following properties:
+The [MarkdownStyleSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html) class provides style customization for different Markdown elements through the following properties:
 
-- `ParagraphStyle` – Defines the style for paragraph text.  
-- `H1Style` to `H6Style` – Defines styles for heading levels.  
-- `ListStyle` – Applies to ordered and unordered lists.  
-- `TableStyle` – Applies to tables, including headers and rows.  
-- `BlockQuoteStyle` – Used for block-level quotes.  
-- `InlineQuoteStyle` – Used for inline quoted text.  
-- `ThematicStyle` – Used for horizontal rules.  
-- `LinkStyle` – Defines hyperlink appearance.  
-- `CodeBlockStyle` – Applies to code blocks.  
-- `MermaidStyle` – Applies to Mermaid diagram rendering.  
+- [ParagraphStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_ParagraphStyle) – Defines the style for paragraph text.  
+- [H1Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_H1Style) to [H6Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_H6Style) – Defines styles for heading levels.  
+- [ListStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_ListStyle) – Applies to ordered and unordered lists.  
+- [TableStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_TableStyle) – Applies to tables, including headers and rows.  
+- [BlockQuoteStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_BlockQuoteStyle) – Used for block-level quotes.  
+- [InlineQuoteStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_InlineQuoteStyle) – Used for inline quoted text.  
+- [ThematicStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_ThematicStyle) – Used for horizontal rules.  
+- [LinkStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_LinkStyle) – Defines hyperlink appearance.  
+- [CodeBlockStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_CodeBlockStyle) – Applies to code blocks.  
+- [MermaidStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html#Syncfusion_UI_Xaml_Markdown_MarkdownStyleSettings_MermaidStyle) – Applies to Mermaid diagram rendering.  
 
-You can apply these custom styles by assigning a `MarkdownStyleSettings` instance to the `Settings` property of `SfMarkdownViewer`, as shown in the following code example.
+You can apply these custom styles by assigning a [MarkdownStyleSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownStyleSettings.html) instance to the [Settings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_Settings) property of [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html), as shown in the following code example.
 
 {% tabs %} 
 {% highlight xaml %}
