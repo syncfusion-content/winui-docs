@@ -91,8 +91,8 @@ If RTL is not working as expected, check the following:
 
 ## See also
 
-* [Localization for Syncfusion WinUI Controls](./localization.md)
-* [Themes for Syncfusion WinUI Controls](./themes.md)
-* [Accessibility for Syncfusion WinUI Controls](./accessibility.md)
-* [Compact sizing for Syncfusion WinUI Controls](./compact-sizing.md)
+* [Localization for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/localization)
+* [Themes for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/themes)
+* [Accessibility for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/accessibility)
+* [Compact sizing for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/compact-sizing)
 * [FlowDirection API reference](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkelement.flowdirection)
