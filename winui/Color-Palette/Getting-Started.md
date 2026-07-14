@@ -16,12 +16,12 @@ This section explains the steps required to add the [WinUI Color Palette](https:
 ![WinUI Color Palette Control](Getting-Started_images/winui-colorpalette-control.png)
 
 * The Selected Color represents the color that you select.
-* The Automatic Color represents the Color, which can be set by you as default color.
-* The ToolTip with Color Details represents the ToolTip, when the mouse hovers on the Color.
+* The Automatic Color represents the Color, which can be set by you as the default color.
+* The ToolTip with Color Details represents the Tooltip that appears when the mouse hovers over a color.
 * The Standard Colors stores the standard colors like `Red`, `Green`, `Blue` and so on.
-* The Recently User Colors stores the Colors that are recently selected.
-* The No Color represents the `Transparent` color that applied as the selected color. 
-* The More Colors Option provides wide range of color in addition to colors in the palette.
+* The Recently Used Colors stores the colors that are recently selected.
+* The No Color represents the `Transparent` color that is applied as the selected color. 
+* The More Colors Option provides a wide range of colors in addition to colors in the palette.
 * The Theme Variant Colors represents the Theme colors with variants.
 
 ### More Color Dialog
@@ -31,7 +31,7 @@ This section explains the steps required to add the [WinUI Color Palette](https:
 ## Creating an application with WinUI Color Palette
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
+2. Add reference to the [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfColorPalette` control.
 
@@ -98,7 +98,7 @@ You can set or change the selected color of the `Color Palette` programmatically
 <Button Background="{Binding ElementName=colorPalette, Path=SelectedBrush}"></Button>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
@@ -113,7 +113,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select color from color palette
 
-You can select a different colors from Theme Color and Standard Color panels. You can show or hide the variant colors of the base Theme Colors and Standard Colors by using the `PaletteColors.ShowColorShades`  and `StandardColors.ShowColorShades` properties value as `true` or `false`.
+You can select different colors from Theme Color and Standard Color panels. You can show or hide the variant colors of the base Theme Colors and Standard Colors by setting the `PaletteColors.ShowColorShades`  and `StandardColors.ShowColorShades` properties value as `true` or `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -128,7 +128,7 @@ You can select a different colors from Theme Color and Standard Color panels. Yo
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.PaletteColors.ShowColorShades = true;
 colorPalette.StandardColors.ShowColorShades = true;
@@ -142,7 +142,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select a color from built-in theme colors
 
-You can select a various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
+You can select various theme colors by setting the value to the [ActivePalette](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_ActivePalette) property. Based on the `ActivePalette` value, the respective base theme color items are displayed with its variants. The default value of `ActivePalette` property is `Office`.
 
 ![WinUI Color Palette displays Various Theme Palettes](Working-with-SfColorPalette_images/winui-colorpalette-theme-palette.jpg)
 
@@ -153,7 +153,7 @@ You can select a various theme colors by setting the value to the [ActivePalette
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 
@@ -162,14 +162,16 @@ colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 
 ![WinUI Color Palette with Yellow Theme Color](Working-with-SfColorPalette_images/winui-colorpalette-theme-color.png)
 
+N> The valid values for `ActivePalette` are members of the `ColorPaletteNames` enumeration, including `Office`, `Apex`, `Aspect`, `Opulent`, `Walker`, `Waveform`, `Solstice`, `Treasury`, `Verve`, `Gallery`, `Metro`, `Module`, `Paper`, `Slipstream`, `Parallax`, `SlipStream`, `ColorsOfTheSeventies`, `Oriel`, `Origin`, `Civic`, `Concourse`, `Equity`, `Flow`, `Foundry`, `Median`, `Metro`, `Office2007` to `Office2019` theme names. Refer to the API reference for the complete list.
+
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
 
 ## Add your own colors in the Theme and Standard color palette
 
-If you want to add own custom colors in base Theme Colors and Standard Colors palette, add the colors into the `PaletteColors.Colors` and `StandardColors.Colors` collections. The variant colors will be automatically created for the own Theme and Standard Colors.
+If you want to add your own custom colors in the base Theme Colors and Standard Colors palette, add the colors into the `PaletteColors.Colors` and `StandardColors.Colors` collections. The variant colors will be automatically created for your own Theme and Standard Colors.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPalette Name="colorPalette">
     <editors:SfColorPalette.PaletteColors>
@@ -233,7 +235,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
 
-## Choosing a color from MoreColor dialog
+## Choosing a color from More Colors dialog
 
 If you want to choose a color that is not available in palette, click the more color button and select the color from color spectrum and click the `Ok` button. 
 
@@ -244,7 +246,7 @@ If you want to choose a color that is not available in palette, click the more c
                         Name="colorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.ShowMoreColorsButton = true;
 
@@ -257,9 +259,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Recently used colors
 
- If you want to choose a color brush which are recently selected from the `More Colors` dialog, use the `Recent Colors` panel. You can get the recently used color list from the [RecentColors](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_RecentColors) collection.
+ If you want to choose a color brush that was recently selected from the `More Colors` dialog, use the `Recent Colors` panel. You can get the recently used color list from the [RecentColors](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_RecentColors) collection.
 
-N> Colors selected from theme and standard colors will not be added in recent colors.
+N> Only colors selected from the `More Colors` dialog will be added to the recent colors list. Colors selected from theme and standard colors will not be added.
 
 {% tabs %}
 {% highlight xaml %}
@@ -267,7 +269,7 @@ N> Colors selected from theme and standard colors will not be added in recent co
 <editors:SfColorPalette Name="colorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 
 //Getting the recently used color list
@@ -290,7 +292,7 @@ If you want to select the `Transparent` color, click the `No Color` button. You 
                         Name="colorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.ShowNoColorButton = true;
 
@@ -312,7 +314,7 @@ You will be notified when selected color changed in `Color Palette` by using [Se
                         Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 
@@ -322,7 +324,7 @@ colorPalette.SelectedBrushChanged += ColorPalette_SelectedBrushChanged;
 You can handle the event as follows,
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Invoked when the selected color is changed
 private void ColorPalette_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs e) {

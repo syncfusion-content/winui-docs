@@ -9,13 +9,13 @@ documentation: ug
 
 # Dealing with Ribbon Items in WinUI Ribbon
 
-The below section describes more information about Ribbon items and its features.
+The following section describes Ribbon items and their features.
 
 ## Changing the size of the ribbon items
 
-The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), RibbonGallery and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using [AllowedSizeModes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonElementSizeModes.html) property.
+The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html), [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html), [RibbonGallery](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGallery.html) and [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html) controls can be changed using the [AllowedSizeModes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonElementSizeModes.html) property.
 
-[AllowedSizeModes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonElementSizeModes.html) is an Enum type property used to arrange Ribbon items inside a RibbonGroup with Small, Normal and Large sizes. 
+The `AllowedSizeModes` property is an enum type used to arrange Ribbon items inside a `RibbonGroup` with `Small`, `Normal`, and `Large` sizes. 
 
 * **Small** : Displays only the image.
 * **Normal** : Displays an image along with the text in horizontal alignment.
@@ -149,13 +149,13 @@ The size of the Ribbon items such as [RibbonButton](https://help.syncfusion.com/
 
 ## Ribbon group launcher button
 
-The Launcher button is like a normal button, used to add additional features and options in that section of the RibbonGroup.
+The Launcher button is like a normal button, used to add additional features and options in that `RibbonGroup` section. The launcher button is not visible by default; set `ShowLauncherButton="True"` on the `RibbonGroup` to display it.
 
 ![Launcher button in RibbonGroup](RibbonItems-images/ribbon-group-launcher-button.png)
 
 ### Launcher button click event
 
-The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) provides a `LauncherButtonClick` event to notify, when the launcher button is clicked.
+The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) provides a `LauncherButtonClick` event to notify when the launcher button is clicked.
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,6 +164,45 @@ The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon
     <ribbon:SfRibbon.Tabs>
         <ribbon:RibbonTab Header="Home">
             <ribbon:RibbonGroup LauncherButtonClick="RibbonGroup_LauncherButtonClick"
+                                ShowLauncherButton="True"
+                                Header="Clipboard">
+                <ribbon:RibbonDropDownButton Icon="Paste"
+                                             AllowedSizeModes="Large"
+                                             Content="Paste" />
+            </ribbon:RibbonGroup>
+            <ribbon:RibbonGroup Header="File" />
+            <ribbon:RibbonGroup Header="Font" />
+        </ribbon:RibbonTab>
+        <ribbon:RibbonTab Header="Insert" />
+        <ribbon:RibbonTab Header="View" />
+        <ribbon:RibbonTab Header="Layout" />
+    </ribbon:SfRibbon.Tabs>
+</ribbon:SfRibbon>
+
+{% endhighlight %} 
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Ribbon;
+
+private void RibbonGroup_LauncherButtonClick(RibbonGroup sender, object args)
+{
+     // Write your code here...
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Launcher button command
+
+The command for the launcher button in a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) can be set using the `LauncherButtonCommand` property. The following example shows the same scenario using a command instead of an event.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ribbon:SfRibbon>
+    <ribbon:SfRibbon.Tabs>
+        <ribbon:RibbonTab Header="Home">
+            <ribbon:RibbonGroup LauncherButtonCommand="{Binding LauncherButtonCommand}"
+                                ShowLauncherButton="True"
                                 Header="Clipboard">
                 <ribbon:RibbonDropDownButton Icon="Paste"
                                              AllowedSizeModes="Large"
@@ -181,43 +220,9 @@ The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon
 {% endhighlight %} 
 {% highlight c# %}
 
-private async void RibbonGroup_LauncherButtonClick(RibbonGroup sender, object args)
-{
-     // Write your code here...
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-### Launcher button command
-
-The command for the Launcher button in a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) can be set using the `LauncherButtonCommand` property. The following example of the code is the same.
-
-{% tabs %}
-{% highlight xaml %}
-
-<ribbon:SfRibbon.Tabs>
-    <ribbon:RibbonTab Header="Home">
-        <ribbon:RibbonGroup LauncherButtonCommand="{Binding LauncherButtonCommand, Mode=TwoWay}" 
-                            Header="Clipboard">
-            <ribbon:RibbonDropDownButton Icon="Paste"
-                                         AllowedSizeModes="Large"
-                                         Content="Paste" />
-        </ribbon:RibbonGroup>
-        <ribbon:RibbonGroup Header="File" />
-        <ribbon:RibbonGroup Header="Font" />
-    </ribbon:RibbonTab>
-    <ribbon:RibbonTab Header="Insert" />
-    <ribbon:RibbonTab Header="View" />
-    <ribbon:RibbonTab Header="Layout" />
-</ribbon:SfRibbon.Tabs>
-
-{% endhighlight %} 
-{% highlight c# %}
-
 public ICommand LauncherButtonCommand { get; set; }
 
- this.LauncherButtonCommand = new DelegateCommand(ExecuteLauncherButtonCommand, CanExecuteCommand);
+this.LauncherButtonCommand = new DelegateCommand(ExecuteLauncherButtonCommand, CanExecuteCommand);
 
 private void ExecuteLauncherButtonCommand(object obj)
 {
@@ -234,7 +239,7 @@ private bool CanExecuteCommand(object parameter)
 
 ## Launcher button visibility
 
-The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) allows you to show or hide the launcher button by using `ShowLauncherButton` property. By default, visibility of the launcher button is enabled as true.
+The [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html) allows you to show or hide the launcher button by using the `ShowLauncherButton` property. By default, the launcher button is not visible (`False`).
 
 {% tabs %}
 {% highlight xaml %}

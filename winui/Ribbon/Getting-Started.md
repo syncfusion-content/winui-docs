@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WinUI Ribbon
 
-This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built in ribbon items, custom ribbon items, right pane, backstage and its items. This section also covers the basic features needed to get started with Syncfusion<sup>&reg;</sup> ribbon control.
+This section explains the steps required to add the Ribbon control and its elements such as ribbon tabs, ribbon groups, built-in ribbon items, custom ribbon items, right pane, backstage and its items. This section also covers the basic features needed to get started with Syncfusion<sup>&reg;</sup> ribbon control.
 
 ## Creating an application with WinUI Ribbon
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
-2. Add reference to [Syncfusion.Ribbon.WinUI](https://www.nuget.org/packages/Syncfusion.Ribbon.WinUI) NuGet.
+2. Add a reference to the [Syncfusion.Ribbon.WinUI](https://www.nuget.org/packages/Syncfusion.Ribbon.WinUI) NuGet package.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Ribbon` in XAML or C# code.
 
@@ -37,7 +37,7 @@ This section explains the steps required to add the Ribbon control and its eleme
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
      
     <Grid x:Name="rootGrid">
-        <ribbon:SfRibbon x:Name=”sfRibbon”/>
+        <ribbon:SfRibbon x:Name="sfRibbon"/>
     </Grid>
 
 </Page>
@@ -100,7 +100,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon group
 
-The commands in the ribbon tab can be grouped using a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html). It allows to add built-in ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) and [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html). Other controls such as checkbox, combobox and radio button etc. can also be added.
+The commands in the ribbon tab can be grouped using a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html). It allows you to add built-in ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) and [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html). Other controls such as checkboxes, comboboxes, and radio buttons, etc. can also be added.
 
 {% tabs %}
 {% highlight xaml %}
@@ -216,13 +216,13 @@ RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 
 RibbonGroup illustrationsGroup = new RibbonGroup() { Header = "Illustrations" };
 
-RibbonButton pictureButton = new RibbonButton() { Content = "Picures" , AllowedSizeModes= AllowedSizeModes.Large, Icon = new SymbolIcon(Symbol.Pictures)};
+RibbonButton pictureButton = new RibbonButton() { Content = "Pictures" , AllowedSizeModes= AllowedSizeModes.Large, Icon = new SymbolIcon(Symbol.Pictures)};
 
 RibbonButton shapesButton = new RibbonButton() { Content = "Shapes" , AllowedSizeModes= AllowedSizeModes.Normal, Icon = new FontIcon() { Glyph= "\xF158" } };
 RibbonButton iconsButton = new RibbonButton() { Content = "Icons" , AllowedSizeModes= AllowedSizeModes.Normal, Icon = new FontIcon() { Glyph= "\xECAA" } };            
 RibbonButton disconnectDriveButton = new RibbonButton() { Content = "3D Models" , AllowedSizeModes= AllowedSizeModes.Small, Icon = new SymbolIcon(Symbol.DisconnectDrive)  };
 
-RibbonButton bookmarksButton = new RibbonButton() { AllowedSizeModes = AllowedSizeModes.Small, Icon = new BitmapIcon() { UriSource = new Uri("msappx:///Assets/Bookmarks.png") } };
+RibbonButton bookmarksButton = new RibbonButton() { AllowedSizeModes = AllowedSizeModes.Small, Icon = new BitmapIcon() { UriSource = new Uri("ms-appx:///Assets/Bookmarks.png") } };
 RibbonButton characterButton = new RibbonButton() {   AllowedSizeModes= AllowedSizeModes.Small, Icon = new SymbolIcon(Symbol.Character) };
 RibbonButton fullScreenButton = new RibbonButton() { AllowedSizeModes = AllowedSizeModes.Small, Icon = new SymbolIcon(Symbol.FullScreen) };
 
@@ -249,7 +249,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon drop down button
 
-The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) represents a dropdown button that displays the drop-down menu items when clicked. It allows to arrange a button with different sizes within a ribbon group using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the button, and populate the drop-down menu items using the `Flyout` control in the button.
+The [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) represents a dropdown button that displays the drop-down menu items when clicked. It allows you to arrange a button with different sizes within a ribbon group using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon of the button, and populate the drop-down menu items using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -314,7 +314,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon split button
 
-The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html) represents a combined control that has a primary button which responds to a `Click` event and a secondary button acts like a drop-down menu with a list of values. It allows  to arrange a button with different sizes within a ribbon group using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the button, and populate the drop-down menu items using the `Flyout` control in the button.
+The [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html) represents a combined control that has a primary button which responds to a `Click` event and a secondary button that acts like a drop-down menu with a list of values. It allows you to arrange a button with different sizes within a ribbon group using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon of the button, and populate the drop-down menu items using the `Flyout` control in the button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -384,7 +384,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon toggle button
 
-The RibbonToggleButton represents a toggle button, it allows user to perform a toggle (on/off) action between checked and unchecked states. Also, it can be added to a ribbon group with different sizes using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon to the ribbon toggle button.
+The [RibbonToggleButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonToggleButton.html) represents a toggle button. It allows the user to perform a toggle (on/off) action between checked and unchecked states. Also, it can be added to a ribbon group with different sizes using the `AllowedSizeModes` property. Use the `Content` and `Icon` properties to set the label and icon of the ribbon toggle button.
 
 {% tabs %}
 {% highlight xaml %}
@@ -428,18 +428,17 @@ RibbonTab viewTab = new RibbonTab() { Header = "View" };
 RibbonTab layoutTab = new RibbonTab() { Header = "Layout" };
 RibbonGroup fontGroup = new RibbonGroup() { Header = "Font" };
 
-RibbonToggleButton boldButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Bold", AllowedSizeModes = RibbonElementSizeModes.Large,Icon = new SymbolIcon(Symbol.Bold) };
+RibbonToggleButton boldButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Bold", AllowedSizeModes = RibbonElementSizeModes.Large, Icon = new SymbolIcon(Symbol.Bold) };
 
 RibbonToggleButton italicButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Italic", AllowedSizeModes = RibbonElementSizeModes.Normal, Icon = new SymbolIcon(Symbol.Italic) };
 
-RibbonToggleButton underlineButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Underline" AllowedSizeModes = RibbonElementSizeModes.Small, Icon = new SymbolIcon(Symbol.Underline), };
+RibbonToggleButton underlineButton = new RibbonToggleButton() { DisplayOptions = DisplayOptions.Normal, Content = "Underline", AllowedSizeModes = RibbonElementSizeModes.Small, Icon = new SymbolIcon(Symbol.Underline) };
 
 sfRibbon.Tabs.Add(homeTab);
 homeTab.Items.Add(fontGroup);
 fontGroup.Items.Add(boldButton);
 fontGroup.Items.Add(italicButton);
 fontGroup.Items.Add(underlineButton);
-sfRibbon.Tabs.Add(homeTab);
 sfRibbon.Tabs.Add(insertTab);
 sfRibbon.Tabs.Add(viewTab);
 sfRibbon.Tabs.Add(layoutTab);
@@ -450,13 +449,13 @@ rootGrid.Children.Add(sfRibbon);
 
 ![Add ribbon toggle button in group](Getting-Started-images/add-ribbon-toggle-button.png)
 
-N> The other icon types such as   [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0) can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton, RibbontToggleButton and Ribbon Item host controls.
+N> Other icon element types, such as [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0), can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton, RibbontToggleButton, and RibbonItemHost controls.
 
 ## Add ribbon combobox
 
-The `RibbonComboBox` control combines a text box and a drop-down list box, allowing users to choose items from the list or add new values and it allows to display in the normal, simplified, and overflow layout of the ribbon. Use the `DisplayOptions` property to set the control in different layouts.
+The `RibbonComboBox` control combines a text box and a drop-down list box, allowing users to choose items from the list or add new values. It can be displayed in the normal, simplified, and overflow layouts of the ribbon. Use the `DisplayOptions` property to set the control in different layouts.
 
-In the overflow menu, the RibbonComboBox template has been changed to look like a dropdown button. While clicking the ribbon combobox in the overflow menu, the flyout will open on either the right or left side and displays the ribbon combobox items.
+In the overflow menu, the RibbonComboBox template has been changed to look like a dropdown button. When the ribbon combobox is clicked in the overflow menu, the flyout will open on either the right or left side and displays the ribbon combobox items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -543,7 +542,7 @@ rootGalleryGrid.Children.Add(sfRibbon);
 
 ## Host a custom control
 
-Ribbon allows to host other controls such as checkbox, radio button and combobox etc., in a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
+The Ribbon allows you to host other controls such as checkboxes, radio buttons, and comboboxes, etc., in a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
 
 {% tabs %}
 {% highlight xaml %}
