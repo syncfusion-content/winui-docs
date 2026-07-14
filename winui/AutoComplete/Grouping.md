@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI AutoComplete control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion WinUI AutoComplete (multi-select AutoComplete) control with UI grouping and more.
+description: Learn about grouping support in the Syncfusion WinUI AutoComplete (SfAutoComplete) control and how to customize the appearance of groups.
 platform: winui
 control: SfAutoComplete
 documentation: ug
@@ -9,15 +9,17 @@ documentation: ug
 
 # Grouping in WinUI AutoComplete (SfAutoComplete)
 
-This section explains about the grouping support available in [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html).
+This section explains the grouping support available in the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
+
+**Minimum requirements:** WinUI 3 and the Syncfusion WinUI `SfAutoComplete` control from the `Syncfusion.Editors.WinUI` package (version 19.4.0.38 or later).
 
 ## Enable grouping
 
-To display grouped data in `AutoComplete` control, set the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemsSource) property to a [CollectionViewSource](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.collectionviewsource?view=winui-3.0) with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the collection class to enable grouping support. You should use the Custom Filter to customize the grouping of `AutoComplete` control.
+To display grouped data in the `SfAutoComplete` control, bind the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_ItemsSource) property to the [CollectionViewSource](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.collectionviewsource?view=winui-3.0) `View`, with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the collection to enable grouping support. To customize how groups are matched while the user types, use a custom filter behavior.
 
-Also, the appearance of groups in a drop-down list can be defined by using the [GroupStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_GroupStyle) property. The default value of `GroupStyle` is `null`.
+You can define the appearance of groups in the drop-down list by using the [GroupStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_GroupStyle) property. `GroupStyle` is the WinUI `Microsoft.UI.Xaml.Controls.GroupStyle`, and its default value is `null`.
 
-In the following example, define a `CollectionViewSource` that wraps a collection of vegetable objects and specifies a property to group on (the vegetable category). Then, bind the `View` property of the `CollectionViewSource` to the `ItemsSource` property of the `AutoComplete` control.
+The following example defines a `CollectionViewSource` that groups a collection of `Vegetable` objects by the `Category` property, and binds its `View` to the `ItemsSource` of `SfAutoComplete`.
 
 {% tabs %}
 {% highlight c# %}
@@ -32,49 +34,23 @@ public class Vegetable
 //ViewModel.cs
 public class VegetablesViewModel
 {
+    // Exposed as object because GroupBy returns IEnumerable<IGrouping<string, Vegetable>>.
     public object Vegetables { get; set; }
 
     public VegetablesViewModel()
     {
         var vegetables = new ObservableCollection<Vegetable>();
-        vegetables.Add(new Vegetable {
-            Name = "Cabbage",
-            Category = "Leafy and Salad",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Chickpea",
-            Category = "Beans",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Garlic",
-            Category = "Bulb and Stem",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Green bean",
-            Category = "Beans",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Horse gram",
-            Category = "Beans",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Nopal",
-            Category = "Bulb and Stem",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Onion",
-            Category = "Bulb and Stem",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Pumpkins",
-            Category = "Leafy and Salad",
-        });
-        vegetables.Add(new Vegetable {
-            Name = "Spinach",
-            Category = "Leafy and Salad",
-        });
+        vegetables.Add(new Vegetable { Name = "Cabbage",     Category = "Leafy and Salad" });
+        vegetables.Add(new Vegetable { Name = "Chickpea",    Category = "Beans" });
+        vegetables.Add(new Vegetable { Name = "Garlic",      Category = "Bulb and Stem" });
+        vegetables.Add(new Vegetable { Name = "Green bean",  Category = "Beans" });
+        vegetables.Add(new Vegetable { Name = "Horse gram",  Category = "Beans" });
+        vegetables.Add(new Vegetable { Name = "Nopal",       Category = "Bulb and Stem" });
+        vegetables.Add(new Vegetable { Name = "Onion",       Category = "Bulb and Stem" });
+        vegetables.Add(new Vegetable { Name = "Pumpkins",    Category = "Leafy and Salad" });
+        vegetables.Add(new Vegetable { Name = "Spinach",     Category = "Leafy and Salad" });
 
-        //Groups the elements based on value of Vegetable's Category.
+        // Group elements by the value of Vegetable.Category.
         this.Vegetables = vegetables.GroupBy(item => item.Category);
     }
 }
@@ -83,7 +59,7 @@ public class VegetablesViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class CustomGroupFilter : IAutoCompleteFilterBehavior
 {
@@ -116,12 +92,11 @@ public class CustomGroupFilter : IAutoCompleteFilterBehavior
     }
 }
 
-
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfAutoComplete
     PlaceholderText="Select a Vegetable"
@@ -152,5 +127,17 @@ public class CustomGroupFilter : IAutoCompleteFilterBehavior
 
 {% endhighlight %}
 {% endtabs %}
+
+In the page's code-behind, set the `DataContext` so the binding resolves:
+
+{% tabs %}
+{% highlight c# %}
+
+this.DataContext = new VegetablesViewModel();
+
+{% endhighlight %}
+{% endtabs %}
+
+**Outcome:** The drop-down groups vegetables by `Category` (e.g., *Beans*, *Bulb and Stem*, *Leafy and Salad*) and the group headers render with the semi-bold style defined in `GroupStyle.HeaderTemplate`.
 
 ![Grouping the vegetables based on its category.](Grouping_images/winui-autocomplete-groupStyle.png)

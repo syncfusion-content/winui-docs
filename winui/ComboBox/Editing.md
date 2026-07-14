@@ -9,16 +9,16 @@ documentation: ug
 
 # Editing in WinUI ComboBox (SfComboBox)
 
-The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control supports both editable and non-editable text boxes for selecting an item from a data source. To enable editing functionality, set [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) property as `true`. The default value is `false`.
+The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control supports both editable and non-editable modes for selecting an item from a data source. To enable editing functionality, set [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) property as `true`. The default value is `false`.
 
 ## Editable ComboBox
 
-In editable mode, the `ComboBox` allows users to edit in the text box and it automatically appends the remaining letters to the entered text when it is valid. If the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UIXaml_Editors.Xaml.Editors.SfComboBox.html#Syncfusion_UI__SfComboBox_IsTextSearchEnabled) property is set as `false`, the matched suitable text will not append to the entered text and will not automatically display suggestions in a drop-down list based on the input.
+In editable mode, the `ComboBox` allows users to edit in the text box and it automatically appends the remaining letters to the entered text when it is valid. If the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property is set as `false`, the matched suitable text will not append to the entered text and will not automatically display suggestions in a drop-down list based on the input.
 
-N> `SelectedItem` will be updated, once the control has lost focus or the `Enter` or `Tab` key is pressed. If the edit text is empty, the previously SelectedItem will not be cleared. If the [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property is set as `Always`, the `SelectedItem` will be updated immediately during input changing. 
+N> `SelectedItem` will be updated, once the control has lost focus or the `Enter` or `Tab` keys are pressed. If the edit text is empty, the previously SelectedItem will not be cleared. If the [SelectionChangeTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChangeTrigger) property is set as `Always`, the `SelectedItem` will be updated immediately during input changes.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -30,7 +30,7 @@ N> `SelectedItem` will be updated, once the control has lost focus or the `Enter
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.IsEditable = true;
 
@@ -44,7 +44,7 @@ comboBox.IsEditable = true;
 Non-editable mode prevents users from editing and instead allows them to select from drop-down list.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -56,21 +56,21 @@ Non-editable mode prevents users from editing and instead allows them to select 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.IsEditable = false;
 
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox choose item using keyboard](Editing_images/winui-combobox-non-edit-mode.gif)
+![WinUI ComboBox choosing an item using keyboard](Editing_images/winui-combobox-non-edit-mode.gif)
 
-## Setting Null Value in ComboBox
+## Setting null value in ComboBox
 
 In editable mode, enable the `AllowNull` property by setting it to `true`. This allows the ComboBox to accept a null value when the selected item is cleared using the `Delete` or `Backspace` key. By default, this property is set to `false`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -83,7 +83,7 @@ In editable mode, enable the `AllowNull` property by setting it to `true`. This 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.AllowNull = true;
 
@@ -95,7 +95,7 @@ comboBox.AllowNull = true;
 In `ComboBox` control, the drop-down can be opened or closed programmatically by using the [IsDropDownOpen](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsDropDownOpen) property. The default value of `IsDropDownOpen` property is `false`. The following example shows how to open the drop-down when pressing alphabet keys in `ComboBox` control.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -108,12 +108,12 @@ In `ComboBox` control, the drop-down can be opened or closed programmatically by
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs eventArgs)
+private void OnEditingComboBoxPreviewKeyDown(object sender, KeyRoutedEventArgs e)
 {
-    // Opening drop down when pressing alphabet keys.
-    if (!comboBox.IsDropDownOpen && (int)eventArgs.Key >= 65 && (int)eventArgs.Key <= 90)
+    // Opening drop down when pressing alphabetic keys.
+    if (!comboBox.IsDropDownOpen && (int)e.Key >= 65 && (int)e.Key <= 90)
     {
         comboBox.IsDropDownOpen = true;
     }
@@ -135,10 +135,12 @@ If no item is assigned, then in single selection, entered text gets assigned to 
 
 `Handled:` When set to `true`, the framework will not automatically update the selected item or selected item(s) of the ComboBox to the new value.
 
+N> For more information about the `InputSubmitted` event arguments, refer to the [ComboBoxInputSubmittedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxInputSubmittedEventArgs.html) API reference.
+
 **Example 1:** By using the following code sample, a dialogue box will be displayed when submitting input that does not contain in the drop-down list.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -151,7 +153,7 @@ If no item is assigned, then in single selection, entered text gets assigned to 
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.InputSubmitted += OnEditingComboBoxInputSubmitted;
 
@@ -161,7 +163,7 @@ comboBox.InputSubmitted += OnEditingComboBoxInputSubmitted;
 The InputSubmitted event can be handled as follows.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 /// <summary>
 /// Occurs when the user submits some text that does not correspond to an item in the `ComboBox` drop-down list.
@@ -186,9 +188,10 @@ private async void OnEditingComboBoxInputSubmitted(object sender, Syncfusion.UI.
 **Example 2:** The following example demonstrates how to add invalid item to selected items in multiple selection mode.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
-<editors:SfComboBox IsEditable="true"
+<editors:SfComboBox x:Name="comboBox"
+                    IsEditable="true"
                     SelectionMode="Multiple"
                     MultiSelectionDisplayMode="Token"  
                     ItemsSource="{Binding SocialMedias}"
@@ -199,7 +202,7 @@ private async void OnEditingComboBoxInputSubmitted(object sender, Syncfusion.UI.
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 /// <summary>
 /// Occurs when the user submits some text that does not correspond to an item in the `ComboBox` drop-down list.

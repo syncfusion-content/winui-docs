@@ -7,13 +7,15 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Keyboard support in WinUI ComboBox (SfComboBox)
+# Keyboard Support in WinUI ComboBox (SfComboBox)
 
 This section explains the shortcut keys that are supported in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html). 
 
+N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. The `ComboBox` must have focus for the keyboard shortcuts to work.
+
 ## Keyboard behaviors
 
-The following table explains shortcut key for opening and closing drop-down.
+The following table explains the shortcut keys for opening and closing the drop-down.
 
 <table>
 <tr>
@@ -54,7 +56,7 @@ To open or close the drop-down.
 <kbd>Enter</kbd>
 </td>
 <td>
-<b>Single selection</b> To open or close the drop-down. If the drop-down is already open, pressing the <kbd>Enter</kbd> key item will update the selected item and close the drop-down.
+<b>Single selection</b> To open or close the drop-down. If the drop-down is already open, pressing the <kbd>Enter</kbd> key will update the selected item and close the drop-down.
 <br />
 <b>Multiple selection</b> To open the drop-down when it is closed.
 </td>
@@ -96,12 +98,12 @@ If the drop-down is already open, pressing the <kbd>Escape</kbd> key will cancel
 <b>Multiple selection</b> If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will close the drop-down.
 </td>
 <td>
-If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update selected item and close the drop-down.
+If the drop-down is already open, pressing the <kbd>Tab</kbd> or <kbd>Shift+Tab</kbd> key will update the selected item and close the drop-down.
 </td>
 </tr>
 </table>
 
-The following table explains shortcut key to navigate and highlight the items in drop-down list.
+The following table explains the shortcut keys to navigate and highlight the items in the drop-down list.
 
 <table>
 <tr>
@@ -164,10 +166,10 @@ Moves the focus to the last item.
 <kbd>PageUp</kbd>
 </td>
 <td>
-Move the selection up on the first fully visible item on the current page. If the first fully visible item is selected, move the selection on the first fully visible item on the previous page. 
+Moves the selection up to the first fully visible item on the current page. If the first fully visible item is selected, moves the selection to the first fully visible item on the previous page. 
 </td>
 <td>
-Move the focus up on the first fully visible item on the current page. If the first fully visible item is focused, move the focus on the first fully visible item on the previous page. 
+Moves the focus up to the first fully visible item on the current page. If the first fully visible item is focused, moves the focus to the first fully visible item on the previous page. 
 </td>
 </tr>
 <tr>
@@ -175,10 +177,10 @@ Move the focus up on the first fully visible item on the current page. If the fi
 <kbd>PageDown</kbd>
 </td>
 <td>
-Move the selection down on the last fully visible item on the current page. If the last fully visible item is selected, move the selection on the last fully visible item on the next page.
+Moves the selection down to the last fully visible item on the current page. If the last fully visible item is selected, moves the selection to the last fully visible item on the next page.
 </td>
 <td>
-Move the focus down on the last fully visible item on the current page. If the last fully visible item is focused, move the focus on the last fully visible item on the next page.
+Moves the focus down to the last fully visible item on the current page. If the last fully visible item is focused, moves the focus to the last fully visible item on the next page.
 </td>
 </tr>
 </table>

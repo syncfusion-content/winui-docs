@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropdown Customization in WinUI DropDown Color Palette | Syncfusion
-description: This section describes about how to customize the DropDown Color Palette (SfDropDownColorPalette) control into WinUI application and its additional features.
+description: This section describes the various dropdown customization options available in the DropDown Color Palette (SfDropDownColorPalette) control and its additional features.
 platform: WinUI
 control: SfDropDownColorPalette
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Dropdown Customization in WinUI DropDown Color Palette
 
-This section describes about various dropdown customization options available in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
+This section describes the various dropdown customization options available in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
 
-## Change Dropdown alignment
+## Change dropdown alignment
 
-You can change alignment of the drop down palette as full, center, left, right, top or bottom with edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
+You can change the alignment of the dropdown palette to full, center, left, right, top or bottom relative to the edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`. The supported values are the members of the [FlyoutPlacementMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutplacementmode) enumeration, such as `Top`, `Bottom`, `Left`, `Right`, `TopEdgeAlignedLeft`, `TopEdgeAlignedRight`, `BottomEdgeAlignedLeft`, `BottomEdgeAlignedRight`, `RightEdgeAlignedTop`, `RightEdgeAlignedBottom`, `LeftEdgeAlignedTop`, `LeftEdgeAlignedBottom`, and `Full`.
 
-N> If there is no enough space to open a drop down in a specific position that is assigned by `DropDownPlacement` property, then `DropDown Color Palette` will automatically choose the available position to open the drop down palette.
+N> If there is not enough space to open the dropdown in the specific position assigned by the `DropDownPlacement` property, the `DropDown Color Palette` will automatically choose the available position to open the dropdown palette.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,9 +24,9 @@ N> If there is no enough space to open a drop down in a specific position that i
                                 Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-sfDropDownColorPalette.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedRight;;
+sfDropDownColorPalette.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedRight;
 
 {% endhighlight %}
 {% endtabs %}
@@ -37,16 +37,21 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Color Palette as a command button
 
-By default, `DropDown Color Palette` acts like a dropdown. It opening a color palette when clicking anywhere on the header. By setting the [DropDownMode](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownMode) property value as `Split`, it acts like a button and dropdown as explained below.
+By default, the `DropDown Color Palette` acts like a dropdown. It opens a color palette when clicking anywhere on the header. By setting the [DropDownMode](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownMode) property value to `Split`, it acts like a button and dropdown as explained below.
 
-1. When clicking on the dropdown arrow button, It acts like a dropdown.
+1. When you click the dropdown arrow button, it acts like a dropdown.
 
-2. When you click on the header area, it acts like a button and [Command](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPalette_Command) will be triggered. Using the `Command`, you can do some action like applying the selected color anywhere you want.
+2. When you click the header area, it acts like a button and the [Command](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownColorPalette.html#Syncfusion_UI_Xaml_Editors_SfDropDownColorPalette_Command) will be triggered. Using the `Command`, you can perform an action such as applying the selected color anywhere you want. The value passed to the command handler is the value of the `CommandParameter` property (which is `null` by default).
 
-For example, if you want to apply a last selected color as a background to a TextEditor’s selected text. You can direct click the button instead of opening the dropdown and selecting an already selected color again.
+For example, if you want to apply the last selected color as a background to a `RichEditBox`'s selected text, you can directly click the button instead of opening the dropdown and selecting an already selected color again.
+
+The following example uses the `DelegateCommand<T>` helper. If you do not have a `DelegateCommand` implementation available, you can use any `ICommand` implementation from a library such as `Microsoft.Xaml.Interactivity` or define your own.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
+
+using System.Windows.Input;
+// Add the appropriate using for the DelegateCommand<T> you are using.
 
 public sealed partial class MainPage : Page
 {
@@ -57,9 +62,9 @@ public sealed partial class MainPage : Page
         }
     }
     public void SelectionChangedMethod(object param) {
-        richTextBox.Document.Selection.CharacterFormat.BackgroundColor
-            = (sfDropDownColorPalette.SelectedBrush as SolidColorBrush).Color;
-
+        if (sfDropDownColorPalette.SelectedBrush is SolidColorBrush solidColorBrush) {
+            richTextBox.Document.Selection.CharacterFormat.BackgroundColor = solidColorBrush.Color;
+        }
     }
     public MainPage() {
         this.InitializeComponent();
@@ -85,17 +90,19 @@ public sealed partial class MainPage : Page
 {% endhighlight %}
 {% endtabs %}
 
+N> The `Command` handler applies the color to the currently selected text in the `RichEditBox`. If no text is selected, the color is applied to the next text typed at the caret position.
+
 ![Dropdown color palette recent color selected in split mode](Getting-Started_images/Splitbutton.gif)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
 
-## Custom UI of Dropdown Header
+## Custom UI of dropdown header
 
-You can customize the appearance of the `DropDown Color Palette` header in both split mode and dropdown mode. You can customize the selected color button using [ContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ContentTemplate) property and customize the dropdown button by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property.
+You can customize the appearance of the `DropDown Color Palette` header in both split mode and dropdown mode. You can customize the selected color button using the [ContentTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ContentTemplate) property and customize the dropdown button by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownButtonTemplate) property. The default `DropDownMode` is `DropDown`.
 
-N> The `DataContext` of `DropDownButtonTemplate` property and `ContentTemplate` property is `SfDropDownColorPalette`.
+N> The `DataContext` of the `DropDownButtonTemplate` property and `ContentTemplate` property is `SfDropDownColorPalette`. In the example below, the `{Binding}` in the `ContentTemplate` resolves to the `SelectedBrush` of the control.
 
-N> The `DropDownButtonTemplate` is effective only on when drop down mode is split mode.
+N> The `DropDownButtonTemplate` is effective only when the dropdown mode is split mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -142,23 +149,23 @@ N> The `DropDownButtonTemplate` is effective only on when drop down mode is spli
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying custom UI of drop down header in split mode](Getting-Started_images/customUI.png)
+![Displaying custom UI of dropdown header in split mode](Getting-Started_images/customUI.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
 
-## Dropdown Color Palette Open and Close notification
+## Dropdown Color Palette open and close notifications
 
-You will be notified when drop-down opened and closed by using the `DropDownOpened` and `DropDownClosed` events.
+You will be notified when the dropdown is opened and closed by using the `DropDownOpened` and `DropDownClosed` events.
 
 {% tabs %}
 {% highlight xaml %}
 
 <editors:SfDropDownColorPalette DropDownOpened="sfDropDownColorPalette_DropDownOpened"
-                                DropDownClosed= "sfDropDownColorPalette_DropDownClosed" 
+                                DropDownClosed="sfDropDownColorPalette_DropDownClosed"
                                 Name="sfDropDownColorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 sfDropDownColorPalette.DropDownOpened += sfDropDownColorPalette_DropDownOpened;
 sfDropDownColorPalette.DropDownClosed += sfDropDownColorPalette_DropDownClosed;
@@ -169,13 +176,13 @@ sfDropDownColorPalette.DropDownClosed += sfDropDownColorPalette_DropDownClosed;
 You can handle the events as follows,
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Invoked when the drop down is opened
 private void sfDropDownColorPalette_DropDownOpened(object sender, EventArgs e) {
 }
 
-//Invoked when the drop down is closed
+//Invoked when the dropdown is closed
 private void sfDropDownColorPalette_DropDownClosed(object sender, EventArgs e) {
 }
 

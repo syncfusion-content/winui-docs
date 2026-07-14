@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Color Palette in DropDown Color Palette | Syncfusion
-description: This section describes about how to customize the Color Palette in the DropDown Color Palette (SfDropDownColorPalette) control and its additional features.
+description: This section describes how to customize the Color Palette in the DropDown Color Palette (SfDropDownColorPalette) control and its additional features.
 platform: WinUI
 control: SfDropDownColorPalette
 documentation: ug
@@ -9,13 +9,22 @@ documentation: ug
 
 # Customization of Color Palette in WinUI DropDown Color Palette
 
-This section describes about how to customization Color Palette in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
+This section describes how to customize the Color Palette in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
 
-## Customizing control in drop down
+## Customizing control in the dropdown
 
-You can customize the control displayed in drop down of `DropDown Color Palette` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and [DropDownFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownFlyout.html#properties) properties. 
+You can customize the control displayed in the dropdown of `DropDown Color Palette` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and [DropDownFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownFlyout.html#properties) properties. 
 
-N> You can refer the [Color Palette](https://help.syncfusion.com/winui/color-palette/getting-started) documentation page to know more about all customization available in the `Color Palette` control.
+N> You can refer to the [Color Palette](https://help.syncfusion.com/winui/color-palette/getting-started) documentation page to know more about all customization available in the `Color Palette` control.
+
+N> The `editors:` prefix used in the XAML below maps to the `Syncfusion.UI.Xaml.Editors` namespace. For details on adding the namespace reference, see the [Getting Started](https://help.syncfusion.com/winui/dropdown-color-palette/getting-started) page.
+
+The following properties of the `SfColorPalette` and its palette models are used in the example below:
+
+* `ShowMoreColorsButton` - Shows or hides the **More Colors** button at the bottom of the `SfColorPalette`.
+* `ShowColors` - Shows or hides the colors in a palette.
+* `ShowColorShades` - Shows or hides the color shades for each color in a palette.
+* `Header` - Sets the header text of a palette.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,20 +56,20 @@ N> You can refer the [Color Palette](https://help.syncfusion.com/winui/color-pal
 
                 <editors:SfColorPalette.StandardColors>
                     <editors:StandardPaletteModel ShowColors="True" 
-                                 ShowColorShades="True"
-                                 Header="Custom Standard Colors" >
+                                                   ShowColorShades="True"
+                                                   Header="Custom Standard Colors" >
                         <editors:StandardPaletteModel.Colors>
                             <editors:ColorCollection>
-                                <editors:ColorModel Color = "Blue" Tooltip = "Custom Blue" />
-                                <editors:ColorModel Color = "Orchid" Tooltip = "Custom Orchid" />
-                                <editors:ColorModel Color = "Gray" Tooltip = "Custom Gray" />
-                                <editors:ColorModel Color = "Gold" Tooltip = "Custom Gold" />
-                                <editors:ColorModel Color = "SandyBrown" Tooltip = "Custom SandyBrown" />
-                                <editors:ColorModel Color = "Pink" Tooltip = "Custom Pink" />
-                                <editors:ColorModel Color = "Violet" Tooltip = "Custom Violet" />
-                                <editors:ColorModel Color = "Yellow" Tooltip = "Custom Yellow" />
-                                <editors:ColorModel Color = "Orange" Tooltip = "Custom Orange" />
-                                <editors:ColorModel Color = "Red" Tooltip = "Custom Red" />
+                                <editors:ColorModel Color="Blue" Tooltip="Custom Blue" />
+                                <editors:ColorModel Color="Orchid" Tooltip="Custom Orchid" />
+                                <editors:ColorModel Color="Gray" Tooltip="Custom Gray" />
+                                <editors:ColorModel Color="Gold" Tooltip="Custom Gold" />
+                                <editors:ColorModel Color="SandyBrown" Tooltip="Custom SandyBrown" />
+                                <editors:ColorModel Color="Pink" Tooltip="Custom Pink" />
+                                <editors:ColorModel Color="Violet" Tooltip="Custom Violet" />
+                                <editors:ColorModel Color="Yellow" Tooltip="Custom Yellow" />
+                                <editors:ColorModel Color="Orange" Tooltip="Custom Orange" />
+                                <editors:ColorModel Color="Red" Tooltip="Custom Red" />
                             </editors:ColorCollection>
                         </editors:StandardPaletteModel.Colors>
                     </editors:StandardPaletteModel>
