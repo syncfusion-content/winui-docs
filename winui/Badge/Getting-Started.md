@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WinUI Badge control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Badge(SfBadge) control, its elements, and more.
+description: Learn here all about getting started with Syncfusion WinUI Badge (SfBadge) control, its elements, and more.
 platform: WinUI
 control: SfBadge
 documentation: ug
@@ -36,7 +36,7 @@ This section explains the steps required to add the [WinUI Badge](https://www.sy
     xmlns:notification="using:Syncfusion.UI.Xaml.Notifications"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid>
+    <Grid x:Name="grid">
         <notification:SfBadge Name="badge"
                               Height="30"
                               Width="30"/>
@@ -44,7 +44,7 @@ This section explains the steps required to add the [WinUI Badge](https://www.sy
 </Page>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 using Syncfusion.UI.Xaml.Notifications;
 
@@ -74,14 +74,14 @@ namespace GettingStarted
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Adding badge for a Button
+## Adding Badge for a Button
 
-If you want to assign `Badge` for any objects, create the `Badge` and assign the badge to the `BadgeContainer.Badge` property. Before that you need to create a `BadgeContainer` and add that object to the `BadgeContainer.Content` property.
+If you want to assign a `Badge` to any object, create the `Badge` and assign the badge to the `BadgeContainer.Badge` property. Before that you need to create a `BadgeContainer` and add that object to the `BadgeContainer.Content` property.
 
 Here, the `Badge` control has been added for the `Button` control.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -95,7 +95,7 @@ Here, the `Badge` control has been added for the `Button` control.
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Creating Badge control
 SfBadge badge = new SfBadge();
@@ -119,7 +119,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to set or change the display content of the `Badge`, use the `Content` property. The default value of `Content` property is `null`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -133,7 +133,7 @@ If you want to set or change the display content of the `Badge`, use the `Conten
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfBadge badge = new SfBadge();
 //Setting Badge display content
@@ -154,10 +154,10 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Alignment of Badge
 
-you can align the `Badge` either horizontally or vertically by using the `Badge.HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
+You can align the `Badge` either horizontally or vertically by using the `HorizontalAlignment` or `VerticalAlignment` properties. The default value of `HorizontalAlignment` property is `Right` and `VerticalAlignment` property is `Top`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -173,7 +173,7 @@ you can align the `Badge` either horizontally or vertically by using the `Badge.
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.HorizontalAlignment = HorizontalAlignment.Left;
 badge.VerticalAlignment = VerticalAlignment.Center;
@@ -191,7 +191,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the horizontal or vertical position of the `Badge` either inside, outside, or in the middle by using the [HorizontalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalAnchor) and [VerticalAnchor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalAnchor) properties. The default value of `HorizontalAnchor` and `VerticalAnchor` properties is `Center`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -207,7 +207,7 @@ You can change the horizontal or vertical position of the `Badge` either inside,
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.HorizontalAnchor = BadgeAnchor.Outside;
 badge.VerticalAnchor = BadgeAnchor.Center;
@@ -225,7 +225,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to place the `Badge` anywhere on the container, use the [HorizontalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_HorizontalPosition) or [VerticalPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_VerticalPosition) properties. The value range for `HorizontalPosition` and `VerticalPosition` properties is `0` to `1`. The default value of `HorizontalPosition` property is `1` and `VerticalPosition` property is `0`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer>
     <notification:BadgeContainer.Content> 
@@ -244,24 +244,24 @@ If you want to place the `Badge` anywhere on the container, use the [HorizontalP
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
-badge.HorizontalPosition = 0.9;
-badge.VerticalPosition = 0.8;
+badge3.HorizontalPosition = 0.9;
+badge3.VerticalPosition = 0.8;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Displaying the customized alignment of the Badge control](Getting-Started_images/Custom_Alignment.png)
 
-## Adding Badge without BadgeContainer
+## Adding a Badge without BadgeContainer
 
 You can directly add the `Badge` to any objects without using the `BadgeContainer`.
 
 N> By default, `Badge` will be automatically aligned and positioned inside the container based on their content. If you use `Badge` control without `BadgeContainer`, the alignment and positioning options are not applicable.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class ListItem {
     public string ItemName { get; set; }
@@ -290,7 +290,7 @@ public class ViewModel {
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Page.DataContext>
     <local:ViewModel/>
@@ -335,7 +335,7 @@ public class ViewModel {
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_without_BadgeContainer).
 
-## Predefined colors for displaying the badges
+## Predefined colors for displaying the Badges
 
 You can change background color of the `Badge` by using the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Fill) property. Based on the value of `Fill` property, respective background color will be applied to the `Badge`. The default value of `Fill` property is `Accent`.
 
@@ -358,7 +358,7 @@ The `Badge` supports the following different essential states:
 ![Displaying the various state colors for Badge](Getting-Started_images/States.png)
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -373,7 +373,7 @@ The `Badge` supports the following different essential states:
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Fill = BadgeFill.Success;
 badge.Content = "99+";
@@ -392,7 +392,7 @@ N> If you want to apply your own customized colors for the background of `Badge`
 You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by using [Shape](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_Shape) property. If you want to display the `Badge` content without any default shapes, use the `Shape` property value as `None`. The default value of `Shape` property is `Oval`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -407,7 +407,7 @@ You can change the default shape to either `Rectangle`, `Oval`, or `Ellipse` by 
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.Shape = BadgeShape.Ellipse;
 badge.Content = "99+";
@@ -426,7 +426,7 @@ N> If you want to apply your own customized shapes for the `Badge`, refer the [C
 You can enable the `Scale` or `Opacity` based animation to display the `Badge` text by using [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html#Syncfusion_UI_Xaml_Notifications_SfBadge_AnimationType) property. You can only see the animation when you change the text of the `Badge`. The default value of `AnimationType` property is `None`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <notification:BadgeContainer Name="badgeContainer"  >
     <notification:BadgeContainer.Badge>
@@ -442,7 +442,7 @@ You can enable the `Scale` or `Opacity` based animation to display the `Badge` t
 </notification:BadgeContainer>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 badge.AnimationType = BadgeAnimationType.Scale;
 badge.Content = "1";
@@ -465,7 +465,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can format the content displayed in the `Badge` content by using the converters. For example, you can display the number as `99+`, which is greater than or equal to `100`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class CustomNumberConverter : IValueConverter {
     public object Convert(object value, Type targetType, object parameter, string language)
@@ -502,7 +502,7 @@ public class CustomNumberConverter : IValueConverter {
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Page.Resources>
     <local:CustomNumberConverter x:Key="customNumberConverter"/>

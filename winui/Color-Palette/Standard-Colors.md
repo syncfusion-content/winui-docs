@@ -13,7 +13,7 @@ This section explains the different standard colors available in the [Color Pale
 
 ## Select a color from built-in standard colors
 
-You can select a various standard colors with its variants by using the Standard Colors palette. 
+You can select various standard colors with its variants by using the Standard Colors palette. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -21,7 +21,7 @@ You can select a various standard colors with its variants by using the Standard
 <editors:SfColorPalette Name="colorPalette" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfColorPalette colorPalette= new SfColorPalette();
 
@@ -34,7 +34,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Add your own custom colors in standard color palette
 
-If you want to allow the user to select a color from own standard colors, add that color with its name and tooltip text into the `StandardColors.Colors` collection using the [ColorModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorModel.html). It will generates color variants automatically. You can also customize the header text and show or hide its variants by using the [StandardPaletteModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.StandardPaletteModel.html).   
+If you want to allow the user to select a color from your own standard colors, add that color with its name and tooltip text into the `StandardColors.Colors` collection using the [ColorModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.ColorModel.html). It will generate color variants automatically. You can also customize the header text and show or hide its variants by using the [StandardPaletteModel](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.StandardPaletteModel.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ If you want to allow the user to select a color from own standard colors, add th
 
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 ColorCollection colors = new ColorCollection();
 colors.Add(new ColorModel() { Color = Colors.Blue, Tooltip= "Custom Blue" });
@@ -92,7 +92,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Show standard color variants
 
-By default, you can select only the standard color without its variants. If you want allow the user to select standard color with its variant colors, use the `StandardColors.ShowColorShades` property value as `true`. The default value of `StandardColors.StandardColors` property is `false`. 
+By default, you can select only the standard color without its variants. If you want to allow the user to select standard color with its variant colors, use the `StandardColors.ShowColorShades` property value as `true`. The default value of `StandardColors.ShowColorShades` property is `false`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -104,7 +104,7 @@ By default, you can select only the standard color without its variants. If you 
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.StandardColors.ShowColorShades = true;
 
@@ -117,7 +117,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide standard colors
 
-If you want hide to the standard color and its variants, use the `StandardColors.ShowColorShades` and `StandardColors.ShowColors` properties value as `false`. The default value of `StandardColors.ShowColors` property is `true`. 
+If you want to hide the standard color and its variants, use the `StandardColors.ShowColorShades` and `StandardColors.ShowColors` properties value as `false`. The default value of `StandardColors.ShowColors` property is `true`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -130,7 +130,7 @@ If you want hide to the standard color and its variants, use the `StandardColors
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.StandardColors.ShowColors = false;
 colorPalette.StandardColors.ShowColorShades = false;
@@ -156,7 +156,7 @@ If you want to change header text of the standard color palette, use the `Standa
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.StandardColors.Header = "My standard colors";
 
@@ -181,7 +181,7 @@ If you want to hide header of the standard color palette, use the `StandardColor
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.StandardColors.ShowHeader = false;
 
@@ -228,7 +228,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Adjust space between base standard color and its variants
 
-If you wants to adjust the space between base standard color and its variants, use the `StandardColors.ColorShadesSpacing` property. The default value of `StandardColors.ColorShadesSpacing` property is `10`.
+If you want to adjust the space between base standard color and its variants, use the `StandardColors.ColorShadesSpacing` property. The default value of `StandardColors.ColorShadesSpacing` property is `10`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,7 +241,7 @@ If you wants to adjust the space between base standard color and its variants, u
 </editors:SfColorPalette>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPalette.StandardColors.ColorShadesSpacing = 20;
 colorPalette.StandardColors.ShowColorShades = false;

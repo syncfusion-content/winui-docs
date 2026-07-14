@@ -22,7 +22,7 @@ The [WinUI Badge](https://www.syncfusion.com/winui-controls/badge) control is us
 * **Animation** - Use animations for `Badge` text.
 * **Shapes** - Predefined and custom shapes for `Badge` control.
 * **Rotation** - Rotate the `Badge` to any angle.
-* **Alignment** - Align the `Badge` at any position
+* **Alignment** - Align the `Badge` at any position.
 * **Custom UI** - Customize UI for the control and its content.
 
 

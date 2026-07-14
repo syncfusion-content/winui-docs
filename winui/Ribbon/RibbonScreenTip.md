@@ -9,16 +9,18 @@ documentation: ug
 
 # ScreenTip in WinUI Ribbon Control
 
-`ScreenTip` is an enhanced ToolTip and it is used to show a popup window when the pointer hovers over a ribbon item. The pop-up provides helpful details about the function of the ribbon item.
+`ScreenTip` is an enhanced ToolTip that shows a popup window when the pointer hovers over a ribbon item. The popup provides helpful details about the function of the ribbon item.
 
-The ScreenTip has two properties. 
-    
-* **Title:** Specifies the title of the ScreenTip..
-* **Content:** Specifies the content of the ScreenTip..
+The ScreenTip has the following properties: 
+
+* **Title:** Specifies the title of the ScreenTip.
+* **Content:** Specifies the content of the ScreenTip.
+* **TitleTemplate:** Specifies a custom `DataTemplate` for the title.
+* **ContentTemplate:** Specifies a custom `DataTemplate` for the content.
 
 ## Adding ScreenTip for ribbon items
 
-ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The following code example shows how to define the ScreenTip for ribbon items in Ribbon control.
+A ScreenTip can be set on each Ribbon item by using its `ScreenTip` property. The following code example shows how to define the ScreenTip for ribbon items in the Ribbon control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -58,11 +60,11 @@ ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The 
                         <ribbon:ScreenTip Title="Cut" Content="Cut the selection and put it on the clipboard." />
                 </ribbon:RibbonButton.ScreenTip>
                 </ribbon:RibbonButton>
-                // Add more elements here...
+                <!-- Add more elements here... -->
             </ribbon:RibbonGroup>
-            // Add more groups here...
+            <!-- Add more groups here... -->
         </ribbon:RibbonTab>
-        // Add more Tabs here...
+        <!-- Add more tabs here... -->
     </ribbon:SfRibbon.Tabs>
 </ribbon:SfRibbon>
 
@@ -71,7 +73,7 @@ ScreenTip can be set to each Ribbon item by using its `ScreenTip` property. The 
 
 ![ScreenTip in Ribbon control](Ribbon-ScreenTip-images/winui-ribbon-screentip.png)
 
-### Customize the ScreenTip Title and Content
+### Customizing the ScreenTip Title and Content
 
 The appearance of the title and content can be customized by using the `TitleTemplate` and `ContentTemplate` property of the ScreenTip class. The following code example explains how to add a customizable title and content.
 
@@ -161,14 +163,6 @@ The appearance of the title and content can be customized by using the `TitleTem
                     <ribbon:RibbonButton.Icon>
                         <FontIcon Glyph="&#xF0E3;" />
                     </ribbon:RibbonButton.Icon>
-                    <ribbon:RibbonButton Content="Format Painter"
-                            DisplayOptions="Normal,Simplified"
-                            AllowedSizeModes="Normal, Small" 
-                            Command="{Binding ButtonCommand}" 
-                            CommandParameter="Format Painter">
-                    <ribbon:RibbonButton.Icon>
-                        <FontIcon Glyph="&#xF0E3;" />
-                    </ribbon:RibbonButton.Icon>
                     <ribbon:RibbonButton.ScreenTip>
                         <ribbon:ScreenTip>
                             <ribbon:ScreenTip.ContentTemplate>
@@ -189,7 +183,7 @@ The appearance of the title and content can be customized by using the `TitleTem
                                             <AppBarSeparator/>
                                             <TextBlock Text="FYI: To apply the formatting in multiple places, double-click Format Painter" TextWrapping="WrapWholeWords" Width="250"/>
                                         </StackPanel>
-                                        <Border Name="PART_Seperator" Margin="4"  BorderBrush="{StaticResource ControlStrokeColorDefault}" BorderThickness="0,0,0,1"  Grid.Row="1"  />
+                                        <Border Name="PART_Separator" Margin="4"  BorderBrush="{StaticResource ControlStrokeColorDefault}" BorderThickness="0,0,0,1"  Grid.Row="1"  />
                                         <Grid Grid.Row="2">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="20"/>
@@ -211,18 +205,18 @@ The appearance of the title and content can be customized by using the `TitleTem
                                             <ColumnDefinition Width="Auto"/>
                                         </Grid.ColumnDefinitions>
                                         <TextBlock Text="Format Painter" Grid.Column="0"/>
-                                        <TextBlock Text="(Ctrl+w)" Grid.Column="1" />
+                                        <TextBlock Text="(Ctrl+Shift+C)" Grid.Column="1" />
                                     </Grid>
                                 </DataTemplate>
                             </ribbon:ScreenTip.TitleTemplate>
                         </ribbon:ScreenTip>
                     </ribbon:RibbonButton.ScreenTip>
                 </ribbon:RibbonButton> 
-                // Add more elements here...
+                <!-- Add more elements here... -->
             </ribbon:RibbonGroup>
-            // Add more groups here...
+            <!-- Add more groups here... -->
         </ribbon:RibbonTab>
-        // Add more Tabs here...
+        <!-- Add more tabs here... -->
     </ribbon:SfRibbon.Tabs>
 </ribbon:SfRibbon>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization in WinUI ComboBox control | Syncfusion
-description: Learn here all about UI customization support in Syncfusion WinUI ComboBox (multi-select ComboBox) control into WinUI application and its basic features.
+description: Learn here all about UI customization support in Syncfusion WinUI ComboBox (multi-select ComboBox) control in a WinUI application and its basic features.
 platform: winui
 control: SfComboBox
 documentation: ug
@@ -11,12 +11,14 @@ documentation: ug
 
 This section explains different UI customization available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html).
 
+N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Refer to [Getting Started](https://help.syncfusion.com/winui/combobox/getting-started) for setup details.
+
 ## Header for ComboBox
 
-The `ComboBox` control header can be changed by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_Header) or [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_HeaderTemplate) properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.
+The header of the `ComboBox` control can be changed by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_Header) or [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_HeaderTemplate) properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -42,10 +44,10 @@ The `ComboBox` control header can be changed by using the [Header](https://help.
 
 ## Description for ComboBox
 
-The `ComboBox` control description can be changed by using the [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_Description) property. The default value of `Description` is `null`.
+The description of the `ComboBox` control can be changed by using the [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_Description) property. The default value of `Description` is `null`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="280"
@@ -85,7 +87,7 @@ You can prompt the user with any information by using the [PlaceholderText](http
                     PlaceholderText="Select a social media" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.PlaceholderText = "Select a social media";
 
@@ -96,7 +98,7 @@ comboBox.PlaceholderText = "Select a social media";
 
 ### Change foreground of placeholder text
 
-The placeholder texts’ foreground can be changed by using the [PlaceholderForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_PlaceholderForeground) property. The default value of `PlaceholderForeground` property is `null`.
+The placeholder text's foreground can be changed by using the [PlaceholderForeground](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_PlaceholderForeground) property. The default value of `PlaceholderForeground` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,7 +112,7 @@ The placeholder texts’ foreground can be changed by using the [PlaceholderFore
                     PlaceholderText="Select a social media" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 
@@ -121,12 +123,12 @@ comboBox.PlaceholderForeground = new SolidColorBrush(Colors.Red);
 
 ## Customize the edit mode TextBox
 
-The appearance of the edit mode textbox in `ComboBox` control can be customized by using the [TextBoxStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextBoxStyle) property. The default value of `TextBoxStyle` is `null`.
+The appearance of the edit mode TextBox in the `ComboBox` control can be customized by using the [TextBoxStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextBoxStyle) property. The default value of `TextBoxStyle` is `null`.
 
 N> `TextBoxStyle` will only have an effect in single selection editable mode.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -156,7 +158,7 @@ N> `TextBoxStyle` will only have an effect in single selection editable mode.
 The `ComboBox` control allows you to customize the style of [ComboBoxItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBoxItem.html), generated in drop-down by using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemContainerStyle) property. The default value of `ItemContainerStyle` is `null`. 
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -210,7 +212,7 @@ public class SocialMediaStyleSelector : StyleSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.Resources>
@@ -245,10 +247,12 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ## Customize ComboBoxItem 
 
-The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplate) property helps you to decorate drop-down items using the custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add image or custom control in drop-down items using templates.
+The [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplate) property helps you to decorate drop-down items using custom templates. The default value of `ItemTemplate` is `null`. The following example shows how to add an image or custom control in drop-down items using templates.
+
+N> Add the required `using` directives: `using System.Collections.ObjectModel;` and `using Microsoft.UI.Xaml.Media.Imaging;` (for `BitmapImage`).
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Model.cs
 public class Employee
@@ -303,7 +307,7 @@ public class EmployeeViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox x:Name="comboBox"
                     Width="250"
@@ -346,14 +350,16 @@ public class EmployeeViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Custom UI of ComboboxItem using ItemTemplate](Styling_images/winui-combobox-itemtemplate.png)
+![Custom UI of ComboBoxItem using ItemTemplate](Styling_images/winui-combobox-itemtemplate.png)
 
 ### Customize ComboBoxItem based on condition
 
-The [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplateSelector) property helps you to decorate drop-down items conditionally based on its content using the custom templates. The default value of `ItemTemplateSelector` is `null`.
+The [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemTemplateSelector) property helps you to decorate drop-down items based on their content using custom templates. The default value of `ItemTemplateSelector` is `null`.
+
+N> This example uses the `Employee` model and `EmployeeViewModel` defined in the [Customize ComboBoxItem](#customize-comboboxitem) section above.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Model.cs
 public class Employee
@@ -428,7 +434,7 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.Resources>
@@ -511,10 +517,10 @@ public class EmployeeTemplateSelector : DataTemplateSelector
 
 ## Styling token items
 
-The ComboBox control allows you to customize the style of [ComboBoxTokenItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxTokenItem.html) generated in the selection area by using the [TokenItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyle) property. The default value of `TokenItemStyle` is `null`. 
+The ComboBox control allows you to customize the style of [ComboBoxTokenItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxTokenItem.html) generated in the selection area by using the [TokenItemStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyleProperty) property. The default value of `TokenItemStyle` is `null`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox SelectionMode="Multiple"
                     MultiSelectionDisplayMode="Token"
@@ -536,12 +542,12 @@ The ComboBox control allows you to customize the style of [ComboBoxTokenItem](ht
 
 ### Style token items based on condition   
 
-The ComboBox control allows you to customize the style of `ComboBoxTokenItem` conditionally based on its content by using the [TokenItemStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyleSelector) property. The default value of `TokenItemStyleSelector` is `null`. 
+The ComboBox control allows you to customize the style of `ComboBoxTokenItem` based on its content by using the [TokenItemStyleSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemStyleSelectorProperty) property. The default value of `TokenItemStyleSelector` is `null`.
 
 {% tabs %}
 {% highlight c# %}
 
-public class SocialMediaStyleSelector : StyleSelector
+public class SocialMediaTokenStyleSelector : StyleSelector
 {
     public Style MediaStyle1 { get; set; }
     public Style MediaStyle2 { get; set; }
@@ -565,7 +571,7 @@ public class SocialMediaStyleSelector : StyleSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.Resources>
@@ -579,14 +585,14 @@ public class SocialMediaStyleSelector : StyleSelector
             <Setter Property="Background" Value="LightCyan"/>
             <Setter Property="Content" Value="{Binding}"/>
         </Style>
-        <local:SocialMediaStyleSelector x:Key="socialMediaStyleSelector" 
+        <local:SocialMediaTokenStyleSelector x:Key="socialMediaTokenStyleSelector" 
                                         MediaStyle1="{StaticResource MediaStyle1}"
                                         MediaStyle2="{StaticResource MediaStyle2}"/>
     </Grid.Resources>
     <editors:SfComboBox SelectionMode="Multiple"                    
                         MultiSelectionDisplayMode="Token"
                         ItemsSource="{Binding SocialMedias}"
-                        TokenItemStyleSelector="{StaticResource socialMediaStyleSelector}"
+                        TokenItemStyleSelector="{StaticResource socialMediaTokenStyleSelector}"
                         DisplayMemberPath="Name"
                         TextMemberPath="Name" />
 </Grid>
@@ -598,10 +604,12 @@ public class SocialMediaStyleSelector : StyleSelector
 
 ## Templating ComboBox tokens 
 
-The [TokenItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplate) property helps you to decorate token items using the custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add image or custom control in token items using templates.
+The [TokenItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateProperty) property helps you to decorate token items using custom templates. The default value of `TokenItemTemplate` is `null`. The following example shows how to add an image or custom control in token items using templates.
+
+N> `TokenItemTemplate` requires `MultiSelectionDisplayMode="Token"` and `SelectionMode="Multiple"`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Model.cs
 public class CountryInfo
@@ -614,7 +622,7 @@ public class CountryInfo
 public class CountryViewModel
 {
     public ObservableCollection<CountryInfo> Countries { get; set; }
-    public EmployeeViewModel()
+    public CountryViewModel()
     {
         this.Countries = new ObservableCollection<CountryInfo>();
         this.Countries.Add(new CountryInfo
@@ -671,7 +679,7 @@ public class CountryViewModel
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfComboBox SelectionMode="Multiple"
                     MultiSelectionDisplayMode="Token"
@@ -714,10 +722,10 @@ public class CountryViewModel
 
 ### Templating ComboBox tokens based on condition
 
-The [TokenItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateSelector) property helps you to decorate token items conditionally based on its content using the custom templates. The default value of `TokenItemTemplateSelector` is `null`.
+The [TokenItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TokenItemTemplateSelectorProperty) property helps you to decorate token items based on their content using custom templates. The default value of `TokenItemTemplateSelector` is `null`.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 public class CountryTemplateSelector : DataTemplateSelector
 {
@@ -743,7 +751,7 @@ public class CountryTemplateSelector : DataTemplateSelector
 {% endtabs %}
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <Grid>
     <Grid.DataContext>
@@ -817,11 +825,11 @@ public class CountryTemplateSelector : DataTemplateSelector
 
 ![Different custom UI of ComboBoxTokenItem using TokenItemTemplateSelector](Styling_images/winui-combobox-tokenitemtemplateselector.png)
 
-## How to change DropDown MaxHeight
+## How to change drop-down max height
 
 The maximum height of the drop-down can be changed by using the [MaxDropDownHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_MaxDropDownHeight) property of `ComboBox` control. The default value of `MaxDropDownHeight` property is `288`. 
 
- N> If the `MaxDropDownHeight` is too small compared to the populated items, scroll viewer will be automatically shown to navigate the hidden items.
+N> If the `MaxDropDownHeight` is too small compared to the populated items, a scroll viewer will be automatically shown to navigate the hidden items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -835,7 +843,7 @@ The maximum height of the drop-down can be changed by using the [MaxDropDownHeig
                     TextMemberPath="Name" />
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 comboBox.MaxDropDownHeight = 208;
 
