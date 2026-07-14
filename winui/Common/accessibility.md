@@ -72,9 +72,9 @@ If accessibility features are not working as expected, check the following:
 
 ## See also
 
-* [Localization for Syncfusion WinUI Controls](./localization.md)
-* [Themes for Syncfusion WinUI Controls](./themes.md)
-* [Right-to-left support for Syncfusion WinUI Controls](./right-to-left.md)
-* [Compact sizing for Syncfusion WinUI Controls](./compact-sizing.md)
+* [Localization for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/localization)
+* [Themes for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/themes)
+* [Right-to-left support for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/right-to-left)
+* [Compact sizing for Syncfusion WinUI Controls](https://help.syncfusion.com/winui/common/compact-sizing)
 * [Microsoft accessibility documentation](https://learn.microsoft.com/en-us/windows/apps/design/accessibility/accessibility)
 
