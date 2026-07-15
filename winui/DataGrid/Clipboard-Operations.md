@@ -123,7 +123,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 {% highlight c# %}
 this.sfDataGrid.GridCopyContent += sfDataGrid_GridCopyContent;
 
-void sfDdataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
+void sfDataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 {
     if (((e.OriginalSender as SfDataGrid).SelectedItem as OrderInfo).OrderID == 1004)
         e.Handled = true;
@@ -324,7 +324,7 @@ this.sfDataGrid.ClipboardController.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the data column in SfDataGrid by using [SelectCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Boolean_) method and `Cut` method in `ClipboardController` of SfDataGrid.
+Cut the data column in SfDataGrid by using [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method and `Cut` method in `ClipboardController` of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -545,7 +545,7 @@ public class CustomCopyPaste : DataGridClipboardController
 
 ### Create new records while pasting in WinUI DataGrid
 
-By default while paste the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the `PasteToRows` method in `DataGridClipboardController` class.
+By default while pasting the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the `PasteToRows` method in `DataGridClipboardController` class.
 
 {% tabs %}
 {% highlight c# %}

@@ -122,7 +122,7 @@ In the below code, `IncrementalList` is initialized by passing Action to its con
 
 {% tabs %}
 {% highlight c# %}
-Public class ViewModel
+public class ViewModel
 {
 
     public ViewModel()
@@ -155,7 +155,7 @@ Public class ViewModel
 
 ### Load data using ISupportIncrementalLoading
 
-You can fetch the data in some user action instead of scrolling using [IncrementalList.LoadItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadItems_System_Collections_Generic_IEnumerable__0__) method.
+You can fetch the data in some user action instead of scrolling using [IncrementalList.LoadItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html#Syncfusion_UI_Xaml_DataGrid_IncrementalList_1_LoadItems_System_Collections_Generic_IEnumerable__0__) method.
 
 In the below code, data fetched when you click the `Load Items` button.
 
@@ -238,7 +238,7 @@ public class ViewModel : INotifyPropertyChanged
 
         await Task.Run(new Action(() =>
         {
-            DataServiceQuery<Order> query = (northwindEntity.Orders as 
+            DataServiceQuery<Order> query = northwindEntity.Orders as DataServiceQuery<Order>;
 
             query = query.Skip<Order>(baseIndex).Take<Order>((int)count) as DataServiceQuery<Order>;
 
