@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About .NET WinUI AI AssistView control | Syncfusion
-description: Learn here all about Theme support in Syncfusion WinUI AI AssistView(SfAIAssistView) control and more.
+title: Theme support in WinUI AI AssistView control | Syncfusion
+description: Learn here all about Theme support in Syncfusion WinUI AI AssistView (SfAIAssistView) control.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
@@ -47,4 +47,4 @@ The AI AssistView Control provides various themes to be applied by setting the t
 {% endhighlight %}
 {% endtabs %} 
 
-![WinUI AI AssistView Control with Dark Theme](aiassistview_images/winui_aiassistview_light_theme.png)
+![WinUI AI AssistView Control with Light Theme](aiassistview_images/winui_aiassistview_light_theme.png)
