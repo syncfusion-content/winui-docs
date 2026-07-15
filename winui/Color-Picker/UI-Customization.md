@@ -92,13 +92,3 @@ colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 {% endtabs %}
 
 ![Changing Color Spectrum Combination as HueSaturation in WinUI Color Picker](Getting-Started_images/winui-colorpicker-color-spectrum-component.jpg)
-
-## Troubleshooting
-
-| Issue | Possible cause | Fix |
-|-------|----------------|-----|
-| Brush mode selector is missing | `BrushTypeOptions` is set to a single brush type | Include the desired brush type in `BrushTypeOptions`, or set it to `All`. |
-| Color spectrum shape does not change | The property name is misspelled | Ensure you are using `ColorSpectrumShape` and the namespace is imported. |
-| Color spectrum components have no effect | The Spectrum Shape is `Ring` and the active mode does not support the component | Switch to `Box` shape and try again. |
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectGradientColors)

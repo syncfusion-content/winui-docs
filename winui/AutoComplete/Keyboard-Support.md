@@ -187,10 +187,3 @@ Removes the focused token from the selection.
 </td>
 </tr>
 </table>
-
-## Troubleshooting
-
-* **Drop-down does not open with the keyboard**: Ensure the control has focus and `IsDropDownOpen` is not forced to `false` in code.
-* **Navigation keys do not work**: The drop-down must be open. Verify that `ItemsSource` is bound and contains items.
-* **Token navigation keys do not respond**: Multiple selection mode must be enabled and at least one item must be selected.
-

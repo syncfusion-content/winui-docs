@@ -720,10 +720,3 @@ autoComplete.MaxDropDownHeight = 530;
 {% endtabs %}
 
 ![WinUI AutoComplete maximum drop down height changed](Styling_images/winui-autocomplete-maxdropdownheight.png)
-
-## Troubleshooting
-
-* **Templates are not applied**: Verify that `ItemTemplate`, `TokenItemTemplate`, or `TokenItemStyle` is set to a valid `DataTemplate` or `Style`, and that the `DataContext` provides the expected properties.
-* **Token image does not load**: Confirm that the image `Uri` uses the `ms-apps:///` scheme and that the file is included in the project with `Build Action` set to `Content`.
-* **Style is overridden by theme resources**: Apply the style at the control level using `TokenItemStyle` or `TextBoxStyle` so that it takes precedence over the default theme.
-* **`TextBoxStyle` has no effect**: `TextBoxStyle` only applies in single selection mode.
