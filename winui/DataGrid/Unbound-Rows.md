@@ -114,7 +114,7 @@ You can get or set the [GridUnboundRowEventsArgs.Value](https://help.syncfusion.
                        SelectionMode="Multiple" >                        
     <dataGrid:SfDataGrid.UnboundRows>
         <dataGrid:GridUnboundRow  Position="Top" />
-    </dataGrid:SfDataGrid.UnBoundRows>                        
+    </dataGrid:SfDataGrid.UnboundRows>                        
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ For example, now unbound row populated based on selected items in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
-var collection = (this.dataGrid.DataContext as ViewModel).Orders;
+var collection = (this.sfDataGrid.DataContext as ViewModel).Orders;
 this.sfDataGrid.SelectedItems.Add(collection[4]);
 this.sfDataGrid.SelectedItems.Add(collection[5]);
 this.sfDataGrid.SelectedItems.Add(collection[7]);

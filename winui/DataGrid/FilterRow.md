@@ -324,13 +324,16 @@ You can customize the style of filter row by writing style of TargetType [Filte
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    xmlns:dataGridRowFilter="using:Syncfusion.UI.Xaml.DataGrid.RowFilter"
+<Page
+    x:Class="FilterRowDemo.MainPage"
+    xmlns:dataGridRowFilter="using:Syncfusion.UI.Xaml.DataGrid.RowFilter">
 
-    <Style TargetType="dataGridRowFilter:FilterRowControl">
-        <Setter Property="Background" Value="BlanchedAlmond"/>
-    </Style>
-</Page.Resources>
+    <Page.Resources>
+        <Style TargetType="dataGridRowFilter:FilterRowControl">
+            <Setter Property="Background" Value="BlanchedAlmond"/>
+        </Style>
+    </Page.Resources>
+</Page>
 {% endhighlight %}
 {% endtabs %}
 

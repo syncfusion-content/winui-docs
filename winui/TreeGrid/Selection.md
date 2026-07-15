@@ -90,7 +90,7 @@ Allows selecting multiple rows. You can select multiple rows in the SfTreeGrid b
 
 ## Disable selection for rows and columns
 
-You can disable selection and navigation on particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowFocus) property. You can disable selection on particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+You can disable selection and navigation on a particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowFocus) property. You can disable selection on a particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellActivating) event.
 
 ## Multiple row selection
 
@@ -199,7 +199,7 @@ this.sfTreeGrid.SelectionController.MoveCurrentCell(new RowColumnIndex(3, 2), fa
 
 ### Clear selection
 
-You can clear the selection using the [ClearSelections](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ClearSelections_System_Boolean_) method. In row selection, you can remove the selection by setting null to the `SelectedItem` or clearing the `SelectedItems` property.
+You can clear the selection using the [ClearSelections](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridBaseSelectionController_ClearSelections_System_Boolean_) method of the `SelectionController`. In row selection, you can remove the selection by setting null to the `SelectedItem` or clearing the `SelectedItems` property.
 
 {% tabs %}
 {% highlight c# %}

@@ -65,7 +65,7 @@ namespace GettingStarted
 
 ### Creating Data Model for sample application
 
-SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
+SfDataGrid is a data-bound control. So before creating binding to the control, you must create data model for Application.
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 
@@ -425,7 +425,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Getting-Started-images/winui-datagrid-sorting.png" alt="WinUI DataGrid Sorting" width="100%" Height="Auto/>
+<img src="Getting-Started-images/winui-datagrid-sorting.png" alt="WinUI DataGrid Sorting" width="100%" Height="Auto"/>
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanging) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SortColumnsChanged) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 

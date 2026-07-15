@@ -107,7 +107,7 @@ In SfDataGrid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill`
                         ItemsSource="{Binding OrdersDetails}">            
             <dataGrid:SfDataGrid.Columns>
                 <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
-                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" />               
+                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />               
                 <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
                 <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
                 <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
@@ -403,9 +403,9 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
                         ItemsSource="{Binding OrdersDetails}">
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" local:StarRatio.ColumnRatio="1"/>
-        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" local:StarRatio.ColumnRatio="1"/>
         <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" local:StarRatio.ColumnRatio="1"/>
-        <dataGrid:GridTextColumn   HeaderText="Unit Price" MappingName="Unit Price" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn   HeaderText="Unit Price" MappingName="UnitPrice" local:StarRatio.ColumnRatio="1"/>
         <dataGrid:GridTextColumn   HeaderText="Ship City" MappingName="ShipCity" local:StarRatio.ColumnRatio="2" />
         <dataGrid:GridTextColumn MappingName="Country" local:StarRatio.ColumnRatio="2"/>
     </dataGrid:SfDataGrid.Columns>

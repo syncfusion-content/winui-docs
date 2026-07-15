@@ -27,7 +27,7 @@ SfTreeGrid control supports to bind any collection that implements the [IEnumera
 
 SfTreeGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
 
-1. In UWP, UI won’t get refreshed when you are changing the property value. This is limitation in UWP platform.
+1. In WinUI, UI won’t get refreshed when you are changing the property value. This is a platform limitation in WinUI.
 2. SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
 
 ## Binding Complex properties
@@ -108,7 +108,7 @@ All the nodes will be expanded while at the time of loading.
 None
 </td>
 <td>
-None defines the node is not expanded when loading. By default, root nodes only will be displayed.
+Defines that the node is not expanded when loading. By default, root nodes only will be displayed.
 </td>
 </tr>
 <tr>
@@ -427,8 +427,7 @@ private void SfTreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 
 ### NodeCollapsed Event
 
-You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed
-) event and here you can get the collapsed node.
+You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed) event and here you can get the collapsed node.
 
 {% tabs %}
 {% highlight c# %}

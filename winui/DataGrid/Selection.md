@@ -1132,7 +1132,7 @@ You can change the selection background and foreground for all rows by using the
 {% tabs %}
 {% highlight xaml %}
 
-<dataGridSfDataGrid x:Name="sfDataGrid"
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
                        AllowGrouping="True"
                        ShowGroupDropArea="True"
                        SelectionBackground="#FFDFF3F4"
@@ -1210,7 +1210,7 @@ You can customize the row selection by editing the control template of correspon
 												   Storyboard.TargetProperty="BorderThickness">
                                                 <DiscreteObjectKeyFrame KeyTime="0" Value="0, 0, 0, 1" />
                                              </ObjectAnimationUsingKeyFrames>
-                                        /Storyboard>
+                                        </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="FooterRow">
                                         <Storyboard BeginTime="0">
