@@ -15,7 +15,7 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
-2. Add reference to the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet package (v27.2.X or later). See [NuGet installation](https://help.syncfusion.com/winui/visual-studio-extensions/nuget-packages) for details.
+2. Add reference to the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Kanban` in XAML or C# code.
 

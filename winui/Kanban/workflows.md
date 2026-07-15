@@ -71,7 +71,6 @@ this.kanban.Workflows = new List<KanbanWorkflow>()
 
 N> In XAML, the strings added directly inside `kanban:KanbanWorkflow.AllowedTransitions` are automatically wrapped as `List<string>` items. In C#, assign a `List<string>` explicitly to the [AllowedTransitions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) property.
 
-{% endhighlight %}
 {% highlight C# tabtitle="ViewModel.cs" %} 
 
 public class ViewModel
@@ -106,7 +105,7 @@ public class ViewModel
     private ObservableCollection<KanbanModel> GetTaskDetails()
     {
         var taskDetails = new ObservableCollection<KanbanModel>();
-        string path = @"ms-appx:///";
+        string path = @"ms-apps:///";
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
@@ -117,7 +116,7 @@ public class ViewModel
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
+            Source = new BitmapImage(new Uri("ms-apps:///Assets/Kanban/People_Circle1.png"))
         };
 
         taskDetails.Add(taskDetail);
