@@ -237,11 +237,3 @@ private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChange
 
 {% endhighlight %}
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Possible cause | Fix |
-|-------|----------------|-----|
-| `IsHexInputVisible` has no effect | `BrushTypeOptions` is set to a gradient mode | Set `BrushTypeOptions` to `SolidColorBrush`. |
-| Color channel editors are missing | `ColorChannelInputOptions` is set to `None` | Reset to `All` (default) or set to `TextInput`/`SliderInput`. |
-| Event handler not invoked | The XAML event name does not match the code-behind method name | Ensure the `SelectedBrushChanged="..."` attribute matches the handler signature. |

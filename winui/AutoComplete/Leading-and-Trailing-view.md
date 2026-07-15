@@ -95,9 +95,3 @@ Use both properties together when you need content on both sides of the selectio
 {% endtabs %}
 
 ![WinUI AutoComplete control with a combo box in the leading view and an icon in the trailing view](Leading_and_Trailing_view_images/Leading-and-Trailing-View-in-AutoComplete.png)
-
-## Troubleshooting
-
-* **Content is not aligned**: Wrap icons in a `View box` and set an explicit `Height` and `Width` so the content scales correctly.
-* **Trailing view button steals focus**: Set `AllowFocusOnInteraction="False"` on the button so the AutoComplete retains focus.
-* **Content overflows the control**: Reduce the `Height` and `Width` of the `View box`, or set `Margin` values to create space within the control.

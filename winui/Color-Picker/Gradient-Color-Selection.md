@@ -329,12 +329,3 @@ private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChange
 
 {% endhighlight %}
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Possible cause | Fix |
-|-------|----------------|-----|
-| Angle editor is hidden | `AxisInputOption` is not `Simple` | Set `AxisInputOption` to `Simple`. |
-| Offset editors are hidden | `AxisInputOption` is not `Advanced` | Set `AxisInputOption` to `Advanced`. |
-| Direction editor is hidden | `AxisInputOption` is not `Simple` | Set `AxisInputOption` to `Simple`. |
-| Gradient brush does not change at runtime | `BrushTypeOptions` does not include the brush type | Add the missing flag (e.g., `RadialGradientBrush`). |
