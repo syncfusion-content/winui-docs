@@ -11,18 +11,25 @@ documentation: ug
 
 The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
+N> This control requires the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet package (v27.2.X or later) targeting WinUI 3 (.NET 6+).
+
 * [Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Title) - Sets the title of the card.
 * [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Description) - Sets the description text of the card.
 * [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) - Sets the category of the card, determining which column it will be placed in.
 * [Assignee](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Assignee) - Defines the assignee associated with the card in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 * [Image](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Image) - Sets the image for the card, which is displayed on the right side in the default card template.
-* [IndicatorColorKey](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_IndicatorColorKey) - Specifies the indicator color for the card, commonly used for categorize or prioritize card based on color key values.
+* [IndicatorColorKey](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_IndicatorColorKey) - Specifies the indicator color for the card, commonly used to categorize or prioritize cards based on color key values.
 * [Id](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Id) - Sets the unique ID of the card.
 * [Tags](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Tags) - Specifies the tags for the card, displayed at the bottom of the default card template.
 
 Below is an example that shows how to define values in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 {% highlight C# %}
+
+using Microsoft.UI.Xaml.Controls;
+using Microsoft.UI.Xaml.Media.Imaging;
+using Syncfusion.UI.Xaml.Kanban;
+using System.Collections.ObjectModel;
 
 new KanbanModel()
 {
@@ -31,7 +38,7 @@ new KanbanModel()
     Description = "Crosshair label template not visible in UWP",
     Category = "Open",
     IndicatorColorKey = "High",
-    Tags = new List() { "Bug Fixing" },
+    Tags = new List<string>() { "Bug Fixing" },
     Image = new Image
     {
         Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
@@ -61,8 +68,11 @@ The following code snippet defines the colors for each key.
 
 {% highlight C# hl_lines="2 3 4 5 6" %}
 
+using Microsoft.UI.Xaml.Media;
+using Syncfusion.UI.Xaml.Kanban;
+
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-List<KanbanColorMapping> indicatorColorPalette = new List();
+List<KanbanColorMapping> indicatorColorPalette = new List<KanbanColorMapping>();
 indicatorColorPalette.Add(new KanbanColorMapping() { Key="Low", Color = Colors.Blue });
 indicatorColorPalette.Add(new KanbanColorMapping() { Key= "Normal", Color = Colors.Green });
 indicatorColorPalette.Add(new KanbanColorMapping() { Key= "High", Color = Colors.Red });
@@ -343,7 +353,7 @@ public class ViewModel
 
 ### Customize card appearance using DataTemplateSelector
 
-You can customize the card appearance by using the [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to kanban card appearance by using the [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector). It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
+You can customize the card appearance by using the [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector) property in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on a property value of the bound KanbanModel by using the [CardTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTemplateSelector). It allows you to choose a different data template for each card, as well as to customize the appearance of a particular card based on certain conditions.
 
 {% tabs %}
 {% highlight XAML hl_lines="28" %}
@@ -528,7 +538,7 @@ An interactive tooltip provides additional details about the cards on hovering t
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
+To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false`. To provide users with additional information or context about cards, simply set this property to `true`.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -813,4 +823,4 @@ public class ViewModel
 ![card-tool-tip-customization-support-in-winui-kanban](images/cards/card-tool-tip-customization-support-in-winui-kanban.gif)
 
 N>
-* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true.`
+* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true`.
