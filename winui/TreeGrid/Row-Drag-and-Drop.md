@@ -31,7 +31,7 @@ sfTreeGrid.AllowDrop = true;
 
 While dropping, the dragging nodes can be added above or below or as a child node based on their [DropPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html). For example, if you drop a node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
 
-<img src="Row-Drag-and-Drop-images/draganddrop-img2.png" alt="Drap and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-and-Drop-images/draganddrop-img2.png" alt="Drag and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N> Drag indicators will not be shown when [DropPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html) is set to [AsChild](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDropPosition_AsChild).
 

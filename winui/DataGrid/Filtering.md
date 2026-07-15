@@ -7,7 +7,7 @@ control: DataGrid
 documentation: ug
 ---
 # Filtering in WinUI DataGrid
-Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
+Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied through the UI as well as the programmatic filters. 
 
 ## Programmatic filtering
   
@@ -160,9 +160,9 @@ N>
 
 ### Built-in UI Views
 
-SfDataGrid filter UI comprises of two different UIs. 
+SfDataGrid filter UI comprises two different UIs. 
 
-* **Checkbox Filter UI** - Provides excel like filter interface with list of check box’s.
+* **Checkbox Filter UI** - Provides excel like filter interface with list of check boxes.
 
 * **Advanced Filter UI** - Provides advanced filter options to filter the data.
 
@@ -423,7 +423,7 @@ By default, casing is not considered while filtering. Because, filter predicates
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering_images/winui-datagrid-filtering-performance.png" alt="Improve the performance while applying filter in WPF DataGrid" width="Auto" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-filtering-performance.png" alt="Improve the performance while applying filter in WinUI DataGrid" width="Auto" Height="Auto"/>
 
 By default, `CanGenerateUniqueItems` is `True`. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -618,7 +618,7 @@ You can achieve this programmatically by using `FilterItemsPopulating` event als
 {% highlight c# %}
 this.sfDataGrid.FilterItemsPopulating += sfDataGrid_FilterItemsPopulating;
 
-void sfDdataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridFilterItemsPopulatingEventArgs e)
+void sfDataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridFilterItemsPopulatingEventArgs e)
 {
     if (e.Column.MappingName == "OrderID")
     {
@@ -671,7 +671,7 @@ Likewise, `FilterElement` also can be changed.
 
 ### Customizing Filter predicates
 
-If you want to customize the filter predicates, you need to use [FilterChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. Here, [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) is changed according to some conditions.
+If you want to customize the filter predicates, you need to use [FilterChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterChanging) event. Here, [FilterValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Data.FilterPredicate.html#Syncfusion_Data_FilterPredicate_FilterValue) is changed according to some conditions.
 
 {% tabs %}
 {% highlight c# %}
