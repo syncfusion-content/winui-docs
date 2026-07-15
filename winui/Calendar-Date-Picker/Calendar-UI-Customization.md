@@ -412,6 +412,7 @@ You can customize the colors of day names and headers of month, year, decade, an
         </FlyoutBase.AttachedFlyout>
     </calendar:SfCalendarDatePicker>
 </Window>
+{% endhighlight %}
 {% endtabs %}
 
 ![calendar-template-customization-in-winui-calendar-date-picker](UI-Customization_images/calendar-template-customization-in-winui-calendar-date-picker.png)
