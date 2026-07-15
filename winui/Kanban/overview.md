@@ -11,8 +11,6 @@ documentation: ug
 
 The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to visualize workflows at each stage of completion, enabling clear planning and a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
 
-N> This control requires the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet package (v27.2.X or later) targeting WinUI 3 (.NET 6+).
-
 ![overview-in-winui-kanban](images/overview/overview-in-winui-kanban.png)
 
 ## Key features

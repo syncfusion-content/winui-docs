@@ -9,8 +9,6 @@ documentation: ug
 
 # Events in WinUI Kanban (SfKanban)
 
-N> This control requires the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet package (v27.2.X or later) targeting WinUI 3 (.NET 6+).
-
 ## ColumnDragStarting
 
 The [`ColumnDragStarting`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event occurs when a column begins to be dragged. You can retrieve the following details from the [`ColumnDragStarting`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event.
@@ -351,7 +349,7 @@ The [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanba
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_Column) - Returns the column in which the card is currently being dragged.
 * [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentIndex) - Returns the current index position of the card within its column.
 * [CurrentColumnIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentColumnIndex) - Returns the current index of the column that contains the card.
-* [CurrentRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentRowIndex) - Returns the current row index of the swimlane that contains the card. The current row index is applicable only for the swimlane column and is used to get the swimlane's index. For more information on swimlanes, see [Swimlane](swimlane.html).
+* [CurrentRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentRowIndex) - Returns the current row index of the swimlane that contains the card. The current row index is applicable only for the swimlane column and is used to get the swimlane's index.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -769,8 +767,6 @@ public class ViewModel
 ## Command
 
 Kanban commands allow mapping the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to a command which supports the MVVM (Model-View-ViewModel) pattern.
-
-N> The following example uses a custom `RelayCommand` implementation shown at the end of this topic. Add it to your project so the command can bind to the `CardTappedCommand` property.
 
 ### CardTappedCommand
 

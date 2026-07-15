@@ -11,8 +11,6 @@ documentation: ug
 
 The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
-N> This control requires the [Syncfusion.Kanban.WinUI](https://www.nuget.org/packages/Syncfusion.Kanban.WinUI) NuGet package (v27.2.X or later) targeting WinUI 3 (.NET 6+).
-
 * [Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Title) - Sets the title of the card.
 * [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Description) - Sets the description text of the card.
 * [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) - Sets the category of the card, determining which column it will be placed in.
@@ -821,6 +819,3 @@ public class ViewModel
 {% endtabs %}
 
 ![card-tool-tip-customization-support-in-winui-kanban](images/cards/card-tool-tip-customization-support-in-winui-kanban.gif)
-
-N>
-* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true`.
