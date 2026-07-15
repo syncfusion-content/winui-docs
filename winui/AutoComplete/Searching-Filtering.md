@@ -394,9 +394,3 @@ public class CustomAsyncFilter : IAutoCompleteFilterBehavior
 The following image shows 1 lakh of data being loaded asynchronously in a drop-down at runtime based on typed input.
 
 ![WinUI AutoComplete uses custom filtering logic to load asynchronous runtime items.](Searching_images/winui-autocomplete-asynchronous-items.png)
-
-## Troubleshooting
-
-* **Custom filter is not invoked**: Verify that the `FilterBehavior` is bound to an instance of a class that implements `IAutoCompleteFilterBehavior` and that `ItemsSource` is bound (or generated in code).
-* **Asynchronous filter cancels too aggressively**: Reduce the frequency of `CancellationTokenSource.Cancel()` calls or debounce the input.
-* **Suggestions do not appear**: Confirm that `TextSearchMode` is set and that the `GetMatchingItemsAsync` method returns a non-empty enumerable.

@@ -311,10 +311,3 @@ autoComplete.ShowClearButton = false;
 {% endtabs %}
 
 ![WinUI AutoComplete hide clear button](Selection_images/winui-AutoComplete-hideclearbutton.png)
-
-## Troubleshooting
-
-* **Selection does not update**: Ensure `SelectionMode` is set correctly and that the bound `ItemsSource` contains the expected items.
-* **Tokens cannot be removed**: Confirm that `SelectionMode="Multiple"` is set; tokens only appear in multiple selection mode.
-* **Clear button is always visible**: Set `ShowClearButton="False"` to hide the clear button.
-* **`SelectionChanged` does not fire**: Verify that the event handler is wired up in XAML (`SelectionChanged="OnSelectionChanged"`) or in C# (`autoComplete.SelectionChanged += OnSelectionChanged;`).

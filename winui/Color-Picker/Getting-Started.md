@@ -400,10 +400,3 @@ private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChange
 
 {% endhighlight %}
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Possible cause | Fix |
-|-------|----------------|-----|
-| `SfColorPicker` is not resolved in XAML | The `xmlns:editors` namespace is missing | Add `xmlns:editors="using:Syncfusion.UI.Xaml.Editors"` to the root element. |
-| `ColorChannelOptions` does not change the UI | The `BrushTypeOptions` is set to a gradient-only mode | Set `BrushTypeOptions` to `SolidColorBrush` to expose the channel editors. |
