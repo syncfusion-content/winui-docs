@@ -235,4 +235,4 @@ sfNumberBox.Width = 200;
 
 ![WinUI SfNumberBox PercentDisplayMode](Formatting_images/winui-numberbox-percentDisplayMode-Compute.png)
 
-N> Default value of PercentDisplayMode is `Compute`.
+N> Default value of [PercentDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_PercentDisplayMode) is `Compute`.
