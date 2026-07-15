@@ -11,14 +11,7 @@ documentation: ug
 
 This section describes various drop-down customization options available in the [WinUI DropDown Color Picker](https://www.syncfusion.com/winui-controls/dropdown-color-picker) control.
 
-## Prerequisites
-
-Before applying the customization in this section, make sure the following are in place:
-
-- Visual Studio 2022 with the **Windows application development** workload.
-- Windows App SDK (WinUI 3) and .NET 6 or later.
-- The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package installed in your project.
-- The `Syncfusion.UI.Xaml.Editors` namespace referenced in your XAML page:
+Add the following namespace declaration to your XAML page:
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,10 +210,3 @@ private void SfDropDownColorPicker_DropDownClosed(object sender, EventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
-## Troubleshooting
-
-| Issue | Possible cause | Suggested fix |
-|---|---|---|
-| `DropDownPlacement` change has no effect. | `FlyoutPlacementMode` namespace is not imported. | Add `using Windows.UI.Xaml.Controls.Primitives;` in the code-behind file. |
-| `DelegateCommand<T>` cannot be found. | The Prism library is not referenced. | Install `Prism.Core` NuGet or replace with `Microsoft.UI.Xaml.Input.StandardUICommand`. |
-| The custom drop-down button template does not appear. | `DropDownMode` is not set to `Split` (for `DropDownButtonTemplate`). | Set `DropDownMode="Split"` when customizing the drop-down button. |

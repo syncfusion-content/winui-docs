@@ -167,9 +167,3 @@ autoComplete.HighlightedTextForeground = new SolidColorBrush(Colors.Red);
 {% endtabs %}
 
 ![WinUI AutoComplete text highlighting based on unmatched mode with contains search](Highlighting_images/winui-autocomplete-texthighlightmode-unmatched-contains.png)
-
-## Troubleshooting
-
-* **Highlighting does not appear**: Ensure `TextHighlightMode` is not set to `None` and that the bound items have a non-empty value for the path specified by `DisplayMemberPath`.
-* **Color is not applied in C#**: `HighlightedTextForeground` is a `Brush`. Use `new SolidColorBrush(Colors.Red)` instead of `Color.Red`.
-* **Empty input shows highlighted text**: When `TextSearchMode` is `Contains` and the input is empty, the entire suggestion text is considered a match.

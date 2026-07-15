@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Color Picker in WinUI DropDown Color Picker | Syncfusion
+title: Customization of Color Picker in DropDown Color Picker | Syncfusion
 description: This section describes how to customize the Color Picker embedded in the WinUI DropDown Color Picker (SfDropDownColorPicker) control.
 platform: WinUI
 control: SfDropDownColorPicker
@@ -11,12 +11,7 @@ documentation: ug
 
 This section describes how to customize the Color Picker embedded in the [WinUI DropDown Color Picker](https://www.syncfusion.com/winui-controls/dropdown-color-picker) control.
 
-## Prerequisites
-
-Before applying the customization in this section, make sure the following are in place:
-
-- Install the [Syncfusion WinUI controls](https://www.nuget.org/packages/Syncfusion.Editors.WinUI/) NuGet package in your WinUI project.
-- Reference the `Syncfusion.UI.Xaml.Editors` namespace in your XAML page:
+Add the following namespace declaration to your XAML page:
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,12 +45,3 @@ N> You can refer to the [Color Picker](https://help.syncfusion.com/winui/color-p
 The `BrushTypeOptions` property accepts a bitwise combination of `SolidColorBrush` and `LinearGradientBrush` values; the default is `SolidColorBrush | LinearGradientBrush`.
 
 ![Color picker embedded inside the DropDown Color Picker](Getting-Started_images/custom_colorpicker.jpg)
-
-## Troubleshooting
-
-| Issue | Possible cause | Suggested fix |
-|---|---|---|
-| The embedded Color Picker does not appear when the drop-down is opened. | The `AttachedFlyout` is not assigned or the namespace is missing. | Verify the `xmlns:editors` namespace is declared and the `SfColorPicker` is placed inside the `DropDownFlyout`. |
-| Build error: `SfColorPicker` or `SfDropDownColorPicker` cannot be found. | The Syncfusion WinUI Editors NuGet package is not referenced. | Install `Syncfusion.Editors.WinUI` and rebuild the project. |
-
-N> Download the demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/DropDownColorPicker_as_command) and run it to explore the customization shown in this section.

@@ -66,9 +66,3 @@ The `NoResultsFoundTemplate` property is a `DataTemplate` that lets you customiz
 {% endtabs %}
 
 ![WinUI AutoComplete control with NoResultsFoundTemplate](No_Results_Found_images/No-Results-Found-Template.png)
-
-## Troubleshooting
-
-* **No-result content does not appear**: Ensure the drop-down is open and the typed text does not match any item in `ItemsSource`.
-* **Template is not rendered**: Verify that `NoResultsFoundTemplate` is set to a valid `DataTemplate`.
-* **Content appears when items are present**: Confirm that the `MinimumPrefixCount` requirement is met and that the typed text does not match any item.

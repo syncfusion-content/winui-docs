@@ -246,11 +246,3 @@ private void SfDropDownColorPicker_SelectedBrushChanged(object sender, SelectedB
 
 {% endhighlight %}
 {% endtabs %}
-
-## Troubleshooting
-
-| Issue | Possible cause | Suggested fix |
-|---|---|---|
-| Build error: `SfDropDownColorPicker` cannot be found. | The Syncfusion NuGet package is not referenced. | Install `Syncfusion.Editors.WinUI` and rebuild. |
-| The XAML designer cannot resolve the `editors` prefix. | The `xmlns:editors` namespace is missing. | Add `xmlns:editors="using:Syncfusion.UI.Xaml.Editors"` to the page. |
-| `SelectedBrush` change has no effect on the UI. | The `OK` button was not clicked for interactive selection, or the brush type is incompatible. | Use a `SolidColorBrush` (or compatible brush) and click `OK` to confirm interactive selection. |
