@@ -49,7 +49,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 You can block particular dates from the date range selection using the [`BlackoutDates`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_BlackoutDates) collection property. The default value of the `BlackoutDates` property is **null**.
 
 {% tabs %}
-{% highlight c# tabtitle="ViewModel.cs"%}
+{% highlight c# tabtitle="ViewModel.cs" %}
 
 using Syncfusion.UI.Xaml.Calendar;
 
