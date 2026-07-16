@@ -77,7 +77,7 @@ You can change the UI of specific cells in the `Calendar DateRange Picker` drop-
 
 {% capture codesnippet1 %}
 {% tabs %}
-{% highlight C# tabtitle="EventDataConverter.cs" hl_lines="3" %}
+{% highlight C# tabtitle="EventDataConverter.cs"  %}
 
 using Syncfusion.UI.Xaml.Calendar;
 
@@ -144,7 +144,7 @@ public class EventDataConverter : IValueConverter
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml"  %}
 
 <Window
     ...
@@ -287,7 +287,7 @@ You can customize the colors of day names and headers of month, year, decade, an
 </table>
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml"  %}
 
 <Window
     ...

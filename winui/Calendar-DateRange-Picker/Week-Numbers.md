@@ -119,7 +119,7 @@ The [Calendar DateRange Picker](https://help.syncfusion.com/cr/winui/Syncfusion.
 In the following code, a `DataTemplate` is created for both the `WeekNumberTemplate` and `WeekNameTemplate` properties in the `CalendarItemTemplateSelector` class.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" %}
 
 <Window
     ...

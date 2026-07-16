@@ -16,9 +16,10 @@ This section explains how to restrict the time selection in WinUI [Time Picker](
 You can restrict the users from selecting a time within the particular range by specifying [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `Time Picker` control. The default value of `MinTime` property is `1/1/1921 10:37:16 PM` and `MaxTime` property is `12/31/2121 10:37:16 PM`.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
 
 using Syncfusion.UI.Xaml.Editors;
+
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.MinTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 4, 00, 00));
 sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 6, 59, 59));
@@ -107,7 +108,7 @@ You can restrict the users to select the times from specific minute or hour inte
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -182,7 +183,7 @@ If you want to hide the submit button and select the time directly from the drop
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -219,7 +220,7 @@ N> `SelectedTimeChanging` event is called before the [`SelectedTimeChanged`](htt
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 

@@ -28,7 +28,7 @@ You can add a hint in the dropdown header by using the [`DropDownHeader`](https:
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -104,7 +104,7 @@ N> To customize the column headers, refer to the [Customize the columns in dropd
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 

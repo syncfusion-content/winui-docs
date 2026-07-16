@@ -16,7 +16,7 @@ This section explains how to restrict the date selection in WinUI [Date Picker](
 You can restrict users from selecting a date within a particular range by specifying the [`MinDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MinDate) and [`MaxDate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MaxDate) properties in the `Date Picker` control. The default value of the `MinDate` property is `1/1/1921` and the `MaxDate` property is `12/31/2121`.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -146,7 +146,9 @@ If you want to hide the submit button and select the date directly from the drop
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.ShowSubmitButtons = false;
@@ -182,7 +184,9 @@ N> `SelectedDateChanging` event is called before the `SelectedDateChanged` event
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.SelectedDateChanging += SfDatePicker_DateChanging;
