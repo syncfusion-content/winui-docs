@@ -110,4 +110,4 @@ private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 
 ## Modify nodes
 
-The TreeView allows the user to modify the data in a node by using [editing](https://help.syncfusion.com/winui/treeview/editing). For more information, see the [Editing](https://help.syncfusion.com/winui/treeview/editing) documentation.
+The TreeView allows users to modify the data of a node through its editing functionality. For more information, refers to the [Editing](https://help.syncfusion.com/winui/treeview/editing) documentation.
