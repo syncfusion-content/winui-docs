@@ -22,7 +22,7 @@ The **InputToolbarItem** class is used to define and add items to the input text
 
 ## Adding an input toolbar item to the input toolbar
 
-The **InputToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
+The **InputToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) for the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
 
 Use the ItemTemplate property to define the appearance and behavior of each toolbar item. This allows you to display icons, buttons, text, or even complex UI elements such as Path, Image, or TextBlock within the toolbar.
 
@@ -62,7 +62,7 @@ The **InputToolbarPosition** property of the [SfAIAssistView](https://help.syncf
 
 <syncfusion:SfAIAssistView CurrentUser="{Binding CurrentUser}"  
                            Messages="{Binding Chats}" IsInputToolbarVisible="True"
-                           InpuToolbarPosition="Left">
+                           InputToolbarPosition="Left">
 </syncfusion:SfAIAssistView>
 
 {% endhighlight %} 
@@ -74,7 +74,7 @@ aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
 {% endhighlight %}
 {% endtabs %}
 
-![Left input toolbar position in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_input_toolbar_Left.png)
+![Left input toolbar position in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_input_toolbar_left.png)
 
 ## Input toolbar visibility
 
@@ -91,7 +91,7 @@ The **IsInputToolbarVisible** property of the [SfAIAssistView](https://help.sync
 {% highlight C# %}
 
 SfAIAssistView aiAssistView = new SfAIAssistView();
-aiAssistView.IsInputToolbarVisible = True;
+aiAssistView.IsInputToolbarVisible = true;
 
 {% endhighlight %}
 {% endtabs %}
