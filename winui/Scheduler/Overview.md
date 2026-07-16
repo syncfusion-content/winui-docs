@@ -42,4 +42,4 @@ The Syncfusion [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-
 
 * **LoadOnDemand**: The WinUI Scheduler supports loading appointments on-demand with loading indicator and it improves the loading performance when there are appointments range for multiple years.
 
-N> Looking for the full WinUI Scheduler component overview, features, pricing, and documentation? Visit the [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) page.
+N> Looking for the full WinUI Scheduler component overview, features, and pricing? Visit the [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-scheduler) page.

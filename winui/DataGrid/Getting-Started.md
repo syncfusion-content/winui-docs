@@ -470,7 +470,7 @@ Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syn
 
 <img src="Getting-Started-images/winui-datagrid-filtering.png" alt="WinUI DataGrid Filtering" width="100%" Height="Auto"/>
 
-N> Looking for the full WinUI DataGrid component overview, features, pricing, and documentation? Visit the [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagrid) page.
+N> Looking for the full JavaScript DataGrid control overview, features, and pricing? Visit the [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagrid) page.
 
 
 
