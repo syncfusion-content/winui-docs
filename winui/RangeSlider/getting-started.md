@@ -9,19 +9,27 @@ documentation: ug
 
 # Getting Started with WinUI RangeSlider (Range Slider)
 
-This section explains the steps required to add the [WinUI RangeSlider](https://www.syncfusion.com/winui-controls/range-slider) control and its elements such as values, ticks, dividers, labels, and tooltip. This section covers only basic features needed to get started with Syncfusion RangeSlider.
+This section explains the steps required to add the [WinUI RangeSlider](https://www.syncfusion.com/winui-controls/range-slider) control and its elements such as values, ticks, dividers, labels, and tooltips. This section covers only the basic features needed to get started with the Syncfusion RangeSlider.
 
 ## Creating an application with WinUI Range Slider
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
-2. Add reference to [Syncfusion.Sliders.WinUI](https://www.nuget.org/packages/Syncfusion.Sliders.WinUI) NuGet.
+2. Add a reference to the [Syncfusion.Sliders.WinUI](https://www.nuget.org/packages/Syncfusion.Sliders.WinUI) NuGet package.
 
-3. Import the control namespace `Syncfusion.UI.Xaml.Sliders` in XAML or C# code.
+3. Import the control namespace `Syncfusion.UI.Xaml.Sliders` in XAML or C# code. In XAML, add the following namespace declaration:
 
-4. Initialize the [`SfRangeSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) control
+{% tabs %}
+{% highlight xaml %}
 
-The default value of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) properties of the [`SfRangeSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) is 0 and 100 respectively. So, the [`RangeStart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeStart) and [`RangeEnd`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeEnd) properties must be given within the range.
+xmlns:slider="using:Syncfusion.UI.Xaml.Sliders"
+
+{% endhighlight %}
+{% endtabs %}
+
+4. Initialize the [`SfRangeSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) control.
+
+N> The default values of the [`Minimum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_Maximum) properties of the [`SfRangeSlider`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html?tabs=tabid-1) are 0 and 100 respectively. So, the [`RangeStart`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeStart) and [`RangeEnd`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SfRangeSlider.html#Syncfusion_UI_Xaml_Sliders_SfRangeSlider_RangeEnd) properties must be set within this range.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -116,7 +124,7 @@ You can enable labels in the range slider using the [`ShowLabels`](https://help.
 SfRangeSlider sfRangeSlider = new SfRangeSlider();
 sfRangeSlider.RangeStart = 30;
 sfRangeSlider.RangeEnd = 70;
-SfRangeSlider.ShowLabels = true;
+sfRangeSlider.ShowLabels = true;
 this.Content = sfRangeSlider;
 
 {% endhighlight %}
@@ -161,4 +169,6 @@ this.Content = sfRangeSlider;
 
 ![Range slider with dividers](images/getting-started/slider-dividers.png)
 
-N> Download demo application from the [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSliderGettingStartedDesktop)
+N> The [`ActiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_ActiveTrackHeight) and [`InactiveTrackHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_InactiveTrackHeight) properties shown above customize the track height.
+
+N> Download the demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI_Sliders_Getting_Started/tree/main/RangeSliderGettingStartedDesktop).

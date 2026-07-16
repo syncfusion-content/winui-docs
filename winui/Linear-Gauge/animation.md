@@ -11,7 +11,7 @@ documentation: ug
 
 ## Pointer animation
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_EnableAnimation) property of pointer allows to enable or disable animation for the pointer.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_EnableAnimation) property of the pointer allows you to enable or disable animation for the pointer.
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ this.Content = sfLinearGauge;
 
 ## Animation duration
 
-The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property of pointer allows to control the animation duration (in milliseconds). The default value of animation duration is 1500ms.
+The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property of the pointer allows you to control the animation duration (in milliseconds). The default value of the animation duration is 1500ms.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ this.Content = sfLinearGauge;
 
 ## Animation easing function
 
-The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property of pointer allows you to change the easing function. The default value of [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationDuration) property is null.
+The [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationEasingFunction) property of the pointer allows you to change the easing function. The default value of [`AnimationEasingFunction`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearGaugePointer.html#Syncfusion_UI_Xaml_Gauges_LinearGaugePointer_AnimationEasingFunction) property is null.
 
 {% tabs %}
 
@@ -198,10 +198,10 @@ The [`AnimationDuration`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
                 </gauge:LinearShapePointer>
 
                 <gauge:LinearContentPointer Value="70"
-                                      VerticalAnchor="End"
-                                      OffsetPoint="0,-23"
-                                      EnableAnimation="True"
-                                      AnimationDuration="3000">
+                                    VerticalAnchor="End" 
+                                    OffsetPoint="0,-23"
+                                    EnableAnimation="True"
+                                    AnimationDuration="3000">
                     <gauge:LinearContentPointer.AnimationEasingFunction>
                         <CircleEase EasingMode="EaseIn" />
                     </gauge:LinearContentPointer.AnimationEasingFunction>
@@ -258,3 +258,7 @@ this.Content = sfLinearGauge;
 ![animation easing function](images/animation/animation_easingFunction.gif)
 
 N> Refer to this [EasingFunctionBase](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase?view=winrt-22621), to learn more about available easing functions in WinUI.
+
+## See Also
+
+* [How to create a progress bar with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)

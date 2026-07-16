@@ -1,7 +1,7 @@
 ---
 layout: post
 title: More Colors Dialog in WinUI DropDown Color Palette | Syncfusion
-description: This section describes about how to pick a additonal colors from More Colors Dialog in the DropDown Color Palette (SfDropDownColorPalette) control.
+description: This section describes how to pick additional colors from the More Colors dialog in the DropDown Color Palette (SfDropDownColorPalette) control.
 platform: WinUI
 control: SfDropDownColorPalette
 documentation: ug
@@ -9,11 +9,13 @@ documentation: ug
 
 # More Colors Dialog in WinUI DropDown Color Palette
 
-This section describes about how to pick a additional colors from More Color dialog in [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
+This section describes how to pick additional colors from the More Colors dialog in the [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dropdown-color-palette) control.
 
 ## Choosing a Color from More Colors dialog
 
-If you want to choose a color that is not available in theme and standard palette, click the **More Colors...** button and select the color from color spectrum and click the **Ok** button. 
+The **More Colors...** button is visible by default at the bottom of the dropdown palette. If you want to choose a color that is not available in the theme and standard palette, click the **More Colors...** button and select the color from the color spectrum, then click the **OK** button. The chosen color is applied to the `SelectedBrush` property. Click the **Cancel** button to discard the selection and close the dialog.
+
+The visibility of the **More Colors...** button can be controlled using the `ShowMoreColorsButton` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -21,7 +23,7 @@ If you want to choose a color that is not available in theme and standard palett
 <editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 
@@ -34,9 +36,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Recently used Colors
 
- If you want to choose a color brush which are recently selected from the `More Colors` dialog, use the `Recent Colors` panel. 
+If you want to choose a brush that was recently selected from the `More Colors` dialog, use the `Recent Colors` panel.
 
-N> Colors selected from theme and standard colors will not be added in recent colors.
+N> Colors selected from the theme and standard palettes are not added to the recent colors. Only colors picked from the More Colors dialog populate the `Recent Colors` panel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,7 +46,7 @@ N> Colors selected from theme and standard colors will not be added in recent co
 <editors:SfDropDownColorPalette Name="sfDropDownColorPalette"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 

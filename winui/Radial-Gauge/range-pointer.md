@@ -54,7 +54,7 @@ The following properties are used to customize the range pointer:
 
 * [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) – Specifies whether the [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) is defined in pixels or factor.
 
-The [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) of the pointer can be specified either in pixel or factor. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is specified as Pixel, then the range will be rendered based on the provided pixel value. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is set as factor, the provided factor value will be multiplied with axis radius. For example, if the pointer width is set as 0.1, then 10% of axis radius is considered as range pointer width.
+The [`PointerWidth`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerWidth) of the pointer can be specified either in pixels or factor. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is specified as Pixel, then the range will be rendered based on the provided pixel value. If the [`WidthUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_WidthUnit) is set as factor, the provided factor value will be multiplied with the axis radius. For example, if the pointer width is set to 0.1, then 10% of the axis radius is considered as range pointer width.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ this.Content = sfRadialGauge;
  
 ## Setting gradient brush to the pointer
 
- The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_GradientStops) property of [`range pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) allows to specify the smooth color transition to pointer by specifying the different colors based on provided axis value.
+ The [`GradientStops`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_GradientStops) property of the [`range pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) allows you to specify the smooth color transition to the pointer by specifying different colors based on the provided axis value.
 
 {% tabs %}
 
@@ -157,7 +157,7 @@ this.Content = sfRadialGauge;
 
 ## Corner style customization
 
- The [`CornerStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_CornerStyle) property of [`range pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) specifies the corner type for pointer. The corners can be customized using the [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat), [`BothCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothCurve), [`StartCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_StartCurve) and [`EndCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_EndCurve) options. The default value of this property is [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat).
+ The [`CornerStyle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_CornerStyle) property of the [`range pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html) specifies the corner type for the pointer. The corners can be customized using the [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat), [`BothCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothCurve), [`StartCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_StartCurve), and [`EndCurve`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_EndCurve) options. The default value of this property is [`BothFlat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.CornerStyle.html#Syncfusion_UI_Xaml_Gauges_CornerStyle_BothFlat).
 
 {% tabs %}
 
@@ -194,13 +194,13 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-![winUI Radial Gauge Pointer Corner Style](images/range-pointer/winui-radial-gauge-pointer-corner-style.png)
+![WinUI Radial Gauge Pointer Corner Style](images/range-pointer/winui-radial-gauge-pointer-corner-style.png)
 
 ## Position customization
 
-The following properties are used to customize the position of range pointer:
+The following properties are used to customize the position of the range pointer:
 
-* [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) - Specifies the position value for pointer either in pixels or factor.
+* [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) - Specifies the position value for the pointer either in pixels or factor.
 
 * [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) – Specifies whether the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) is defined in pixels or factor.
 
@@ -243,6 +243,10 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Pointer Position](images/range-pointer/winui-radial-gauge-pointer-position.png)
 
-When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) as pixel, the pointer will be moved to the provided pixel value.
+When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) to pixel, the pointer will be moved to the provided pixel value.
 
-If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) is specified as factor, the factor value will be multiplied with the axis radius. For example, if you set [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) as 0.1, then the pointer offset is considered as 10% of axis radius.
+If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) is specified as factor, the factor value will be multiplied with the axis radius. For example, if you set the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) to 0.1, then the pointer offset is considered as 10% of the axis radius.
+
+## See Also
+
+* [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)

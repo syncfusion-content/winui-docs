@@ -23,7 +23,8 @@ The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Char
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis Header="Tree"/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -36,13 +37,13 @@ chart.SecondaryAxis = new NumericalAxis()
 {
     Header = "Tree" 
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
 
-N> Polar chart supports title for secondary axis only.
+N> The polar chart supports a title for the secondary axis only.
 
 ![Axis title in WinUI Chart](Axis_Images/WinUI_Chart_AxisHeader.png)
 
@@ -69,7 +70,8 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
             </chart:NumericalAxis.HeaderStyle>
         </chart:NumericalAxis>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -77,7 +79,8 @@ The [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 LabelStyle style = new LabelStyle()
 {
     FontFamily = new FontFamily("Algerian"),
@@ -91,8 +94,8 @@ chart.SecondaryAxis = new NumericalAxis()
     Header = "Tree",
     LabelStyle = style
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -130,7 +133,8 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis Header="Tree" HeaderTemplate="{StaticResource headerTemplate}"/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -138,14 +142,16 @@ The appearance of the header can be customized using the [HeaderTemplate](https:
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 chart.PrimaryAxis = new CategoryAxis();
+
+// The 'headerTemplate' resource is defined in XAML Resources and referenced here.
 chart.SecondaryAxis = new NumericalAxis()
 {
     Header = "Tree",
     HeaderTemplate = chart.Resources["headerTemplate"] as DataTemplate
 };
-...
 
 {% endhighlight %}
 

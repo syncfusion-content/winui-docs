@@ -13,11 +13,28 @@ This section explains how to change the value format of the [NumberBox](https://
 
 ## Currency, percentage and decimal format
 
+The following namespace and using statements are required to use the `SfNumberBox` control and the formatting classes.
+
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
+using System.Globalization;
+using Windows.Globalization.NumberFormatting;
+
+{% endhighlight %}
+{% endtabs %}
+
 You can format the value of a `NumberBox` control using the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) property. By default, the value is formatted based on the current culture's decimal format. The default value of `NumberFormatter` and `CustomFormat` properties are **null**.
 
-The following example shows how to set `CurrencyFormatter`, `DecimalFormatter` and `PercentFormatter` for `NumberFormatter` property. 
+The following example shows how to set `CurrencyFormatter`, `DecimalFormatter` and `PercentFormatter` for `NumberFormatter` property. The `CultureInfo` is used to obtain the ISO currency symbol for the `CurrencyFormatter`.
 
-N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can assigned for `NumberFormatter` property.
+N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can be assigned for `NumberFormatter` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -36,9 +53,9 @@ hoursWorked.NumberFormatter = new DecimalFormatter();
 {% endhighlight %}
 {% endtabs %}
 
-Using **N**, **C**, and **P** format values, we can apply numeric, currency, and percent custom formats in [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property.
+You can apply numeric, currency, and percent custom formats using the **N**, **C**, and **P** format specifiers in the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property.
 
-N> When using both the `CustomFormat` and the `NumberFormatter` properties, the `CustomFormat` property takes high precedence. 
+N> When using both the `CustomFormat` and the `NumberFormatter` properties, the `CustomFormat` property takes precedence. 
 
 N> You can apply various custom formats available in [this page](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) which are supported for `double` type.
 
@@ -61,7 +78,7 @@ hoursWorked.CustomFormat = "N2";
 
 ## Format the integer digits
 
-You can change the decimal digits of the value in the `NumberBox` control using [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) and [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) properties. For the `NumberFormatter` property, you can customize the decimal digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
+You can change the integer digits of the value in the `NumberBox` control using [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) and [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_NumberFormatter) properties. For the `NumberFormatter` property, you can customize the integer digits of the value using the `IntegerDigits` property in `CurrencyFormatter`, `PercentFormatter`, and `DecimalFormatter` classes.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,9 +91,9 @@ hoursWorked.NumberFormatter = new DecimalFormatter() { IntegerDigits = 5 };
 {% endhighlight %}
 {% endtabs %}
 
-For `CustomFormat` property, use the **0** format specifier to set the minimum number of decimal digits.  
+For `CustomFormat` property, use the **0** format specifier to set the minimum number of integer digits.  
 
-N> **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero appends with the leftmost position of the value. 
+N> **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero is padded to the left of the value. 
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +129,7 @@ hoursWorked.NumberFormatter = new DecimalFormatter() { FractionDigits = 3 };
 
 For `CustomFormat` property, use the **0** format specifier to set the minimum number of fractional digits.  
 
-N> **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value.
+N> **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero is padded to the right of the value.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,16 +145,16 @@ hoursWorked.CustomFormat = "00.000";
 
 ## Apply custom format
 
-You can apply custom formats to the `NumberBox` control using the **0** and **#** format specifiers. Using these format specifiers you can set the minimum and the maximum number of fractional digits in the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property. 
+You can apply custom formats to the `NumberBox` control using the **0** and **#** format specifiers. Using these format specifiers you can set the minimum and maximum number of fractional digits in the [CustomFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_CustomFormat) property. 
 
-   * **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero appends with the leftmost position of the value. 
+   * **0** (Zero placeholder) replaces the zero with the corresponding digit present in the value; otherwise, zero is padded to the left of the value. 
 
-   * **#** (Digit placeholder) replaces the number sign symbol with the corresponding digit present in the value; otherwise, no digit will append with the value. 
+   * **#** (Digit placeholder) replaces the number sign symbol with the corresponding digit present in the value; otherwise, no digit is appended to the value. 
 
 In the below example, the value of the `CustomFormat` property is **#.00##**, hence it will allow a maximum of `4` fractional digits and a minimum of `2` fractional digits.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight c# %}
 
 stockPrice.CustomFormat = "$00.00##";
 productDiscount.CustomFormat = "00.00##%";
@@ -151,14 +168,13 @@ hoursWorked.CustomFormat = "00.00##";
 
 ## Culture support
 
-The culture support allows the control to be configured for a specific language. To configure this, use the [culture](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Culture) property.
+The culture support allows the control to be configured for a specific language. To configure this, use the [Culture](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Culture) property.
 
 {% tabs %}
 {% highlight c# %}
 
 CultureInfo ci = new CultureInfo("en-US");
-NumberBox.Culture = ci;
-         
+numberBox.Culture = ci;
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,7 +185,7 @@ NumberBox.Culture = ci;
 
 When the percentage format is applied to the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html), the value can be displayed in the following two ways:
 
-**Value**: Displays the actual value with percentage symbol.
+`PercentDisplayMode.Value`: Displays the actual value with percentage symbol. For example, the value `1000` is displayed as `1000%`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -181,7 +197,7 @@ When the percentage format is applied to the [NumberBox](https://help.syncfusion
 </editors:SfNumberBox>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfNumberBox sfNumberBox= new SfNumberBox();
 sfNumberBox.CustomFormat = "p";
@@ -194,7 +210,7 @@ sfNumberBox.Width = 200;
 
 ![WinUI SfNumberBox PercentDisplayMode](Formatting_images/winui-numberbox-percentDisplayMode-Value.png)
 
-**Compute** : Displays the computed value with percentage symbol.
+`PercentDisplayMode.Compute`: Displays the computed value with percentage symbol. For example, the value `1000` is displayed as `100,000%`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -206,11 +222,11 @@ sfNumberBox.Width = 200;
 </editors:SfNumberBox>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 SfNumberBox sfNumberBox= new SfNumberBox();
-sfNumberBox.Value = 1000;
 sfNumberBox.CustomFormat = "p";
+sfNumberBox.Value = 1000;
 sfNumberBox.PercentDisplayMode = PercentDisplayMode.Compute;
 sfNumberBox.Width = 200;
 
@@ -219,4 +235,4 @@ sfNumberBox.Width = 200;
 
 ![WinUI SfNumberBox PercentDisplayMode](Formatting_images/winui-numberbox-percentDisplayMode-Compute.png)
 
-N> Default value of PercentDisplayMode is `Compute`.
+N> Default value of [PercentDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_PercentDisplayMode) is `Compute`.

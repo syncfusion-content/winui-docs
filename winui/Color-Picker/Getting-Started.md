@@ -15,10 +15,17 @@ This section describes how to create a [WinUI Color Picker](https://www.syncfusi
 
 ![WinUI Color Picker](Getting-Started_images/winui-colorpicker.png)
 
+1. Color spectrum with picker handle
+2. Hue spectrum slider
+3. Color channel editors (RGB/HSV/HSL/CMYK)
+4. Hexadecimal value editor
+5. Alpha (opacity) value editor
+6. Brush type selector (Solid/Linear/Radial)
+
 ## Creating an application with WinUI Color Picker
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
+1. Create a [WinUI 3 desktop app for C# and .NET 6+](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+2. Add reference to the latest [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 4. Initialize the `SfColorPicker` control.
 
@@ -80,7 +87,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Select solid brush
 
-You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property. You can select any solid color brush at runtime by clicking on the respective solid color brush area. You can also choose various solid color brush from different standard color models such as `RGB`, `HSV`, `HSL`, `CMYK` formats. The default value of `SelectedBrush` property is `Blue`.
+You can select the solid color brush programmatically by setting the solid color brush value to the [SelectedBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrush) property of type `Brush`. The XAML `Brush` type converter accepts standard color names (e.g., `Yellow`). You can select any solid color brush at runtime by clicking on the respective solid color brush area. You can also choose various solid color brushes from different standard color models such as `RGB`, `HSV`, `HSL`, and `CMYK` formats. The default value of the `SelectedBrush` property is `SolidColorBrush(Colors.Blue)`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,6 +97,10 @@ You can select the solid color brush programmatically by setting the solid color
 
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
+using Microsoft.UI;
+using Windows.UI;
 
 SfColorPicker colorPicker = new SfColorPicker();
 colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
@@ -101,9 +112,9 @@ colorPicker.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpicker-examples/tree/master/Samples/SelectSolidColors)
 
-### Switch between solid brush channels
+### Switch between color channels
 
- You can select the color model by setting the required color brush model to the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or select it from the drop down options. The default value of `ColorChannelOptions` property is `RGB`.
+You can select the color model by setting the required color model to the [ColorChannelOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_ColorChannelOptions) property or by selecting it from the drop-down list. Supported values are `RGB`, `HSV`, `HSL`, and `CMYK`. The default value of the `ColorChannelOptions` property is `RGB`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -113,6 +124,8 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfColorPicker colorPicker = new SfColorPicker();
 colorPicker.ColorChannelOptions = ColorChannelOptions.HSV;
@@ -126,16 +139,18 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ### Change opacity of solid brush
 
-You can change opacity of the selected solid color brush by using the A-Alpha value editor or delicate slider in the `Color Picker`. You can hide the A-Alpha slider by using the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property value as `TextInput`. The default value of the `AlphaInputOptions` property is `All`.
+You can change the opacity of the selected solid color brush by using the alpha value editor or dedicated slider in the `Color Picker`. You can hide the alpha slider by setting the [AlphaInputOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_AlphaInputOptions) property to `TextInput`, `SliderInput`, or `None`. The default value of the `AlphaInputOptions` property is `All`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker AlphaInputOptions="TextInput"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.AlphaInputOptions = ColorInputOptions.TextInput;
 
@@ -151,13 +166,15 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can select a solid color brush by entering the hexadecimal color value to the hexadecimal value editor. You can also get the selected color hexadecimal value by using the hexadecimal value editor. You can hide the hexadecimal value editor by setting the [IsHexInputVisible](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_IsHexInputVisible) property value as `false`. The default value of `IsHexInputVisible` property is `true`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker IsHexInputVisible="False"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.IsHexInputVisible = false;
 
@@ -189,6 +206,12 @@ Linear Gradient color brush can be selected by the multiple colors and their loc
 {% endhighlight %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Editors;
+using Microsoft.UI;
+using Microsoft.UI.Xaml.Media;
+using Windows.Foundation;
+using Windows.UI;
+
 //Creating the linear gradient brush
 LinearGradientBrush linearGradient = new LinearGradientBrush();
 linearGradient.StartPoint = new Point(0, 0);
@@ -214,16 +237,18 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ### Select linear gradient brush interactively
 
-You can directly select a required linear gradient color brush at runtime by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value as `LinearGradientBrush`. The default value of `BrushTypeOptions` property is `All`.
+You can directly select a required linear gradient color brush at runtime by setting the [BrushTypeOptions](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_BrushTypeOptions) property value to `LinearGradientBrush`. The default value of the `BrushTypeOptions` property is `All`. Use a comma-separated list in XAML or a bitwise OR in C# to enable multiple brush modes.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="LinearGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.BrushTypeOptions = BrushTypeOptions.LinearGradientBrush;
 
@@ -257,6 +282,12 @@ Radial Gradient color brush is similar to Linear Gradient color brush, except fo
 {% endhighlight %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Editors;
+using Microsoft.UI;
+using Microsoft.UI.Xaml.Media;
+using Windows.Foundation;
+using Windows.UI;
+
 //Creating a radial gradient brush
 RadialGradientBrush radialGradient = new RadialGradientBrush();
 radialGradient.GradientOrigin = new Point(0.5, 0.5);
@@ -287,13 +318,15 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can directly select a required radial gradient color brush at runtime by setting the `BrushTypeOptions` property value as `RadialGradientBrush`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="RadialGradientBrush"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.BrushTypeOptions = BrushTypeOptions.RadialGradientBrush;
 
@@ -306,16 +339,18 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Switch between solid, linear and radial gradient brush mode
 
-You can allow the user to choose either `Solid`, `Linear` or `Radial` gradient brush or any combination of brush mode by using the `BrushTypeOptions` property. 
+You can allow the user to choose any combination of `Solid`, `Linear`, or `Radial` gradient brushes by using the `BrushTypeOptions` property. The `BrushTypeOptions` enum supports the values `All`, `SolidColorBrush`, `LinearGradientBrush`, and `RadialGradientBrush`.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker BrushTypeOptions="SolidColorBrush,RadialGradientBrush"
                        Name="colorPicker">
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 colorPicker.BrushTypeOptions = BrushTypeOptions.SolidColorBrush | BrushTypeOptions.RadialGradientBrush;
 
@@ -328,7 +363,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ### Switch between solid, linear and radial gradient brush mode interactively
 
-You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear` or `Radial` gradient brush mode drop down options which is placed in the top of the `Color Picker` control.
+You can change the color selection mode directly at runtime by clicking on the corresponding `Solid`, `Linear`, or `Radial` gradient brush mode drop-down options that are placed at the top of the `Color Picker` control.
 
 ![Switch between Solid, Linear and Gradient Color in WinUI Color Picker](Getting-Started_images/winui-colorpicker-switch-color-option.gif)
 
@@ -336,30 +371,31 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Selected brush changed notification
 
-You will be notified when selected brush changed in `Color Picker` by using [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) events. You can get the old and newly selected brush by using the [OldBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) and [NewBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SelectedBrushChangedEventArgs.html) properties.
+You will be notified when the selected brush changes in `Color Picker` by using the [SelectedBrushChanged](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPicker.html#Syncfusion_UI_Xaml_Editors_SfColorPicker_SelectedBrushChanged) event. You can get the old and newly selected brush by using the `OldBrush` and `NewBrush` properties of the `SelectedBrushChangedEventArgs` class.
 
 {% tabs %}
-{% highlight XAML %}
+{% highlight xaml %}
 
 <editors:SfColorPicker SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
-                       Name="colorPicker">
+                       Name="colorPicker"/>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 colorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
 
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the event as follows,
+You can handle the event as follows.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
-private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs args) {
-    var old_selectedBrush = args.OldBrush;
-    var new_selectedBrush = args.NewBrush;
+private void ColorPicker_SelectedBrushChanged(object sender, SelectedBrushChangedEventArgs args)
+{
+    var oldSelectedBrush = args.OldBrush;
+    var newSelectedBrush = args.NewBrush;
 }
 
 {% endhighlight %}

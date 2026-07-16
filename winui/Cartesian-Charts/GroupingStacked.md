@@ -10,7 +10,7 @@ keywords: stacked group chart in winui chart, winui stacked group chart customiz
 
 # Stacked Group Chart in WinUI Chart (SfCartesianChart)
 
-Chart provides support to group the stacked similar series by using the [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) property of stacked series. The stacked series which contains the same [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) will be stacked in a single group.
+Chart provides support to group the stacked similar series by using the [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) property of the stacked series. The stacked series which contains the same [GroupName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackedSeriesBase_GroupName) will be stacked in a single group.
 
 {% tabs %}
 
@@ -100,10 +100,16 @@ chart.Series.Add(series1);
 chart.Series.Add(series2);
 chart.Series.Add(series3);
 chart.Series.Add(series4);
-...
+
+// Configure additional chart elements
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Stacked group chart in WinUI Chart](Grouped_Stacking_Images/WinUI_Chart_GroupingStacked.png)
+
+## See Also
+
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
+* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)

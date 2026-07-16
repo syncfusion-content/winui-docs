@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Axis types in WinUI Polar Chart control | Syncfusion
-description: Learn here all about the axis types and its features in  Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Axis types in WinUI Polar Chart control | Syncfusion
+description: Learn here all about the axis types and its features in the Syncfusion® WinUI Chart (SfPolarChart) control.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
@@ -11,14 +11,14 @@ documentation: ug
 
 Polar chart supports the following types of chart axis.
 
-* CategoryAxis
-* NumericalAxis
-* DateTimeAxis
-* LogarithmicAxis
+* [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html)
+* [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html)
+* [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html)
+* [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html)
 
 ## Category Axis
 
-The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
+The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an index-based axis that plots values based on the index of the data point collection. The points are equally spaced here.
 
 {% tabs %}
 
@@ -32,7 +32,8 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -42,8 +43,8 @@ The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 SfPolarChart chart = new SfPolarChart();
 chart.PrimaryAxis = new CategoryAxis();
 chart.SecondaryAxis = new NumericalAxis();
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -66,7 +67,8 @@ The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -74,11 +76,12 @@ The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Char
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 chart.PrimaryAxis = new NumericalAxis();
 chart.SecondaryAxis = new NumericalAxis();
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -87,9 +90,9 @@ chart.SecondaryAxis = new NumericalAxis();
 
 ### Customizing the range
 
-[Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
+[Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of the axis are used for setting the maximum and minimum values of the axis range, respectively. The [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Interval) property is used to define the intervals for the axis.
 
-N> If  minimum or maximum value is set, the other value is calculated by default internally.
+N> If the minimum or maximum value is set, the other value is calculated by default internally.
 
 {% tabs %}
 
@@ -102,7 +105,8 @@ N> If  minimum or maximum value is set, the other value is calculated by default
             Maximum="90"
             Interval="20"/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -110,15 +114,16 @@ N> If  minimum or maximum value is set, the other value is calculated by default
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 chart.SecondaryAxis = new NumericalAxis()
 {
     Maximum = 90,
     Minimum = 10,
     Interval = 20,
 };
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -127,7 +132,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## DateTime Axis
 
-The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot the chart with `DateTime` values.
+The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot the chart with `DateTime` values. The [Interval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Interval) and [IntervalType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_IntervalType) properties can be used to customize the intervals.
 
 {% tabs %}
 
@@ -145,7 +150,8 @@ The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
     <chart:SfPolarChart.SecondaryAxis>
         <chart:NumericalAxis/>
     </chart:SfPolarChart.SecondaryAxis>
-    ...
+
+    <!-- Configure additional chart elements -->
 </chart:SfPolarChart>
 
 {% endhighlight %}
@@ -162,8 +168,8 @@ chart.PrimaryAxis = new DateTimeAxis()
 };
 
 chart.SecondaryAxis = new NumericalAxis();
-...
 
+// Configure additional chart elements
 {% endhighlight %}
 
 {% endtabs %}
@@ -179,7 +185,8 @@ The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.SecondaryAxis>
         <chart:LogarithmicAxis/>
     </chart:SfPolarChart.SecondaryAxis>
@@ -190,7 +197,8 @@ The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ch
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-. . .
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 chart.SecondaryAxis.Add(secondaryAxis);
 
@@ -209,7 +217,8 @@ The Axis interval can be customized using the [Interval](https://help.syncfusion
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.SecondaryAxis>
         <chart:LogarithmicAxis Interval="10"/>
     </chart:SfPolarChart.SecondaryAxis>
@@ -220,7 +229,8 @@ The Axis interval can be customized using the [Interval](https://help.syncfusion
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     Interval = 10,
@@ -240,7 +250,8 @@ The range of the logarithmic axis can be customized using the [Minimum](https://
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.SecondaryAxis>
         <chart:LogarithmicAxis Minimum="100" Maximum="10000"/>
     </chart:SfPolarChart.SecondaryAxis>
@@ -251,7 +262,8 @@ The range of the logarithmic axis can be customized using the [Minimum](https://
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     Minimum = 100,
@@ -272,7 +284,8 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
 {% highlight xaml %}
 
 <chart:SfPolarChart>
-    ...
+
+    <!-- Configure additional chart elements -->
     <chart:SfPolarChart.SecondaryAxis>
         <chart:LogarithmicAxis LogarithmicBase="2"/>
     </chart:SfPolarChart.SecondaryAxis>
@@ -283,7 +296,8 @@ The logarithmic axis base can be customized using the [LogarithmicBase](https://
 {% highlight c# %}
 
 SfPolarChart chart = new SfPolarChart();
-...
+
+// Configure additional chart elements
 LogarithmicAxis secondaryAxis = new LogarithmicAxis()
 {
     LogarithmicBase = 2,
@@ -308,6 +322,6 @@ The [ActualRangeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The argument contains the following information:
 
-* [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of axis label.
-* [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
+* [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Label) - Used to get or set the text of the axis label.
+* [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of the label.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.

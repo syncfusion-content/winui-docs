@@ -78,7 +78,7 @@ this.Content = chart;
 
 ### Dashed line
 
-The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_StrokeDashArray) property of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) is used to render the line series with dashes. Odd value is considered as rendering size and even value is considered as gap.
+The [StrokeDashArray](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_StrokeDashArray) property of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html) is used to render the line series with dashes. The odd value is considered as the rendering size and the even value is considered as the gap.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ this.Content = chart;
 
 ## Step Line Chart 
 
-The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points resulting in a step-like progression.
+The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points, resulting in a step-like progression.
 
 {% tabs %}
 
@@ -218,7 +218,7 @@ N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui
 
 ## Spline Chart 
 
-The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
+The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles the line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
 
 {% tabs %}
 
@@ -244,6 +244,12 @@ The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
             ItemsSource="{Binding Data}" 
             YBindingPath="Year2011"/>
     </chart:SfCartesianChart.Series>
+
+## See Also
+
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
+* [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251)
+* [How to create a WinUI Spline Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11901)
 </chart:SfCartesianChart>
 
 {% endhighlight %}

@@ -64,7 +64,7 @@ N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/wi
 
 ## Entering into edit mode
 
-You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTap) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ The editing changes in a row will be committed only when user move to next row o
 
 [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?view=net-6.0) - Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
 
-[CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?view=net-6.0https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?view=net-6.0) - Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
+[CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?view=net-6.0) - Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
 
 [EndEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?view=net-6.0) - Gets called when user move to the next row or press <kbd>Enter</kbd> key  to commit changes in underlying data object since last `BeginEdit` call. 
 

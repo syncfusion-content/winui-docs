@@ -12,7 +12,7 @@ keywords: winui bubblechart, winui sfcartesianchart bubble chart, winui bubble c
 
 ## Bubble Chart
 
-The [BubbleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles, whose areas are proportional to the quantities. The size of the bubble series is relative proportional to the value bind with the series using the [Size](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_Size)  property. You can set the constraints on this size using the [MinimumRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MinimumRadius) and [MaximumRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MaximumRadius) properties.
+The [BubbleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles, whose areas are proportional to the quantities. The size of the bubble series is relative proportional to the value bind with the series using the [Size](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_Size) property. You can set the constraints on this size using the [MinimumRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MinimumRadius) and [MaximumRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MaximumRadius) properties.
 
 To render a bubble series, create an instance of [BubbleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) and add to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) as shown in the following code.
 
@@ -36,7 +36,8 @@ To render a bubble series, create an instance of [BubbleSeries](https://help.syn
         Size="Size" 
         MinimumRadius="5" 
         MaximumRadius="10"/>
-    . . .
+
+    <!-- Configure additional chart elements -->
 </chart:SfCartesianChart>
 
 {% endhighlight %}
@@ -49,7 +50,8 @@ chart.XAxes.Add(xAxis);
 
 NumericalAxis yAxis = new NumericalAxis();
 chart.YAxes.Add(yAxis);
-. . .
+
+// Configure additional chart elements
 BubbleSeries series = new BubbleSeries()
 {
     ItemsSource = new ViewModel().Data,
@@ -61,7 +63,6 @@ BubbleSeries series = new BubbleSeries()
 };
 
 chart.Series.Add(series);
-...
 
 {% endhighlight %}
 
