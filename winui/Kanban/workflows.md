@@ -103,7 +103,7 @@ public class ViewModel
     private ObservableCollection<KanbanModel> GetTaskDetails()
     {
         var taskDetails = new ObservableCollection<KanbanModel>();
-        string path = @"ms-apps:///";
+        string path = @"ms-appx:///";
 
         KanbanModel taskDetail = new KanbanModel();
         taskDetail.Title = "UWP Issue";
@@ -114,7 +114,7 @@ public class ViewModel
         taskDetail.Tags = new List<string>() { "Bug Fixing" };
         taskDetail.Image = new Image
         {
-            Source = new BitmapImage(new Uri("ms-apps:///Assets/Kanban/People_Circle1.png"))
+            Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
         };
 
         taskDetails.Add(taskDetail);
