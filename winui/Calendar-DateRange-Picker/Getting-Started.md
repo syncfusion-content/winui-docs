@@ -69,7 +69,7 @@ To add the `Calendar DateRange Picker` control manually in C#, follow these step
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 15 16" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
 
 using Syncfusion.UI.Xaml.Calendar;
 
@@ -123,7 +123,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 You can change the selected date range interactively by selecting from the drop-down calendar and you can also get the selected date range from the `SelectedRange` property.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="4" %}
 
 <Window
     ...
@@ -301,7 +301,7 @@ sfCalendarDateRangePicker.SelectedDateRangeChanged += SfCalendarDateRangePicker_
 You can handle the event as shown below.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" %}
 
 using Syncfusion.UI.Xaml.Calendar;
 

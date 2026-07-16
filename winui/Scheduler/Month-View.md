@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Month View in WinUI Scheduler control | Syncfusion
 description: Learn here all about customizing the appearance and changing the date format for the Month view in Syncfusion WinUI Scheduler (SfScheduler) control, and more.

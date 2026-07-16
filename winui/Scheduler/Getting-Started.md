@@ -362,7 +362,7 @@ Map the properties of the `Meeting` class to our `WinUI Scheduler` control by us
     </scheduler:SfScheduler>
 </Window>
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="3 5 14" %} 
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="1 3 12" %} 
 using Syncfusion.UI.Xaml.Scheduler;
 
 AppointmentMapping appointmentMapping = new AppointmentMapping();

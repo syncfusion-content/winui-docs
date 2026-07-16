@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Timeline Views in WinUI Scheduler control | Syncfusion
 description: Learn here all about customizing the Timeline day, week, workweek, and month views settings in Syncfusion WinUI Scheduler (SfScheduler) control, and more.
@@ -39,7 +39,7 @@ If the timeInterval value is modified (in minutes), change the time labels forma
 Customize the interval width of timeslots in the Timeline views by setting the [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property is applicable to all timeline views. By default, its value is 50 for the `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views, and 150 for the `TimelineMonth` view.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -69,7 +69,7 @@ By default, the `WinUI Scheduler` considers weekdays from Monday to Friday as wo
 The `TimelineWorkWeek` view displays exactly the defined working days in the Scheduler control, whereas other views display all the days.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -97,7 +97,7 @@ this.Schedule.TimelineViewSettings.NonWorkingDays = new ObservableCollection<Day
 The default values for `StartHour` and `EndHour` are 0 and 24, respectively, to show all the time slots in a timeline view. Set the [StartHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_EndHour) properties of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) to show only the required time duration for users. Set the `StartHour` and `EndHour` values to display the required time duration. The `StartHour` and `EndHour` properties do not apply to the `TimelineMonth` view.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8" %}
 
 <Window
     ...
@@ -135,7 +135,7 @@ If a custom `TimeInterval` is given, the number of time slots calculated based o
 Change the day's count of timeslots in the timeline view by setting the [DaysCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_DaysCount) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property is only applicable for the `TimelineDay` view. By default, its value is set to `1`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -354,7 +354,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/WinUI-Scheduler
 The WinUI scheduler time interval width can be adjusted based on the screen height by changing the value of [TimeIntervalSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeIntervalSize) property to `-1.` It will auto-fit to the screen width in timeline day, timeline week and timeline workweek views.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -382,7 +382,7 @@ this.Schedule.TimelineViewSettings.TimeIntervalSize = -1;
 Customize the size of the time ruler view where the labels mentioning the time are placed by using the [TimeRulerSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_TimeRulerSize) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). This property is applicable to `TimelineDay`, `TimelineWeek`, and `TimelineWorkWeek` views.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -464,7 +464,7 @@ Customize the default appearance of the view header in the timeline views by set
 Customize the date and day format of the ViewHeader by using the [ViewHeaderDateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimeSlotViewSettings_ViewHeaderDateFormat) and [ViewHeaderDayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) properties of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -492,7 +492,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderDateFormat = "dd-MMMM";
 Customize the height of the ViewHeader in the timeline views by setting the [ViewHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) in SfScheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -520,7 +520,7 @@ this.Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 Customize the default appearance of the view header by setting the [ViewHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html) in SfScheduler.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="37" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="36" %}
 
 <Window
     ...
@@ -570,7 +570,7 @@ Customize the default appearance of the view header by setting the [ViewHeaderTe
 Customize the height of the appointment in `TimelineViews` by using the [TimelineAppointmentHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_TimelineAppointmentHeight) property of the [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimeSlotViewSettings.html). By default, its value is 50 for the `TimelineWeek`, `TimelineWorkWeek`, and `TimelineDay` views, and 20 for the `TimelineMonth` view.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -599,7 +599,7 @@ this.Schedule.TimelineViewSettings.TimelineAppointmentHeight = 100;
 To enhance interaction with a Scheduler's appointments, you can customize the spacing between appointments and the bottom border of their cells by using the [CellBottomPadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html#Syncfusion_UI_Xaml_Scheduler_TimelineViewSettings_CellBottomPadding) property of [TimelineViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.TimelineViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...

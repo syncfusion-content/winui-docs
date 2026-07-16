@@ -32,7 +32,7 @@ You can select the required `ClockIdentifier` value from the below formats.
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -62,7 +62,7 @@ You can change the flow direction of the `Time Picker` layout from right to left
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -92,7 +92,7 @@ You can localize the `Time Picker` using the `Language` property. The default va
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -125,7 +125,7 @@ You can edit and display the selected time with various formatting like hour, mi
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -165,7 +165,7 @@ For example,
 </Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -195,7 +195,7 @@ If you want to perform the validation after the user completely entering their t
 </Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -225,7 +225,7 @@ By default, the clear button `X` will be displayed in the editor of the `Time Pi
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 

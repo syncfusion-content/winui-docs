@@ -65,7 +65,7 @@ To add the `Time Picker` control manually in C#, follow the below steps.
 
 {% capture codesnippet2 %}
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 14 15" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="1 15 16" %}
 
 using Microsoft.UI.Xaml;
 using Syncfusion.UI.Xaml.Editors;
@@ -101,7 +101,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can set or change the selected time programmatically by using [`SelectedTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_SelectedTime) property. If you do not assign any value for the `SelectedTime` property, the `Time Picker` will automatically assign the current system time as `SelectedTime`.
 
 {% tabs %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="5" %}
 
 using System;
 using Syncfusion.UI.Xaml.Editors;
@@ -168,7 +168,7 @@ If you want to set null value for the `Time Picker`, set the [`AllowNull`](https
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -201,7 +201,7 @@ The `Header` property is used to display the title for the `TimePicker` control.
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -256,7 +256,7 @@ The `Description` support is used to display the content beneath the control as 
 
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -286,7 +286,7 @@ You can prompt the user with some information by using the [`PlaceholderText`](h
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5 6" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -321,7 +321,7 @@ You will be notified when the selected time changes in the `Time Picker` by usin
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 

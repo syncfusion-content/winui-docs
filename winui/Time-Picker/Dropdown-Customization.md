@@ -70,7 +70,7 @@ N> To open a dropdown time spinner, press the `Alt` + `Down Arrow` keys.
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -102,7 +102,7 @@ N> If you change the dropdown alignment by using `DropDownPlacement` property an
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="5" %}
 
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Syncfusion.UI.Xaml.Editors;
@@ -133,7 +133,7 @@ You can open or close the dropdown time spinner programmatically by setting [`Is
 </Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -163,7 +163,7 @@ You can change the height of the dropdown time spinner by using the [`DropDownHe
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
@@ -195,7 +195,7 @@ N> When the `DropDownHeight` and `VisibleItemsCount` properties are set, the `Vi
 </Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 
 using Syncfusion.UI.Xaml.Editors;
 
