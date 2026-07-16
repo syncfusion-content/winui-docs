@@ -396,4 +396,4 @@ You can change the renderer of unbound column by removing the predefined cell ty
 
 ## Templating unbound column
 
-You can load any WinUI control in the display mode for `GridUnboundColumn` by setting [GridColumn.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) property. In edit mode, corresponding editor will be loaded based on column type.
+You can load any WinUI control in the display mode for `GridUnboundColumn` by setting [GridColumn.CellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplate) property. In edit mode, corresponding editor will be loaded based on column type.

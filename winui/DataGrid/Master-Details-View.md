@@ -1080,7 +1080,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
                        ItemsSource="{Binding Employees}" />
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.ShowDetailsViewIndentCell= False;
+dataGrid.ShowDetailsViewIndentCell= false;
 {% endhighlight %}
 {% endtabs %}
 
