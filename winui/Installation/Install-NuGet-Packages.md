@@ -2,8 +2,8 @@
 layout: post
 title: Install Syncfusion WinUI NuGet packages - Syncfusion
 description: Learn here about how to install Syncfusion WinUI NuGet packages from Package manager and NuGet manager.
-platform: WinUI
-control: Installation and Deployment
+platform: winui
+control: Essential Studio
 documentation: ug
 ---
 

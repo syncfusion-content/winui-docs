@@ -2,8 +2,8 @@
 layout: post
 title: Installation Errors in WinUI - Syncfusion
 description: Learn here about the common installation errors and solution to those errors in Syncfusion WinUI Components installation.
-platform: WinUI
-control: Installation and Deployment
+platform: winui
+control: Essential Studio
 documentation: ug
 ---
 

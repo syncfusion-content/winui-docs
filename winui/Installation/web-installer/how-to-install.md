@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion WinUI web installer - Syncfusion
 description: Learn here about how to install Syncfusion WinUI web installer after downloading from our Syncfusion website.
-platform: WinUI
+platform: winui
 control: Installation and Deployment
 documentation: ug
 ---
