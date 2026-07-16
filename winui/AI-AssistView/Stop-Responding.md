@@ -128,7 +128,7 @@ The **StopRespondingTemplate** property in SfAIAssistView defines the UI templat
         </DataTemplate>
    </Grid.Resources>
    <syncfusion:SfAIAssistView x:Name="sfAIAssistView"
-                              EnableStopResponding= "True"
+                              EnableStopResponding="True"
                               StopRespondingTemplate="{StaticResource stopRespondingTemplate}">
    </syncfusion:SfAIAssistView>
 </Grid>

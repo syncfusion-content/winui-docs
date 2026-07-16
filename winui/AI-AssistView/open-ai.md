@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TypingIndicator in WinUI AI AssistView control | Syncfusion
-description: Learn about how to connect the AI AssistView control with OpenAI and chat gpt conversation experience.
+title: OpenAI connection for WinUI AI AssistView control | Syncfusion
+description: Learn about how to connect the AI AssistView control with OpenAI and the ChatGPT conversation experience.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # OpenAI connection for AI AssistView
 
-This section explains about how to connect the AI AssistView with OpenAI.
+This section explains how to connect the AI AssistView with OpenAI.
 
 ## Creating an application with NuGet reference.
 
@@ -34,7 +34,7 @@ To connect with OpenAI, we need the following details.
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>

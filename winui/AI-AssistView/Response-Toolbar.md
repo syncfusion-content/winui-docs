@@ -7,7 +7,7 @@ control: AI AssistView
 documentation: ug
 ---
 
-# Response Toolbar in WinUI AI AssistView 
+# Response Toolbar in WinUI AI AssistView
 
 The [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
 

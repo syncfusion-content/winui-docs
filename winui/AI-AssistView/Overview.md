@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About .NET WinUI AI AssistView control | Syncfusion
-description: Learn about the introduction of Syncfusion WinUI AI AssistView Control (SfAvatarView) with essential features and more.
+description: Learn about the introduction of Syncfusion WinUI AI AssistView Control (SfAIAssistView) with essential features.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
