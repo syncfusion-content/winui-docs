@@ -7,15 +7,12 @@ control: SfKanban
 documentation: ug
 ---
 
-# Workflows in .NET WinUI Kanban Board (SfKanban)
+# Workflows in WinUI Kanban (SfKanban) control
 
 The [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) workflow allows you to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 
 To define the flow of card transitions between different states, create an instance of the [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class and add it to the [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property of the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to define the workflow for each column. The [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property accepts a collection of [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) objects. The [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class contains the following properties to specify the source and target categories.
 
-N>
-* A category that does not have a [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) entry can be moved freely to any other category.
-* When [AllowedTransitions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) is an empty list, the card cannot be moved out of that category.
 * The [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) properties of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) restrict drag-and-drop at the column level, independent of the workflow. A drag blocked by these properties takes precedence over any workflow rule.
 
 * [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) – Used to define the source category or state.

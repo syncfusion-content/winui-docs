@@ -819,3 +819,6 @@ public class ViewModel
 {% endtabs %}
 
 ![card-tool-tip-customization-support-in-winui-kanban](images/cards/card-tool-tip-customization-support-in-winui-kanban.gif)
+
+N>
+* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true`.
