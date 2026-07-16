@@ -142,6 +142,8 @@ public class ViewModel
 
 You can also define the exact width for the columns using [ColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnWidth) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
+N> When both [ColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnWidth) and the [MinimumColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_MinimumColumnWidth)/[MaximumColumnWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_MaximumColumnWidth) properties are set, the effective column width will be constrained within the defined minimum and maximum bounds.
+
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
 
@@ -659,7 +661,7 @@ public class ViewModel
 
 ![multi-category-columns-in-winui-kanban](images/columns/multi-category-columns-in-winui-kanban.png)
 
-## Customize columns header appearance
+## Customize column header appearance
 
 The WinUI Kanban control allows you to customize the header text, column header template, and more.
 
@@ -1096,7 +1098,7 @@ public class ViewModel
 
 ## Column drag and drop
 
-Columns can be reordered in the .NET WinUI Kanban control using built-in drag-and-drop.
+Columns can be reordered in the WinUI Kanban control using built-in drag-and-drop.
 Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
 
 {% tabs %}
@@ -1154,7 +1156,7 @@ public class ViewModel
 
 ## Card drag and drop
 
-Cards can be dragged and dropped across columns, within columns, or across swimlane rows to modify the card's status. To enable drag-and-drop functionality within the kanban, set the [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to `true`. The default value is `true`.
+Cards can be dragged and dropped across columns, within columns, or across swimlane rows to modify the card's status. To enable drag-and-drop functionality within the kanban, set the [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to `true`. By default, both the [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop?view=winrt-26100#windows-ui-xaml-uielement-allowdrop) properties are set to `true`.
 
 ![card-drag-drop-in-winui-kanban](images/columns/card-drag-drop-in-winui-kanban.gif)
 
@@ -1290,7 +1292,7 @@ public class ViewModel
 
 ![disable-card-drag-drop-in-winui-kanban](images/columns/disable-card-drag-drop-in-winui-kanban.gif)
 
-### Placeholder in WinUI Kanban control
+### Placeholders in WinUI Kanban control
 
 The placeholders in the WinUI Kanban control visually indicate the exact position where a card is dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
 
@@ -1448,7 +1450,7 @@ public class ViewModel
 
 The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumCount) and [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumCount) properties in [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html).
 
-The Kanban control also supports built-in error bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process.
+The Kanban control also supports built-in indicator bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process.
 
 {% tabs %}
 {% highlight XAML hl_lines="4 5 6" %}
