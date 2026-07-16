@@ -22,7 +22,7 @@ By using the [TypingIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.U
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
@@ -132,4 +132,4 @@ By using the [TypingIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.U
 {% endhighlight %}
 {% endtabs %}
 
-![Suggestion feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_typingindicator.gif)
+![TypingIndicator feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_typingindicator.gif)

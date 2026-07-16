@@ -30,7 +30,7 @@ This section explains the steps required to add the WinUI [SfAIAssistView](https
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
@@ -63,11 +63,11 @@ Create a simple chat collection as shown in the following code example in a new 
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Chat"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"  
+      <syncfusion:SfAIAssistView   CurrentUser="{Binding CurrentUser}"
                                    Messages="{Binding Chats}"/>
     </Grid>
 </Page>
