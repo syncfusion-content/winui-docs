@@ -7,11 +7,11 @@ control: SfKanban
 documentation: ug
 ---
 
-# Card Item Sorting in .NET WinUI Kanban (SfKanban)
+# Card Item Sorting in WinUI Kanban (SfKanban)
 
-The Kanban control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
+The Kanban control supports customizable card sorting within columns based on specific data fields such as `Priority`, `Index`, or `Category`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
 
-* [SortingMappingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingMappingPath) - Used to map the sorting field to a property name in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) or `CustomModel`. The default value is `string.Empty`, in which case the cards will not be sorted.
+* [SortingMappingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingMappingPath) - Used to map the sorting field to a property name in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) or `CustomModel`. The default value is `string.Empty`, in which case the cards will not be sorted. The mapped property must be a comparable type (e.g., `string`, `int`, `DateTime`).
 * [SortingOrder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingOrder) - Used to define the direction of cards sorting within each column.
    * [Ascending](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanSortingOrder.html#Syncfusion_UI_Xaml_Kanban_KanbanSortingOrder_Ascending) - Cards with lower values appear first.
    * [Descending](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanSortingOrder.html#Syncfusion_UI_Xaml_Kanban_KanbanSortingOrder_Descending) - Cards with higher values appear first. 
@@ -168,7 +168,7 @@ N>
 
 ### Index-Based Sorting
 
-The index-based approach in the Kanban control allows cards to be dropped at precise positions within a column. Upon dropping, the card's index is updated based on the index of the previous card. Additionally, the index of the next card is incremented relative to the drop position to maintain continuous ordering.
+The index-based approach in the Kanban control allows cards to be dropped at precise positions within a column. Upon dropping, the card's index is updated based on the index of the previous card. Additionally, the next card's index is incremented to maintain continuous ordering.
 
 N> The [SortingMappingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingMappingPath) property must be mapped to a valid numeric property name from the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) to enable index-based sorting updates.
 
@@ -265,7 +265,7 @@ private void OnKanbanCardDragStarting(object? sender, KanbanCardDragStartingEven
     this.selectedCard = e.Card;
 }
 
-private void OnCardDrop(object? sender, KanbanDragEndEventArgs e)
+private void OnCardDrop(object? sender, KanbanCardDropEventArgs e)
 {
     this.targetColumn = e.TargetColumn;
     if (this.kanban == null)

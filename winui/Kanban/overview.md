@@ -15,7 +15,7 @@ The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to vi
 
 ## Key features
 
-* **Work-in-progress (WIP) limit**: Users can set task limits per stage, preventing overload and improving efficiency.
+* **Work-in-Progress (WIP) limit**: Users can set task limits per stage, preventing overload and improving efficiency.
 
 <img src="images/overview/work-in-progress-limit-in-winui-kanban.png" alt="work-in-progress-limit-in-winui-kanban" width="500">
 
@@ -28,7 +28,7 @@ The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to vi
 
 ![swim-lanes-in-winui-kanban](images/overview/swim-lanes-in-winui-kanban.png)
 
-* **Interaction**: Includes card tapping, column expansion/collapse, and drag-and-drop.
+* **Interaction**: Includes card tapping, column expand/collapse, and drag-and-drop.
 * **Events**: Triggered when cards are dragged, repositioned, or tapped.
 * **Appearance customization**: Customize each element using templates, e.g., column headers, cards, and swim lane headers.
 

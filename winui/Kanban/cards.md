@@ -31,7 +31,7 @@ new KanbanModel()
     Description = "Crosshair label template not visible in UWP",
     Category = "Open",
     IndicatorColorKey = "High",
-    Tags = new List() { "Bug Fixing" },
+    Tags = new List<string>() { "Bug Fixing" },
     Image = new Image
     {
         Source = new BitmapImage(new Uri("ms-appx:///Assets/Kanban/People_Circle1.png"))
@@ -61,8 +61,9 @@ The following code snippet defines the colors for each key.
 
 {% highlight C# hl_lines="2 3 4 5 6" %}
 
+// Add using Windows.UI; for Colors access.
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
-List<KanbanColorMapping> indicatorColorPalette = new List();
+List<KanbanColorMapping> indicatorColorPalette = new List<KanbanColorMapping>();
 indicatorColorPalette.Add(new KanbanColorMapping() { Key="Low", Color = Colors.Blue });
 indicatorColorPalette.Add(new KanbanColorMapping() { Key= "Normal", Color = Colors.Green });
 indicatorColorPalette.Add(new KanbanColorMapping() { Key= "High", Color = Colors.Red });
@@ -524,11 +525,11 @@ N> The `DataContext` for both the [CardTemplate](https://help.syncfusion.com/cr/
 
 ## Cards tooltip
 
-An interactive tooltip provides additional details about the cards on hovering the mouse over them.
+An interactive tooltip provides additional details about the cards when the mouse hovers over them.
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
+To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false`. To provide users with additional information or context about cards, simply set this property to `true`.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -813,4 +814,4 @@ public class ViewModel
 ![card-tool-tip-customization-support-in-winui-kanban](images/cards/card-tool-tip-customization-support-in-winui-kanban.gif)
 
 N>
-* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true.`
+* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true`.

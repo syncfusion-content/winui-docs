@@ -11,7 +11,9 @@ documentation: ug
 
 The [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) workflow allows to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 
-To define the flow of card transitions between different states, create an instance of the [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class and add it to the [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property of the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to define the workflow for each column. The [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class contains the following properties to specify the source and target categories.
+To define the flow of card transitions between different states, create an instance of the [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class. Add it to the [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property of the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to define the workflow for each column. The [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class contains the following properties to specify the source and target categories.
+
+N> When no [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) collection is defined, cards can be moved freely between any columns by default.
 
 * [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) – Used to define the source category or state.
 * [AllowedTransitions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) – Used to define the list of categories or states to which a card can be moved from the current category.
@@ -37,6 +39,12 @@ To define the flow of card transitions between different states, create an insta
                     <x:String>Won't Fix</x:String>
                 </kanban:KanbanWorkflow.AllowedTransitions>
             </kanban:KanbanWorkflow>
+            <kanban:KanbanWorkflow Category="Postponed">
+                <kanban:KanbanWorkflow.AllowedTransitions>
+                    <x:String>Open</x:String>
+                    <x:String>In Progress</x:String>
+                </kanban:KanbanWorkflow.AllowedTransitions>
+            </kanban:KanbanWorkflow>
         </kanban:SfKanban.Workflows>
     <kanban:SfKanban.IndicatorColorPalette>
         <kanban:KanbanColorMapping Key="Low" Color="#0F7B0F"/>
@@ -58,6 +66,7 @@ this.kanban.Workflows = new List<KanbanWorkflow>()
 {
     new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress" } },
     new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Closed", "Won't Fix" } },
+    new KanbanWorkflow() { Category = "Postponed", AllowedTransitions ={ "Open", "In Progress" } },
 };
 
 {% endhighlight %}
