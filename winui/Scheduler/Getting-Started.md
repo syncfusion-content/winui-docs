@@ -402,4 +402,3 @@ Schedule.FirstDayOfWeek = DayOfWeek.Monday;
 
 ![change-first-day-of-week-in-winui-scheduler](GettingStarted_Images/change-first-day-of-week-in-winui-scheduler.png)
 
-N> Looking for the full WinUI Scheduler component overview, features, and pricing? Visit the [WinUI Scheduler](https://www.syncfusion.com/scheduler-sdk/winui-scheduler) page.

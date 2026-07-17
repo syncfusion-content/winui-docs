@@ -501,7 +501,7 @@ The following chart is created as a result of the previous codes.
 
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_chart.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted). Looking for the full WinUI Charts component overview, features, and pricing? Visit the [WinUI Charts](https://www.syncfusion.com/winui-controls/cartesian-charts) page.
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted).
 ## See Also
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)

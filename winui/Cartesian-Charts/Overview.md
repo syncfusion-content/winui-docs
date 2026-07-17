@@ -29,7 +29,6 @@ The [WinUI Chart](https://www.syncfusion.com/winui-controls/cartesian-charts) pr
 
 * User-friendly and provides various options for you to customize chart features like axis, legend and data markers.
 
-N> Looking for the full WinUI Charts component overview, features, and pricing? Visit the [WinUI Charts](https://www.syncfusion.com/winui-controls/cartesian-charts) page.
 
 ## See Also
 
