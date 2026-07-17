@@ -53,7 +53,7 @@ You should initiate an evaluation if you have already obtained our components th
 2. To access this page, you must sign up or log in with your Syncfusion account.
 3. Begin your trial by selecting the WinUI product. 
 
-   > N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
+   N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
 4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/winui/licensing/how-to-generate) here at any time before the trial period expires (as shown in the screenshot below).
 
@@ -79,7 +79,7 @@ You should initiate an evaluation if you have already obtained our components th
    
 8. After downloading, the Syncfusion WinUI web installer can be unlocked using your Syncfusion registered login credential.
 
-   > N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via the web installer.
+   N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via the web installer.
 	
 
 Refer to the [**web installer**](https://help.syncfusion.com/winui/installation/web-installer/how-to-install) link for step-by-step installation guidelines.	
