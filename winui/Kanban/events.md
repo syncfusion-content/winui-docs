@@ -11,7 +11,7 @@ documentation: ug
 
 ## ColumnDragStarting
 
-The [`ColumnDragStarting`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event occurs when a column begins to be dragged. We can get the following details from the [`ColumnDragStarting`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event.
+The [`ColumnDragStarting`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event occurs when a column begins to be dragged. You can retrieve the following details from the [`ColumnDragStarting`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragStarting) event.
 
 [`Column`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragStartingEventArgs_Column) - Returns the source column where the column is being dragged.
 [`ColumnIndex`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragStartingEventArgs_ColumnIndex) - Returns the index of the dragged column within the Kanban column collection.
@@ -75,7 +75,7 @@ public class ViewModel
 
 ## ColumnDragOver
 
-The [`ColumnDragOver`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragOver) event occurs when a column is being dragged over another column. We can get the following details from the [`ColumnDragOver`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragOver) event.
+The [`ColumnDragOver`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragOver) event occurs when a column is being dragged over another column. You can retrieve the following details from the [`ColumnDragOver`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDragOver) event.
 
 [`SourceColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragOverEventArgs_SourceColumn) - Returns the column where the drag operation originated.
 [`CurrentColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumnDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDragOverEventArgs_CurrentColumn) - Returns the current column over which the dragged column is positioned.
@@ -114,7 +114,7 @@ private void OnKanbanColumnDragOver(object sender, KanbanColumnDragOverEventArgs
     var sourceColumn = e.SourceColumn;
     var currentColumn = e.CurrentColumn;
     int previousColumnIndex = e.PreviousColumnIndex;
-    int currentColumnIndex = e.CurrentColumnIndex
+    int currentColumnIndex = e.CurrentColumnIndex;
 }
 
 {% endhighlight %}
@@ -143,7 +143,7 @@ public class ViewModel
 
 ## ColumnDrop
 
-The [`ColumnDrop`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDrop) event occurs when a dragged column is dropped into a new position. We can get the following details from the [`ColumnDrop`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDrop) event.
+The [`ColumnDrop`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDrop) event occurs when a dragged column is dropped into a new position. You can retrieve the following details from the [`ColumnDrop`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnDrop) event.
 
 [`SourceColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumnDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDropEventArgs_SourceColumn) - Returns the column from which the drag operation originated.
 [`PreviousColumnIndex`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumnDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnDropEventArgs_PreviousColumnIndex) - Returns the column index before the drop.
@@ -182,7 +182,7 @@ private void OnKanbanColumnDrop(object sender, KanbanColumnDropEventArgs e)
     var sourceColumn = e.SourceColumn;
     var previousColumnIndex = e.PreviousColumnIndex;
     int targetColumnIndex = e.TargetColumnIndex;
-    int targetColumn = e.TargetColumn;
+    var targetColumn = e.TargetColumn;
 }
 
 {% endhighlight %}
@@ -209,13 +209,13 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## DragStarting
+## CardDragStarting
 
-The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event occurs when a card begins to be dragged. We can get the following details from the [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event.
+The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event occurs when a card begins to be dragged. You can retrieve the following details from the [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event.
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
 * [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
-* [KeepCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_KeepCard) - Determines whether the original card remains in the source column during a drag operation. When set to `true`, the card stays in its original column while being dragged, allowing repeated drag-and-drop actions without relocating the card. A preview of the card is generated during the drag.
+* [KeepCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_KeepCard) - Determines whether the original card remains in the source column during a drag operation. When set to `true`, the card stays in its original column while being dragged, allowing repeated drag-and-drop actions without relocating the card. A preview visual of the card is generated and follows the pointer during the drag; use this when you want to copy rather than move a card across columns.
 
 {% tabs %}
 {% highlight XAML hl_lines="3" %}
@@ -342,9 +342,9 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## DragOver
+## CardDragOver
 
-The [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragOver) event occurs when a card is being dragged over a column. We can get the following details from the [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragOver) event.
+The [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragOver) event occurs when a card is being dragged over a column. You can retrieve the following details from the [CardDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragOver) event.
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_Column) - Returns the column in which the card is currently being dragged.
 * [CurrentIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragOverEventArgs_CurrentIndex) - Returns the current index position of the card within its column.
@@ -480,9 +480,9 @@ public class ViewModel
 
 {% endtabs %}
 
-## Drop
+## CardDrop
 
-The [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event occurs when a dragged card is dropped into a column. We can get the following details from the [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event.
+The [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event occurs when a dragged card is dropped into a column. You can retrieve the following details from the [CardDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDrop) event.
 
 * [SourceColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_SourceColumn) - Returns the column from which the user drags the card.
 * [PreviousCardIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDropEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDropEventArgs_PreviousCardIndex) - Returns the integer value that indicates the previous card index while dragging into the next column.
@@ -630,7 +630,7 @@ public class ViewModel
 
 ## CardTapped
 
-The [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event occurs when the card is tapped. We can get the following details from the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event.
+The [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event occurs when the card is tapped. You can retrieve the following details from the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event.
 
 * [SelectedCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardTappedEventArgs_SelectedCard) - Returns the instance of the card that was tapped.
 * [SelectedColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardTappedEventArgs_SelectedColumn) - Returns the instance of the column containing the tapped card.
@@ -766,7 +766,7 @@ public class ViewModel
 
 ## Command
 
-Kanban commands allow to map [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to command which supports the MVVM (Model-View-ViewModel) pattern.
+Kanban commands allow mapping the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to a command which supports the MVVM (Model-View-ViewModel) pattern.
 
 ### CardTappedCommand
 
@@ -777,7 +777,7 @@ The [CardTappedCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 <kanban:SfKanban x:Name="kanban"
                  ItemsSource="{Binding TaskDetails}"
-                 CardTappedCommand="KanbanCardTappedCommand">
+                 CardTappedCommand="{Binding CardTappedCommand}">
     <kanban:SfKanban.DataContext>
         <local:ViewModel/>
     </kanban:SfKanban.DataContext>

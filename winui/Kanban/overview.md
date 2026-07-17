@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of WinUI Kanban (SfKanban)
 
-The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to visualize workflows at each stage of completion. It enables clear planning and offers a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
+The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to visualize workflows at each stage of completion, enabling clear planning and a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
 
 ![overview-in-winui-kanban](images/overview/overview-in-winui-kanban.png)
 
@@ -19,7 +19,8 @@ The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to vi
 
 <img src="images/overview/work-in-progress-limit-in-winui-kanban.png" alt="work-in-progress-limit-in-winui-kanban" width="500">
 
-* **Cards**: Display tasks, progress, and priority.
+* **Cards**: Display tasks with title, description, assignee, priority indicator, tags, and tooltips for quick context.
+
 * **Columns**: Organize work into columns for stages like to-do, in-progress, and completed.
 
 ![columns-in-winui-kanban](images/overview/columns-in-winui-kanban.png)
@@ -29,8 +30,8 @@ The Syncfusion<sup>®</sup> WinUI Kanban control provides an efficient way to vi
 ![swim-lanes-in-winui-kanban](images/overview/swim-lanes-in-winui-kanban.png)
 
 * **Interaction**: Includes card tapping, column expansion/collapse, and drag-and-drop.
-* **Events**: Triggered when cards are dragged, repositioned, or tapped.
-* **Appearance customization**: Customize each element using templates, e.g., column headers, cards, and swim lane headers.
+* **Events**: Raised when cards are dragged, repositioned, or tapped, enabling custom workflow logic.
+* **Appearance customization**: Customize each element using templates, e.g., column headers, cards, swim lane headers, and tooltips.
 
 ![appearance-customization-in-winui-kanban](images/overview/appearance-customization-in-winui-kanban.png)
 
