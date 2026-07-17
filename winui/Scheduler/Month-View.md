@@ -16,7 +16,7 @@ By default, the month view of the scheduler displays the days of a specific mont
 The Scheduler month view displays a divided agenda view that is used to show the selected date's appointments below the month. Show the agenda view by setting the [ShowAgendaView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowAgendaView) property to `true` in the [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -49,7 +49,7 @@ N>
 Customize the month agenda view height from the Scheduler by using the [AgendaViewHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_AgendaViewHeight) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html). By default, the agenda view occupies 30% of the Scheduler height.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="11" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="10" %}
 
 <Window
     ...
@@ -86,7 +86,7 @@ Handle the Scheduler month view appointment display by using the [AppointmentDis
 * `Appointment`: Appointment subject will be displayed in the month cell.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -150,7 +150,7 @@ N>
 The month view of a Scheduler can be oriented in both horizontal and vertical directions. Change the direction of navigation using the [MonthNavigationDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthNavigationDirection) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html). By default, the month navigation direction is set to `Horizontal`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -179,7 +179,7 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = Orientation.Vertical;
 Customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_DateFormat) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html). By default, the month date format is `d.`
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -212,7 +212,7 @@ Customize the default appearance of the view header in the month view by setting
 Customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderDayFormat) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html). By default, the month view header day format is `dddd.`
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -241,7 +241,7 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "ddd";
 Customize the view header height by using the [ViewHeaderHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderHeight) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html). By default, the `ViewHeaderHeight` is `50.`
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -270,7 +270,7 @@ this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 Customize the default appearance of the month view header by using the [ViewHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_ViewHeaderTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 10 11 12 13 14 15 16 17" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines=" 8 9 10 11 12 13 14 15 16 " %}
 
 <Window
     ...
@@ -302,7 +302,7 @@ Customize the default appearance of the month view header by using the [ViewHead
 Customize the leading and trailing days visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_LeadingDaysVisibility) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_TrailingDaysVisibility) properties of `MonthViewSettings`. By default, `LeadingDaysVisibility` and `TrailingDaysVisibility` are set to `Visible`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 10" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 9" %}
 
 <Window
     ...
@@ -333,7 +333,7 @@ this.Schedule.MonthViewSettings.TrailingDaysVisibility = Visibility.Collapsed;
 The number of weeks visible in the month view can be changed by setting the [`NumberOfVisibleWeeks`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_NumberOfVisibleWeeks) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). By default, 6 weeks are visible.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
@@ -350,7 +350,6 @@ The number of weeks visible in the month view can be changed by setting the [`Nu
 {% endhighlight %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
 using Syncfusion.UI.Xaml.Scheduler;
-
 
 this.Schedule.ViewType = SchedulerViewType.Month;
 this.Schedule.MonthViewSettings.NumberOfVisibleWeeks = 3;
@@ -415,7 +414,7 @@ private ObservableCollection<DateTime> GetBlackoutDates()
 Display the week number of a year in the scheduler month view by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_ShowWeekNumber) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) to `true`. By default, it is set to `false`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
 
 <Window
     ...
@@ -482,9 +481,9 @@ The month cell appearance customization can be achieved by using the [MonthCellT
 Customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 10 11 12 13 14 15 16 17 18" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17" %}
 
-<Window
+<Window 
     ...
     xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
     <scheduler:SfScheduler x:Name="Schedule"
@@ -516,7 +515,7 @@ Customize the default appearance of the month cell by using the [MonthCellTempla
 The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month cell using the [MonthCellTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MonthCellTemplate). It lets to choose a different data template for each month’s cell, customizing the appearance of a particular month cell based on certain conditions.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="32" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="31" %}
 
 <Window
     ...
@@ -601,7 +600,7 @@ The month view appointments appearance customization can be achieved by using th
 Customize the default appearance of the month cell appointment by using the [AppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24"  %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23"  %}
 
 <Window
     ...
@@ -641,7 +640,7 @@ Customize the default appearance of the month view appointments by using the [Ap
 The `DataTemplateSelector` can choose a `DataTemplate` at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It lets to choose a different data template for each month’s cell, customizing the appearance of a particular appointment based on certain conditions.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="37" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="36" %}
 
 <Window
     ...
@@ -724,7 +723,7 @@ public class AppointmentTemplateSelector : DataTemplateSelector
 You can customize the default appearance of the "more appointments" indicator in a month cell by using the [MoreAppointmentsIndicatorTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_MoreAppointmentsIndicatorTemplate) property of `MonthViewSettings`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 9 10 11 12 13 14 15" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8 9 10 11 12 13 14" %}
 
 <Window
     ...
@@ -754,7 +753,7 @@ You can customize the default appearance of the "more appointments" indicator in
 To enhance interaction with a Scheduler's appointments, you can customize the spacing between appointments and the right border of their cells by using the [CellRightPadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html#Syncfusion_UI_Xaml_Scheduler_MonthViewSettings_CellRightPadding) property of [MonthViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.MonthViewSettings.html) in the [SfScheduler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
 
 <Window
     ...
