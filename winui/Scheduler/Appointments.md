@@ -108,7 +108,7 @@ public class Meeting
 Map those properties of the `Meeting` class to the schedule appointment by using the `AppointmentMapping` properties.
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8 9 10 11 12 13" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12" %}
 
 <Window
     ...
@@ -347,7 +347,7 @@ public class Meeting
  Map those properties of the `Meeting` class to the schedule appointments by using the `AppointmentMapping` properties.
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8 9 10 11 12 13 14 15" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8 9 10 11 12 13 14" %}
 
 <Window
     ...
@@ -928,7 +928,7 @@ N>
 The default appearance of a schedule appointment can be customized in all views by using the [AppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplate) and [AppointmentTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html#Syncfusion_UI_Xaml_Scheduler_ViewSettingsBase_AppointmentTemplateSelector) properties of [ViewSettingsBase](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase.html). Use the [AllDayAppointmentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html#Syncfusion_UI_Xaml_Scheduler_DaysViewSettings_AllDayAppointmentTemplate) property of [DaysViewSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.DaysViewSettings.html) to customize the appearance of all-day appointments in the Day, Week, and WorkWeek views.
 
 {%tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24" %}
 
 <Window
     ...

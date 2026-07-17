@@ -29,7 +29,7 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xam
 * [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_CellTappedEventArgs_Resource): Gets the resource associated with the timeslot cell where the user tapped.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -57,7 +57,7 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 The [CellDoubleTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellDoubleTapped) event occurs when the user double-clicks a cell in the Scheduler. This event receives two arguments: the `sender` that handles SfScheduler and `CellDoubleTappedEventArgs` as objects. The base class of the [CellDoubleTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellDoubleTappedEventArgs.html) is [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -85,7 +85,7 @@ private void Schedule_CellDoubleTapped(object sender, CellDoubleTappedEventArgs 
 The [CellLongPressed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_CellLongPressed) event occurs when the user long-presses a cell in the Scheduler. This event receives two arguments: the `sender` that handles SfScheduler and `CellLongPressedEventArgs` as objects. The base class of the [CellLongPressedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellLongPressedEventArgs.html) is [CellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html).
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -113,7 +113,7 @@ private void Schedule_CellLongPressed(object sender, CellLongPressedEventArgs e)
 The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SfScheduler.html#Syncfusion_UI_Xaml_Scheduler_SfScheduler_SelectionChanged) event occurs after the selection is changed in the Scheduler. This event receives two arguments: the `sender` that handles SfScheduler and [SelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.SelectionChangedEventArgs.html) as objects.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -158,7 +158,7 @@ The [SelectionChangingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion
 * `NewResource` - Gets the new selected resource details.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -194,7 +194,7 @@ The [ViewHeaderCellTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfus
 * [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.ViewHeaderCellTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_ViewHeaderCellTappedEventArgs_Resource): Gets the resource when tapped on view header in a day, week, workweek, and timeline views.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -226,7 +226,7 @@ The [HeaderTappedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 * [DateTime](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.HeaderTappedEventArgs.html#Syncfusion_UI_Xaml_Scheduler_HeaderTappedEventArgs_DateTime): Gets the corresponding date time.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
@@ -260,7 +260,7 @@ The [AppointmentTappedArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.X
 * [Resource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Scheduler.AppointmentTappedArgs.html#Syncfusion_UI_Xaml_Scheduler_AppointmentTappedArgs_Resource): Gets the resource details under which the appointment is located.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="7" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
 <Window
     ...
