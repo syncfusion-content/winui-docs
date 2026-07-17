@@ -265,7 +265,7 @@ comboBox.IsEditable = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox choose item using editing](GettingStarted_images/winui-combobox-edit-mode.png)
+![WinUI ComboBox choose item using editing](gettingstarted_images/winui-combobox-edit-mode.png)
 
 ## Searching
 
