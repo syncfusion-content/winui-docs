@@ -49,3 +49,84 @@ SfShimmer Shimmer = new SfShimmer();
 {% endtabs %}
 
 ![WinUI Shimmer control overview](Shimmer_Images/winui_shimmer_getting_started.gif)
+
+## Loading shimmer content
+
+When you set the IsActive property to false in SfShimmer, the content is displayed without any shimmer animation. Conversely, when IsActive is set to true, which is its default state, only the animation is displayed, and the content remains invisible. This allows you to control how your content is presented, with the option to show the animation exclusively when IsActive is set to true.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfShimmer x:Name="shimmer" Width="500" WaveDuration="3000">
+    <Syncfusion:SfShimmer.Content>
+        <StackPanel Orientation="Horizontal">
+            <Image Source="Assets/Icon.png" Width="130" Height="130"/>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Syncfusion provides an ecosystem of compatible developer" FontWeight="SemiLight" FontSize="13"  Margin="-10,20,0,0"/>
+                <TextBlock Text="control suites, embeddable BI platforms, and business software." FontWeight="SemiLight" FontSize="13" Margin="-10,0,0,0" />
+                <TextBlock Text="We are proud to serve a wide variety of customers, from individual" FontWeight="SemiLight" FontSize="13" Margin="-10,20,0,0" />
+                <TextBlock Text="developers to Fortune 100 companies." FontWeight="SemiLight" FontSize="13" Margin="-10,0,0,0" />
+            </StackPanel>
+        </StackPanel>
+    </Syncfusion:SfShimmer.Content>
+</Syncfusion:SfShimmer>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+SfShimmer shimmer = new SfShimmer();
+shimmer.Name = "shimmer";
+shimmer.Width = 500;
+shimmer.WaveDuration = 3000;
+
+StackPanel stackPanel = new StackPanel();
+stackPanel.Orientation = Orientation.Horizontal;
+
+Image image = new Image();
+image.Source = new BitmapImage(new Uri("Assets/Icon.png"));
+image.Width = 130;
+image.Height = 130;
+
+StackPanel textStackPanel = new StackPanel();
+textStackPanel.Orientation = Orientation.Vertical;
+
+TextBlock textBlock1 = new TextBlock();
+textBlock1.Text = "Syncfusion provides an ecosystem of compatible developer";
+textBlock1.FontWeight = FontWeights.SemiLight;
+textBlock1.FontSize = 13;
+textBlock1.Margin = new Thickness(-10, 20, 0, 0);
+
+TextBlock textBlock2 = new TextBlock();
+textBlock2.Text = "control suites, embeddable BI platforms, and business software.";
+textBlock2.FontWeight = FontWeights.SemiLight;
+textBlock2.FontSize = 13;
+textBlock2.Margin = new Thickness(-10, 0, 0, 0);
+
+TextBlock textBlock3 = new TextBlock();
+textBlock3.Text = "We are proud to serve a wide variety of customers, from individual";
+textBlock3.FontWeight = FontWeights.SemiLight;
+textBlock3.FontSize = 13;
+textBlock3.Margin = new Thickness(-10, 20, 0, 0);
+
+TextBlock textBlock4 = new TextBlock();
+textBlock4.Text = "developers to Fortune 100 companies.";
+textBlock4.FontWeight = FontWeights.SemiLight;
+textBlock4.FontSize = 13;
+textBlock4.Margin = new Thickness(-10, 0, 0, 0);
+
+textStackPanel.Children.Add(textBlock1);
+textStackPanel.Children.Add(textBlock2);
+textStackPanel.Children.Add(textBlock3);
+textStackPanel.Children.Add(textBlock4);
+
+stackPanel.Children.Add(image);
+stackPanel.Children.Add(textStackPanel);
+
+shimmer.Content = stackPanel;
+
+this.Content = shimmer;
+
+{% endhighlight %}
+{% endtabs %}
+
+![WinUI Shimmer control Content](Shimmer_Images/winui_shimmer_content.gif)
