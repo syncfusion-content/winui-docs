@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI TreeView
 
-This section explains the steps required to add the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control and binding data in Treeview control. This section covers only basic features needed to get started with Syncfusion<sup>®</sup> TreeView control.
+This section explains the steps required to add the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) control and bind data in the TreeView control. This section covers only the basic features needed to get started with the Syncfusion<sup>®</sup> TreeView control.
 
 ## Creating an application with WinUI TreeView
 

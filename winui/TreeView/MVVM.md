@@ -9,11 +9,11 @@ documentation: ug
 
 # MVVM in WinUI TreeView
 
-This section explains about how to work with MVVM pattern in [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html).
+This section explains how to work with the MVVM pattern in the [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html).
 
 ## Binding SelectedItem
 
-The `TreeView` provides support to select the items through binding the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property from view model by implementing the `INotifyPropertyChanged` interface that gives the call back notification to UI.
+The `TreeView` provides support to select items by binding the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property from the view model by implementing the `INotifyPropertyChanged` interface, which gives a callback notification to the UI.
 
 {% tabs %}
 {% highlight xaml %}
@@ -192,7 +192,7 @@ public class SelectionModel : NotificationObject
 
 ## Binding SelectedItems
 
-The `TreeView` supports to select multiple items through binding the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property from view model with `ObservableCollection<object>` type. 
+The `TreeView` supports selecting multiple items by binding the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property from the view model with an `ObservableCollection<object>` type.
 
 {% tabs %}
 {% highlight xaml %}
@@ -378,5 +378,5 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Built-in commands
 
-The TreeView provides support for built-in commands to show context flyout. You can refer more information about binding the built-in commands [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
+The TreeView provides support for built-in commands to show a context flyout. You can refer to more information about binding the built-in commands [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
 
