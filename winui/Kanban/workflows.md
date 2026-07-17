@@ -9,9 +9,11 @@ documentation: ug
 
 # Workflows in WinUI Kanban (SfKanban) control
 
-The [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) workflow allows to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
+The [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) workflow allows you to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 
-To define the flow of card transitions between different states, create an instance of the [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class and add it to the [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property of the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to define the workflow for each column. The [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class contains the following properties to specify the source and target categories.
+To define the flow of card transitions between different states, create an instance of the [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class and add it to the [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property of the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to define the workflow for each column. The [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) property accepts a collection of [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) objects. The [KanbanWorkflow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html) class contains the following properties to specify the source and target categories.
+
+* The [AllowDrag](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_AllowDrag) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) properties of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) restrict drag-and-drop at the column level, independent of the workflow. A drag blocked by these properties takes precedence over any workflow rule.
 
 * [Category](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) – Used to define the source category or state.
 * [AllowedTransitions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) – Used to define the list of categories or states to which a card can be moved from the current category.
@@ -56,11 +58,14 @@ To define the flow of card transitions between different states, create an insta
            
 this.kanban.Workflows = new List<KanbanWorkflow>()
 {
-    new KanbanWorkflow() { Category = "Open", AllowedTransitions ={ "In Progress" } },
-    new KanbanWorkflow() { Category = "In Progress", AllowedTransitions ={ "Closed", "Won't Fix" } },
+    new KanbanWorkflow() { Category = "Open", AllowedTransitions = new List<string> { "In Progress" } },
+    new KanbanWorkflow() { Category = "In Progress", AllowedTransitions = new List<string> { "Closed", "Won't Fix" } },
 };
 
 {% endhighlight %}
+
+N> In XAML, the strings added directly inside `kanban:KanbanWorkflow.AllowedTransitions` are automatically wrapped as `List<string>` items. In C#, assign a `List<string>` explicitly to the [AllowedTransitions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) property.
+
 {% highlight C# tabtitle="ViewModel.cs" %} 
 
 public class ViewModel
@@ -163,4 +168,4 @@ public class ViewModel
 
 ![workflows-in-winui-kanban](images/workflow/workflows-in-winui-kanban.gif)
 
-By following the code snippet, you will notice that a card picked from the `In Progress` state cannot be dropped into the `Open` state. This is because we have defined that the card can only transition from the `In Progress` state to the `Closed`, and `Won't Fix` states, and not to any other states.
+By following the code snippet, you will notice that a card picked from the `In Progress` state cannot be dropped into the `Open` state, because the workflow only allows transitions from the `In Progress` state to the `Closed` and `Won't Fix` states.
