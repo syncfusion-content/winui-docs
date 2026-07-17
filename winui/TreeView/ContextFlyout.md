@@ -9,17 +9,17 @@ documentation: ug
 
 # Context Flyout in WinUI TreeView
 
-This section explains how to show ContextFlyout and using built-in commands in the TreeView.
+This section explains how to show a ContextFlyout and use built-in commands in the TreeView.
 
 ## ContextFlyout for Nodes
 
-The TreeView provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for nodes in an efficient manner.
+The `TreeView` provides a fully customizable context flyout to expose functionality on the user interface. You can create a context flyout for nodes in an efficient manner.
 
-You can set context flyout for the nodes by using [SfTreeView.ItemContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextFlyout) property.
+You can set a context flyout for the nodes by using the [SfTreeView.ItemContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemContextFlyout) property.
 
 ## Built-in commands
 
-The TreeView provides support for the following built-in commands
+The `TreeView` provides support for the following built-in commands:
 
 * [Edit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_Edit) - Command to start the editing of the node.
 * [DeleteNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewCommands.html#Syncfusion_UI_Xaml_TreeView_TreeViewCommands_DeleteNode) - Command to delete the node.
@@ -47,9 +47,9 @@ The TreeView provides support for the following built-in commands
 
 ## Custom commands
 
-The TreeView allows to show context flyout using custom commands when built-in commands does not meet your requirement.
+The `TreeView` allows you to show a context flyout using custom commands when the built-in commands do not meet your requirements.
 
-For an example, custom command is used to expand the nodes using context flyout in the following example
+For example, a custom command is used to expand the nodes using a context flyout in the following example:
 
 {% tabs %}
 {% highlight xaml %}

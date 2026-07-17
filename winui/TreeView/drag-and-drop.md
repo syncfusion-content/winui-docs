@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and Drop in WinUI TreeView
 
-TreeView allows drag and drop the items within the treeview control by setting the [CanDrag](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.candrag?view=winrt-19041) property as `true`. It is also possible to drag and drop the items between treeview and other controls such as `ListView` and `SfDataGrid`. 
+The `TreeView` allows you to drag and drop the items within the control by setting the [CanDrag](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.uielement.candrag) property to `true`. It is also possible to drag and drop items between the TreeView and other controls such as `ListView` and `SfDataGrid`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,18 +44,18 @@ treeView.CanDrag = true;
 {% endhighlight %}
 {% endtabs %}
 
-While dropping, the dragged items can be added above or below to the target item based on drag indicator position.
+While dropping, the dragged items can be added above or below the target item based on the drag indicator position.
 
 ![Drag and Drop in WinUI TreeView](DragDrop_images/winui-treeview-drag-and-drop.png)
 
 ## Dragging multiple items
 
-SfTreeView allows to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) as `Multiple` or `Extended`. 
+The `SfTreeView` allows you to drag multiple selected items. To enable multiple selection, set the [SfTreeView.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) to `Multiple` or `Extended`.
 
 ![Reordering Multiple Items in WinUI TreeView](DragDrop_images/winui-treeview-reordering-items.png)
 ## Drag and drop events
 
-SfTreeView triggers the following events when drag and drop:
+The `SfTreeView` triggers the following events during a drag-and-drop operation:
 
 ### ItemDragStarting event
 
@@ -128,7 +128,7 @@ private void TreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.Tr
 
 {% tabs %}
 {% highlight c# %}
-treeView.ItemDropped += TreeView_ItemDropped
+treeView.ItemDropped += TreeView_ItemDropped;
 
 private void TreeView_ItemDropped(object sender, Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs e)
 {
@@ -142,7 +142,7 @@ private void TreeView_ItemDropped(object sender, Syncfusion.UI.Xaml.TreeView.Tre
 
 ### Disable dragging of certain items in WinUI TreeView
 
-You can restrict the dragging of certain nodes in SfTreeView by using the  [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDragStarting) event.
+You can restrict the dragging of certain nodes in the `SfTreeView` by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDragStarting) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ private void TreeView_ItemDragStarting(object sender, Syncfusion.UI.Xaml.TreeVie
 
 ### Disable dropping on certain items in WinUI TreeView
 
-You can restrict the dropping the items on certain nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping) event.
+You can restrict dropping items on certain nodes in the `SfTreeView` by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -177,7 +177,7 @@ private void TreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.Tr
 
 ### Customize the drop position
 
-You can customize the drop position of dragging nodes in SfTreeView by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping) event.
+You can customize the drop position of dragging nodes in the `SfTreeView` by using the [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,9 +193,9 @@ private void TreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.Tr
 {% endhighlight %}
 {% endtabs %}
 
-## Drag and drop between two TreeView's
+## Drag and drop between two TreeViews
 
-You can customize the dragging operation between two treeview by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDragStarting) , [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping) and [SfTreeView.ItemDropped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropped) events.
+You can customize the drag operation between two `SfTreeView` controls by using the [SfTreeView.ItemDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDragStarting), [SfTreeView.ItemDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropping), and [SfTreeView.ItemDropped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemDropped) events.
 
 {% tabs %}
 {% highlight c# %}

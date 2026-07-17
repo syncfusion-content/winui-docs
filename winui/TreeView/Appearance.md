@@ -2,18 +2,18 @@
 layout: post
 title: Appearance in WinUI TreeView control | Syncfusion®
 description: Learn here all about Appearance support in Syncfusion® WinUI TreeView(SfTreeView) control with itemTemplate and more.
-platform: Winui
+platform: WinUI
 control: TreeView
 documentation: ug
 ---
 
 # Appearance in WinUI TreeView
 
-The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
+The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows you to customize the appearance of the underlying data and provides different functionalities to the end user.
 
 ## ItemTemplate
 
-The TreeView allows you to customize the appearance of content view and expander view by setting the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate) properties.
+The `TreeView` allows you to customize the appearance of the content view and the expander view by setting the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) and [ExpanderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderTemplate) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,9 +61,9 @@ The TreeView allows you to customize the appearance of content view and expander
 
 ## BindingContext for ItemTemplate
 
-By default, the binding context of treeview item will be the data model object for bound mode and [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) for unbound mode.
+By default, the binding context of a TreeView item will be the data model object for bound mode and the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) for unbound mode.
 
-For bound mode, you can change the binding context of the treeview items by using [ItemTemplateContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
+In bound mode, you can change the binding context of the TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,7 +218,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Indentation
 
-The `TreeView` allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is 30. This property can be customized at runtime.
+The `TreeView` allows you to customize the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Indentation) property. The default value of this property is 30. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -236,7 +236,7 @@ treeView.Indentation = 40;
 
 ## ExpanderWidth
 
-The `TreeView` allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is 30. This property can be customized at runtime.
+The `TreeView` allows you to customize the width of the expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is 30. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -275,7 +275,7 @@ treeView.ExpanderPosition = ExpanderPosition.End;
 
 ## Level based styling
 
-The `TreeView` allows to customize the style of [TreeViewItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.ivalueconverter?view=winrt-19041).
+The `TreeView` allows you to customize the style of a [TreeViewItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewItem.html) based on different levels by using [IValueConverter](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.ivalueconverter).
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Animation
 
-The `TreeView` supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of TreeView.
+The `TreeView` supports animating the expand or collapse of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of the TreeView.
 
 {% tabs %}
 {% highlight xaml %}

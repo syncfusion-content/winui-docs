@@ -116,15 +116,15 @@ Accepts any non digit. Same as [^0-9].</td></tr>
 <tr>
 <td>
 \w</td><td>
-Accepts any  word character. \w is the same as [a-zA-Z_0-9].</td></tr>
+Accepts any word character. \w is the same as [a-zA-Z_0-9].</td></tr>
 <tr>
 <td>
 \W</td><td>
-Accepts any  non word character. \W is the same as [^a-zA-Z_0-9].</td></tr>
+Accepts any non word character. \W is the same as [^a-zA-Z_0-9].</td></tr>
 <tr>
 <td>
 \s</td><td>
-Accepts any  white space characters.</td></tr>
+Accepts any white space characters.</td></tr>
 <tr>
 <td>
 \S</td><td>
@@ -172,7 +172,7 @@ Acts like a Boolean OR. Matches the expression before or after the |.</td></tr>
 <tr>
 <td>
 .</td><td>
-Accepts any character. It can be changed based on culture</td></tr>
+Accepts any single character. The character matched can be changed based on the culture.</td></tr>
 </table>
 
 {% tabs %}

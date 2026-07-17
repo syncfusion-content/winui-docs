@@ -9,17 +9,17 @@ documentation: ug
 
 # Checkbox in WinUI TreeView
 
-The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides support for loading `CheckBox` in each node, and allows users to check/uncheck the corresponding node. So, you should add checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) of the `TreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) property of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html).
+The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides support for loading a `CheckBox` in each node and allows users to check or uncheck the corresponding node. To do this, add a checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) of the `TreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) property of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html).
 
 ## Working with CheckBox in Bound Mode
 
-When you are populating treeview nodes from [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource), then you can get or set the checked items by using [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
+When you are populating TreeView nodes from the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource), you can get or set the checked items by using the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
 
-The `TreeView` supports to check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property from view model with `ObservableCollection<object>` type.
+The `TreeView` supports checking multiple items by binding the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property from the view model with an `ObservableCollection<object>` type.
 
-N> Set [ItemTemplateDataContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) as `Node` to bind the `TreeViewNode.IsChecked` property to `CheckBox` in `ItemTemplate`.
+N> Set [ItemTemplateDataContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) as `Node` to bind the `TreeViewNode.IsChecked` property to the `CheckBox` in the `ItemTemplate`.
 
-N> TreeView process and sets [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) based on `CheckedItems` only when you are binding `ItemsSource`.
+N> The TreeView processes and sets [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) based on `CheckedItems` only when `ItemsSource` is bound.
 
 {% tabs %}
 {% highlight xaml %}
@@ -339,7 +339,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Working with CheckBox in Unbound Mode
 
-You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) property value while creating nodes.
+You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) property value when creating nodes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -356,7 +356,7 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
       NavigationCacheMode="Disabled">
 
 <Grid>
-    <syncfusion:SfTreeView x:Name="TreeView"
+    <treeView:SfTreeView x:Name="TreeView"
                            Width="400"
                            BorderThickness="1"
                            BorderBrush="LightGray"
@@ -519,13 +519,13 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## CheckBox State
 
-The `TreeView` process [IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) property (checkbox state) of `TreeViewNode` based on [CheckBoxMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) property. The `CheckBoxMode` defines how parent and child node's checkbox state updates when user check or un-check the node. By default, its value is `None`. 
+The `TreeView` processes the [IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) property (checkbox state) of a `TreeViewNode` based on the [CheckBoxMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) property. The `CheckBoxMode` defines how the parent and child node's checkbox state is updated when the user checks or unchecks a node. By default, its value is `None`.
 
-The Checkbox contains the following three states:
+The CheckBox mode contains the following three states:
 
-* `None`: Check and uncheck will be updated only in the view, but it will not affect the `CheckedItems` collection.
-* `Individual`: This Checkbox state affect individual node only, and it does not affect the parent node or child nodes checkbox state or `IsChecked` property value.
-* `Recursive`: Check and uncheck the node value affects the parent and child nodes checkbox state. For example, if parent nodes checkbox state is check/uncheck then all of its child nodes checkbox state will be updated. If all the child nodes in check/uncheck state within the parent node, then parent node checkbox state will be updated. If any of the child node is checked and some child nodes not checked, then the parent node will be in intermediate state.
+* `None`: Check and uncheck will be updated only in the view, but they will not affect the `CheckedItems` collection.
+* `Individual`: This Checkbox state affects the individual node only, and it does not affect the parent node or child node checkbox state or `IsChecked` property value.
+* `Recursive`: Check and uncheck of a node affects the parent and child node checkbox state. For example, if a parent node's checkbox state is checked or unchecked, all of its child node checkbox states will be updated. If all child nodes are checked or unchecked within the parent node, the parent node checkbox state will be updated. If any of the child nodes are checked and some are not, the parent node will be in the intermediate state.
 
 {% tabs %}
 {% highlight xaml %}
@@ -536,17 +536,17 @@ treeView.CheckBoxMode = CheckBoxMode.Recursive;
 {% endhighlight %}
 {% endtabs %}
 
-N> In recursive mode, the parent nodes checkbox state or `IsChecked` property value is updated only in UI interaction.
+N> In recursive mode, the parent node's checkbox state or `IsChecked` property value is updated only through UI interaction.
 
 ## Get or Set Checked Items
 
 ### Get or Set Checked Items in Bound Mode
 
-You can get or set list of items to be checked or un-checked by using [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
+You can get or set a list of items to be checked or unchecked by using the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
 
-When the [CheckBoxMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is other than `None`, the individual `TreeViewNode` or collection of `TreeViewNode` can be checked from the code by setting the  `CheckedItems`, or adding items to the `CheckedItems` property based on the `CheckBoxMode`.
+When the [CheckBoxMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckBoxMode) is other than `None`, an individual `TreeViewNode` or a collection of `TreeViewNode` objects can be checked from the code by setting the `CheckedItems` property, or by adding items to the `CheckedItems` property based on the `CheckBoxMode`.
 
-N> Programmatically adding or removing the node value not affects their parent and child nodes checkbox state.
+N> Programmatically adding or removing a node value does not affect the parent and child node checkbox states.
 
 {% tabs %}
 {% highlight c# %}
@@ -561,9 +561,9 @@ treeView.CheckedItems.Add(viewModel.Items[3]);
 
 ### NodeChecked event
 
-The [NodeChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodeChecked) event raised when checking and unchecking the checkbox at run time. The [NodeCheckedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.NodeCheckedEventArgs.html) has the following members, which provide information for the `NodeChecked` event.
+The [NodeChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodeChecked) event is raised when checking or unchecking a checkbox at run time. The [NodeCheckedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.NodeCheckedEventArgs.html) has the following members, which provide information for the `NodeChecked` event.
 
-* `Node`: Gets the `TreeViewNode` and data associated with the checked item as its arguments.
+* `Node`: Gets the `TreeViewNode` and the data associated with the checked item as its arguments.
 
 {% tabs %}
 {% highlight c# %}
