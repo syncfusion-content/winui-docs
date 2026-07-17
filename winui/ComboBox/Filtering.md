@@ -123,7 +123,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
+![WinUI ComboBox filter the items based on starting text](filtering_images/winui-combobox-filtering-start-text.gif)
 
 N> Add `using Syncfusion.UI.Xaml.Editors;` to access the `ComboBoxTextSearchMode` enum in C#.
 
@@ -153,7 +153,7 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI ComboBox filter the items based on contains text](Filtering_images/winui-combobox-filtering-contains-text.gif)
+![WinUI ComboBox filter the items based on contains text](filtering_images/winui-combobox-filtering-contains-text.gif)
 
 N> Auto appending of the first suggested item text to typed input is not supported in this mode.
 
@@ -242,4 +242,4 @@ comboBox.FilterBehavior = new CityFilteringBehavior();
 
 The following gif demonstrates how to display the cities in drop-down based on the country name entered in the ComboBox control.
 
-![WinUI ComboBox filter the items based on custom filtering logic](Filtering_images/winui-combobox-custom-filtering.gif)
+![WinUI ComboBox filter the items based on custom filtering logic](filtering_images/winui-combobox-custom-filtering.gif)
