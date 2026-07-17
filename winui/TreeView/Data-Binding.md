@@ -12,25 +12,25 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 
 ## Populating Nodes by data binding - Bound Mode
 
-The [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) can be populated in bound mode using following steps.
+The [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) can be populated in bound mode using the following steps:
 
-   * Create hierarchical data model
-   * Bind data model to treeview
+   * Create a hierarchical data model.
+   * Bind the data model to the TreeView.
 
-To update the collection changes in UI, it is necessary to define [NotificationSubscriptionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NotificationSubscriptionMode) to Treeview as CollectionChanged/PropertyChanged.
+To update the collection changes in the UI, it is necessary to set the [NotificationSubscriptionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NotificationSubscriptionMode) on the TreeView to `CollectionChanged` or `PropertyChanged`.
 
-The `NotificationSubscriptionMode` enum has following members:
+The `NotificationSubscriptionMode` enum has the following members:
 
-   * `CollectionChange` - Updates its tree structure when child items collection gets changed.
-   * `PropertyChange` - Updates its ChildItems when associated collection property gets changed.
-   * `None` - It is a default mode and it doesn’t reflect collection/property changes in UI.
+   * `CollectionChanged` - Updates the tree structure when the child items collection gets changed.
+   * `PropertyChanged` - Updates the child items when the associated collection property gets changed.
+   * `None` - It is the default mode and it does not reflect collection or property changes in the UI.
 
-To decide how to populate the nodes, it is necessary to set this `NodePopulationMode` API to Treeview.
+To decide how to populate the nodes, it is necessary to set the `NodePopulationMode` API on the TreeView.
 
-The [NodePopulationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) API has following enum values:
+The [NodePopulationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodePopulationMode) API has the following enum values:
 
-   * `OnDemand` - Populates the child nodes only when parent nodes is expanded. It is the default value.
-   * `Instant` - Populates all the child nodes when Treeview control is initially loaded.
+   * `OnDemand` - Populates the child nodes only when the parent node is expanded. It is the default value.
+   * `Instant` - Populates all the child nodes when the TreeView control is initially loaded.
 
 ### Create Data Model for treeview
 
@@ -83,7 +83,7 @@ public class Folder : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-Create a model repository class with ImageNodeInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as NodeWithImageViewModel.cs file:
+Create a model repository class with an ImageNodeInfo collection property initialized with the required number of data objects in a new class file as shown in the following code example, and save it as `NodeWithImageViewModel.cs`:
 
 {% tabs %}
 {% highlight c# %}
@@ -190,7 +190,7 @@ public class NodeWithImageViewModel
 
 ### Bind to Hierarchical DataSource
 
-To create a TreeView using data binding, set a hierarchical data collection to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property. And set the child object name to the [ChildPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) property.
+To create a TreeView using data binding, set a hierarchical data collection to the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource) property. Then, set the child object name to the [ChildPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ChildPropertyName) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,7 +241,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Populating Nodes without DataSource - Unbound Mode
 
-You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you can use a `TreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can have more nodes added to its children collection which helps in populating multiple level of tree view nodes based on needs.
+You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you can use a `TreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can have more nodes added to its children collection, which helps in populating multiple levels of tree view nodes based on your needs.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WinUI Masked TextBox control | Syncfusion
-description: Learn all about the events in the Masked TextBox (SfMaskedTextBox) control.
+description: Learn all about the events available in the Syncfusion WinUI Masked TextBox (SfMaskedTextBox) Control.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
@@ -13,12 +13,12 @@ This section provides information about the events available in the WinUI Masked
 
 ## ValueChanging Event
 
-The ValueChanging event occurs when the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property is about to change in the Masked TextBox control. The MaskedTextBoxValueChangingEventArgs provides the following properties:
+The ValueChanging event occurs when the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property is about to change in the Masked TextBox control. The `MaskedTextBoxValueChangingEventArgs` provides the following properties:
 
-* NewValue: Gets the current value of the Masked TextBox control.
-* OldValue: Gets the previous value of the Masked TextBox control.
-* IsValid: Gets or sets a boolean value indicating whether the input is considered valid based on the mask completion.
-* Cancel: Gets or sets a value indicating whether the event should be canceled.
+* `NewValue`: Gets the new value of the Masked TextBox control.
+* `OldValue`: Gets the previous value of the Masked TextBox control.
+* `IsValid`: Gets a boolean value indicating whether the input is considered valid based on the mask completion.
+* `Cancel`: Gets or sets a value indicating whether the event should be canceled.
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ private void MaskedTextBox_ValueChanging(object sender, MaskedTextBoxValueChangi
 The [ValueChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ValueChanged) event occurs when the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property is changed in the Masked TextBox control. The [MaskedTextBoxValueChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangedEventArgs.html) provides the following properties:
 
 * [IsMaskCompleted](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_MaskedTextBoxValueChangedEventArgs_IsMaskCompleted): Gets a boolean value indicating whether all the required inputs for the mask are completed.
-* [NewValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_MaskedTextBoxValueChangedEventArgs_NewValue): Gets the current value of the Masked TextBox control.
+* [NewValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_MaskedTextBoxValueChangedEventArgs_NewValue): Gets the new value of the Masked TextBox control.
 * [OldValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.MaskedTextBoxValueChangedEventArgs.html#Syncfusion_UI_Xaml_Editors_MaskedTextBoxValueChangedEventArgs_OldValue): Gets the previous value of the Masked TextBox control.
 
 {% tabs %}

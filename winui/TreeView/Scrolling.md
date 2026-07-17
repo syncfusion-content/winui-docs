@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Scrolling in WinUI TreeView
-The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
+The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) provides various options to achieve programmatic scrolling. Please walk through the section below to learn more.
 
 ## Bring Into View
 
@@ -92,7 +92,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Horizontal scrolling
 
-By default, horizontal scrollbar is not enabled in the TreeView. If you want to enable horizontal scrolling based on the content, you should set [ScrollViewer.HorizontalScrollBarVisibility](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.scrollviewer.horizontalscrollbarvisibility?view=winui-3.0-preview) as `Auto`. 
+By default, the horizontal scrollbar is not enabled in the TreeView. If you want to enable horizontal scrolling based on the content, set the [ScrollViewer.HorizontalScrollBarVisibility](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.scrollviewer.horizontalscrollbarvisibility) property to `Auto`.
 
 {% tabs %}
 {% highlight xaml %}
