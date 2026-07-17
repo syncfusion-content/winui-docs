@@ -10,7 +10,7 @@ keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer
 
 # Getting Started with WinUI Markdown Viewer (SfMarkdownViewer)
 
-This section outlines a step‑by‑step guide for integrating and using the `SfMarkdownViewer` control in your WinUI applications.
+This section outlines a step‑by‑step guide for integrating and using the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control in your WinUI applications.
 
 ## Creating an application with SfMarkdownViewer (WinUI)
 
@@ -20,9 +20,9 @@ This section outlines a step‑by‑step guide for integrating and using the `Sf
    - Syncfusion.MarkdownViewer.WinUI
 
 3. Import the following namespace in XAML or C# code:
-   - Syncfusion.UI.Xaml.Markdown
+   - `Syncfusion.UI.Xaml.Markdown`
 
-4. Initialize an instance of the `SfMarkdownViewer` control.
+4. Initialize an instance of the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control.
 
 You can initialize the control in both XAML and C# as shown below:
 
@@ -66,7 +66,7 @@ namespace MarkdownViewerGettingStarted
 
 ## Populating Source to the SfMarkdownViewer
 
-The `Source` property is used to supply Markdown content to the control. It supports raw Markdown text, file paths, and HTTP/HTTPS URLs.
+The [Source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_Source) property is used to supply Markdown content to the control. It supports raw Markdown text, file paths, and HTTP/HTTPS URLs.
 
 {% tabs %} 
 {% highlight xaml %}
