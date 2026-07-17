@@ -22,7 +22,7 @@ You can navigate to the month containing the required date using the [`SetDispla
                      Loaded="calendar_Loaded">
 </calendar:SfCalendar>
 
-{% endhighlight %}
+{% endhighlight %
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="3" %}
 
 private void calendar_Loaded(object sender, RoutedEventArgs e)
@@ -46,7 +46,7 @@ You can restrict navigation within a minimum and maximum views by using the [Min
                      DisplayMode="Month"/>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3 4" %
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.MinDisplayMode = CalendarDisplayMode.Month;
@@ -72,7 +72,7 @@ You can restrict users to select date or dates within specific views (example : 
                              MaxDisplayMode="Decade"
                              />
 
-{% endhighlight %}
+{% endhighlight %
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2 3" %}
 
 SfCalendar sfCalendar = new SfCalendar();
@@ -101,7 +101,7 @@ You can navigate within a view using mouse scroll or by navigation button in `Ca
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.NavigationDirection = Orientation.Horizontal;
 
-{% endhighlight %}
+{% endhighlight %
 {% endtabs %}
 
 ![change-navigation-buttons-in-winui-calendar](Images/navigation/change-navigation-buttons-in-winui-calendar.png)
