@@ -19,8 +19,8 @@ Windows 11 and Windows 10 version 1809 (build 17763) or later.
 ## Development Environment
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
-* [Windows App SDK 1.2 extension](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/stable-channel#version-124-122302174)
-* .NET 6.0/.Net 7.0/.Net 8.0/.Net 9.0
+* [Windows App SDK 1.2 extension](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/release-channels)
+* .Net 8.0/.Net 9.0/.NET 10.0
 
 N> * For more information on WinUI 3 tooling support, see [Windows UI Library 3](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/)
 
