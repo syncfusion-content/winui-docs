@@ -1,8 +1,8 @@
 ---
 layout: post
 title: About WinUI Time Picker control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Time Picker(SfTimePicker) control with normal, expanded views and more.
-platform: winui
+description: Learn here all about introduction of Syncfusion WinUI Time Picker (SfTimePicker) control with normal, expanded views and more.
+platform: WinUI
 control: SfTimePicker
 documentation: ug
 ---
@@ -21,6 +21,6 @@ The [WinUI Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ## Key Features
 
-* Formatting – The Control displays  the selected time value in a various formats.
-* Time spinner – The drop-down portion used for selecting the time and it can be customized.
-* Spinner customization - Allow to customize the drop-down spinner header and each cells.
+* Formatting – The control displays the selected time value in various formats.
+* Time spinner – The drop-down portion is used for selecting the time and it can be customized.
+* Spinner customization - Allows you to customize the drop-down spinner header and each cell.
