@@ -13,7 +13,7 @@ This section explains how to add the [AutoComplete](https://help.syncfusion.com/
 
 ## Creating an application with WinUI AutoComplete
 
-1. Create a [WinUI 3 desktop app for C# and .NET 8+](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Install the following NuGet package in the project (latest stable version):
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)

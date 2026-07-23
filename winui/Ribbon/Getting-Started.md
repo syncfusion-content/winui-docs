@@ -13,7 +13,7 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 ## Creating an application with WinUI Ribbon
 
-1. Create a [WinUI 3 desktop app for C# and .NET 8](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
 2. Add a reference to the [Syncfusion.Ribbon.WinUI](https://www.nuget.org/packages/Syncfusion.Ribbon.WinUI) NuGet package.
 
