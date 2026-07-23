@@ -100,7 +100,7 @@ this.rootGrid.Children.Add(sfRibbon);
 
 ## Add ribbon group
 
-The commands in the ribbon tab can be grouped using a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html). It allows you to add built-in ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) and [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html). Other controls such as checkboxes, comboboxes, and radio buttons, etc. can also be added.
+The commands in the ribbon tab can be grouped using a [RibbonGroup](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonGroup.html). It allows you to add built-in ribbon items such as [RibbonButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonButton.html), [RibbonDropDownButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonDropDownButton.html) and [RibbonSplitButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonSplitButton.html). Other controls such as CheckBox, ComboBox, and RadioButton, etc. can also be added.
 
 {% tabs %}
 {% highlight xaml %}
@@ -449,7 +449,7 @@ rootGrid.Children.Add(sfRibbon);
 
 ![Add ribbon toggle button in group](Getting-Started-images/add-ribbon-toggle-button.png)
 
-N> Other icon element types, such as [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0), can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton, RibbontToggleButton, and RibbonItemHost controls.
+N> Other icon element types, such as [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0), can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton, RibbonToggleButton, and RibbonItemHost controls.
 
 ## Add ribbon combobox
 
@@ -542,7 +542,7 @@ rootGalleryGrid.Children.Add(sfRibbon);
 
 ## Host a custom control
 
-The Ribbon allows you to host other controls such as checkboxes, radio buttons, and comboboxes, etc., in a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
+The Ribbon allows you to host other controls such as CheckBox, RadioButton, and ComboBox, etc. in a ribbon group using the `ItemTemplate` property of [RibbonItemHost](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonItemHost.html).
 
 {% tabs %}
 {% highlight xaml %}
