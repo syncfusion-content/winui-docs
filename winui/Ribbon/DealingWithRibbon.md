@@ -190,7 +190,7 @@ The background color of tab groups can be applied using the `Background` propert
 
 ![RibbonContextualTabGroup with background color](Dealing-With-Ribbon-imgaes/contextual-tab-group-background.png)
 
-## Foreground
+### Foreground
 
 The foreground color of tab groups can be applied using the `Foreground` property. When you change the foreground of a contextual tab group, it is reflected in all Ribbon tabs inside that group.
 
