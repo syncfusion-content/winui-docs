@@ -21,11 +21,11 @@ The [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calen
 
 ## Key Features
 
-* `Calendar Date Picker` supports different Cultures and Language types.
-* The drop-down portion is used for selecting the date and it can be customized.
-* The control displays the selected date value in a various formats.
-* Options to change the direction of month while navigating.
-* Drop-down display area in `Calendar Date Picker` control is limited using abbreviated days and months.
-* UI customization support for a drop-down each cells.
+* `Calendar Date Picker` supports different cultures and language types.
+* The drop-down portion is used for selecting the date, and it can be customized.
+* The control displays the selected date value in various formats.
+* Options to change the direction of the month while navigating.
+* The drop-down display area in the `Calendar Date Picker` control is limited using abbreviated days and months.
+* UI customization support for each cell in the drop-down.
 * Supports highlighting special dates with icons.
-* Supports blocking a certain dates from selection and user interaction.
+* Supports blocking certain dates from selection and user interaction.

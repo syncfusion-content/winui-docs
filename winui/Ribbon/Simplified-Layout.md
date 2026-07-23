@@ -30,29 +30,29 @@ To load the Ribbon control in the simplified layout, the `ActiveLayoutMode` enum
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-        <Grid x:Name="rootGrid">
-            <ribbon:SfRibbon x:Name="sfRibbon"
-                             ActiveLayoutMode="Simplified"
-                             LayoutModeOptions="Simplified">
-            </ribbon:SfRibbon>
-        </Grid>
-    </Page>
+<Page
+    <Grid x:Name="rootGrid">
+        <ribbon:SfRibbon x:Name="sfRibbon"
+                            ActiveLayoutMode="Simplified"
+                            LayoutModeOptions="Simplified">
+        </ribbon:SfRibbon>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    public sealed partial class MainPage : Page
+public sealed partial class MainPage : Page
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            SfRibbon sfRibbon = new SfRibbon();
-            sfRibbon.LayoutModeOptions = LayoutModeOptions.Simplified;
-            sfRibbon.ActiveLayoutMode = LayoutMode.Simplified;
-            rootGrid.Children.Add(sfRibbon);
-        }
+        this.InitializeComponent();
+        SfRibbon sfRibbon = new SfRibbon();
+        sfRibbon.LayoutModeOptions = LayoutModeOptions.Simplified;
+        sfRibbon.ActiveLayoutMode = LayoutMode.Simplified;
+        rootGrid.Children.Add(sfRibbon);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,27 +66,27 @@ The Ribbon control allows you to switch between simplified and normal layouts at
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-        <Grid x:Name="rootGrid">
-             <ribbon:SfRibbon x:Name="sfRibbon"
-                              LayoutModeOptions="Normal,Simplified">
-             </ribbon:SfRibbon>
-        </Grid>
-    </Page>
+<Page
+    <Grid x:Name="rootGrid">
+            <ribbon:SfRibbon x:Name="sfRibbon"
+                            LayoutModeOptions="Normal,Simplified">
+            </ribbon:SfRibbon>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    public sealed partial class MainPage : Page
+public sealed partial class MainPage : Page
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            SfRibbon sfRibbon = new SfRibbon();
-            sfRibbon.LayoutModeOptions = LayoutModeOptions.Normal | LayoutModeOptions.Simplified;
-            rootGrid.Children.Add(sfRibbon);
-        }
+        this.InitializeComponent();
+        SfRibbon sfRibbon = new SfRibbon();
+        sfRibbon.LayoutModeOptions = LayoutModeOptions.Normal | LayoutModeOptions.Simplified;
+        rootGrid.Children.Add(sfRibbon);
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -111,65 +111,64 @@ The `DisplayOptions` property also allows the following value combinations:
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-    
-        <!--This item will be displayed in normal and simplified layout-->
-        <ribbon:RibbonSplitButton Command="{Binding ButtonCommand}"
-                              CommandParameter="Paste"
-                              Content="Paste"
-                              DisplayOptions="Normal,Simplified"
-                              Icon="Paste"
-                              AllowedSizeModes="Large">
-        </ribbon:RibbonSplitButton>
-        <!--This item will be displayed in normal layout and inside overflow menu during simplified Layout-->
-        <ribbon:RibbonButton Command="{Binding ButtonCommand}"
-                         CommandParameter="Cut"
-                         Content="Cut"
-                         DisplayOptions="Normal,Overflow"
-                         Icon="Cut"
-                         AllowedSizeModes="Normal" />                                                      
-        <!--This item will be displayed only in simplified layout-->
-        <ribbon:RibbonButton Command="{Binding ButtonCommand}"
-                         CommandParameter="Copy"
-                         Content="Copy"
-                         DisplayOptions="Simplified"
-                         Icon="Copy"
-                         AllowedSizeModes="Normal" />
-        <!--This item will be displayed only in normal layout-->
-        <ribbon:RibbonButton Command="{Binding ButtonCommand}"
-                         CommandParameter="Format Painter"
-                         Content="Format Painter"
-                         DisplayOptions="Normal"
-                         AllowedSizeModes="Normal"/>                                    
-    </Page>
+<Page
+    <!--This item will be displayed in normal and simplified layout-->
+    <ribbon:RibbonSplitButton Command="{Binding ButtonCommand}"
+                            CommandParameter="Paste"
+                            Content="Paste"
+                            DisplayOptions="Normal,Simplified"
+                            Icon="Paste"
+                            AllowedSizeModes="Large">
+    </ribbon:RibbonSplitButton>
+    <!--This item will be displayed in normal layout and inside overflow menu during simplified Layout-->
+    <ribbon:RibbonButton Command="{Binding ButtonCommand}"
+                        CommandParameter="Cut"
+                        Content="Cut"
+                        DisplayOptions="Normal,Overflow"
+                        Icon="Cut"
+                        AllowedSizeModes="Normal" />                                                      
+    <!--This item will be displayed only in simplified layout-->
+    <ribbon:RibbonButton Command="{Binding ButtonCommand}"
+                        CommandParameter="Copy"
+                        Content="Copy"
+                        DisplayOptions="Simplified"
+                        Icon="Copy"
+                        AllowedSizeModes="Normal" />
+    <!--This item will be displayed only in normal layout-->
+    <ribbon:RibbonButton Command="{Binding ButtonCommand}"
+                        CommandParameter="Format Painter"
+                        Content="Format Painter"
+                        DisplayOptions="Normal"
+                        AllowedSizeModes="Normal"/>                                    
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    //This item will be displayed in normal and simplified layout
-    RibbonSplitButton pasteButton = new RibbonSplitButton();
-    pasteButton.Content = "Paste";
-    pasteButton.Icon = new SymbolIcon(Symbol.Paste);
-    pasteButton.DisplayOptions = DisplayOptions.Normal | DisplayOptions.Simplified;
-    
-    //This item will be displayed in normal layout and inside overflow menu during simplified Layout
-    RibbonButton cutButton = new RibbonButton();
-    cutButton.Content = "Cut";
-    cutButton.Icon = new SymbolIcon(Symbol.Cut);
-    cutButton.DisplayOptions = DisplayOptions.Normal | DisplayOptions.Overflow;
+//This item will be displayed in normal and simplified layout
+RibbonSplitButton pasteButton = new RibbonSplitButton();
+pasteButton.Content = "Paste";
+pasteButton.Icon = new SymbolIcon(Symbol.Paste);
+pasteButton.DisplayOptions = DisplayOptions.Normal | DisplayOptions.Simplified;
 
-    //This item will be displayed only in simplified layout-->
-    RibbonButton copyButton = new RibbonButton();
-    copyButton.Content = "Copy";
-    copyButton.Icon = new SymbolIcon(Symbol.Copy);
-    copyButton.DisplayOptions = DisplayOptions.Simplified;
-    
-    //This item will be displayed only in normal layout
-    RibbonButton formatButton = new RibbonButton();
-    formatButton.Content = "Format Painter";
-    formatButton.Icon = new SymbolIcon(Symbol.SyncFolder);
-    formatButton.DisplayOptions = DisplayOptions.Normal;
+//This item will be displayed in normal layout and inside overflow menu during simplified Layout
+RibbonButton cutButton = new RibbonButton();
+cutButton.Content = "Cut";
+cutButton.Icon = new SymbolIcon(Symbol.Cut);
+cutButton.DisplayOptions = DisplayOptions.Normal | DisplayOptions.Overflow;
+
+//This item will be displayed only in simplified layout-->
+RibbonButton copyButton = new RibbonButton();
+copyButton.Content = "Copy";
+copyButton.Icon = new SymbolIcon(Symbol.Copy);
+copyButton.DisplayOptions = DisplayOptions.Simplified;
+
+//This item will be displayed only in normal layout
+RibbonButton formatButton = new RibbonButton();
+formatButton.Content = "Format Painter";
+formatButton.Icon = new SymbolIcon(Symbol.SyncFolder);
+formatButton.DisplayOptions = DisplayOptions.Normal;
 {% endhighlight %}
 {% endtabs %}
 
@@ -185,18 +184,18 @@ The overflow menu can be enabled either at the end of each `RibbonGroup` or plac
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-         <ribbon:RibbonGroup Header="Font" 
-                         OverflowItemDisplayMode="GroupLevel" />                                
-    </Page>
+<Page
+    <ribbon:RibbonGroup Header="Font" 
+                        OverflowItemDisplayMode="GroupLevel" />                                
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    RibbonGroup ribbonGroup = new RibbonGroup();
-    ribbonGroup.Header = "Font";
-    ribbonGroup.OverflowItemDisplayMode = OverFlowItemDisplayMode.GroupLevel;
+RibbonGroup ribbonGroup = new RibbonGroup();
+ribbonGroup.Header = "Font";
+ribbonGroup.OverflowItemDisplayMode = OverFlowItemDisplayMode.GroupLevel;
  
 {% endhighlight %}
 {% endtabs %}
@@ -211,26 +210,26 @@ Syncfusion<sup>&reg;</sup> Ribbon control provides a minimized and adorner state
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-        <ribbon:SfRibbon x:Name="ribbon"
-                         AllowMinimize="True">
-        </ribbon>                             
-    </Page>
+<Page
+    <ribbon:SfRibbon x:Name="ribbon"
+                        AllowMinimize="True">
+    </ribbon>                             
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    public sealed partial class MainPage : Page
+public sealed partial class MainPage : Page
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            SfRibbon sfRibbon = new SfRibbon();
-            sfRibbon.AllowMinimize = true;
-            rootGrid.Children.Add(sfRibbon);
-        }
+        this.InitializeComponent();
+        SfRibbon sfRibbon = new SfRibbon();
+        sfRibbon.AllowMinimize = true;
+        rootGrid.Children.Add(sfRibbon);
     }
+}
  
 {% endhighlight %}
 {% endtabs %}
@@ -250,28 +249,28 @@ The Ribbon control allows you to load in the minimized state by using the `IsMin
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-        <ribbon:SfRibbon x:Name="ribbon"
-                         AllowMinimize="True"
-                         IsMinimized = "True">
-        </ribbon>                             
-    </Page>
+<Page
+    <ribbon:SfRibbon x:Name="ribbon"
+                        AllowMinimize="True"
+                        IsMinimized = "True">
+    </ribbon>                             
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    public sealed partial class MainPage : Page
+public sealed partial class MainPage : Page
+{
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            SfRibbon sfRibbon = new SfRibbon();
-            sfRibbon.AllowMinimize = true;
-            sfRibbon.IsMinimized = true;
-            rootGrid.Children.Add(sfRibbon);
-        }
+        this.InitializeComponent();
+        SfRibbon sfRibbon = new SfRibbon();
+        sfRibbon.AllowMinimize = true;
+        sfRibbon.IsMinimized = true;
+        rootGrid.Children.Add(sfRibbon);
     }
+}
  
 {% endhighlight %}
 {% endtabs %}
