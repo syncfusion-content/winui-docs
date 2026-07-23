@@ -11,8 +11,6 @@ documentation: UG
 
 This section explains the keyboard shortcuts that are supported by the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
 
-> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
-
 All keys described in the following tables work when the AutoComplete control has focus. The drop-down must be open for the navigation keys to take effect.
 
 ## Drop-down open and close

@@ -201,7 +201,7 @@ The command for the launcher button in a [RibbonGroup](https://help.syncfusion.c
 <ribbon:SfRibbon>
     <ribbon:SfRibbon.Tabs>
         <ribbon:RibbonTab Header="Home">
-            <ribbon:RibbonGroup LauncherButtonCommand="{Binding LauncherButtonCommand}"
+            <ribbon:RibbonGroup LauncherButtonCommand="{Binding LauncherButtonCommand, Mode=TwoWay}"
                                 ShowLauncherButton="True"
                                 Header="Clipboard">
                 <ribbon:RibbonDropDownButton Icon="Paste"

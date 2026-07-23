@@ -11,13 +11,12 @@ documentation: ug
 
 This section explains the grouping support available in the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
 
-**Minimum requirements:** WinUI 3 and the Syncfusion WinUI `SfAutoComplete` control from the `Syncfusion.Editors.WinUI` package (version 19.4.0.38 or later).
 
 ## Enable grouping
 
-To display grouped data in the `SfAutoComplete` control, bind the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_ItemsSource) property to the [CollectionViewSource](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.collectionviewsource?view=winui-3.0) `View`, with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the collection to enable grouping support. To customize how groups are matched while the user types, use a custom filter behavior.
+To display grouped data in the `SfAutoComplete` control, bind the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property to the [CollectionViewSource](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.collectionviewsource?view=winrt-28000) `View`, with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the collection to enable grouping support. To customize how groups are matched while the user types, use a custom filter behavior.
 
-You can define the appearance of groups in the drop-down list by using the [GroupStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_GroupStyle) property. `GroupStyle` is the WinUI `Microsoft.UI.Xaml.Controls.GroupStyle`, and its default value is `null`.
+You can define the appearance of groups in the drop-down list by using the [GroupStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_GroupStyle) property. `GroupStyle` is the WinUI `Microsoft.UI.Xaml.Controls.GroupStyle`, and its default value is `null`.
 
 The following example defines a `CollectionViewSource` that groups a collection of `Vegetable` objects by the `Category` property, and binds its `View` to the `ItemsSource` of `SfAutoComplete`.
 
