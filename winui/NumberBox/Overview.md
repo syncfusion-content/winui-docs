@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI NumberBox control | Syncfusion
-description: Learn about the Syncfusion WinUI NumberBox (SfNumberBox) control, its features, and more.
+description: Learn about the Syncfusion WinUI NumberBox (SfNumberBox) control, which enables numeric input, validation, formatting, placeholders, and value navigation.
 platform: WinUI
 control: SfNumberBox
 documentation: ug
