@@ -13,7 +13,7 @@ This section explains the steps required to add the [WinUI Slider](https://www.s
 
 ## Creating an application with WinUI Slider
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+1. Create a [WinUI 3 desktop app for C# and .NET 8](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
 2. Add a reference to the [Syncfusion.Sliders.WinUI](https://www.nuget.org/packages/Syncfusion.Sliders.WinUI) NuGet package.
 

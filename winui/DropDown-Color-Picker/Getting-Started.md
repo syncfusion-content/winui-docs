@@ -34,7 +34,7 @@ In this walkthrough, you will create a WinUI application that contains the `SfDr
 
 To add the DropDown Color Picker control manually in XAML, follow the steps below.
 
-1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+1. Create a [WinUI 3 desktop app for C# and .NET 8](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Install the following NuGet package in the project:
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the `Syncfusion.UI.Xaml.Editors` namespace in the XAML page.
