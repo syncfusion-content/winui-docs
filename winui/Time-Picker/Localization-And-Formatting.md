@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization and Formatting in WinUI Time Picker| Syncfusion
+title: Localization and Formatting in WinUI Time Picker | Syncfusion
 description: Learn here about Localization and Formatting in Syncfusion WinUI Time Picker (SfTimePicker) control, its elements, and more.
 platform: WinUI
 control: SfTimePicker
@@ -13,22 +13,28 @@ This section describes how to localize and format the WinUI [Time Picker](https:
 
 ## Change the type of clock
 
-The `Time Picker` control supports 12 hours and 24 hours formats. You can change the time format by using `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
+The `Time Picker` control supports 12-hour and 24-hour formats. You can change the time format by using the `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
 
-You can select the required `ClockIdentifier` value from below formats.
+You can select the required `ClockIdentifier` value from the below formats.
 
 * 12HourClock
 * 24HourClock 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      x:Name="sfTimePicker"
-                      ClockIdentifier="24HourClock"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          x:Name="sfTimePicker"
+                          ClockIdentifier="24HourClock"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ClockIdentifier = "24HourClock";
@@ -45,14 +51,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can change the flow direction of the `Time Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker  
-                      x:Name="sfTimePicker"
-                      FlowDirection="RightToLeft"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker  
+                          x:Name="sfTimePicker"
+                          FlowDirection="RightToLeft"/>
+</Window>
 
 {% endhighlight %}
-{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight c# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
@@ -69,14 +81,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 You can localize the `Time Picker` using the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      x:Name="sfTimePicker"
-                      Language="ar-SA"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          x:Name="sfTimePicker"
+                          Language="ar-SA"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.Language = "ar";
@@ -88,25 +106,31 @@ sfTimePicker.Language = "ar";
 
 N> `Time Picker` control updates the flow direction visually based on the `Language` property value.
 
-N> When `Language` and `FlowDirection` properties are set, `FlowDirection` property have higher precedence.
+N> When the `Language` and `FlowDirection` properties are set, the `FlowDirection` property has higher precedence.
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Localization)
 
 ## Change time display format
 
- You can edit and display the selected time with various formatting like hour, minutes, seconds and meridiem formats by using the [`DisplayTimeFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DisplayTimeFormat) property. The default value of `DisplayTimeFormat` property is `hh:mm tt`.
+You can edit and display the selected time with various formatting like hour, minute, second and meridiem formats by using the [`DisplayTimeFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_DisplayTimeFormat) property. The default value of `DisplayTimeFormat` property is `hh:mm tt`.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="2" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
 
-<editors:SfTimePicker x:Name="sfTimePicker" 
-                      DisplayTimeFormat="HH:mm"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker x:Name="sfTimePicker" 
+                          DisplayTimeFormat="HH:mm"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.DisplayTimeFormat= "HH:mm";
+sfTimePicker.DisplayTimeFormat = "HH:mm";
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,7 +141,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Edit time using mask mode
 
-By default ‘Mask’ editing is enabled, which ensure that it contains only valid value. As soon as in input is given, the value is validated and correction is done immediately. Once input is completed for a field, cursor moves to next field automatically.
+By default, 'Mask' editing is enabled, which ensures that it contains only a valid value. As soon as an input is given, the value is validated and correction is done immediately. Once the input is completed for a field, the cursor moves to the next field automatically.
 
 Based on the `DisplayTimeFormat` and your input values, hour and minute field values are automatically corrected. 
 
@@ -130,14 +154,20 @@ For example,
 | If you try to enter input in minute field that is greater than `59`, it will add first digit in minute field and move the cursor to the next field. |87 (in minute field) | <img src="Getting-Started_images/winui-time-picker-minute-editing.png" alt="WinUI TimePicker displays Corrects Minute Field based on Input"/> <img src="Getting-Started_images/winui-time-picker-minute-editing-with-selection.png" alt="WinUI TimePicker displays Corrects Minute Field based on Input"/> | 
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      x:Name="sfTimePicker"
-                      EditMode="Mask" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          x:Name="sfTimePicker"
+                          EditMode="Mask" />
+</Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.EditMode = DateTimeEditMode.Mask;
@@ -154,17 +184,23 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 If you want to perform the validation after the user completely entering their time inputs, use the [EditMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_EditMode) property value as `Normal`. Then the entered time value is validated with the `DisplayTimeFormat` property value by pressing the `Enter` key or lost focus. If entered value is not suit with `DisplayTimeFormat` property, the previously selected time value sets to `SelectedTime` property.
 
 {% tabs %}
-{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      x:Name="sfTimePicker"
-                      EditMode="Normal" />
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          x:Name="sfTimePicker"
+                          EditMode="Normal" />
+</Window>
 
 {% endhighlight  %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
-sfTimePicker.EditMode = DateTimeEditingMode.Normal;
+sfTimePicker.EditMode = DateTimeEditMode.Normal;
 
 {% endhighlight  %}
 {% endtabs %}
@@ -178,14 +214,20 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
-{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="3" %}
+{% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
 
-<editors:SfTimePicker 
-                      Name="sfTimePicker"
-                      ShowClearButton="False"/>
+<Window
+    ...
+     xmlns:editors="using:Syncfusion.UI.Xaml.Editors">
+    <editors:SfTimePicker 
+                          Name="sfTimePicker"
+                          ShowClearButton="False"/>
+</Window>
 
 {% endhighlight %}
-{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="2" %}
+{% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4" %}
+
+using Syncfusion.UI.Xaml.Editors;
 
 SfTimePicker sfTimePicker = new SfTimePicker();
 sfTimePicker.ShowClearButton = false;

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Themes in WinUI Scheduler Control | Syncfusion
-description: Learn here all about how to use various themes in Syncfusion WinUI Scheduler (SfScheduler) control, and more.
+description: Learn here all about how to use various themes in the Syncfusion WinUI Scheduler (SfScheduler) control, and more.
 platform: winui
 control: SfScheduler
 documentation: ug
 ---
 
 # Themes in WinUI Scheduler (SfScheduler)
- The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) allows you to apply different themes to customize its appearance for a better user experience.
+The [WinUI Scheduler](https://www.syncfusion.com/winui-controls/scheduler) allows you to apply different themes to customize its appearance for a better user experience.
 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes) 
 
@@ -21,6 +21,9 @@ You can customize the default appearance of themes by overriding key values. Adj
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" %}
 
+<Window
+    ...
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler">
     <scheduler:SfScheduler>
         <scheduler:SfScheduler.Resources>
             <ResourceDictionary>
@@ -34,6 +37,7 @@ You can customize the default appearance of themes by overriding key values. Adj
             </ResourceDictionary>
         </scheduler:SfScheduler.Resources>
     </scheduler:SfScheduler>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
