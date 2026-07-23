@@ -119,8 +119,6 @@ this.Content = sfRangeSlider;
 
 You can change the divider fill of the range slider using the [`DividerFill`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Sliders.SliderBase.html#Syncfusion_UI_Xaml_Sliders_SliderBase_DividerFill) property.
 
-N> The `ColorHelper` used in the C# example is part of the `Syncfusion.UI.Xaml.Core` namespace.
-
 {% tabs %}
 
 {% highlight xaml %}
