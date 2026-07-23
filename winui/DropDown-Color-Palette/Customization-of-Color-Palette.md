@@ -17,8 +17,6 @@ You can customize the control displayed in the dropdown of `DropDown Color Palet
 
 N> You can refer to the [Color Palette](https://help.syncfusion.com/winui/color-palette/getting-started) documentation page to know more about all customization available in the `Color Palette` control.
 
-N> The `editors:` prefix used in the XAML below maps to the `Syncfusion.UI.Xaml.Editors` namespace. For details on adding the namespace reference, see the [Getting Started](https://help.syncfusion.com/winui/dropdown-color-palette/getting-started) page.
-
 The following properties of the `SfColorPalette` and its palette models are used in the example below:
 
 * `ShowMoreColorsButton` - Shows or hides the **More Colors** button at the bottom of the `SfColorPalette`.

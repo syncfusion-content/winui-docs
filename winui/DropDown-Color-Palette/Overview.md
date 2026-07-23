@@ -23,10 +23,3 @@ The [WinUI DropDown Color Palette](https://www.syncfusion.com/winui-controls/dro
 * [Color palette customization](https://help.syncfusion.com/winui/dropdown-color-palette/customization-of-color-palette) support.
 * [Dropdown customization](https://help.syncfusion.com/winui/dropdown-color-palette/dropdown-customization) support.
 * `ToolTip` support that shows the color name while hovering over a color item.
-
-## See also
-
-* [Getting Started](https://help.syncfusion.com/winui/dropdown-color-palette/getting-started)
-* [More Colors Dialog](https://help.syncfusion.com/winui/dropdown-color-palette/more-colors-dialog)
-* [Color Palette customization](https://help.syncfusion.com/winui/dropdown-color-palette/customization-of-color-palette)
-* [Dropdown customization](https://help.syncfusion.com/winui/dropdown-color-palette/dropdown-customization)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WinUI NumberBox control | Syncfusion
-description: Learn about the Syncfusion WinUI NumberBox (SfNumberBox) control, its features, and more.
+description: Learn about the Syncfusion WinUI NumberBox (SfNumberBox) control, which enables numeric input, validation, formatting, placeholders, and value navigation.
 platform: WinUI
 control: SfNumberBox
 documentation: ug
@@ -10,8 +10,6 @@ documentation: ug
 # WinUI NumberBox Overview
 
 The [WinUI NumberBox](https://www.syncfusion.com/winui-controls/numberbox) control provides an intuitive and advanced editor control that allows you to enter numeric values in currency, percent, decimal formats and much more. It validates the user input independent of the custom format applied. It also validates the input when the focus is lost or the `Enter` key is pressed in the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control. It supports showing placeholder text in the editor.
-
-N> The `Syncfusion.Editors.WinUI` NuGet package is supported on WinUI 3 with .NET 5 and later .NET versions. To get started, refer to the [Getting Started with WinUI NumberBox](https://help.syncfusion.com/winui/numberbox/getting-started) documentation.
 
 ## Control Structure
 
