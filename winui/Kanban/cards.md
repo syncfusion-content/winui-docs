@@ -823,8 +823,6 @@ public class ViewModel
 N>
 * This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true`.
 
-* This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true.`
-
 ## Card Selection
 
 The SfKanban control supports selecting cards to perform keyboard navigation and drag-and-drop operations. The selection behavior can be configured using the `CardSelectionType` property.
