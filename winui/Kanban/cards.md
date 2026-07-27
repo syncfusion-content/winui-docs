@@ -825,7 +825,7 @@ N>
 
 ## Card Selection
 
-The SfKanban control supports selecting cards to perform keyboard navigation and drag-and-drop operations. The selection behavior can be configured using the `CardSelectionType` property.
+The SfKanban control allows users to select one or multiple cards and perform drag-and-drop operations. The selection behavior can be customized using the `CardSelectionType` property.
 
 ### Single card selection
 
@@ -850,6 +850,8 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 {% endtabs %}
+
+![single-card-selection-support-in-winui-kanban](images/cards/single-card-selection-support-in-winui-kanban.gif)
 
 ### Multiple card selection
 
@@ -881,9 +883,11 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 {% endhighlight %}
 {% endtabs %}
 
+![multi-card-selection-support-in-winui-kanban](images/cards/multi-card-selection-support-in-winui-kanban.gif)
+
 ### Multi-card drag and drop
 
-When multiple cards are selected, you can drag and drop the selected cards together between columns.
+When multiple cards are selected, you can drag and drop them together as a single operation.
 
 The following behaviors are supported:
 
@@ -892,6 +896,8 @@ The following behaviors are supported:
 - Supports drag-and-drop between columns and swimlanes.
 - Validates workflow restrictions for all selected cards before completing the drop operation.
 
+![multi-card-drag-and-drop-in-winui-kanban](images/cards/multi-card-drag-and-drop-in-winui-kanban.gif)
+
 N>
 
-Multi-card drag and drop is available only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together as a single drag operation.
+Multi-card drag and drop is supported only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together as a single drag operation.
