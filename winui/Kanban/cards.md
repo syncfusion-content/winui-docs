@@ -825,7 +825,7 @@ N>
 
 ## Card Selection
 
-The SfKanban control allows users to select one or multiple cards and perform drag-and-drop operations. The selection behavior can be customized using the `CardSelectionType` property.
+The SfKanban control supports selecting one or multiple cards and performing drag-and-drop operations. The selection behavior can be customized using the `CardSelectionType` property.
 
 ### Single card selection
 
