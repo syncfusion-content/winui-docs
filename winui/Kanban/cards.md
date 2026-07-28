@@ -851,8 +851,6 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 {% endhighlight %}
 {% endtabs %}
 
-![single-card-selection-support-in-winui-kanban](images/cards/single-card-selection-support-in-winui-kanban.gif)
-
 ### Multiple card selection
 
 You can select multiple cards by setting the `CardSelectionType` property to `Multiple`.
@@ -882,8 +880,6 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 {% endhighlight %}
 {% endtabs %}
-
-![multi-card-selection-support-in-winui-kanban](images/cards/multi-card-selection-support-in-winui-kanban.gif)
 
 ### Multi-card drag and drop
 
