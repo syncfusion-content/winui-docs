@@ -857,9 +857,9 @@ You can select multiple cards by setting the `CardSelectionType` property to `Mu
 
 The following interactions are supported:
 
-- Use Ctrl + Click to select or unselect individual cards.
-- Use Shift + Click to select a range of cards within the same column.
-- Use Shift + Up Arrow and Shift + Down Arrow keys to extend or reduce the current selection range.
+- Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to select or unselect individual cards.
+- Use <kbd>Shift</kbd> + <kbd>Click</kbd> to select a range of cards within the same column.
+- Use <kbd>Shift</kbd> + <kbd>Up Arrow</kbd> and <kbd>Shift</kbd> + <kbd>Down Arrow</kbd> keys to extend or reduce the current selection range.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
