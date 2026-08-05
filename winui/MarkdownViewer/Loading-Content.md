@@ -9,11 +9,11 @@ documentation: ug
 
 # Loading Markdown Content in WinUI Markdown Viewer
 
-The SfMarkdownViewer control offers versatile options for loading Markdown content from various sources. Its `Source` property automatically identifies the input type and manages content loading seamlessly, supporting raw Markdown text, local file paths, as well as HTTP/HTTPS URLs.
+The [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control offers versatile options for loading Markdown content from various sources. Its [Source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_Source) property automatically identifies the input type and manages content loading seamlessly, supporting raw Markdown text, local file paths, as well as HTTP/HTTPS URLs.
 
 ## Loading from Raw Markdown String
 
-Assign a Markdown-formatted string to the Source property of the SfMarkdownViewer control to display Markdown content directly within your application.
+Assign a Markdown-formatted string to the Source property of the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control to display Markdown content directly within your application.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -85,7 +85,7 @@ Used to define major sections within your Markdown content.
 
 ## Loading from Local File
 
-To load Markdown content from a local file, simply set the file path as the value of the Source property. The control automatically recognizes valid file paths and reads the file content accordingly.
+To load Markdown content from a local file, simply set the file path as the value of the [Source](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_Source) property. The control automatically recognizes valid file paths and reads the file content accordingly.
 
 **C#**
 
@@ -108,7 +108,7 @@ public partial class MainWindow : Window
 
 ## Loading from URL
 
-The SfMarkdownViewer control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
+The [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
 
 {% tabs %}
 {% highlight xaml %}

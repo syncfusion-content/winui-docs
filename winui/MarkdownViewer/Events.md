@@ -9,12 +9,12 @@ documentation: ug
 
 # Event in WinUI Markdown Viewer (SfMarkdownViewer)
 
-This section describes how to manage hyperlink interactions in the SfMarkdownViewer using the HyperlinkClicked event.
-The HyperlinkClicked event is raised when a user clicks a hyperlink within the Markdown content. It provides access to the selected URL and enables you to handle the interaction or override the default navigation behavior if needed.
+This section describes how to manage hyperlink interactions in the [SfMarkdownViewer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html) using the [HyperlinkClicked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event.
+The [HyperlinkClicked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event is raised when a user clicks a hyperlink within the Markdown content. It provides access to the selected URL and enables you to handle the interaction or override the default navigation behavior if needed.
 
 ## HyperlinkClicked Event
 
-The HyperlinkClicked event supplies information about the selected hyperlink through the MarkdownHyperlinkClickedEventArgs class.
+The [HyperlinkClicked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event supplies information about the selected hyperlink through the [MarkdownHyperlinkClickedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownHyperlinkClickedEventArgs.html) class.
 
 This event argument includes the following properties:
 
@@ -23,7 +23,7 @@ This event argument includes the following properties:
 
 ## Disable hyperlink navigation
 
-You can prevent hyperlink navigation by setting the Cancel property of the MarkdownHyperlinkClickedEventArgs to true within the HyperlinkClicked event handler.
+You can prevent hyperlink navigation by setting the Cancel property of the [MarkdownHyperlinkClickedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.MarkdownHyperlinkClickedEventArgs.html) to true within the [HyperlinkClicked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Markdown.SfMarkdownViewer.html#Syncfusion_UI_Xaml_Markdown_SfMarkdownViewer_HyperlinkClicked) event handler.
 
 {% highlight c# %}
 
