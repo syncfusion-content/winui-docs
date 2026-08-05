@@ -14,7 +14,6 @@ Highlight matching characters in the suggestion list to pick an item with more c
 * **Highlight beginning text**
 * **Highlight all occurrence of search text**
 
-> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
 
 The text highlight can be indicated with various customizing styles by enabling the following properties. They are:
 
@@ -26,16 +25,16 @@ The text highlight can be indicated with various customizing styles by enabling 
 
 {% tabs %}
 {% highlight xaml %}
-    <editors:SfAutoComplete x:Name="autoComplete"
-                            DisplayMemberPath="Name"                       
-                            TextHighlightMode="Matched"                                
-                            TextSearchMode="StartsWith"                               
-                            HighlightedTextFontSize="15"                               
-                            HighlightedTextFontStyle="Italic"                               
-                            HighlightedTextFontWeight="Medium"                                
-                            HighlightedTextForeground="Red"                                
-                            ItemsSource="{Binding SocialMedias}">       
-    </editors:SfAutoComplete>
+<editors:SfAutoComplete x:Name="autoComplete"
+                        DisplayMemberPath="Name"                       
+                        TextHighlightMode="Matched"                                
+                        TextSearchMode="StartsWith"                               
+                        HighlightedTextFontSize="15"                               
+                        HighlightedTextFontStyle="Italic"                               
+                        HighlightedTextFontWeight="Medium"
+                        HighlightedTextForeground="Red"                                
+                        ItemsSource="{Binding SocialMedias}">       
+</editors:SfAutoComplete>
 
 {% endhighlight %}
 {% highlight c# %}

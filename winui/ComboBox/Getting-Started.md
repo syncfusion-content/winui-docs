@@ -13,7 +13,7 @@ This section explains the steps required to add the [ComboBox](https://help.sync
 
 ## Creating an application with WinUI ComboBox
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2.  Download and refer the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
@@ -109,14 +109,15 @@ this.Content = comboBox;
 
 ## Populating items using data binding
 
-The `ComboBox` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate `ComboBox` with SocialMedia details.
+The `ComboBox` can be bound to an external data source using the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property. Now, let us create Model and ViewModel classes to populate `ComboBox` with SocialMedia details.
 
 **Step 1:** Define a simple model class SocialMedia with fields ID and name, and then populate social media data in the ViewModel.
 
-N> Add the required `using` directives: `using System.Collections.ObjectModel;` and `using Syncfusion.UI.Xaml.Editors;`.
-
 {% tabs %}
 {% highlight c# %}
+
+using System.Collections.ObjectModel;
+using Syncfusion.UI.Xaml.Editors;
 
 //Model.cs
 public class SocialMedia
@@ -199,9 +200,9 @@ N> Set the SocialMediaViewModel instance as the DataContext of your control; thi
 
 The `ComboBox` control is populated with the list of social medias. But the SocialMedia model contains two properties, ID and Name, so it is necessary to specify by which property it should display the value in the selection box portion of the `ComboBox` control when an item is selected.
 
-[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the `ComboBox` control when an item is selected. The default value is `String.Empty`.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_TextMemberPath) - This property path is used to get the value for displaying in the selection box portion of the `ComboBox` control when an item is selected. The default value is `String.Empty`.
 
-[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - This property path is used to set the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_DisplayMemberPath) - This property path is used to set the name or path of the property displayed for each data item in the drop-down list. The default value is `String.Empty`.
 
 {% tabs %}
 {% highlight c# %}
@@ -216,9 +217,9 @@ comboBox.TextMemberPath = "Name";
 
 ## Multi selection
 
-The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionMode) property as `Multiple`. Checkboxes can be used to represent selected items when the [MultiSelectionDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_MultiSelectionDisplayMode) property is set to `Check`.
+The `ComboBox` allows user to select multiple values from the drop-down list. The multi-select `ComboBox` mode can be enabled by setting the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionMode) property as `Multiple`. Checkboxes can be used to represent selected items when the [MultiSelectionDisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_MultiSelectionDisplayMode) property is set to `Check`.
 
-The selection operations can be handled using the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionChanged) event of `ComboBox`.
+The selection operations can be handled using the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChanged) event of `ComboBox`.
 
 {% tabs %}
 {% highlight xaml %}

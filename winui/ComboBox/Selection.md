@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WinUI ComboBox (SfComboBox)
 
-The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) allows the user to select single or multiple items from the drop-down list. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionMode) property. The default value of `SelectionMode` is `Single`. There are two different selection modes: `Single`, and `Multiple`.
+The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) allows the user to select single or multiple items from the drop-down list. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionMode) property. The default value of `SelectionMode` is `Single`. There are two different selection modes: `Single`, and `Multiple`.
 
 N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Refer to [Getting Started](https://help.syncfusion.com/winui/combobox/getting-started) for setup details and sample data.
 
@@ -19,7 +19,7 @@ The `ComboBox` allows the user to select a single item from the drop-down list.
 
 ### UI Selection 
 
-The selected item can be changed interactively by selecting from the drop-down list or entering the value using keyboard and pressing the `Enter` key or losing the control focus. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectedIndex) property of `ComboBox` control.
+The selected item can be changed interactively by selecting from the drop-down list or entering the value using keyboard and pressing the `Enter` key or losing the control focus. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedItem) or [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectedIndex) property of `ComboBox` control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -139,7 +139,7 @@ this.comboBox.SelectedItems.Add(socialMediasList[5]);
 
 ### How to hide the check box
 
-The check box that is displayed in a drop-down list can be hidden by using the [IsMultiSelectCheckBoxEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_IsMultiSelectCheckBoxEnabled) property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is `true`.
+The check box that is displayed in a drop-down list can be hidden by using the [IsMultiSelectCheckBoxEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsMultiSelectCheckBoxEnabled) property of ComboBox control. The default value of `IsMultiSelectCheckBoxEnabled` property is `true`.
 
 N> When the check box is hidden, users can still toggle item selection by clicking the item text.
 
@@ -222,7 +222,7 @@ Selected items will be displayed with a customizable token representation and th
 
 ##### UI selection 
 
-The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of ComboBox control.
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedItem) property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}

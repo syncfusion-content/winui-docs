@@ -16,7 +16,7 @@ Highlight matching characters in the suggestion list to pick an item with more c
 
 N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Refer to [Getting Started](https://help.syncfusion.com/winui/combobox/getting-started) for setup details.
 
-N> Text highlighting requires `IsEditable="true"` and `IsFilteringEnabled="True"`. Add `using Syncfusion.UI.Xaml.Editors;` in C# to access the `ComboBoxTextHighlightMode` and `ComboBoxTextSearchMode` enums.
+N> Text highlighting requires `IsEditable="true"` and `IsFilteringEnabled="True"`.
 
 The text highlight can be customized using the following properties:
 
@@ -27,31 +27,33 @@ The text highlight can be customized using the following properties:
 
 {% tabs %}
 {% highlight xaml %}
-    <editors:SfComboBox 
-                            x:Name="comboBox"
-                            DisplayMemberPath="Name"
-                            IsEditable="true"
-                            IsFilteringEnabled="True"                       
-                            TextHighlightMode="Matched"                                
-                            TextSearchMode="StartsWith"                               
-                            HighlightedTextFontSize="15"                               
-                            HighlightedTextFontStyle="Italic"                               
-                            HighlightedTextFontWeight="Medium"                                
-                            HighlightedTextForeground="Red"                                
-                            ItemsSource="{Binding SocialMedias}">       
-    </editors:SfComboBox>
+<editors:SfComboBox x:Name="comboBox"
+                        DisplayMemberPath="Name"
+                        IsEditable="true"
+                        IsFilteringEnabled="True"                       
+                        TextHighlightMode="Matched"                                
+                        TextSearchMode="StartsWith"                               
+                        HighlightedTextFontSize="15"                               
+                        HighlightedTextFontStyle="Italic"                               
+                        HighlightedTextFontWeight="Medium"                                
+                        HighlightedTextForeground="Red"                                
+                        ItemsSource="{Binding SocialMedias}">       
+</editors:SfComboBox>
 
 {% endhighlight %}
 {% highlight c# %}
-        comboBox.DisplayMemberPath = "Name";
-        comboBox.IsEnabled = true;
-        comboBox.IsFilteringEnabled = true;          
-        comboBox.TextHighlightMode = ComboBoxTextHighlightMode.Unmatched;
-        comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
-        comboBox.HighlightedTextFontSize = 10;
-        comboBox.HighlightedTextFontStyle = FontStyle.Normal;
-        comboBox.HighlightedTextFontWeight = FontWeights.ExtraLight;
-        comboBox.HighlightedTextForeground = Color.Red;
+
+using Syncfusion.UI.Xaml.Editors;
+
+comboBox.DisplayMemberPath = "Name";
+comboBox.IsEnabled = true;
+comboBox.IsFilteringEnabled = true;          
+comboBox.TextHighlightMode = ComboBoxTextHighlightMode.Unmatched;
+comboBox.TextSearchMode = ComboBoxTextSearchMode.Contains;
+comboBox.HighlightedTextFontSize = 10;
+comboBox.HighlightedTextFontStyle = FontStyle.Normal;
+comboBox.HighlightedTextFontWeight = FontWeights.ExtraLight;
+comboBox.HighlightedTextForeground = Color.Red;
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,7 +67,7 @@ It highlights the matches that start with the typed characters in the suggestion
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox     x:Name="comboBox"                        
+<editors:SfComboBox x:Name="comboBox"                        
                         DisplayMemberPath="Name" 
                         IsEditable="true"
                         IsFilteringEnabled="True"                            
@@ -107,14 +109,14 @@ It highlights all the matches that contain the typed characters in the suggestio
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfComboBox  x:Name="comboBox"                         
-                DisplayMemberPath="Name" 
-                IsEditable="true"
-                IsFilteringEnabled="True"                             
-                TextHighlightMode="Matched"
-                TextSearchMode="Contains"                           
-                HighlightedTextForeground="Red"                               
-                ItemsSource="{Binding Wonders}">
+<editors:SfComboBox x:Name="comboBox"                         
+                        DisplayMemberPath="Name" 
+                        IsEditable="true"
+                        IsFilteringEnabled="True"                             
+                        TextHighlightMode="Matched"
+                        TextSearchMode="Contains"                           
+                        HighlightedTextForeground="Red"                               
+                        ItemsSource="{Binding Wonders}">
 </editors:SfComboBox>
 
 {% endhighlight %}
@@ -147,15 +149,15 @@ The [TextHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 ###  TextSearchMode="StartsWith"
 {% tabs %}
 {% highlight xaml %}
-               <editors:SfComboBox  x:Name="comboBox"                          
-                                DisplayMemberPath="Name"  
-                                IsEditable="true"
-                                IsFilteringEnabled="True"                             
-                                TextHighlightMode="Unmatched"
-                                TextSearchMode="StartsWith"                              
-                                HighlightedTextForeground="Red"                                
-                                ItemsSource="{Binding OlympicGames}">
-              </editors:SfComboBox>
+<editors:SfComboBox x:Name="comboBox"                          
+                        DisplayMemberPath="Name"
+                        IsEditable="true"
+                        IsFilteringEnabled="True"
+                        TextHighlightMode="Unmatched"
+                        TextSearchMode="StartsWith"
+                        HighlightedTextForeground="Red"
+                        ItemsSource="{Binding OlympicGames}">
+</editors:SfComboBox>
 {% endhighlight %}
 {% highlight c# %}
 
@@ -174,15 +176,15 @@ The [TextHighlightMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 ###  TextSearchMode="Contains"
 {% tabs %}
 {% highlight xaml %}
-               <editors:SfComboBox   x:Name="comboBox"                         
-                                DisplayMemberPath="Name" 
-                                IsEditable="true"
-                                IsFilteringEnabled="True"                              
-                                TextHighlightMode="Unmatched"
-                                TextSearchMode="Contains"                              
-                                HighlightedTextForeground="Red"                                
-                                ItemsSource="{Binding OlympicGames}">
-              </editors:SfComboBox>
+<editors:SfComboBox x:Name="comboBox"                         
+                        DisplayMemberPath="Name" 
+                        IsEditable="true"
+                        IsFilteringEnabled="True"                              
+                        TextHighlightMode="Unmatched"
+                        TextSearchMode="Contains"                              
+                        HighlightedTextForeground="Red"
+                        ItemsSource="{Binding OlympicGames}">
+</editors:SfComboBox>
 {% endhighlight %}
 {% highlight c# %}
 

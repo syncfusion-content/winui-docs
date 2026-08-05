@@ -11,8 +11,6 @@ documentation: UG
 
 This section explains the different UI customization options available in the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
 
-> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
-
 ## Header for AutoComplete
 
 The `AutoComplete` control header can be set or customized by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_Header) or [HeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_HeaderTemplate) properties. The default value of `HeaderTemplate` is `null` and `Header` is `null`.

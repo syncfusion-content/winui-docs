@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to work with the basic features of the WinUI RangeSlider control.
 
-I> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application.
+N> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application.
 
 ## Setting Minimum and Maximum Values
 

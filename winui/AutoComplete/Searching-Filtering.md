@@ -11,15 +11,13 @@ documentation: UG
 
 The [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control supports rich searching and filtering.
 
-> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
-
 ## Searching based on member path
 
 The `TextMemberPath` and `DisplayMemberPath` properties of the AutoComplete control specify the property path by which the searching is done when custom data is bound to the `ItemsSource` property.
 
-[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input received in the selection box portion of the `AutoComplete` control. The default value is `string.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`.
+[TextMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_TextMemberPath) - Specifies the property path whose value is used to perform searching based on user input received in the selection box portion of the `AutoComplete` control. The default value is `string.Empty`. When `TextMemberPath` is `null` or `string.Empty`, searching will be performed based on `DisplayMemberPath`.
 
-[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down menu. The default value is `string.Empty`.
+[DisplayMemberPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_DisplayMemberPath) - Specifies the property path whose value is displayed as text in the drop-down menu. The default value is `string.Empty`.
 
 N> `DisplayMemberPath` and `TextMemberPath` are effective when the bound item has two or more properties.
 

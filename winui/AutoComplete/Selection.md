@@ -11,8 +11,6 @@ documentation: UG
 
 The [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) allows users to select single or multiple items. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. There are two selection modes: `Single` and `Multiple`.
 
-> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
-
 ## Single selection
 
 The `AutoComplete` allows users to select a single item by entering the value using the keyboard and then selecting from the drop-down list. Press the `Enter` key or the `Tab` key to confirm the selection. The selected item can be retrieved from the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedItem) property.
@@ -287,7 +285,7 @@ private async void OnAutoCompleteInputSubmitted(object sender, Syncfusion.UI.Xam
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `AutoComplete` control, which can be used to clear the entered input. You can hide the clear button by using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_ShowClearButton) property. The default value of the `ShowClearButton` property is `true`.
+By default, the clear button `X` will be displayed in the editor of the `AutoComplete` control, which can be used to clear the entered input. You can hide the clear button by using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_ShowClearButton) property. The default value of the `ShowClearButton` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

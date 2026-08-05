@@ -10,6 +10,9 @@ documentation: ug
 
 # Installing Syncfusion WinUI offline installer
 
+## Overview
+
+For the Essential Studio WinUI product, Syncfusion offers an Offline Installer. This installer bundles all required files into a single downloadable setup, allowing you to install the product on machines without an active internet connection or in restricted network environments. You can simply download the offline installer and run it on your system to install the Essential Studio products of your choice. You can get the most recent version of the Essential Studio Offline Installer [here](https://www.syncfusion.com/downloads/latest-version).
 
 ## Prerequisites
 
@@ -92,7 +95,7 @@ The steps below show how to install the Essential Studio WinUI installer.
 
 The Syncfusion Essential Studio WinUI Installer supports installation and uninstallation via the command line.
 
-### Command Line Installation
+### Command line installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
@@ -113,7 +116,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     N> `x.x.x.x` should be replaced with the Essential Studio version, and the Product Unlock Key should be replaced with the Unlock Key for that version.
 
-### Command Line Uninstallation
+### Command line uninstallation
 
 Syncfusion Essential WinUI can be uninstalled silently using the Command Line.
 

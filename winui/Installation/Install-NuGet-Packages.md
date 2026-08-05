@@ -9,18 +9,18 @@ documentation: ug
 
 # Install Syncfusion WinUI NuGet packages
 
+## Overview
+
+**NuGet** is a package management system for Visual Studio. It makes it easy to add, update, and remove external libraries in your application. Syncfusion publishes all WinUI NuGet packages to [nuget.org](https://www.nuget.org/packages?q=syncfusion+winui). The Syncfusion WinUI NuGet packages can be used without installing the Syncfusion installer. You can simply consume the Syncfusion WinUI NuGet packages in your WinUI application to develop with the Syncfusion WinUI controls.
+
+N> Syncfusion WinUI NuGet packages are available from v18.3.0.35 (Essential Studio 2020 Volume 3).
+
 ## Prerequisites
 
 * Visual Studio 2019 version 16.10 or later, or Visual Studio 2022, with the **Windows App SDK** workload installed.
 * A WinUI project that targets `net5.0-windows10.0.19041.0` or later, with the Windows App SDK reference.
 * An active internet connection to reach the [nuget.org](https://www.nuget.org/) feed.
 * If you plan to use the CLI method, install the [.NET SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk) matching your project target framework.
-
-## Overview
-
-**NuGet** is a package management system for Visual Studio. It makes it easy to add, update, and remove external libraries in your application. Syncfusion publishes all WinUI NuGet packages to [nuget.org](https://www.nuget.org/packages?q=syncfusion+winui). The Syncfusion WinUI NuGet packages can be used without installing the Syncfusion installer. You can simply consume the Syncfusion WinUI NuGet packages in your WinUI application to develop with the Syncfusion WinUI controls.
-
-N> Syncfusion WinUI NuGet packages are available from v18.3.0.35 (Essential Studio 2020 Volume 3).
 
 ## Installation using Package Manager UI
 

@@ -80,18 +80,18 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Setting default color
 
-If you want to change the default selected color on application launching, set your color value to the  [AutomaticBrush](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_AutomaticBrush) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `AutomaticBrush` property is `Black`.
+If you want to change the default selected color on application launching, set your color value to the  [DefaultBrush ](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfColorPalette.html#Syncfusion_UI_Xaml_Editors_SfColorPalette_DefaultBrush ) property. If you changed the selected color, then you can easily make the default color as selected color by clicking the default color button. The default value of `DefaultBrush ` property is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfColorPalette AutomaticBrush="Red"
+<editors:SfColorPalette DefaultBrush ="Red"
                         Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
+colorPalette.DefaultBrush  = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 {% endtabs %}
@@ -107,14 +107,14 @@ You can hide the default color button visibility by setting the [ShowDefaultColo
 {% tabs %}
 {% highlight xaml %}
 
-<editors:SfColorPalette AutomaticBrush="Green"
+<editors:SfColorPalette DefaultBrush ="Green"
                         ShowDefaultColorButton="False"
                         Name="colorPalette" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-colorPalette.AutomaticBrush = new SolidColorBrush(Colors.Red);
+colorPalette.DefaultBrush  = new SolidColorBrush(Colors.Red);
 colorPalette.ShowDefaultColorButton = false;
 
 {% endhighlight %}

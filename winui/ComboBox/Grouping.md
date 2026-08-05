@@ -15,16 +15,18 @@ This section describes the grouping support available in [ComboBox](https://help
 
 N> The [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package is required to use the `SfComboBox` control. Refer to [Getting Started](https://help.syncfusion.com/winui/combobox/getting-started) for setup details.
 
-To display grouped data in `ComboBox` control, set the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_ItemsSource) property to a [CollectionViewSource](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.collectionviewsource?view=winui-3.0) with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the source collection to enable grouping support.
+To display grouped data in `ComboBox` control, set the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_ItemsSource) property to a [CollectionViewSource](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.collectionviewsource?view=winrt-28000) with the `IsSourceGrouped` property set to `true`. The `CollectionViewSource` acts as a proxy over the source collection to enable grouping support.
 
-Also, the appearance of groups in a drop-down list can be defined by using the [GroupStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_GroupStyle) property. The default value of `GroupStyle` is `null`. The `GroupStyle` exposes properties such as `HeaderTemplate`, `ContainerStyle`, and `Panel` to customize the group header appearance, item container style, and items panel respectively.
+Also, the appearance of groups in a drop-down list can be defined by using the [GroupStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html?tabs=tabid-1#Syncfusion_UI_Xaml_Editors_DropDownListBase_GroupStyle) property. The default value of `GroupStyle` is `null`. The `GroupStyle` exposes properties such as `HeaderTemplate`, `ContainerStyle`, and `Panel` to customize the group header appearance, item container style, and items panel respectively.
 
 In the following example, define a `CollectionViewSource` that wraps a collection of vegetable objects and specifies a property to group on (the vegetable category). Then, bind the `View` property of `CollectionViewSource` to the `ItemsSource` property of `ComboBox` control.
 
-N> Add the required `using` directives: `using System.Collections.Generic;`, `using System.Collections.ObjectModel;`, and `using System.Linq;`.
-
 {% tabs %}
 {% highlight c# %}
+
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 //Model.cs
 public class Vegetable

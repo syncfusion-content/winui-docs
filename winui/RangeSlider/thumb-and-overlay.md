@@ -13,7 +13,7 @@ This section explains how to customize the thumb and thumb overlay in the RangeS
 
 The thumb is an element of the RangeSlider that is used to drag and change the selected values. The thumb overlay is rendered around the thumb and is displayed while interacting with it, providing visual feedback to the user.
 
-I> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application.
+N> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application.
 
 ## Thumb Type
 

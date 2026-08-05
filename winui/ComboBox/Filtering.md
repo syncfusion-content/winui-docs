@@ -125,8 +125,6 @@ comboBox.TextSearchMode = ComboBoxTextSearchMode.StartsWith;
 
 ![WinUI ComboBox filter the items based on starting text](Filtering_images/winui-combobox-filtering-start-text.gif)
 
-N> Add `using Syncfusion.UI.Xaml.Editors;` to access the `ComboBoxTextSearchMode` enum in C#.
-
 N> To disable the auto appending and highlighting feature, set the [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) property as `false`.
 
 ### Filter with contains text
@@ -169,6 +167,10 @@ N> Add the required `using` directives: `using Syncfusion.UI.Xaml.Editors;`, `us
 
 {% tabs %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Editors;
+using System.Collections.Generic;
+using System.Linq;
 
 /// <summary>
 /// Represents a custom filtering behavior for `ComboBox` control. 

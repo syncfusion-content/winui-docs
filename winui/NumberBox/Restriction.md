@@ -11,7 +11,7 @@ documentation: ug
 
 This section describes how to restrict the change in value of the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control using [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_AllowNull), [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Minimum), and [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_Maximum) properties.
 
-N> The `Syncfusion.Editors.WinUI` NuGet package is supported on WinUI 3 with .NET 5 and later .NET versions. To get started, refer to the [Getting Started with WinUI NumberBox](https://help.syncfusion.com/winui/numberbox/getting-started) documentation.
+N> To get started, refer to the [Getting Started](https://help.syncfusion.com/winui/numberbox/getting-started) documentation.
 
 ## Restrict null value
 
@@ -65,7 +65,6 @@ sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.Value = 20;
 sfNumberBox.Minimum = 15;
 sfNumberBox.AllowNull = true;
-grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}
@@ -106,7 +105,7 @@ sfNumberBox.Value = 50;
 
 ## Restrict text editing
 
-You can prevent users from editing the numerical value in the editor by setting the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_IsEditable) property to **false**. However, you can still change the value by using the up-down buttons, mouse scroll, keyboard arrows, and page keys. By default, the value of the `IsEditable` property is **true**. For more details on `IsEditable`, refer to [Getting Started with WinUI NumberBox](https://help.syncfusion.com/winui/numberbox/getting-started#clear-button-visibility).
+You can prevent users from editing the numerical value in the editor by setting the [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html#Syncfusion_UI_Xaml_Editors_SfNumberBox_IsEditable) property to **false**. However, you can still change the value by using the up-down buttons, mouse scroll, keyboard arrows, and page keys. By default, the value of the `IsEditable` property is **true**. For more details on `IsEditable`, refer to [Getting Started](https://help.syncfusion.com/winui/numberbox/getting-started#clear-button-visibility).
 
 {% tabs %}
 {% highlight xaml %}

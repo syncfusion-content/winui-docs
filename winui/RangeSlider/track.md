@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to customize the track in the RangeSlider.
 
-I> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application. The `ColorHelper` used in the C# examples is part of the `Syncfusion.UI.Xaml.Core` namespace.
+N> Refer to the [getting started](https://help.syncfusion.com/winui/rangeslider/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRangeSlider` control to your application. The `ColorHelper` used in the C# examples is part of the `Syncfusion.UI.Xaml.Core` namespace.
 
 ## Track Color
 

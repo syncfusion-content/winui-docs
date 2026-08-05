@@ -25,7 +25,7 @@ In this walkthrough, you will create a WinUI application that contains the [Numb
 
 To add `NumberBox` control manually in XAML, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2.  Download and refer the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
@@ -34,8 +34,6 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML page.
 4. Initialize the `NumberBox` control.
-
-N> The `Syncfusion.Editors.WinUI` NuGet package is supported on WinUI 3 with .NET 5 and later .NET versions.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -73,8 +71,6 @@ To add `NumberBox` control manually in C#, follow the below steps.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 
-   N> You can also install the package using the Package Manager Console: `Install-Package Syncfusion.Editors.WinUI`.
-
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in C# page.
 4. Initialize the `NumberBox` control.
 
@@ -94,8 +90,6 @@ namespace GettingStarted
             sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
             sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
             sfNumberBox.Value = 15.35;
-
-            grid.Children.Add(sfNumberBox);
         }
     }
 }
@@ -127,7 +121,6 @@ SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.CustomFormat = "0.000";
-grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}
@@ -246,7 +239,6 @@ SfNumberBox sfNumberBox = new SfNumberBox();
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
 sfNumberBox.AllowNull = false;
-grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}
@@ -351,7 +343,6 @@ SfNumberBox sfNumberBox= new SfNumberBox();
 sfNumberBox.PlaceholderText = "Enter input here...";
 sfNumberBox.HorizontalAlignment = HorizontalAlignment.Center;
 sfNumberBox.VerticalAlignment = VerticalAlignment.Center;
-grid.Children.Add(sfNumberBox);
 
 {% endhighlight %}
 {% endtabs %}

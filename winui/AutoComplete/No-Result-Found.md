@@ -11,8 +11,6 @@ documentation: UG
 
 When the entered text does not match any item in the suggestion list, the SfAutoComplete control displays a message indicating that no search results are found. The desired text or UI can be set by using the `NoResultsFoundContent` and `NoResultsFoundTemplate` properties.
 
-> **Requirements**: WinUI 3, Syncfusion WinUI Editors package.
-
 * Use `NoResultsFoundContent` to display simple text.
 * Use `NoResultsFoundTemplate` to display custom UI, such as styled text or an icon.
 

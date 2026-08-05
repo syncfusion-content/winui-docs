@@ -9,7 +9,7 @@ documentation: ug
 
 # Backstage in WinUI Ribbon (SfRibbon)
 
-> **NOTE**: This topic assumes you have set up a WinUI application with the Syncfusion `SfRibbon` control. If not, see [Getting Started](https://help.syncfusion.com/winui/ribbon/getting-started) for prerequisites (NuGet packages, namespace references) before proceeding.
+N> Refer to the [Getting Started](https://help.syncfusion.com/winui/ribbon/getting-started) documentation for information on installing the NuGet package, adding namespace references, and adding the `SfRibbon` control to your application.
 
 The [RibbonBackstage](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.RibbonBackstage.html) allows you to host controls to create a custom view based on the requirements of the application, and it can be added by using the `Backstage` property. Backstage appears as the first tab in the top left corner named File and opens a backstage view when the `File` menu button is clicked. The backstage view's open/close state can be controlled programmatically through the `IsBackstageOpen` property of the Ribbon.
 
@@ -170,9 +170,6 @@ The following members are commonly used when working with `BackstageView`:
 | `FooterItems` | Property | Collection of items rendered at the bottom (footer) of the backstage view. |
 | `ShowBackButton` | Property | Gets or sets a value indicating whether the back button is shown. |
 | `BackButtonClick` | Event | Raised when the back button is clicked. |
-| `BackButtonCommand` | Property | Gets or sets the command invoked when the back button is clicked. |
-| `BackButtonCommandParameter` | Property | Gets or sets the parameter passed to `BackButtonCommand`. |
-| `Placement` | Property | Gets or sets whether the backstage view is placed at the top or bottom of the application. |
 
 {% tabs %}
 {% highlight xaml %}

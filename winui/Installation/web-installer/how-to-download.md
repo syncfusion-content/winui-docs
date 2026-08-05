@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Downloading Syncfusion WinUI web Installer
+# Downloading Syncfusion WinUI web installer
 
 The Syncfusion WinUI web installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/winui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. 
 
@@ -19,7 +19,7 @@ The Syncfusion WinUI web installer can be downloaded from the [Syncfusion](https
 
 * You must have a Syncfusion account. If you do not have one, sign up at [Syncfusion Account](https://www.syncfusion.com/account/register).
 
-## Download the Trial Version
+## Download the trial version
 
 Our 30-day trial can be downloaded in two ways.
 
@@ -27,7 +27,7 @@ Our 30-day trial can be downloaded in two ways.
    * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 
-### Download Free Trial Setup
+### Download free trial setup
 
 1. Visit the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the WinUI platform.
 2. After completing the required form or logging in with your registered Syncfusion account, you can download the WinUI trial installer from the confirmation page (as shown in the screenshot below). 
@@ -42,7 +42,7 @@ Our 30-day trial can be downloaded in two ways.
    ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
 
    
-### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
+### Start trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion).
 
@@ -62,7 +62,7 @@ You should initiate an evaluation if you have already obtained our components th
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
    
 
-## Download the License Version
+## Download the license version
 
 1. Syncfusion licensed products are available on the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
 2. You can view all licenses (both active and expired) associated with your account.
