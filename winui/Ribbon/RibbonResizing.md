@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Resizing in WinUI Ribbon control | Syncfusion
-description: Learn here all about Ribbon Resizing feature of Syncfusion WinUI Ribbon(SfRibbon) control with custom support and more.
+title: Ribbon Resizing in WinUI Ribbon | Syncfusion
+description: Ribbon Resizing in Syncfusion® WinUI Ribbon expands and collapses ribbon elements automatically to available space.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Ribbon Resizing in WinUI Ribbon Control
+# Ribbon Resizing in WinUI Ribbon
 
 The Syncfusion<sup>&reg;</sup> WinUI SfRibbon supports expanding and collapsing the ribbon elements to the available space while resizing the control. It performs an expand operation when the control size increases and a collapse operation when the control size decreases. It allows resizing ribbon elements for both normal and simplified layouts. By default, the ribbon elements are resized based on group size. There is also an option to resize the ribbon elements in a custom order.
 

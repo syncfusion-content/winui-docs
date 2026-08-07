@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ScreenTip in WinUI Ribbon control | Syncfusion
-description: Learn more about the ScreenTip in the Syncfusion WinUI Ribbon (SfRibbon) control.
+title: ScreenTip in WinUI Ribbon | Syncfusion
+description: ScreenTip in Syncfusion® WinUI Ribbon (SfRibbon) is an enhanced tooltip that displays helpful details when hovering over ribbon items.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# ScreenTip in WinUI Ribbon Control
+# ScreenTip in WinUI Ribbon
 
 `ScreenTip` is an enhanced ToolTip that shows a popup window when the pointer hovers over a ribbon item. The popup provides helpful details about the function of the ribbon item.
 

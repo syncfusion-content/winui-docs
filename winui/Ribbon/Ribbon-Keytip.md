@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon key tip feature in WinUI Ribbon control | Syncfusion
-description: Learn more about the keyboard navigation using key tips in the Syncfusion WinUI Ribbon (SfRibbon) control.
+title: Keytip in WinUI Ribbon | Syncfusion
+description: Enable keyboard navigation with Keytips in Syncfusion® WinUI Ribbon (SfRibbon) to activate ribbon elements quickly.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Keyboard Navigation in WinUI Ribbon
+# Keytip in WinUI Ribbon
 
 The Syncfusion<sup>&reg;</sup> WinUI [SfRibbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) supports keyboard navigation to activate the ribbon elements via [KeyTipService](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.KeyTipService.html), which represents the service that provides the attached properties to enable and manage the KeyTips on the ribbon control. 
 
