@@ -1,13 +1,13 @@
 ---
 layout: post
-title: StopResponding in WinUI AI AssistView control | Syncfusion
-description: Learn about the StopResponding feature in the AI AssistView control, which allows users to cancel AI processing or response generation in WinUI applications.
+title: Stop Responding in WinUI AIAssistView | Syncfusion®
+description: The Stop Responding feature in WinUI AIAssistView allows users to cancel AI response generation, providing greater control over ongoing interactions.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Stop Responding in WinUI AI AssistView
+# Stop Responding in WinUI AIAssistView
 
 ## EnableStopResponding
 
