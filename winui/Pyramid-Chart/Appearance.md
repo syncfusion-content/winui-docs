@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Pyramid Chart control | Syncfusion
-description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfPyramidChart) control.
+title: Appearance in WinUI Pyramid Chart | Syncfusion®
+description: Appearance in the WinUI Pyramid Chart allows you to customize chart visuals using palettes, gradients, and styling options for enhanced presentation.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Appearance in WinUI Chart (SfPyramidChart)
+# Appearance in WinUI Pyramid Chart
 
 The appearance of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) can be customized by using the predefined palette, custom palette, and gradient, which allows enriching the application.
 

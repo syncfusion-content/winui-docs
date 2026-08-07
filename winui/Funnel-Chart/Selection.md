@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI Funnel Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion® WinUI Chart (SfFunnelChart) control.
+title: Selection in WinUI Funnel Chart | Syncfusion®
+description: Selection in the WinUI Funnel Chart enables users to highlight and interact with chart segments, supporting single and multi-selection.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Selection in WinUI Chart (SfFunnelChart)
+# Selection in WinUI Funnel Chart
 
 The funnel chart supports selection that allows the selection of a segment in the chart by using the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_SelectionBehavior). 
 

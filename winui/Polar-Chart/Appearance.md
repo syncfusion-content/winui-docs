@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Polar Chart control | Syncfusion
-description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Appearance in WinUI Polar Chart | Syncfusion®
+description: Appearance in the WinUI Polar Chart allows you to customize chart visuals using palettes, gradients, and styling options for enhanced presentation.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Appearance in WinUI Chart (SfPolarChart)
+# Appearance in WinUI Polar Chart
 
 The appearance of the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized by using predefined palettes, custom palettes, and gradients, which help enrich the application.
 

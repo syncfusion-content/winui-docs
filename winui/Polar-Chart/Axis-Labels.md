@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis labels in WinUI Polar Chart control  | Syncfusion
-description: Learn here all about the chart axis labels and its customization in the Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Axis Labels in WinUI Polar Chart | Syncfusion®
+description: Axis labels in the WinUI Polar Chart display values and categories, supporting customization of formatting, positioning, and appearance settings.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Axis labels in WinUI Chart
+# Axis Labels in WinUI Polar Chart
 
 The axis labels are used to show the units, measures, or category values of the axis to visualize the data. It will be generated based on the range and values bound to the series in the chart.
 

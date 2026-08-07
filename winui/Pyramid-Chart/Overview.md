@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about the introduction of the Syncfusion® WinUI Chart (SfPyramidChart) control with key features and more.
+title: About Syncfusion® WinUI Pyramid Chart Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® WinUI Pyramid Chart control, its features, capabilities, and more details.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# WinUI Chart (SfPyramidChart) Overview
+# About Syncfusion® WinUI Pyramid Chart Control
 
 Syncfusion® [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) (SfPyramidChart) is used to create beautiful pyramid series to visualize proportions of a total in hierarchies, which are used in high-quality WinUI applications.
 
