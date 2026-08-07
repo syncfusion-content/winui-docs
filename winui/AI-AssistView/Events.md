@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event in WinUI AI AssistView (SfAIAssistView) | Syncfusion
-description: Learn here all about Events support in Syncfusion AI AssistView control, its elements and more details.
+title: Events in WinUI AIAssistView | Syncfusion
+description: Events in WinUI AIAssistView provide notifications for user interactions and AI response workflows, enabling customized behavior and event-driven functionality.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Events in WinUI AI AssistView (SfAIAssistView)
+# Events in WinUI AIAssistView
 
 ## PromptRequest event
 

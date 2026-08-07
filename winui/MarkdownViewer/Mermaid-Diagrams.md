@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mermaid Support in WinUI Markdown Viewer | Syncfusion
-description: Learn here all about Mermaid Diagrams in Syncfusion MarkdownViewer control, its elements and more details.
+title: Mermaid Diagram Support in WinUI Markdown Viewer
+description: Mermaid diagram in WinUI Markdown Viewer enables rendering of flowcharts, sequence diagrams, class diagrams, and other visual diagrams from markdown content.
 platform: WinUI
 control: SfMarkdownViewer
 documentation: ug
