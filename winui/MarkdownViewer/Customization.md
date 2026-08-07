@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WinUI Markdown Viewer | Syncfusion®
-description: Customization in WinUI Markdown Viewer enables styling markdown elements, modifying themes, and adjusting appearance for a personalized viewing experience.
+title: Customization in WinUI MarkdownViewer | Syncfusion®
+description: Customization in WinUI MarkdownViewer enables styling markdown elements, modifying themes, and adjusting appearance for a personalized viewing experience.
 platform: WinUI
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Customization in WinUI Markdown Viewer
+# Customization in WinUI MarkdownViewer
 
 The `SfMarkdownViewer` control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 

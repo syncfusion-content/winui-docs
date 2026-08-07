@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with WinUI Markdown Viewer | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI Markdown Viewer control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI MarkdownViewer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI MarkdownViewer control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfMarkdownViewer
 documentation: ug
 keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer WinUI, WinUI markdown rendering, sfmarkdownviewer WinUI, WinUI markdown control, markdown rendering WinUI, WinUI markdown getting started
 ---
 
-# Getting Started with WinUI Markdown Viewer
+# Getting Started with WinUI MarkdownViewer
 
 This section outlines a step‑by‑step guide for integrating and using the `SfMarkdownViewer` control in your WinUI applications.
 
