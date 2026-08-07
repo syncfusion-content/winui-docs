@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Suggestions in WinUI AI AssistView control | Syncfusion
-description: Learn about the suggestion feature that displays AI-driven suggestions in the bottom right corner of the AI AssistView control.
+title: Suggestions in WinUI AIAssistView | Syncfusion®
+description: The suggestions feature in WinUI AIAssistView displays AI-driven recommendations, helping users quickly interact with and refine their prompts.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Suggestions in WinUI AI AssistView
+# Suggestions in WinUI AIAssistView
 
 By using the [Suggestions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html#Syncfusion_UI_Xaml_Chat_SfAIAssistView_Suggestions) property, the AssistView displays AI-driven suggestions in the bottom right corner, making it easy for users to quickly respond or choose from relevant options.
 

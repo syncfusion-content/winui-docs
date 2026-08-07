@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI AI AssistView control | Syncfusion
-description: Learn about getting started with the Syncfusion WinUI AI AssistView (SfAIAssistView) control with its basic features.
+title: Getting Started with WinUI AIAssistView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI AIAssistView control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: AI AssistView
 documentation: ug
 ---
 
-# Getting Started with WinUI AI AssistView
+# Getting Started with WinUI AIAssistView
 
 This section explains the steps required to add the WinUI [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control with its basic features.
 
