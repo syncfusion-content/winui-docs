@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range in WinUI Linear Gauge control | Syncfusion
-description: Learn here all about Range feature of Syncfusion WinUI Linear Gauge control with customization support.
+title: Range in WinUI Linear Gauge | Syncfusion®
+description: Range in the WinUI Linear Gauge highlights specific value intervals on the gauge scale and supports customization of size, position, and appearance.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

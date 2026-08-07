@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Animation feature of Syncfusion WinUI Radial Gauge control with pointer animation support and more.
+title: Animation in WinUI Radial Gauge | Syncfusion®
+description: Animation in the WinUI Radial Gauge enables smooth transitions for gauge pointers and elements, enhancing data visualization and user experience.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

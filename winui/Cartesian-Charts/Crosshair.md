@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Crosshair in WinUI Chart control | Syncfusion
-description: Learn here all about crosshair and its customziation in Syncfusion® WinUI Chart (SfCartesianChart) control
+title:  Crosshair in WinUI Chart | Syncfusion®
+description: Crosshair in the WinUI Chart displays precise axis values at pointer positions and supports customization for enhanced data analysis.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: crosshair in winui chart, winui sfcartesianchart crosshair, winui chart crosshair customization, syncfusion winui chart crosshair, winui sfcartesianchart crosshair settings.
 ---
 
-# Crosshair in WinUI Chart (SfCartesianChart)
+# Crosshair in WinUI Chart
 
 The Chart crosshair behavior allows you to view the data values at the current mouse pointer or touch contact point. By moving the crosshair lines horizontally, you can identify the corresponding X values, and by moving them vertically, you can identify the Y values.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis labels in WinUI Chart control | Syncfusion
-description: Learn here all about axis labels and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Axis Labels in WinUI Chart | Syncfusion®
+description: Axis labels in the WinUI Chart display values and categories, supporting customization of formatting, positioning, and appearance settings.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: axis labels in winui chart, winui sfcartesianchart axis labels, winui chart axis labels customization, syncfusion winui chart axis labels, winui sfcartesianchart axis labels settings.
 ---
 
-# Axis Labels in WinUI Chart (SfCartesianChart)
+# Axis Labels in WinUI Chart
 
 Axis labels are used to show the units, measures, or category values of the axis to visualize the data in a user-friendly way. It will be generated based on the range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of the series.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with WinUI Cartesian Chart control | Syncfusion
+title: Getting Started with WinUI Cartesian Chart | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winui-controls/cartesian-charts"
-description: This section explains about the getting started with Syncfusion® WinUI Cartesian Chart (SfCartesianChart) control, its elements, and more.
+description: Learn how to get started with the Syncfusion® WinUI Cartesian Chart control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: getting started with winui cartesian chart, winui cartesian chart setup, winui sfcartesianchart guide, winui cartesian chart basics.
 ---
 
-# Getting Started with WinUI Cartesian Chart (SfCartesianChart)
+# Getting Started with WinUI Cartesian Chart
 
 This section explains how to populate the Cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
 

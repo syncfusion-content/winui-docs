@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rendering Modes for WinUI Pyramid Chart | Syncfusion
-description: This section explains the rendering surface mode and linear mode of the Syncfusion® WinUI Chart (SfPyramidChart) control.
+title: Rendering Modes in WinUI Pyramid Chart | Syncfusion®
+description: Rendering modes in the WinUI Pyramid Chart control how pyramid segments are displayed, enabling surface and linear visual representations of data.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Rendering Mode in WinUI Chart (SfPyramidChart)
+# Rendering Modes in WinUI Pyramid Chart
 
 The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_Mode) property is used to define the rendering mode of the pyramid chart such as [Surface](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) or [Linear](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear). The default value of the [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_Mode) property is `Linear`.
 

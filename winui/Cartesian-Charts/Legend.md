@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Legend in WinUI Chart control | Syncfusion
-description: This section explains how to configure the legend and its features title, icons, labels, and template in WinUI Chart control.
+title: Legend in WinUI Chart | Syncfusion®
+description: Legend in the WinUI Chart identifies data series and chart elements, supporting customization of titles, labels, icons, and templates.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: legend in winui chart, winui sfcartesianchart legend, winui chart legend customization, syncfusion winui chart legend, winui chart legend properties, winui sfcartesianchart legend configuration.
 ---
 
-# Legend in WinUI Chart (SfCartesianChart)
+# Legend in WinUI Chart
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. You can specify the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) for each series which is to be displayed in legend label.
 
