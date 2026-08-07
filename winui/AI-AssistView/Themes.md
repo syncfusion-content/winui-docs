@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theme support in WinUI AI AssistView control | Syncfusion
-description: Learn all about Theme support in the Syncfusion WinUI AI AssistView (SfAIAssistView) control, including Dark and Light themes.
+title: Theme Support in WinUI AIAssistView | Syncfusion®
+description: Theme support in WinUI AIAssistView enables seamless switching between light and dark themes, ensuring a consistent and visually appealing user experience.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# Theme support in WinUI AI AssistView Control
+# Theme Support in WinUI AIAssistView
 
 This section explains AI AssistView Control's various themes.
 
