@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in WinUI AIAssistView | Syncfusion
+title: Events in WinUI AIAssistView | Syncfusion®
 description: Events in WinUI AIAssistView provide notifications for user interactions and AI response workflows, enabling customized behavior and event-driven functionality.
 platform: WinUI
 control: SfAIAssistView

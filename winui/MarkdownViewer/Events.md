@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in WinUI Markdown Viewer | Syncfusion
+title: Events in WinUI Markdown Viewer | Syncfusion®
 description: Events in WinUI Markdown Viewer provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
 platform: WinUI
 control: SfMarkdownViewer

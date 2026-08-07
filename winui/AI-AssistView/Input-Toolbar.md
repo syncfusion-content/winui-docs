@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Input Toolbar in WinUI AIAssistView | Syncfusion
+title: Input Toolbar in WinUI AIAssistView | Syncfusion®
 description: The input toolbar in WinUI AIAssistView offers quick actions through toolbar items, streamlining prompt entry and user interactions.
 platform: WinUI
 control: SfAIAssistView

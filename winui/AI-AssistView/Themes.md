@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theme Support in WinUI AIAssistView | Syncfusion
+title: Theme Support in WinUI AIAssistView | Syncfusion®
 description: Theme support in WinUI AIAssistView enables seamless switching between light and dark themes, ensuring a consistent and visually appealing user experience.
 platform: WinUI
 control: SfAIAssistView
