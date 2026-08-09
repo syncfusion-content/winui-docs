@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in WinUI Kanban control | Syncfusion<sup>®</sup>
-description: Learn here all about configuring and customizing columns in Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control.
+title: Columns in WinUI Kanban | Syncfusion<sup>®</sup>
+description: Learn about Columns support in Syncfusion<sup>®</sup> WinUI Kanban with category mapping, header templates, column reordering.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Columns in WinUI Kanban (SfKanban) control
+# Columns in WinUI Kanban
 
 The WinUI Kanban control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in-progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
 
