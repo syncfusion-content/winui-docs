@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon Items in WinUI Ribbon | Syncfusion
-description: Learn about ribbon items, sizing options, and customization in Syncfusion® WinUI Ribbon control.
+description: Learn about ribbon items, sizing options, and ribbon group launcher button in Syncfusion® WinUI Ribbon control.
 platform: winui
 control: Ribbon
 documentation: ug
