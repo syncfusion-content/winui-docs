@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in .NET WinUI Kanban Board control | Syncfusion<sup>®</sup>
-description: Learn here all about Sorting support in Syncfusion<sup>®</sup> .NET WinUI Kanban Board (SfKanban) control and more.
+title: Sorting in WinUI Kanban | Syncfusion<sup>®</sup>
+description: Learn about Sorting support in Syncfusion<sup>®</sup> WinUI Kanban custom fields, sort orders, and comparer-based sorting to organize cards within columns.
 platform: WinUI
 control: SfKanban
 documentation: ug
 ---
 
-# Sorting in .NET WinUI Kanban Board (SfKanban)
+# Sorting in WinUI Kanban
 
 The Kanban control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
 

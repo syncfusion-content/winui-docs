@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cards in WinUI Kanban control | Syncfusion<sup>®</sup>
-description: This section describes about cards in Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control, its elements and more.
+title: Cards in WinUI Kanban | Syncfusion<sup>®</sup>
+description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban using card templates, custom data models, card appearance settings, and template selectors.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Cards in WinUI Kanban (SfKanban) control
+# Cards in WinUI Kanban
 
 The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
