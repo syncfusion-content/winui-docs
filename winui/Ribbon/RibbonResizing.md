@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ribbon Resizing in WinUI Ribbon | Syncfusion
+title: Ribbon Resizing in WinUI Ribbon | Syncfusion®
 description: Ribbon Resizing in Syncfusion® WinUI Ribbon expands and collapses ribbon elements automatically to available space.
 platform: winui
 control: Ribbon

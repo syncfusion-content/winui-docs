@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keytip in WinUI Ribbon | Syncfusion
-description: Enable keyboard navigation with Keytips in Syncfusion® WinUI Ribbon (SfRibbon) to activate ribbon elements quickly.
+title: Keytip in WinUI Ribbon | Syncfusion®
+description: KeyTips provide efficient keyboard navigation for quickly locating and activating ribbon elements in WinUI Ribbon.
 platform: winui
 control: Ribbon
 documentation: ug

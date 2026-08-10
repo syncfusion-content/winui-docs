@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RibbonGallery in WinUI Ribbon | Syncfusion
+title: RibbonGallery in WinUI Ribbon | Syncfusion®
 description: RibbonGallery in Syncfusion® WinUI Ribbon displays a list of scrollable items organized as multiple categorized subsets.
 platform: winui
 control: Ribbon

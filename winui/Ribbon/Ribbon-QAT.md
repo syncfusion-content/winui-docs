@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quick Access Toolbar in WinUI Ribbon | Syncfusion
+title: Quick Access Toolbar in WinUI Ribbon | Syncfusion®
 description: Quick Access Toolbar in Syncfusion® WinUI Ribbon (SfRibbon) renders commonly used commands for quick access.
 platform: winui
 control: Ribbon

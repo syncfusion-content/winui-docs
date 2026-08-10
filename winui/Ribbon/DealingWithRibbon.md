@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon in WinUI Ribbon | Syncfusion
-description: Learn about Ribbon features, tab selection, contextual tab group and its appearance in Syncfusion® WinUI Ribbon.
+title: Dealing with Ribbon in WinUI Ribbon | Syncfusion®
+description: Dealing with Ribbon includes ribbon tab selection and contextual tab group and its appearance customization.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Ribbon in WinUI Ribbon
+# Dealing with Ribbon in WinUI Ribbon
 
 The following section describes the [Ribbon](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ribbon.SfRibbon.html) and its features in detail.
 

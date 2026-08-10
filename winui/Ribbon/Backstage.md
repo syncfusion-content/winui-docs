@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Backstage in WinUI Ribbon | Syncfusion
+title: Backstage in WinUI Ribbon | Syncfusion®
 description: Backstage in Syncfusion® WinUI Ribbon (SfRibbon) control provides a separate view to host custom controls and manage application settings.
 platform: winui
 control: Ribbon

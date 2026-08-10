@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compact Sizing in WinUI Ribbon | Syncfusion
+title: Compact Sizing in WinUI Ribbon | Syncfusion®
 description: Compact Sizing in Syncfusion® WinUI Ribbon (SfRibbon) control supports compact spacing designed primarily for pointer input.
 platform: winui
 control: Ribbon

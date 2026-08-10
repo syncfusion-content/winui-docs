@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simplified Layout in WinUI Ribbon | Syncfusion
+title: Simplified Layout in WinUI Ribbon | Syncfusion®
 description: Simplified Layout in Syncfusion® WinUI Ribbon arranges most-used commands in a single line for compact space-saving view.
 platform: winui
 control: Ribbon

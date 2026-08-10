@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Ribbon | Syncfusion
-description: Learn how to get started with the Syncfusion WinUI Ribbon control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI Ribbon | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Ribbon control. Explore setup, features, examples, and customization options.
 platform: winui
 control: Ribbon
 documentation: ug

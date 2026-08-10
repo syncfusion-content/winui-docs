@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion WinUI Ribbon Control | Syncfusion
-description: Learn about the introduction of the Syncfusion WinUI Ribbon control, designed to organize commands and enhance application usability.
+title: About Syncfusion® WinUI Ribbon Control | Syncfusion®
+description: Learn about the introduction of the Syncfusion® WinUI Ribbon control, designed to organize commands and enhance application usability.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# About Syncfusion WinUI Ribbon Control
+# About Syncfusion® WinUI Ribbon Control
 
 The Syncfusion<sup>&reg;</sup> [WinUI Ribbon](https://www.syncfusion.com/winui-controls/ribbon) is a command bar that organizes an application's commands and tools into a series of tabs. It also supports a backstage view similar to Microsoft Office products. For setup steps (NuGet package, namespaces), see [Getting Started with WinUI Ribbon](https://help.syncfusion.com/winui/ribbon/getting-started).
 
