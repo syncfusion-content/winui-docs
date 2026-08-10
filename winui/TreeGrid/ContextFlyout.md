@@ -2,7 +2,7 @@
 layout: post
 title: Context Flyout in WinUI SfTreeGrid | Syncfusion®
 description: Learn about Context Flyout in the Syncfusion® WinUI SfTreeGrid control. Provide quick actions with right‑click menus for better usability.
-platform: winUI
+platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
