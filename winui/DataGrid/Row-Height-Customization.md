@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row Height Customization in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® WinUI DataGrid(sfDataGrid) control and more.
+title: Row Height Customization in WinUI DataGrid | Syncfusion®
+description: Learn about Row Height Customization in Syncfusion® WinUI DataGrid control, allowing you to adjust row heights dynamically for improved data presentation.
 platform: winui
 control: DataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Types in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Column Types features of Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Column Types in WinUI DataGrid | Syncfusion®
+description: Learn about Column Types in Syncfusion® WinUI DataGrid control, including text, numeric, checkbox, date, and custom columns for data display.
 platform: winui
 control: SfDataGrid
 documentation: ug

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with WinUI DataGrid control | Syncfusion®
+title: Getting Started with WinUI DataGrid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winui-controls/datagrid"
-description: Learn here all about getting started with Syncfusion® WinUI DataGrid(sfDataGrid) control, its elements, and more.
+description: Learn how to get started with the Syncfusion® WinUI DataGrid control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: DataGrid
 documentation: ug

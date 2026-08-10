@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional styling in WinUI DataGrid control | Syncfusion®
-description: Learn here all about conditional styling support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Conditional Styling in WinUI DataGrid | Syncfusion®
+description: Learn about conditional styling in Syncfusion® WinUI DataGrid control, allowing you to customize the appearance of cells and rows based on data values.
 platform: winui
 control: SfDataGrid
 documentation: ug
 ---
 
-# Conditional styling in WinUI DataGrid (SfDataGrid)
+# Conditional Styling in WinUI DataGrid
 
 You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data Using StyleSelector.
 
