@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shape pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about shape pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
+title: Shape Pointer in WinUI Radial Gauge | Syncfusion®
+description: Shape pointer in the WinUI Radial Gauge indicates values using customizable shapes and supports styling, positioning, and appearance settings.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Shape pointer in WinUI Radial Gauge
+# Shape Pointer in WinUI Radial Gauge
 
 The [`ShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html) in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any built-in shapes as a pointer to mark a specified value. The default type is [`InvertedTriangle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeShapeType.html#Syncfusion_UI_Xaml_Gauges_GaugeShapeType_InvertedTriangle).
 

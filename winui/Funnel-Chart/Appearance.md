@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Funnel Chart control | Syncfusion
-description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfFunnelChart) control.
+title: Appearance in WinUI Funnel Chart | Syncfusion®
+description: Appearance in the WinUI Funnel Chart allows you to customize chart visuals using palettes, gradients, and styling options for enhanced presentation.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Appearance in WinUI Chart (SfFunnelChart)
+# Appearance in WinUI Funnel Chart
 
 The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradients, which help enrich the application.
 

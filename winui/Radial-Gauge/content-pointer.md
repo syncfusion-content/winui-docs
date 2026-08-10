@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Content pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about content pointer feature of Syncfusion WinUI Radial Gauge control with image, text and customization support.
+title: Content Pointer in WinUI Radial Gauge | Syncfusion®
+description: Content pointer in the WinUI Radial Gauge displays custom text and images at specific values and supports layout and appearance customization.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
 ---
 
-# Content pointer in WinUI Radial Gauge
+# Content Pointer in WinUI Radial Gauge
 
 The [`ContentPointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html) in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any content as a pointer using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ContentPointer.html#Syncfusion_UI_Xaml_Gauges_ContentPointer_Content) property of it. 
 

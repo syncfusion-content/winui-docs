@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis in WinUI Linear Gauge control | Syncfusion
-description: Learn here all about Axis feature of Syncfusion WinUI Linear Gauge control with customization support.
+title: Axis in WinUI Linear Gauge | Syncfusion®
+description: Axis in the WinUI Linear Gauge defines the scale, ranges, intervals, and labels for accurate measurement and data visualization.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Neck width in WinUI Chart control | Syncfusion
-description: This section explains how to customize the neck width in the Syncfusion® WinUI Chart (SfFunnelChart) control.
+title: Neck Width in WinUI Funnel Chart | Syncfusion®
+description: Neck width in the WinUI Funnel Chart controls the width of the funnel neck, enabling customization of chart appearance and data presentation.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Neck Width in WinUI Chart (SfFunnelChart)
+# Neck Width in WinUI Funnel Chart
 
 The neck width of the funnel chart can be customized by using the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property. The default value of the [MinimumWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_MinimumWidth) property is 40. The following code example explains how to change the neck width.
 

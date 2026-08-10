@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI Barcode control | Syncfusion
-description: Learn here all about the Customization feature in the Syncfusion WinUI Barcode control with more background, foreground, and Module custom support etc.
+title: Customization in WinUI Barcode | Syncfusion®
+description: Customization in the WinUI Barcode allows you to modify barcode appearance, colors, sizing, module settings, and visual styles.
 platform: WinUI
 control: Barcode
 documentation: ug

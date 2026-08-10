@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Title in WinUI Pyramid Chart control | Syncfusion
-description: Learn here all about the title with the Syncfusion® WinUI Chart (SfPyramidChart) control and its customization.
+title: Title in WinUI Pyramid Chart | Syncfusion®
+description: Title in the WinUI Pyramid Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Chart Title in WinUI Chart (SfPyramidChart)
+# Title in WinUI Pyramid Chart
 
 [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title of the chart.
 

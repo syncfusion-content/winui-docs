@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis padding in WinUI Chart control | Syncfusion
-description: Learn here all about how to set padding for chart axis in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Axis Padding in WinUI Chart | Syncfusion®
+description: Axis padding in the WinUI Chart adds spacing around plotted data, improving visibility and preventing data points from appearing at chart edges.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: axis padding in winui chart, winui sfcartesianchart axis padding, winui chart axis padding customization, syncfusion winui chart axis padding.
 ---
 
-# Axis Padding in WinUI Chart (SfCartesianChart)
+# Axis Padding in WinUI Chart
 
 ## PlotOffsetStart
 

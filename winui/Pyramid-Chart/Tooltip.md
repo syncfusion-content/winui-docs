@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WinUI Pyramid Chart control | Syncfusion
-description: This section explains how to enable the tooltip and its customization in the Syncfusion® WinUI Chart (SfPyramidChart) control.
+title: Tooltip in WinUI Pyramid Chart | Syncfusion®
+description: Tooltip in the WinUI Pyramid Chart displays detailed information about chart segments on hover and supports customization of content and appearance.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Tooltip in WinUI Chart (SfPyramidChart)
+# Tooltip in WinUI Pyramid Chart
 
 Tooltip is used to display information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 

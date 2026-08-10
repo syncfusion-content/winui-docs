@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WinUI Polar Chart control | Syncfusion
-description: This section explains how to configure the legend and its features, such as title, icons, labels, and template, in the WinUI Chart (SfPolarChart).
+title: Legend in WinUI Polar Chart | Syncfusion®
+description: Legend in the WinUI Polar Chart identifies data series and chart elements, supporting customization of titles, labels, icons, and templates.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Legend in WinUI Chart (SfPolarChart)
+# Legend in WinUI Polar Chart
 
 The legend contains a list of series in the chart. The information provided in each legend item helps to identify the corresponding series in the chart. The legend can be configured using the [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html).
 
