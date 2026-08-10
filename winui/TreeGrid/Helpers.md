@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers | TreeGrid | WinUI | Syncfusion®
-description: This section describes about the index resolver class for getting the row/column/node indexes and Dispose method of TreeGrid.
+title: Helpers in WinUI SfTreeGrid | Syncfusion®
+description: Learn about helpers in the Syncfusion® WinUI SfTreeGrid control. Use index resolver to get  node indexes and manage disposal.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Helpers in WinUI TreeGrid (SfTreeGrid)
+# Helpers in WinUI SfTreeGrid
 
 ## IndexResolver
 
