@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis in WinUI Chart | Syncfusion®
-description: Axis in the WinUI Chart defines data scales, ranges, labels, and intervals for accurate data visualization and interpretation.
+title: Axis type in WinUI Chart | Syncfusion®
+description: Axis type in the WinUI Chart defines data scales, ranges, labels, and intervals for accurate data visualization and interpretation.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: axis in winui chart, winui sfcartesianchart axis, winui chart axis customization, syncfusion winui chart axis, winui sfcartesianchart axis settings.
 ---
 
-# Axis in WinUI Chart control
+# Axis type in WinUI Chart
 
 [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 

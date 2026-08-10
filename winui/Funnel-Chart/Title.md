@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Title in WinUI Funnel Chart | Syncfusion®
-description: Chart title in the WinUI Funnel Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
+title: Title in WinUI Funnel Chart | Syncfusion®
+description: Title in the WinUI Funnel Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Chart Title in WinUI Funnel Chart
+# Title in WinUI Funnel Chart
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
