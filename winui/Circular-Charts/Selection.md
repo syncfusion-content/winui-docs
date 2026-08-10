@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI Circular Chart control | Syncfusion
-description: This section explains how to configure the selection support and its features applied in the WinUI Chart (SfCircularChart).
+title: Selection in WinUI Circular Chart | Syncfusion®
+description: Selection in the WinUI Circular Chart enables users to highlight and interact with chart segments, supporting focused analysis and data exploration.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Selection in WinUI Chart (SfCircularChart)
+# Selection in WinUI Circular Chart
 
 The circular chart supports selection that allows the selection of a segment in a series by using the [DataPointSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataPointSelectionBehavior.html). 
 

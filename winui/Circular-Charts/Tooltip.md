@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WinUI Circular Chart control | Syncfusion
-description: This section explains how to enable the tooltip and its customization in the Syncfusion® WinUI Chart (SfCircularChart) control
+title: Tooltip in WinUI Circular Chart | Syncfusion®
+description: Tooltip in the WinUI Circular Chart displays detailed information about chart segments on hover and supports customization of content and appearance.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Tooltip in WinUI Chart (SfCircularChart)
+# Tooltip in WinUI Circular Chart
 
 A tooltip is used to display any information over segments. It appears at the center of the segment when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 

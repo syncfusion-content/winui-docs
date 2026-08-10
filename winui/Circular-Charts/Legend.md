@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WinUI Chart control | WinUI | Syncfusion
-description: This section explains how to configure the legend and its features such as title, icons, labels, and template in the WinUI Chart (SfCircularChart).
+title: Legend in WinUI Circular Chart | Syncfusion®
+description: Legend in the WinUI Circular Chart identifies chart segments and categories, supporting customization of titles, labels, icons, and templates.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Legend in WinUI Charts (SfCircularChart)
+# Legend in WinUI Circular Chart
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
 

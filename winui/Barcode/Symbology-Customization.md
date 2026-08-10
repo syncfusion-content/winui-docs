@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbology Customization in WinUI Barcode control | Syncfusion
-description: Learn here all about the Symbology Customization feature in Syncfusion WinUI Barcode control with one, two-dimensional support, and more.
+title: Symbology Customization in WinUI Barcode | Syncfusion®
+description: Symbology customization in the WinUI Barcode allows you to configure encoding options and customize barcode generation for different barcode types.
 platform: WinUI
 control: Barcode
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shape Pointer in WinUI Linear Gauge control | Syncfusion
-description: Learn here all about Shape Pointer feature of Syncfusion WinUI Linear Gauge control with custom support.
+title: Shape Pointer in WinUI Linear Gauge | Syncfusion®
+description: Shape pointer in the WinUI Linear Gauge indicates values using customizable shapes and supports styling, positioning, and appearance settings.
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
