@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Radial Gauge control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Radial Gauge(sfRadialGauge) control and more.
+title: Getting Started with WinUI Radial Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Radial Gauge control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

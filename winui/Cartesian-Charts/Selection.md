@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in WinUI Chart control | Syncfusion
-description: Learn here all about selection and multi-selection support in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Selection in WinUI Chart | Syncfusion®
+description: Selection in the WinUI Chart enables users to highlight and interact with data points and series, supporting single and multi-selection.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: selection in winui chart, winui sfcartesianchart selection, winui chart selection customization, syncfusion winui chart selection, winui chart selection properties.
 ---
 
-# Selection in WinUI Chart (SfCartesianChart)
+# Selection in WinUI Chart
 
 Cartesian chart supports selection that allows you to select a segment or series in the chart by using the [SelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_SelectionBehavior) property. 
 

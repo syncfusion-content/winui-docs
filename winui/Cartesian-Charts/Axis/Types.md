@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis types in WinUI Chart control | Syncfusion
-description: Learn here all about axis types and its features in Syncfusion® WinUI Chart (SfCartesianChart) control and more.
+title: Axis Types in WinUI Chart | Syncfusion®
+description: Axis types in the WinUI Chart provide different ways to represent data values, categories, dates, and logarithmic scales.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: types of axis in winui chart, winui sfcartesianchart axis types, winui chart axis types, syncfusion winui chart axis types, winui sfcartesianchart axis options.
 ---
 
-# Types of Axis in WinUI Chart (SfCartesianChart)
+# Axis Types in WinUI Chart
 
 Cartesian chart supports the following types of chart axis.
 

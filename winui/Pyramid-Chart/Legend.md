@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WinUI Pyramid Chart control | Syncfusion
-description: This section explains how to configure the legend and its features title, icons, labels, and template in the WinUI Chart (SfPyramidChart) control.
+title: Legend in WinUI Pyramid Chart | Syncfusion®
+description: Legend in the WinUI Pyramid Chart identifies chart segments and categories, supporting customization of titles, labels, icons, and templates.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Legend in WinUI Chart (SfPyramidChart)
+# Legend in WinUI Pyramid Chart
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data in the chart.
 

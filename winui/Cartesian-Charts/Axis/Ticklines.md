@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Axis Tick Line in WinUI Chart control | Syncfusion
-description: Learn here all about chart axis tick line and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Tick Lines in WinUI Chart | Syncfusion®
+description: Tick lines in the WinUI Chart indicate axis intervals and support customization of size, position, style, and appearance settings.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: tick lines in winui chart, winui sfcartesianchart tick lines, winui chart tick lines customization, syncfusion winui chart tick lines.
 ---
 
-# Tick Lines in WinUI Chart (SfCartesianChart)
+# Tick Lines in WinUI Chart
 
 Tick lines are the small lines which are drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
