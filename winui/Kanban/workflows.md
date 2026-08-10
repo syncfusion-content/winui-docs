@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows in .NET WinUI Kanban Board control | Syncfusion
-description: Learn here all about Workflows support in Syncfusion<sup>®</sup> .NET WinUI Kanban Board (SfKanban) control and more.
+title: Workflows in WinUI Kanban | Syncfusion
+description: Learn about Workflows support in Syncfusion<sup>®</sup> WinUI Kanban using KanbanWorkflow and Workflows to control card transitions.
 platform: WinUI
 control: SfKanban
 documentation: ug
 ---
 
-# Workflows in WinUI Kanban (SfKanban) control
+# Workflows in WinUI Kanban
 
 The [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) workflow allows you to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 
