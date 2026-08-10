@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Title in WinUI Polar Chart | Syncfusion®
-description: Chart title in the WinUI Polar Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
+title: Title in WinUI Polar Chart | Syncfusion®
+description: Title in the WinUI Polar Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Chart Title in WinUI Polar Chart
+# Title in WinUI Polar Chart
 
 [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 

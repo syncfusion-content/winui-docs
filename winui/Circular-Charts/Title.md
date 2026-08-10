@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header in WinUI Circular Chart | Syncfusion®
-description: Header in the WinUI Circular Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
+title: Title in WinUI Circular Chart | Syncfusion®
+description: Title in the WinUI Circular Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Header in WinUI Circular Chart
+# Title in WinUI Circular Chart
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 

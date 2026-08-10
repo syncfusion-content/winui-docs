@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Segment Gap Ratio in WinUI Pyramid Chart | Syncfusion®
-description: Segment gap ratio in the WinUI Pyramid Chart controls the spacing between pyramid segments, improving visual clarity and chart presentation.
+title: Segment Spacing in WinUI Pyramid Chart | Syncfusion®
+description: Segment Spacing in the WinUI Pyramid Chart controls the spacing between pyramid segments, improving visual clarity and chart presentation.
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
 ---
 
-# Segment Gap Ratio in WinUI Pyramid Chart
+# Segment Spacing in WinUI Pyramid Chart
 
 The gap between each segment in the pyramid chart can be set using the [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_GapRatio) property. The default value of [GapRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_GapRatio) property is 0 and its value ranges from 0 to 1.
 

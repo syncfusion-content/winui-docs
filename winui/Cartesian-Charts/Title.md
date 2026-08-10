@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart Title in WinUI Chart | Syncfusion®
-description: Chart title in the WinUI Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
+title: Title in WinUI Chart | Syncfusion®
+description: Title in the WinUI Chart displays descriptive text for the chart and supports customization of content, style, and appearance.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui chart title, winui sfcartesianchart title, winui chart title customization, syncfusion winui chart title, winui sfcartesianchart title configuration.
 ---
 
-# Chart Title in WinUI Chart
+# Title in WinUI Chart
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 
