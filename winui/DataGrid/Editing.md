@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WinUI DataGrid | Syncfusion®
-description: Learn about Editing support in Syncfusion® WinUI DataGrid control, including cell editing, cursor placement, validation, and data update capabilities.
+description: Editing in DataGrid enables users to modify cell values, validate input, update data, and control editing behavior efficiently.
 platform: winui
 control: DataGrid
 documentation: ug

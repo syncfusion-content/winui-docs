@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM in WinUI DataGrid | Syncfusion®
-description: Learn about MVVM support in Syncfusion® WinUI DataGrid control, enabling data binding, commands, and customization while following the MVVM pattern.
+description: MVVM support in DataGrid enables data binding, commands, and customization while maintaining a clear separation of UI and business logic.
 platform: winui
 control: DataGrid
 documentation: ug

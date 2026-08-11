@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Rows in WinUI DataGrid | Syncfusion®
-description: Learn about Unbound Rows support in Syncfusion® WinUI DataGrid control, including row positioning, custom data display, and data entry scenarios.
+description: Unbound rows in DataGrid display custom data independently of the data source and support flexible positioning and data entry scenarios.
 platform: winui
 control: DataGrid
 documentation: ug

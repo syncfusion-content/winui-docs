@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI DataGrid | Syncfusion®
-description: Learn about Grouping support in Syncfusion® WinUI DataGrid control, including UI-based grouping, grouped data views, and enhanced data organization.
+description: Grouping in DataGrid organizes records into categories, making data analysis, navigation, and management easier through grouped views and summaries effectively.
 platform: winui
 control: DataGrid
 documentation: ug

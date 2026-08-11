@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization in WinUI DataGrid | Syncfusion®
-description: Learn about UI Customization in Syncfusion® WinUI DataGrid control, allowing you to tailor the appearance, styles, templates, and visual elements.
+description: UI customization in DataGrid allows styling, templates, and visual elements to be tailored for a personalized appearance and experience.
 platform: winui
 control: DataGrid
 documentation: ug

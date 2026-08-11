@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in WinUI DataGrid | Syncfusion®
-description: Learn about Column Types in Syncfusion® WinUI DataGrid control, including text, numeric, checkbox, date, and custom columns for data display.
+description: Column types in DataGrid provide specialized columns for displaying and editing text, numeric, checkbox, date, and custom data values.
 platform: winui
 control: DataGrid
 documentation: ug
