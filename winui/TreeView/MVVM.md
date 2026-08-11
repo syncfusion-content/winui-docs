@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: MVVM in WinUI TreeView control | Syncfusion®
-description: Learn here all about MVVM support in Syncfusion® WinUI TreeView(SfTreeView) control with binding support and more.
+title: MVVM in WinUI TreeView | Syncfusion®
+description: Bind selected items, selected item collections, and commands in MVVM applications using TreeView data binding support.
 platform: WinUI
 control: TreeView
 documentation: ug

@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Events in WinUI Masked TextBox control | Syncfusion
-description: Learn all about the events available in the Syncfusion WinUI Masked TextBox (SfMaskedTextBox) Control.
+title: Events in WinUI Masked TextBox | Syncfusion®
+description: Events provide notifications when values change, enabling validation, input monitoring, and mask completion tracking.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Events in WinUI Masked TextBox
+# Events in WinUI Masked TextBox (SfMaskedTextBox)
 
 This section provides information about the events available in the WinUI Masked TextBox control.
 
