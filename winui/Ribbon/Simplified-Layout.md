@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Simplified layout | WinUI | Ribbon | Syncfusion
-description: Learn here about Simplified layout and Display mode support in Syncfusion WinUI Ribbon (SfRibbon) control and more details.
+title: Simplified Layout in WinUI Ribbon | Syncfusion®
+description: Simplified Layout in Syncfusion® WinUI Ribbon arranges most-used commands in a single line for compact space-saving view.
 platform: winui
 control: Ribbon
 documentation: ug
 ---
 
-# Simplified Layout in WinUI Ribbon Control
+# Simplified Layout in WinUI Ribbon
 
 The Syncfusion<sup>&reg;</sup> Ribbon provides a compact and simplified layout by arranging the most-used commands in a single line, occupying less space. Quickly navigate to other commonly used commands in the overflow menu, and then switch to normal mode using the built-in toggle button. This section explains the simplified layout in detail.
 
