@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Lines Customization in WinUI DataGrid | Syncfusion®
-description: Learn about Grid Lines Customization in Syncfusion® WinUI DataGrid control, allowing you to customize grid line visibility, appearance, and styling.
+description: Grid lines customization in DataGrid lets you control the visibility and appearance of horizontal and vertical lines for records, headers, and details views.
 platform: winui
 control: DataGrid
 documentation: ug

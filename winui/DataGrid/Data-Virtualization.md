@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Virtualization in WinUI DataGrid | Syncfusion®
-description: Learn about Data Virtualization support in Syncfusion® WinUI DataGrid control, improving performance by loading and rendering data efficiently on demand.
+description: Data virtualization in DataGrid improves performance by loading and processing large datasets on demand with efficient data retrieval techniques.
 platform: winui
 control: DataGrid
 documentation: ug

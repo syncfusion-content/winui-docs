@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in WinUI DataGrid | Syncfusion®
-description: Learn about Printing support in Syncfusion® WinUI DataGrid control, including print customization options, page formatting, and data presentation.
+description: Printing in DataGrid enables grid data to be printed with customizable layouts, page formatting, and clear data presentation options.
 platform: winui
 control: DataGrid
 documentation: ug
