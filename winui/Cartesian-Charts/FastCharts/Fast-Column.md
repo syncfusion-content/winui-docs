@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Fast Column Series in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Column Bitmap Series of Syncfusion® WinUI Chart (SfCartesianChart) control and more.
+title: Fast Column Series in WinUI Chart | Syncfusion®
+description: Fast Column Series in the WinUI Chart renders large volumes of column data efficiently, providing high performance and smooth visualization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui fast column chart, winui sfcartesianchart, winui fast column chart customization, syncfusion winui fast column chart, winui fast column chart configuration.
 ---
 
-# Fast Column Chart in WinUI (SfCartesianChart)
+# Fast Column Series in WinUI Chart
 
 A fast column chart is a special kind of series that can render a collection with a huge number of data points using `WriteableBitmap`. [FastColumnBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html) is used to boost up the performance of the column series.
 

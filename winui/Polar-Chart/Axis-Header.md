@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis title in WinUI Chart control | Syncfusion
-description: Learn here all about the chart axis title of Syncfusion® WinUI Chart (SfPolarChart) control and its customization.
+title: Axis Title in WinUI Polar Chart | Syncfusion®
+description: Axis title in the WinUI Polar Chart displays descriptive text for chart axes and supports customization of content, style, and appearance.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Axis Title in WinUI Chart (SfPolarChart)
+# Axis Title in WinUI Polar Chart
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to define the title for the chart axis. It accepts any `UIElement` as content for the chart axis header.
 

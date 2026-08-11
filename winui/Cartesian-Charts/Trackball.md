@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Trackball in WinUI Chart control | Syncfusion
-description: Learn here all about trackball and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title:  Trackball in WinUI Chart | Syncfusion®
+description: Trackball in the WinUI Chart displays grouped data point information at specific positions and supports customization for detailed analysis.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: trackball in winui chart, winui sfcartesianchart trackball, winui chart trackball customization, syncfusion winui chart trackball, winui sfcartesianchart trackball settings.
 ---
 
-# Trackball in WinUI Chart (SfCartesianChart)
+# Trackball in WinUI Chart
 
 The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis, and the y values are determined from the points touching the vertical line in the series.
 

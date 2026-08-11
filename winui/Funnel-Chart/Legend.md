@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in WinUI Funnel Chart control | Syncfusion
-description: This section explains how to configure the legend and its features such as title, icons, labels, and template in the WinUI Chart (SfFunnelChart).
+title: Legend in WinUI Funnel Chart | Syncfusion®
+description: Legend in the WinUI Funnel Chart identifies chart segments and categories, supporting customization of titles, labels, icons, and templates.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Legend in WinUI Chart (SfFunnelChart)
+# Legend in WinUI Funnel Chart
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data series in the chart.
 

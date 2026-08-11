@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Needle Pointer in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Needle Pointer feature of Syncfusion WinUI Radial Gauge control with customization support.
+title: Needle Pointer in WinUI Radial Gauge | Syncfusion®
+description: Needle pointer in the WinUI Radial Gauge indicates values on the gauge scale and supports customization of style, size, and appearance.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

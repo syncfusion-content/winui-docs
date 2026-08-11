@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in WinUI Chart control | Syncfusion
-description: This section explains about how to enable tooltip and its customization in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Tooltip in WinUI Chart | Syncfusion®
+description: Tooltip in the WinUI Chart displays detailed information about data points on hover and supports customization of content and appearance.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: tooltip in winui chart, winui sfcartesianchart tooltip, winui chart tooltip customization, syncfusion winui chart tooltip, winui sfcartesianchart tooltip settings.
 ---
 
-# Tooltip in WinUI Chart (SfCartesianChart)
+# Tooltip in WinUI Chart
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any series segment. It is set to display the metadata of the hovered segment or data point.
 

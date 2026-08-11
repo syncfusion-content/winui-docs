@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pie Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the pie chart and its features in the Syncfusion® WinUI Chart (SfCircularChart) control.
+title: Pie Chart in WinUI Circular Chart | Syncfusion®
+description: Pie chart in the WinUI Circular Chart displays proportional data as slices, enabling clear comparison of category values and contributions.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Pie Chart in WinUI Chart (SfCircularChart)
+# Pie Chart in WinUI Circular Chart
 
 To render a [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) in the circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
