@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WinUI Shimmer control | Syncfusion
-description: Learn about the introduction of Syncfusion WinUI Shimmer Control (SfShimmer) with essential features and more.
+title: About Syncfusion® WinUI Shadow Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® WinUI Shadow control, including shadow effects, customization options, and key features.
 platform: WinUI
 control: Shimmer
 documentation: ug
 ---
 
-# WinUI Shimmer Overview
+# About Syncfusion® WinUI Shadow Control 
 
 The [WinUI Shimmer control](https://www.syncfusion.com/winui-controls/shimmer) enhances the responsiveness of your application by displaying a shimmer effect during content loading or background processing.
 

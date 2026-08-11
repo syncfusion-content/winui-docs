@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI Shimmer control | Syncfusion
-description: Learn how to customize the appearance of the Syncfusion WinUI Shimmer(SfShimmer) control  using various properties like Fill, WaveColor, WaveWidth, RepeatCount and WaveDuration.
+title: Customization in WinUI Shimmer | Syncfusion®
+description: Customization in WinUI Shimmer enables configuring fill color, wave color, wave width, repeat count, and wave duration to create engaging loading effects.
 platform: WinUI
 control: Shimmer
 documentation: ug

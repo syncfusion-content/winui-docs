@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI AvatarView control | Syncfusion
-description: Learn about getting started with the Syncfusion WinUI AvatarView (SfAvatarView) control with its basic features.
+title: Getting Started with WinUI AvatarView Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI AvatarView control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: AvatarView
 documentation: ug
 ---
 
-# Getting Started with WinUI AvatarView
+# Getting Started with WinUI AvatarView Control
 
 This section explains the steps required to add the WinUI [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control with its basic features.
 
