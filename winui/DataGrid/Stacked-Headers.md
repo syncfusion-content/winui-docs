@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stacked Headers in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Stacked Headers support in Syncfusion® WinUI DataGrid(SfDataGrid) control with custom support and more.
+title: Stacked Headers in WinUI DataGrid | Syncfusion®
+description: Learn about Stacked Headers support in Syncfusion® WinUI DataGrid control, enabling multiple columns to be grouped under custom header rows.
 platform: winui
 control: DataGrid
 documentation: ug
