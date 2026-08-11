@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Item Height Customization in WinUI TreeView control | Syncfusion®
-description: Learn here all about Item Height Customization support in Syncfusion® WinUI TreeView(SfTreeView) control and more.
+title: Item Height Customization in WinUI TreeView | Syncfusion®
+description: Customize TreeView item heights using fixed sizing or dynamically through the QueryNodeSize event.
 platform: WinUI
 control: TreeView
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Interactivity in WinUI TreeView control | Syncfusion®
-description: Learn here all about Interactivity support in Syncfusion® WinUI TreeView(SfTreeView) control and more.
+title: Interactivity in WinUI TreeView | Syncfusion®
+description: Handle user interactions through tap, double-tap, and holding gestures using TreeView item events.
 platform: WinUI
 control: TreeView
 documentation: ug
