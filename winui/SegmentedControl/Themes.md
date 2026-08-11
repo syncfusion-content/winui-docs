@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theme support in WinUI Segmented Control | Syncfusion
-description: Learn here all about Theme support in Syncfusion WinUI Segmented(Segmented Control) control and more.
+title: Theme Support in WinUI Segmented Control | Syncfusion®
+description: Theme support in WinUI Segmented Control enables seamless adaptation to light and dark themes for a consistent visual experience.
 platform: WinUI
 control: Segmented Control
 documentation: ug
 ---
 
-# Theme support in WinUI Segmented Control
+# Theme Support in WinUI Segmented Control
 
 This section explains Segmented Control's various themes and how to customize the appearance with keys.
 

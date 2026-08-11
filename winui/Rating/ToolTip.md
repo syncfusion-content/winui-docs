@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip in WinUI Rating control | Syncfusion
-description: Learn all about how to enable the tooltip and format the tooltip content in WinUI Syncfusion Rating (SfRating) control here.
+title: ToolTip in WinUI Rating | Syncfusion®
+description: ToolTip support in WinUI Rating enables displaying and formatting tooltip content, helping users understand rating values during interaction.
 platform: WinUI
 control: SfRating
 documentation: ug

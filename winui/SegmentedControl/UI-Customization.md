@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI Segmented Control | Syncfusion
-description: Learn here all about UI customization with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
+title: Customization in WinUI Segmented Control | Syncfusion®
+description: Customization in WinUI Segmented Control enables configuring segment styles, colors, selection indicators, and layout appearance.
 platform: WinUI
 control: Segmented Control
 documentation: ug
