@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoSize Columns in WinUI DataGrid | Syncfusion®
-description: Learn about AutoSize Columns support in Syncfusion® WinUI DataGrid control, enabling automatic column sizing based on content and layout requirements.
+description: AutoSize Columns in DataGrid automatically adjusts column widths based on content, headers, and available space, with customizable sizing options.
 platform: winui
 control: DataGrid
 documentation: ug

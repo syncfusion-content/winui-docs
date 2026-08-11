@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance in WinUI DataGrid | Syncfusion®
-description: Learn about Performance features in Syncfusion® WinUI DataGrid control, including virtualization support, efficient data processing, and fast UI rendering.
+description: Performance features in DataGrid improve responsiveness through virtualization, efficient data processing, and optimized rendering for large datasets.
 platform: winui
 control: DataGrid
 documentation: ug

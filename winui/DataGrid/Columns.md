@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WinUI DataGrid | Syncfusion®
-description: Learn about Columns support in Syncfusion® WinUI DataGrid control, including auto-generated columns, customization options, and efficient data presentation.
+description: Columns in DataGrid define how data is displayed and organized, with support for auto-generated columns, customization, and efficient data presentation.
 platform: WinUI
 control: DataGrid
 documentation: ug

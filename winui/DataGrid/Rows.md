@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in WinUI DataGrid | Syncfusion®
-description: Learn about Rows support in Syncfusion® WinUI DataGrid control, including row customization, header width settings, and row management features.
+description: Rows in DataGrid support row headers, header rows, frozen panes, and row customization features for improved data organization.
 platform: winui
 control: DataGrid
 documentation: ug

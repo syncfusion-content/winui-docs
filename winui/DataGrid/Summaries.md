@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summaries in WinUI DataGrid | Syncfusion®
-description: Learn about Summaries support in Syncfusion® WinUI DataGrid control, enabling aggregate calculations and customized summary display for grid data.
+description: Summaries in DataGrid provide aggregate calculations and customizable summary displays, helping analyze and present data effectively.
 platform: winui
 control: DataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI DataGrid | Syncfusion®
-description: Learn about Selection support in Syncfusion® WinUI DataGrid control, including cell navigation, row selection, and multiple selection options.
+description: Selection in DataGrid enables row, cell, and multiple-item selection with flexible navigation and interaction options.
 platform: winui
 control: DataGrid
 documentation: ug
