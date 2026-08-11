@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Virtualization in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Data Virtualization support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Data Virtualization in WinUI DataGrid | Syncfusion®
+description: Learn about Data Virtualization support in Syncfusion® WinUI DataGrid control, improving performance by loading and rendering data efficiently on demand.
 platform: winui
 control: DataGrid
 documentation: ug
