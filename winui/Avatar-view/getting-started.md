@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI AvatarView | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI AvatarView control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI AvatarView | SyncfusionÂ®
+description: Learn how to get started with the SyncfusionÂ® WinUI AvatarView control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: AvatarView
 documentation: ug
@@ -75,8 +75,6 @@ Add a custom image as an avatar in the WinUI AvatarView control by using the [Im
 > **Note:** When you add a new image to the project, select the image file in **Solution Explorer**, open the **Properties** window, and set:
 > - **Build Action** = `Content`
 > - **Copy to Output Directory** = `Copy if newer`
->
-> Then rebuild the project so the image is packaged and accessible through the `ms-appx:///` URI.
 
 {% tabs %}
 {% highlight xaml %}
