@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Master Details View in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Master Details View support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Master Details View in WinUI DataGrid | Syncfusion®
+description: Learn about Master Details View support in Syncfusion® WinUI DataGrid control, enabling hierarchical data display with expandable master-detail relationships.
 platform: winui
-control: SfDataGrid
+control: DataGrid
 documentation: ug
 --- 
 

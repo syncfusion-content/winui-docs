@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Zooming and Panning in WinUI Chart control | Syncfusion
-description: Learn here all about Zooming and Panning feature of Syncfusion® WinUI Chart(SfCartesianChart) control.
+title: Zooming and Panning in WinUI Chart | Syncfusion®
+description: Zooming and panning in the WinUI Chart enable interactive navigation of data, allowing users to explore and analyze chart content in detail.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: zooming and panning in winui chart, winui sfcartesianchart zooming and panning, winui chart zooming and panning customization, syncfusion winui chart zooming and panning, winui sfcartesianchart zooming and panning settings, winui chart zooming and panning properties.
 ---
 
-# Zooming and Panning in WinUI Chart (SfCartesianChart)
+# Zooming and Panning in WinUI Chart
 
 [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data points in the specific area, when there are large number of data points inside the chart.
 

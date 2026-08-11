@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header for axis in WinUI Chart control | Syncfusion
-description: This section explains about chart axis header, header style, header template and its customization in WinUI chart (SfCartesianChart).
+title: Axis Header in WinUI Chart | Syncfusion®
+description: Axis header in the WinUI Chart displays descriptive text for chart axes and supports customization through styles, templates, and appearance settings.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: axis title in winui chart, winui sfcartesianchart axis title, winui chart axis title customization, syncfusion winui chart axis title, winui sfcartesianchart axis title configuration.
 ---
 
-# Axis Title in WinUI Chart (SfCartesianChart)
+# Axis Header in WinUI Chart
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to set the title for the chart axis. It accepts any `UIElement` as the content of the axis title. 
 

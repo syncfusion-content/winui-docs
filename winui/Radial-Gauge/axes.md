@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis in WinUI Radial Gauge control | Syncfusion
-description: Learn here all about Axis feature of Syncfusion WinUI Radial Gauge(sfRadialGauge) control with custom support.
+title: Axis in WinUI Radial Gauge | Syncfusion®
+description: Axis in the WinUI Radial Gauge defines the scale, ranges, intervals, and labels for accurate measurement and data visualization.
 platform: WinUI
 control: SfRadialGauge
 documentation: ug

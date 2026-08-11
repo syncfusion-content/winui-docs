@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Range padding in WinUI Chart control | Syncfusion
-description: Learn here all about axis range padding and its types features of Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Range Padding in WinUI Chart | Syncfusion®
+description: Range padding in the WinUI Chart adjusts axis ranges by adding extra space around data points, improving chart readability and presentation.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: range padding in winui chart, winui sfcartesianchart range padding, winui chart range padding customization, syncfusion winui chart range padding, winui sfcartesianchart range padding configuration.
 ---
 
-# Range Padding in WinUI Chart (SfCartesianChart)
+# Range Padding in WinUI Chart
 
 Range padding is used to apply the minimum and maximum extremes of chart axis range by using the `RangePadding` property. The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) and [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) have a [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) property that can be used to add padding to the range of the chart axis.
 

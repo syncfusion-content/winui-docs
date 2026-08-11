@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bar Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the bar chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Bar Chart in WinUI Chart | Syncfusion®
+description: Bar chart in the WinUI Chart displays and compares values across categories using horizontal bars for clear data visualization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui bar chart, winui sfcartesianchart, winui bar chart customization, syncfusion winui bar chart, winui bar chart settings.
 ---
 
-# Bar Chart in WinUI Chart (SfCartesianChart)
+# Bar Chart in WinUI Chart
 
 A bar chart uses bars to represent data points and compare values across different categories. To render a bar chart, initialize the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) and switch the chart X and Y axes by using the [IsTransposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_IsTransposed) property as true. Then, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 

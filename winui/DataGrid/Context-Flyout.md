@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Flyout in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Context Flyout support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Context Flyout in WinUI DataGrid | Syncfusion®
+description: Learn about Context Flyout support in Syncfusion® WinUI DataGrid control, enabling users to access commands and actions through a customizable context menu.
 platform: winui
 control: DataGrid
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Event in WinUI Markdown Viewer (SfMarkdownViewer) | Syncfusion
-description: Learn here all about events support in Syncfusion MarkdownViewer control, its elements and more details.
+title: Events in WinUI MarkdownViewer | Syncfusion®
+description: Events in WinUI MarkdownViewer provide notifications for user interactions and content rendering, enabling customized behavior and event-driven functionality.
 platform: WinUI
 control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Event in WinUI Markdown Viewer (SfMarkdownViewer)
+# Events in WinUI MarkdownViewer
 
 This section describes how to manage hyperlink interactions in the SfMarkdownViewer using the HyperlinkClicked event.
 The HyperlinkClicked event is raised when a user clicks a hyperlink within the Markdown content. It provides access to the selected URL and enables you to handle the interaction or override the default navigation behavior if needed.
