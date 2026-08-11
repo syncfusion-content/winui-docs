@@ -8,7 +8,7 @@ control: SfShadow
 documentation: ug
 ---
 
-# Customization in WinUI Shadow | Syncfusion®
+# Customization in WinUI Shadow
 
 This section explains the customization features available in the WinUI Shadow control.
 
