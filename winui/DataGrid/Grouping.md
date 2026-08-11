@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI DataGrid | Syncfusion®
-description: Grouping in DataGrid organizes records into categories, making data analysis, navigation, and management easier through grouped views and summaries effectively.
+description: Grouping in SfDataGrid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: winui
 control: DataGrid
 documentation: ug
