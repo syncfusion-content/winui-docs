@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Interactivity in WinUI TreeView | Syncfusion®
-description: Handle user interactions through tap, double-tap, and holding gestures using TreeView item events.
+description: Handle user interactions in TreeView items through tap, double-tap, and holding gestures by using built-in item interaction events.
 platform: WinUI
 control: TreeView
 documentation: ug

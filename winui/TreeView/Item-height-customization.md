@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: Item Height Customization in WinUI TreeView | Syncfusion®
-description: Customize TreeView item heights using fixed sizing or dynamically through the QueryNodeSize event.
+description: Customize TreeView item heights using fixed sizing options or dynamically adjust item sizes through the QueryNodeSize event.
 platform: WinUI
 control: TreeView
 documentation: ug

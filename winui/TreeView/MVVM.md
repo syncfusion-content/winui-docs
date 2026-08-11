@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: MVVM in WinUI TreeView | Syncfusion®
-description: Bind selected items and commands in MVVM applications using TreeView selection and command support.
+description: Bind selected items, selected item collections, and commands in MVVM applications using TreeView data binding support.
 platform: WinUI
 control: TreeView
 documentation: ug
