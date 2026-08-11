@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers | DataGrid | WinUI | Syncfusion®
-description: Learn about helpers such as getting the actual row index irrespective of grouping and so on in Syncfusion® WinUI DataGrid (SfDataGrid) control and more details.
+title: Grouping in WinUI DataGrid | Syncfusion®
+description: Helper methods in DataGrid simplify common tasks such as retrieving row and column indexes, working with groups, and performing grid utility operations.
 platform: winui
 control: DataGrid
 documentation: ug
 ---
 
-# Helpers in WinUI DataGrid (SfDataGrid)
+# Helpers in WinUI DataGrid
 
 ## IndexResolver
 

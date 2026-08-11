@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard Operations in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Clipboard Operations support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Clipboard Operations in WinUI DataGrid | Syncfusion®
+description: Learn about Clipboard Operations support in Syncfusion® WinUI DataGrid control, enabling users to copy and paste data efficiently within the grid.
 platform: winui
 control: DataGrid
 documentation: ug
