@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rendering Mode in WinUI Chart (SfFunnelChart) | Syncfusion
-description: This section explains the rendering mode types of the Syncfusion® WinUI Chart (SfFunnelChart) control.
+title: Rendering Mode in WinUI Funnel Chart | Syncfusion®
+description: Rendering mode in the WinUI Funnel Chart controls how funnel segments are displayed, enabling different visual representations of data.
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
 ---
 
-# Rendering Mode in WinUI Chart (SfFunnelChart)
+# Rendering Mode in WinUI Funnel Chart
 
 The [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_Mode) property defines the rendering mode of the funnel chart, which defines where to bind your values (to height or width). The default value of the [Mode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_Mode) property is [ValueIsHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight).  The following example demonstrates [ValueIsHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight) and [ValueIsWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsWidth) of funnel mode.
 

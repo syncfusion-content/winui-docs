@@ -1,13 +1,13 @@
 ---
 layout: post
-title: OpenAI connection for WinUI AI AssistView control | Syncfusion
-description: Learn about how to connect the AI AssistView control with OpenAI and the ChatGPT conversation experience.
+title: OpenAI Connection in WinUI AIAssistView | Syncfusion®
+description: The OpenAI connection feature in WinUI AIAssistView enables integration with OpenAI services to deliver AI-powered conversations and chat experiences.
 platform: WinUI
 control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI connection for AI AssistView
+# OpenAI Connection in WinUI AIAssistView
 
 This section explains how to connect the AI AssistView with OpenAI.
 

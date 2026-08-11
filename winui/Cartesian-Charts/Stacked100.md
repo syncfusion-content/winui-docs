@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Stacked 100 Charts in WinUI Chart control | Syncfusion
-description: Learn here all about stacked 100 chart types column, line and area in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Stacked 100 Charts in WinUI Chart | Syncfusion®
+description: Stacked 100 charts in the WinUI Chart display percentage contributions across categories using stacked 100 column, line, and area series types.
 platform: WinUI
 control: SfChart
 documentation: ug
 keywords: winui stacked 100 charts, winui stacked 100 charts customization, 100% charts, cumulative chart in winui, winui sfcartesianchart, syncfusion winui cumulative chart, stackedcolum, stackedline, stackedarea.
 ---
 
-# Stacked 100 Charts in WinUI Chart (SfCartesianChart)
+# Stacked 100 Charts in WinUI Chart
 
 ## Stacked Column 100 Chart
 

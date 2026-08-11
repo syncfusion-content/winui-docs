@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explode segments in WinUI Chart control | Syncfusion
-description: This section explains how to explode a single segment or all segments in the Syncfusion® WinUI Chart (SfCircularChart) control.
+title: Explode Segments in WinUI Circular Chart | Syncfusion®
+description: Explode segments in the WinUI Circular Chart emphasize individual or multiple chart segments for improved data visibility and analysis.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Explode segments in WinUI Chart (SfCircularChart)
+# Explode Segments in WinUI Circular Chart
 
 Exploding a segment is used to draw attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Doughnut chart in WinUI Chart control | Syncfusion
-description: Learn here all about the doughnut chart and its features in the Syncfusion® WinUI Chart (SfCircularChart) control.
+title: Doughnut Chart in WinUI Circular Chart | Syncfusion®
+description: Doughnut chart in the WinUI Circular Chart displays proportional data as segments in a ring, enabling clear comparison of category values.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Doughnut Chart in WinUI Chart (SfCircularChart)
+# Doughnut Chart in WinUI Circular Chart
 
 [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) is similar to [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html). It is used to show the relationship between parts of data and the whole data. To render a [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) in the circular chart, create an instance of the [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Fast Scatter Chart in WinUI Chart control | Syncfusion
-description: Learn here all about Fast Scatter Chart of Syncfusion® WinUI Chart (SfCartesianChart) control and more.
+title: Fast Scatter Series in WinUI Chart | Syncfusion®
+description: Fast Scatter Series in the WinUI Chart renders large volumes of scatter data efficiently, providing high performance and responsive visualization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui fast scatter chart, winui sfcartesianchart, winui fast scatter chart customization, syncfusion winui fast scatter chart, fast scatter chart configuration.
 ---
 
-# Fast Scatter Chart in WinUI (SfCartesianChart)
+# Fast Scatter Series in WinUI Chart
 
 A fast scatter chart is a special kind of series that can render a collection with a huge number of data points using `WriteableBitmap`. [FastScatterBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) is used to render a high number of scatter points. 
 

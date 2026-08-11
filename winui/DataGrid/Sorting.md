@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Sorting support in Syncfusion® WinUI DataGrid(SfDataGrid) control with programmatic sorting support and more.
+title: Sorting in WinUI DataGrid | Syncfusion®
+description: Learn about Sorting support in Syncfusion® WinUI DataGrid control, including programmatic sorting, multi-column sorting, and custom sort operations.
 platform: winui
 control: DataGrid
 documentation: ug

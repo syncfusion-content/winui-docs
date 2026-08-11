@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WinUI DataGrid(SfDataGrid) control with cursor placement and more.
+title: Editing in WinUI DataGrid | Syncfusion®
+description: Learn about Editing support in Syncfusion® WinUI DataGrid control, including cell editing, cursor placement, validation, and data update capabilities.
 platform: winui
 control: DataGrid
 documentation: ug
