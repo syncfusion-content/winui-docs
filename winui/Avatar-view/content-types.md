@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: Content Types in WinUI AvatarView control | Syncfusion
-description: Learn about the available content types and how to set values for them in the WinUI AvatarView control.
+title: Content Types in WinUI AvatarView | Syncfusion®
+description: Content types in WinUI AvatarView enable displaying images, initials, icons, and custom content, allowing flexible avatar representation for various scenarios.
 platform: WinUI
 control: AvatarView
 documentation: ug

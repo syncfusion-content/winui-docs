@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with WinUI Shimmer control | Syncfusion
-description: Learn about getting started with the Syncfusion WinUI Shimmer(SfShimmer) control and its basic features here.
+title: Getting Started with WinUI Shimmer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Shimmer control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: Shimmer
 documentation: ug
