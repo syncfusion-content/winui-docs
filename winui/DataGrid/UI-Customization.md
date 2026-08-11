@@ -3,7 +3,7 @@ layout: post
 title: UI Customization in WinUI DataGrid | Syncfusion®
 description: Learn about UI Customization in Syncfusion® WinUI DataGrid control, allowing you to tailor the appearance, styles, templates, and visual elements.
 platform: winui
-control: SfDataGrid
+control: DataGrid
 documentation: ug
 ---
 

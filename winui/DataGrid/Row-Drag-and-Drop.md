@@ -3,7 +3,7 @@ layout: post
 title: Row Drag and Drop in WinUI DataGrid | Syncfusion®
 description: Learn about Row Drag and Drop support in Syncfusion® WinUI DataGrid control, enabling users to reorder rows and move data with ease.
 platform: winui
-control: SfDataGrid
+control: DataGrid
 documentation: ug
 ---
 

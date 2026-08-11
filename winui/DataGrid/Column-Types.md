@@ -3,7 +3,7 @@ layout: post
 title: Column Types in WinUI DataGrid | Syncfusion®
 description: Learn about Column Types in Syncfusion® WinUI DataGrid control, including text, numeric, checkbox, date, and custom columns for data display.
 platform: winui
-control: SfDataGrid
+control: DataGrid
 documentation: ug
 ---
 

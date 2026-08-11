@@ -3,7 +3,7 @@ layout: post
 title: Serialization and Deserialization in WinUI DataGrid | Syncfusion®
 description: Learn about serialization and deserialization support in Syncfusion® WinUI DataGrid control, enabling grid settings and state to be saved and restored.
 platform: winui
-control: SfDataGrid
+control: DataGrid
 documentation: ug
 ---
 
