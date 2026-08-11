@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI Masked TextBox control | Syncfusion
-description: Learn all about the introduction of Syncfusion WinUI Masked TextBox (SfMaskedTextBox) control with essential features and more here.
+title: About Syncfusion® WinUI Masked TextBox Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WinUI SfMaskedTextBox control and more details.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# WinUI Masked TextBox Overview
+# About Syncfusion® WinUI Masked TextBox Control
 
 The [WinUI Masked TextBox](https://www.syncfusion.com/winui-controls/masked-textbox) is an advanced version of the input control that restricts input of certain characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, email IDs, IP addresses, product keys, and so on.
 

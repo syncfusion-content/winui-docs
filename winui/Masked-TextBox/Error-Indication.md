@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Error Indication in WinUI Masked TextBox control | Syncfusion
-description: Explore the error indication support and various error types supported by the WinUI Masked TextBox control to enhance user experience and input validation.
+title: Error Indication in WinUI Masked TextBox | Syncfusion®
+description: Error indication support provides built-in and custom validation icons, border styling, and informative error content.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Error Indication in WinUI Masked TextBox
+# Error Indication in WinUI Masked TextBox (SfMaskedTextBox)
 
 The Masked TextBox control supports error indication by displaying an icon and providing additional details upon hovering over the icon. This powerful feature allows users to employ various error icons based on specific validation scenarios.
 

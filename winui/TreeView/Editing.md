@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Editing in WinUI TreeView control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WinUI TreeView(SfTreeView) control with programmatic editing and more.
+title: Editing in WinUI TreeView | Syncfusion®
+description: Edit TreeView nodes using templates, programmatic editing APIs, validation logic, and editing events.
 platform: winui
 control: SfTreeView
 documentation: ug

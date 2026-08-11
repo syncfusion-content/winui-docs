@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Load On Demand in WinUI TreeView control | Syncfusion®
-description: Learn here all about Load On Demand support in Syncfusion® WinUI TreeView(SfTreeView) control and more.
+title: Load On Demand in WinUI TreeView | Syncfusion®
+description: Load child nodes dynamically when expanded by using commands, lazy loading, and expander customization.
 platform: WinUI
 control: TreeView
 documentation: ug
