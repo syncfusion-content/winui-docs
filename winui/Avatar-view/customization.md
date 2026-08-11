@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI AvatarView control | Syncfusion
-description: Learn about the various customization features in the WinUI AvatarView control, including border, background, gradient, font, and more.
+title: Customization in WinUI AvatarView | Syncfusion®
+description: Customization in WinUI AvatarView enables configuring borders, backgrounds, gradients, fonts, and visual elements for personalized avatars.
 platform: WinUI
 control: AvatarView
 documentation: ug

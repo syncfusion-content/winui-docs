@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of WinUI AvatarView control | Syncfusion
-description: Learn about the introduction of Syncfusion WinUI AvatarView Control (SfAvatarView) with essential features and more.
+title: About Syncfusion® WinUI AvatarView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® WinUI AvatarView control, including its essential features, customization options, and capabilities.
 platform: WinUI
 control: AvatarView
 documentation: ug
 ---
 
-# WinUI AvatarView Overview
+# About Syncfusion® WinUI AvatarView Control
 
 The [WinUI AvatarView control](https://www.syncfusion.com/winui-controls/avatar-view) provides a graphical representation of a user image that allows you to customize the view by adding an image, background color, icon, text, and more.
 
