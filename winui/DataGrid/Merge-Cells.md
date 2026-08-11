@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Cells in WinUI DataGrid | Syncfusion®
-description: Learn about Merge Cells support in Syncfusion® WinUI DataGrid control, enabling adjacent cells with similar values to be merged for improved readability.
+description: Merge cells in DataGrid combines adjacent cells with similar values to improve readability, reduce repetition, and present data more clearly.
 platform: winui
 control: DataGrid
 documentation: ug

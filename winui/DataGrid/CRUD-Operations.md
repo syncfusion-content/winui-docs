@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Operations in WinUI DataGrid | Syncfusion®
-description: Learn about CRUD Operations in Syncfusion® WinUI DataGrid control, enabling users to create, read, update, and delete records with ease.
+description: CRUD operations in DataGrid support creating, reading, updating, and deleting records to efficiently manage and maintain data.
 platform: winui
 control: DataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WinUI DataGrid | Syncfusion®
-description: Learn about Sorting support in Syncfusion® WinUI DataGrid control, including programmatic sorting, multi-column sorting, and custom sort operations.
+description: Sorting in DataGrid organizes data in ascending or descending order with support for multi-column, programmatic, and custom sorting.
 platform: winui
 control: DataGrid
 documentation: ug

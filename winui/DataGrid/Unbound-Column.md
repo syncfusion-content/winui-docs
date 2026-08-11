@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in WinUI DataGrid | Syncfusion®
-description: Learn about Unbound Column support in Syncfusion® WinUI DataGrid control, including sorting, filtering, and displaying calculated or custom values.
+description: Unbound columns in DataGrid display calculated or custom values and support operations such as sorting, filtering, and data presentation.
 platform: winui
 control: DataGrid
 documentation: ug

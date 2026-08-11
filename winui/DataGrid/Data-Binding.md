@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WinUI DataGrid | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® WinUI DataGrid control, including various binding options for efficiently displaying and updating data.
+description: Data binding in DataGrid enables seamless integration with data sources, supporting efficient data display, updates, and synchronization.
 platform: winui
 control: DataGrid
 documentation: ug

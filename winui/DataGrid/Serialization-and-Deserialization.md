@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization and Deserialization in WinUI DataGrid | Syncfusion®
-description: Learn about serialization and deserialization support in Syncfusion® WinUI DataGrid control, enabling grid settings and state to be saved and restored.
+description: Serialization and deserialization in DataGrid allow grid settings and state to be saved, persisted, and restored across sessions.
 platform: winui
 control: DataGrid
 documentation: ug
