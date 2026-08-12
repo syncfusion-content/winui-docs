@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI Rating control | Syncfusion
-description: Learn all about the customization features such as style, item size, read-only, and template in Syncfusion WinUI Rating (SfRating) control here.
+title: Customization in WinUI Rating | Syncfusion®
+description: Customization in WinUI Rating enables configuring styles, item sizes, templates, and read-only settings to create personalized rating experiences.
 platform: WinUI
 control: SfRating
 documentation: ug

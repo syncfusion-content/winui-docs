@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content in WinUI BusyIndicator control | Syncfusion
-description: Learn all about the loading progress content and its customization available in the Syncfusion WinUI BusyIndicator control here.
+title: Content in WinUI BusyIndicator | Syncfusion®
+description: Content support in WinUI BusyIndicator enables displaying and customizing loading messages, progress content, and visual elements during busy states.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug

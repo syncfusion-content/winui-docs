@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI Rating control | Syncfusion
-description: Learn all about the introduction of Syncfusion WinUI Rating Control (SfRating) with essential features and more here.
+title: About Syncfusion® WinUI Rating Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® WinUI Rating control, including its essential features, customization options, and capabilities.
 platform: WinUI
 control: SfRating
 documentation: ug
 ---
 
-# WinUI Rating Overview
+# About Syncfusion® WinUI Rating Control
 
 The [WinUI Rating control](https://www.syncfusion.com/winui-controls/rating) is used to provide or view ratings on a numeric scale for any service provided, such as movies, applications, products, and more.
 

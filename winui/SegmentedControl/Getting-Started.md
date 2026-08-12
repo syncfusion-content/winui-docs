@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Segmented Control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
+title: Getting Started with WinUI Segmented Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Segmented Control control. Explore setup, elements, features, examples, and customization options.
 platform: WinUI
 control: Segmented Control
 documentation: ug
