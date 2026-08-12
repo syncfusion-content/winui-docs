@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WinUI Segmented Control | Syncfusion
-description: Learn here all about selection support in Syncfusion WinUI Segmented Control (SfSegmentedControl), its elements, and more.
+title: Selection in WinUI Segmented Control | Syncfusion®
+description: Selection support in WinUI Segmented Control enables users to select and manage segments, providing intuitive navigation and interaction.
 platform: WinUI
 control: Segmented Control
 documentation: ug
