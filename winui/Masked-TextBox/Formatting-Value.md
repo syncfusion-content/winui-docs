@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Mask formats in WinUI Masked TextBox control | Syncfusion
-description: Learn all about how to set the mask format for the value in the Masked TextBox (SfMaskedTextBox) control with prompts and literals.
+title: Formatting Value in WinUI Masked TextBox | Syncfusion®
+description: Format masked input values by including or excluding prompts and literals through ValueMaskFormat settings.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Formatting value in WinUI Masked TextBox
+# Formatting value in WinUI Masked TextBox (SfMaskedTextBox)
 
 The Masked TextBox control allows you to format input values with prompt and literal characters which are defined in the mask expression by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_ValueMaskFormat) property. By default, the [Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_Value) property of the control includes the characters typed by the user, as well as any prompt or literal characters in the input. The control provides several formatting options, which are listed below.
 
