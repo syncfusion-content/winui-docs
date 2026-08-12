@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AnimationType in WinUI BusyIndicator control | Syncfusion
-description: Learn all about different animation types available in the Syncfusion WinUI BusyIndicator control here.
+title: Animation Types in WinUI BusyIndicator | Syncfusion®
+description: Animation types in WinUI BusyIndicator provide various built-in loading animations, enabling users to customize visual feedback during busy states.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# AnimationType in WinUI BusyIndicator
+# Animation Types in WinUI BusyIndicator
 
 The [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property for the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control allows the users to set one of the animations from the built-in animations. The different types of animations are `DottedCircularFluent`, `DottedCircle`, `DottedLinear`, `DoubleCircle`, `LinearBox`, `LinearFluent`, `LinearOscillatingBox`, and `SingleCircle`. The default value is `DottedCircularFluent`.
 

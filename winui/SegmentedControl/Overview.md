@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WinUI Segmented Control Overview | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Segmented Control (SfSegmentedControl) with key features and more. 
+title: About Syncfusion® WinUI Segmented Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® WinUI Segmented Control, including key features, customization options, and capabilities.
 platform: WinUI
 control: Segmented Control
 documentation: ug
 ---
 
-# WinUI Segmented Control Overview
+# About Syncfusion® WinUI Segmented Control
 
 The Syncfusion [WinUI Segmented Control](https://www.syncfusion.com/winui-controls/segmented-control) provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive option.
 

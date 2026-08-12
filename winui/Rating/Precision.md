@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Precision in WinUI Rating control | Syncfusion
-description: Learn all about the precision feature in the Rating control to set the accuracy level such as full, half, and exact here.
+title: Precision in WinUI Rating | Syncfusion®
+description: Precision in WinUI Rating enables full, half, and exact rating values, allowing accurate and flexible rating input based on application needs.
 platform: WinUI
 control: SfRating
 documentation: ug
