@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with WinUI Masked TextBox control | Syncfusion
-description: Learn all about getting started with the Syncfusion WinUI Masked TextBox (SfMaskedTextBox) control and its basic features here.
+title: Getting Started with WinUI Masked TextBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI SfMaskedTextBox control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Getting Started with WinUI Masked TextBox
+# Getting Started with WinUI Masked TextBox (SfMaskedTextBox)
 
 This section explains the steps required to add the [WinUI Masked TextBox](https://www.syncfusion.com/winui-controls/masked-textbox) control to get started with [SfMaskedTextBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html) control.
 

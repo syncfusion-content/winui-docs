@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI TreeView control | Syncfusion®
-description: Learn here all about getting started with Syncfusion® WinUI TreeView control, its elements, and more.
+title: Getting Started with WinUI TreeView | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI TreeView control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: TreeView
 documentation: ug

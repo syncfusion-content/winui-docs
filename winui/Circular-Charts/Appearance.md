@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in WinUI Circular Chart control | Syncfusion
-description: This section explains how to apply palettes and gradients in the Syncfusion® WinUI Chart (SfCircularChart) control
+title: Appearance in WinUI Circular Chart | Syncfusion®
+description: Appearance in the WinUI Circular Chart allows you to customize chart visuals using palettes, gradients, and styling options for enhanced presentation.
 platform: WinUI
 control: SfCircularChart
 documentation: ug
 ---
 
-# Appearance in WinUI Chart (SfCircularChart)
+# Appearance in WinUI Circular Chart
 
 The appearance of the [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) can be customized by using predefined palettes, custom palettes, and gradients, which allow enriching the application.
 

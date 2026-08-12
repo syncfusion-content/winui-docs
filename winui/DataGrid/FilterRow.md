@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter Row in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Filter Row support in Syncfusion® WinUI DataGrid(SfDataGrid) control with many filter options.
+title: Filter Row in WinUI DataGrid | Syncfusion®
+description: Filter row in DataGrid provides built-in editors and filter conditions to quickly find, refine, and manage data records.
 platform: winui
 control: DataGrid
 documentation: ug

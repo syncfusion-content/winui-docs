@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Polar line chart | SfPolarChart | Syncfusion
-description: Learn here all about the polar line chart and its features in Syncfusion® WinUI Chart (SfPolarChart) control.
+title: Polar Line Chart in WinUI Polar Chart | Syncfusion®
+description: Polar line chart in the WinUI Polar Chart visualizes data using radial lines, enabling comparison of values across categories and angular coordinates.
 platform: WinUI
 control: SfPolarChart
 documentation: ug
 ---
 
-# Polar Line Chart in WinUI Charts (SfPolarChart)
+# Polar Line Chart in WinUI Polar Chart
 
 To render a line series in the polar chart, create an instance of the [PolarLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarLineSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html). To plot the series, the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarSeries.html#Syncfusion_UI_Xaml_Charts_PolarSeries_YBindingPath) properties must be configured, and the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) property can be set for legend purposes.
 

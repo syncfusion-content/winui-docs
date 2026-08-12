@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AutoScrollingDelta feature in WinUI Chart control | Syncfusion
-description: Learn here all about axis AutoScrollingDelta feature in Syncfusion® WinUI Chart (SfCartesianChart) control and more.
+title: Auto Scrolling in WinUI Chart | Syncfusion®
+description: Auto scrolling in the WinUI Chart automatically displays the latest data points within a specified range, enabling continuous data monitoring.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: auto scrolling in winui chart, winui sfcartesianchart auto scrolling, winui chart auto scrolling customization, syncfusion winui chart auto scrolling, winui sfcartesianchart auto scrolling settings.
 ---
 
-# Auto Scrolling in WinUI Chart (SfCartesianChart)
+# Auto Scrolling in WinUI Chart
 
 Axis supports auto-scrolling the live data added to the chart with a specific range of data visible at the start or end.
 

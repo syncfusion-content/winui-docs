@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Drag and Drop in WinUI TreeView control | Syncfusion®
-description: Learn here all about Drag and Drop support in Syncfusion® WinUI TreeView(SfTreeView) control and more.
+title: Drag and Drop in WinUI TreeView | Syncfusion®
+description: Reorder nodes and transfer items between controls using drag-and-drop operations, events, and customization.
 platform: winui
 control: SfTreeView
 documentation: ug

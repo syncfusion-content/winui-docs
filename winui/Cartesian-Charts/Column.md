@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chart in WinUI Chart control | Syncfusion
-description: Learn here all about the column chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Column Chart in WinUI Chart | Syncfusion®
+description: Column chart in the WinUI Chart displays and compares values across categories using vertical columns for clear data visualization.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui column chart, winui sfcartesianchart, winui column chart customization, syncfusion winui column chart, winui chart column chart properties.
 ---
 
-# Column Chart in WinUI Chart (SfCartesianChart)
+# Column Chart in WinUI Chart
 
 [WinUI Column Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-column-chart) is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 

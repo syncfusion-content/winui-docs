@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in WinUI BusyIndicator control | Syncfusion
-description: Learn all about the customization features such as size factor, duration factor, and color in Syncfusion WinUI BusyIndicator (SfBusyIndicator) control here.
+title: Customization in WinUI BusyIndicator | Syncfusion®
+description: Customization in WinUI BusyIndicator enables configuring size factor, duration factor, color, and animation settings to create tailored loading indicators.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug

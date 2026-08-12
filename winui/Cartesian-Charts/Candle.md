@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Candle Chart in WinUI Chart control | Syncfusion
-description: Learn all about candle chart and its features in Syncfusion® WinUI Chart (SfCartesianChart) control.
+title: Candle Chart in WinUI Chart | Syncfusion®
+description: Candle chart in the WinUI Chart visualizes price movements using open, high, low, and close values for financial data analysis.
 platform: WinUI
 control: SfCartesianChart
 documentation: ug

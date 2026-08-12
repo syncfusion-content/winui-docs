@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Operations in WinUI DataGrid control | Syncfusion®
-description: Learn here all about CRUD Operations feature of Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: CRUD Operations in WinUI DataGrid | Syncfusion®
+description: Context flyout in DataGrid provides quick access to commands and actions through a customizable menu for enhanced user interaction.
 platform: winui
 control: DataGrid
 documentation: ug

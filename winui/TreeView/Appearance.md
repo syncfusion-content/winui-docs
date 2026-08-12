@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance in WinUI TreeView control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® WinUI TreeView(SfTreeView) control with itemTemplate and more.
+title: Appearance in WinUI TreeView | Syncfusion®
+description: Customize TreeView appearance with templates, template selectors, indentation, expander settings, styling, and animations.
 platform: WinUI
 control: TreeView
 documentation: ug

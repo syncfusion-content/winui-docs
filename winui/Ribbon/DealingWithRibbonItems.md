@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Ribbon Items in WinUI Ribbon control | Syncfusion
-description: Learn here all about Dealing with Ribbon Items feature of Syncfusion WinUI Ribbon(sfRibbon) control and more.
+title: Dealing with Ribbon Items in WinUI Ribbon | Syncfusion®
+description: Dealing with Ribbon items covers ribbon items, sizing options, and ribbon group launcher button in WinUI Ribbon.
 platform: winui
 control: Ribbon
 documentation: ug

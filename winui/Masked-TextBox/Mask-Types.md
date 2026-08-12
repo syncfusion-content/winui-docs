@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Mask types in WinUI Masked TextBox control | Syncfusion
-description: Learn more about the various mask types available in the Masked TextBox (SfMaskedTextBox) control, including Simple and RegEx, and how to use them effectively.
+title: Mask Types in WinUI Masked TextBox | Syncfusion®
+description: Mask types support simple and regular expression patterns for creating fixed-length and dynamic input validation scenarios.
 platform: WinUI
 control: SfMaskedTextBox
 documentation: ug
 ---
 
-# Mask types in WinUI Masked TextBox
+# Mask Types in WinUI Masked TextBox (SfMaskedTextBox)
 
 Each [MaskType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfMaskedTextBox.html#Syncfusion_UI_Xaml_Editors_SfMaskedTextBox_MaskType) has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
 

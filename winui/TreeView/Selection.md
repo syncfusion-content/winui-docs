@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Selection in WinUI TreeView control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® WinUI TreeView(SfTreeView) control with programmatic selection and more.
+title: Selection in WinUI TreeView | Syncfusion®
+description: Manage single and multiple selection, selected items, keyboard navigation, styling, and selection-related events.
 platform: WinUI
 control: TreeView
 documentation: ug
