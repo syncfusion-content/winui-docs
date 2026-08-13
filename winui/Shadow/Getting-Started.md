@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Shadow | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI SfShadow control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI Shadow | SyncfusionÂ®
+description: Learn how to get started with the SyncfusionÂ® WinUI SfShadow control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfShadow
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI Shadow
 
-This section explains the steps required to add the [WinUI Shadow control](https://www.syncfusion.com/winui-controls/shadow) and covers only the basic features needed to get started with the Syncfusion [SfShadow](https://help.syncfusion.com/winui/shadow/overview) control.
+This section explains how to get started with the [Shadow control](https://www.syncfusion.com/winui-controls/shadow) in a WinUI application and demonstrates the basic steps required to add and use the control.
 
 ## Creating an application with WinUI Shadow control
 
-1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app) targeting .NET 6 or later.
-2. Add reference to [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet.
-3. Import the control namespace `Syncfusion.UI.Xaml.Core` in XAML or C# code.
-4. Initialize the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
+3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
+4. Create and initialize the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -71,9 +71,7 @@ namespace GettingStarted
 
 ## Applying shadow effect for image
 
-You can apply shadow effects to any [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) using the [SfShadow](https://help.syncfusion.com/winui/shadow/overview) control.
-
-N> Before running the sample, add `Ellipse_Shadow.png` to the project's `Assets/Shadow` folder, then in **Solution Explorer** set the file's **Build Action** to `Content` and **Copy to Output Directory** to `Copy if newer` (or `Copy always`).
+You can apply shadow effects to any [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) using the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
@@ -125,7 +123,7 @@ namespace GettingStarted
 
 ## Applying shadow effect for shape
 
-You can apply shadow effects to any [Shape](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) or [Path](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) using the [SfShadow](https://help.syncfusion.com/winui/shadow/overview) control.
+You can apply shadow effects to any [Shape](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.shape) or [Path](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path) using the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
