@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Gradient Color Selection in WinUI Color Picker control | Syncfusion
-description: Learn here all about gradient color selection features of Syncfusion WinUI Color Picker(SfColorPicker) control and more.
+title: Gradient Color Selection in WinUI Color Picker | Syncfusion®
+description: Learn about gradient color selection in the Syncfusion® WinUI Color Picker control, including linear and radial gradient brushes and more.
 platform: WinUI
-control: SfColorPicker
+control: Color Picker
 documentation: ug
 ---
 
