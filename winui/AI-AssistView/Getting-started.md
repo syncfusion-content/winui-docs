@@ -9,17 +9,16 @@ documentation: ug
 
 # Getting Started with WinUI AIAssistView
 
-This section explains the steps required to add the WinUI [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control and populate it with a simple chat collection.
+This section explains how to add the WinUI [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control to an application and bind it to a simple chat data source.
 
-## Creating an application with the WinUI SfAIAssistView
+## Creating an application with the WinUI AIAssistView
 
-1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add a reference to the [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet package.
-3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in your XAML or C# files.
-4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
-5. Set the window's `DataContext` to a view model so the bindings in the following sections resolve.
+1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+2. Install the [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet package.
+3. Import the **Syncfusion.UI.Xaml.Chat** namespace in XAML or C#.
+4. Add and initialize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
 
-## Initialize the SfAIAssistView
+## Initialize the AIAssistView
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,9 +65,9 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-## Creating a view model for the SfAIAssistView
+## Creating a view model for the AIAssistView
 
-Update the XAML to bind the control, set the window's `DataContext` in the code-behind, and add a `ViewModel.cs` class to the project as shown below.
+To bind data to the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control, update the XAML, set the window's DataContext in the code-behind, and add a _ViewModel.cs_ file to the project, as shown in the following example.
 
 {% tabs %}
 
@@ -93,6 +92,7 @@ Update the XAML to bind the control, set the window's `DataContext` in the code-
 
 {% highlight c# %}
 
+// MainWindow class
 using Microsoft.UI.Xaml;
 
 namespace GettingStarted;
@@ -106,10 +106,7 @@ public sealed partial class MainWindow : Window
     }
 }
 
-{% endhighlight %}
-
-{% highlight c# %}
-
+// ViewModel class
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Threading.Tasks;
@@ -167,6 +164,6 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI SfAIAssistView with sample chat messages](aiassistview_images/winui_aiassistview_gettingstarted.png)
+![WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_gettingstarted.png)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/Syncfusion-winui-ai-assistView-examples/tree/master/Samples/Getting-Started)
