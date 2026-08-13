@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI Shimmer | SyncfusionÂ®
-description: Learn how to get started with the SyncfusionÂ® WinUI Shimmer control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI Shimmer | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Shimmer control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: Shimmer
 documentation: ug
@@ -9,18 +9,18 @@ documentation: ug
 
 # Getting Started with WinUI Shimmer
 
-This section explains the steps required to add the [WinUI Shimmer control](https://www.syncfusion.com/winui-controls/shimmer) and covers only the basic features needed to get started with the Shimmer control.
+This section explains the steps required to add the [WinUI Shimmer control](https://www.syncfusion.com/winui-controls/shimmer) and covers the basic features you need to get started.
 
-## Creating an application with WinUI Shimmer control
+## Creating an application with the WinUI Shimmer control
 
-1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
-2. Add reference to [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet. 
-3. Import the control namespace `Syncfusion.UI.Xaml.Core` in XAML or C# code.
+1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+2. Add reference to the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
+3. Import the `Syncfusion.UI.Xaml.Core` namespace in your XAML or C# code.
 4. Initialize the [SfShimmer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html) control.
 
-## Initializing Shimmer control 
+## Initializing Shimmer control
 
-To initialize the Shimmer control, you can simply add the `SfShimmer` control in your XAML or C# code.
+To initialize the Shimmer control, add `SfShimmer` to your XAML page or instantiate it in code-behind.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ To initialize the Shimmer control, you can simply add the `SfShimmer` control in
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Core"
     mc:Ignorable="d">
     <Grid>
@@ -43,8 +43,22 @@ To initialize the Shimmer control, you can simply add the `SfShimmer` control in
 {% highlight C# %}
 
 // Creating an instance of the Shimmer control.
-SfShimmer Shimmer = new SfShimmer();
-           
+using Microsoft.UI.Xaml;
+using Syncfusion.UI.Xaml.Core;
+
+namespace GettingStarted
+{
+    public sealed partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfShimmer shimmer = new SfShimmer();
+            this.Content = shimmer;
+        }
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
