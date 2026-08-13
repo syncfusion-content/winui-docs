@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI BusyIndicator | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI BusyIndicator control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI BusyIndicator | SyncfusionÂ®
+description: Learn how to get started with the SyncfusionÂ® WinUI BusyIndicator control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfBusyIndicator
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI BusyIndicator
 
-This section explains the steps required to add the BusyIndicator control and covers only the basic features needed to get started with the Syncfusion `BusyIndicator` control.
+This section explains how to add and configure the Syncfusion BusyIndicator control in a WinUI application and demonstrates the basic features required to get started.
 
 ## Creating an application with WinUI BusyIndicator control
 
 1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Add a reference to the [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet package and restore packages.
+2. Add a reference to the [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Notifications`. In XAML, declare `xmlns:notification="using:Syncfusion.UI.Xaml.Notifications"`; in C#, add `using Syncfusion.UI.Xaml.Notifications;`.
-4. Initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control and add it to the visual tree. Set [`IsActive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_IsActive) to `true` to display the indicator.
+4. Initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control and add it to the window. Set [`IsActive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_IsActive) to `true` to display the indicator.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -65,7 +65,7 @@ public sealed partial class MainWindow : Window
 
 ## Setting the animation type in BusyIndicator
 
-The BusyIndicator control provides eight predefined animation types, such as `DottedCircle`, `DottedCircularFluent`, `DottedLinear`, `LinearIndicator`, `Pulse`, `Ripple`, `SingleCircle`, and `Slices`. Select any one of the animation types using the [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property. The default value is `DottedCircle`.
+The BusyIndicator control provides eight predefined animation types, such as `DottedCircle`, `DottedCircularFluent`, `DottedLinear`, `LinearIndicator`, `Pulse`, `Ripple`, `SingleCircle`, and `Slices`. You can choose any of the predefined animation types by setting the [AnimationType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_AnimationType) property. The default value is `DottedCircle`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,7 +109,7 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-## Adding content in BusyIndicator
+## Displaying content in BusyIndicator
 
 The BusyIndicator control provides an option to set the content that indicates the busy status of the control to the user, by using the [BusyContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_BusyContent) property. The content is rendered alongside the animation while `IsActive` is `true`, and is hidden when `IsActive` is `false`.
 
@@ -135,6 +135,8 @@ The BusyIndicator control provides an option to set the content that indicates t
 
 {% endhighlight %}
 {% highlight C# %}
+using Microsoft.UI.Xaml;
+using Syncfusion.UI.Xaml.Notifications;
 
 namespace GettingStarted;
 
@@ -154,4 +156,4 @@ public sealed partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-![BusyIndicator control getting started in WinUI](BusyIndicator_images/winui_busyindicator_getting_started.gif)
+![WinUI BusyIndicator control getting started](BusyIndicator_images/winui_busyindicator_getting_started.gif)
