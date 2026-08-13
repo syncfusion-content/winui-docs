@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Range in WinUI RangeSlider control | Syncfusion
-description: Learn here all about Custom Range support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
+title: Custom Range in WinUI RangeSlider | Syncfusion®
+description: Learn how to define a custom scale range in the Syncfusion® WinUI RangeSlider control based on your business logic.
 platform: WinUI
-control: SfRangeSlider
+control: Range Slider
 documentation: ug
 ---
 
-# Custom Range in WinUI RangeSlider (Range Slider)
+# Custom Range in WinUI RangeSlider
 
 The RangeSlider allows you to define a custom scale range by extending the `SfRangeSlider` based on your business logic, such as rendering a logarithmic scale.
 

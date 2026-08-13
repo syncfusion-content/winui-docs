@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ticks in WinUI RangeSlider control | Syncfusion
-description: Learn here all about Ticks feature of Syncfusion WinUI RangeSlider(SfRangeSlider) control with length support and more.
+title: Ticks in WinUI RangeSlider | Syncfusion®
+description: Learn how to add major and minor ticks in the Syncfusion® WinUI RangeSlider control with length and styling options.
 platform: WinUI
-control: SfRangeSlider
+control: Range Slider
 documentation: ug
 ---
 
