@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI ComboBox control | Syncfusion
-description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
+title: Selection in WinUI ComboBox | Syncfusion
+description: Learn about single and multiple selection modes in the Syncfusion WinUI ComboBox control to select items from the drop-down list.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# Selection in WinUI ComboBox (SfComboBox)
+# Selection in WinUI ComboBox
 
 The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) allows the user to select single or multiple items from the drop-down list. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionMode) property. The default value of `SelectionMode` is `Single`. There are two different selection modes: `Single`, and `Multiple`.
 

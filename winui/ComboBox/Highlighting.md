@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Highlighting Feature in WinUI ComboBox control | Syncfusion
-description: Learn here all about Highlighting Feature in Syncfusion WinUI ComboBox control in a WinUI application.
+title: Highlighting in WinUI ComboBox | Syncfusion
+description: Learn how to highlight matching characters in the Syncfusion WinUI ComboBox suggestion list to pick items with more clarity.
 platform: winui
 control: SfComboBox
 documentation: UG
 ---
 
-# Highlighting in WinUI ComboBox (SfComboBox)
+# Highlighting in WinUI ComboBox
 
 Highlight matching characters in the suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 

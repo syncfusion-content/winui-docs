@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Customization in WinUI ComboBox control | Syncfusion
-description: Learn here all about UI customization support in Syncfusion WinUI ComboBox (multi-select ComboBox) control in a WinUI application and its basic features.
+title: UI Customization in WinUI ComboBox | Syncfusion
+description: Learn about the UI customization options available in the Syncfusion WinUI ComboBox control to customize its appearance and behavior.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# UI Customization in WinUI ComboBox (SfComboBox)
+# UI Customization in WinUI ComboBox
 
 This section explains different UI customization available in [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html).
 
