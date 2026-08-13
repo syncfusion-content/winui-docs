@@ -13,7 +13,7 @@ This section explains the steps required to add the WinUI [SfAIAssistView](https
 
 ## Creating an application with the WinUI SfAIAssistView
 
-1. Create a [WinUI 3 desktop app for C# and .NET](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add a reference to the [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Chat` in your XAML or C# files.
 4. Initialize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.

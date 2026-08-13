@@ -13,7 +13,7 @@ This section explains the steps required to add the WinUI [SfAvatarView](https:/
 
 ## Creating an application with WinUI AvatarView
 
-1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add a reference to the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Core` in your XAML or C# code.
 4. Initialize the [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control with the required settings.
