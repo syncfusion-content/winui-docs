@@ -1,13 +1,13 @@
 ---
 layout: post
-title: No Result Found in WinUI AutoComplete (SfAutoComplete) | Syncfusion
-description: Learn how to use NoResultsFoundContent and NoResultsFoundTemplate in the Syncfusion WinUI AutoComplete control.
+title: No Result Found in WinUI AutoComplete | Syncfusion®
+description: Learn how to use NoResultsFoundContent and NoResultsFoundTemplate in the Syncfusion® WinUI AutoComplete control.
 platform: winui
 control: SfAutoComplete
 documentation: UG
 ---
 
-# No Result Found in WinUI AutoComplete (SfAutoComplete)
+# No Result Found in WinUI AutoComplete
 
 When the entered text does not match any item in the suggestion list, the SfAutoComplete control displays a message indicating that no search results are found. The desired text or UI can be set by using the `NoResultsFoundContent` and `NoResultsFoundTemplate` properties.
 

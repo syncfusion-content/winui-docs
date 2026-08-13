@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in WinUI ComboBox | Syncfusion
-description: Learn about grouping support in the Syncfusion WinUI ComboBox control to organize items into groups in the drop-down list.
+title: Grouping in WinUI ComboBox | Syncfusion®
+description: Learn about grouping support in the Syncfusion® WinUI ComboBox control to organize items into groups in the drop-down list.
 platform: winui
 control: SfComboBox
 documentation: ug

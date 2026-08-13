@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping in WinUI AutoComplete control | Syncfusion
-description: Learn about grouping support in the Syncfusion WinUI AutoComplete (SfAutoComplete) control and how to customize the appearance of groups.
+title: Grouping in WinUI AutoComplete | Syncfusion®
+description: Learn how to group items in the Syncfusion® WinUI AutoComplete control and customize the appearance of each group.
 platform: winui
 control: SfAutoComplete
 documentation: ug
 ---
 
-# Grouping in WinUI AutoComplete (SfAutoComplete)
+# Grouping in WinUI AutoComplete
 
 This section explains the grouping support available in the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
 

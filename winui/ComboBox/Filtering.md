@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in WinUI ComboBox | Syncfusion
-description: Learn how to filter data items in the Syncfusion WinUI ComboBox control based on the text entered in the editing text box.
+title: Filtering in WinUI ComboBox | Syncfusion®
+description: Learn how to filter data items in the Syncfusion® WinUI ComboBox control based on the text entered in the editing text box.
 platform: winui
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About Syncfusion WinUI ComboBox Control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio WinUI ComboBox control, its key features, and more details.
+title: About Syncfusion® WinUI ComboBox Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WinUI ComboBox control, its key features, and more details.
 platform: winui
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Leading and Trailing View in WinUI ComboBox | Syncfusion
-description: Learn how to add leading and trailing views in the Syncfusion WinUI ComboBox control to display content before and after the selection area.
+title: Leading and Trailing View in WinUI ComboBox | Syncfusion®
+description: Learn how to add leading and trailing views in the Syncfusion® WinUI ComboBox control to display content before and after the selection area.
 platform: winui
 control: SfComboBox
 documentation: ug

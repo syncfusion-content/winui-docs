@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Support in WinUI ComboBox | Syncfusion
-description: Learn about the keyboard shortcuts supported in the Syncfusion WinUI ComboBox control to interact with the component easily.
+title: Keyboard Support in WinUI ComboBox | Syncfusion®
+description: Learn about the keyboard shortcuts supported in the Syncfusion® WinUI ComboBox control to interact with the component easily.
 platform: winui
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WinUI ComboBox | Syncfusion
-description: Learn how to get started with the Syncfusion WinUI ComboBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI ComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI ComboBox control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfComboBox
 documentation: ug

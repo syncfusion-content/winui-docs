@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI AutoComplete | Syncfusion
-description: Learn how to get started with the Syncfusion WinUI AutoComplete control, its suggestion list, and other essential topics.
+title: Getting Started with WinUI AutoComplete | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI AutoComplete control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfAutoComplete
 documentation: ug
 ---
 
-# Getting Started with WinUI AutoComplete (SfAutoComplete)
+# Getting Started with WinUI AutoComplete
 
 This section explains how to add the [AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control and bind data to it. It covers only the basic features needed to get started with the Syncfusion<sup>&reg;</sup> `AutoComplete` control.
 

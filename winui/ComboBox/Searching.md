@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Searching in WinUI ComboBox | Syncfusion
-description: Learn how to perform text searching in the Syncfusion WinUI ComboBox control to find and highlight items based on user input.
+title: Searching in WinUI ComboBox | Syncfusion®
+description: Learn how to perform text searching in the Syncfusion® WinUI ComboBox control to find and highlight items based on user input.
 platform: winui
 control: SfComboBox
 documentation: ug
