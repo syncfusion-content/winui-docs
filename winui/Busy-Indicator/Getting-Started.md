@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI BusyIndicator
 
-This section explains how to add and configure the Syncfusion BusyIndicator control in a WinUI application and demonstrates the basic features required to get started.
+This section explains how to add and configure the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control in a WinUI application and demonstrates the basic features required to get started.
 
 ## Creating an application with WinUI BusyIndicator control
 
 1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Add a reference to the [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet package.
-3. Import the control namespace `Syncfusion.UI.Xaml.Notifications`. In XAML, declare `xmlns:notification="using:Syncfusion.UI.Xaml.Notifications"`; in C#, add `using Syncfusion.UI.Xaml.Notifications;`.
-4. Initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control and add it to the window. Set [`IsActive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_IsActive) to `true` to display the indicator.
+2. Install the [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet package.
+3. Import the `Syncfusion.UI.Xaml.Notifications` namespace in XAML or C#.
+4. Create and initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control and add it to the window. Set [`IsActive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_IsActive) to `true` to display the indicator.
 
 {% capture codesnippet1 %}
 {% tabs %}
