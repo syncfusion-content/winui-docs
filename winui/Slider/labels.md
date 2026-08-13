@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Labels in WinUI Slider control | Syncfusion
-description: Learn here all about Labels feature of Syncfusion WinUI Slider(SfSlider) control with label placement and more.
+title: Labels in WinUI Slider | Syncfusion®
+description: Learn Show Labels in WinUI Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WinUI
-control: SfSlider
+control: Slider
 documentation: ug
 ---
 

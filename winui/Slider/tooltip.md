@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip in WinUI Slider control | Syncfusion
-description: Learn here all about ToolTip feature of Syncfusion WinUI Slider(SfSlider) control with style, placement support and more.
+title: ToolTip in WinUI Slider | Syncfusion
+description: The tooltip in the Syncfusion WinUI Slider control indicates the current value during interaction, with customizable text format, style, and template.
 platform: WinUI
 control: SfSlider
 documentation: ug

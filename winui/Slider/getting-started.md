@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with WinUI Slider control | Syncfusion
-description: Learn here all about getting started with Syncfusion WinUI Slider(SfSlider) control, its elements, and more.
+title: Getting Started with WinUI Slider | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Slider control. Explore setup, features, examples, and customization options.
 platform: WinUI
-control: SfSlider
+control: Slider
 documentation: ug
 ---
 
