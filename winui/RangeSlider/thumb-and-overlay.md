@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thumb and Thumb Overlay in WinUI RangeSlider | Syncfusion®
-description: Learn how to customize the thumb and thumb overlay in the Syncfusion® WinUI RangeSlider control.
+description: Learn Thumb Type in WinUI Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WinUI
 control: Range Slider
 documentation: ug

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Customizing control in the dropdown in WinUI Tooltip | Syncfusion
+title: Customizing control in the dropdown in WinUI Tooltip | Syncfusion®
 description: This section describes how to customize the Color Palette in the DropDown Color Palette (SfDropDownColorPalette) control.
 platform: WinUI
-control: SfDropDownColorPalette
+control: DropDown Color Palette
 documentation: ug
 ---
 

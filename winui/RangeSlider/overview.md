@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WinUI RangeSlider Control | Syncfusion
-description: Learn about overview of Syncfusion® Essential Studio WinUI RangeSlider control and more details.
+description: Learn Key Features in WinUI Tooltip using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: WinUI
 control: Range Slider
 documentation: ug
