@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theme Colors in WinUI Color Palette control | Syncfusion
-description: Learn here all about Theme Colors support in Syncfusion WinUI Color Palette(SfColorPalette) control and more.
+title: Theme Colors in WinUI Color Palette | Syncfusion
+description: Learn how to select and customize theme colors, add custom colors, and manage color variants in the Syncfusion WinUI Color Palette control.
 platform: WinUI
-control: SfColorPalette
+control: Color Palette
 documentation: ug
 ---
 
