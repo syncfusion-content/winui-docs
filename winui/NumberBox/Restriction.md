@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Value Change Restriction in Syncfusion® WinUI NumberBox
+title: Value Change Restriction in WinUI NumberBox | Syncfusion®
 description: Restrict value changes in Syncfusion® WinUI NumberBox (SfNumberBox) by defining limits and validation rules for numeric input.
 platform: winui
 control: SfNumberBox

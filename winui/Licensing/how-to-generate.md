@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion license generation - Syncfusion
-description: Learn here about how to generate Syncfusion WinUI license key for syncfusion WinUI application for license validation.
+title: Generate WinUI License Key | Syncfusion®
+description: Generate a Syncfusion® WinUI license key for application license validation and configure licensing in your projects.
 platform: WinUI
 control: Essential Studio
 documentation: ug
 ---
 
-# Generate Syncfusion WinUI License key
+# Generate Syncfusion<sup>®</sup> WinUI License Key
 
 License keys for WinUI can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
 

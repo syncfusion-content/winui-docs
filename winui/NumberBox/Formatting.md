@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion® WinUI NumberBox
+title: Number Formatting in WinUI NumberBox | Syncfusion®
 description: Change and customize number formats in Syncfusion® WinUI NumberBox  to display values with the required formatting.
 platform: WinUI
 control: SfNumberBox

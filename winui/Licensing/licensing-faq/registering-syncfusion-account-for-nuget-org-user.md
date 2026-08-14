@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Essential Studio Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio license key, how to generate the license key, how to register the license key, and more details.
+title: Register Account for NuGet.org Users in WinUI | Syncfusion®
+description: Register Syncfusion® account for direct NuGet.org users to obtain trial license key for WinUI.
 platform: WinUI
 control: Essential Studio
 documentation: ug
 ---
 
-# Registering Syncfusion account for direct NuGet.org user
+# Register Account for NuGet.org Users in WinUI
 
 If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuget.org/) and do not have a Syncfusion account, follow the steps to obtain a free 30-day trial license key:
 

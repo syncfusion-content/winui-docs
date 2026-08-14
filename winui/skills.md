@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion® WinUI Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WinUI component guidance.
+description: Learn how to install and use Syncfusion® Agent Skills to enhance AI assistants with accurate Syncfusion WinUI component guidance.
 control: Skills
 platform: WinUI
 documentation: ug

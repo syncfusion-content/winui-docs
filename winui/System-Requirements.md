@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System Requirements for Syncfusion® WinUI Controls
+title: System Requirements in WinUI | Syncfusion®
 description: Check the system requirements for Syncfusion® WinUI controls, including supported platforms, frameworks, and development tools.
 platform: winui
 control: Installation and Deployment

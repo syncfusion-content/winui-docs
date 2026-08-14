@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Licensing FAQ – Net need for ES license validation | Syncfusion
-description: Learn here some information about whether syncfusion Essential Studio license validation needs internet conncetion.
+title: Internet Connection for License Validation in WinUI | Syncfusion®
+description: Learn if internet connection is required for Syncfusion® WinUI license validation and deployment.
 platform: winui
 control: Essential Studio
 documentation: ug
 ---
 
-# Is an internet required for Essential Studio license validation?
+# Internet Connection for License Validation in WinUI
 
 * Syncfusion license validation is done offline during application execution and does not require internet access. 
 

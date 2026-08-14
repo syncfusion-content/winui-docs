@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guide to run Online and Offline Samples in Syncfusion® WinUI Studio
+title: Run Online and Offline Samples in WinUI Studio | Syncfusion®
 description: Run online and offline samples of Syncfusion® Essential Studio for WinUI to explore controls, features, and component behavior.
 platform: winui
 control: Samples

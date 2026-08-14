@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization Support for Syncfusion® WinUI Controls
-description: Explore localization support in Syncfusion® WinUI controls using .resw files and customizing default control strings.
+title: Localization Support in WinUI Controls | Syncfusion®
+description: Localization support in Syncfusion® WinUI controls enables .resw-based translations and customization of default control strings.
 platform: winui
 control: Localization
 documentation: ug

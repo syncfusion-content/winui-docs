@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Compact Sizing Support for Syncfusion® WinUI Controls
-description: Explore Compact Sizing support in Syncfusion® WinUI controls with layout optimization, spacing customization, and responsive UI design.
+title: Compact Sizing Support in WinUI Controls | Syncfusion®
+description: Compact Sizing support in Syncfusion® WinUI controls helps optimize layouts, customize spacing, and create responsive user interfaces.
 platform: WinUI
 control: Compact Sizing
 documentation: ug

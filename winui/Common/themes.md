@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theme Support for Syncfusion® WinUI Controls
-description: Configure and customize supported themes in Syncfusion® WinUI controls to create consistent and visually appealing applications.
+title: Theme Support for WinUI Controls | Syncfusion®
+description: Theme support in Syncfusion® WinUI controls enables consistent styling, customization, and visually appealing applications.
 platform: winui
 control: Themes
 documentation: ug
