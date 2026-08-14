@@ -7,7 +7,7 @@ control: SfAutoComplete
 documentation: UG
 ---
 
-# About Syncfusion WinUI AutoComplete Control
+# About Syncfusion® WinUI AutoComplete Control
 
 The [WinUI AutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) is highly optimized to quickly load and populate suggestions from a large volume of data based on the characters entered by the user. It allows users to select one or more items from the suggestion list. It can display the selected items in the input view with images, text, and close buttons to remove items as needed.
 
