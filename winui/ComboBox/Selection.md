@@ -254,7 +254,7 @@ The ComboBox control provides auto-append support with the selection of text as 
 * **TextWithSelection** - The appended text appears with the selection highlighted.
 * **Text** - The appended text appears with a faded foreground, similar to Windows 11.
 
-#### Auto-append UI as TextWithSelection
+### Auto-append UI as TextWithSelection
 
 When entering text in the text box selection area, if the `AutoAppendType` property is `TextWithSelection`, the appended text appears with the selection.
 

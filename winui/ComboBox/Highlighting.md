@@ -61,7 +61,7 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 
 
-### **Highlight beginning text**
+## **Highlight beginning text**
 It highlights the matches that start with the typed characters in the suggestion list.
 
 {% tabs %}
@@ -101,7 +101,7 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 
 
-### **Highlight all occurrences of the search text**
+## **Highlight all occurrences of the search text**
 It highlights all the matches that contain the typed characters in the suggestion list. 
 
 
