@@ -1,9 +1,9 @@
 ---
 layout: post
 title: UI Customization in WinUI Color Picker | Syncfusion®
-description: Learn about UI customization in the Syncfusion® WinUI Color Picker control, including color spectrum shape, components, and brush modes.
+description: UI customization in the Syncfusion® WinUI Color Picker control, including color spectrum shape, components, and brush modes.
 platform: WinUI
-control: Color Picker
+control: SfColorPicker
 documentation: ug
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip in WinUI Slider | Syncfusion
-description: The tooltip in the Syncfusion WinUI Slider control indicates the current value during interaction, with customizable text format, style, and template.
+title: ToolTip in WinUI Slider | Syncfusion®
+description: The tooltip in the Syncfusion® WinUI Slider control indicates the current value during interaction, with customizable text format, style, and template.
 platform: WinUI
 control: SfSlider
 documentation: ug

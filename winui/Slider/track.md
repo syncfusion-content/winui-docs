@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Track in WinUI Slider | Syncfusion
-description: The track in the Syncfusion WinUI Slider control can be customized with active and inactive colors, hover and pressed colors, height, and styles.
+title: Track in WinUI Slider | Syncfusion®
+description: The track in the Syncfusion® WinUI Slider control can be customized with active and inactive colors, hover and pressed colors, height, and styles.
 platform: WinUI
 control: SfSlider
 documentation: ug

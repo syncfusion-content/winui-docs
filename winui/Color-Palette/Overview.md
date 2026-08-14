@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WinUI Color Palette Control | Syncfusion
 description: Learn about introduction of Syncfusion® Essential Studio WinUI Color Palette control and more details.
 platform: WinUI
-control: Color Palette
+control: SfColorPalette
 documentation: ug
 ---
 

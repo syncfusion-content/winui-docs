@@ -1,9 +1,9 @@
 ---
 layout: post
 title: UI Customization in WinUI Color Palette | Syncfusion®
-description: Learn how to customize the Syncfusion® WinUI Color Palette control including color selection, default colors, tooltips, and layout options.
+description: Customize the Syncfusion® WinUI Color Palette control including color selection, default colors, tooltips, and layout options.
 platform: WinUI
-control: Color Palette
+control: SfColorPalette
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WinUI RangeSlider | Syncfusion®
 description: Learn how to get started with the Syncfusion® WinUI RangeSlider control. Explore setup, features, examples, and customization options.
 platform: WinUI
-control: Range Slider
+control: SfRangeSlider
 documentation: ug
 ---
 

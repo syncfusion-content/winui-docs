@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Basic Features in WinUI RangeSlider | Syncfusion®
-description: Learn about the basic features of the Syncfusion® WinUI RangeSlider control, including setting minimum and maximum values, interval, and more.
+description: Basic features of the Syncfusion® WinUI RangeSlider control, including setting minimum and maximum values, interval, and more.
 platform: WinUI
-control: Range Slider
+control: SfRangeSlider
 documentation: ug
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Track in WinUI RangeSlider | Syncfusion®
-description: Learn how to customize the track in the Syncfusion® WinUI RangeSlider control with color and hover options.
+description: Customize the track in the Syncfusion® WinUI RangeSlider control including color, height, and styling options.
 platform: WinUI
 control: Range Slider
 documentation: ug

@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WinUI DropDown Color Picker Control | Syncfusion®
 description: Learn about overview of Syncfusion® Essential Studio WinUI DropDown Color Picker control and more details.
 platform: WinUI
-control: DropDown Color Picker
+control: SfDropDownColorPicker
 documentation: ug
 ---
 

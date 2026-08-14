@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Dividers in WinUI RangeSlider | Syncfusion®
-description: Learn how to show dividers in the Syncfusion® WinUI RangeSlider control to indicate the slider intervals.
+description: Show dividers in the Syncfusion® WinUI RangeSlider control to indicate the slider intervals and customize their appearance.
 platform: WinUI
-control: Range Slider
+control: SfRangeSlider
 documentation: ug
 ---
 

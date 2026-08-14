@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Solid Color Selection in WinUI Color Picker | Syncfusion®
-description: Learn about solid color selection in the Syncfusion® WinUI Color Picker control, including color channels, opacity, and hexadecimal editor.
+description: Solid color selection in the Syncfusion® WinUI Color Picker control, including color channels, opacity, and hexadecimal editor.
 platform: WinUI
-control: Color Picker
+control: SfColorPicker
 documentation: ug
 ---
 

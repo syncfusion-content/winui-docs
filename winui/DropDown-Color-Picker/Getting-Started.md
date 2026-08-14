@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WinUI DropDown Color Picker | Syncfusion®
 description: Learn how to get started with the Syncfusion® WinUI DropDown Color Picker control. Explore setup, features, examples, and customization options.
 platform: WinUI
-control: DropDown Color Picker
+control: SfDropDownColorPicker
 documentation: ug
 ---
 

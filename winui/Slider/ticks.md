@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks in WinUI Slider | Syncfusion
-description: The ticks in the Syncfusion WinUI Slider control include major and minor ticks with customizable length, placement, offset, and active and inactive styles.
+title: Ticks in WinUI Slider | Syncfusion®
+description: The ticks in the Syncfusion® WinUI Slider control include major and minor ticks with customizable length, placement, offset, and active and inactive styles.
 platform: WinUI
 control: SfSlider
 documentation: ug

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Labels in WinUI Slider | Syncfusion®
-description: Learn Show Labels in WinUI Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
+description: Show labels in the WinUI Slider using Syncfusion controls, including UI customization and enterprise features.
 platform: WinUI
-control: Slider
+control: SfSlider
 documentation: ug
 ---
 

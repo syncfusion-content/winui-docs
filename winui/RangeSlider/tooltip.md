@@ -1,9 +1,9 @@
 ---
 layout: post
 title: ToolTip in WinUI RangeSlider | Syncfusion®
-description: Learn how to add tooltips to the Syncfusion® WinUI RangeSlider control to show the selected values with placement options.
+description: Add tooltips to the Syncfusion® WinUI RangeSlider control to show the selected values with placement and formatting options.
 platform: WinUI
-control: Range Slider
+control: SfRangeSlider
 documentation: ug
 ---
 
