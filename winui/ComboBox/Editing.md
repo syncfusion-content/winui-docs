@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in WinUI ComboBox | Syncfusion®
-description: Learn about the editable and non-editable modes supported in the Syncfusion® WinUI ComboBox control and how to enable editing.
+description: Explore the editable and non-editable modes available in the Syncfusion® WinUI ComboBox control, including steps to configure and enable user editing.
 platform: winui
 control: SfComboBox
 documentation: ug

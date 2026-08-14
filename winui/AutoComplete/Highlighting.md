@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Highlighting in WinUI AutoComplete | Syncfusion®
-description: Learn how to highlight the matching text in the Syncfusion® WinUI AutoComplete control to pick an item with more clarity.
+description: Explore the text highlighting feature in the Syncfusion® WinUI AutoComplete control that visually distinguishes matching results from user input.
 platform: winui
 control: SfAutoComplete
 documentation: UG

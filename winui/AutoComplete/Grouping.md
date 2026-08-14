@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI AutoComplete | Syncfusion®
-description: Learn how to group items in the Syncfusion® WinUI AutoComplete control and customize the appearance of each group.
+description: Discover how to organize AutoComplete suggestions into groups and personalize the appearance of each group in the Syncfusion® WinUI AutoComplete control.
 platform: winui
 control: SfAutoComplete
 documentation: ug

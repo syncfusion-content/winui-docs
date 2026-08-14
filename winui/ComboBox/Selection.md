@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI ComboBox | Syncfusion®
-description: Learn about single and multiple selection modes in the Syncfusion® WinUI ComboBox control to select items from the drop-down list.
+description: Understand how to configure and use single and multiple selection modes in the Syncfusion® WinUI ComboBox control for flexible item selection.
 platform: winui
 control: SfComboBox
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leading and Trailing View in WinUI AutoComplete | Syncfusion®
-description: Learn how to add and customize leading and trailing views in the Syncfusion® WinUI AutoComplete control using icons and UI elements.
+description: Understand how to configure leading and trailing views in the Syncfusion® WinUI AutoComplete control and customize them with icons and other visual elements.
 platform: winui
 control: SfAutoComplete
 documentation: UG
