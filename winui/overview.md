@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion WinUI Controls
-description: Syncfusion Essential Studio for WinUI is a state-of-the-art WinUI toolkit for developing Windows apps.
+title: Overview of Syncfusion® WinUI Controls
+description: Syncfusion® Essential Studio for WinUI is a comprehensive toolkit for building modern Windows applications with rich UI controls.
 platform: winui
 control: Overview
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 > With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
 
-# Syncfusion<sup>&reg;</sup> WinUI Controls
+# Overview of Syncfusion<sup>®</sup> WinUI Controls
 
 The Syncfusion<sup>&reg;</sup> WinUI Controls are the suite, ever needed to create state of art WinUI applications.
 

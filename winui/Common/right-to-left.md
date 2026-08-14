@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right-to-Left (RTL) in WinUI Controls | Syncfusion
-description: Learn about Right-to-Left (RTL) FlowDirection support in Syncfusion WinUI controls and more details.
+title: Right-to-Left (RTL) Support for Syncfusion® WinUI Controls
+description: Implement Right-to-Left (RTL) FlowDirection support in Syncfusion® WinUI controls for localized and multilingual applications.
 platform: WinUI
 control: RightToLeft
 documentation: ug
 ---
 
-# Right-to-Left (RTL) in WinUI Controls
+# Right-to-Left (RTL) Support for Syncfusion<sup>®</sup> WinUI Controls
 
 Right-to-Left (RTL) support allows you to change the flow direction of text and other UI elements within a control's layout.
 

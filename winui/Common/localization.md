@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization of Syncfusion WinUI Controls
-description: Learn about localization support in Syncfusion WinUI controls using the .resw files and editing default strings of WinUI controls.
+title: Localization Support for Syncfusion® WinUI Controls
+description: Explore localization support in Syncfusion® WinUI controls using .resw files and customizing default control strings.
 platform: winui
 control: Localization
 documentation: ug
 ---
 
-# Localization of Syncfusion<sup>&reg;</sup> WinUI controls
+# Localization Support for Syncfusion<sup>®</sup> WinUI Controls
 
 Localization is the process of making an application multilingual by formatting the content according to the languages. This involves configuring the application for a specific language. For example `en-US` is the language of English spoken in the United States, while `en-GB` is the language of English spoken in Great Britain. Syncfusion<sup>&reg;</sup> WinUI controls can be localized by adding resource files for each language.
 
