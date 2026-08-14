@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About WinUI DropDown Color Palette control | Syncfusion
-description: Learn here all about the introduction of the Syncfusion WinUI DropDown Color Palette (`SfDropDownColorPalette`) control and more.
+title: About WinUI DropDown Color Palette control | Syncfusion®
+description: Learn here all about the introduction of the Syncfusion® WinUI DropDown Color Palette (`SfDropDownColorPalette`) control and more.
 platform: WinUI
-control: SfDropDownColorPalette
+control: DropDown Color Palette
 documentation: ug
 ---
 

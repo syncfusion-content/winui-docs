@@ -1,9 +1,9 @@
 ---
 layout: post
-title: More Colors Dialog in WinUI DropDown Color Palette | Syncfusion
+title: More Colors Dialog in WinUI DropDown Color Palette | Syncfusion®
 description: This section describes how to pick additional colors from the More Colors dialog in the DropDown Color Palette (SfDropDownColorPalette) control.
 platform: WinUI
-control: SfDropDownColorPalette
+control: DropDown Color Palette
 documentation: ug
 ---
 
