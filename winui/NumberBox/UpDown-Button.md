@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Use UpDown Button (Spin Button) in WinUI NumberBox | Syncfusion
-description: Learn here all about how to use UpDown Button (Spin Button) in Syncfusion WinUI NumberBox (SfNumberBox) control and more.
+title: UpDown Button Support in Syncfusion® WinUI NumberBox
+description: Use the UpDown Button (Spin Button) in Syncfusion® WinUI NumberBox (SfNumberBox) to increment or decrement numeric values efficiently.
 platform: WinUI
 control: SfNumberBox
 documentation: ug
 ---
 
-# UpDown Button (Spin Button) in WinUI NumberBox
+# UpDown Button (SpinButton) Support in Syncfusion<sup>®</sup> WinUI NumberBox
 
 This section describes how to change the value in the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control using keys, mouse scrolling, and the up-down button.
 
