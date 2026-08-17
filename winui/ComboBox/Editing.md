@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in WinUI ComboBox control | Syncfusion
-description: Learn here all about Editable modes support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
+title: Editing in WinUI ComboBox | Syncfusion®
+description: Explore the editable and non-editable modes available in the Syncfusion® WinUI ComboBox control, including steps to configure and enable user editing.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# Editing in WinUI ComboBox (SfComboBox)
+# Editing in WinUI ComboBox
 
 The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control supports both editable and non-editable modes for selecting an item from a data source. To enable editing functionality, set [IsEditable](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsEditable) property as `true`. The default value is `false`.
 
