@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to upgrade from trial version in WinUI | Syncfusion®
-description: Upgrade from trial version to licensed version of Syncfusion® WinUI after purchasing a license.
+description: Learn how to upgrade your Syncfusion® WinUI trial installation to a licensed version after successfully purchasing a license.
 platform: WinUI
 control: Essential Studio
 documentation: ug

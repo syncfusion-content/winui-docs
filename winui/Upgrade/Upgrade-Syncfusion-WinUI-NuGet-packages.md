@@ -7,7 +7,7 @@ control: Essential Studio
 documentation: ug
 ---
 
-# Upgrade Syncfusion<sup>®</sup> WinUI NuGet Packages to the Latest Version
+# Upgrade Syncfusion® WinUI NuGet Packages to the Latest Version
 
 Every three months, Syncfusion releases new volumes with interesting new features. For this volume, there will be a weekly NuGet release and one service pack. Syncfusion WinUI NuGet packages are released on a weekly basis to address critical issue fixes in volume releases.
 

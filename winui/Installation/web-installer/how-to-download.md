@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to download WinUI web installer | Syncfusion®
-description: Learn to download Syncfusion® WinUI web installer from Syncfusion® website for trial or licensed.
+description: Learn how to download and install the Syncfusion® WinUI web installer from the Syncfusion® website for trial and licensed users.
 platform: winui
 control: Installation and Deployment
 documentation: ug

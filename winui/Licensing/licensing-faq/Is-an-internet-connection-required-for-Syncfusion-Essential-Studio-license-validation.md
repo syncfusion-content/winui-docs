@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internet Connection for License Validation in WinUI | Syncfusion®
-description: Learn if internet connection is required for Syncfusion® WinUI license validation and deployment.
+description: Learn whether Syncfusion® WinUI requires an internet connection for license validation during development and deployment.
 platform: winui
 control: Essential Studio
 documentation: ug
