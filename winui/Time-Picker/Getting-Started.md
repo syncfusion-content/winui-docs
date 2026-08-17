@@ -184,8 +184,11 @@ sfTimePicker.AllowNull = true;
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
 
 ## Header and description
+
 This section explains about `Header` and `Description` properties of the Time Picker.
-#### Header
+
+### Header
+
 The `Header` property is used to display the title for the `TimePicker` control.
      
 {% tabs %}
@@ -212,7 +215,9 @@ timePicker.Header = "Select your convenient order delivery time";
 {% endtabs %}
 
 ![customize-header-text-in-winui-time-picker](Getting-Started_images/customize-header-text-in-winui-time-picker.png)
-#### Header customization
+
+### Header customization
+
 By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
@@ -240,6 +245,7 @@ By using the control's `HeaderTemplate` property, you can customize the appearan
 ![customize-header-template-in-winui-time-picker](Getting-Started_images/customize-header-template-in-winui-time-picker.png)
 
 ### Description
+
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}

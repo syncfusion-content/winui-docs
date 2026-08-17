@@ -151,8 +151,11 @@ sfCalendarDatePicker.AllowNull = true;
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection).
 
 ## Header and description
+
 This section explains the `Header` and `Description` properties of the CalendarDatePicker.
-#### Header
+
+### Header
+
 The `Header` property is used to display the title for the `CalendarDatePicker` control.
      
 {% tabs %}
@@ -180,7 +183,8 @@ calendarDatePicker.Header = "Enter your date of birth";
 
 ![date-picker-with-header-description-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-header-description-in-winui-calendar-date-picker.png)
 
-#### Header customization
+### Header customization
+
 By using the control's `HeaderTemplate` property, you can customize the appearance of the control's header. The following code sample shows how to use a header template to customize the header.
 
 {% tabs %}
@@ -206,7 +210,8 @@ By using the control's `HeaderTemplate` property, you can customize the appearan
 
 ![date-picker-with-header-template-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-header-template-in-winui-calendar-date-picker.png)
 
-#### Description
+### Description
+
 The `Description` support is used to display the content beneath the control as well as to provide guidance on the input that the control expects.
 
 {% tabs %}
