@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI ComboBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI ComboBox (multi-select ComboBox) control, its features, and more.
+title: About Syncfusion® WinUI ComboBox Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio WinUI ComboBox control, its key features, and more details.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# WinUI ComboBox Overview
+# About Syncfusion® WinUI ComboBox Control
 
 The [WinUI ComboBox control](https://www.syncfusion.com/winui-controls/combobox) (multi-select ComboBox) is a selection component that allows users to type a value or choose an option from a list of predefined options. It has many features, such as data binding, multiple selection with checkboxes, editing, searching, filtering, UI customization, and custom templates.
 

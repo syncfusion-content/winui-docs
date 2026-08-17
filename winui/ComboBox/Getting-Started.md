@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI ComboBox | Syncfusion
-description: Learn how to get started with Syncfusion WinUI ComboBox (multi-select ComboBox) control, its elements, and more in here.
+title: Getting Started with WinUI ComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI ComboBox control. Explore setup, features, examples, and customization options.
 platform: WinUI
 control: SfComboBox
 documentation: ug
 ---
 
-# Getting Started with WinUI ComboBox (SfComboBox)
+# Getting Started with WinUI ComboBox
 
 This section explains the steps required to add the [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control and binding data in `ComboBox` control. This section covers only basic features needed to get started with Syncfusion `ComboBox` control.
 

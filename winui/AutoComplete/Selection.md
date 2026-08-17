@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI AutoComplete (SfAutoComplete) | Syncfusion
-description: Learn about single and multiple selection modes, auto-append behavior, selection events, and selected values in Syncfusion WinUI SfAutoComplete.
+title: Selection in WinUI AutoComplete | Syncfusion®
+description: Learn about single and multiple selection modes, auto-append behavior, selection events, and selected values in the Syncfusion® WinUI AutoComplete control.
 platform: winui
 control: SfAutoComplete
 documentation: UG
 ---
 
-# Selection in WinUI AutoComplete (SfAutoComplete)
+# Selection in WinUI AutoComplete
 
 The [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) allows users to select single or multiple items. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html#Syncfusion_UI_Xaml_Editors_SfAutoComplete_SelectionMode) property. There are two selection modes: `Single` and `Multiple`.
 
