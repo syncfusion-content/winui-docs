@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Filtering in WinUI ComboBox control | Syncfusion
-description: Learn here all about ComboBox filtering options in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
+title: Filtering in WinUI ComboBox | Syncfusion®
+description: Understand how to enable and customize item filtering in the Syncfusion® WinUI ComboBox control based on the contents of the editing text box.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
-# Filtering in WinUI ComboBox (SfComboBox)
+# Filtering in WinUI ComboBox
 
 The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) has built-in support to filter data items based on the text entered in the editing text box. The filter operation starts as soon as you start typing characters in the component.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Keyboard Support in WinUI AutoComplete Control | Syncfusion
-description: Learn about the keyboard shortcuts and navigation features supported in the Syncfusion WinUI SfAutoComplete control.
+title: Keyboard Support in WinUI AutoComplete | Syncfusion®
+description: Learn about the keyboard shortcuts and navigation features supported in the Syncfusion® WinUI AutoComplete control.
 platform: winui
 control: SfAutoComplete
 documentation: UG
 ---
 
-# Keyboard Support in WinUI AutoComplete (SfAutoComplete)
+# Keyboard Support in WinUI AutoComplete
 
 This section explains the keyboard shortcuts that are supported by the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
 
