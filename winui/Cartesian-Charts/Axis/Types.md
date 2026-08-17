@@ -8,7 +8,7 @@ documentation: ug
 keywords: types of axis in winui chart, winui sfcartesianchart axis types, winui chart axis types, syncfusion winui chart axis types, winui sfcartesianchart axis options.
 ---
 
-# Axis Types in WinUI Chart
+# Axis types in WinUI chart
 
 Cartesian chart supports the following types of chart axis.
 
@@ -17,7 +17,7 @@ Cartesian chart supports the following types of chart axis.
 * DateTimeAxis
 * LogarithmicAxis
 
-## Numerical Axis
+## Numerical axis
 
 [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical values to the chart. [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) can be added for both [XAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_YAxes).
 
@@ -94,7 +94,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ![NumericalAxis interval support in WinUI Chart](Axis_Images/winui_chart_numerical_axis_interval.png)
 
-### Customizing the Range
+### Customizing the range
 
 [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Maximum) and [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_Minimum) properties of axis is used for setting the maximum and minimum value of the axis range respectively.
 
@@ -129,7 +129,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ![NumericalAxis range customization in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_Numeric.png)
 
-## Category Axis
+## Category axis
 
 The [CategoryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
 
@@ -236,7 +236,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ![CategoryAxis interval support in WinUI Chart](Axis_Images/winui_chart_category_axis_interval.png)
 
-## DateTime Axis
+## DateTime axis
 
 [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot `DateTime` values. The [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is widely used to make financial charts in places like the Stock Market, where plotting is done every day.
 
@@ -323,7 +323,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ![DateTimeAxis interval support in WinUI Chart](Axis_Images/winui_chart_datetime_axis_interval.png)
 
-### Customizing the Range
+### Customizing the range
 
 [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_Maximum) properties behavior is same as in [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) instead of setting numerical value, have to set date time values.
 
@@ -364,7 +364,7 @@ chart.XAxes.Add(primaryAxis);
 
 ![DateTimeAxis range customization support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_range_datetime.png)
 
-## Logarithmic Axis
+## Logarithmic axis
 
 The [LogarithmicAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) uses a logarithmic scale, ideal for visualizing data with large value differences. It can be applied to both the X and Y axes of a chart, allows customization of the logarithmic base and dynamically calculates ranges to effectively display wide-ranging datasets.
 
@@ -428,7 +428,7 @@ chart.YAxes.Add(secondaryAxis);
 {% endhighlight %}
 {% endtabs %}
 
-### Customizing the Range
+### Customizing the range
 
 The range of the logarithmic axis can be customized using the [Minimum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Minimum) and [Maximum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_Maximum) properties of the LogarithmicAxis. By default, the range is automatically calculated to align with the provided data.
 
@@ -463,7 +463,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ![LogarithmicAxis Customizing Range in WinUI Chart](Axis_Images/WinUI_Chart_LogarithmicAxis_custom_range.png)
 
-### Customizing the Logarithmic Base
+### Customizing the logarithmic base
 
 The logarithmic axis base can be customized using the [LogarithmicBase](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html#Syncfusion_UI_Xaml_Charts_LogarithmicAxis_LogarithmicBase) property. The default logarithmic base value is `10`.
 
@@ -531,7 +531,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ![Inversed axis support in WinUI Chart](Axis_Images/WinUI_Chart_Axis_types_inverse.png)
 
-## Opposed Position
+## Opposed position
 
 Cartesian charts allow positioning the axis to opposite position by setting the [OpposedPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) property. The default value of this property is `False`.
 
@@ -565,7 +565,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ![Axis opposed position support in WinUI Chart](Axis_Images/winui_chart_axis_opposed_position.png)
 
-## Multiple Axes
+## Multiple axes
 
 Cartesian charts provides support to arrange the multiple series inside the same chart area with specified x-axis and y-axis. There are two properties [XAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_XAxisName) and [YAxisName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_YAxisName) in all the Cartesian series type, which is used to provide multiple axes support. These axes can be arranged in a stacking order or in a side by side pattern.
 
@@ -652,7 +652,7 @@ chart.Series.Add(series2);
 In the above image, the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) is plotted based on additional axes of YAxes collection, and [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is plotted based on axis of the collection’s 0th index.
 
 ## Events
-### ActualRangeChanged
+### Actual range changed
 
 The [ActualRangeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ActualRangeChanged) event is triggered when the actual range of the axis is changed. The argument contains the following information:
 
@@ -661,7 +661,7 @@ The [ActualRangeChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 
 N> The actual range is changed by specifying the [ZoomPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ZoomPosition) and [ZoomFactor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ZoomFactor) properties or zooming the chart interactively.
 
-### LabelCreated
+### Label created
 
 The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelCreated) event is triggered when the axis label is created. The argument contains the following information:
 
@@ -669,7 +669,7 @@ The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 * [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_Position) - Used to get the position of label.
 * [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabelEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabelEventArgs_LabelStyle) - Used to customize the appearance of axis labels.
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
 * [How to inverse the chart axis in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12130)

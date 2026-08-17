@@ -9,11 +9,11 @@ documentation: ug
 keywords: getting started with winui cartesian chart, winui cartesian chart setup, winui sfcartesianchart guide, winui cartesian chart basics.
 ---
 
-# Getting Started with WinUI Cartesian Chart
+# Getting started with WinUI cartesian charts
 
 This section explains how to populate the Cartesian chart with data, a header, data labels, a legend and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -60,7 +60,7 @@ namespace SfChart_GettingStarted
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Initialize View Model
+## Initialize view model
 
 Define a simple data model that represents a data point in chart.
 
@@ -140,7 +140,7 @@ grid.DataContext = new ViewModel();
 
 {% endtabs %} 
 
-## Initialize Chart Axis
+## Initialize chart axis
 
 [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [XAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_XAxes) and [YAxes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_YAxes) collection of the chart is used to initialize the axis for the chart.
 
@@ -178,7 +178,7 @@ Run the project and check if you get the following output to make sure you have 
 
 ![Initializing axis for WinUI Chart](Getting-Started_Images/WinUI_chart_initializied.png)
 
-## Populate Chart with Data
+## Populate chart with data
 
 As we are going to visualize the comparison of heights in the data model, add [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) to [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) property of chart, and then bind the `Data` property of the above `ViewModel` to the `ColumnSeries.ItemsSource` as follows.
 
@@ -234,7 +234,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Add Title
+## Add title
 
 The title of the chart provides quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set title for the chart as follows.
 
@@ -258,7 +258,7 @@ chart.Header = "Height Comparison";
 
 {% endtabs %}  
 
-## Enable Data Labels
+## Enable data labels
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
@@ -289,7 +289,7 @@ chart.Series.Add(series);
 
 {% endtabs %}  
 
-## Enable Legend
+## Enable legend
 
 The legend provides information about the data point displayed in the chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart was used to enable it.
 
@@ -349,7 +349,7 @@ series.Label = "Heights";
 
 {% endtabs %}  
 
-## Enable Tooltip
+## Enable tooltip
 
 Tooltips are used to show information about the segment, when the user hovers over the segment. Enable tooltip by setting the series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 
@@ -382,7 +382,7 @@ series.EnableTooltip = true;
 
 {% endtabs %}
 
-## Full Example
+## Full example
 
 The following code example gives you the complete code of above configurations.
 
@@ -502,7 +502,7 @@ The following chart is created as a result of the previous codes.
 ![Getting started for WinUI Chart](Getting-Started_Images/WinUI_chart.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted).
-## See Also
+## See also
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

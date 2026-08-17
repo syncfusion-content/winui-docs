@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Animation in WinUI Linear Gauge
+# Animation in WinUI linear gauges
 
 ## Pointer animation
 
@@ -259,6 +259,6 @@ this.Content = sfLinearGauge;
 
 N> Refer to this [EasingFunctionBase](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase?view=winrt-22621), to learn more about available easing functions in WinUI.
 
-## See Also
+## See also
 
 * [How to create a progress bar with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)

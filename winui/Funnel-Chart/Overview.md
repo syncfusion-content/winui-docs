@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Funnel Chart Control
+# About syncfusion® WinUI funnel charts control
 
 Syncfusion® WinUI Funnel Chart (SfFunnelChart) is used to create beautiful funnel series to analyze the various stages in a process, and it is used in high-quality WinUI applications.
 

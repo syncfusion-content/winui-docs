@@ -7,11 +7,11 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Data Label in WinUI Funnel Chart
+# Data label in WinUI funnel charts
 
 To improve the readability of data in the funnel chart, data points can be easily annotated with data labels.
 
-## Define Data Label
+## Define data label
 
 To define the data label in the chart, set the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property to true. The default value of the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property is false.
 

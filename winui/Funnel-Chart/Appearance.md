@@ -7,11 +7,11 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Appearance in WinUI Funnel Chart
+# Appearance in WinUI funnel charts
 
 The appearance of the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be customized by using the predefined palettes, custom palettes, and gradients, which help enrich the application.
 
-## Predefined PaletteBrushes
+## Predefined palette brushes
 
 Currently, the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes), and it contains the default brushes for the SfFunnelChart. The following screenshot shows the default appearance of the funnel chart.
 
@@ -49,7 +49,7 @@ this.Content = chart;
 
 ![Predefined palette in WinUI Chart](Appearance_images/winui-chart_predefined_palette.png)
 
-## Custom PaletteBrushes
+## Custom palette brushes
 
 The [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) provides support to define your own brushes for the chart in the preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property, as shown in the following code example.
 
@@ -111,7 +111,7 @@ this.Content = chart;
 
 ![Custom PaletteBrushes in WinUI Chart](Appearance_images/winui-chart_custom_palette.png)
 
-## Applying Gradient
+## Applying gradient
 
 The gradient for the funnel chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_PaletteBrushes) property of the funnel chart with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 

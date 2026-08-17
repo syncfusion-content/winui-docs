@@ -7,11 +7,11 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Circular Chart
+# Getting started with WinUI circular charts
 
 This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart (SfCircularChart)
+## Creating an application with WinUI chart (SfCircularChart)
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -54,7 +54,7 @@ public sealed partial class MainWindow : Window
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Initialize View Model
+## Initialize view model
 
 Now, let us define a simple data model that represents a data point in the chart.
 
@@ -132,7 +132,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Populate Chart with Data
+## Populate chart with data
 
 Adding [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) to the chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection and binding `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ItemsSource) property from its `DataContext` for creating our own Product-Sales Pie chart.
 
@@ -180,7 +180,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Add Title
+## Add title
 
 The header of the chart acts as the title to provide quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the circular chart as follows.
 
@@ -204,7 +204,7 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
-## Enable Data Labels
+## Enable data labels
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of [ChartSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) can be used to enable data labels to improve the readability of the circular chart. The label visibility is set to `False` by default.
 
@@ -237,7 +237,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Enable Legend
+## Enable legend
 
 The legend provides information about the data point displayed in the circular chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
@@ -266,7 +266,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-## Enable Tooltip
+## Enable tooltip
 
 Tooltips are used to show information about the segment when the mouse hovers over it. Enable the tooltip by setting the series [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 
@@ -369,6 +369,6 @@ public sealed partial class MainWindow : Window
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CircularChartGettingStarted).
 
-## See Also
+## See also
 
 - [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)

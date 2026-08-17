@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Polar Chart Control
+# About syncfusion® WinUI polar charts control
 
 Syncfusion® WinUI Polar Chart is used to create beautiful polar series to visualize the data in terms of values and angles, which are used in high-quality WinUI applications. The polar chart is also known as a star chart, spider chart, web chart, spider web chart, cobweb chart, and radar chart.
 

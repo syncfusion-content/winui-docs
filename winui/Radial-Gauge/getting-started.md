@@ -7,11 +7,11 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Getting Started with WinUI Radial Gauge
+# Getting started with WinUI radial gauges
 
 This section explains the steps required to add the [WinUI Radial Gauge](https://www.syncfusion.com/winui-controls/radial-gauge) control and its elements such as axis, range, pointer, and annotation. This section covers only the basic features needed to get started with the Syncfusion radial gauge control.
 
-## Creating an application with WinUI Radial Gauge
+## Creating an application with WinUI radial gauge
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
@@ -319,7 +319,7 @@ this.Content = sfRadialGauge;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI_Radial_Gauge_Getting_Started)
 
-## See Also
+## See also
 
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
 * [How to add an image as a background of WinUI Radial Gauge control](https://support.syncfusion.com/kb/article/11962/how-to-add-an-image-as-a-background-of-winui-radial-gauge-control-sfradialgauge)

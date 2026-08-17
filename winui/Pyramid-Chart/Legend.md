@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Legend in WinUI Pyramid Chart
+# Legend in WinUI pyramid charts
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data in the chart.
 
@@ -145,7 +145,7 @@ this.Content = chart;
 
 ![Legend icon in WinUI Chart](Legend_Images/WinUI_chart_legend_customize.png)
 
-## Item Spacing
+## Item spacing
 
 The [ItemMargin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property of the [ChartLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html) is used to provide spacing between each legend item.
 
@@ -182,7 +182,7 @@ this.Content = chart;
 
 ![Legend item spacing support in WinUI Chart](Legend_Images/WinUI_chart_legend_item_spacing.png)
 
-## Checkbox for Legend
+## Checkbox for legend
 
 The pyramid chart provides support to enable the checkbox for each legend item to show or collapse the associated data points. By default, the value of the [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed`. 
 
@@ -219,7 +219,7 @@ this.Content = chart;
 
 ![Checkbox support for legend in WinUI Chart](Legend_Images/WinUI_chart_legend_checkBox.png)
 
-## Toggle Series Visibility 
+## Toggle series visibility 
 
 By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property, the visibility of the pyramid segment can be controlled by tapping the legend item. By default, the value of the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is `False`.
 

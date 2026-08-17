@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Explode Segments in WinUI Funnel Chart
+# Explode segments in WinUI funnel charts
 
 Exploding a segment is used to draw attention to a specific area of the funnel. The following properties are used to explode the segments in the funnel chart.
 

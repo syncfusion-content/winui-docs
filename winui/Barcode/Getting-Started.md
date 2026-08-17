@@ -7,11 +7,11 @@ control: Barcode
 documentation: ug
 ---
 
-# Getting Started with WinUI Barcode
+# Getting started with WinUI barcode
 
 This section provides a quick overview of how to get started with the [WinUI Barcode](https://www.syncfusion.com/winui-controls/barcode). Walk through the entire process of creating a real-world application with this control.
 
-## Creating an application with WinUI Barcode
+## Creating an application with WinUI barcode
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add a reference to the [Syncfusion.Barcode.WinUI](https://www.nuget.org/packages/Syncfusion.Barcode.WinUI) NuGet package. 
@@ -152,7 +152,7 @@ The visibility of the Barcode text can be changed using the [ShowValue](https://
 
 ![CodaBar Barcode with ShowValue set to false](Getting_Started_Images/showvalue.png)
 
-### HorizontalTextAlignment
+### Horizontal text alignment
 
 The horizontal alignment of the Barcode text can be changed using the [HorizontalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_HorizontalTextAlignment) property in Barcode.
 
@@ -170,7 +170,7 @@ The horizontal alignment of the Barcode text can be changed using the [Horizonta
 
 ![HorizontalTextAlignment set to Right](Getting_Started_Images/HorizontalTextAlignment.png)
 
-### VerticalTextAlignment
+### Vertical text alignment
 
 The vertical alignment of the Barcode text can be changed using the [VerticalTextAlignment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_VerticalTextAlignment) property in Barcode.
 
@@ -241,7 +241,7 @@ The width ratio of the wide and narrow bars can be changed using the [Module](ht
 
 ![Module](Customization_Images/BarWidth.png)
 
-### AutoModule
+### Auto module
 The size of [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) can be changed using the [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) Property.
 
 {% tabs %}

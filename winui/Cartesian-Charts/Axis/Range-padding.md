@@ -8,11 +8,11 @@ documentation: ug
 keywords: range padding in winui chart, winui sfcartesianchart range padding, winui chart range padding customization, syncfusion winui chart range padding, winui sfcartesianchart range padding configuration.
 ---
 
-# Range Padding in WinUI Chart
+# Range padding in WinUI chart
 
 Range padding is used to apply the minimum and maximum extremes of chart axis range by using the `RangePadding` property. The [NumericalAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) and [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) have a [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) property that can be used to add padding to the range of the chart axis.
 
-## Numerical Range Padding
+## Numerical range padding
 
 The [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) is used to set the numeric range for axis.
 
@@ -156,7 +156,7 @@ this.Content = chart;
 
 ![NumericalAxis range padding round in WinUI Chart](Axis_Images/winui_chart_axis_numerical-range-padding_round.png)
 
-## DateTime Range Padding
+## DateTime range padding
 
 The [RangePadding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) types available in the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) are: 
 
@@ -306,6 +306,6 @@ this.Content = chart;
 
 ![DateTimeAxis range padding round in WinUI Chart](Axis_Images/winui_chart_axis_datetime-range-padding_round.png)
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

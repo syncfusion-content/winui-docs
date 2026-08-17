@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Pyramid Chart Control
+# About syncfusion® WinUI pyramid charts control
 
 Syncfusion® [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) (SfPyramidChart) is used to create beautiful pyramid series to visualize proportions of a total in hierarchies, which are used in high-quality WinUI applications.
 

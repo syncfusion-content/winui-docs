@@ -8,9 +8,9 @@ documentation: ug
 keywords: winui fast line chart, winui sfcartesianchart, fast line chart, winui fast line chart customization, syncfusion winui fast line chart, fast line chart settings.
 ---
 
-# Fast Line Series in WinUI Chart
+# Fast line series in WinUI chart
 
-## Fast Line Chart
+## Fast line chart
 
 The [FastLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a huge number of datapoints using the polyline segment. 
 
@@ -62,7 +62,7 @@ chart.Series.Add(series);
 
 ![FastLine chart type in WinUI](FastChart_images/fastline_chart.png)
 
-## Fast Line Bitmap Chart
+## Fast line bitmap chart
 
 The [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments, rendered using `WriteableBitmap`. The advantage of [FastLineBitmapSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) is that it renders a million data points in a fraction of seconds.
 
@@ -168,6 +168,6 @@ chart.Series.Add(series);
 
 ![Anti-aliasing in fast line bitmap chart in WinUI](FastChart_images/fastlinebitmap_chart_antialiasing.png)
 
-## See Also
+## See also
 
 * [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251)

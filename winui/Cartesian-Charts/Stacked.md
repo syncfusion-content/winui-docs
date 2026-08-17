@@ -8,9 +8,9 @@ documentation: ug
 keywords: winui stacked charts, winui sfcartesianchart, winui stacked charts customization, syncfusion winui stacked charts, winui sfcartesianchart stacked charts configuration, stackedcolum, stackedline, stackedarea.
 ---
 
-# Stacked Charts in WinUI Chart
+# Stacked charts in WinUI chart
 
-## Stacked Column Chart
+## Stacked column chart
 
 The [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedColumnSeries.html) resembles multiple column series, and each series is vertically stacked one above the other. When there is only one series, then it is [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html). 
 
@@ -94,7 +94,7 @@ chart.Series.Add(series3);
 
 N> You can refer to our [WinUI Stacked Column Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-stacked-column-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Column Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/StackedCharts/StackingColumnChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## Stacked Line Chart
+## Stacked line chart
 
 The [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedLineSeries.html) resembles multiple line series, and each series is vertically stacked one above the other. When there is only one series, then it is [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html). 
 
@@ -178,7 +178,7 @@ chart.Series.Add(series3);
 
 N> You can refer to our [WinUI Stacked Line Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-stacked-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Line Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/StackedCharts/StackingLineChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## Stacked Area Chart
+## Stacked area chart
 
 The [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html) represents multiple area series that are stacked vertically one above the other. 
 
@@ -262,6 +262,6 @@ chart.Series.Add(series3);
 
 N> You can refer to our [WinUI Stacked Area Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-stacked-area-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Stacked Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/StackedCharts/StackingAreaChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## See Also
+## See also
 
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

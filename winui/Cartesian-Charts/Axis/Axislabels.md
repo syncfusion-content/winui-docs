@@ -8,11 +8,11 @@ documentation: ug
 keywords: axis labels in winui chart, winui sfcartesianchart axis labels, winui chart axis labels customization, syncfusion winui chart axis labels, winui sfcartesianchart axis labels settings.
 ---
 
-# Axis Labels in WinUI Chart
+# Axis labels in WinUI chart
 
 Axis labels are used to show the units, measures, or category values of the axis to visualize the data in a user-friendly way. It will be generated based on the range and the values bound to the [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_XBindingPath) or [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties of the series.
 
-## Rotation Angle
+## Rotation angle
 
 The [LabelRotation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelRotation) property is used to define the angle for the label content.
 
@@ -175,7 +175,7 @@ chart.XAxes.Add(primaryAxis);
 
 N> The binding context for the `LabelTemplate` is [ChartAxisLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which provides the necessary data for the axis labels.
 
-## Label Extent
+## Label extent
 
 The [LabelExtent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelExtent) property allows you to set the distance between the axis header and the axis.
 
@@ -210,7 +210,7 @@ chart.XAxes.Add(primaryAxis);
 
 ![LabelExtent support for ChartAxis in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_Extent.png)
 
-## Smart Axis Labels
+## Smart axis labels
 
 When there are a large number of axis labels, they may overlap with each other. The chart axis provides support to handle overlapping axis labels using the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property. By default, the [LabelsIntersectAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) value is [Hide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html#Syncfusion_UI_Xaml_Charts_AxisLabelsIntersectAction_Hide).
 
@@ -233,7 +233,7 @@ When there are a large number of axis labels, they may overlap with each other. 
 
 ![Smart axis labels support in WinUI Chart](Axis_images/WinUI_Chart_Axis_label_intersection_Auto.png)
 
-## Edge Labels Drawing Mode
+## Edge labels drawing mode
 
 The chart axis provides support to customize the rendering position of the edge labels using the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. The default value of the [EdgeLabelsDrawingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property is [Center](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsDrawingMode_Center).
 
@@ -275,7 +275,7 @@ chart.XAxes.Add(primaryAxis);
 
 ![Axis edge label positioning support in WinUI Chart](Axis_images/WinUI_Chart_Axis_Edge_label_drawing.png)
 
-## Edge Labels Visibility
+## Edge labels visibility
  
 The visibility of the edge labels of the axis can be controlled using the [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) property. The default value of [EdgeLabelsVisibilityMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_EdgeLabelsVisibilityMode) is [Default](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html#Syncfusion_UI_Xaml_Charts_EdgeLabelsVisibilityMode_Default), which displays the edge labels based on auto interval calculations.
 
@@ -345,6 +345,6 @@ chart.XAxes.Add(primaryAxis);
 
 {% endtabs %}
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

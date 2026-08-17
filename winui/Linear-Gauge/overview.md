@@ -7,13 +7,13 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Linear Gauge Control
+# About syncfusion® WinUI linear gauges control
 
 The [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control is a multipurpose data visualization control that displays numerical values on a linear scale horizontally or vertically.
 
 ![Overview WinUI linear gauge](images/overview/gauge_overview.png)
 
-## Key Features
+## Key features
 
 * **Orientation** - The Linear Gauge can be oriented vertically or horizontally.
 * **Axis** - The Linear Gauge axis is a scale where a set of values is plotted. Axis elements, such as labels, major ticks, and minor ticks, can be customized.
@@ -24,7 +24,7 @@ The [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge)
 
 N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/lineargauge) link.
 
-## See Also
+## See also
 
 * [How to create the vertical gauge in WinUI Linear Gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/12214/how-to-create-the-vertical-gauge-in-winui-linear-gauge-sflineargauge)
 * [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)

@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Pointers in WinUI Linear Gauge
+# Pointers in WinUI linear gauges
 
 The pointer is used to indicate values on an axis. The Linear Gauge control has three types of pointers:
 
@@ -189,7 +189,7 @@ private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 
 N> The [`ValueChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugePointer.html#Syncfusion_UI_Xaml_Gauges_GaugePointer_ValueChanged) event is available for all pointers; the other events are available only for [`LinearShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearShapePointer.html).
 
-## See Also
+## See also
 
 * [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)
 

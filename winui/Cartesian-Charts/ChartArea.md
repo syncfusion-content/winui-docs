@@ -8,7 +8,7 @@ documentation: ug
 keywords: chart area in winui chart, winui sfcartesianchart chart area, winui chart area customization, syncfusion winui chart area, winui sfcartesianchart area settings.
 ---
 
-# Chart Area in WinUI Chart
+# Chart area in WinUI chart
 
 Chart area represents the entire chart and all its elements. It is a virtual rectangular area that includes all the chart elements such as the title, axes, legends, and series.
 
@@ -87,7 +87,7 @@ this.Content = chart;
 
 ![Chart area customization in WinUI chart](Chart-Area_images/WinUI_chart_area.png)
 
-## See Also
+## See also
 
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

@@ -8,9 +8,9 @@ documentation: ug
 keywords: axis padding in winui chart, winui sfcartesianchart axis padding, winui chart axis padding customization, syncfusion winui chart axis padding.
 ---
 
-# Axis Padding in WinUI Chart
+# Axis padding in WinUI chart
 
-## PlotOffsetStart
+## Plot offset start
 
 The [PlotOffsetStart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetStart) property is used to provide padding to the axis at the start position. The following code sample demonstrates the padding applied to the start position for both x and y-axes.
 
@@ -58,7 +58,7 @@ this.Content = chart;
 
 ![PlotOffsetStart support in WinUI Chart](Axis_images/winui_chart_axis_plot-offset-start.png)
 
-## PlotOffsetEnd
+## Plot offset end
 
 The [PlotOffsetEnd](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_PlotOffsetEnd) property is used to provide padding to the axis at the end position. The following code sample demonstrates the padding applied to the end position for both x and y-axes.
 
@@ -106,6 +106,6 @@ this.Content = chart;
 
 ![PlotOffsetEnd support in WinUI Chart](Axis_images/winui_chart_axis_plot-offset-end.png)
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

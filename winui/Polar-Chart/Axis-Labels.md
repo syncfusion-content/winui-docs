@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Axis Labels in WinUI Polar Chart
+# Axis labels in WinUI polar charts
 
 The axis labels are used to show the units, measures, or category values of the axis to visualize the data. It will be generated based on the range and values bound to the series in the chart.
 

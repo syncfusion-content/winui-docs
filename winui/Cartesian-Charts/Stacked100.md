@@ -8,9 +8,9 @@ documentation: ug
 keywords: winui stacked 100 charts, winui stacked 100 charts customization, 100% charts, cumulative chart in winui, winui sfcartesianchart, syncfusion winui cumulative chart, stackedcolum, stackedline, stackedarea.
 ---
 
-# Stacked 100 Charts in WinUI Chart
+# Stacked 100 charts in WinUI chart
 
-## Stacked Column 100 Chart
+## Stacked column 100 chart
 
 The [StackedColumn100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedColumn100Series.html) resembles [StackedColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedColumnSeries.html), but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -94,7 +94,7 @@ chart.Series.Add(series3);
 
 N> You can refer to our [WinUI 100% Stacked Column Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-stacked-column-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our WinUI 100% Stacked Column Chart [example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/Stacked100Chart/StackingColumn100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## Stacked Line 100 Chart
+## Stacked line 100 chart
 
 The [StackedLine100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedLine100Series.html) resembles [StackedLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedLineSeries.html), but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -176,7 +176,7 @@ chart.Series.Add(series3);
 
 N> You can refer to our [WinUI 100% Stacked Line Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-stacked-line-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our WinUI 100% Stacked Line Chart [example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/Stacked100Chart/StackingLine100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## Stacked Area 100 Chart
+## Stacked area 100 chart
 
 The [StackedArea100Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedArea100Series.html) is similar to [StackedAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StackedAreaSeries.html), but the cumulative portion of each stacked element always comes to a total of 100%. 
 
@@ -258,6 +258,6 @@ chart.Series.Add(series3);
 
 N> You can refer to our [WinUI 100% Stacked Area Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-stacked-area-100-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI 100% Stacked Area Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Cartesian%20Charts/Stacked100Chart/StackingArea100Chart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## See Also
+## See also
 
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

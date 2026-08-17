@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Data Label in WinUI Circular Chart
+# Data label in WinUI circular charts
 
 Data labels are used to display values related to a chart segment. Values from a data point (x, y) or other custom properties from a data source can be displayed. 
 
@@ -16,7 +16,7 @@ Each data label can be represented by the following:
 * Label - Displays the segment label content at the (X, Y) point.
 * Connector line - Used to connect the (X, Y) point and the label element.
 
-## Enable Data Label 
+## Enable data label 
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of the series is used to enable the data labels.
 
@@ -333,7 +333,7 @@ chart.Series.Add(series);
 
 ![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_rotation.png)
 
-## Connector Line
+## Connector line
 
 The connector line is used to connect the label and data point using a line. The [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) is used to enable the connector line in the circular chart. 
 
@@ -399,7 +399,7 @@ chart.Series.Add(series);
 
 ![Connector line support for data labels in WinUI chart](DataLabel_Images/WinUI_pie_chart_data_label_connector_line.png)
 
-### Connector Line Type
+### Connector line type
 
 The [ConnectorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CircularDataLabelSettings_ConnectorType) property in [CircularDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularDataLabelSettings.html) is used to specify the connector line type such as [Line](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line), [Bezier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier), or [StraightLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_StraightLine).
 
@@ -448,7 +448,7 @@ chart.Series.Add(series);
  
 ![Connector line with Bezier type in WinUI Chart](DataLabel_Images/WinUI_piec_chart_data_label_bezier_line.png)
 
-## Applying Series Fill
+## Applying series fill
 
 The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the `Fill` of the series to the data label background. 
 
@@ -496,6 +496,6 @@ chart.Series.Add(series);
 
 ![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_pie_chart_data_label_background.png)
 
-## See Also
+## See also
 
 - [How to Show the "others" category values in WinUI Pie Chart data label?](https://support.syncfusion.com/kb/article/12681/how-to-show-the-others-category-values-in-winui-pie-chart-data-label)

@@ -8,9 +8,9 @@ documentation: ug
 keywords: winui line chart, winui sfcartesianchart, winui line chart customization, syncfusion winui line chart,  winui line chart configuration.
 ---
 
-# Line Chart in WinUI Chart
+# Line chart in WinUI chart
 
-## Line Chart
+## Line chart
 
 [WinUI Line Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-line-chart) is used to represent the data trends at equal intervals by connecting points on a plot with straight lines. To render a line chart, create an instance of [LineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LineSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
@@ -151,7 +151,7 @@ this.Content = chart;
 
 ![Dashed line chart in WinUI](Chart-types_images/WinUI_dash_line_chart.png)
 
-## Step Line Chart 
+## Step line chart 
 
 The [StepLineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.StepLineSeries.html) plots horizontal and vertical lines to connect the data points, resulting in a step-like progression.
 
@@ -216,7 +216,7 @@ this.Content = chart;
 
 N> You can refer to our [WinUI Step Line Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-step-line-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Line Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepLine) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## Spline Chart 
+## Spline chart 
 
 The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles the line series, but instead of connecting the data points with line segments, the data points are connected by smooth bezier curves.
 
@@ -245,7 +245,7 @@ The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
             YBindingPath="Year2011"/>
     </chart:SfCartesianChart.Series>
 
-## See Also
+## See also
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
 * [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251)

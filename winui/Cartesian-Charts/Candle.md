@@ -8,7 +8,7 @@ documentation: ug
 keywords: winui candle chart, candle chart customization winui, syncfusion winui candle chart, cartesian candle chart winui, winui stock chart.
 ---
 
-# Candle Chart in WinUI Chart
+# Candle chart in WinUI chart
 
 Candle charts are a type of financial chart used to represent the price movement of an asset over time. The chart is made up of a series of rectangular bars, called candlesticks, that represent a specific time, typically one day. To render a candle chart, create an instance of [CandleSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CandleSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
@@ -88,7 +88,7 @@ this.Content = chart;
 
 ![Candle chart type in WinUI Chart](Chart-types_images/CandleBasicRendering.png)
 
-## Bull and Bear Color
+## Bull and bear color
 
 Set [BullishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullishBrush) for candles where the close is equal to or higher than the open (bullish/increasing periods), and [BearishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearishBrush) for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
 
@@ -148,7 +148,7 @@ this.Content = chart;
 
 ![Candle chart fill color in MAUI Chart](Chart-types_images/CandleFillColor.png)
 
-## EnableSolidCandle
+## Enable solid candle
 
 In Candle Series, the [EnableSolidCandle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CandleSeries.html#Syncfusion_UI_Xaml_Charts_CandleSeries_EnableSolidCandle) property is used to specify whether the candle segment should be filled or hollow. The default value of this property is `false`.
 - When `EnableSolidCandle = false` (hollow mode), the fill state and color are determined by comparing the previous day close to the current day close:
@@ -213,7 +213,7 @@ this.Content = chart;
 
 ![Solid candle in WinUI Chart](Chart-types_images/SolidCandles.png)
 
-## Segment Width
+## Segment width
 
 The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_SegmentWidth) property sets the width of each data point (candle) in the series. It accepts values between 0 and 1, the default value is 0.8. A value of 1.0 makes the candle occupy the full category width, while smaller values make the candle narrower.
 
@@ -272,7 +272,7 @@ this.Content = chart;
 
 ![Candle chart segment width in WinUI Chart](Chart-types_images/CandleSegmentWidth.png)
 
-## See Also
+## See also
 
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 * [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058)

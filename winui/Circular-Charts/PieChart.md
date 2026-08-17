@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Pie Chart in WinUI Circular Chart
+# Pie chart in WinUI circular charts
 
 To render a [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) in the circular chart, create an instance of the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
@@ -141,7 +141,7 @@ chart.Series.Add(series);
 
 ![Pie series with grouping feature in value mode](Series_images/pie_groupmode_value.png)
 
-## Semi Pie
+## Semi pie
 
 By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_EndAngle) properties, you can draw pie series in different shapes such as semi-pie or quarter pie series.
 
@@ -181,7 +181,7 @@ chart.Series.Add(series);
 
 ![Semi-pie support in WinUI Chart](Series_images/semi_pie_chart.png)
 
-## Combination Chart
+## Combination chart
 
 [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html) allows you to render the combination of pie series and doughnut series.
 
@@ -247,7 +247,7 @@ chart.Series.Add(series2);
 
 N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-controls/charts/winui-pie-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Pie Chart example](https://github.com/syncfusion/winui-demos/blob/master/chart/Views/Circular%20Charts/Pie/PieChart.xaml) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## See Also
+## See also
 
 - [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
 - [How to Show the "others" category values in WinUI Pie Chart data label?](https://support.syncfusion.com/kb/article/12681/how-to-show-the-others-category-values-in-winui-pie-chart-data-label)

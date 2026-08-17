@@ -10,7 +10,7 @@ documentation: ug
 keywords: winui chart overview, introduction to winui charts, exploring winui chart capabilities.
 ---
 
-# About Syncfusion® WinUI Chart Control
+# About syncfusion® WinUI chart control
 
 The [WinUI Chart](https://www.syncfusion.com/winui-controls/cartesian-charts) provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity, and simplicity of use. It also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
@@ -31,7 +31,7 @@ The [WinUI Chart](https://www.syncfusion.com/winui-controls/cartesian-charts) pr
 * User-friendly and provides various options for you to customize chart features like axis, legend and data markers.
 
 
-## See Also
+## See also
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

@@ -7,11 +7,11 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Getting Started with WinUI Linear Gauge
+# Getting started with WinUI linear gauges
 
 This section explains the steps required to add the [WinUI Linear Gauge](https://www.syncfusion.com/winui-controls/linear-gauge) control and its elements such as axis, range, and pointer. This section covers only the basic features needed to get started with the Syncfusion Linear Gauge control.
 
-## Creating an application with WinUI Linear Gauge
+## Creating an application with WinUI linear gauge
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 
@@ -375,7 +375,7 @@ this.Content = sfLinearGauge;
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI-Linear-Gauge-Getting-Started-)
 
-## See Also
+## See also
 
 * [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)
 * [How to create a progress bar with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)

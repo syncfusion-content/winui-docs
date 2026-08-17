@@ -8,7 +8,7 @@ documentation: ug
 keywords: axis line in winui chart, winui sfcartesianchart axis line, syncfusion winui chart axis line, customizing axis line in winui, winui sfcartesianchart axis line configuration.
 ---
 
-# Axis Line in WinUI Chart
+# Axis line in WinUI chart
 
 ## Customization
 
@@ -89,6 +89,6 @@ chart.XAxes.Add(primaryAxis);
 
 ![Padding support for axis line in WinUI](Axis_images/WinUI_Chart_Axis_line_styles_offset.png)
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

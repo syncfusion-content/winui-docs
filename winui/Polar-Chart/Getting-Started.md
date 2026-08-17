@@ -7,11 +7,11 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Polar Chart
+# Getting started with WinUI polar charts
 
 This section explains how to populate the [WinUI Polar Chart](https://www.syncfusion.com/winui-controls/charts/winui-polar-chart) with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add a reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -55,7 +55,7 @@ public sealed partial class MainWindow : Window
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Initialize View Model
+## Initialize view model
 
 Now, let us define a simple data model that represents a data point in chart.
 
@@ -136,7 +136,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Initialize Chart Axis
+## Initialize chart axis
 
 [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate the data points inside the chart area. The [PrimaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PrimaryAxis) and [SecondaryAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_SecondaryAxis) properties of the chart are used to initialize the axes for the chart.
 
@@ -173,7 +173,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 {% endtabs %} 
 
-## Populate Chart with Data
+## Populate chart with data
 
 Adding [PolarAreaSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarAreaSeries.html) to the polar chart [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_Series) collection and binding `Data` to the series [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ItemsSource) property from its `DataContext` for creating the polar chart.
 
@@ -233,7 +233,7 @@ chart.Series.Add(series);
 
 {% endtabs %} 
 
-## Add Title
+## Add title
 
 The title of the chart provides quick information to the user about the data being plotted in the chart. The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to set the title for the polar chart as follows.
 
@@ -258,7 +258,7 @@ chart.Header = "Polar Chart";
 
 {% endtabs %}  
 
-## Enable Data Labels
+## Enable data labels
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of series can be used to enable the data labels to improve the readability of the chart. The label visibility is set to `False` by default.
 
@@ -291,7 +291,7 @@ series.ShowDataLabels = true;
 
 {% endtabs %}  
 
-## Enable Legend
+## Enable legend
 
 The legend provides information about the data point displayed in the polar chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 

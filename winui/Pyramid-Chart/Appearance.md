@@ -7,11 +7,11 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Appearance in WinUI Pyramid Chart
+# Appearance in WinUI pyramid charts
 
 The appearance of the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) can be customized by using the predefined palette, custom palette, and gradient, which allows enriching the application.
 
-## Predefined PaletteBrushes
+## Predefined palette brushes
 
 Currently, the [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_PaletteBrushes), and it is the default brushes for the SfPyramidChart. The following screenshot shows the default appearance of the pyramid chart.
 
@@ -49,7 +49,7 @@ this.Content = chart;
 
 ![Predefined palette in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
-## Custom PaletteBrushes
+## Custom palette brushes
 
 The [SfPyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) provides support to define your own brushes for the chart in a preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_PaletteBrushes) property as shown in the following code example.
 
@@ -111,7 +111,7 @@ this.Content = chart;
 
 ![Custom palette in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
-## Applying Gradient
+## Applying gradient
 
 The gradient for the pyramid chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_PaletteBrushes) property of the pyramid chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 

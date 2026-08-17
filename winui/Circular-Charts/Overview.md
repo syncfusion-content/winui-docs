@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Circular Chart Control
+# About syncfusion® WinUI circular charts control
 
 Syncfusion® [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) (SfCircularChart) is used to create charts with beautiful UI visualization of data for high-quality WinUI applications.
 
@@ -25,7 +25,7 @@ Syncfusion® [WinUI Charts](https://www.syncfusion.com/winui-controls/charts) (S
 
 * **Dynamic update** - Updates the chart dynamically or lazily with live data that changes over seconds or minutes, such as stock prices, temperature, speed, etc.
 
-## See Also
+## See also
 
 - [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
 - [How to use the drill-down functionality in WinUI Chart (SfCircularChart).](https://support.syncfusion.com/kb/article/13011/how-to-use-the-drill-down-functionality-in-winui-chart-sfcircularchart)

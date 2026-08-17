@@ -7,11 +7,11 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Funnel Chart
+# Getting started with WinUI funnel charts
 
 This section explains how to populate the [WinUI Funnel Chart](https://www.syncfusion.com/winui-controls/charts/winui-funnel-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add a reference to the [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet package. 
@@ -55,7 +55,7 @@ public sealed partial class MainWindow : Window
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Initialize View Model
+## Initialize view model
 
 Now, let us define a simple data model that represents a data point in the chart.
 
@@ -133,7 +133,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Add Title
+## Add title
 
 The title of the chart provides quick information to the user about the data being plotted in the chart. You can set the title using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the funnel chart as follows.
 
@@ -159,7 +159,7 @@ chart.Header = "PRODUCT SALES";
 
 {% endtabs %}  
 
-## Enable Data Labels
+## Enable data labels
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html#Syncfusion_UI_Xaml_Charts_SfFunnelChart_ShowDataLabels) property of [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) can be used to enable data labels to improve the readability of the funnel chart. The label visibility is set to `False` by default.
 
@@ -185,7 +185,7 @@ chart.ShowDataLabels = true;
 
 {% endtabs %}  
 
-## Enable Legend
+## Enable legend
 
 The legend provides information about the data point displayed in the funnel chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
@@ -214,7 +214,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-## Enable Tooltip
+## Enable tooltip
 
 Tooltips are used to display information about a segment when the mouse is moved over it. Enable the tooltip by setting the funnel chart [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 
