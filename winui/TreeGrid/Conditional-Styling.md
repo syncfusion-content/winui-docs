@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Styling in WinUI SfTreeGrid | Syncfusion®
-description: Learn about conditional styling in the Syncfusion® WinUI SfTreeGrid control. Apply styles dynamically based on data values or conditions.
+description: Conditional Styling in SfTreeGrid applies styles dynamically based on data or rules for cells, rows, and headers.
 platform: winui
 control: SfTreeGrid
 documentation: ug

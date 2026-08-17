@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Load On Demand in WinUI SfTreeGrid | Syncfusion®
-description: Enable Load On Demand in the Syncfusion® WinUI SfTreeGrid control. Expand nodes dynamically and fetch data only when required for efficiency.
+description: Load On Demand in SfTreeGrid expands nodes dynamically and fetches child items on demand for large data.
 platform: winui
 control: SfTreeGrid
 documentation: ug

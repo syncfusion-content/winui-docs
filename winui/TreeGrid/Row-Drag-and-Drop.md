@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop in WinUI SfTreeGrid | Syncfusion®
-description: Enable row drag and drop in the Syncfusion® WinUI SfTreeGrid control. Rearrange rows interactively and customize drop behavior for flexibility.
+description: Row Drag and Drop in SfTreeGrid enables interactive row reordering with customizable drop positions and events.
 platform: winui
 control: SfTreeGrid
 documentation: ug

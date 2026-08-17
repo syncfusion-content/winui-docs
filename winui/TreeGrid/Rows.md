@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in WinUI SfTreeGrid | Syncfusion®
-description: Manage rows in the Syncfusion® WinUI SfTreeGrid control. Customize row appearance to improve layout and readability.
+description: Rows in SfTreeGrid manages row headers, indicators, and customization options for different row types.
 platform: winui
 control: SfTreeGrid
 documentation: ug

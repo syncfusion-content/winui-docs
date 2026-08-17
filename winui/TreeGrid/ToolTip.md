@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WinUI SfTreeGrid | Syncfusion®
-description: Add ToolTip support in Syncfusion® WinUI SfTreeGrid. Show helpful information on hover cells and customize tooltip content and style.
+description: ToolTip in SfTreeGrid shows informative pop-ups on hover for cells and columns with customizable content.
 platform: winui
 control: SfTreeGrid
 documentation: ug

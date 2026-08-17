@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WinUI SfTreeGrid | Syncfusion®
-description: Learn about Filtering in the Syncfusion® WinUI SfTreeGrid control. Apply filters programmatically or interactively to refine displayed data.
+description: Filtering in SfTreeGrid refines visible nodes with filter levels, programmatic filters, and UI filter.
 platform: winui
 control: SfTreeGrid
 documentation: ug

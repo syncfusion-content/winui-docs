@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To Excel in WinUI SfTreeGrid | Syncfusion®
-description: Learn about Export To Excel in the Syncfusion® WinUI SfTreeGrid control. Export grid data to Excel with customization options.
+description: Export To Excel in SfTreeGrid exports grid data to Excel with support for merged cells and stacked headers.
 platform: winui
 control: TreeGrid
 documentation: ug

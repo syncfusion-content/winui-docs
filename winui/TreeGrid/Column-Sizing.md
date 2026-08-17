@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Sizing in WinUI SfTreeGrid | Syncfusion®
-description: Learn about Column Sizing in the Syncfusion® WinUI SfTreeGrid control. Adjust column widths automatically or manually for better layout.
+description: Column Sizing in SfTreeGrid offers Auto, Star, and custom modes to adjust widths dynamically for headers, cells, and grid layout.
 platform: winui
 control: SfTreeGrid
 documentation: ug
