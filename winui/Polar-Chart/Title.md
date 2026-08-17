@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Title in WinUI Polar Chart
+# Title in WinUI polar charts
 
 [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 

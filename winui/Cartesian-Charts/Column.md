@@ -8,7 +8,7 @@ documentation: ug
 keywords: winui column chart, winui sfcartesianchart, winui column chart customization, syncfusion winui column chart, winui chart column chart properties.
 ---
 
-# Column Chart in WinUI Chart
+# Column chart in WinUI chart
 
 [WinUI Column Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-column-chart) is used to plot discrete rectangles for the given data point values. To render a column chart, create an instance of [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_Series) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
@@ -116,7 +116,7 @@ this.Content = chart;
 
 N> You can also explore our [WinUI Column Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/Column) that shows how to easily configure with built-in support for creating stunning visual effects.
 
-## See Also
+## See also
 
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
 * [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)

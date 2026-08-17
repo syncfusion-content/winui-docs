@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Shape Pointer in WinUI Linear Gauge
+# Shape pointer in WinUI linear gauges
 
 Indicate current values by using the different types of shape pointers. You can change the shape type using the [`ShapeType`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeShapeType.html) property.
 
@@ -285,6 +285,6 @@ this.Content = sfLinearGauge;
 
 ![pointer anchor placement customization](images/shape-pointer/pointer_anchor.png)
 
-## See Also
+## See also
 
 * [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)

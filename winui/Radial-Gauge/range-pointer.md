@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Range Pointer in WinUI Radial Gauge
+# Range pointer in WinUI radial gauges
 
 A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the current value.
 
@@ -247,6 +247,6 @@ When you set the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.
 
 If the [`OffsetUnit`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_OffsetUnit) is specified as factor, the factor value will be multiplied with the axis radius. For example, if you set the [`PointerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RangePointer.html#Syncfusion_UI_Xaml_Gauges_RangePointer_PointerOffset) to 0.1, then the pointer offset is considered as 10% of the axis radius.
 
-## See Also
+## See also
 
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)

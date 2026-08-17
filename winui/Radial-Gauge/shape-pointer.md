@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Shape Pointer in WinUI Radial Gauge
+# Shape pointer in WinUI radial gauges
 
 The [`ShapePointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.ShapePointer.html) in [`SfRadialGauge`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.SfRadialGauge.html) allows you to use any built-in shapes as a pointer to mark a specified value. The default type is [`InvertedTriangle`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeShapeType.html#Syncfusion_UI_Xaml_Gauges_GaugeShapeType_InvertedTriangle).
 
@@ -251,7 +251,7 @@ this.Content = sfRadialGauge;
 
 N> Provide a positive value to [`MarkerOffset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.MarkerPointer.html#Syncfusion_UI_Xaml_Gauges_MarkerPointer_MarkerOffset) to move the pointer inside the axis and a negative value to move the pointer outside the axis.
 
-## See Also
+## See also
 
 * [How to design various directional semi-circular gauge using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11959/how-to-design-various-directional-semi-circular-gauge-using-winui-radial-gauge)
 * [How to create a directional compass with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11911/how-to-create-a-directional-compass-with-the-winui-radial-gauge-sfradialgauge)

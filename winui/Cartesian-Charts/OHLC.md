@@ -8,7 +8,7 @@ documentation: ug
 keywords: winui ohlc chart, winui chart ohlc type, ohlc chart customization winui, syncfusion winui ohlc chart, winui cartesian ohlc visualization.
 ---
 
-# OHLC Chart in WinUI Chart
+# OHLC chart in WinUI chart
 
 OHLC (Open-High-Low-Close) charts are a type of financial chart used to represent the price movement of an asset over a specific period. OHLC charts consist of four data points: the opening price, the high price, the low price, and the closing price for each period. To render an OHLC chart, create an instance of [HiLoOpenCloseSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html), and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html) collection property of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html).
 
@@ -88,7 +88,7 @@ this.Content = chart;
 
 ![OHLC chart type in WinUI Chart](Chart-types_images/OhlcBasicRendering.png)
 
-## Bull and Bear Color
+## Bull and bear color
 
 Use [BullishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullishBrush) to set the brush for OHLC segments where the close is equal to or higher than the open (bullish/increasing periods), and [BearishBrush](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearishBrush) for segments where the close is lower than the open (bearish/decreasing periods). If not specified, the series falls back to its default brush.
 
@@ -149,7 +149,7 @@ this.Content = chart;
 
 ![OHLC chart fill color in WinUI Chart](Chart-types_images/OhlcFillColor.png)
 
-## Segment Width
+## Segment width
 
 The [SegmentWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_SegmentWidth) property sets the width of each data point (segment) in the series. It accepts values between 0 and 1, the default is 0.8. A value of 1.0 makes the segment occupy the full category width, while smaller values make the segment narrower.
 
@@ -208,7 +208,7 @@ this.Content = chart;
 
 ![OHLC chart segment width in WinUI Chart](Chart-types_images/OhlcSegmentWidth.png)
 
-## See Also
+## See also
 
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 * [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058)

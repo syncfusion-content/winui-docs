@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Annotation in WinUI Radial Gauge
+# Annotation in WinUI radial gauges
 
 The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add multiple controls such as text, icon, and image, etc., as an annotation to a specific point of interest in the radial gauge.
 
@@ -390,7 +390,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Annotation Vertical Alignment](images/annotation/winui-radial-gauge-annotation-vertical-alignment.png)
 
-## See Also
+## See also
 
 * [How to design radial timer picker using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12036/how-to-design-radial-timer-picker-using-winui-radial-gauge)
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)

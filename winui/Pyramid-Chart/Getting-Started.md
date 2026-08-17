@@ -7,11 +7,11 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Getting Started with WinUI Pyramid Chart
+# Getting started with WinUI pyramid charts
 
 This section explains how to populate the [WinUI Pyramid Chart](https://www.syncfusion.com/winui-controls/charts/winui-pyramid-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart
+## Creating an application with WinUI chart
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add a reference to the [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -57,7 +57,7 @@ public sealed partial class MainWindow : Window
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Initialize View Model
+## Initialize view model
 
 Now, let's define a simple data model that represents a data point in the chart.
 
@@ -137,7 +137,7 @@ chart.DataContext = viewModel;
 
 {% endtabs %} 
 
-## Add Title
+## Add title
 
 The title of the chart provides quick information to the user about the data being plotted in the chart. The title can be set by using the [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of the pyramid chart as follows.
 
@@ -163,7 +163,7 @@ chart.Header = "Calories in food";
 
 {% endtabs %}  
 
-## Enable Data Labels
+## Enable data labels
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowDataLabels) property of [PyramidChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html) is used to enable data labels to improve the readability of the pyramid chart. The label visibility is set to `False` by default.
 
@@ -189,7 +189,7 @@ chart.ShowDataLabels = true;
 
 {% endtabs %}  
 
-## Enable Legend
+## Enable legend
 
 The legend provides information about the data points displayed in the pyramid chart. The [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of the chart is used to enable it.
 
@@ -218,7 +218,7 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %} 
 
-## Enable Tooltip
+## Enable tooltip
 
 Tooltips are used to display information about a segment when the mouse is moved over it. Enable the tooltip by setting the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true.
 

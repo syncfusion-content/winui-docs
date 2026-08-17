@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Axis Title in WinUI Polar Chart
+# Axis title in WinUI polar charts
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to define the title for the chart axis. It accepts any `UIElement` as content for the chart axis header.
 

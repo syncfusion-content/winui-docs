@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Bar Pointer in WinUI Linear Gauge
+# Bar pointer in WinUI linear Gauges
 
 A bar pointer is an accenting line or shaded background range that can be placed on a gauge to mark the current value.
 

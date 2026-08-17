@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Title in WinUI Circular Chart
+# Title in WinUI circular charts
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart.
 

@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Legend in WinUI Circular Chart
+# Legend in WinUI circular charts
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps to identify the corresponding data series in the chart.
 
@@ -255,7 +255,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend item spacing support in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_item_spacing.png)
 
-## Checkbox for Legend
+## Checkbox for legend
 
 The circular chart provides support to enable the checkbox for each legend item to show or collapse the associated data points. By default, the value of the [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed`.  
 
@@ -364,7 +364,7 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend at left in WinUI Pie Chart](Legend_Images/WinUI_pie_chart_legend_dock_left.png)
 
-## Background Customization 
+## Background customization 
 
 The legend background appearance can be customized by using the following properties.
 

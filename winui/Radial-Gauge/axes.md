@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Axis in WinUI Radial Gauge
+# Axis in WinUI radial gauges
 
 The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements such as labels, ticks, and axis line can be easily customized with built-in properties.
 
@@ -528,7 +528,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Axis Line Visibility](images/axis/winui-radial-gauge-axis-line-visibility.png)
 
-### Background Content Support
+### Background content support
 
 The [`Radial axis`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html) allows you to add any visual content as its background using the [`BackgroundContent`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_BackgroundContent) property.
 
@@ -1606,7 +1606,7 @@ public class RadialAxisExt : RadialAxis
 
 ## Events
 
-### LabelPrepared
+### Label prepared
 
 The [`LabelPrepared`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.GaugeAxis.html#Syncfusion_UI_Xaml_Gauges_GaugeAxis_LabelPrepared) event occurs each time a label is prepared for use. The following properties can be customized for each label in this event's args:
 
@@ -1637,7 +1637,7 @@ private void RadialAxis_LabelPrepared(object sender, LabelPreparedEventArgs e)
 
 ![WinUI Radial Gauge Axis Events](images/axis/winui-radial-gauge-axis-events.png)
 
-### AxisTapped
+### Axis tapped
 
 The [`AxisTapped`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.RadialAxis.html#Syncfusion_UI_Xaml_Gauges_RadialAxis_AxisTapped) event is called when an axis is tapped. The corresponding axis value at the tapped position can be obtained from the event argument.
 
@@ -1664,7 +1664,7 @@ private void RadialAxis_AxisTapped(object sender, AxisTappedEventArgs e)
 
 {% endtabs %}
 
-## See Also
+## See also
 
 * [How to display logarithmic scale in WinUI radial gauge control](https://support.syncfusion.com/kb/article/11909/how-to-display--logarithmic-scale-in-winui-radial-gauge-control)
 * [How to add progressive (non-linear) scale in WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12040/how-to-add-progressive-non-linear-scale-in-winui-radial-gauge-sfradialgauge)

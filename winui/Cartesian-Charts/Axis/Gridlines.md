@@ -8,9 +8,9 @@ documentation: ug
 keywords: grid lines in winui chart, winui sfcartesianchart grid lines, winui chart grid lines customization, syncfusion winui chart grid lines, winui sfcartesianchart grid lines settings.
 ---
 
-# Grid Lines in WinUI Chart
+# Grid lines in WinUI chart
 
-## Major Grid Lines
+## Major grid lines
 
 By default, major gridlines are automatically added to the [ChartAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. The visibility of the gridlines can be controlled using the [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) property. The default value of [ShowMajorGridLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowMajorGridLines) is true. 
 
@@ -100,7 +100,7 @@ chart.YAxes.Add(new NumericalAxis());
 
 ![Gridlines customization support in WinUI Chart](Axis_images/winui_chart_axis_major_gridlines_styles.png)
 
-## Minor Grid Lines
+## Minor grid lines
 
 Minor gridlines will be added automatically when the minor tick lines are defined using the [MinorTicksPerInterval](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.RangeAxisBase.html#Syncfusion_UI_Xaml_Charts_RangeAxisBase_MinorTicksPerInterval) property of the chart axis.
 
@@ -192,7 +192,7 @@ chart.YAxes.Add(secondaryAxis);
 
 ![Gridlines customization support in WinUI Chart](Axis_Images/winui_chart_axis_minor_gridlines_style.png)
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

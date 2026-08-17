@@ -7,11 +7,11 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Data Labels in WinUI Pyramid Chart
+# Data labels in WinUI pyramid charts
 
 To improve the readability of data in the pyramid chart, data points can be easily annotated with data labels.
 
-## Define Data Label 
+## Define data label 
 
 To define the data label in the chart, set the [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowDataLabels) property to true. The default value of [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPyramidChart.html#Syncfusion_UI_Xaml_Charts_SfPyramidChart_ShowDataLabels) property is false.
 

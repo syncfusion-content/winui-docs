@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Content Pointer in WinUI Linear Gauge
+# Content pointer in WinUI linear gauges
 
 Highlight values using an image, icon, text, or any other custom view. You can set the custom views using the [`Content`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.LinearContentPointer.html#Syncfusion_UI_Xaml_Gauges_LinearContentPointer_Content) property.
 
@@ -197,6 +197,6 @@ this.Content = sfLinearGauge;
 
 ![pointer anchor placement customization](images/content-pointer/pointer_anchor.png)
 
-## See Also
+## See also
 
 * [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)

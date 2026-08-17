@@ -7,7 +7,7 @@ control: Barcode
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Barcode Control
+# About syncfusion® WinUI barcode control
 
 The Syncfusion [WinUI Barcode](https://www.syncfusion.com/winui-controls/barcode) control helps you to generate and display data in a machine-readable format. It provides a flexible approach for encoding text using supported barcode types.
 

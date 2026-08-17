@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Data Labels in WinUI Polar Chart
+# Data labels in WinUI polar charts
 
 Data labels are used to display values related to a chart segment. Values from data points (x, y) or other custom properties from a data source can be displayed.
 
@@ -16,7 +16,7 @@ Each data label can be represented by the following:
 * `Label` - displays the segment label content at the (X, Y) point.
 * `Connector line` - used to connect the (X, Y) point and the label element.
 
-## Enable Data Label
+## Enable data label
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of a series is used to enable the data labels.
 
@@ -314,7 +314,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Rotation support for data label in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_Rotation.png)
 
-## Applying Series Fill
+## Applying series fill
 
 The [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the [Fill](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Fill) of the series to the data label background. 
 
@@ -359,7 +359,7 @@ series.DataLabelSettings = new PolarDataLabelSettings()
 
 ![Applying UseSeriesPalette in WinUI Chart](DataLabel_Images/WinUI_Chart_data_label_UseSeriesPalette.png)
 
-## Connector Line
+## Connector line
 
 Connector line is used to connect the label and the data point using a line. The [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [PolarDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PolarDataLabelSettings.html) is used to enable the connector line in the polar chart.
 

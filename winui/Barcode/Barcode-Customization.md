@@ -7,7 +7,7 @@ control: Barcode
 documentation: ug
 ---
 
-# Customization in WinUI Barcode
+# Customization in WinUI barcode
 
 ## Background
 The Barcode background color can be changed using the [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
@@ -60,7 +60,7 @@ The width ratio of the wide and narrow bars can be customized using the [Module]
 
 ![Module](Customization_Images/BarWidth.png)
 
-## AutoModule
+## Auto module
 The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) and [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) render based on the available control size when [AutoModule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_AutoModule) is set to **True**.
 
 {% tabs %}

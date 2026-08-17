@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Needle Pointer in WinUI Radial Gauge
+# Needle pointer in WinUI radial gauges
 
 The [`Needle Pointer`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Gauges.NeedlePointer.html) contains three parts, namely needle, knob, and tail, which can be placed on a gauge to mark the values.
 
@@ -553,7 +553,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Tail Gradient](images/needle-pointer/winui-radial-gauge-tail-gradient.png)
 
-## See Also
+## See also
 
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
 * [How to create an analog clock with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)

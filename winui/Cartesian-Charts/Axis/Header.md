@@ -8,7 +8,7 @@ documentation: ug
 keywords: axis title in winui chart, winui sfcartesianchart axis title, winui chart axis title customization, syncfusion winui chart axis title, winui sfcartesianchart axis title configuration.
 ---
 
-# Axis Header in WinUI Chart
+# Axis header in WinUI chart
 
 The [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property is used to set the title for the chart axis. It accepts any `UIElement` as the content of the axis title. 
 
@@ -144,7 +144,7 @@ chart.XAxes.Add(primaryAxis);
 
 ![HeaderTemplate support for ChartAxis in WinUI Chart](Axis_Images/WinUI_Chart_Axis_Header_template.png)
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
 * [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)

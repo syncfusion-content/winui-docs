@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Explode Segments in WinUI Circular Chart
+# Explode segments in WinUI circular charts
 
 Exploding a segment is used to draw attention to a specific area of the circular chart. The following properties are used to explode the segments in the circular chart.
 
@@ -100,6 +100,6 @@ chart.Series.Add(series);
 
 ![Exploding all the segments in WinUI pie chart](Series_images/pie_explode_all.png)
 
-## See Also
+## See also
 
 - [How to explode the pie chart slice in WinUI Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12987/how-to-explode-the-pie-chart-slice-in-winui-chart-sfcircularchart)

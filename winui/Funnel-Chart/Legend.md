@@ -7,7 +7,7 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Legend in WinUI Funnel Chart
+# Legend in WinUI funnel charts
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding data series in the chart.
 
@@ -180,7 +180,7 @@ this.Content = chart;
 
 ![Legend item spacing support in WinUI Chart](Legend_images/winui-chart_legend_item_spacing.png)
 
-## Checkbox for Legend
+## Checkbox for legend
 
 The funnel chart provides support to enable the checkbox for each legend item to show or collapse the associated data points. By default, the value of the [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed`. 
 
@@ -217,7 +217,7 @@ this.Content = chart;
 
 ![Checkbox support for legend in WinUI Chart](Legend_images/winui-chart_Legend_checkbox.png)
 
-## Toggle Series Visibility 
+## Toggle series visibility 
 
 By enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property, the visibility of the segment can be controlled by tapping the legend item. By default, the value of the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is `False`.
 

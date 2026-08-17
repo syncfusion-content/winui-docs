@@ -8,7 +8,7 @@ documentation: ug
 keywords: tick lines in winui chart, winui sfcartesianchart tick lines, winui chart tick lines customization, syncfusion winui chart tick lines.
 ---
 
-# Tick Lines in WinUI Chart
+# Tick lines in WinUI chart
 
 Tick lines are the small lines which are drawn on the axis line representing the axis labels. Tick lines will be drawn outside of the axis by default. 
 
@@ -147,6 +147,6 @@ chart.YAxes.Add(new NumericalAxis());
 
 ![Axis tick lines customization support in WinUI Chart](Axis_images/winui_chart_axis_tickline_style.png)
 
-## See Also
+## See also
 
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

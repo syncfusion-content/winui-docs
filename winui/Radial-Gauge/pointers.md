@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Pointers in WinUI Radial Gauge
+# Pointers in WinUI radial gauges
 
  A pointer is used to indicate values on an axis. The radial gauge control has four types of pointers: 
 
@@ -166,7 +166,7 @@ private void ShapePointer_ValueChanged(object sender, ValueChangedEventArgs e)
 
 {% endtabs %}
 
-## See Also
+## See also
 
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
 * [How to create an analog clock with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)

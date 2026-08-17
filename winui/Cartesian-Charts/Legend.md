@@ -8,7 +8,7 @@ documentation: ug
 keywords: legend in winui chart, winui sfcartesianchart legend, winui chart legend customization, syncfusion winui chart legend, winui chart legend properties, winui sfcartesianchart legend configuration.
 ---
 
-# Legend in WinUI Chart
+# Legend in WinUI chart
 
 The legend contains a list of series data points in the chart. The information provided in each legend item helps you to identify the corresponding series in the chart. You can specify the [Label](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Label) for each series which is to be displayed in legend label.
 
@@ -197,7 +197,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend icon in WinUI Chart](Legend_images/WinUI_chart_legend_customize.png)
 
-## Custom Icon
+## Custom icon
 
 The chart supports adding a custom icon for the legend using [LegendIconTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_LegendIconTemplate) property of series as in the example below.
 
@@ -258,7 +258,7 @@ this.Content = chart;
 
 ![Custom legend icon in WinUI Chart](Legend_images/WinUI_chart_custom_legend_icon.png)
 
-## Legend Visibility
+## Legend visibility
 
 The [IsVisibleOnLegend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_IsVisibleOnLegend) property of series is used to enable/disable the visibility of legend as shown in the example below.
 
@@ -355,7 +355,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend item spacing support in WinUI Chart](Legend_images/WinUI_chart_legend_item_spacing.png)
 
-## Checkbox for Legend
+## Checkbox for legend
 
 The chart supports enabling the checkbox for each legend item to show or collapse the associated series. By default, the value of [CheckBoxVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) property is `Collapsed`. 
 
@@ -386,7 +386,7 @@ The series can be collapsed by unchecking the checkbox as below:
 
 ![Checkbox support for legend in WinUI Chart](Legend_images/WinUI_chart_legend_checkBox_uncheck.png)
 
-## Toggle Series Visibility 
+## Toggle series visibility 
 
 The visibility of the series can be controlled by tapping the legend item by enabling the [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property. By default, the value of [ToggleSeriesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is `False`.
 
@@ -538,7 +538,7 @@ chart.Legend = new ChartLegend()
 
 N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html#Syncfusion_UI_Xaml_Charts_LegendItem_Item) can be used to access the data linked to the associated model class. The binding context for ChartLegend `ItemTemplate` is [LegendItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LegendItem.html), which provides the necessary data for the legend labels.
 
-## See Also
+## See also
 
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 * [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)

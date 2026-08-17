@@ -8,7 +8,7 @@ documentation: ug
 keywords: data label in winui chart, winui sfcartesianchart data label, winui data label customization, syncfusion winui data label, winui chart data label overview.
 ---
 
-# Data Label in WinUI Chart
+# Data label in WinUI chart
 
 Data labels are used to display values related to a chart segment. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
@@ -17,7 +17,7 @@ Each data label can be represented by the following:
 * Label - displays the segment label content at the (X, Y) point.
 * Connector line - used to connect the (X, Y) point and the label element.
 
-## Enable Data Label 
+## Enable data label 
 
 The [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_ShowDataLabels) property of series is used to enable the data labels.
 
@@ -389,7 +389,7 @@ Other than the above alignment options, the chart provides additional customizat
 
 The [Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_CartesianDataLabelSettings_Position) property is used to position the data labels at `Center`, `Inner`, and `Outer` positions of the actual data point position. By default, labels are positioned based on the series types for better readability.
 
-## Connector Line
+## Connector line
 
 Connector line is used to connect label and data point using a line. [ShowConnectorLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ShowConnectorLine) property of [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) is used to enable the connector line in the chart. 
 
@@ -446,7 +446,7 @@ chart.Series.Add(series);
 
 ![Connector line for data label in WinUI chart](DataLabel_images/winui_chart_data_label_connector_line.png)
 
-## Applying Series Interior
+## Applying series interior
 
 [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_UseSeriesPalette) property is used to set the interior of the series to the data marker background. 
 
@@ -485,6 +485,6 @@ chart.Series.Add(series);
 
 ![Applying series interior for data label in WinUI chart](DataLabel_images/series_interior_for_data_label_winui_chart.png)
 
-## See Also
+## See also
 
 * [How to display custom data marker in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12166)

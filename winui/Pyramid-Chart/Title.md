@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Title in WinUI Pyramid Chart
+# Title in WinUI pyramid charts
 
 [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title of the chart.
 

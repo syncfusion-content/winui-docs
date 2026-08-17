@@ -7,7 +7,7 @@ control: SfPyramidChart
 documentation: ug
 ---
 
-# Explode Segments in WinUI Pyramid Chart
+# Explode segments in WinUI pyramid charts
 
 Exploding a segment is used to draw attention to a specific area of the pyramid. The following properties are used to explode the segments in the pyramid chart.
 

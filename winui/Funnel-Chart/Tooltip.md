@@ -7,11 +7,11 @@ control: SfFunnelChart
 documentation: ug
 ---
 
-# Tooltip in WinUI Funnel Chart
+# Tooltip in WinUI funnel charts
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any chart segment. It is set to display the metadata of the hovered segment or data point.
 
-## Define Tooltip
+## Define tooltip
 
 To define the tooltip in the chart, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true. The default value of the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property is false.
 
@@ -85,7 +85,7 @@ chart.TooltipBehavior = behavior;
 
 {% endtabs %}
 
-## Background Style
+## Background style
 
 The tooltip's fill and stroke color can be customized by using the [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) for the tooltip, specify the style `TargetType` as `Path`.
 
@@ -136,7 +136,7 @@ this.Content = chart;
 
 ![Tooltip background style in WinUI Chart](Tooltip_Images/winui-chart_tooltip_background.png)
 
-## Label Style
+## Label style
 
 The tooltip label style can be customized by using the [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a `Style` for the tooltip label, specify the style `TargetType` as `TextBlock`.
 

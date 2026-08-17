@@ -8,11 +8,11 @@ documentation: ug
 keywords: auto scrolling in winui chart, winui sfcartesianchart auto scrolling, winui chart auto scrolling customization, syncfusion winui chart auto scrolling, winui sfcartesianchart auto scrolling settings.
 ---
 
-# Auto Scrolling in WinUI Chart
+# Auto scrolling in WinUI chart
 
 Axis supports auto-scrolling the live data added to the chart with a specific range of data visible at the start or end.
 
-## AutoScrollingDelta
+## Auto scrolling delta
 
 The [AutoScrollingDelta](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AutoScrollingDelta) property is used to set the specified range of data visible in the chart. It always shows the recently added data points at the end, and the scrolling will be reset to the end of the range whenever a new point is added. The default value of AutoScrollingDelta is `double.NaN`.
 
@@ -72,7 +72,7 @@ this.Content = chart;
 
 ![AutoScrollingDelta support WinUI Chart](Axis_Images/winui_chart_axis_auto-scrolling-delta.png)
 
-## AutoScrollingMode
+## Auto scrolling mode
 
 The [AutoScrollingMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_AutoScrollingMode) property can be used to determine whether the axis should be scrolled from the start or end positions. The default value of AutoScrollingMode is `ChartAutoScrollingMode.End`.
 
@@ -128,7 +128,7 @@ this.Content = chart;
 
 ![AutoScrollingMode support WinUI Chart](Axis_Images/winui_chart_axis_auto-scrolling-mode.png)
 
-## AutoScrollingDeltaType
+## Auto scrolling delta type
 
 In the [DateTimeAxis](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), you can apply auto-scrolling delta value in [Auto](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Auto), [Years](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Years), [Months](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Months), [Days](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Days), [Hours](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Hours), [Minutes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Minutes), [Seconds](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Seconds), and [Milliseconds](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html#Syncfusion_UI_Xaml_Charts_DateTimeIntervalType_Milliseconds) by setting the AutoScrollingDeltaType property. The default value of this property is `DateTimeIntervalType.Auto`, and the delta will be calculated automatically based on the range.
 
@@ -193,7 +193,7 @@ this.Content = chart;
 
 ![DateTimeAxis AutoScrollingDetlaType support WinUI Chart](Axis_Images/winui_chart_datetime-axis_auto-scrolling-mode.png)
 
-## See Also
+## See also
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
 

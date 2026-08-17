@@ -7,7 +7,7 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Legend in WinUI Polar Chart
+# Legend in WinUI polar charts
 
 The legend contains a list of series in the chart. The information provided in each legend item helps to identify the corresponding series in the chart. The legend can be configured using the [Legend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) property of [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html).
 

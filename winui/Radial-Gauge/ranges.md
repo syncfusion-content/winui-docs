@@ -7,7 +7,7 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# Range in WinUI Radial Gauge
+# Range in WinUI radial gauges
 
 A gauge range is a visual element that helps to quickly visualize where a value falls on the axis.
 
@@ -760,7 +760,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Range Label Template](images/range/winui-radial-gauge-range-label-template.png)
 
-## See Also
+## See also
 
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
 * [How to design various directional semi-circular gauge using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11959/how-to-design-various-directional-semi-circular-gauge-using-winui-radial-gauge)

@@ -7,7 +7,7 @@ control: SfCircularChart
 documentation: ug
 ---
 
-# Doughnut Chart in WinUI Circular Chart
+# Doughnut chart in WinUI circular charts
 
 [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) is similar to [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html). It is used to show the relationship between parts of data and the whole data. To render a [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) in the circular chart, create an instance of the [DoughnutSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html) and add it to the [Series](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html#Syncfusion_UI_Xaml_Charts_SfCircularChart_Series) collection property of [SfCircularChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCircularChart.html).
 
@@ -42,7 +42,7 @@ chart.Series.Add(series);
 
 ![Doughnut series type in WinUI chart](Series_images/doughnut_chart.png)
 
-## Multiple Doughnut
+## Multiple doughnut
 
 The circular chart provides support to add multiple doughnut series in a single chart.
 
@@ -98,7 +98,7 @@ chart.Series.Add(series3);
 
 ![Multiple doughnut series support in WinUI Chart](Series_images/winui-multiple-doughnut-series.png)
 
-## Inner Radius
+## Inner radius
 
 The [InnerRadius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_InnerRadius) property of the doughnut series is used to define the inner circle. It also has the [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_Radius) property, which is used to define the size for this series, similar to the [Radius](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_Radius) in the [PieSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
@@ -135,7 +135,7 @@ chart.Series.Add(series);
 
 ![Inner radius support in WinUI Chart](Series_images/doughnut_inner_radius.png)
 
-## Semi Doughnut
+## Semi doughnut
 
 By using the [StartAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_StartAngle) and [EndAngle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CircularSeries.html#Syncfusion_UI_Xaml_Charts_CircularSeries_EndAngle) properties, you can draw the doughnut series in different shapes such as semi-doughnut or quarter doughnut series.
 

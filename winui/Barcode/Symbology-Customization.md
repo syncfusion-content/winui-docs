@@ -7,12 +7,12 @@ control: Barcode
 documentation: ug
 ---
 
-# Symbology Customization in WinUI Barcode
+# Symbology customization in WinUI barcode
 Each Barcode symbology can be associated with optional settings that may affect the specific barcode. 
 
-## One-Dimensional Barcode settings
+## One-dimensional barcode settings
 
-### EnableCheckSum
+### Enable check sum
 The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_EnableCheckSum) property enables redundancy checking using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit, computed from the other digits in the message.
 
 {% tabs %}
@@ -25,7 +25,7 @@ The [EnableCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Bar
 {% endhighlight %}
 {% endtabs %}
  
-### ShowCheckSum
+### Show check sum
 The check digit can be shown in the Barcode or kept hidden by using the [ShowCheckSum](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_ShowCheckSum) property.
 
 {% tabs %}
@@ -38,7 +38,7 @@ The check digit can be shown in the Barcode or kept hidden by using the [ShowChe
 {% endhighlight %}
 {% endtabs %}
 
-### EncodeStartStopSymbols
+### Encode start stop symbols
 The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.UnidimensionalBarcode.html#Syncfusion_UI_Xaml_Barcode_UnidimensionalBarcode_EncodeStartStopSymbols) property adds Start and Stop symbols to signal a barcode reader that a barcode has been scanned.
 
 {% tabs %}
@@ -51,9 +51,9 @@ The [EncodeStartStopSymbols](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 {% endhighlight %}
 {% endtabs %}
 
-## Two-Dimensional Barcode settings
+## Two-dimensional barcode settings
 
-### DataMatrix Barcode settings
+### Data matrix barcode settings
 The [DataMatrix](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) Barcode can be customized using the [Encoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Barcode_DataMatrixBarcode_Encoding) and [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Barcode_DataMatrixBarcode_MatrixSize) properties.
 
 #### Encoding
@@ -76,7 +76,7 @@ The [DataMatrixEncoding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml
 {% endhighlight  %}
 {% endtabs %}
 
-#### MatrixSize
+#### Matrix size
 The [MatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html#Syncfusion_UI_Xaml_Barcode_DataMatrixBarcode_MatrixSize) property allows the user to specify the size of the Barcode from a set of predefined sizes available in the [DataMatrixSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixSize.html) enumeration.
 
 {% tabs %}
@@ -222,10 +222,10 @@ Size16x48</td><td>
 Rectangular matrix with 16 rows and 48 columns.</td></tr>
 </table>
 
-### QRBarcode settings
+### QR barcode settings
 The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) settings allow users to modify the version, error correction level, and input mode of the QRBarcode.
 
-#### QRVersion
+#### QR version
 The QR Barcode uses the [QRVersion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Barcode_QRBarcode_QRVersion) property to decide the version from 1 to 40 using the [QRBarcodeVersion](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcodeVersion.html) enumeration, where Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules, and so on, increasing in steps of 4 modules per side up to Version 40, which measures 177 modules x 177 modules. By default, the QR version is set to [Auto](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcodeVersion.html#Syncfusion_UI_Xaml_Barcode_QRBarcodeVersion_Auto), which means that it will be set based on the length of the input text.
 
 {% tabs %}
@@ -238,7 +238,7 @@ The QR Barcode uses the [QRVersion](https://help.syncfusion.com/cr/winui/Syncfus
 {% endhighlight  %}
 {% endtabs %}
 
-#### ErrorCorrectionLevel
+#### Error correction level
 The QR Barcode uses the [ErrorCorrectionLevel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Barcode_QRBarcode_ErrorCorrectionLevel) property to generate a series of error correction codewords that are added to the data code word sequence in order to enable the symbol to withstand damage without data loss. There are four user-selectable levels of error correction. By default, the property value is [Low](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.ErrorCorrectionLevel.html#Syncfusion_UI_Xaml_Barcode_ErrorCorrectionLevel_Low).
 
 {% tabs %}
@@ -276,7 +276,7 @@ High</td><td>
 30</td></tr>
 </table>
 
-#### InputMode
+#### Input mode
 The QR Barcode uses the [InputMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html#Syncfusion_UI_Xaml_Barcode_QRBarcode_InputMode) property to decide the supported character set for the value. The default value is [BinaryMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRInputMode.html#Syncfusion_UI_Xaml_Barcode_QRInputMode_BinaryMode).
 
 The [QRInputMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRInputMode.html) enumeration has the following values:

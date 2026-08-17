@@ -8,15 +8,15 @@ documentation: ug
 keywords: appearance in winui chart, winui sfcartesianchart appearance, winui chart appearance customization, syncfusion winui chart appearance, winui sfcartesianchart appearance configuration.
 ---
 
-# Appearance in WinUI Chart
+# Appearance in WinUI chart
 
 The appearance of [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) can be customized by using the predefined brushes, custom brushes, and gradient, which allows you to enrich the application.
 
-## Applying PaletteBrushes for Chart
+## Applying palette brushes for chart
 
 By default, chart applies a set of predefined brushes to the series in a predefined order. [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PaletteBrushes) property for applying various kinds of custom palettes brushes.
 
-### Predefined PaletteBrushes
+### Predefined palette brushes
 
 Currently, Chart supports only one predefined palette and it is the default palette for SfCartesianChart. The following screenshot shows the default appearance of multiple series.
 
@@ -43,7 +43,7 @@ this.Content = chart;
 
 ![Predefined PaletteBrushes in WinUI Chart](Appearance_images/WinUI_chart_predefined_palette.png)
 
-### Custom PaletteBrushes
+### Custom palette brushes
 
 [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) provides support to define own brushes for the chart with preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_PaletteBrushes) property, as shown in the following code example.
 
@@ -78,7 +78,7 @@ this.Content = chart;
 
 ![Custom PaletteBrushes in WinUI Chart](Appearance_images/WinUI_chart_custom_paletteBrushes.png)
 
-## Applying PaletteBrushes for Series
+## Applying palette brushes for series
 
 Cartesian chart provides support to set the palette to series for applying predefined brushes to the segment. The following code example shows you how to set the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_PaletteBrushes) for the series.
 
@@ -136,7 +136,7 @@ this.Content = chart;
 
 ![Custom PaletteBrushes in WinUI Chart](Appearance_images/WinUI_chart_custom_palette.png)
 
-## Applying Gradient
+## Applying gradient
 
 Gradient for the chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_PaletteBrushes) property with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
@@ -240,7 +240,7 @@ this.Content = chart;
 
 ![Gradient support in WinUI Chart](Appearance_images/WinUI_chart_gradient_color.png)
 
-## See Also
+## See also
 
 * [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)

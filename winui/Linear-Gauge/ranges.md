@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-# Range in WinUI Linear Gauge
+# Range in WinUI linear gauges
 
 A linear gauge range is a visual element that helps you to quickly visualize where a value falls on the axis.
 
@@ -435,6 +435,6 @@ this.Content = sfLinearGauge;
 
 ![range child](images/range/range_Child.png)
 
-## See Also
+## See also
 
 * [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)

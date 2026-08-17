@@ -8,11 +8,11 @@ documentation: ug
 keywords: trackball in winui chart, winui sfcartesianchart trackball, winui chart trackball customization, syncfusion winui chart trackball, winui sfcartesianchart trackball settings.
 ---
 
-# Trackball in WinUI Chart
+# Trackball in WinUI chart
 
 The trackball allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis, and the y values are determined from the points touching the vertical line in the series.
 
-## Define Trackball
+## Define trackball
 
 To add the trackball in the chart, create an instance of [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html) and set it to the [TrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_TrackballBehavior) property of the chart.
 
@@ -93,7 +93,7 @@ The Trackball is composed of the following parts:
 3. Axis label
 4. Series label
 
-## Trackball Line
+## Trackball line
 
 The trackball line is visible when you initialize the [ChartTrackballBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html). If you want to collapse the visibility of the trackball line, then you have to set [ShowLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_ShowLine) to `false`.
 
@@ -219,7 +219,7 @@ chart.TrackballBehavior = Trackball;
 
 ![Trackball symbol in WinUI chart](Trackball_images/WinUI_chart_trackball_symbol_customization.png)
 
-## Axis Label
+## Axis label
 
 The axis label will be viewed when the [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballLabel) property is set to true. The default value of [ShowTrackballLabel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackballLabel) is `false`.
 
@@ -325,7 +325,7 @@ chart.XAxes.Add(primaryAxis);
 
 ![Customization support for Trackball axis label in WinUI chart](Trackball_images/WinUI_chart_trackball_axis_label_customization.png)
 
-## Series Label
+## Series label
 
 When the mouse is hovered in the chart area, you can view the label displayed over the series in addition to the axis label.
 
@@ -422,7 +422,7 @@ chart.TrackballBehavior = behavior;
 
 ![Alignment support for Trackball series label in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_alignment.png)
 
-## Display Mode
+## Display mode
 
 When there are multiple series, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value, then the [DisplayMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_DisplayMode) property should be set to [FloatAllPoints](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.LabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_LabelDisplayMode_FloatAllPoints).
 
@@ -598,7 +598,7 @@ chart.Series.Add(series);
 
 N> The binding context for Chart `TrackballLabelTemplate` is [ChartPointInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html), which provides the necessary data for the trackball labels.
 
-### Applying Series Interior
+### Applying series interior
 
 The interior color of the series is applied to the series label by setting [UseSeriesPalette](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTrackballBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackballBehavior_UseSeriesPalette) to true as shown in the following code snippet.
 
@@ -634,7 +634,7 @@ chart.TrackballBehavior = behavior;
 
 ![Applying interior color to series label in WinUI Chart](Trackball_images/WinUI_chart_trackball_label_series_palette.png)
 
-## See Also
+## See also
 
 * [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
 * [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711)

@@ -8,11 +8,11 @@ documentation: ug
 keywords: tooltip in winui chart, winui sfcartesianchart tooltip, winui chart tooltip customization, syncfusion winui chart tooltip, winui sfcartesianchart tooltip settings.
 ---
 
-# Tooltip in WinUI Chart
+# Tooltip in WinUI chart
 
 Tooltip is used to display any information over segments. It appears at the data point position when the mouse hovers over any series segment. It is set to display the metadata of the hovered segment or data point.
 
-## Define Tooltip
+## Define tooltip
 
 To define the tooltip in the series, set the [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property to true. The default value of [EnableTooltip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_EnableTooltip) property is `false`.
 
@@ -104,7 +104,7 @@ chart.TooltipBehavior = tooltip;
 
 {% endtabs %}
 
-## Background Style
+## Background style
 
 The tooltip's fill and stroke color can be customized by using the [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) property. To define a [Style](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_Style) for tooltip, specify the style of `TargetType` as `Path`.
 
@@ -181,7 +181,7 @@ this.Content = chart;
 
 ![Tooltip background style in WinUI Chart](Tooltip_images/WinUI_chart_background_style_customization_tooltip.png)
 
-## Label Style
+## Label style
 
 The tooltip label style can be customized by using the [LabelStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_LabelStyle) property. To define a `Style` for the tooltip label, specify the style of `TargetType` as `TextBlock`.
 
@@ -701,7 +701,7 @@ this.Content = chart;
 
 N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item) can be used to access the data linked to the associated model class. The binding context for Chart `TooltipTemplate` is [ChartSegment](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSegment.html), which provides the necessary data for the tooltip labels.
 
-## See Also
+## See also
 
 * [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711)
 * [How to display more data in the tooltip in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12007)

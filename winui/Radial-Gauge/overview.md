@@ -7,13 +7,13 @@ control: SfRadialGauge
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Radial Gauge Control
+# About syncfusion® WinUI radial gauges control
 
 The Syncfusion [WinUI Radial Gauge](https://www.syncfusion.com/winui-controls/radial-gauge) is a multi-purpose data visualization control that displays numerical values on a circular scale. It has a rich set of features such as axes, ranges, pointers, and annotations that are fully customizable and extendable. Use it to create speedometers, temperature monitors, dashboards, meter gauges, multi-axis clocks, watches, activity gauges, compasses, and more.
 
 ![WinUI Radial Gauge Control](images/overview/winui-radial-gauge-control.png)
 
-## Key Features
+## Key features
 
 * **Axes** - The radial gauge axis is a circular arc in which a set of values are displayed along a linear or custom scale based on the design requirements. Axis elements, such as labels, ticks, and axis line, can be easily customized with built-in properties.
 * **Ranges** - The gauge range is a visual element that helps to quickly visualize a value where it falls on the axis.
@@ -24,7 +24,7 @@ The Syncfusion [WinUI Radial Gauge](https://www.syncfusion.com/winui-controls/ra
 
 N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-demos/tree/master/radialgauge) link.
 
-## See Also
+## See also
 
 * [How to design radial timer picker using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12036/how-to-design-radial-timer-picker-using-winui-radial-gauge)
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)

@@ -7,11 +7,11 @@ control: SfPolarChart
 documentation: ug
 ---
 
-# Appearance in WinUI Polar Chart
+# Appearance in WinUI polar charts
 
 The appearance of the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) can be customized by using predefined palettes, custom palettes, and gradients, which help enrich the application.
 
-## Default PaletteBrushes
+## Default palette brushes
 
 Currently, the [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) supports only one predefined [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes), and these are the default brushes for the SfPolarChart. The following screenshot shows the default appearance of multiple series.
 
@@ -77,7 +77,7 @@ this.Content = chart;
 
 ![Predefined palette in WinUI Chart](Appearance_Images/winui-chart_predefined_palette.png)
 
-## Custom PaletteBrushes
+## Custom palette brushes
 
 The [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) provides support to define your own brushes for the chart in the preferred order by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property, as shown in the following code example.
 
@@ -127,7 +127,7 @@ this.Content = chart;
 
 ![Custom palette in WinUI Chart](Appearance_Images/WinUI_Chart_CustomPalette.png)
 
-## Applying Gradient
+## Applying gradient
 
 Gradient for the polar chart can be set by using the [PaletteBrushes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html#Syncfusion_UI_Xaml_Charts_SfPolarChart_PaletteBrushes) property of the polar chart with the help of the `LinearGradientBrush` or `RadialGradientBrush`.
 

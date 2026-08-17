@@ -7,10 +7,10 @@ control: Barcode
 documentation: ug
 ---
 
-# Symbology Types in WinUI Barcode
+# Symbology types in WinUI barcode
 The Barcode Symbology supports 12 variants of one-dimensional and 3 variants of two-dimensional barcodes.
 
-## One-Dimensional Barcodes
+## One-dimensional barcodes
 A One-Dimensional barcode is also called a linear barcode. The bars and spaces for each symbol in one-dimensional barcodes are grouped in such a way as to represent a specific ASCII character.
 
 The following table represents supported one-dimensional barcode symbologies.
@@ -196,7 +196,7 @@ The [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 
 ![Code39Barcode](Symbology_Images/Code39.png)
 
-### Code 39 Extended
+### Code 39 extended
 The [Code39ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39ExtendedBarcode.html) Symbology is an extended version of the [Code39Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code39Barcode.html) that supports the full ASCII character set. It encodes lower case alphabets (a-z) as well as special characters on the keyboard.
 
 {% tabs %}
@@ -229,7 +229,7 @@ The [Code93Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barc
 
 ![Code93Barcode](Symbology_Images/Code93.png)
 
-### Code 93 Extended
+### Code 93 extended
 The [Code93ExtendedBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code93ExtendedBarcode.html) is designed to complement and improve upon Code 39. It represents the full ASCII character set by using a combination of 2 characters. It is a continuous, variable-length Symbology that produces a denser code.
 
 * Encodes a character set of uppercase alphabets (A-Z), digits (0-9), and special characters like asterisk (*), dash (-), dollar ($), percent (%), Space, dot (.), slash (/), and plus (+).
@@ -262,7 +262,7 @@ The [Code128ABarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ba
 
 ![Code128ABarcode](Symbology_Images/Code128A.png)
 
-#### Code128B
+#### Code 128B
 The [Code128BBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128BBarcode.html) (or Chars Set B) includes all the standard upper case alphanumeric keyboard characters and punctuation characters together with the lower case alphabetic characters (characters with ASCII values from 32 to 127 inclusive), and seven special characters.
 
 {% tabs %}
@@ -277,7 +277,7 @@ The [Code128BBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ba
 
 ![Code128BBarcode](Symbology_Images/Code128B.png)
 
-#### Code128C
+#### Code 128C
 The [Code128CBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Code128CBarcode.html) (or Chars Set C) includes a set of 100 digit pairs from 00 to 99 inclusive, as well as three special characters. This allows numeric data to be encoded as two data digits per symbol character, effectively twice the density of standard data.
 
 {% tabs %}
@@ -307,7 +307,7 @@ The [UPCBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode
 
 ![UPCBarcode](Symbology_Images/UPC_Barcode.png)
 
-### GS1Code128Barcode
+### GS1 Code128 barcode
 The [GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.GS1Code128Barcode.html) also known as EAN-128 barcode. It is commonly used in shipping and supply chain entities.
 
 {% tabs %}
@@ -322,7 +322,7 @@ The [GS1Code128Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ![GS1Code128Barcode](Symbology_Images/GS1Code128Barcode.png)
 
-## Two Dimensional Barcodes
+## Two dimensional barcodes
 A Two-Dimensional Barcode is a way to represent information via a two-dimensional approach. It is similar to a One-Dimensional Barcode, but can represent more data per unit area.
 
 The following table represents the supported two-dimensional barcode symbologies:
@@ -360,7 +360,7 @@ All ASCII characters
 
 N> [Two-dimensional Symbology Customization](https://help.syncfusion.com/winui/barcode/symbology-customization#two-dimensional-barcode-settings)
 
-### QR Code
+### QR code
 The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.QRBarcode.html) is a two-dimensional barcode symbology that is popularly used in the automotive industry. It is known for fast readability and greater storage capacity.
 
 {% tabs %}
@@ -375,7 +375,7 @@ The [QRBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.
 
 ![QRBarcode](Symbology_Images/QRBarCode.png)
 
-### Data Matrix
+### Data matrix
 The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.DataMatrixBarcode.html) is widely used in printed media such as labels and letters. It can be read easily by a Barcode reader and also by mobile phones. It consists of a grid of dark and light dots or blocks forming a square or rectangular symbol. The data encoded in the Barcode can be either numeric or alphanumeric.
 
 {% tabs %}
@@ -390,7 +390,7 @@ The [DataMatrixBarcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
 
 ![DataMatrixBarcode](Symbology_Images/DataMatrix.png)
 
-### Pdf417Barcode
+### Pdf417 barcode
 The [Pdf417Barcode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.Pdf417Barcode.html) is a two-dimensional barcode, and it can encode text, numbers, files, and actual data bytes. It is mainly used in a variety of applications such as transport, identification cards, and inventory management.
  
 {% tabs %}
