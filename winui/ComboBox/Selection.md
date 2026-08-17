@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI ComboBox control | Syncfusion
-description: Learn here all about Selection modes support in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
+title: Selection in WinUI ComboBox | Syncfusion®
+description: Understand how to configure and use single and multiple selection modes in the Syncfusion® WinUI ComboBox control for flexible item selection.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# Selection in WinUI ComboBox (SfComboBox)
+# Selection in WinUI ComboBox
 
 The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) allows the user to select single or multiple items from the drop-down list. The selection mode can be set by using the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionMode) property. The default value of `SelectionMode` is `Single`. There are two different selection modes: `Single`, and `Multiple`.
 
@@ -254,7 +254,7 @@ The ComboBox control provides auto-append support with the selection of text as 
 * **TextWithSelection** - The appended text appears with the selection highlighted.
 * **Text** - The appended text appears with a faded foreground, similar to Windows 11.
 
-#### Auto-append UI as TextWithSelection
+### Auto-append UI as TextWithSelection
 
 When entering text in the text box selection area, if the `AutoAppendType` property is `TextWithSelection`, the appended text appears with the selection.
 

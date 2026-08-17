@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Searching in WinUI ComboBox control | Syncfusion
-description: Learn how to perform searching operation in Syncfusion WinUI ComboBox (multi-select ComboBox) control and more.
+title: Searching in WinUI ComboBox | Syncfusion®
+description: See how the Syncfusion® WinUI ComboBox control searches and highlights matching items dynamically as users enter text.
 platform: winui
 control: SfComboBox
 documentation: ug
 ---
 
-# Searching in WinUI ComboBox (SfComboBox)
+# Searching in WinUI ComboBox
 
 The [ComboBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html) control provides rich text searching functionality. The [TextSearchMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_TextSearchMode) and [IsTextSearchEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_IsTextSearchEnabled) properties of the `ComboBox` can be used to regulate how the control behaves when it receives user input. The default value of `IsTextSearchEnabled` is `true`.
 

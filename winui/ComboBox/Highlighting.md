@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Highlighting Feature in WinUI ComboBox control | Syncfusion
-description: Learn here all about Highlighting Feature in Syncfusion WinUI ComboBox control in a WinUI application.
+title: Highlighting in WinUI ComboBox | Syncfusion®
+description: Explore the highlighting feature in the Syncfusion® WinUI ComboBox control that visually distinguishes matching text within suggested items.
 platform: winui
 control: SfComboBox
 documentation: UG
 ---
 
-# Highlighting in WinUI ComboBox (SfComboBox)
+# Highlighting in WinUI ComboBox
 
 Highlight matching characters in the suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
@@ -61,7 +61,7 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 
 
-### **Highlight beginning text**
+## **Highlight beginning text**
 It highlights the matches that start with the typed characters in the suggestion list.
 
 {% tabs %}
@@ -101,7 +101,7 @@ comboBox.HighlightedTextForeground = Color.Red;
 
 
 
-### **Highlight all occurrences of the search text**
+## **Highlight all occurrences of the search text**
 It highlights all the matches that contain the typed characters in the suggestion list. 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Customization in WinUI AutoComplete (SfAutoComplete) | Syncfusion
-description: Learn about the UI customization support in the Syncfusion WinUI AutoComplete control and its features.
+title: UI Customization in WinUI AutoComplete | Syncfusion®
+description: Learn how to configure and customize the Syncfusion® WinUI AutoComplete control to match your application's design and interaction needs.
 platform: winui
 control: SfAutoComplete
 documentation: UG
 ---
 
-# UI Customization in WinUI AutoComplete (SfAutoComplete)
+# UI Customization in WinUI AutoComplete
 
 This section explains the different UI customization options available in the [SfAutoComplete](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfAutoComplete.html) control.
 
