@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Week numbers in WinUI Calendar control | Syncfusion
-description: Learn here all about the week number features of the WinUI Calendar (SfCalendar) control and much more.
-platform: WinUI
+title: Week Numbers in WinUI Calendar | Syncfusion
+description: Learn about week number features and customization options in WinUI Calendar control for better planning.
+platform: scheduler-sdk
 control: SfCalendar
 documentation: ug
 ---
 
-# Week number of the WinUI Calendar (SfCalendar)
+# Week Numbers in WinUI Calendar
 
 This section describes the week numbers and the customization options available in the [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Week numbers in WinUI Calendar DateRange Picker control | Syncfusion
-description: Learn here all about week numbers feature of the WinUI Calendar DateRange Picker (SfCalendarDateRangePicker) control and much more.
-platform: WinUI
+title: Week Numbers in WinUI Calendar DateRange Picker | Syncfusion
+description: Learn about week number features in WinUI Calendar DateRange Picker control for better date navigation.
+platform: scheduler-sdk
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
 
-# Week numbers of the WinUI Calendar DateRange Picker
+# Week Numbers in WinUI Calendar DateRange Picker
 
 This section describes about the week numbers in the [Calendar DateRange Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html) control.
 
