@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Cells in WinUI SfTreeGrid | Syncfusion®
-description: Merge Cells in SfTreeGrid lets you combine adjacent cells across columns via the QueryCoveredRange event.
+description: Merge Cells in SfTreeGrid enables combining adjacent cells across columns through the QueryCoveredRange event for clear and structured data presentation.
 platform: winui
 control: TreeGrid
 documentation: ug

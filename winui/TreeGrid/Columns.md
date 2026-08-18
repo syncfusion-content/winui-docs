@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WinUI SfTreeGrid | Syncfusion®
-description: Columns in SfTreeGrid adding, removing, and customizing types to bind data and configure flexible grid layouts.
+description: Columns in SfTreeGrid enable adding, removing, customizing, resizing, and reordering with flexible options for layout and interaction.
 platform: winui
 control: SfTreeGrid
 documentation: ug
