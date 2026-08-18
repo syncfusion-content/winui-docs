@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion WinUI Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion WinUI component guidance.
+title: Syncfusion® WinUI Agent Skills for AI Assistants | Syncfusion
+description: Learn how to install and use Syncfusion® Agent Skills to enhance AI assistants with accurate Syncfusion WinUI component guidance.
 control: Skills
 platform: WinUI
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion WinUI Agent Skills for AI Assistants
+# Syncfusion<sup>®</sup> WinUI Agent Skills for AI Assistants
 
 This guide introduces **Syncfusion WinUI Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate WinUI code using official APIs, patterns, and theming guidelines.
 

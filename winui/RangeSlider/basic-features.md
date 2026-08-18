@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic Features in WinUI RangeSlider control | Syncfusion
-description: Learn here all about Basic Features support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
+title: Basic Features in WinUI RangeSlider | Syncfusion®
+description: Basic features of the Syncfusion® WinUI RangeSlider control, including setting minimum and maximum values, interval, and more.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Basic Features in WinUI RangeSlider (Range Slider)
+# Basic Features in WinUI RangeSlider
 
 This section explains how to work with the basic features of the WinUI RangeSlider control.
 

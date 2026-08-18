@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installing Syncfusion WinUI offline installer - Syncfusion
-description: Learn here about how to install Syncfusion WinUI offline installer after downloading from our Syncfusion website.
+title: How to install WinUI offline installer | Syncfusion®
+description: Learn to install Syncfusion® WinUI offline installer after downloading from Syncfusion® website easily.
 platform: winui
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Installing Syncfusion WinUI offline installer
+# How to install Syncfusion® WinUI offline installer
 
 ## Overview
 

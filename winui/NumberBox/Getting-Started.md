@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WinUI NumberBox | Syncfusion
+title: Getting Started with Syncfusion® WinUI NumberBox
 description: Learn how to get started with Syncfusion WinUI NumberBox (SfNumberBox) control, its elements, and more in here.
 platform: WinUI
 control: SfNumberBox
 documentation: ug
 ---
 
-# Getting Started with WinUI NumberBox
+# Getting Started with Syncfusion<sup>®</sup> WinUI NumberBox
 
 This section explains the steps required to add the [WinUI NumberBox](https://www.syncfusion.com/winui-controls/NumberBox) control in the WinUI application and utilize the various functions provided.
 

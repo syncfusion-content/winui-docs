@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Apply the Patch for Major or Service Pack Version | Syncfusion
-description: Learn here about how to apply the patch for major or service pack versions of Syncfusion Essential Studio.
+title: Apply Patches for Major or Service Pack Versions | Syncfusion®
+description: Apply patches for Syncfusion® Essential Studio major or service pack versions to keep your installation updated and stable.
 platform: winui
 control: Essential Studio
 documentation: ug
 ---
 
-# Applying the Patches
+# Apply Patches for Major or Service Pack Versions
 
 Syncfusion provides a patch installer for major versions or service pack versions, either to add new features or to fix issues. You must install the patches in the order that they were delivered to you.
 
