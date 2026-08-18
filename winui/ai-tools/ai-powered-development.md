@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AI-Powered Development in WinUI Controls | Syncfusion®
-description: AI-powered development in Syncfusion® WinUI controls using MCP Server and Agent Skills helps streamline coding, guidance, and troubleshooting.
+title: AI-Powered Development with Syncfusion WinUI Controls | Syncfusion®
+description: Master AI-powered development with Syncfusion® WinUI controls using MCP Server and skills. Learn which approach fits the workflow and get better results.
 platform: winui
 control: AI AssistView
 documentation: ug
