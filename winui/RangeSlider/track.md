@@ -3,7 +3,7 @@ layout: post
 title: Track in WinUI RangeSlider | Syncfusion®
 description: Customize the track in the Syncfusion® WinUI RangeSlider control including color, height, and styling options.
 platform: WinUI
-control: Range Slider
+control: SfRangeSlider
 documentation: ug
 ---
 

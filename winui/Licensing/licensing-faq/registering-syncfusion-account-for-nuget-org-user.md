@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Register Account for NuGet.org Users in WinUI | Syncfusion®
+title: Register a Syncfusion® Account in WinUI | Syncfusion®
 description: Register a Syncfusion® account to obtain a trial license key when using Syncfusion® WinUI packages from NuGet.org.
 platform: WinUI
 control: Essential Studio

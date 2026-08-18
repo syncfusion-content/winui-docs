@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WinUI MCP Server Configuration Guide | Syncfusion®
+title: Syncfusion WinUI MCP Server | Syncfusion®
 description: Configure and use the Syncfusion® WinUI MCP Server for intelligent code generation, documentation access, and troubleshooting.
 platform: winui
 control: Getting started with Syncfusion WinUI MCP Server

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion WinUI Slider Control | Syncfusion®
-description: Learn Key Features in WinUI Tooltip using Syncfusion® controls. It supports data operations, UI customization, and enterprise features.
+description: Key features in Syncfusion® WinUI Tooltip include rich content display, UI customization, positioning options, and interactive experiences.
 platform: WinUI
 control: SfSlider
 documentation: ug
