@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WinUI Calendar Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio WinUI Calendar control, its key features, calendar functionality, and more details.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendar
 documentation: ug
 ---

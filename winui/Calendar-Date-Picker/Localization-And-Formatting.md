@@ -2,7 +2,7 @@
 layout: post
 title: Localization and Formatting in WinUI Calendar Date Picker | Syncfusion
 description: Learn how to localize and customize date formats in WinUI Calendar Date Picker control with different cultures.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendarDatePicker
 documentation: ug
 ---

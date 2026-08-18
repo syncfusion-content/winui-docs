@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion WinUI Time Picker Control | Syncfusion
 description: Learn about introduction of Syncfusion Essential Studio WinUI Time Picker control, its key features, time selection functionality, and more details.
-platform: scheduler-sdk
+platform: winui
 control: SfTimePicker
 documentation: ug
 ---

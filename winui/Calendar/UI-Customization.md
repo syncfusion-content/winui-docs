@@ -2,7 +2,7 @@
 layout: post
 title: UI Customization in WinUI Calendar | Syncfusion
 description: Learn about UI customization options available in WinUI Calendar control for styling and appearance.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendar
 documentation: ug
 ---

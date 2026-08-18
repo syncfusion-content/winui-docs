@@ -2,7 +2,7 @@
 layout: post
 title: Navigation in WinUI Calendar Date Picker | Syncfusion
 description: Learn how to navigate between month, year, decade and century views in WinUI Calendar Date Picker control.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendarDatePicker
 documentation: ug
 ---

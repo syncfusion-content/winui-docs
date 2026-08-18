@@ -2,7 +2,7 @@
 layout: post
 title: Preset Items in WinUI Calendar DateRange Picker | Syncfusion
 description: Learn how to show preset items in WinUI Calendar DateRange Picker dropdown for quick date range selection.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
