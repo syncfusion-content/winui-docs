@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CI License Validation in WinUI | Syncfusion®
-description: Learn how to register a Syncfusion® license key for license validation in a Syncfusion application.
+description: Learn how to register a Syncfusion® license key in your application to complete license validation and unlock product features.
 platform: WinUI
 control: Essential Studio
 documentation: ug
