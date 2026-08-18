@@ -2,7 +2,7 @@
 layout: post
 title: Localization and Formatting in WinUI Time Picker | Syncfusion
 description: Learn how to localize and customize time formats in WinUI Time Picker control for global applications.
-platform: scheduler-sdk
+platform: winui
 control: SfTimePicker
 documentation: ug
 ---

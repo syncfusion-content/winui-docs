@@ -2,7 +2,7 @@
 layout: post
 title: Week Numbers in WinUI Calendar Date Picker | Syncfusion
 description: Learn about week number features in WinUI Calendar Date Picker control for better date navigation and planning.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendarDatePicker
 documentation: ug
 ---

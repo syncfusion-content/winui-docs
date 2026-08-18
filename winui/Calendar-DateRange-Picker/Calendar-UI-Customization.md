@@ -2,7 +2,7 @@
 layout: post
 title: UI Customization in WinUI Calendar DateRange Picker | Syncfusion
 description: Learn how to customize the calendar UI in WinUI Calendar DateRange Picker dropdown with various styling options.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
 ---

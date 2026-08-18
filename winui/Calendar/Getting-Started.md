@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with WinUI Calendar | Syncfusion
 description: Learn how to get started with the Syncfusion WinUI Calendar control. Explore setup, features, examples, and customization options.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendar
 documentation: ug
 ---

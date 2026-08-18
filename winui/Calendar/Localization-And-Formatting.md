@@ -2,7 +2,7 @@
 layout: post
 title: Localization and Formatting in WinUI Calendar | Syncfusion
 description: Learn how to localize and customize date formats in WinUI Calendar control for global applications and cultures.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendar
 documentation: ug
 

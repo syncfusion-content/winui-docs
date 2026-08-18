@@ -2,7 +2,7 @@
 layout: post
 title: Navigation in WinUI Calendar | Syncfusion
 description: Learn how to navigate between month, year, decade and century views in WinUI Calendar control with ease.
-platform: scheduler-sdk
+platform: winui
 control: SfCalendar
 documentation: ug
 ---
