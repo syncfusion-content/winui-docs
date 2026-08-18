@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion WinUI offline installer - Syncfusion
-description: Learn here about how to download the Syncfusion WinUI offline installer from our Syncfusion website with license.
+title: How to download WinUI offline installer | Syncfusion®
+description: Learn to download Syncfusion® WinUI offline installer from Syncfusion® website for trial or licensed.
 platform: winui
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Downloading Syncfusion WinUI offline installer
+# How to download Syncfusion® WinUI offline installer
 
 The Syncfusion WinUI installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/winui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion license and unlock keys - Syncfusion
-description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
+title: License and Unlock Keys in WinUI | Syncfusion®
+description: Understand Syncfusion® license and unlock keys in WinUI, including their differences, usage, and validation requirements.
 platform: WinUI
 control: Essential Studio
 documentation: ug
@@ -16,7 +16,7 @@ margin-top: 1.5em;     margin-bottom: 1.5em;
 }
 </style>
 
-# Syncfusion Licensing Overview
+# License and Unlock Keys in Syncfusion WinUI
 
 We have introduced a new licensing system starting with version 16.2.0.x release of Essential Studio. These modifications apply to all evaluators and only to paid customers who use NuGet packages from [nuget.org](https://www.nuget.org/). Starting with v16.2.0.x, if you use the evaluation installer or the NuGet feed to reference Syncfusion assemblies, you must also include the corresponding platform and version license key in your projects.
 
@@ -28,7 +28,7 @@ Following licensing error will be shown if the license key is not registered in 
 
 <div id="license">
 
-This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this <a href="/winui/licensing/overview">help topic</a> for more information 
+This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this <a href="/winui/licensing/overview" aria-label="WinUI licensing help topic">help topic</a> for more information 
 
 </div>
 

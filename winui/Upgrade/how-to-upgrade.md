@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrading Syncfusion WinUI installer to a latest version - Syncfusion
-description: Learn here about the how upgrade Syncfusion WinUI installer to a latest version from website and control panel.
+title: Upgrade WinUI Installer to the Latest Version | Syncfusion®
+description: Upgrade the Syncfusion® WinUI installer to the latest version using the website download or Control Panel update options.
 platform: winui
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion WinUI installer to a latest version
+# Upgrade Syncfusion® WinUI Installer to the Latest Version
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

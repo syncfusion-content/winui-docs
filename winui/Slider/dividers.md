@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dividers in WinUI Slider control | Syncfusion
-description: Learn here all about Dividers feature of Syncfusion WinUI Slider(SfSlider) control with height, width support and more.
+title: Dividers in WinUI Slider | Syncfusion®
+description: Show dividers in the WinUI Slider using Syncfusion® controls, including UI customization and enterprise features.
 platform: WinUI
 control: SfSlider
 documentation: ug

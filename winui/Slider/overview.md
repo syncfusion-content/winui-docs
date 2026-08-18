@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WinUI Slider control | Syncfusion
-description: Learn here all about introduction of Syncfusion WinUI Slider(SfSlider) control with key features and more.
+title: About Syncfusion WinUI Slider Control | Syncfusion®
+description: Key features in Syncfusion® WinUI Tooltip include rich content display, UI customization, positioning options, and interactive experiences.
 platform: WinUI
 control: SfSlider
 documentation: ug
 ---
 
-# WinUI Slider Overview
+# About Syncfusion® WinUI Slider Control
 
 The Syncfusion [WinUI Slider](https://www.syncfusion.com/winui-controls/slider) is a highly interactive UI control, allowing users to select a single value from a range of values. It provides rich features such as labels, ticks, dividers, thumb styles, and tooltips.
 

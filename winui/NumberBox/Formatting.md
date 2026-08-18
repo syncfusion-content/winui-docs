@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Change number format in WinUI NumberBox | Syncfusion
-description: Learn here about changing the number format of Syncfusion WinUI NumberBox (SfNumberBox) control and more.
+title: Number Formatting in WinUI NumberBox | Syncfusion®
+description: Change and customize number formats in Syncfusion® WinUI NumberBox  to display values with the required formatting.
 platform: WinUI
 control: SfNumberBox
 documentation: ug
 ---
 
-# Value formatting with WinUI NumberBox
+# Number Formatting in Syncfusion<sup>®</sup> WinUI NumberBox
 
 This section explains how to change the value format of the [NumberBox](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfNumberBox.html) control using `NumberFormatter` and `CustomFormat` properties.
 
