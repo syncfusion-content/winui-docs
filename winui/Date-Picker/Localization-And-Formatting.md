@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Localization and Formatting in WinUI Date Picker | Syncfusion
-description: This section describes how to localize and format the Date Picker (SfDatePicker) control in a WinUI application.
-platform: WinUI
+description: Learn how to localize and customize date formats in WinUI Date Picker control for global applications.
+platform: scheduler-sdk
 control: SfDatePicker
 documentation: ug
 ---
