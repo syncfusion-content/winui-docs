@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Dropdown Customization in WinUI Date Picker control | Syncfusion
-description: This section describes about how to customize the Date Picker (SfDatePicker) control dropdown into WinUI application and its basic features.
-platform: WinUI
+title: Dropdown Customization in WinUI Date Picker | Syncfusion
+description: Learn how to customize the date picker dropdown in WinUI Date Picker control for better user experience.
+platform: winui
 control: SfDatePicker
 documentation: ug
 ---
