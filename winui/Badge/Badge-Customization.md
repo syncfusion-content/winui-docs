@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in WinUI Badge control | Syncfusion
-description: Learn here all about the customization features in Syncfusion WinUI Badge control with more colors, shapes, and UI custom support.
+title: Customization in WinUI Badge | Syncfusion®
+description: Customize the Syncfusion® WinUI Badge control with custom colors, shapes, UI templates, stroke, rotation, opacity, and other visual settings.
 platform: WinUI
 control: SfBadge
 documentation: ug
 ---
 
-# Customization in WinUI Badge
+# How to customize the Syncfusion® WinUI Badge Control
 
 This section explains the customization features available in the WinUI [Badge](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBadge.html) control.
 

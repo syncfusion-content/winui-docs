@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion® WinUI UI Builder Skill for AI Assistants | Syncfusion®
+title: WinUI UI Builder Skill for AI Assistants | Syncfusion®
 description: Install Syncfusion® WinUI UI Builder to generate production-ready WinUI controls from natural-language prompts.
 control: Skills
 platform: winui

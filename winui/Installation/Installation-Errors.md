@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation Errors in WinUI - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion WinUI Components installation.
+title: Installation Errors in WinUI | Syncfusion®
+description: Resolve common installation errors in Syncfusion® WinUI components with troubleshooting steps and recommended solutions.
 platform: winui
 control: Essential Studio
 documentation: ug
 ---
 
-# Common installation errors
+# Installation Errors in Syncfusion<sup>&reg;</sup> WinUI
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
