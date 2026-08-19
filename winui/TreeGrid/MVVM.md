@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MVVM in WinUI SfTreeGrid | Syncfusion®
-description: MVVM in SfTreeGrid enables binding of selected items, commands, and behaviors for structured and maintainable application design.
+title: MVVM in WinUI TreeGrid | Syncfusion®
+description: MVVM in TreeGrid enables binding of selected items, commands, and behaviors for structured and maintainable application design.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# MVVM in WinUI SfTreeGrid
+# MVVM in WinUI TreeGrid
 
 This section explains various MVVM requirements using SfTreeGrid.
 

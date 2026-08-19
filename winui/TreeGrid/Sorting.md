@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in WinUI SfTreeGrid | Syncfusion®
-description: Sorting in SfTreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
+title: Sorting in WinUI TreeGrid | Syncfusion®
+description: Sorting in TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Sorting in WinUI SfTreeGrid
+# Sorting in WinUI TreeGrid
 
 SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowSortingProperty) property to `true`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizing in WinUI SfTreeGrid | Syncfusion®
-description: Column Sizing in SfTreeGrid adjusts column widths automatically or manually using the ColumnWidthMode property.
+title: Column Sizing in WinUI TreeGrid | Syncfusion®
+description: Column Sizing in TreeGrid adjusts column widths automatically or manually using the ColumnWidthMode property.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Column Sizing in WinUI SfTreeGrid
+# Column Sizing in WinUI TreeGrid
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnWidthMode) or [TreeGridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnWidthMode) property. 
 

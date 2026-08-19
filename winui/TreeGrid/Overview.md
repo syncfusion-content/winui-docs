@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Syncfusion WinUI SfTreeGrid Control | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio Windows Forms SfTreeGrid control and more details.
+title: About Syncfusion WinUI TreeGrid Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms TreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# About Syncfusion WinUI SfTreeGrid Control
+# About Syncfusion WinUI TreeGrid Control
 
 The Syncfusion<sup>®</sup> [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) is a data-oriented control that displays self-relational data in a tree-structure user interface like a multicolumn tree view. The data can be loaded on demand. The control's rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering. 
 

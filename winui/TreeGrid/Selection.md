@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in WinUI SfTreeGrid | Syncfusion®
-description: Selection in SfTreeGrid supports row and cell selection with navigation modes and flexible selection behavior.
+title: Selection in WinUI TreeGrid | Syncfusion®
+description: Selection in TreeGrid supports row and cell selection with navigation modes and flexible selection behavior.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Selection in WinUI SfTreeGrid
+# Selection in WinUI TreeGrid
 
 SfTreeGrid allows you to select one or more rows. 
 

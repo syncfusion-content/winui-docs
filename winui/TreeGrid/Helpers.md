@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers in WinUI SfTreeGrid | Syncfusion®
-description: Helpers in SfTreeGrid provide index resolver methods to identify rows, columns, and nodes, and include dispose support for efficient memory management.
+title: Helpers in WinUI TreeGrid | Syncfusion®
+description: Helpers in TreeGrid provide index resolver methods to identify rows, columns, and nodes, and include dispose support for efficient memory management.
 platform: winui
 control: TreeGrid
 documentation: ug
 ---
 
-# Helpers in WinUI SfTreeGrid
+# Helpers in WinUI TreeGrid
 
 ## IndexResolver
 

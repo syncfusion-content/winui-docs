@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Types in WinUI SfTreeGrid | Syncfusion®
-description: Column Types in SfTreeGrid support text, numbers, dates, times, checkboxes, templates, combos, and links with simple options for styling and formatting.
+title: Column Types in WinUI TreeGrid | Syncfusion®
+description: Column Types in TreeGrid support text, numbers, dates, times, checkboxes, templates, combos, and links with simple options for styling and formatting.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Column Types in WinUI SfTreeGrid
+# Column Types in WinUI TreeGrid
 
 SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.

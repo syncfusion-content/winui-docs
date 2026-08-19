@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Validation in WinUI SfTreeGrid | Syncfusion®
-description: Data Validation in SfTreeGrid uses INotifyDataErrorInfo and attributes to validate input and show errors.
+title: Data Validation in WinUI TreeGrid | Syncfusion®
+description: Data Validation in TreeGrid uses INotifyDataErrorInfo and attributes to validate input and show errors.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Data Validation in WinUI SfTreeGrid
+# Data Validation in WinUI TreeGrid
 
 SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
