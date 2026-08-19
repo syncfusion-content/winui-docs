@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in WinUI SfTreeGrid | Syncfusion®
-description: Learn about Clipboard Operations in the Syncfusion® WinUI SfTreeGrid control. Copy and paste grid data seamlessly with flexible options.
+description: Clipboard Operations in SfTreeGrid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
 platform: winui
 control: SfTreeGrid
 documentation: ug

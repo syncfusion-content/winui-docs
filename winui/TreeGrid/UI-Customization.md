@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization in WinUI SfTreeGrid | Syncfusion®
-description: Customize the UI in the Syncfusion® WinUI SfTreeGrid control by styling the column header to create a clean and user‑friendly layout.
+description: UI Customization in SfTreeGrid styles column headers and grid visuals using resource keys and templates.
 platform: winui
 control: SfTreeGrid
 documentation: ug

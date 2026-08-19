@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion WinUI SfTreeGrid Control | Syncfusion®
-description: Learn about introduction of the Syncfusion® Essential Studio WinUI SfTreeGrid control and more details.
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms SfTreeGrid control and more details.
 platform: winui
 control: TreeGrid
 documentation: ug
