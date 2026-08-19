@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Columns in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Columns support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with automatic generating support and more.
+title: Columns in WinUI TreeGrid | Syncfusion®
+description: Columns in TreeGrid enable adding, removing, customizing, resizing, and reordering with flexible options for layout and interaction.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Node CheckBox in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Node CheckBox support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
+title: Node CheckBox in WinUI TreeGrid | Syncfusion®
+description: Node CheckBox in TreeGrid adds checkboxes to nodes for selection, tri-state, and recursive checking.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 # Node CheckBox in WinUI TreeGrid

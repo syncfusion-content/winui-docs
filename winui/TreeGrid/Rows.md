@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Rows in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Rows support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with header width support and more.
+title: Rows in WinUI TreeGrid | Syncfusion®
+description: Rows in TreeGrid manages row headers, indicators, and customization options for different row types.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
