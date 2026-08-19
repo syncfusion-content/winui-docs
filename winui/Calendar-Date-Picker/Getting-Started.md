@@ -152,7 +152,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Header and description
 This section explains the `Header` and `Description` properties of the CalendarDatePicker.
-#### Header
+### Header
 The `Header` property is used to display the title for the `CalendarDatePicker` control.
      
 {% tabs %}
