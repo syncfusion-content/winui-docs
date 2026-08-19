@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Release Notes in Syncfusion® WinUI AI Coding Assistants | Syncfusion®
-description: Release notes for Syncfusion® WinUI AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates.
+title: Release Notes - Syncfusion WinUI AI Coding Assistants | Syncfusion®
+description: Explore the release notes for Syncfusion® WinUI AI Coding Assistants, covering MCP Server, Skills, and Agentic UI Builder updates across all versions.
 platform: WinUI
 control: Syncfusion WinUI AI Coding Assistants Release Notes
 documentation: ug
