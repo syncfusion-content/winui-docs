@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Localization and Formatting in Calendar DateRange Picker | Syncfusion
-description: This section describes how to localize and change the formats in drop-down calendar of Calendar DateRange Picker (SfCalendarDateRangePicker) control.
-platform: WinUI
+description: Learn how to localize and customize date formats in WinUI Calendar DateRange Picker control with different cultures.
+platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
 ---
