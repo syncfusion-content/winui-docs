@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility support for Syncfusion WinUI Controls | Syncfusion
-description: Learn about accessibility in the Syncfusion WinUI controls, including UI Automation, keyboard, and high contrast theme support.
+title: Accessibility support for Syncfusion® WinUI Controls | Syncfusion®
+description: Explore accessibility features in Syncfusion® WinUI controls, including UI Automation, keyboard navigation, and high contrast theme support.
 platform: winui
 control: Accessibility
 documentation: ug
 ---
 
-# Accessibility for Syncfusion<sup>&reg;</sup> WinUI Controls
+# Accessibility Support for Syncfusion<sup>®</sup> WinUI Controls
 
 Accessibility is about making a Windows application usable in a wide range of environments for people who use technology and approach a UI with a wide range of experiences. There are many different types of disabilities in the world including mobility, vision, color perception, hearing, speech, cognition, and literacy. However, these requirements can be met by using the accessibility features of Syncfusion<sup>&reg;</sup> WinUI controls. The controls support assistive technologies like screen readers, which take advantage of accessibility frameworks.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Dropdown Spinner Customization in WinUI Time Picker | Syncfusion
-description: This section describes how to customize the Time Picker (SfTimePicker) control dropdown spinner in a WinUI application and its basic features.
-platform: WinUI
+description: Learn how to customize the dropdown spinner in WinUI Time Picker control for better user experience.
+platform: winui
 control: SfTimePicker
 documentation: ug
 ---
 
 # Dropdown Spinner Customization in WinUI Time Picker
 
-This section describes various dropdown spinner customization options available in the [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
+This section describes about various dropdown spinner customization options available in [Time Picker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html) control.
 
 ## Change the size of dropdown cells
 

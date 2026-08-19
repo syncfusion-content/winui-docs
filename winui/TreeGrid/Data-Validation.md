@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data Validation in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Data Validation support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
+title: Data Validation in WinUI TreeGrid | Syncfusion®
+description: Data Validation in TreeGrid uses INotifyDataErrorInfo and attributes to validate input and show errors.
 platform: winui
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

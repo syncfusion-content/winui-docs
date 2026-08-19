@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion licensing errors - Syncfusion 
-description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion WinUI applications.
+title: Overview of Licensing Errors in WinUI | Syncfusion® 
+description: Resolve common Syncfusion® licensing errors in WinUI applications and ensure successful license validation and activation.
 platform: WinUI
 control: Essential Studio
 documentation: ug
 ---
 
-# Syncfusion Licensing Errors
+# Syncfusion Licensing Errors in WinUI
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 

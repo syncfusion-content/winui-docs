@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion license registration - Syncfusion
-description: Learn here about how to register Syncfusion WinUI license key for WinUI application for license validation.
+title: Register WinUI License Key | Syncfusion®
+description: Register a Syncfusion® WinUI license key in your application to enable license validation and ensure proper product activation.
 platform: WinUI
 control: Essential Studio
 documentation: ug
 ---
 
-# Register Syncfusion license key in a WinUI application
+# Register Syncfusion<sup>®</sup> License Key in a WinUI Application
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license.
 
@@ -42,7 +42,7 @@ N> * Place the license key between double quotes.  Also, ensure that Syncfusion.
 
 I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](https://help.syncfusion.com/winui/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
-### WinUI 
+## WinUI 
 
 You can register the license key in App constructor of **App.xaml.cs** in C#. If App constructor not available in **App.xaml.cs**, create the "App()" constructor in **App.xaml.cs** and register the license key inside the constructor. In Visual Basic, register the license code in **App.xaml.vb**.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Thumb and Thumb Overlay in WinUI RangeSlider control | Syncfusion
-description: Learn about Thumb and Thumb Overlay support in Syncfusion WinUI RangeSlider(SfRangeSlider) control and more.
+title: Thumb and Thumb Overlay in WinUI RangeSlider | Syncfusion®
+description: Customize thumb and thumb overlay in the Syncfusion® WinUI RangeSlider including types, sizes, colors, and styles.
 platform: WinUI
 control: SfRangeSlider
 documentation: ug
 ---
 
-# Thumb and Thumb Overlay in WinUI RangeSlider (Range Slider)
+# Thumb and Thumb Overlay in WinUI RangeSlider
 
 This section explains how to customize the thumb and thumb overlay in the RangeSlider.
 
