@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizing in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Column Sizing support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
+title: Column Sizing in WinUI SfTreeGrid | Syncfusion®
+description: Column Sizing in SfTreeGrid adjusts column widths automatically or manually using the ColumnWidthMode property.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Column Sizing in WinUI TreeGrid
+# Column Sizing in WinUI SfTreeGrid
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnWidthMode) or [TreeGridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnWidthMode) property. 
 
@@ -111,7 +111,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfTreeGr
 
 N> The `TreeGridColumn.ColumnWidthMode` takes higher priority than the `SfTreeGrid.ColumnWidthMode`.
 
-### Refreshing ColumnSizer at runtime
+## Refreshing ColumnSizer at runtime
 
 You can refresh the `ColumnSizer` at runtime by calling [SfTreeGrid.ColumnSizer.Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnSizer.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumnSizer_Refresh) method.
 SfTreeGrid support to recalculates the column auto width by calling reset methods of `ColumnSizer`. [ColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [ColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grids_GridColumnBase_) method reset the width to particular column.

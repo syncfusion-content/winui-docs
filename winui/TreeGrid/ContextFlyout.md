@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Flyout in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Context Flyout support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
-platform: winUI
+title: Context Flyout in WinUI SfTreeGrid | Syncfusion®
+description: Context Flyout in SfTreeGrid provides customizable right-click menus for quick actions on rows and headers.
+platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Context Flyout in WinUI TreeGrid
+# Context Flyout in WinUI SfTreeGrid
 
 SfTreeGrid provides an entirely customizable ContextFlyout to expose the functionalities on user interface. You can create ContextFlyout for different rows in an efficient manner.
 

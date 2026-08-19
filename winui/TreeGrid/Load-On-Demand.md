@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load On Demand in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Load On Demand support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
+title: Load On Demand in WinUI SfTreeGrid | Syncfusion®
+description: Load On Demand in SfTreeGrid allows expanding nodes dynamically and fetching child items only when needed, ensuring efficient handling of large data.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Load On Demand in WinUI TreeGrid
+# Load On Demand in WinUI SfTreeGrid
 
 SfTreeGrid supports to load the data in on-demand. It helps to load the child items from services when end-user expands the node. This can be achieved by using the [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand) command or [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event as follows.                                                                                          
 

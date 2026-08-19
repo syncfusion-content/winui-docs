@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Filtering support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with programmatic support and more.
+title: Filtering in WinUI SfTreeGrid | Syncfusion®
+description: Filtering in SfTreeGrid refines visible nodes with filter levels, programmatic filters, and UI filter.
 platform: winui
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Filtering in WinUI TreeGrid
+# Filtering in WinUI SfTreeGrid
 
 Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as the programmatic filters.
 
