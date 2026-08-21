@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in WinUI DataGrid | Syncfusion®
-description: Printing in DataGrid enables grid data to be printed with customizable layouts, page formatting, and clear data presentation options.
+title: Printing in WinUI Data Grid | Syncfusion®
+description: Printing in Data Grid enables grid data to be printed with customizable layouts, page formatting, and clear data presentation options.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Printing in WinUI DataGrid
+# Printing in WinUI Data Grid
 
 DataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Print) method.
 To display the print preview window, you need to pass the `Window` instance as a parameter to this method.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Virtualization in WinUI DataGrid | Syncfusion®
-description: Data virtualization in DataGrid improves performance by loading and processing large datasets on demand with efficient data retrieval techniques.
+title: Data Virtualization in WinUI Data Grid | Syncfusion®
+description: Data virtualization in Data Grid improves performance by loading and processing large datasets on demand with efficient data retrieval techniques.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Virtualization in WinUI DataGrid
+# Data Virtualization in WinUI Data Grid
 
 SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 

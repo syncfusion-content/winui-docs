@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoSize Columns in WinUI DataGrid | Syncfusion®
-description: AutoSize Columns in DataGrid automatically adjusts column widths based on content, headers, and available space, with customizable sizing options.
+title: AutoSize Columns in WinUI Data Grid | Syncfusion®
+description: AutoSize Columns in Data Grid automatically adjusts column widths based on content, headers, and available space, with customizable sizing options.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# AutoSize Columns in WinUI DataGrid
+# AutoSize Columns in WinUI Data Grid
 
 DataGrid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnWidthMode) or [GridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnWidthMode) property. Below is the list of predefined column sizing options available.
 

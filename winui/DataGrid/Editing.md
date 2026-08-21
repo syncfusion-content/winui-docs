@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing in WinUI DataGrid | Syncfusion®
-description: Editing in DataGrid enables users to modify cell values, validate input, update data, and control editing behavior efficiently.
+title: Editing in WinUI Data Grid | Syncfusion®
+description: Editing in Data Grid enables users to modify cell values, validate input, update data, and control editing behavior efficiently.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
 
-# Editing in WinUI DataGrid
+# Editing in WinUI Data Grid
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing) property.
 

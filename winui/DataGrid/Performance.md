@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance in WinUI DataGrid | Syncfusion®
-description: Performance features in DataGrid improve responsiveness through virtualization, efficient data processing, and optimized rendering for large datasets.
+title: Performance in WinUI Data Grid | Syncfusion®
+description: Performance features in Data Grid improve responsiveness through virtualization, efficient data processing, and optimized rendering for large datasets.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Performance in WinUI DataGrid
+# Performance in WinUI Data Grid
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
                                

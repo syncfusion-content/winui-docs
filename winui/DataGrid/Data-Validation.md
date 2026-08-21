@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation in WinUI DataGrid | Syncfusion®
-description: Data validation in DataGrid ensures data accuracy and integrity by validating user input and displaying error information during editing.
+title: Data Validation in WinUI Data Grid | Syncfusion®
+description: Data validation in Data Grid ensures data accuracy and integrity by validating user input and displaying error information during editing.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Validation in WinUI DataGrid
+# Data Validation in WinUI Data Grid
 
 SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
  
