@@ -129,7 +129,7 @@ Here, row heights are customized based on the large text content.
 
 <img src="Row-Height-Customization_images/winui-datagrid-auto-size-row-height.png" alt="Auto Size Row Height in WinUI DataGrid" width="100%" Height="Auto"/>
 
-#### GridRowSizingOptions
+### GridRowSizingOptions
 
 [GridRowSizingOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowSizingOptions.html) have the following properties,
 
