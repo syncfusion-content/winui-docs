@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Flyout in WinUI DataGrid | Syncfusion®
-description: Context flyout in DataGrid provides quick access to commands and actions through a customizable menu for enhanced user interaction.
+title: Context Flyout in WinUI Data Grid | Syncfusion®
+description: Context flyout in Data Grid provides quick access to commands and actions through a customizable menu for enhanced user interaction.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Context Flyout in WinUI DataGrid
+# Context Flyout in WinUI Data Grid
 
 DataGrid provides an entirely customizable context flyout to expose the functionality on user interface. You can create context flyout for different rows in an efficient manner. 
 

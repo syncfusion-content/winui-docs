@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with WinUI DataGrid | Syncfusion®
+title: Getting Started with WinUI Data Grid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/winui-controls/datagrid"
-description: Learn how to get started with the Syncfusion® WinUI DataGrid control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® WinUI Data Grid control. Explore setup, features, examples, and customization options.
 platform: WinUI
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Getting Started with WinUI DataGrid
+# Getting Started with WinUI Data Grid
 
 This section explains the steps required to add the DataGrid control and binding data in datagrid control. This section covers only basic features needed to get started with [WinUi DataGrid](https://www.syncfusion.com/winui-controls/datagrid) control.
 
