@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Operations in WinUI DataGrid | Syncfusion®
-description: Clipboard operations in DataGrid enable cutting, copying, and pasting records or cells within the grid and across external applications.
+title: Clipboard Operations in WinUI Data Grid | Syncfusion®
+description: Clipboard operations in Data Grid enable cutting, copying, and pasting records or cells within the grid and across external applications.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Clipboard Operations in WinUI DataGrid
+# Clipboard Operations in WinUI Data Grid
 
 SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.DataTransfer.Clipboard?view=winrt-19041) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
 

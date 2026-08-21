@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Master-Details View in WinUI DataGrid | Syncfusion®
-description: Master-Details View in DataGrid displays hierarchical data with expandable master-detail relationships, enabling organized navigation and data exploration.
+title: Master-Details View in WinUI Data Grid | Syncfusion®
+description: Master-Details View in Data Grid displays hierarchical data with expandable master-detail relationships, enabling organized navigation and data exploration.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 --- 
 
-# Master-Details View in WinUI DataGrid
+# Master-Details View in WinUI Data Grid
 
 SfDataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 

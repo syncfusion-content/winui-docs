@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Drag and Drop in WinUI DataGrid | Syncfusion®
-description: Row drag and drop in DataGrid enables easy row reordering and record movement within or across grids for flexible data management.
+title: Row Drag and Drop in WinUI Data Grid | Syncfusion®
+description: Row drag and drop in Data Grid enables easy row reordering and record movement within or across grids for flexible data management.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Row Drag and Drop in WinUI DataGrid
+# Row Drag and Drop in WinUI Data Grid
 
 [WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the [AllowRowDragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowRowDragDrop) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between DataGrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/apps/design/controls/listview-and-gridview) , [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) and [SfTreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html). 
 

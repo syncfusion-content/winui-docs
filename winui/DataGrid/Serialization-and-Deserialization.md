@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization and Deserialization in WinUI DataGrid | Syncfusion®
-description: Serialization and deserialization in DataGrid allow grid settings and state to be saved, persisted, and restored across sessions.
+title: Serialization and Deserialization in WinUI Data Grid | Syncfusion®
+description: Serialization and deserialization in Data Grid allow grid settings and state to be saved, persisted, and restored across sessions.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Serialization and Deserialization in WinUI DataGrid
+# Serialization and Deserialization in WinUI Data Grid
 
 SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-10.0&redirectedfrom=MSDN).
  
