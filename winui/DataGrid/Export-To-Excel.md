@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To Excel in WinUI DataGrid | Syncfusion®
-description: Export To Excel in DataGrid enables grid data to be exported to Excel files with support for formatting and customization options.
+title: Export To Excel in WinUI Data Grid | Syncfusion®
+description: Export To Excel in Data Grid enables grid data to be exported to Excel files with support for formatting and customization options.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Export To Excel in WinUI DataGrid
+# Export To Excel in WinUI Data Grid
 
 The [WinUI DataGrid](https://help.syncfusion.com/winui/datagrid/overview) supports exporting data to excel. Export unbound rows, unbound columns, merged cells, stacked headers, and Details View while exporting.
 

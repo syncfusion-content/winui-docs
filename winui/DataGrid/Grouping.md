@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping in WinUI DataGrid | Syncfusion®
-description: Grouping in DataGrid organizes and displays data in groups to improve readability, navigation, and data analysis.
+title: Grouping in WinUI Data Grid | Syncfusion®
+description: Grouping in Data Grid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Grouping in WinUI DataGrid
+# Grouping in WinUI Data Grid
 
 DataGrid allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
  
