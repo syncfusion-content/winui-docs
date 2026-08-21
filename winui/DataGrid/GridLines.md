@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Lines Customization in WinUI DataGrid | Syncfusion®
-description: Grid lines customization in DataGrid lets you control the visibility and appearance of horizontal and vertical lines for records, headers, and details views.
+title: Grid Lines Customization in WinUI Data Grid | Syncfusion®
+description: Grid lines customization in Data Grid lets you control the visibility and appearance of horizontal and vertical lines for records, headers, and details views.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Grid Lines Customization in WinUI DataGrid
+# Grid Lines Customization in WinUI Data Grid
 
 SfDataGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 

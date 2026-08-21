@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in WinUI DataGrid | Syncfusion®
-description: Rows in DataGrid support row headers, header rows, frozen panes, and row customization features for improved data organization.
+title: Rows in WinUI Data Grid | Syncfusion®
+description: Rows in Data Grid support row headers, header rows, frozen panes, and row customization features for improved data organization.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Rows in WinUI DataGrid
+# Rows in WinUI Data Grid
 
 This section explains about various row types in SfDataGrid.
 

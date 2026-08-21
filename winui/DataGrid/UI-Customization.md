@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Customization in WinUI DataGrid | Syncfusion®
-description: UI customization in DataGrid allows styling, templates, and visual elements to be tailored for a personalized appearance and experience.
+title: UI Customization in WinUI Data Grid | Syncfusion®
+description: UI customization in Data Grid allows styling, templates, and visual elements to be tailored for a personalized appearance and experience.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# UI Customization in WinUI DataGrid
+# UI Customization in WinUI Data Grid
 
 The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and using key's.
  

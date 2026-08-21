@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacked Headers in WinUI DataGrid | Syncfusion®
-description: Stacked headers in DataGrid group related columns under custom header rows, improving organization and enhancing data readability.
+title: Stacked Headers in WinUI Data Grid | Syncfusion®
+description: Stacked headers in Data Grid group related columns under custom header rows, improving organization and enhancing data readability.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Stacked Headers in WinUI DataGrid
+# Stacked Headers in WinUI Data Grid
 
 SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_StackedHeaderRows). You can group one or more columns under each stacked header.
 

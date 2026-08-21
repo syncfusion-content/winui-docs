@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WinUI DataGrid | Syncfusion®
-description: Data binding in DataGrid enables seamless integration with data sources, supporting efficient data display, updates, and synchronization.
+title: Data Binding in WinUI Data Grid | Syncfusion®
+description: Data binding in Data Grid enables seamless integration with data sources, supporting efficient data display, updates, and synchronization.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Binding in WinUI DataGrid
+# Data Binding in WinUI Data Grid
 
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ItemsSource) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filter Row in WinUI DataGrid | Syncfusion®
-description: Filter row in DataGrid provides built-in editors and filter conditions to quickly find, refine, and manage data records.
+title: Filter Row in WinUI Data Grid | Syncfusion®
+description: Filter row in Data Grid provides built-in editors and filter conditions to quickly find, refine, and manage data records.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Filter Row in WinUI DataGrid
+# Filter Row in WinUI Data Grid
 
 SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html) property.
 

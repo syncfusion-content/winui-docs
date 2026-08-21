@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Rows in WinUI DataGrid | Syncfusion®
-description: Unbound rows in DataGrid display custom data independently of the data source and support flexible positioning and data entry scenarios.
+title: Unbound Rows in WinUI Data Grid | Syncfusion®
+description: Unbound rows in Data Grid display custom data independently of the data source and support flexible positioning and data entry scenarios.
 platform: winui
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Unbound Rows in WinUI DataGrid
+# Unbound Rows in WinUI Data Grid
 
 SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnboundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be printed.
 
