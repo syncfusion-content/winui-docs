@@ -247,9 +247,9 @@ The [SplineSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 ## See Also
 
-* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
-* [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251)
-* [How to create a WinUI Spline Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11901)
+* [How to create a WinUI Line Chart (WinUI Cartesian Charts)](https://support.syncfusion.com/kb/article/12018)
+* [How to create a dotted line in WinUI Chart (WinUI Cartesian Charts)](https://support.syncfusion.com/kb/article/12251)
+* [How to create a WinUI Spline Chart (WinUI Cartesian Charts)](https://support.syncfusion.com/kb/article/11901)
 </chart:SfCartesianChart>
 
 {% endhighlight %}

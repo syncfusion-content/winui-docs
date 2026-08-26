@@ -249,6 +249,6 @@ N> You can refer to our [WinUI Pie Chart](https://www.syncfusion.com/winui-contr
 
 ## See Also
 
-- [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
+- [How to create WinUI Pie Chart (WinUI Circular Charts)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
 - [How to Show the "others" category values in WinUI Pie Chart data label?](https://support.syncfusion.com/kb/article/12681/how-to-show-the-others-category-values-in-winui-pie-chart-data-label)
-- [How to explode the pie chart slice in WinUI Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12987/how-to-explode-the-pie-chart-slice-in-winui-chart-sfcircularchart)
+- [How to explode the pie chart slice in WinUI Chart (WinUI Circular Charts)?](https://support.syncfusion.com/kb/article/12987/how-to-explode-the-pie-chart-slice-in-winui-chart-sfcircularchart)

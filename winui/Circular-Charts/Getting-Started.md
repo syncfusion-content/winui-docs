@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to populate the circular chart with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
-## Creating an application with WinUI Chart (SfCircularChart)
+## Creating an application with WinUI Circular Charts
 
 1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Add reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
@@ -371,4 +371,4 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## See Also
 
-- [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
+- [How to create WinUI Pie Chart (WinUI Circular Charts)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-WinUI Circular Charts)
