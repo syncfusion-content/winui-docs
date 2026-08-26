@@ -74,7 +74,7 @@ public sealed partial class GettingStartedPage : Page
 
 You can set the required symbology for the Barcode based on the input value by initializing the respective symbology instance using the [Symbology](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Barcode_SfBarcode_Symbology) property. In the following code sample, the QR code has been set as the barcode symbology.
 
-N> [Supported Symbology types in SfBarcode](https://help.syncfusion.com/winui/barcode/symbology-types)
+N> [Supported Symbology types in WinUI Barcode Generator](https://help.syncfusion.com/winui/barcode/symbology-types)
 
 {% tabs %}
 {% highlight xaml %}
