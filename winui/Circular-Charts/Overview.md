@@ -27,6 +27,6 @@ Syncfusion® [WinUI Circular Charts](https://www.syncfusion.com/winui-controls/c
 
 ## See Also
 
-- [How to create WinUI Pie Chart (WinUI Circular Charts)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
+- [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-sfcircularchart)
 - [How to use the drill-down functionality in WinUI Circular Charts.](https://support.syncfusion.com/kb/article/13011/how-to-use-the-drill-down-functionality-in-winui-chart-sfcircularchart)
 

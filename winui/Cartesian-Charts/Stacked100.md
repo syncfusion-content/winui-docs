@@ -260,4 +260,4 @@ N> You can refer to our [WinUI 100% Stacked Area Chart](https://www.syncfusion.c
 
 ## See Also
 
-* [How to create a WinUI Column Chart (WinUI Cartesian Charts)](https://support.syncfusion.com/kb/article/12031)
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)

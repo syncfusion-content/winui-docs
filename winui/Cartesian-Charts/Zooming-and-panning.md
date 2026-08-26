@@ -263,4 +263,4 @@ chart.ZoomPanBehavior = zooming;
 
 ## See Also
 
-* [How to create a WinUI Line Chart (WinUI Cartesian Charts)](https://support.syncfusion.com/kb/article/12018)
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)

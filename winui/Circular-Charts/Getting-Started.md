@@ -371,4 +371,4 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## See Also
 
-- [How to create WinUI Pie Chart (WinUI Circular Charts)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-WinUI Circular Charts)
+- [How to create WinUI Pie Chart (SfCircularChart)?](https://support.syncfusion.com/kb/article/12014/how-to-create-winui-pie-chart-WinUI Circular Charts)
