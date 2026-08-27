@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: CRUD Operations in WinUI TreeView | Syncfusion®
 description: Perform add, delete, and update operations on TreeView nodes with built-in editing and deletion support.
@@ -13,7 +13,7 @@ The `TreeView` listens and responds to the CRUD operations such as add, delete, 
 
 ## Add nodes
 
-The TreeView allows the user to add a new node directly by adding a new data object to the underlying collection in bound mode and by adding a [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
+The WinUI TreeView allows the user to add a new node directly by adding a new data object to the underlying collection in bound mode and by adding a [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) to the [Nodes](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_Nodes) collection in unbound mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -27,7 +27,7 @@ sfTreeView.Nodes.Add(new TreeViewNode(){ Content = "Germany" });
 
 ## Delete nodes
 
-The TreeView provides built-in support to delete the selected nodes in the user interface (UI) by pressing the <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
+The WinUI TreeView provides built-in support to delete the selected nodes in the user interface (UI) by pressing the <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfTreeView.AllowDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowDeleting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,4 +110,4 @@ private void TreeView_ItemDeleted (object sender, ItemDeletedEventArgs e)
 
 ## Modify nodes
 
-The TreeView allows users to modify the data of a node through its editing functionality. For more information, refers to the [Editing](https://help.syncfusion.com/winui/treeview/editing) documentation.
+The WinUI TreeView allows users to modify the data of a node through its editing functionality. For more information, refers to the [Editing](https://help.syncfusion.com/winui/treeview/editing) documentation.

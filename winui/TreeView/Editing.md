@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing in WinUI TreeView | Syncfusion®
 description: Edit TreeView nodes using templates, programmatic editing APIs, validation logic, and editing events.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in WinUI TreeView
 
-The TreeView provides support for editing and it can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode in a node by pressing the <kbd>F2</kbd> key only. The editing changes in a node will be committed only when the user moves to the next node or presses the <kbd>Enter</kbd> key.
+The WinUI TreeView provides support for editing and it can be enabled or disabled by using the [SfTreeView.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AllowEditing) property. You can enter edit mode in a node by pressing the <kbd>F2</kbd> key only. The editing changes in a node will be committed only when the user moves to the next node or presses the <kbd>Enter</kbd> key.
 
 It is necessary to define an [EditTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplate) or [EditTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_EditTemplateSelector) for bound mode to enable editing. For unbound mode, a text box will be loaded in edit mode by default.
 
@@ -60,7 +60,7 @@ treeView.AllowEditing = true;
 
 ### Begin editing
 
-The TreeView allows you to edit a node programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BeginEdit_Syncfusion_UI_Xaml_TreeView_TreeViewNode_) method.
+The WinUI TreeView allows you to edit a node programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_BeginEdit_Syncfusion_UI_Xaml_TreeView_TreeViewNode_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 
 ## Revert the edited changes while pressing the Escape key
 
-By default, the TreeView does not have support for rolling back the changes when pressing the <kbd>ESC</kbd> key while editing a TreeView node. However, it does support rolling back the changes when the underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject) interface.
+By default, the WinUI TreeView does not have support for rolling back the changes when pressing the <kbd>ESC</kbd> key while editing a WinUI TreeView node. However, it does support rolling back the changes when the underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject) interface.
 
 The user can take a backup of existing data of a node in the [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) method and can change the existing data to the current data in the [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) method to rollback the changes.
 

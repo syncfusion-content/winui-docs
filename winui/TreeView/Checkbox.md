@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: CheckBox Support in WinUI TreeView | Syncfusion®
 description: Enable check boxes for TreeView nodes, manage checked items, configure check states, and handle checkbox events.
@@ -13,13 +13,13 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 
 ## Working with CheckBox in Bound Mode
 
-When you are populating TreeView nodes from the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource), you can get or set the checked items by using the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
+When you are populating WinUI TreeView nodes from the [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemsSource), you can get or set the checked items by using the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property.
 
 The `TreeView` supports checking multiple items by binding the [CheckedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CheckedItems) property from the view model with an `ObservableCollection<object>` type.
 
 N> Set [ItemTemplateDataContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) as `Node` to bind the `TreeViewNode.IsChecked` property to the `CheckBox` in the `ItemTemplate`.
 
-N> The TreeView processes and sets [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) based on `CheckedItems` only when `ItemsSource` is bound.
+N> The WinUI TreeView processes and sets [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html#Syncfusion_UI_Xaml_TreeView_TreeViewNode_IsChecked) based on `CheckedItems` only when `ItemsSource` is bound.
 
 {% tabs %}
 {% highlight xaml %}

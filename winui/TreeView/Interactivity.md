@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactivity in WinUI TreeView | Syncfusion®
 description: Handle user interactions in TreeView items through tap, double-tap, and holding gestures by using built-in item interaction events.
@@ -15,7 +15,7 @@ This section explains how to interact with the [TreeView](https://help.syncfusio
 * `ItemDoubleTapped` - Triggered when an item is double-tapped.
 * `ItemHolding` - Triggered when an item is long pressed.
 
-## Interacting with TreeView items
+## Interacting with WinUI TreeView items
 
 ### ItemTapped event
 
