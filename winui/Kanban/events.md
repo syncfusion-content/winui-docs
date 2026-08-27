@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in WinUI Kanban | Syncfusion<sup>®</sup>
-description: Learn about Events support in Syncfusion<sup>®</sup> WinUI Kanban including card interactions, selection changes, drag-and-drop operations.
+title: Events in WinUI Kanban Board | Syncfusion<sup>®</sup>
+description: Learn about Events support in Syncfusion<sup>®</sup> WinUI Kanban Board including card interactions, selection changes, drag-and-drop operations.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Events in WinUI Kanban
+# Events in WinUI Kanban Board
 
 ## ColumnDragStarting
 

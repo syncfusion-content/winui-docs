@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swimlane in WinUI Kanban | Syncfusion<sup>®</sup>
-description: Learn about Swimlane support in Syncfusion<sup>®</sup> WinUI Kanban using the SwimlaneMappingPath property and customize swimlane headers.
+title: Swimlane in WinUI Kanban Board | Syncfusion<sup>®</sup>
+description: Learn about Swimlane support in Syncfusion<sup>®</sup> WinUI Kanban Board using the SwimlaneMappingPath property and customize swimlane headers.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Swimlane in WinUI Kanban
+# Swimlane in WinUI Kanban Board
 
 Swimlanes are horizontal categorizations of cards on the WinUI Kanban Board. They are used for grouping cards, which brings transparency to the workflow process. They allow you to categorize your workflow by projects, teams, users, or any other criteria you need.
 
@@ -209,9 +209,9 @@ public class ViewModel
 
 ## Customize swimlane header
 
-The WinUI Kanban control allows you to customize the appearance of swimlane headers using the [SwimlaneHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property. This enables you to create a unique design for the header displayed at the beginning of each swimlane group.
+The WinUI Kanban Board control allows you to customize the appearance of swimlane headers using the [SwimlaneHeaderTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property. This enables you to create a unique design for the header displayed at the beginning of each swimlane group.
 
-The following example code demonstrates, how to customize a swimlane header in the WinUI Kanban control.
+The following example code demonstrates, how to customize a swimlane header in the WinUI Kanban Board control.
 
 {% tabs %}
 {% highlight XAML hl_lines="4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70" %}

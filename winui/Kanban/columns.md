@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Columns in WinUI Kanban | Syncfusion<sup>®</sup>
-description: Learn about Columns support in Syncfusion<sup>®</sup> WinUI Kanban with category mapping, header templates, column reordering.
+title: Columns in WinUI Kanban Board | Syncfusion<sup>®</sup>
+description: Learn about Columns support in Syncfusion<sup>®</sup> WinUI Kanban Board with category mapping, header templates, column reordering.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Columns in WinUI Kanban
+# Columns in WinUI Kanban Board
 
-The WinUI Kanban control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in-progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
+The WinUI Kanban Board control organizes its layout into columns, each representing a distinct stage of a workflow, such as to-do, in-progress, testing, validation, and completed. It supports various operations, including drag-and-drop, swim lane, and column toggling, all based on the defined columns.
 
 ## Change column width
 
@@ -514,7 +514,7 @@ public class ViewModel
 
 ### Populating Multi-Category Columns with Cards
 
-The Kanban board allows user to render a single column by mapping multiple categories using [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). For example, you can map the `In Progress` and `Validated` types under the `In progress` column.
+The WinUI Kanban Board allows user to render a single column by mapping multiple categories using [Categories](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). For example, you can map the `In Progress` and `Validated` types under the `In progress` column.
 
 {% tabs %}
 {% highlight XAML hl_lines="5" %}
@@ -961,7 +961,7 @@ public class ViewModel
 
 ## Expand/Collapse column
 
-The Kanban allows you to programmatically expand or collapse columns using the [IsExpanded](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. By default, columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the kanban column header.
+The WinUI Kanban Board allows you to programmatically expand or collapse columns using the [IsExpanded](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property of [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) in the [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. By default, columns can be expanded or collapsed by tapping the toggle button placed at the top-right corner of the kanban column header.
 
 {% tabs %}
 {% highlight XAML hl_lines="4" %}
@@ -1096,7 +1096,7 @@ public class ViewModel
 
 ## Column drag and drop
 
-Columns can be reordered in the .NET WinUI Kanban control using built-in drag-and-drop.
+Columns can be reordered in the .NET WinUI Kanban Board control using built-in drag-and-drop.
 Enable this by setting the [`AllowColumnReorder`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AllowColumnReorder) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) to `true`. The default value is `false`.
 
 {% tabs %}
@@ -1292,7 +1292,7 @@ public class ViewModel
 
 ### Placeholder in WinUI Kanban control
 
-The placeholders in the WinUI Kanban control visually indicate the exact position where a card is dragged and where it will be placed within a Kanban column during a drag-and-drop operation.
+The placeholders in the WinUI Kanban Board control visually indicate the exact position where a card is dragged and where it will be placed within a WinUI Kanban Board column during a drag-and-drop operation.
 
 The appearance of drag-and-drop placeholders in the WinUI Kanban control can be customized by modifying the values of the predefined theme keys.
 
@@ -1446,9 +1446,9 @@ public class ViewModel
 
 ## Work-in-Progress (WIP) limit and indications
 
-The WinUI Kanban control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumCount) and [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumCount) properties in [KanbanColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html).
+The WinUI Kanban Board control allows users to set limits on the number of tasks in each column at every stage of the workflow, helping to prevent overload. The minimum and maximum number of items allowed in a column can be customized using the [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardColumn.html#Syncfusion_UI_Xaml_WinUI Kanban Board_WinUI Kanban BoardColumn_MinimumCount) and [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardColumn.html#Syncfusion_UI_Xaml_WinUI Kanban Board_WinUI Kanban BoardColumn_MaximumCount) properties in [WinUI Kanban BoardColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardColumn.html).
 
-The Kanban control also supports built-in error bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process. The error bar turns red when the column exceeds its [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumCount) and amber/yellow when the column falls below its [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumCount). The default color is the application accent color.
+The WinUI Kanban Board control also supports built-in error bars that change color when the WIP limit is exceeded or when a task fails validation, making it easier to quickly identify bottlenecks in the process. The error bar turns red when the column exceeds its [MaximumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardColumn.html#Syncfusion_UI_Xaml_WinUI Kanban Board_WinUI Kanban BoardColumn_MaximumCount) and amber/yellow when the column falls below its [MinimumCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardColumn.html#Syncfusion_UI_Xaml_WinUI Kanban Board_WinUI Kanban BoardColumn_MinimumCount). The default color is the application accent color.
 
 {% tabs %}
 {% highlight XAML hl_lines="4 5 6" %}

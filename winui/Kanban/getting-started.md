@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with WinUI Kanban control | Syncfusion
-description: Learn how to get started with the Syncfusion <sup>®</sup> WinUI Kanban control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI Kanban Board control | Syncfusion
+description: Learn how to get started with the Syncfusion <sup>®</sup> WinUI Kanban Board control. Explore setup, features, examples, and customization options.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Getting Started with WinUI Kanban Control
+# Getting Started with WinUI Kanban Board Control
 
 This section provides a quick overview of how to get started with the WinUI Kanban control (SfKanban) for WinUI and a walk-through to configure the WinUI Kanban control in a real-time scenario. Follow the steps below to add WinUI Kanban control to your project.
 
-## Creating an application with WinUI Kanban
+## Creating an application with WinUI Kanban Board
 
 1. Create a [WinUI 3 desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 
@@ -19,7 +19,7 @@ This section provides a quick overview of how to get started with the WinUI Kanb
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Kanban` in XAML or C# code.
 
-4. Initialize the WinUI Kanban control.
+4. Initialize the WinUI Kanban Board control.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -55,18 +55,18 @@ public sealed partial class MainWindow : Window
 {% endcapture %}
 {{ codesnippet1 | OrderList_Indent_Level_1 }}
 
-## Populate WinUI Kanban item source
+## Populate WinUI Kanban Board item source
 
-This section explains how to populate the WinUI Kanban control's `ItemsSource` by creating and binding both default and custom task data models.
+This section explains how to populate the WinUI Kanban Board control's `ItemsSource` by creating and binding both default and custom task data models.
 
 ### Creating the default model tasks
 
 * **Define the View Model:** Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) instance represents a card in the Kanban control.
 
-* **Bind item source for Kanban:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
+* **Bind item source for WinUI Kanban Board:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
 
 
-* **Defining columns in the Kanban Board:** The columns are generated automatically based on the [`Category`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values in the [`KanbanModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [`ItemsSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) collection. However, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). You can define the column categories using the [`Categories`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
+* **Defining columns in the WinUI Kanban Board:** The columns are generated automatically based on the [`Category`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category) values in the [`KanbanModel`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class from the [`ItemsSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.WinUI Kanban Board.html#Syncfusion_UI_Xaml_Kanban_WinUI Kanban Board_ItemsSource) collection. However, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.WinUI Kanban Board.html#Syncfusion_UI_Xaml_Kanban_WinUI Kanban Board_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.WinUI Kanban Board.html#Syncfusion_UI_Xaml_Kanban_WinUI Kanban Board_Columns) property of [`WinUI Kanban Board`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.WinUI Kanban Board.html). You can define the column categories using the [`Categories`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html), and the cards will be added to their respective columns.
 
 The following sample code demonstrates this process in action:
 
@@ -177,18 +177,18 @@ public class ViewModel
 
 ### Creating the custom model tasks with data mapping
 
-You can also map custom data model to our Kanban control. The following steps demonstrate how to render tasks using the [WinUI Kanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
+You can also map custom data model to our WinUI Kanban Board control. The following steps demonstrate how to render tasks using the [WinUI Kanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control with respective custom data properties.
 
-* **Create a data model for kanban:** Create a simple data model in a new class file as shown in the following example code.
+* **Create a data model for WinUI Kanban Board:** Create a simple data model in a new class file as shown in the following example code.
 
 * **Create view model:** Create a view model class to set values for the properties listed in the model class as shown in the following example code.
 
-* **Bind item source for Kanban:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Additionally, ensure that the following properties of `SfKanban` are mapped from corresponding properties in the `ItemsSource` while initializing the Kanban control.
+* **Bind item source for WinUI Kanban Board:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Additionally, ensure that the following properties of `SfKanban` are mapped from corresponding properties in the `ItemsSource` while initializing the Kanban control.
 
 The [`ColumnMappingPath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) is set to `true`.
 
 
-* **Defining columns in the Kanban Board:** The [`Columns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) in the Kanban board are mapped based on the values of a specified property (e.g., "Status") from your custom data model. The [`ColumnMappingPath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns)  is set to `true`. 
+* **Defining columns in the WinUI Kanban Board:** The [`Columns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) in the Kanban board are mapped based on the values of a specified property (e.g., "Status") from your custom data model. The [`ColumnMappingPath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath) specifies the name of the property within the data object that is used to generate columns in the Kanban control when [`AutoGenerateColumns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) is set to `true`.
 
 Alternatively, you can manually define columns by setting [`AutoGenerateColumns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_AutoGenerateColumns) to `false` and adding instances of [`KanbanColumn`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) to the [`Columns`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection of the [`SfKanban`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html) control. Based on the property specified in [`ColumnMappingPath`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnMappingPath), the Kanban control will generate the columns and render the corresponding cards accordingly.
 
@@ -306,7 +306,7 @@ N>
 
 ## Theme
 
-The WinUI Kanban supports light and dark themes, automatically adjusting to the system's theme settings for a consistent and visually appealing experience in any environment.
+The WinUI Kanban Board supports light and dark themes, automatically adjusting to the system's theme settings for a consistent and visually appealing experience in any environment.
 
 Refer to the following link for guidance on applying themes: [Themes for Syncfusion WinUI controls](https://help.syncfusion.com/winui/common/themes)
 
@@ -316,13 +316,13 @@ You can find the kanban keys for all themes in this [theme resource file](https:
 
 ## Localization
 
-The WinUI Kanban control supports the localization of all static default strings, allowing you to translate them into any supported language. For detailed instructions on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
+The WinUI Kanban Board control supports the localization of all static default strings, allowing you to translate them into any supported language. For detailed instructions on how to localize the default strings, refer to the following link: [Localization in WinUI controls](https://help.syncfusion.com/winui/common/localization).
 
 ![localization-support-in-winui-kanban](images/getting-started/localization-support-in-winui-kanban.png)
 
 ## Right to Left (RTL)
 
-The WinUI Kanban control supports RTL (Right-to-Left) rendering, allowing both text and the control's layout to be displayed from right to left. For more information on how to enable RTL rendering, please refer to the following link: [Right to left in WinUI controls](https://help.syncfusion.com/winui/common/right-to-left).
+The WinUI Kanban Board control supports RTL (Right-to-Left) rendering, allowing both text and the control's layout to be displayed from right to left. For more information on how to enable RTL rendering, please refer to the following link: [Right to left in WinUI controls](https://help.syncfusion.com/winui/common/right-to-left).
 
 ![right-to-left-support-in-winui-kanban](images/getting-started/right-to-left-support-in-winui-kanban.png)
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Cards in WinUI Kanban | Syncfusion<sup>®</sup>
-description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban using card templates, custom data models, card appearance settings, and template selectors.
+title: Cards in WinUI Kanban Board | Syncfusion<sup>®</sup>
+description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban Board using card templates, custom data models, card appearance settings, and template selectors.
 platform: winui
 control: SfKanban
 documentation: ug
 ---
 
-# Cards in WinUI Kanban
+# Cards in WinUI Kanban Board
 
-The Kanban cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
+The WinUI Kanban Board cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [WinUI Kanban BoardModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardModel.html).
 
 * [Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Title) - Sets the title of the card.
 * [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Description) - Sets the description text of the card.
