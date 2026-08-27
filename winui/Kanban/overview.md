@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion WinUI Kanban Board Control
 
-The Syncfusion<sup>®</sup> WinUI Kanban Board control provides an efficient way to visualize workflows at each stage of completion, enabling clear planning and a transparent view of work progress. With a range of essential features, SfKanban is ideal for monitoring tasks throughout the software development cycle.
+The Syncfusion® WinUI Kanban Board provides an efficient way to visualize workflows at each stage of completion, enabling clear planning and a transparent view of work progress. With a range of essential features, it is ideal for monitoring tasks throughout the software development cycle.
 
 ![overview-in-winui-kanban](images/overview/overview-in-winui-kanban.png)
 

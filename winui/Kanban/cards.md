@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cards in WinUI Kanban Board | Syncfusion<sup>®</sup>
-description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban Board using card templates, custom data models, card appearance settings, and template selectors.
+description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban Board, including templates, custom models, appearance customization, and selectors.
 platform: winui
 control: SfKanban
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Cards in WinUI Kanban Board
 
-The WinUI Kanban Board cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [WinUI Kanban BoardModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.WinUI Kanban Board.WinUI Kanban BoardModel.html).
+Cards visually represent tasks and their progression through various stages. The default UI of each card can be customized using the following properties of the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 * [Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Title) - Sets the title of the card.
 * [Description](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Description) - Sets the description text of the card.
@@ -536,7 +536,7 @@ An interactive tooltip provides additional details about the cards on hovering t
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false`. To provide users with additional information or context about cards, simply set this property to `true`.
+To enable tooltip for the cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false`. To provide users with additional information or context about cards, simply set this property to `true`.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}

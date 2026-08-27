@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WinUI Kanban Board | Syncfusion<sup>®</sup>
-description: Learn about Sorting support in Syncfusion<sup>®</sup> WinUI Kanban Board custom fields, sort orders, and comparer-based sorting to organize cards within columns.
+description:  Learn about Sorting support in Syncfusion<sup>®</sup> WinUI Kanban Board, including custom fields, sort orders, and comparer-based card sorting.
 platform: WinUI
 control: SfKanban
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WinUI Kanban Board
 
-The WinUI Kanban Board control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
+The control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
 
 * [SortingMappingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingMappingPath) - Used to map the sorting field to a property name in the [KanbanModel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) or `CustomModel`. The default value is `string.Empty`, in which case the cards will not be sorted.
 * [SortingOrder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SortingOrder) - Used to define the direction of cards sorting within each column.
@@ -20,7 +20,7 @@ N> The [SortingOrder](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Ka
 
 ## Customize card order with sorting configuration
 
-Sorting in the WinUI Kanban Board control can be implemented using the following approaches.
+Sorting can be implemented using the following approaches.
 
    * Custom
    * Index

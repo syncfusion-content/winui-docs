@@ -214,7 +214,7 @@ public class ViewModel
 The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event occurs when a card begins to be dragged. You can retrieve the following details from the [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event.
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
-* [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
+	* [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the card being dragged.
 * [KeepCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_KeepCard) - Determines whether the original card remains in the source column during a drag operation. When set to `true`, the card stays in its original column while being dragged, allowing repeated drag-and-drop actions without relocating the card. A preview visual of the card is generated and follows the pointer during the drag; use this when you want to copy rather than move a card across columns.
 
 {% tabs %}
@@ -766,7 +766,7 @@ public class ViewModel
 
 ## Command
 
-Kanban commands allow mapping the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to a command which supports the MVVM (Model-View-ViewModel) pattern.
+Commands allow mapping the [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to a command which supports the MVVM (Model-View-ViewModel) pattern.
 
 ### CardTappedCommand
 
