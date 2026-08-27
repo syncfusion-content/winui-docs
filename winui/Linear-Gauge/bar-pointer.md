@@ -3,7 +3,7 @@ layout: post
 title: Bar Pointer in WinUI Linear Gauge | Syncfusion®
 description: Bar pointer in the WinUI Linear Gauge displays values as filled bars and supports customization of size, style, and appearance settings.
 platform: WinUI
-control: SfLinearGauge
+control: WinUI Linear Gauge
 documentation: ug
 ---
 
@@ -314,4 +314,4 @@ this.Content = sfLinearGauge;
 ![bar pointer child customization](images/bar-pointer/pointer_child.png)
 ## See Also
 
-* [How to create a progress bar with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)
+* [How to create a progress bar with the WinUI Linear Gauge?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)

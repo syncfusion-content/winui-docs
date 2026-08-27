@@ -287,4 +287,4 @@ this.Content = sfLinearGauge;
 
 ## See Also
 
-* [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)
+* [How to create a bullet chart with the WinUI Linear Gauge?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)

@@ -29,5 +29,5 @@ N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-d
 * [How to design radial timer picker using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12036/how-to-design-radial-timer-picker-using-winui-radial-gauge)
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
 * [How to design a circular timer using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12081/how-to-design-a-circular-timer-using-winui-radial-gauge-sfradialgauge)
-* [How to create an analog clock with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)
-* [How to create a directional compass with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11911/how-to-create-a-directional-compass-with-the-winui-radial-gauge-sfradialgauge) 
+* [How to create an analog clock with the WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)
+* [How to create a directional compass with the WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11911/how-to-create-a-directional-compass-with-the-winui-radial-gauge-sfradialgauge) 
