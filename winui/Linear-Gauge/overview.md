@@ -26,6 +26,6 @@ N> You can get the samples in the [GitHub](https://github.com/syncfusion/winui-d
 
 ## See Also
 
-* [How to create the vertical gauge in WinUI Linear Gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/12214/how-to-create-the-vertical-gauge-in-winui-linear-gauge-sflineargauge)
-* [How to create a bullet chart with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)
-* [How to create a progress bar with the WinUI linear gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)
+* [How to create the vertical gauge in WinUI Linear Gauge?](https://support.syncfusion.com/kb/article/12214/how-to-create-the-vertical-gauge-in-winui-linear-gauge-sflineargauge)
+* [How to create a bullet chart with the WinUI Linear Gauge?](https://support.syncfusion.com/kb/article/11917/how-to-create-a-bullet-chart-with-the-winui-linear-gauge-sflineargauge)
+* [How to create a progress bar with the WinUI Linear Gauge?](https://support.syncfusion.com/kb/article/11914/how-to-create-a-progress-bar-with-the-winui-linear-gauge-sflineargauge)

@@ -394,4 +394,4 @@ this.Content = sfRadialGauge;
 
 * [How to design radial timer picker using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12036/how-to-design-radial-timer-picker-using-winui-radial-gauge)
 * [How to design fuel meter using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/12049/how-to-design-fuel-meter-using-winui-radial-gauge)
-* [How to create an analog clock with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)
+* [How to create an analog clock with the WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11955/how-to-create-an-analog-clock-with-the-winui-radial-gauge-sfradialgauge)

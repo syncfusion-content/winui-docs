@@ -155,4 +155,4 @@ this.Content = chart;
 ![Title text alignment support in WinUI chart](Title_images/WinUI_chart_title_alignment.png)
 ## See Also
 
-* [How to wrap the title of the WinUI (SfCartesianChart)](https://support.syncfusion.com/kb/article/12680)
+* [How to wrap the title of the WinUI Cartesian Charts](https://support.syncfusion.com/kb/article/12680)

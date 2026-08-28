@@ -35,5 +35,5 @@ The [WinUI Chart](https://www.syncfusion.com/winui-controls/cartesian-charts) pr
 
 * [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
-* [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711)
+* [How to export chart as image in WinUI Cartesian Charts](https://support.syncfusion.com/kb/article/18644)
+* [How to display more information in the Tooltip of WinUI Cartesian Charts](https://support.syncfusion.com/kb/article/12711)
