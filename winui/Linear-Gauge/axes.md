@@ -817,4 +817,4 @@ public class LogarithmicAxis : LinearAxis
 
 ## See Also
 
-* [How to create the vertical gauge in WinUI Linear Gauge (SfLinearGauge)?](https://support.syncfusion.com/kb/article/12214/how-to-create-the-vertical-gauge-in-winui-linear-gauge-sflineargauge)
+* [How to create the vertical gauge in WinUI Linear Gauge?](https://support.syncfusion.com/kb/article/12214/how-to-create-the-vertical-gauge-in-winui-linear-gauge-sflineargauge)
