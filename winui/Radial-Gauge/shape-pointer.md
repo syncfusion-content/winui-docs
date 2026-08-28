@@ -254,4 +254,4 @@ N> Provide a positive value to [`MarkerOffset`](https://help.syncfusion.com/cr/w
 ## See Also
 
 * [How to design various directional semi-circular gauge using WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11959/how-to-design-various-directional-semi-circular-gauge-using-winui-radial-gauge)
-* [How to create a directional compass with the WinUI radial gauge](https://support.syncfusion.com/kb/article/11911/how-to-create-a-directional-compass-with-the-winui-radial-gauge-sfradialgauge)
+* [How to create a directional compass with the WinUI Radial Gauge](https://support.syncfusion.com/kb/article/11911/how-to-create-a-directional-compass-with-the-winui-radial-gauge-sfradialgauge)

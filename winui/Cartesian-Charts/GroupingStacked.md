@@ -112,4 +112,4 @@ chart.Series.Add(series4);
 ## See Also
 
 * [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
-* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)
+* [How to add multiple axes in WinUI Cartesian Charts](https://support.syncfusion.com/kb/article/11857)
