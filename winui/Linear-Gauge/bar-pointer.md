@@ -3,7 +3,7 @@ layout: post
 title: Bar Pointer in WinUI Linear Gauge | Syncfusion®
 description: Bar pointer in the WinUI Linear Gauge displays values as filled bars and supports customization of size, style, and appearance settings.
 platform: WinUI
-control: WinUI Linear Gauge
+control: SfLinearGauge
 documentation: ug
 ---
 
