@@ -822,3 +822,78 @@ public class ViewModel
 
 N>
 * This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true`.
+
+## Card Selection
+
+The SfKanban control supports selecting one or multiple cards and performing drag-and-drop operations. The selection behavior can be customized using the `CardSelectionType` property.
+
+### Single card selection
+
+You can select a single card at a time by setting the `CardSelectionType` property to `Single`.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 CardSelectionType="Single"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1" %}
+
+this.kanban.CardSelectionType = KanbanCardSelectionType.Single;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Multiple card selection
+
+You can select multiple cards by setting the `CardSelectionType` property to `Multiple`.
+
+The following interactions are supported:
+
+- Use Ctrl + Click to select or unselect individual cards.
+- Use Shift + Click to select a range of cards within the same column.
+- Use Shift + Up Arrow and Shift + Down Arrow keys to extend or reduce the current selection range.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 CardSelectionType="Multiple"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1" %}
+
+this.kanban.CardSelectionType = KanbanCardSelectionType.Multiple;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Multi-card drag and drop
+
+When multiple cards are selected, you can drag and drop them together as a single operation.
+
+The following behaviors are supported:
+
+- Move multiple selected cards in a single drag operation.
+- Preserves the relative order of selected cards during drop.
+- Supports drag-and-drop between columns and swimlanes.
+- Validates workflow restrictions for all selected cards before completing the drop operation.
+
+![multi-card-drag-and-drop-in-winui-kanban](images/cards/multi-card-drag-and-drop-in-winui-kanban.gif)
+
+N>
+
+Multi-card drag and drop is supported only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together as a single drag operation.
