@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with WinUI Rating
 
-This section explains the steps required to add the WinUI Rating control and covers only the basic features needed to get started with Syncfusion `Rating` control.
+This section explains the steps required to add the WinUI Rating control and covers only the basic features needed to get started with the Syncfusion `SfRating` control.
 
 ## Creating an application with WinUI Rating control
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
-2. Add reference to [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet. 
-3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
+1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+2. Add the [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI) NuGet package.
+3. Import the `Syncfusion.UI.Xaml.Editors` namespace in your XAML or C# code.
 4. Initialize the [SfRating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfRating.html) control.
 
 ## Initialize Rating control using Items
@@ -23,16 +23,15 @@ This section explains the steps required to add the WinUI Rating control and cov
 {% tabs %}
 {% highlight xaml %}
 
-<Page
-    x:Class="GettingStarted.MainPage"
+<Window
+    x:Class="GettingStarted.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:GettingStarted"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
     <Grid>
      <syncfusion:SfRating Value="3">
          <syncfusion:SfRating.Items>
@@ -44,46 +43,78 @@ This section explains the steps required to add the WinUI Rating control and cov
          </syncfusion:SfRating.Items>
      </syncfusion:SfRating>
     </Grid>
-</Page>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
 
-// Creating an instance of the Rating control.
-SfRating rating = new SfRating();
+using Syncfusion.UI.Xaml.Editors;
 
-//Adding items to the Rating control.
-rating.Items.Add(new SfRatingItem() { Content = "1"});
-rating.Items.Add(new SfRatingItem() { Content = "2"});
-rating.Items.Add(new SfRatingItem() { Content = "3"});
-rating.Items.Add(new SfRatingItem() { Content = "4"});
-rating.Items.Add(new SfRatingItem() { Content = "5"});
-
-//Setting rating value.
-rating.Value = 3;
+namespace GettingStarted
+{
+    public sealed partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            this.InitializeComponent();
+            SfRating rating = new SfRating();
+            rating.Items.Add(new SfRatingItem() { Content = "1" });
+            rating.Items.Add(new SfRatingItem() { Content = "2" });
+            rating.Items.Add(new SfRatingItem() { Content = "3" });
+            rating.Items.Add(new SfRatingItem() { Content = "4" });
+            rating.Items.Add(new SfRatingItem() { Content = "5" });
+            rating.Value = 3;
+            this.Content = rating;
+        }
+    }
+}
            
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using items in WinUI](Rating_images/winui_rating_items.png)
+![Rating control using Items in WinUI](Rating_images/winui_rating_items.png)
 
-## Initialize Rating control using ItemsCount
+## Initialize Rating control using Items Count
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfRating Value="3" ItemsCount="5">
-</syncfusion:SfRating>
+<Window
+    x:Class="GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GettingStarted"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    mc:Ignorable="d">
+    <Grid>
+        <syncfusion:SfRating Value="3" ItemsCount="5">
+        </syncfusion:SfRating>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfRating rating = new SfRating();
-rating.Value = 3;
-rating.ItemsCount = 5;
+using Syncfusion.UI.Xaml.Editors;
+
+namespace GettingStarted
+{
+    public sealed partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            this.InitializeComponent();
+            SfRating rating = new SfRating();
+            rating.Value = 3;
+            rating.ItemsCount = 5;
+            this.Content = rating;
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-![Rating control using itemscount in WinUI](Rating_images/winui_rating_itemscount.png)
-
+![Rating control using Items Count in WinUI](Rating_images/winui_rating_itemscount.png)
