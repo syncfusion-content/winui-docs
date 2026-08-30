@@ -83,39 +83,34 @@ Used to define major sections within your Markdown content.
 {% endhighlight %}
 {% endtabs %}
 
+![WinUI SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+
 ## Loading from Local File
 
 To load Markdown content from a local file, simply set the file path as the value of the Source property. The control automatically recognizes valid file paths and reads the file content accordingly.
-
-**C#**
-
-{% highlight C# %}
-
-public partial class MainWindow : Window
-{
-    public MainWindow()
-    {
-        InitializeComponent();
-        SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
-        string filePath = @"D:\WinUI\MarkdownViewer\Files\MarkdownContent.md";
-        string markdownContent = File.ReadAllText(filePath);
-        markdownViewer.Source = markdownContent;
-        this.Content = markdownViewer;  
-    }
-}
-
-{% endhighlight %}
-
-## Loading from URL
-
-The SfMarkdownViewer control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
 
 {% tabs %}
 {% highlight xaml %}
 
 <Window>
-    <syncfusion:SfMarkdownViewer Source="https://raw.githubusercontent.com/SyncfusionExamples/WinUI-tabsplitter-example/refs/heads/master/README.md">
-    </syncfusion:SfMarkdownViewer>
+    <Grid>
+        <StackPanel>
+            <TextBlock
+                Text="Choose a Markdown file from your device to view its content"
+                FontSize="18"
+                FontWeight="SemiBold"/>
+            <Button Content="Pick Markdown File" Click="PickFile_Click" Background="CornflowerBlue" Foreground="White"/>
+            <TextBlock x:Name="FilePathText"
+                    Text="File Path:"
+                    TextWrapping="WrapWholeWords"/>
+            <Border BorderBrush="Gray"
+                    BorderThickness="1"
+                    Padding="10"
+                    Height="500">
+                <markdown:SfMarkdownViewer x:Name="MarkdownViewer"/>
+            </Border>
+        </StackPanel>
+    </Grid>
 </Window>
 
 {% endhighlight %}
@@ -126,12 +121,73 @@ public partial class MainWindow : Window
 { 
     public MainWindow()
     {
-        InitializeComponent();  
-        SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
-        markdownViewer.Source = "https://raw.githubusercontent.com/SyncfusionExamples/WinUI-tabsplitter-example/refs/heads/master/README.md";
-        this.Content = markdownViewer;       
+        InitializeComponent();       
+    }
+
+    private async void PickFile_Click(object sender, RoutedEventArgs e)
+    {
+        FileOpenPicker picker = new FileOpenPicker();
+        var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+        WinRT.Interop.InitializeWithWindow.Initialize(picker, hwnd);
+
+        picker.FileTypeFilter.Add(".md");
+
+        StorageFile file = await picker.PickSingleFileAsync();
+
+        if (file != null)
+        {
+            FilePathText.Text = "File Path: " + file.Name;
+
+            string markdownContent = await FileIO.ReadTextAsync(file);
+            MarkdownViewer.Source = markdownContent;
+        }
     }
 } 
 
 {% endhighlight %}
 {% endtabs %}
+
+![Loading from local file in WinUI MarkdownViewer](Images/WinUI-markdown-viewer-LoadFromLocalFile.GIF)
+
+## Loading from URL
+
+The SfMarkdownViewer control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window>
+    <Grid>
+        <StackPanel>
+            <TextBlock
+                Text="Choose a Markdown file from URL"
+                FontSize="18"
+                FontWeight="SemiBold"/>
+            <Button Content="Load from URL" Click="PickFile_Click" Background="CornflowerBlue" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public partial class MainWindow : Window
+{ 
+    public MainWindow()
+    {
+        InitializeComponent();        
+    }
+
+    private void PickFile_Click(object sender, RoutedEventArgs e)
+    {
+        SfMarkdownViewer markdownViewer = new SfMarkdownViewer();
+        markdownViewer.Source = "https://help.syncfusion.com/winui/ai-assistview/overview.md";
+        this.Content = markdownViewer;
+    }
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading from URL in WinUI MarkdownViewer](Images/WinUI-markdown-viewer-LoadFromURL.GIF)
