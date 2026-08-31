@@ -7,7 +7,7 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Events in WinUI MarkdownViewer
+# Events in WinUI Markdown Viewer
 
 This section describes how to manage hyperlink interactions in the Markdown Viewer using the HyperlinkClicked event.
 The HyperlinkClicked event is raised when a user clicks a hyperlink within the Markdown content. It provides access to the selected URL and enables you to handle the interaction or override the default navigation behavior if needed.

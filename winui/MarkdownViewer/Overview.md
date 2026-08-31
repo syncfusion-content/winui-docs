@@ -7,7 +7,7 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# About Syncfusion WinUI MarkdownViewer Control
+# About Syncfusion WinUI Markdown Viewer Control
 
 The WinUI Markdown Viewer control is a UI component that renders Markdown text as visually formatted content without requiring external tools or manual styling. It provides a convenient way to display rich Markdown content within WinUI applications, making it ideal for scenarios such as documentation, release notes, help content, and more.
 

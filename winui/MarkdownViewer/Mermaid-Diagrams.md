@@ -7,7 +7,7 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Mermaid Diagram Support in WinUI MarkdownViewer
+# Mermaid Diagram Support in WinUI Markdown Viewer
  
 The `Markdown Viewer` control supports embedding Mermaid diagrams directly in Markdown content using simple text syntax. Mermaid code blocks defined in the `Source` property are automatically interpreted and rendered as visual diagrams.
 

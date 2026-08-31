@@ -7,7 +7,7 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Loading Markdown Content in WinUI MarkdownViewer
+# Loading Markdown Content in WinUI Markdown Viewer
 
 The Markdown Viewer control offers versatile options for loading Markdown content from various sources. Its `Source` property automatically identifies the input type and manages content loading seamlessly, supporting raw Markdown text, local file paths, as well as HTTP/HTTPS URLs.
 

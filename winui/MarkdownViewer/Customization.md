@@ -7,7 +7,7 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Customization in WinUI MarkdownViewer
+# Customization in WinUI Markdown Viewer
 
 The `Markdown Viewer` control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 

@@ -8,7 +8,7 @@ documentation: ug
 keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer WinUI, WinUI markdown rendering, sfmarkdownviewer WinUI, WinUI markdown control, markdown rendering WinUI, WinUI markdown getting started
 ---
 
-# Getting Started with WinUI MarkdownViewer
+# Getting Started with WinUI Markdown Viewer
 
 This section outlines a step‑by‑step guide for integrating and using the `SfMarkdownViewer` control in your WinUI applications.
 
