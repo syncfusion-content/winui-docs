@@ -7,7 +7,7 @@ control: Shimmer
 documentation: ug
 ---
 
-# Custom layout of WinUI Shimmer (SfShimmer)
+# Custom layout of WinUI Shimmer 
 
 The [CustomLayout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html#Syncfusion_UI_Xaml_Core_SfShimmer_CustomLayout) property empowers you to design your own shimmer type and giving you full control over create your desired shimmer type.
 

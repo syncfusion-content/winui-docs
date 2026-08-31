@@ -7,7 +7,7 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI Connection in WinUI AIAssistView
+# OpenAI Connection in WinUI AI AssistView
 
 This section explains how to connect the AI AssistView with OpenAI.
 
@@ -197,6 +197,6 @@ To connect with OpenAI, we need the following details.
 {% endhighlight %}
 {% endtabs %}
 
-![OpenAI in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_openai.gif)
+![OpenAI in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_openai.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/Syncfusion-winui-ai-assistView-examples/tree/master/Samples/Open-AI/OpenAI_Sample)
