@@ -7,13 +7,13 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Input Toolbar in WinUI AIAssistView
+# Input Toolbar in WinUI AI AssistView
 
-The [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input text box. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
+The [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a toolbar feature inside the input text box. This toolbar allows users to add custom toolbar items directly within the text input area, providing quick access to frequently used actions and tools.
 
 ## InputToolbarItem
 
-The **InputToolbarItem** class is used to define and add items to the input text box toolbar in the SfAIAssistView. The following properties are available in this class:
+The **InputToolbarItem** class is used to define and add items to the input text box toolbar in the AI AssistView. The following properties are available in this class:
 
 - **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
 - **Tooltip**: Sets the tooltip text displayed when the user hovers over the toolbar item.
@@ -22,7 +22,7 @@ The **InputToolbarItem** class is used to define and add items to the input text
 
 ## Adding an input toolbar item to the input toolbar
 
-The **InputToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) for the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
+The **InputToolbarItem** in [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) for the text area does not include built-in toolbar items like the response toolbar (e.g., Copy, Like, Dislike, Regenerate). However, you can add custom items using the InputToolbarItem class.
 
 Use the ItemTemplate property to define the appearance and behavior of each toolbar item. This allows you to display icons, buttons, text, or even complex UI elements such as Path, Image, or TextBlock within the toolbar.
 
@@ -51,11 +51,11 @@ Data="M10.2656 3.0293C10.5 3.0293 10.7207 3.07422 10.9277 3.16406C11.1348 3.2539
 {% endhighlight %} 
 {% endtabs %}
 
-![Adding an input toolbar item using ItemTemplate feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_input_toolbar_items.png)
+![Adding an input toolbar item using ItemTemplate feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_input_toolbar_items.png)
 
 ## Input toolbar position
 
-The **InputToolbarPosition** property of the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control is used to define the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
+The **InputToolbarPosition** property of the [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control is used to define the placement of the input toolbar within the control. By default, the toolbar is positioned on the right side of the control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,11 +74,11 @@ aiAssistView.InputToolbarPosition = ToolbarPosition.Left;
 {% endhighlight %}
 {% endtabs %}
 
-![Left input toolbar position in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_input_toolbar_left.png)
+![Left input toolbar position in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_input_toolbar_left.png)
 
 ## Input toolbar visibility
 
-The **IsInputToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed in the SfAIAssistView. When set to true, the input toolbar becomes visible. By default, this property is set to false.
+The **IsInputToolbarVisible** property of the [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the input toolbar is displayed in the AI AssistView. When set to true, the input toolbar becomes visible. By default, this property is set to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,7 +96,7 @@ aiAssistView.IsInputToolbarVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Input toolbar visibility in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_input_toolbar_visibility.png)
+![Input toolbar visibility in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_input_toolbar_visibility.png)
 
 ## Item clicked event 
 
@@ -167,4 +167,4 @@ This feature supports customizing the header section of the input area using a f
 {% endhighlight %} 
 {% endtabs %}
 
-![Input toolbar header template in WinUI SfAIAssistView control](aiassistview_images/winui-aiassistview-input-header-template.webp)
+![Input toolbar header template in WinUI AI AssistView control](aiassistview_images/winui-aiassistview-input-header-template.webp)

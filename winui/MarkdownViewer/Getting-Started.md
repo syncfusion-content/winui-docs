@@ -12,7 +12,7 @@ keywords: WinUI markdownviewer, syncfusion markdownviewer WinUI, markdown viewer
 
 This section outlines a step‑by‑step guide for integrating and using the `SfMarkdownViewer` control in your WinUI applications.
 
-## Creating an application with SfMarkdownViewer (WinUI)
+## Creating an application with Markdown Viewer (WinUI)
 
 1. Create a WinUI 3 desktop application.
 
@@ -22,7 +22,7 @@ This section outlines a step‑by‑step guide for integrating and using the `Sf
 3. Import the following namespace in XAML or C# code:
    - Syncfusion.UI.Xaml.Markdown
 
-4. Initialize an instance of the `SfMarkdownViewer` control.
+4. Initialize an instance of the `Markdown Viewer` control.
 
 You can initialize the control in both XAML and C# as shown below:
 
@@ -64,7 +64,7 @@ namespace MarkdownViewerGettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Populating Source to the SfMarkdownViewer
+## Populating Source to the Markdown Viewer
 
 The `Source` property is used to supply Markdown content to the control. It supports raw Markdown text, file paths, and HTTP/HTTPS URLs.
 
@@ -89,7 +89,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![WinUi SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+![WinUi Markdown Viewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
             ]]>
         </x:String>
     </syncfusion:SfMarkdownViewer.Source>
@@ -120,7 +120,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![WinUi SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+![WinUi Markdown Viewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
 ";
         this.Content = markdownViewer;
     }
@@ -129,4 +129,4 @@ Used to define major sections within your Markdown content.
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+![WinUI Markdown Viewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)

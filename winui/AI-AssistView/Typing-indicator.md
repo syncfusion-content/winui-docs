@@ -132,4 +132,4 @@ By using the [TypingIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.U
 {% endhighlight %}
 {% endtabs %}
 
-![TypingIndicator feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_typingindicator.gif)
+![TypingIndicator feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_typingindicator.gif)

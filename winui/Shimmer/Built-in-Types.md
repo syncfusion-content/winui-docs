@@ -13,7 +13,7 @@ The WinUI Shimmer control offers a range of built-in shimmer types, each designe
 
 ![WinUI Shimmmer control with DefaultView](Shimmer_Images/winui_shimmer_built_in_types.gif)
 
-By default, the WinUI Shimmer control initializes with the [CirclePersona](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.ShimmerType.html#Syncfusion_UI_Xaml_Core_ShimmerType_CirclePersona) type. You can easily switch between these built-in types by setting the Type property of the SfShimmer control.
+By default, the WinUI Shimmer control initializes with the [CirclePersona](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.ShimmerType.html#Syncfusion_UI_Xaml_Core_ShimmerType_CirclePersona) type. You can easily switch between these built-in types by setting the Type property of the Shimmer control.
 
 {% tabs %}
 {% highlight xaml %}

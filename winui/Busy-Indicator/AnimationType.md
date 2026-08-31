@@ -30,7 +30,7 @@ busyIndicator.Content = "Loading";
 {% endhighlight %}
 {% endtabs %}
 
-The following gif image contains the types of animation in BusyIndicator:
+The following gif image contains the types of animation in Busy Indicator:
 
-![WinUI BusyIndicator control with AnimationTypes](BusyIndicator_images/winui_busyindicator_animationtypes.gif)
+![WinUI Busy Indicator control with AnimationTypes](BusyIndicator_images/winui_busyindicator_animationtypes.gif)
 

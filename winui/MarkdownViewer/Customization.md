@@ -9,9 +9,9 @@ documentation: ug
 
 # Customization in WinUI MarkdownViewer
 
-The `SfMarkdownViewer` control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
+The `Markdown Viewer` control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 
-## Style settings for MarkdownViewer
+## Style settings for Markdown Viewer
 
 The `MarkdownStyleSettings` class provides style customization for different Markdown elements through the following properties:
 
@@ -26,7 +26,7 @@ The `MarkdownStyleSettings` class provides style customization for different Mar
 - `CodeBlockStyle` – Applies to code blocks.  
 - `MermaidStyle` – Applies to Mermaid diagram rendering.  
 
-You can apply these custom styles by assigning a `MarkdownStyleSettings` instance to the `Settings` property of `SfMarkdownViewer`, as shown in the following code example.
+You can apply these custom styles by assigning a `MarkdownStyleSettings` instance to the `Settings` property of `Markdown Viewer`, as shown in the following code example.
 
 {% tabs %} 
 {% highlight xaml %}

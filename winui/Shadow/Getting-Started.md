@@ -16,7 +16,7 @@ This section explains how to get started with the [Shadow control](https://www.s
 1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
-4. Create and initialize the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+4. Create and initialize the [Shadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -71,7 +71,7 @@ namespace GettingStarted
 
 ## Applying shadow effect for image
 
-You can apply shadow effects to any [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) using the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+You can apply shadow effects to any [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) using the [Shadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}
