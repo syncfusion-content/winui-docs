@@ -7,13 +7,13 @@ control: SfMarkdownViewer
 documentation: ug
 ---
 
-# Loading Markdown Content in WinUI MarkdownViewer
+# Loading Markdown Content in WinUI Markdown Viewer
 
-The SfMarkdownViewer control offers versatile options for loading Markdown content from various sources. Its `Source` property automatically identifies the input type and manages content loading seamlessly, supporting raw Markdown text, local file paths, as well as HTTP/HTTPS URLs.
+The Markdown Viewer control offers versatile options for loading Markdown content from various sources. Its `Source` property automatically identifies the input type and manages content loading seamlessly, supporting raw Markdown text, local file paths, as well as HTTP/HTTPS URLs.
 
 ## Loading from Raw Markdown String
 
-Assign a Markdown-formatted string to the Source property of the SfMarkdownViewer control to display Markdown content directly within your application.
+Assign a Markdown-formatted string to the Source property of the Markdown Viewer control to display Markdown content directly within your application.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -37,7 +37,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![WinUI SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+![WinUI Markdown Viewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
                 ]]>
             </x:String>
         </syncfusion:SfMarkdownViewer.Source>
@@ -73,7 +73,7 @@ Used for the Main title or top-level heading in a Markdown document.
                         
 Used to define major sections within your Markdown content. 
                         
-![WinUI SfMarkdownViewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
+![WinUI Markdown Viewer](Images/WinUI-markdown-viewer-gettingstarted.WEBP)
 ";
             this.Content = markdownViewer;
         }
@@ -108,7 +108,7 @@ public partial class MainWindow : Window
 
 ## Loading from URL
 
-The SfMarkdownViewer control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
+The Markdown Viewer control is capable of loading Markdown content directly from publicly accessible URLs. This feature is especially useful for presenting remote documentation, release notes, or any Markdown content hosted online.
 
 {% tabs %}
 {% highlight xaml %}
