@@ -7,7 +7,7 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-# Customization in WinUI BusyIndicator
+# Customization in WinUI Busy Indicator
 
 This section explains the customization features available in the WinUI `Busy Indicator` control.
 
@@ -59,7 +59,7 @@ busyIndicator.DurationFactor = 0.9;
 {% endhighlight %}
 {% endtabs %}
 
-![WinUI BusyIndicator control with DurationFactor](BusyIndicator_images/winui_busyindicator_duration.gif)
+![WinUI Busy Indicator control with DurationFactor](BusyIndicator_images/winui_busyindicator_duration.gif)
 
 ## Color
 

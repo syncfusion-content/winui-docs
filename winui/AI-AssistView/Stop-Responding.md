@@ -7,7 +7,7 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Stop Responding in WinUI AIAssistView
+# Stop Responding in WinUI AI AssistView
 
 ## EnableStopResponding
 

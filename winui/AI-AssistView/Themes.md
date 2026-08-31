@@ -7,7 +7,7 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Theme Support in WinUI AIAssistView
+# Theme Support in WinUI AI AssistView
 
 This section explains AI AssistView Control's various themes.
 

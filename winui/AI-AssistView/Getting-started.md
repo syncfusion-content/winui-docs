@@ -7,11 +7,11 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Getting Started with WinUI AIAssistView
+# Getting Started with WinUI AI AssistView
 
 This section explains how to add the WinUI [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control to an application and bind it to a simple chat data source.
 
-## Creating an application with the WinUI AIAssistView
+## Creating an application with the WinUI AI AssistView
 
 1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Install the [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet package.

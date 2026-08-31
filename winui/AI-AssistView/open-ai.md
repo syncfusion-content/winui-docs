@@ -7,7 +7,7 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# OpenAI Connection in WinUI AIAssistView
+# OpenAI Connection in WinUI AI AssistView
 
 This section explains how to connect the AI AssistView with OpenAI.
 

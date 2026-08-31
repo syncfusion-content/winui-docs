@@ -9,18 +9,18 @@ documentation: ug
 
 # Getting Started with WinUI AvatarView
 
-This section explains how to get started with the WinUI [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control and configure its basic features.
+This section explains how to get started with the WinUI [AvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control and configure its basic features.
 
 ## Creating an application with WinUI AvatarView
 
 1. Create a [WinUI 3 desktop application in C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
-4. Add and initialize the [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control.
+4. Add and initialize the [AvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control.
 
 ## Initialize AvatarView
 
-By default, SfAvatarView displays the [Avatar1](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarCharacter.html#Syncfusion_UI_Xaml_Core_AvatarCharacter_Avatar1) character image with an _AvatarShape_ value of [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarShape.html#Syncfusion_UI_Xaml_Core_AvatarShape_Circle) and an _AvatarSize_ value of [Small](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarSize.html#Syncfusion_UI_Xaml_Core_AvatarSize_Small).
+By default, AvatarView displays the [Avatar1](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarCharacter.html#Syncfusion_UI_Xaml_Core_AvatarCharacter_Avatar1) character image with an _AvatarShape_ value of [Circle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarShape.html#Syncfusion_UI_Xaml_Core_AvatarShape_Circle) and an _AvatarSize_ value of [Small](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.AvatarSize.html#Syncfusion_UI_Xaml_Core_AvatarSize_Small).
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ using Syncfusion.UI.Xaml.Core;
 namespace GettingStarted;
 
 /// <summary>
-/// A window that hosts the default WinUI AvatarView (SfAvatarView) control.
+/// A window that hosts the default WinUI AvatarView (AvatarView) control.
 /// </summary>
 public sealed partial class MainWindow : Window
 {
@@ -70,7 +70,7 @@ public sealed partial class MainWindow : Window
 
 ## Initialize AvatarView with ImageSource
 
-You can display a custom image in the SfAvatarView control by setting its [ImageSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_ImageSource) property.
+You can display a custom image in the AvatarView control by setting its [ImageSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html#Syncfusion_UI_Xaml_Core_SfAvatarView_ImageSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ using Syncfusion.UI.Xaml.Core;
 namespace GettingStarted;
 
 /// <summary>
-/// A window that hosts the WinUI AvatarView (SfAvatarView) control with a custom image source.
+/// A window that hosts the WinUI AvatarView (AvatarView) control with a custom image source.
 /// </summary>
 public sealed partial class MainWindow : Window
 {

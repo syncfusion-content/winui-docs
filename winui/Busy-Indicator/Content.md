@@ -7,7 +7,7 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-# Content in WinUI BusyIndicator
+# Content in WinUI Busy Indicator
 
 The Busy Indicator control provides an option to set the custom message that indicates the busy status of the control to the users by using the [BusyContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_BusyContent) property.
 

@@ -7,7 +7,7 @@ control: AI AssistView
 documentation: ug
 ---
 
-# Response Toolbar in WinUI AIAssistView
+# Response Toolbar in WinUI AI AssistView
 
 The [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
 
@@ -55,11 +55,11 @@ aiAssistView.IsResponseToolbarVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Response toolbar visibility in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
+![Response toolbar visibility in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
 
 ## Customization of Response toolbar item using ItemTemplate
 
-The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
+The **ResponseToolbarItem** in [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
