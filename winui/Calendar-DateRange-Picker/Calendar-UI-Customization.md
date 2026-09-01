@@ -9,13 +9,13 @@ documentation: ug
 
 # UI Customization in WinUI Calendar DateRange Picker
 
-This section describes how to select a date range from the drop-down calendar and the customization options available in the `Calendar DateRange Picker` control.
+This section describes how to select a date range from the drop-down calendar and the customization options available in the `WinUI Calendar DateRange Picker` control.
 
 ## Change drop-down alignment
 
 You can change the alignment of the drop-down calendar as full, center, left, right, top, or bottom edge by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is **Bottom**.
 
-N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `Calendar DateRange Picker` smartly shifts the drop-down calendar alignment.
+N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `WinUI Calendar DateRange Picker` smartly shifts the drop-down calendar alignment.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
@@ -42,7 +42,7 @@ sfCalendarDateRangePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ## Change drop-down size
 
-You can change the size of the drop-down calendar in the `Calendar DateRange Picker` by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of the `DropDownHeight` property is **Auto**.
+You can change the size of the drop-down calendar in the `WinUI Calendar DateRange Picker` by using the [`DropDownHeight`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownHeight) property. The default value of the `DropDownHeight` property is **Auto**.
 
 N> The drop-down size will be automatically resized based on the calendar and preset items hosted in it.
 
@@ -71,7 +71,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in the `Calendar DateRange Picker` drop-down calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and the `DropDownFlyout` control.
+You can change the UI of specific cells in the `WinUI Calendar DateRange Picker` drop-down calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and the `DropDownFlyout` control.
 
 1. Create an **EventDataConverter** class and set the special dates for specific events. 
 

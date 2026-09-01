@@ -159,7 +159,7 @@ private void SfCalendarDateRangePicker_ItemPrepared(object sender, CalendarItemP
 
 ![black-out-dates-with-week-end-dates-restriction-in-winui-calendar-date-range-picker](Images/getting-started/black-out-dates-with-week-end-dates-restriction-in-winui-calendar-date-range-picker.png)
 
-You can also change the text to be displayed for specific days or dates in the `Calendar DateRange Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property.
+You can also change the text to be displayed for specific days or dates in the `WinUI Calendar DateRange Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="10 11" %}
@@ -185,7 +185,7 @@ N> Blackout dates will not be added in the `SelectedRange` property, even though
 
 ## Limit duration of selected range
 
-You can limit the duration of the selected range in the `Calendar DateRange Picker` value by using the [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of the `MinDatesCountInRange` property is **0** and the `MaxDatesCountInRange` property is **null**.
+You can limit the duration of the selected range in the `WinUI Calendar DateRange Picker` value by using the [`MinDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDatesCountInRange) and [`MaxDatesCountInRange`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDatesCountInRange) properties. By default, the value of the `MinDatesCountInRange` property is **0** and the `MaxDatesCountInRange` property is **null**.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}

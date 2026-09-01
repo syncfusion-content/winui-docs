@@ -13,7 +13,7 @@ This section describes how to localize and format the WinUI [Date Picker](https:
 
 ## Change the type of calendar
 
-The `Date Picker` control supports different types of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the `CalendarIdentifier` property. The default value of the `CalendarIdentifier` property is `GregorianCalendar`.
+The `WinUI Date Picker` control supports different types of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the `CalendarIdentifier` property. The default value of the `CalendarIdentifier` property is `GregorianCalendar`.
 
 You can select the required `CalendarIdentifier` value from the below types.
 
@@ -51,7 +51,7 @@ sfDatePicker.CalendarIdentifier = "HebrewCalendar";
 
 ![calendar-types-hebrew-calendar-in-winui-date-picker](Images/drop-down-date-spinner/calendar-types-hebrew-calendar-in-winui-date-picker.png)
 
-N> The `Date Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
+N> The `WinUI Date Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 N> When the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property has higher precedence.
 
@@ -59,7 +59,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change flow direction
 
-You can change the flow direction of the `Date Picker` layout from right to left by setting the `FlowDirection` property value to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WinUI Date Picker` layout from right to left by setting the `FlowDirection` property value to `RightToLeft`. The default value of the `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
@@ -89,7 +89,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the language
 
-You can localize the `Date Picker` using the `Language` property. The default value of the `Language` property is **en-US**.
+You can localize the `WinUI Date Picker` using the `Language` property. The default value of the `Language` property is **en-US**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
@@ -115,7 +115,7 @@ sfDatePicker.Language = "ar-SA";
 
 ![calendar-types-arabic-calendar-with-localization-in-winui-date-picker](Images/drop-down-date-spinner/calendar-types-arabic-calendar-with-localization-in-winui-date-picker.png)
 
-N> The `Date Picker` control updates the flow direction visually based on the `Language` property value.
+N> The `WinUI Date Picker` control updates the flow direction visually based on the `Language` property value.
 
 N> When the `Language` and `FlowDirection` properties are set, the `FlowDirection` property has higher precedence.
 
@@ -152,7 +152,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the field value format in Spinner
 
-You can customize the format of the date, month, and year fields in the spinner of the `Date Picker` control by using the [`DayFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DayFormat), [`MonthFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MonthFormat), and [`YearFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_YearFormat) properties. By default, the value of the `DayFormat` property is `{}{day.integer}`, the value of the `MonthFormat` property is `{}{month.abbreviated}`, and the value of the `YearFormat` property is `{}{year.full}`.
+You can customize the format of the date, month, and year fields in the spinner of the `WinUI Date Picker` control by using the [`DayFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_DayFormat), [`MonthFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_MonthFormat), and [`YearFormat`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDatePicker.html#Syncfusion_UI_Xaml_Editors_SfDatePicker_YearFormat) properties. By default, the value of the `DayFormat` property is `{}{day.integer}`, the value of the `MonthFormat` property is `{}{month.abbreviated}`, and the value of the `YearFormat` property is `{}{year.full}`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6 7 8" %}
@@ -257,7 +257,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `Date Picker` control, which can be used to clear the entered input. You can hide the clear button in the `Date Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of the `ShowClearButton` property is **true**.
+By default, the clear button `X` will be displayed in the editor of the `WinUI Date Picker` control, which can be used to clear the entered input. You can hide the clear button in the `WinUI Date Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of the `ShowClearButton` property is **true**.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}

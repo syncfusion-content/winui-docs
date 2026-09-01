@@ -13,7 +13,7 @@ This section explains how to restrict the time selection in WinUI [Time Picker](
 
 ## Limit the available times
 
-You can restrict the users from selecting a time within the particular range by specifying [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `Time Picker` control. The default value of `MinTime` property is `1/1/1921 10:37:16 PM` and `MaxTime` property is `12/31/2121 10:37:16 PM`.
+You can restrict the users from selecting a time within the particular range by specifying [`MinTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MinTime) and [`MaxTime`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_MaxTime) properties in `WinUI Time Picker` control. The default value of `MinTime` property is `1/1/1921 10:37:16 PM` and `MaxTime` property is `12/31/2121 10:37:16 PM`.
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="4 5" %}

@@ -28,11 +28,11 @@ You can select the required `CalendarIdentifier` value from the following types.
  * UmAlQuraCalendar
  * PersianCalendar
 
-N> Japanese and Lunar type calendars are not supported in the `Calendar` control.
+N> Japanese and Lunar type calendars are not supported in the `WinUI Calendar` control.
 
 N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property takes precedence.
 
-N> The `Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
+N> The `WinUI Calendar` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}

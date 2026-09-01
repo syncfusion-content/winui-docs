@@ -13,7 +13,7 @@ This section describes how to change the display formats and to localize the [Ca
 
 ## Types of calendar
 
-The `Calendar Date Picker` control supports different types of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of the `CalendarIdentifier` property is **GregorianCalendar**.
+The `WinUI Calendar Date Picker` control supports different types of calendars such as Gregorian, Julian, Hebrew, etc. You can change the calendar type by using the [CalendarIdentifier](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_CalendarIdentifier) property. The default value of the `CalendarIdentifier` property is **GregorianCalendar**.
 
 You can select the required `CalendarIdentifier` value from the following types:
 
@@ -27,11 +27,11 @@ You can select the required `CalendarIdentifier` value from the following types:
  * UmAlQuraCalendar
  * PersianCalendar
 
-N> Japanese and Lunar type calendars are not supported in the `Calendar Date Picker` control.
+N> Japanese and Lunar type calendars are not supported in the `WinUI Calendar Date Picker` control.
 
 N> When both the `CalendarIdentifier` and `FlowDirection` properties are set, the `FlowDirection` property is given higher precedence.
 
-N> The `Calendar Date Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
+N> The `WinUI Calendar Date Picker` control updates the flow direction visually based on the `CalendarIdentifier` property value.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
@@ -54,7 +54,7 @@ sfCalendarDatePicker.CalendarIdentifier = "HebrewCalendar";
 {% endhighlight %}
 {% endtabs %}
 
-N> The value in the `Calendar Date Picker` control textbox is updated based on the `CalendarIdentifier` property calendar type.
+N> The value in the `WinUI Calendar Date Picker` control textbox is updated based on the `CalendarIdentifier` property calendar type.
 
 ![calendar-types-hebrew-calendar-in-winui-calendar-date-picker](Getting-Started_images/calendar-types-hebrew-calendar-in-winui-calendar-date-picker.png)
 
