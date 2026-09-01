@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MVVM in WinUI TreeView | Syncfusion®
 description: Bind selected items, selected item collections, and commands in MVVM applications using TreeView data binding support.
@@ -378,5 +378,5 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Built-in commands
 
-The TreeView provides support for built-in commands to show a context flyout. You can refer to more information about binding the built-in commands [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
+The WinUI TreeView provides support for built-in commands to show a context flyout. You can refer to more information about binding the built-in commands [here](https://help.syncfusion.com/winui/treeview/contextflyout#built-in-commands).
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in WinUI TreeView | Syncfusion®
 description: Customize TreeView appearance with templates, template selectors, indentation, expander settings, styling, and animations.
@@ -61,9 +61,9 @@ The `TreeView` allows you to customize the appearance of the content view and th
 
 ## BindingContext for ItemTemplate
 
-By default, the binding context of a TreeView item will be the data model object for bound mode and the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) for unbound mode.
+By default, the binding context of a WinUI TreeView item will be the data model object for bound mode and the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) for unbound mode.
 
-In bound mode, you can change the binding context of the TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
+In bound mode, you can change the binding context of the WinUI TreeView items by using the [ItemTemplateDataContextType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateDataContextType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Animation
 
-The `TreeView` supports animating the expand or collapse of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of the TreeView.
+The `TreeView` supports animating the expand or collapse of the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html). To enable or disable the animation, use the [IsAnimationEnabled](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_IsAnimationEnabled) property of the WinUI TreeView.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection in WinUI TreeView | Syncfusion®
 description: Manage single and multiple selection, selected items, keyboard navigation, styling, and selection-related events.
@@ -33,7 +33,7 @@ treeView.SelectionMode = SelectionMode.Multiple;
 
 ## Programmatic Selection
 
-When the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) is other than `None`, the item or items in the TreeView can be selected from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem), or adding items to the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property based on the `SelectionMode`.
+When the [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionMode) is other than `None`, the item or items in the WinUI TreeView can be selected from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem), or adding items to the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItems) property based on the `SelectionMode`.
 
 When the selection mode is `Single` or `SingleDeselect`, programmatically select an item by setting the underlying object to the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectedItem) property.
 
@@ -60,7 +60,7 @@ W> If an item is selected programmatically when `SelectionMode` is `None` and if
 
 ## Select the nodes based on property of underlying data object
 
-You can bind selection state of node to the bool property in underlying data object by using [IsSelectedPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_HierarchyPropertyDescriptor_IsSelectedPropertyName) property. TreeView updates the selection of node when underlying data object property gets changed and vice versa.
+You can bind selection state of node to the bool property in underlying data object by using [IsSelectedPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_HierarchyPropertyDescriptor_IsSelectedPropertyName) property. WinUI TreeView updates the selection of node when underlying data object property gets changed and vice versa.
 
 {% tabs %}
 {% highlight xaml %}
@@ -245,7 +245,7 @@ private void treeView_SelectionChanging(object sender, Syncfusion.UI.Xaml.TreeVi
 
 ### SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionChanged) event will occur once selection process has been completed for the selected item in the TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionChanged) event will occur once selection process has been completed for the selected item in the WinUI TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
 
 * [AddedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemSelectionChangedEventArgs_AddedItems): Gets collection of the underlying data objects where the selection has been processed.
 * [RemovedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.ItemSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_TreeView_ItemSelectionChangedEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection has been removed.
@@ -276,7 +276,7 @@ The [FocusBorderColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.T
 The [FocusBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_FocusBorderThickness) property is used to set the border thickness for the current focused item. The default thickness is `2`.
 
 ## How to add selection on right click
-By default, the TreeView does not allow selection on right click. However, selection can be added at the application level by adding the tree node content to the `TreeView.SelectedItems` collection. To do this, we retrieve the node at the specified mouse point using the [GetNodeAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_GetNodeAt) method.
+By default, the WinUI TreeView does not allow selection on right click. However, selection can be added at the application level by adding the tree node content to the `TreeView.SelectedItems` collection. To do this, we retrieve the node at the specified mouse point using the [GetNodeAt](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_GetNodeAt) method.
 
 Below is the code example, which adds the node content to selected items upon right click on the tree node by checking the exact behavior of `FullRowSelect` support.
 
@@ -319,5 +319,5 @@ Below is the code example, which adds the node content to selected items upon ri
 {% endtabs %}
 
 ## Limitation
-* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) with a background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionBackgroundColor) will not be displayed because it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of the grid in the `ItemTemplate`.
+* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplate) with a background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_SelectionBackgroundColor) will not be displayed because it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the WinUI TreeView instead of the grid in the `ItemTemplate`.
 * When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
