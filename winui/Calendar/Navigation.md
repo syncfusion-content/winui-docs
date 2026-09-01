@@ -74,7 +74,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Selection based on view restriction
 
-You can restrict users from selecting dates within specific views (example: choosing a valid date for a credit card) in the `Calendar` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
+You can restrict users from selecting dates within specific views (example: choosing a valid date for a credit card) in the `WinUI Calendar` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6" %}
@@ -104,7 +104,7 @@ sfCalendar.MaxDisplayMode = CalendarDisplayMode.Decade;
 
 ## Scrolling within a view
 
-You can navigate within a view using mouse scroll or by navigation buttons in the `Calendar` control. The navigation direction animation can be changed by using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property value. By default, the value of the `NavigationDirection` property is **Vertical**.
+You can navigate within a view using mouse scroll or by navigation buttons in the `WinUI Calendar` control. The navigation direction animation can be changed by using the [`NavigationDirection`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_NavigationDirection) property value. By default, the value of the `NavigationDirection` property is **Vertical**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5" %}
@@ -138,7 +138,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Navigation by keyboard
 
-You can navigate between elements in the `Calendar` control using keyboard shortcuts or mouse interaction. The following is the list of keyboard shortcuts to navigate and select.
+You can navigate between elements in the `WinUI Calendar` control using keyboard shortcuts or mouse interaction. The following is the list of keyboard shortcuts to navigate and select.
 
 * **Tab** or **Shift+Tab** - To navigate between date cells and elements in the header.
 * **UpArrow**, **DownArrow**, **LeftArrow**, and **RightArrow** - To navigate between calendar date, month, or decade cells.

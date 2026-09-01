@@ -241,7 +241,7 @@ For more details, refer to [Restrict Date Selection](restrict-date-selection).
 
 ## Navigation between views
 
-* You can navigate between month, year, decade, and century views in the `Calendar` control.
+* You can navigate between month, year, decade, and century views in the WinUI Calendar control.
 * You can also restrict users from navigating between specific views only (month and year selection for credit cards) by using the [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MaxDisplayMode) properties.
 
 ![view-navigation-in-winui-calendar](Images/getting-started/view-navigation-in-winui-calendar.gif)

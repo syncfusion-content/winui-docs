@@ -13,7 +13,7 @@ This section describes how to select a date from the drop-down calendar and the 
 
 ## Hide clear button in textbox
 
-By default, the clear button `X` will be displayed in the textbox of the [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control, which can be used to clear the entered input. You can hide the clear button in the `Calendar Date Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the textbox of the [SfCalendarDatePicker](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html) control, which can be used to clear the entered input. You can hide the clear button in the `WinUI Calendar Date Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
@@ -44,7 +44,7 @@ sfCalendarDatePicker.ShowClearButton = false;
 
 You can change the alignment of the drop-down calendar as full, center, left, right, top, or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`.
 
-N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, then `Calendar Date Picker` smartly shifts the drop-down calendar alignment.
+N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, then `WinUI Calendar Date Picker` smartly shifts the drop-down calendar alignment.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="5" %}
@@ -138,7 +138,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize individual items in calendar
 
-You can change the UI of specific cells in the `Calendar Date Picker` drop-down calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in the `WinUI Calendar Date Picker` drop-down calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 1. Create a **EventDataConverter** class and set the special dates for specific events. 
 

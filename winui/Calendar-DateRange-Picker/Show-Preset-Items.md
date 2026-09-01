@@ -11,7 +11,7 @@ documentation: ug
 
 ## Show preset items in drop-down
 
-You can show a collection of preset items in the drop-down of the `Calendar DateRange Picker` control using the [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed to the `Preset` property and set the required template in the `PresetTemplate` property.
+You can show a collection of preset items in the drop-down of the `WinUI Calendar DateRange Picker` control using the [`Preset`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_Preset) and [`PresetTemplate`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_PresetTemplate) properties. Bind the collection of preset items to be displayed to the `Preset` property and set the required template in the `PresetTemplate` property.
 
 {% tabs %}
 {% highlight c# tabtitle="ViewModel.cs" %}
@@ -108,7 +108,7 @@ private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e
 
 ## Hide calendar on selecting a preset item
 
-You can hide the calendar in the drop-down when a user selects any preset items in the drop-down other than **CustomRange** using the `ShowCalendar` property. When a user wants to select a custom range of dates, the calendar is added to the drop-down of the `Calendar DateRange Picker` control after selecting the **CustomRange** preset item.
+You can hide the calendar in the drop-down when a user selects any preset items in the drop-down other than **CustomRange** using the `ShowCalendar` property. When a user wants to select a custom range of dates, the calendar is added to the drop-down of the `WinUI Calendar DateRange Picker` control after selecting the **CustomRange** preset item.
 {% tabs %}
 {% highlight c# tabtitle="MainWindow.xaml.cs" %}
 
