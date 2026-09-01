@@ -54,7 +54,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide dropdown button
 
-You can hide the dropdown button in the `Time Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
+You can hide the dropdown button in the `WinUI Time Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
 
 N> To open a dropdown time spinner, press the `Alt` + `Down Arrow` keys.
 
@@ -86,9 +86,9 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `Time Picker` by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Bottom`.
+You can change the alignment of the dropdown time spinner as full, center, left, right, top or bottom edge of the `WinUI Time Picker` by using the [`DropDownPlacement`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Bottom`.
 
-N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then the `Time Picker` smartly shifts the spinner alignment.
+N> If you change the dropdown alignment by using `DropDownPlacement` property and there is not sufficient space, then the `WinUI Time Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}

@@ -13,7 +13,7 @@ This section describes how to localize and format the WinUI [Time Picker](https:
 
 ## Change the type of clock
 
-The `Time Picker` control supports 12-hour and 24-hour formats. You can change the time format by using the `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
+The `WinUI Time Picker` control supports 12-hour and 24-hour formats. You can change the time format by using the `ClockIdentifier` property. The default value of `ClockIdentifier` property is `12HourClock`.
 
 You can select the required `ClockIdentifier` value from the below formats.
 
@@ -48,7 +48,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change flow direction
 
-You can change the flow direction of the `Time Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
+You can change the flow direction of the `WinUI Time Picker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
@@ -78,7 +78,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Change the language
 
-You can localize the `Time Picker` using the `Language` property. The default value of `Language` property is **en-US**.
+You can localize the `WinUI Time Picker` using the `Language` property. The default value of `Language` property is **en-US**.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}
@@ -104,7 +104,7 @@ sfTimePicker.Language = "ar";
 
 ![calendar-types-arabic-calendar-with-localization-in-winui-time-picker](Dropdown-Time-Spinner_images/calendar-types-arabic-calendar-with-localization-in-winui-time-picker.png)
 
-N> `Time Picker` control updates the flow direction visually based on the `Language` property value.
+N> `WinUI Time Picker` control updates the flow direction visually based on the `Language` property value.
 
 N> When the `Language` and `FlowDirection` properties are set, the `FlowDirection` property has higher precedence.
 
@@ -211,7 +211,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide clear button in the editor
 
-By default, the clear button `X` will be displayed in the editor of the `Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `Time Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
+By default, the clear button `X` will be displayed in the editor of the `WinUI Time Picker` control, which can be used to clear the entered input. You can hide the clear button in `WinUI Time Picker` control using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DateTimePickerBase.html#Syncfusion_UI_Xaml_Editors_DateTimePickerBase_ShowClearButton) property. The default value of `ShowClearButton` property value is **true**.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}
