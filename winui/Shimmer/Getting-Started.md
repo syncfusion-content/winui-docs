@@ -16,11 +16,11 @@ This section explains how to get started with the [WinUI Shimmer control](https:
 1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
-4. Add and initialize the [SfShimmer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html) control.
+4. Add and initialize the [Shimmer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html) control.
 
 ## Initializing Shimmer control
 
-You can add the [SfShimmer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html) control in XAML or create an instance of it programmatically in code-behind.
+You can add the [Shimmer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShimmer.html) control in XAML or create an instance of it programmatically in code-behind.
 
 {% tabs %}
 {% highlight xaml %}

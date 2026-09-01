@@ -7,13 +7,13 @@ control: AI AssistView
 documentation: ug
 ---
 
-# Response Toolbar in WinUI AIAssistView
+# Response Toolbar in WinUI AI AssistView
 
-The [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
+The [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control includes a **Response Toolbar** feature, which provides built-in options such as Copy, Regenerate, Like, and Dislike for each chat response. These items provide quick actions to enhance user interactions. In addition to the built-in options, users can personalize the Response Toolbar by adding their own custom toolbar items to suit specific application needs.
 
 ## ResponseToolbarItem
 
-The **ResponseToolbarItem** class is used to define and add items in the response toolbar of chat responses for SfAIAssistView. The following properties are available in this class:
+The **ResponseToolbarItem** class is used to define and add items in the response toolbar of chat responses for AI AssistView. The following properties are available in this class:
 
 - **Index**: Specifies the internal order or position of the toolbar item
 - **IsEnabled**: Specifies whether the toolbar item is enabled (interactive) or disabled (non-interactive).
@@ -32,11 +32,11 @@ The **ResponseToolbarItem** class is used to define and add items in the respons
 {% endhighlight %} 
 {% endtabs %}
 
-![Response toolbar feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_responsetoolbar.png)
+![Response toolbar feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_responsetoolbar.png)
 
 ## Response toolbar visibility
 
-The **IsResponseToolbarVisible** property of the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the response toolbar is displayed below each chat items responses. When set to false, the response toolbar is hidden. By default, this property is set to true.
+The **IsResponseToolbarVisible** property of the [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control determines whether the response toolbar is displayed below each chat items responses. When set to false, the response toolbar is hidden. By default, this property is set to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,11 +55,11 @@ aiAssistView.IsResponseToolbarVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![Response toolbar visibility in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
+![Response toolbar visibility in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_isresponsetoolbarvisible.png)
 
 ## Customization of Response toolbar item using ItemTemplate
 
-The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
+The **ResponseToolbarItem** in [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) can be customized using the ItemTemplate property to define a custom appearance and behavior. This allows you to display icons, buttons, text, or even UI elements such as Path, Image, or TextBlock within the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -90,7 +90,7 @@ The **ResponseToolbarItem** in [SfAIAssistView](https://help.syncfusion.com/cr/w
 {% endhighlight %} 
 {% endtabs %}
 
-![Customization of response toolbar item using ItemTemplate feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_customizedresponsetoolbartemplate.png)
+![Customization of response toolbar item using ItemTemplate feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_customizedresponsetoolbartemplate.png)
 
 ## Item clicked event 
 

@@ -7,11 +7,11 @@ control: SfAIAssistView
 documentation: ug
 ---
 
-# Stop Responding in WinUI AIAssistView
+# Stop Responding in WinUI AI AssistView
 
 ## EnableStopResponding
 
-The **SfAIAssistView** control includes a **Stop Responding** feature, allowing users to cancel an ongoing AI response by clicking the Stop Responding button. This feature ensures that users can interrupt the response if it is no longer needed.
+The **AI AssistView** control includes a **Stop Responding** feature, allowing users to cancel an ongoing AI response by clicking the Stop Responding button. This feature ensures that users can interrupt the response if it is no longer needed.
 
 By default, the Stop Responding button is not displayed. To enable it, set the EnableStopResponding property to true.
 
@@ -47,7 +47,7 @@ sfAIAssistView.EnableStopResponding = true;
 
 ### Event and Command
 
-The **SfAIAssistView** control provides the **StopResponding** event and **StopRespondingCommand**. These are triggered when the Stop Responding button is clicked. You can handle these actions to stop an ongoing AI response, as shown below.
+The **AI AssistView** control provides the **StopResponding** event and **StopRespondingCommand**. These are triggered when the Stop Responding button is clicked. You can handle these actions to stop an ongoing AI response, as shown below.
 
 #### StopResponding Event
 
@@ -109,11 +109,11 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![StopResponding feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_stopresponding.gif)
+![StopResponding feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_stopresponding.gif)
 
 #### StopRespondingTemplate
 
-The **StopRespondingTemplate** property in SfAIAssistView defines the UI template for the Stop Responding button. This allows customization of the button’s appearance and behavior.
+The **StopRespondingTemplate** property in AI AssistView defines the UI template for the Stop Responding button. This allows customization of the button’s appearance and behavior.
 
 {% tabs %}
 
@@ -147,4 +147,4 @@ if(this.Resources.TryGetValue("stopRespondingTemplate", out var templateObj) && 
 {% endhighlight %}
 {% endtabs %}
 
-![StopRespondingTemplate feature in WinUI SfAIAssistView control](aiassistview_images/winui_aiassistview_stopresponding_template.gif)
+![StopRespondingTemplate feature in WinUI AI AssistView control](aiassistview_images/winui_aiassistview_stopresponding_template.gif)

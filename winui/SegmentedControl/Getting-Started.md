@@ -19,7 +19,7 @@ This section provides an overview of how to use the [WinUI Segmented Control](ht
 
 3. Import the control namespace using `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
 
-4. Initialize the [SfSegmentedControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html).
+4. Initialize the [Segmented Control](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html).
 
 {% capture codesnippet1 %}
 {% tabs %}
