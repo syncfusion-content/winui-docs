@@ -54,7 +54,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Hide dropdown button
 
-You can hide the drop-down button in the `Date Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value to `false`. The default value of the `ShowDropDownButton` property is `true`.
+You can hide the drop-down button in the `WinUI Date Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value to `false`. The default value of the `ShowDropDownButton` property is `true`.
 
 N> To open the drop-down date spinner, press the `Alt` + `Down Arrow` keys.
 
@@ -88,7 +88,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 You can change the alignment of the drop-down date spinner as full, center, left, right, top, or bottom edge by using the [DropDownPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of the `DropDownPlacement` property is `Auto`.
 
-N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `Date Picker` smartly shifts the spinner alignment.
+N> If you change the drop-down alignment by using the `DropDownPlacement` property and there is not sufficient space, the `WinUI Date Picker` smartly shifts the spinner alignment.
 
 {% tabs %}
 {% highlight XAML tabtitle="MainWindow.xaml" hl_lines="6" %}

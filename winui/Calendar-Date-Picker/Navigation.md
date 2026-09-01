@@ -46,7 +46,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Selection based on view restriction
 
-You can restrict users from selecting a date within specific views (example: choosing a validity date for a credit card) in the `Calendar Date Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
+You can restrict users from selecting a date within specific views (example: choosing a validity date for a credit card) in the `WinUI Calendar Date Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7" %}
@@ -76,7 +76,7 @@ sfCalendarDatePicker.DisplayDateFormat = "MM/yyyy";
 
 ![date-picker-restrict-date-selection-in-winui-calendar-date-picker](Navigation_images/date-picker-restrict-date-selection-in-winui-calendar-date-picker.gif)
 
-You can navigate between elements in the drop-down calendar of the `Calendar Date Picker` control using keyboard shortcuts or mouse interaction. The following is the list of keyboard shortcuts to navigate and select.
+You can navigate between elements in the drop-down calendar of the `WinUI Calendar Date Picker` control using keyboard shortcuts or mouse interaction. The following is the list of keyboard shortcuts to navigate and select.
 
 * **Tab** or **Shift+Tab** - To navigate between date cells and elements in the header.
 * **UpArrow**, **DownArrow**, **LeftArrow**, and **RightArrow** - To navigate between calendar date, month, or decade cells.
