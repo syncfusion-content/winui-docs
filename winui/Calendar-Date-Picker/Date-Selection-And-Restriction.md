@@ -30,7 +30,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
 
-You can also change the selected date interactively by selecting a date from the drop-down calendar or by entering the date value in the editor of the `Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
+You can also change the selected date interactively by selecting a date from the drop-down calendar or by entering the date value in the editor of the `WinUI Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
 
 ![date-selection-in-winui-calendar-date-picker](Getting-Started_images/date-selection-in-winui-calendar-date-picker.gif)
 
@@ -186,7 +186,7 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates).
 
-You can also change the text displayed for specific days or dates in the `Calendar Date Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
+You can also change the text displayed for specific days or dates in the `WinUI Calendar Date Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 
 {% tabs %}
 {% highlight C# tabtitle="MainWindow.xaml.cs" hl_lines="10 11" %}

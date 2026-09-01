@@ -277,7 +277,7 @@ timePicker.Description = "Your order will be delivered on time.";
 
 ## Setting watermark text
 
-You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceholderText) property. This will be displayed only when the `Time Picker` contains the `SelectedTime` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceholderText`.
+You can prompt the user with some information by using the [`PlaceholderText`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfTimePicker.html#Syncfusion_UI_Xaml_Editors_SfTimePicker_PlaceholderText) property. This will be displayed only when the `WinUI Time Picker` contains the `SelectedTime` property as `null` and `AllowNull` property as `true`. If `AllowNull` property is `false`, then the current system time is updated in `SelectedTime` property and displayed instead of `PlaceholderText`.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6" %}

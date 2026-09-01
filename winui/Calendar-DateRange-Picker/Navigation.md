@@ -53,7 +53,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Selection based on view restriction
 
-You can restrict users from selecting date ranges within specific views (example: choosing the manufactured and expiry date of a product) in the `Calendar DateRange Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
+You can restrict users from selecting date ranges within specific views (example: choosing the manufactured and expiry date of a product) in the `WinUI Calendar DateRange Picker` control using the `MinDisplayMode` and `MaxDisplayMode` properties.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7" %}
@@ -86,7 +86,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Navigation by keyboard
 
-You can navigate between elements in the drop-down calendar of the `Calendar DateRange Picker` control by keyboard keys or by mouse interaction. The following is the list of keyboard keys to navigate and select.
+You can navigate between elements in the drop-down calendar of the `WinUI Calendar DateRange Picker` control by keyboard keys or by mouse interaction. The following is the list of keyboard keys to navigate and select.
 
 * **Tab** or **Shift+Tab** - To navigate between date cells and elements in the header.
 * **UpArrow**, **DownArrow**, **LeftArrow**, and **RightArrow** - To navigate between calendar date, month, or decade cells.

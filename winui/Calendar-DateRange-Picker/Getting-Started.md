@@ -270,7 +270,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Selection changed notification
 
-You will be notified when the selected range is changed in the `Calendar DateRange Picker` by using the [`SelectedDateRangeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedDateRangeChanged) event. The `SelectedDateRangeChanged` event contains the old and new start range values in the `RangeStartNewValue` and `RangeStartOldValue` properties, as well as the old and new end range values in the `RangeEndNewValue` and `RangeEndOldValue` properties.
+You will be notified when the selected range is changed in the `WinUI Calendar DateRange Picker` by using the [`SelectedDateRangeChanged`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_SelectedDateRangeChanged) event. The `SelectedDateRangeChanged` event contains the old and new start range values in the `RangeStartNewValue` and `RangeStartOldValue` properties, as well as the old and new end range values in the `RangeEndNewValue` and `RangeEndOldValue` properties.
 
 * `RangeStartOldValue` - Gets the date that was previously selected as the start value in the range.
 * `RangeStartNewValue` - Gets the date that is currently selected as the start value in the range.
@@ -319,7 +319,7 @@ private void SfCalendarDateRangePicker_SelectedDateRangeChanged(object sender, S
 
 ## Hide the drop-down button
 
-You can hide the drop-down button in `Calendar DateRange Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as **false**. The default value of `ShowDropDownButton` property is **true**.
+You can hide the drop-down button in `WinUI Calendar DateRange Picker` by setting the [`ShowDropDownButton`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowDropDownButton) property value as **false**. The default value of `ShowDropDownButton` property is **true**.
 
 N> When the drop-down button is hidden, you can still open the drop-down calendar using the **Alt + DownArrow** keyboard shortcut.
 
@@ -352,7 +352,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Show the submit buttons
 
-You can show the submit buttons in the `Calendar DateRange Picker` drop-down by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value to **true**. The default value of the `ShowSubmitButtons` property is **false**.
+You can show the submit buttons in the `WinUI Calendar DateRange Picker` drop-down by setting the [`ShowSubmitButtons`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_ShowSubmitButtons) property value to **true**. The default value of the `ShowSubmitButtons` property is **false**.
 
 N> When the submit buttons are hidden, you can change the `SelectedRange` property value by simply selecting a date range.
 
@@ -393,7 +393,7 @@ For further details, refer to [Restrict DateRange Selection](restrict-daterange-
 
 ## Navigation in drop-down
 
-* You can navigate between month, year, decade, and century views in the `Calendar DateRange Picker` control.
+* You can navigate between month, year, decade, and century views in the `WinUI Calendar DateRange Picker` control.
 * You can also restrict users from navigating between specific views only (month and year selection for a credit card) using the [`MinDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MinDisplayMode) and [`MaxDisplayMode`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDateRangePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDateRangePicker_MaxDisplayMode) properties.
 
 ![view-navigation-in-winui-calendar-date-range-picker](Images/getting-started/view-navigation-in-winui-calendar-date-range-picker.gif)

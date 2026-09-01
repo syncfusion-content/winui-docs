@@ -43,7 +43,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Custom UI for specific cell in calendar
 
-You can change the UI of specific cells in the `Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of the `CalendarItem.ContentTemplate` is `CalendarItemInfo`. 
+You can change the UI of specific cells in the `WinUI Calendar` by using the [CalendarItem.ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItem.html) property. The `DataContext` of the `CalendarItem.ContentTemplate` is `CalendarItemInfo`. 
 
 {% tabs %}
 {% highlight C# tabtitle="EventDataConverter.cs" %}
@@ -182,7 +182,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a `ResourceDictionary` used in the `Calendar` control.
+You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a `ResourceDictionary` used in the `WinUI Calendar` control.
 
 <table>
 <tr>
