@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoSize Columns in WinUI Data Grid
 
-Data Grid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnWidthMode) or [GridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnWidthMode) property. Below is the list of predefined column sizing options available.
+WinUI Data Grid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnWidthMode) or [GridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnWidthMode) property. Below is the list of predefined column sizing options available.
 
 <table>
 <tr>
@@ -41,7 +41,7 @@ Calculates the width of column based on header and cell contents. So that header
 <code>AutoWithLastColumnFill</code>
 </td>
 <td>
-Applies <code>ColumnWidthMode.Auto</code> width to all the columns except last column which is visible and the remaining width from total width of SfDataGrid is set to last column.
+Applies <code>ColumnWidthMode.Auto</code> width to all the columns except last column which is visible and the remaining width from total width of Data Grid is set to last column.
 </td>
 </tr>
 <tr>
@@ -91,13 +91,13 @@ Below code, applies `ColumnWidthMode.Star` to equally set width for `SfDataGrid.
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Autosize-Columns-images/winui-datagrid-auto-size-column.png" alt="Auto Size Columns in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Autosize-Columns-images/winui-datagrid-auto-size-column.png" alt="Auto Size Columns" width="100%" Height="Auto"/>
 
 N> The `GridColumn.ColumnWidthMode` takes higher priority than the `SfDataGrid.ColumnWidthMode`.
 
 ## Fill remaining width for any column instead of last column when ColumnWidthMode is AutoLastColumnFill or AutoWithLastColumnFill 
 
-In Data Grid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill` or `AutoWithLastColumnFill` remaining width is applied to last column. You can apply the remaining width to specific column by setting [GridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnWidthMode) property as like below.
+In WinUI Data Grid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill` or `AutoWithLastColumnFill` remaining width is applied to last column. You can apply the remaining width to specific column by setting [GridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnWidthMode) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,7 +121,7 @@ this.sfDataGrid.Columns["OrderID"].ColumnWidthMode = ColumnWidthMode.AutoLastCol
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Autosize-Columns-images/winui-datagrid-column-filling.png" alt="Specific Column in WinUI DataGrid Fills Remaining Width" width="100%" Height="Auto"/>
+<img src="Autosize-Columns-images/winui-datagrid-column-filling.png" alt="Specific Column Fills Remaining Width" width="100%" Height="Auto"/>
 
 ## Column Auto Sizing for Visible Rows
 
@@ -269,7 +269,7 @@ sfDataGrid.ColumnSizer.FilterIconWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
-### Changing font settings for DataGrid
+### Changing font settings for Data Grid
 
 You can change the `font settings` for column width calculation by setting [ColumnSizer.FontSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontSize), [ColumnSizer.FontFamily](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_FontFamily) and [ColumnSizer.Margin](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.DataGridRowColumnSizer-1.html#Syncfusion_UI_Xaml_Grids_DataGridRowColumnSizer_1_Margin) properties.  This settings will be considered for all columns.
 
@@ -413,9 +413,9 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Autosize-Columns-images/winui-datagrid-column-ratio.png" alt="WinUI DataGrid displays ColumnRatio Column Width" width="100%" Height="Auto"/>
+<img src="Autosize-Columns-images/winui-datagrid-column-ratio.png" alt="Displays ColumnRatio Column Width" width="100%" Height="Auto"/>
 
-## Change the width of DataGrid ComboBoxColumn based on it’s ItemsSource
+## Change the width of Data Grid ComboBoxColumn based on it’s ItemsSource
 
 By default, the `ColumnWidthMode` calculates auto width based on the column content. You can change the auto width calculation for [GridComboBoxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridComboBoxColumn.html) based on its items source by overriding the [CalculateCellWidth](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridColumnSizer.html#Syncfusion_UI_Xaml_DataGrid_DataGridColumnSizer_CalculateCellWidth_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) virtual method.
 
