@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Master-Details View in WinUI Data Grid | Syncfusion®
-description: Master-Details View in WinUI Data Grid displays hierarchical data with expandable master-detail relationships, enabling organized navigation and data exploration.
+description: Master-Details View in Data Grid displays hierarchical data with expandable master-detail relationships, enabling organized navigation and data exploration.
 platform: winui
 control: Data Grid
 documentation: ug
