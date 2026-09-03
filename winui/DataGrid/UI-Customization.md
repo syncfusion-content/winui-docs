@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UI Customization in WinUI Data Grid | Syncfusion®
-description: UI customization in Data Grid allows styling, templates, and visual elements to be tailored for a personalized appearance and experience.
+description: UI customization in WinUI Data Grid allows styling, templates, and visual elements to be tailored for a personalized appearance and experience.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # UI Customization in WinUI Data Grid
 
-The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and using key's.
+The appearance of WinUI Data Grid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and using key's.
  
 ## Styling Record row
 
@@ -36,7 +36,7 @@ The record rows can be customized by using `SyncfusionDataGridRowControlForegrou
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img1.png" alt="Displaying row styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img1.png" alt="Displaying row styling" width="100%" Height="Auto"/>
 
 ## Selection
 
@@ -63,7 +63,7 @@ The foreground and background for the selected row, cell can be customized by us
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img2.png" alt="Displaying selection appearance customization for WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img2.png" alt="Displaying selection appearance customization" width="100%" Height="Auto"/>
 
 ## Styling Column Header
 
@@ -92,7 +92,7 @@ The header cell can be customized by using `SyncfusionGridHeaderCellControlBackg
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img3.png" alt="Displaying column header styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img3.png" alt="Displaying column header styling" width="100%" Height="Auto"/>
 
 ### Styling Stacked Headers
 
@@ -128,7 +128,7 @@ The appearance of stacked header can be customized by using `SyncfusionGridStack
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img4.png" alt="Displaying StackedHeader styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img4.png" alt="Displaying StackedHeader styling" width="100%" Height="Auto"/>
 
 ## Styling CaptionSummary rows
 
@@ -159,7 +159,7 @@ The caption summary rows can be customized by using `SyncfusionCaptionSummaryRow
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img5.png" alt="Displaying CaptionSummary row styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img5.png" alt="Displaying CaptionSummary row styling" width="100%" Height="Auto"/>
 
 ## Styling GroupSummary rows
 
@@ -205,7 +205,7 @@ The group summary cells can be customized by using `SyncfusionGroupSummaryRowCon
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img6.png" alt="Displaying GroupSummary cell styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img6.png" alt="Displaying GroupSummary cell styling" width="100%" Height="Auto"/>
 
 ## Styling TableSummary rows
 
@@ -242,7 +242,7 @@ The table summary rows can be customized by using `SyncfusionTableSummaryRowCont
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img7.png" alt="Displaying TableSummary row styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img7.png" alt="Displaying TableSummary row styling" width="100%" Height="Auto"/>
 
 ## Styling unbound row 
 
@@ -274,7 +274,7 @@ The unbound row cells can be customized by using `SyncfusionUnboundRowControlFor
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img8.png" alt="Displaying unbound row cell styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img8.png" alt="Displaying unbound row cell styling" width="100%" Height="Auto"/>
 
 ## Styling AddNewRow
 
@@ -304,7 +304,7 @@ The appearance of AddNewRow can customized by using `SyncfusionAddNewRowControlB
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img9.png" alt="Displaying AddNewRow styling in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img9.png" alt="Displaying AddNewRow styling" width="100%" Height="Auto"/>
 
 ## Styling RowHeader
 
@@ -335,7 +335,7 @@ The appearance of row header can be customized by using `SyncfusionGridRowHeader
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img12.png" alt="Appearance customization of Row header using key in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img12.png" alt="Appearance customization of Row header using key" width="100%" Height="Auto"/>
 
 ## Styling DetailsViewDataGrid
 
@@ -356,4 +356,4 @@ The appearance of [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syn
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI_Customization-images/UI_Customization-img11.png" alt="Appearance customization of DetailsViewDataGrid using key in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="UI_Customization-images/UI_Customization-img11.png" alt="Appearance customization of DetailsViewDataGrid using key" width="100%" Height="Auto"/>

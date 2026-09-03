@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summaries in WinUI Data Grid | Syncfusion®
-description: Summaries in Data Grid provide aggregate calculations and customizable summary displays, helping analyze and present data effectively.
+description: Summaries in WinUI Data Grid provide aggregate calculations and customizable summary displays, helping analyze and present data effectively.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -10,23 +10,23 @@ documentation: ug
 
 # Summaries in WinUI Data Grid
 
-SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+WinUI Data Grid provides support to display the concise information about the data objects using summaries. Data Grid provides below three different types of summary rows.
 
-* **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid. 
+* **Table Summary** – Used to display summary information of table either at top or bottom of WinUI Data Grid. 
 
 * **Group Summary** – used to display summary information of data objects in each group.
 
 * **Caption Summary** – used to display summary information in the caption of the group.
  
-<img src="Summaries_images/winui-datagrid-summaries.png" alt="WinUI DataGrid with Table and Summaries" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-summaries.png" alt="Table and Summaries" width="100%" Height="Auto"/>
 
 Summary rows are represented by using [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html) and  each `GridSummaryRow` hold summary information of columns in [SummaryColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_SummaryColumns) property. The `SummaryColumns` contains the collection of [GridSummaryColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html) which carries the name of column, format and its summary aggregate type.
 
 ## Table Summary
 
-The table summary calculates the summary value over all the records. SfDataGrid allows you to add any number of table summary rows in top and bottom of SfDataGrid.
+The table summary calculates the summary value over all the records. Data Grid allows you to add any number of table summary rows in top and bottom of Data Grid.
 
-You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_TableSummaryRows) collection.
+You can add table summary row in Data Grid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_TableSummaryRows) collection.
 
 ### Defining summary for column
 
@@ -34,7 +34,7 @@ You can display summary information in the column by setting [GridSummaryRow.Sho
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
@@ -92,7 +92,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-table-summary-with-column.png" alt="WinUI DataGrid displays Table Summary on Column Basics" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-table-summary-with-column.png" alt="Displays Table Summary on Column Basics" width="100%" Height="Auto"/>
 
 ### Displaying summary for Row
 
@@ -153,12 +153,12 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-table-summary-with-row.png" alt="WinUI DataGrid displays Table Summary on a Row" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-table-summary-with-row.png" alt="Displays Table Summary on a Row" width="100%" Height="Auto"/>
 
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_Title)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
+Data Grid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_Title)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
 
 Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to define summary columns.
 
@@ -284,7 +284,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
 
-<img src="Summaries_images/winui-datagrid-table-summary-with-title.png" alt="Table Summary Columns with Title in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-table-summary-with-title.png" alt="Table Summary Columns with Title" width="100%" Height="Auto"/>
 
 #### Limitations
 
@@ -296,7 +296,7 @@ The following are the limitations of displaying column summary along with title 
 
 ### Positioning TableSummaryRow
 
-You can position the table summary either at top or bottom of SfDataGrid by setting [GridTableSummaryRow.Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTableSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridTableSummaryRow_Position) property.
+You can position the table summary either at top or bottom of Data Grid by setting [GridTableSummaryRow.Position](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTableSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridTableSummaryRow_Position) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -372,13 +372,13 @@ this.sfDataGrid.TableSummaryRows.Add(tablesummaryrow2);
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-table-summary-position.png" alt="WinUI DataGrid Table Summary Position" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-table-summary-position.png" alt="Table Summary Position" width="100%" Height="Auto"/>
 
 ## Group Summary
 
-Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. SfDataGrid allows you to add any number of group summary rows.
+Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. Data Grid allows you to add any number of group summary rows.
 
-You can add the group summary rows in SfDataGrid by adding the [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupSummaryRows) collection.
+You can add the group summary rows in Data Grid by adding the [GridSummaryRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GroupSummaryRows) collection.
 
 ### Defining summary for column
 
@@ -386,7 +386,7 @@ You can display summary information in the column by setting [GridSummaryRow.Sho
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
@@ -448,7 +448,7 @@ this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-group-summary-with-column.png" alt="WinUI DataGrid displays Group Summary on Column Basics" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-group-summary-with-column.png" alt="Displays Group Summary on Column Basics" width="100%" Height="Auto"/>
 
 ### Displaying summary for Row
 
@@ -510,12 +510,12 @@ this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-group-summary-with-row.png" alt="WinUI DataGrid displays Group Summary on a Row" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-group-summary-with-row.png" alt="Displays Group Summary on a Row" width="100%" Height="Auto"/>
 
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_Title)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
+Data Grid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_Title)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
 
 Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to define summary columns.
 
@@ -587,7 +587,7 @@ this.sfDataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
 
-<img src="Summaries_images/winui-datagrid-group-summary-with-title.png" alt="Group Summary with Title in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-group-summary-with-title.png" alt="Group Summary with Title" width="100%" Height="Auto"/>
 
 #### Limitations
 
@@ -599,12 +599,12 @@ The following are the limitations of displaying column summary along with title 
 
 ## Caption Summaries
 
-SfDataGrid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
+Data Grid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
 
 Below screen shot shows the built-in caption summary of Group.
 
 
-<img src="Summaries_images/winui-datagrid-caption-summary.png" alt="Caption summary in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-caption-summary.png" alt="Caption summary" width="100%" Height="Auto"/>
 
 ### Formatting built-in caption summary
 
@@ -630,7 +630,7 @@ You can change group caption format to display column name and count alone by se
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-group-caption-text-format.png" alt="Caption Summary displays with Group Caption Text Format in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-group-caption-text-format.png" alt="Caption Summary displays with Group Caption Text Format" width="100%" Height="Auto"/>
 
 ### Defining summary for column
 
@@ -638,7 +638,7 @@ You can display summary information in the column by setting [GridSummaryRow.Sho
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
@@ -697,7 +697,7 @@ this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-caption-summary-with-column.png" alt="WinUI DataGrid displays Caption Summary on Column Basics" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-caption-summary-with-column.png" alt="Displays Caption Summary on Column Basics" width="100%" Height="Auto"/>
 
 ### Displaying summary for Row
 
@@ -759,12 +759,12 @@ this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-caption-summary-with-row.png" alt="WinUI DataGrid displays Caption Summary on a Row" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-caption-summary-with-row.png" alt="Displays Caption Summary on a Row" width="100%" Height="Auto"/>
 
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
+Data Grid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_Title) and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_TitleColumnCount) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_ShowSummaryInRow) is disabled.
 
 Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to define summary columns.
 
@@ -836,7 +836,7 @@ this.sfDataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
 
-<img src="Summaries_images/winui-datagrid-caption-summary-with-title.png" alt="Caption Summary Columns with Title in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-caption-summary-with-title.png" alt="Caption Summary Columns with Title" width="100%" Height="Auto"/>
 
 #### Limitations
 
@@ -878,7 +878,7 @@ N> [DoubleAggregate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Dat
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-with-sum-function.png" alt="WinUI DataGrid shows with Sum Function" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-with-sum-function.png" alt="Sum Function" width="100%" Height="Auto"/>
 
 ### Formatting Summary Value
 
@@ -907,7 +907,7 @@ In the below code snippet `UnitPrice` column summary is formatted using `c` form
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-summary-value-formatting.png" alt="Formatting Summary Value in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-summary-value-formatting.png" alt="Formatting Summary Value" width="100%" Height="Auto"/>
 
 ### Displaying additional Content in Summary
 
@@ -937,7 +937,7 @@ In the below code snippet `Total UnitPrice: ` text is appended before summary va
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-additional-summary-content.png" alt="WinUI DataGrid displays with Additional Summary Content" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-additional-summary-content.png" alt="Displays Additional Summary Content" width="100%" Height="Auto"/>
 
 ### Formatting Summary for Row using Title Property
 
@@ -964,7 +964,7 @@ You can format the summary value for row using [GridSummaryRow.Title](https://he
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-format-summary-using-title.png" alt="Formatting Summary Value with Title in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-format-summary-using-title.png" alt="Formatting Summary Value with Title" width="100%" Height="Auto"/>
 
 ## Aggregate Types
 
@@ -1017,7 +1017,7 @@ Used for custom summaries
 
 ## Calculate summary for selected rows
 
-SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SummaryCalculationUnit) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_CalculationUnit) property.
+Data Grid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SummaryCalculationUnit) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryRow.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryRow_CalculationUnit) property.
 This is applicable for all type of summary rows such as table, caption and group summary.
 
 In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
@@ -1093,7 +1093,7 @@ this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Summaries_images/winui-datagrid-calculate-records.png" alt="Calculate Selected Records Summary in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-calculate-records.png" alt="Calculate Selected Records Summary" width="100%" Height="Auto"/>
 
 N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
 
@@ -1104,7 +1104,7 @@ N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGr
 ## Custom summaries
 
 
-SfDataGrid allows you to implement your own aggregate functions, when the built-in aggregate functions don’t meet your requirement.
+Data Grid allows you to implement your own aggregate functions, when the built-in aggregate functions don’t meet your requirement.
 
 You can calculate the summary values based on custom logic using [GridSummaryColumn.CustomAggregate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSummaryColumn.html#Syncfusion_UI_Xaml_DataGrid_GridSummaryColumn_CustomAggregate) property.
 
@@ -1224,7 +1224,7 @@ this.sfDataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endcapture %}
 {{ codesnippet2 | OrderList_Indent_Level_1 }}
 
-<img src="Summaries_images/winui-datagrid-custom-aggregate-summaries.png" alt="Custom Aggregate Summaries in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-custom-aggregate-summaries.png" alt="Custom Aggregate Summaries" width="100%" Height="Auto"/>
 
 ## Overriding Summary Renderer
 
@@ -1335,7 +1335,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 {% endtabs %}
 
 
-<img src="Summaries_images/winui-datagrid-summary-format.png" alt="Table Summary Formatting using Renderer in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-summary-format.png" alt="Table Summary Formatting using Renderer" width="100%" Height="Auto"/>
 
 
 ### Customizing GroupCaptionText
@@ -1427,4 +1427,4 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Summaries_images/winui-datagrid-group-caption-text.png" alt="Customized Group Caption Text Format in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Summaries_images/winui-datagrid-group-caption-text.png" alt="Customized Group Caption Text Format" width="100%" Height="Auto"/>
