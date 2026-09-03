@@ -26,7 +26,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Node-CheckBox_images/Node-CheckBox_img1.png" alt="Node with CheckBox in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Node-CheckBox_images/Node-CheckBox_img1.png" alt="Node with CheckBox" width="100%" Height="Auto"/>
 
 ## Indeterminate State Support
 
@@ -49,7 +49,7 @@ treeGrid.AllowTriStateChecking = true;
 
 ## Recursive Checking
 
-SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) property as `true`.
+TreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) property as `true`.
 
 * A tree node will be checked only if all its child nodes are checked.
 * A tree node will be unchecked if all its child nodes are unchecked. 
@@ -70,7 +70,7 @@ treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Node-CheckBox_images/Node-CheckBox_img2.png" alt="RecursiveChecking mode demo for WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Node-CheckBox_images/Node-CheckBox_img2.png" alt="RecursiveChecking mode demo" width="100%" Height="Auto"/>
 
 N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`, CheckBox can be in indeterminate state.
 
@@ -207,11 +207,11 @@ public class BoolToVisibilityConverter : IValueConverter
 
 Here, node CheckBox is collapsed for leaf nodes.
 
-<img src="Node-CheckBox_images/Node-CheckBox_img4.png" alt="Leaf nodes checkbox visibility collapsed in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Node-CheckBox_images/Node-CheckBox_img4.png" alt="Leaf nodes checkbox visibility collapsed" width="100%" Height="Auto"/>
 
 ## Handling Selection based on CheckBox State
 
-SfTreeGrid has following modes for processing selection based on check box state.
+TreeGrid has following modes for processing selection based on check box state.
 
 1. Default – Selection and state of checkbox works independent of each other.
 2. SelectOnCheck – Row can be selected or deselected based on state of checkbox.
@@ -236,7 +236,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Node-CheckBox_images/Node-CheckBox_img5.png" alt="CheckBoxSelectionMode as default demo for WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Node-CheckBox_images/Node-CheckBox_img5.png" alt="CheckBoxSelectionMode as default demo" width="100%" Height="Auto"/>
 
 **SelectOnCheck**
 
@@ -256,7 +256,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Node-CheckBox_images/Node-CheckBox_img6.png" alt="CheckBoxSelectionMode as SelectOnCheck demo for WinUi TreeGrid" width="100%" Height="Auto"/>
+<img src="Node-CheckBox_images/Node-CheckBox_img6.png" alt="CheckBoxSelectionMode as SelectOnCheck demo" width="100%" Height="Auto"/>
 
 **SynchronizeSelection**
 
@@ -275,7 +275,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Node-CheckBox_images/Node-CheckBox_img7.png" alt="CheckBoxSelectionMode as SynchronizeSelection demo for WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Node-CheckBox_images/Node-CheckBox_img7.png" alt="CheckBoxSelectionMode as SynchronizeSelection demo" width="100%" Height="Auto"/>
 
 N>
 * Recursive checking is not supported when selection mode is single.
