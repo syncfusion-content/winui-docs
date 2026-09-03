@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering in WinUI TreeGrid
 
-Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as the programmatic filters.
+Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In TreeGrid, filtering can be applied through the UI as well as the programmatic filters.
 
 ## FilterLevel
 
@@ -23,19 +23,19 @@ treeGrid.FilterLevel = FilterLevel.All;
 {% endhighlight %}
 {% endtabs %}
 
-* Root - Filter will be applied to root nodes only in SfTreeGrid.
+* Root - Filter will be applied to root nodes only in TreeGrid.
 
-* All - Filter will be applied to all the nodes in SfTreeGrid.
+* All - Filter will be applied to all the nodes in TreeGrid.
 
 * Extended - Filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition. 
 
 **Root**
 
-Filter will be applied to root nodes only in SfTreeGrid. For other nodes, `IsFiltered` value will be false, and they always will be displayed in view.
+Filter will be applied to root nodes only in TreeGrid. For other nodes, `IsFiltered` value will be false, and they always will be displayed in view.
 
 **All**
 
-Filter will be applied to all the nodes in SfTreeGrid. If a parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
+Filter will be applied to all the nodes in TreeGrid. If a parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
 
 **Extended**
 
@@ -45,7 +45,7 @@ N> You can change the `FilterLevel` at run time.
 
 ## Programmatic filtering
 
-The programmatic filtering can be applied to SfTreeGrid using the following methods:
+The programmatic filtering can be applied to TreeGrid using the following methods:
 
 *	View Filtering
 * 	Column Filtering
@@ -81,11 +81,11 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
 
-<img src="Filtering-images/winui-treegrid-view-filtering.png" alt="View Filtering in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-view-filtering.png" alt="View Filtering" width="100%" Height="Auto"/>
 
 While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
 
-N> SfTreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) is set as `AllowDataShaping`.
+N> TreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) is set as `AllowDataShaping`.
 
 ### Clear filters
 
@@ -138,7 +138,7 @@ The [FilterBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Tre
 
 #### Clear filtering
 
-The filters applied to SfTreeGrid can be removed by clearing the `FilterPredicates` added for the columns. This can be achieved using the following methods:
+The filters applied to TreeGrid can be removed by clearing the `FilterPredicates` added for the columns. This can be achieved using the following methods:
 
 * [SfTreeGrid.ClearFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ClearFilters) - Clears filters for all the columns programmatically.
 * [SfTreeGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ClearFilter_System_String_) - Clears the filter for a specific column that has the columnName as MappingName.
@@ -187,18 +187,18 @@ this.treeGrid.Columns["FirstName"].FilterPredicates.Add(
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-multiple-filter.png" alt="Multiple Filter in WinUI TreeGrid Column" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-multiple-filter.png" alt="Multiple filter in a column" width="100%" Height="Auto"/>
 
 ## UI filtering
 
-SfTreeGrid provides Excel-like filtering UI and advanced filter UI to filter the data easily. UI filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to `true`. This allows to open the filter UI by clicking the filter icon on the column header to filter the nodes.
+TreeGrid provides Excel-like filtering UI and advanced filter UI to filter the data easily. UI filtering can be enabled by setting the [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowFiltering) property to `true`. This allows to open the filter UI by clicking the filter icon on the column header to filter the nodes.
 
 The filtering can be enabled or disabled for a specific column by setting the [TreeGridColumn.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowFiltering) property.
 
 {% tabs %}
 {% highlight c# %}
 
-// Enable UI filtering for SfTreeGrid.
+// Enable UI filtering for TreeGrid.
 this.treeGrid.AllowFiltering = true;
 
 // Enable UI filtering for EmployeeID column.
@@ -211,7 +211,7 @@ N> `TreeGridColumn.AllowFiltering` has higher priority than the `SfTreeGrid.Allo
 
 ### Built-in UI views
 
-The SfTreeGrid provides the following types of filter pop-up modes:
+TreeGrid provides the following types of filter pop-up modes:
 
 * Check box filter: Provides Excel-like filter interface with a list of check boxes. 
 
@@ -223,11 +223,11 @@ By default, the filter pop-up mode of the column is set to Both. The check box a
 
 #### Checkbox filtering UI
 
-<img src="Filtering-images/winui-treegrid-checkbox-filter.png" alt="Checkbox Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-checkbox-filter.png" alt="Checkbox Filter" width="100%" Height="Auto"/>
 
 #### Advanced filtering UI
 
-<img src="Filtering-images/winui-treegrid-advanced-filter.png" alt="Advanced Filter in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-advanced-filter.png" alt="Advanced Filter" width="100%" Height="Auto"/>
 
 ## Changing filter UI for grid
 
@@ -327,7 +327,7 @@ This filtering operation is performed based on the value of [SfTreeGrid.FilterLe
 
 Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying data type.
 
-The following built-in filter types are supported in SfTreeGrid:
+The following built-in filter types are supported in TreeGrid:
 
 * Text filter: Loads various menu options to filter the display text effectively.
 
@@ -360,13 +360,13 @@ When the DateTimeOffset type value is bound to the {{'[TreeGridColumn](https://h
 </tr>
 <tr>
 <td>
-<img src="Filtering-images/winui-treegrid-text-filter.png" alt="Displays Text Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-text-filter.png" alt="Displays Text Filter" />
 </td>
 <td>
-<img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-number-filter.png" alt="Displays Number Filter" />
 </td>
 <td>
-<img src="Filtering-images/winui-treegrid-date-filter.png" alt="Displays Date Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-date-filter.png" alt="Displays Date Filter" />
 </td>
 </tr>
 <tr>
@@ -442,11 +442,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-immediate-checkbox-filter.png" alt="Checkbox Filter with Immediate Filter" />
 
 The following screenshot illustrates the advanced filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter" />
 
 N> In check box filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ImmediateUpdateColumnFilter) is true.
 
@@ -472,11 +472,11 @@ this.sfTreeGrid.Columns["FirstName"].AllowBlankFilters = true;
 
 The following screenshot illustrates the check box filter when `AllowBlankFilters` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-filter-null-values.png" alt="Filter Null Values using Checkbox Filter" />
 
 The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to `true`.
 
-<img src="Filtering-images/winui-treegrid-null-values.png" alt="Filter Null Values using Advanced Filter in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-null-values.png" alt="Filter Null Values using Advanced Filter" />
 
 ## Changing AdvancedFilter type when loading dynamic ItemsSource
 
@@ -559,7 +559,7 @@ private void OnSfTreeGridFilterItemsPopulated(object sender, TreeGridFilterItems
 
 ### Changing filter UI
 
-Filter UI can be changed either for all the columns or for a specific column in SfTreeGrid by changing the [FilterMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) property value using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event.
+Filter UI can be changed either for all the columns or for a specific column in TreeGrid by changing the [FilterMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html#Syncfusion_UI_Xaml_TreeGrid_Filtering_TreeGridFilterControl_FilterMode) property value using the [SfTreeGrid.FilterItemsPopulating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_FilterItemsPopulating) event.
 
 Here, filter UI is changed to `AdvancedFilter` only for `EmployeeID` column.
 
@@ -598,7 +598,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-sort-option-customization.png" alt="Customizing Sort Option Text in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-sort-option-customization.png" alt="Customizing Sort Option Text" />
 
 ## Appearance
 
@@ -631,7 +631,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-hide-sort-option.png" alt="Hide Sort options in WinUI TreeGrid" />
+<img src="Filtering-images/winui-treegrid-hide-sort-option.png" alt="Hide Sort options" />
 
 ### Customizing the filter popup size 
 
@@ -652,7 +652,7 @@ xmlns:treeGridFiltering="using:Syncfusion.UI.Xaml.TreeGrid.Filtering"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-filter-popup-size-customization.png" alt="Customizing Filter Popup Size in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-filter-popup-size-customization.png" alt="Customizing Filter Popup Size" width="100%" Height="Auto"/>
 
 ### Changing filter icon style after applying filters
 
@@ -726,4 +726,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering-images/winui-treegrid-filter-icon-customization.png" alt="Customizing Filter Icon in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Filtering-images/winui-treegrid-filter-icon-customization.png" alt="Customizing Filter Icon" width="100%" Height="Auto"/>

@@ -39,4 +39,4 @@ The header cell can be customized by using `SyncfusionTreeGridHeaderCellBackgrou
 {% endhighlight %}
 {% endtabs %}
 
-<img src="UI-Customization_images/UI-Customization_img1.png" alt="UI customized for WinUI Treagrid Headers" width="100%" Height="Auto"/>
+<img src="UI-Customization_images/UI-Customization_img1.png" alt="UI customized for Headers" width="100%" Height="Auto"/>
