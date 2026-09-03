@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Filtering in WinUI Data Grid | Syncfusion®
-description: Filtering in Data Grid helps users display relevant data by applying built-in, custom, and programmatic filtering criteria efficiently.
+description: Filtering in WinUI Data Grid helps users display relevant data by applying built-in, custom, and programmatic filtering criteria efficiently.
 platform: winui
 control: Data Grid
 documentation: ug
 ---
 # Filtering in WinUI Data Grid
-Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied through the UI as well as the programmatic filters. 
+Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the WinUI Data Grid the filtering can be applied through the UI as well as the programmatic filters. 
 
 ## Programmatic filtering
   
-DataGrid allows you to filter the data programmatically in below ways,
+WinUI Data Grid allows you to filter the data programmatically in below ways,
 
 * Through View Predicate
 * Through Column Filter
@@ -110,7 +110,7 @@ private void ApplyFilterPredicate(object sender, RoutedEventArgs e)
 
 ### Clear Filtering
 
-SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
+Data Grid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
 
 * [SfDataGrid.ClearFilters](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ClearFilters) - Clears filters for all the columns programmatically. 
 * [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ClearFilter_System_String_) - Clears the filter for particular column that has the columnName as `MappingName`.
@@ -127,7 +127,7 @@ this.sfDataGrid.ClearFilter(this.sfDataGrid.Columns[0]);
 
 ## Excel like UI Filtering
 
-SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true` , where you can open filter UI by clicking the Filter icon in column header and filter the records.  
+Data Grid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFiltering) property to `true` , where you can open filter UI by clicking the Filter icon in column header and filter the records.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,7 +160,7 @@ N>
 
 ### Built-in UI Views
 
-SfDataGrid filter UI comprises two different UIs. 
+Data Grid filter UI comprises two different UIs. 
 
 * **Checkbox Filter UI** - Provides excel like filter interface with list of check boxes.
 
@@ -168,17 +168,17 @@ SfDataGrid filter UI comprises two different UIs.
 
 By default, both [CheckboxFilter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.FilterMode.html#Syncfusion_UI_Xaml_Grids_FilterMode_CheckboxFilter) and [Advanced Filter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.FilterMode.html#Syncfusion_UI_Xaml_Grids_FilterMode_AdvancedFilter) are loaded while opening the filter pop-up. You can switch between `AdvancedFilter` and `CheckboxFilter` by using AdvancedFilter button in the UI View.
 
-SfDataGrid with Checkbox Filter View:
+Data Grid with Checkbox Filter View:
       
-<img src="Filtering_images/winui-datagrid-filter-like-excel.png" alt="WinUI DataGrid with Filter like Excel" width="100%" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-filter-like-excel.png" alt="Filter like Excel" width="100%" Height="Auto"/>
         
-SfDataGrid with Advanced Filter View:
+Data Grid with Advanced Filter View:
     
-<img src="Filtering_images/winui-datagrid-advanced-filter.png" alt="WinUI DataGrid with Advanced Filter" width="100%" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-advanced-filter.png" alt="Advanced Filter" width="100%" Height="Auto"/>
 
 ## Choose between built-in UI Views
 
-SfDataGrid lets you to customize the UI Views displayed for particular column or grid using [FilterMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html#Syncfusion_UI_Xaml_DataGrid_GridFilterControl_FilterMode) property in [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html). 
+Data Grid lets you to customize the UI Views displayed for particular column or grid using [FilterMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html#Syncfusion_UI_Xaml_DataGrid_GridFilterControl_FilterMode) property in [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html). 
 
 Below are the options,
 
@@ -299,13 +299,13 @@ When the DateTimeOffset type value is bound to the {{ '[GridColumn](https://help
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/winui-datagrid-text-filter.png" alt="WinUI DataGrid displays Text Filter"/>
+<img src="Filtering_images/winui-datagrid-text-filter.png" alt="Displays Text Filter"/>
 </td>
 <td>
-<img src="Filtering_images/winui-datagrid-number-filter.png" alt="WinUI DataGrid displays Number Filter"/>
+<img src="Filtering_images/winui-datagrid-number-filter.png" alt="Displays Number Filter"/>
 </td>
 <td>
-<img src="Filtering_images/winui-datagrid-date-filter.png" alt="WinUI DataGrid displays Date Filter"/>
+<img src="Filtering_images/winui-datagrid-date-filter.png" alt="Displays Date Filter"/>
 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ By default, casing is not considered while filtering. Because, filter predicates
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering_images/winui-datagrid-filtering-performance.png" alt="Improve the performance while applying filter in WinUI DataGrid" width="Auto" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-filtering-performance.png" alt="Improve the performance while applying filter" width="Auto" Height="Auto"/>
 
 By default, `CanGenerateUniqueItems` is `True`. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -442,11 +442,11 @@ sfDataGrid.Columns["Country"].AllowBlankFilters = true;
 
 Checkbox Filter with `AllowBlankFilters` as `True`
 
-<img src="Filtering_images/winui-datagrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter in WinUI DataGrid" width="Auto" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-filter-null-values.png" alt="Filter Null Values using CheckBox Filter" width="Auto" Height="Auto"/>
 
 Advanced Filter with `AllowBlankFilters` as `True`
 
-<img src="Filtering_images/winui-datagrid-null-values.png" alt="Filter Null Values using Advanced Filter in WinUI DataGrid" width="Auto" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-null-values.png" alt="Filter Null Values using Advanced Filter" width="Auto" Height="Auto"/>
 
 ## Instant Filtering
 
@@ -465,17 +465,17 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 Checkbox Filter with `ImmediateUpdateColumnFilter` is `True`
 
-<img src="Filtering_images/winui-datagrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-immediate-checkbox-filter.png" alt="CheckBox Filter with Immediate Filter" width="100%" Height="Auto"/>
 
 Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 
-<img src="Filtering_images/winui-datagrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-immediate-advanced-filter.png" alt="Advanced Filter with Immediate Filter" width="100%" Height="Auto"/>
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if `ImmediateUpdateColumnFilter` is `True`.
 
 ## Events
 
-SfDataGrid provides the following events for filtering.
+Data Grid provides the following events for filtering.
 
 ### FilterChanging event
 
@@ -557,7 +557,7 @@ void sfDataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 
 ## Show image in CheckBoxFilterControl instead of image path
 
-By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CheckboxFilterControl.html) instead of image but you can show the image in `CheckBoxFilterControl` by setting [CheckboxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CheckboxFilterControl.html#Syncfusion_UI_Xaml_DataGrid_CheckboxFilterControl_ItemTemplate)  as like below. 
+By default, in Data Grid image path is shown inside the [CheckBoxFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CheckboxFilterControl.html) instead of image but you can show the image in `CheckBoxFilterControl` by setting [CheckboxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CheckboxFilterControl.html#Syncfusion_UI_Xaml_DataGrid_CheckboxFilterControl_ItemTemplate)  as like below. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -597,7 +597,7 @@ By default, in SfDataGrid image path is shown inside the [CheckBoxFilterControl]
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering_images/winui-datagrid-image-column-filter.png" alt="Column Filter with Image in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-image-column-filter.png" alt="Column Filter with Image" width="100%" Height="Auto"/>
 
 
 ## Functionality Customization
@@ -712,7 +712,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering_images/winui-datagrid-collapse-filter-popup.png" alt="Collapse sort option from filter popup in WinUI DataGrid" width="Auto" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-collapse-filter-popup.png" alt="Collapse sort option from filter popup" width="Auto" Height="Auto"/>
 
 ### Customizing Sort Options text
 
@@ -733,7 +733,7 @@ void sfDataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEv
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering_images/winui-datagrid-sorting-customization.png" alt="Customized Sort Option Text from Filter Popup in WinUI DataGrid" width="Auto" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-sorting-customization.png" alt="Customized Sort Option Text from Filter Popup" width="Auto" Height="Auto"/>
 
 ### Customize the FilterPopup size using GridFilterControl style
 
@@ -751,7 +751,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Filtering_images/winui-datagrid-filter-popup-customization.png" alt="Customizing Filter Popup in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Filtering_images/winui-datagrid-filter-popup-customization.png" alt="Customizing Filter Popup" width="100%" Height="Auto"/>
 
 ### Changing filter icon style after applying filters
 
