@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in WinUI AI AssistView | Syncfusion®
-description: Events in WinUI AI AssistView provide notifications for user interactions and AI response workflows, enabling customized behavior and event-driven functionality.
+description: Events in AI AssistView provide notifications for user interactions and AI response workflows, enabling customized behavior and functionality.
 platform: WinUI
 control: AI AssistView
 documentation: ug

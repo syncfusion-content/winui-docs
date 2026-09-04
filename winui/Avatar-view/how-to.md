@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Badge in WinUI AvatarView control | Syncfusion
-description: Learn about how to set the different states of badge for the WinUI AvatarView control.
+title: Badge in WinUI AvatarView control | Syncfusion®
+description: The Badge in WinUI AvatarView lets you display status indicators, notifications, or counts on avatars for enhanced visibility.
 platform: WinUI
 control: AvatarView
 documentation: ug
