@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI AI AssistView
 
-This section explains how to add the WinUI [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control to an application and bind it to a simple chat data source.
+This section explains how to add the WinUI AI AssistView control to an application and bind it to a simple chat data source.
 
 ## Creating an application with the WinUI AI AssistView
 
 1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Install the [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Chat** namespace in XAML or C#.
-4. Add and initialize the [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
+4. Add and initialize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.
 
 ## Initialize the AI AssistView
 
@@ -67,7 +67,7 @@ public sealed partial class MainWindow : Window
 
 ## Creating a view model for the AI AssistView
 
-To bind data to the [AI AssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control, update the XAML, set the window's DataContext in the code-behind, and add a _ViewModel.cs_ file to the project, as shown in the following example.
+To bind data to the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control, update the XAML, set the window's DataContext in the code-behind, and add a _ViewModel.cs_ file to the project, as shown in the following example.
 
 {% tabs %}
 

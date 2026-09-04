@@ -21,6 +21,6 @@ The WinUI Markdown Viewer control is a UI component that renders Markdown text a
 
 - **Content customization** – Provides styling options to customize fonts, colors, and text appearance.
 
-The following image shows the rendered output of Markdown content in the `Markdown Viewer` control:
+The following image shows the rendered output of Markdown content in the Markdown Viewer control:
 
 ![Markdown Viewer Overview](Images/WinUI-markdown-viewer-overview.WEBP)

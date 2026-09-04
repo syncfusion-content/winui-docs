@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WinUI Rating
 
-This section explains the customization features available in the WinUI `Rating` control.
+This section explains the customization features available in the WinUI Rating control.
 
 ## Style
 

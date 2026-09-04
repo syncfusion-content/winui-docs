@@ -9,13 +9,13 @@ documentation: ug
 
 # Mermaid Diagram Support in WinUI Markdown Viewer
  
-The `Markdown Viewer` control supports embedding Mermaid diagrams directly in Markdown content using simple text syntax. Mermaid code blocks defined in the `Source` property are automatically interpreted and rendered as visual diagrams.
+The Markdown Viewer control supports embedding Mermaid diagrams directly in Markdown content using simple text syntax. Mermaid code blocks defined in the `Source` property are automatically interpreted and rendered as visual diagrams.
 
 ## Rendering Mermaid Diagrams
  
 Mermaid diagrams are created using fenced code blocks marked with the `mermaid` language inside Markdown content. When the viewer encounters these blocks, it converts the diagram definition into a graphical representation.
 
-The following XAML and C# examples demonstrate how to assign Markdown content containing Mermaid syntax to the `Markdown Viewer` control using the `Source` property
+The following XAML and C# examples demonstrate how to assign Markdown content containing Mermaid syntax to the Markdown Viewer control using the `Source` property
 
 {% tabs %} 
 {% highlight xaml %}

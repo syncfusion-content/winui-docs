@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WinUI Busy Indicator
 
-This section explains the customization features available in the WinUI `Busy Indicator` control.
+This section explains the customization features available in the WinUI Busy Indicator control.
 
 ## Size
 
