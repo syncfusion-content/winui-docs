@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Response Toolbar in WinUI AIAssistView | Syncfusion®
-description: The response toolbar in WinUI AIAssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
+title: Response Toolbar in WinUI AI AssistView | Syncfusion®
+description: The response toolbar in WinUI AI AssistView offers quick actions through toolbar items, enabling efficient interaction with AI-generated chat responses.
 platform: WinUI
 control: AI AssistView
 documentation: ug

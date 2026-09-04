@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion WinUI MarkdownViewer Control | Syncfusion®
-description: Learn about the overview of Syncfusion® Essential Studio WinUI MarkdownViewer control, its rendering capabilities, features, and more details.
+title: About Syncfusion WinUI Markdown Viewer Control | Syncfusion®
+description: Learn about the overview of Syncfusion® Essential Studio WinUI Markdown Viewer control, its rendering capabilities, features, and more details.
 platform: WinUI
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 

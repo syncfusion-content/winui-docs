@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WinUI AvatarView 
 
-The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
+The [AvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 

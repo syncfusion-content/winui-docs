@@ -4,7 +4,7 @@ title: Customization in WinUI Shadow | Syncfusion®
 description: Customization in WinUI Shadow Control enables configuring shadow color, opacity, position, blur radius, and other visual settings for rich shadow effects.
 
 platform: WinUI
-control: SfShadow
+control: Shadow
 documentation: ug
 ---
 

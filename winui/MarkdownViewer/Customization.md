@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Customization in WinUI MarkdownViewer | Syncfusion®
-description: Customization in WinUI MarkdownViewer enables styling markdown elements, modifying themes, and adjusting appearance for a personalized viewing experience.
+title: Customization in WinUI Markdown Viewer | Syncfusion®
+description: Customization in WinUI Markdown Viewer enables styling markdown elements, modifying themes, and adjusting appearance for a personalized viewing experience.
 platform: WinUI
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 

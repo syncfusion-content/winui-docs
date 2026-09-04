@@ -3,7 +3,7 @@ layout: post
 title: Customization in WinUI Rating | Syncfusion®
 description: Customization in WinUI Rating enables configuring styles, item sizes, templates, and read-only settings to create personalized rating experiences.
 platform: WinUI
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
