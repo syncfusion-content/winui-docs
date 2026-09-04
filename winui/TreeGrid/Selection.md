@@ -213,7 +213,7 @@ this.sfTreeGrid.SelectionController.ClearSelections(true);
 
 ### Automatic scrolling on drag selection
 
-SfTreeGrid scrolls rows and columns automatically when you try to perform the drag selection like in Excel. You can enable or disable AutoScrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridAutoScroller.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridAutoScroller_AutoScrolling) property.
+Tree Grid scrolls rows and columns automatically when you try to perform the drag selection like in Excel. You can enable or disable AutoScrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridAutoScroller.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridAutoScroller_AutoScrolling) property.
 
 {% tabs %}
 {% highlight c# %}
