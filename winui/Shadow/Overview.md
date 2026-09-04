@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WinUI Shadow Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® WinUI Shadow control, including shadow effects, customization options, and key features.
 platform: WinUI
-control: SfShadow
+control: Shadow
 documentation: ug
 ---
 

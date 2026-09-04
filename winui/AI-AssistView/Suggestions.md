@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Suggestions in WinUI AIAssistView | Syncfusion®
-description: The suggestions feature in WinUI AIAssistView displays AI-driven recommendations, helping users quickly interact with and refine their prompts.
+title: Suggestions in WinUI AI AssistView | Syncfusion®
+description: The suggestions feature in WinUI AI AssistView displays AI-driven recommendations, helping users quickly interact with and refine their prompts.
 platform: WinUI
-control: SfAIAssistView
+control: AI AssistView
 documentation: ug
 ---
 
