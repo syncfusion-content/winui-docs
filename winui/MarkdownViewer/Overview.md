@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion WinUI MarkdownViewer Control | Syncfusion®
-description: Learn about the overview of Syncfusion® Essential Studio WinUI MarkdownViewer control, its rendering capabilities, features, and more details.
+title: About Syncfusion WinUI Markdown Viewer Control | Syncfusion®
+description: Learn about the overview of Syncfusion® Essential Studio WinUI Markdown Viewer control, its rendering capabilities, features, and more details.
 platform: WinUI
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 
@@ -21,6 +21,6 @@ The WinUI Markdown Viewer control is a UI component that renders Markdown text a
 
 - **Content customization** – Provides styling options to customize fonts, colors, and text appearance.
 
-The following image shows the rendered output of Markdown content in the `Markdown Viewer` control:
+The following image shows the rendered output of Markdown content in the Markdown Viewer control:
 
 ![Markdown Viewer Overview](Images/WinUI-markdown-viewer-overview.WEBP)

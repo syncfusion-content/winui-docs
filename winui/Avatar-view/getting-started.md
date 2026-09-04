@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started with WinUI AvatarView
 
-This section explains how to get started with the WinUI [AvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control and configure its basic features.
+This section explains how to get started with the WinUI AvatarView control and configure its basic features.
 
 ## Creating an application with WinUI AvatarView
 
 1. Create a [WinUI 3 desktop application in C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
-4. Add and initialize the [AvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control.
+4. Add and initialize the [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control.
 
 ## Initialize AvatarView
 
@@ -49,7 +49,7 @@ using Syncfusion.UI.Xaml.Core;
 namespace GettingStarted;
 
 /// <summary>
-/// A window that hosts the default WinUI AvatarView (AvatarView) control.
+/// A window that hosts the default WinUI AvatarView control.
 /// </summary>
 public sealed partial class MainWindow : Window
 {
@@ -103,7 +103,7 @@ using Syncfusion.UI.Xaml.Core;
 namespace GettingStarted;
 
 /// <summary>
-/// A window that hosts the WinUI AvatarView (AvatarView) control with a custom image source.
+/// A window that hosts the WinUI AvatarView control with a custom image source.
 /// </summary>
 public sealed partial class MainWindow : Window
 {

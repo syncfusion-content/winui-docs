@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Getting Started with WinUI BusyIndicator | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI BusyIndicator control. Explore setup, features, examples, and customization options.
+title: Getting Started with WinUI Busy Indicator | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI Busy Indicator control. Explore setup, features, examples, and customization options.
 platform: WinUI
-control: SfBusyIndicator
+control: Busy Indicator
 documentation: ug
 ---
 
 # Getting Started with WinUI Busy Indicator
 
-This section explains how to add and configure the [Busy Indicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control in a WinUI application and demonstrates the basic features required to get started.
+This section explains how to add and configure the Busy Indicator control in a WinUI application and demonstrates the basic features required to get started.
 
 ## Creating an application with WinUI Busy Indicator control
 
 1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Install the [Syncfusion.Notifications.WinUI](https://www.nuget.org/packages/Syncfusion.Notifications.WinUI) NuGet package.
 3. Import the `Syncfusion.UI.Xaml.Notifications` namespace in XAML or C#.
-4. Create and initialize the [Busy Indicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control and add it to the window. Set [`IsActive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_IsActive) to `true` to display the indicator.
+4. Create and initialize the [SfBusyIndicator](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html) control and add it to the window. Set [`IsActive`](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Notifications.SfBusyIndicator.html#Syncfusion_UI_Xaml_Notifications_SfBusyIndicator_IsActive) to `true` to display the indicator.
 
 {% capture codesnippet1 %}
 {% tabs %}

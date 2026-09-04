@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion® WinUI BusyIndicator control | Syncfusion®
-description: Learn about the introduction of Syncfusion® WinUI BusyIndicator control, including its essential features, customization options, and capabilities
+title: About Syncfusion® WinUI Busy Indicator control | Syncfusion®
+description: Learn about the introduction of Syncfusion® WinUI Busy Indicator control, including its essential features, customization options, and capabilities
 platform: WinUI
-control: SfBusyIndicator
+control: Busy Indicator
 documentation: ug
 ---
 

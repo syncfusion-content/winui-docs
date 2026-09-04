@@ -1,9 +1,9 @@
 ---
 layout: post
-title: About Syncfusion WinUI AIAssistView Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio WinUI AIAssistView control and explore its features, capabilities, and more details.
+title: About Syncfusion WinUI AI AssistView Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio WinUI AI AssistView control and explore its features, capabilities, and more details.
 platform: WinUI
-control: SfAIAssistView
+control: AI AssistView
 documentation: ug
 ---
 

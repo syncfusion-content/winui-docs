@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization in WinUI AvatarView 
 
-The [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control offers a range of customization options, including modifying its border, background, and more.
+The AvatarView control offers a range of customization options, including modifying its border, background, and more.
 
 ## Border
 
-Customize the `AvatarView` control border using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush) and [BorderThickness](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderthickness) properties.
+Customize the AvatarView control border using the [BorderBrush](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderbrush) and [BorderThickness](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.borderthickness) properties.
 
 **BorderBrush**
 
@@ -146,7 +146,7 @@ avatarView.Background = new LinearGradientBrush()
 
 ## Font
 
-Customize the font of initials in the `AvatarView` control by using the [FontFamily](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.fontfamily) and [Foreground](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.foreground) properties.
+Customize the font of initials in the AvatarView control by using the [FontFamily](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.fontfamily) and [Foreground](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.control.foreground) properties.
 
 {% tabs %}
 {% highlight xaml %}

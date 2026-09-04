@@ -3,7 +3,7 @@ layout: post
 title: ToolTip in WinUI Rating | Syncfusion®
 description: ToolTip support in WinUI Rating enables displaying and formatting tooltip content, helping users understand rating values during interaction.
 platform: WinUI
-control: SfRating
+control: Rating
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion® WinUI Rating Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® WinUI Rating control, including its essential features, customization options, and capabilities.
 platform: WinUI
-control: SfRating
+control: Rating
 documentation: ug
 ---
 

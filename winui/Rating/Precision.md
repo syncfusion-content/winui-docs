@@ -3,7 +3,7 @@ layout: post
 title: Precision in WinUI Rating | Syncfusion®
 description: Precision in WinUI Rating enables full, half, and exact rating values, allowing accurate and flexible rating input based on application needs.
 platform: WinUI
-control: SfRating
+control: Rating
 documentation: ug
 ---
 

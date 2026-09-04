@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Animation Types in WinUI BusyIndicator | Syncfusion®
-description: Animation types in WinUI BusyIndicator provide various built-in loading animations, enabling users to customize visual feedback during busy states.
+title: Animation Types in WinUI Busy Indicator | Syncfusion®
+description: Animation types in WinUI Busy Indicator provide various built-in loading animations, enabling users to customize visual feedback during busy states.
 platform: WinUI
-control: SfBusyIndicator
+control: Busy Indicator
 documentation: ug
 ---
 

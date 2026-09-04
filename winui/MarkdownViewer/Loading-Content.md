@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Loading Markdown Content in WinUI MarkdownViewer | Syncfusion®
-description: Loading markdown content in WinUI MarkdownViewer supports content from strings, local files, and URLs, enabling flexible and efficient markdown rendering.
+title: Loading Markdown Content in WinUI Markdown Viewer | Syncfusion®
+description: Loading markdown content in WinUI Markdown Viewer supports content from strings, local files, and URLs, enabling flexible and efficient markdown rendering.
 platform: WinUI
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 

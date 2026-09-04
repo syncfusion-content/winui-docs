@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Getting Started with WinUI Shadow | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI SfShadow control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® WinUI Shadow control. Explore setup, features, examples, and customization options.
 platform: WinUI
-control: SfShadow
+control: Shadow
 documentation: ug
 ---
 
 # Getting Started with WinUI Shadow
 
-This section explains how to get started with the [Shadow control](https://www.syncfusion.com/winui-controls/shadow) in a WinUI application and demonstrates the basic steps required to add and use the control.
+This section explains how to get started with the Shadow control in a WinUI application and demonstrates the basic steps required to add and use the control.
 
 ## Creating an application with WinUI Shadow control
 
 1. Create a [WinUI 3 desktop app for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
-4. Create and initialize the [Shadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+4. Create and initialize the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% capture codesnippet1 %}
 {% tabs %}
@@ -71,7 +71,7 @@ namespace GettingStarted
 
 ## Applying shadow effect for image
 
-You can apply shadow effects to any [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) using the [Shadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
+You can apply shadow effects to any [Image](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.image) using the [SfShadow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfShadow.html) control.
 
 {% tabs %}
 {% highlight XAML %}

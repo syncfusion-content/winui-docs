@@ -3,7 +3,7 @@ layout: post
 title: Clear Rating Value in WinUI Rating | Syncfusion®
 description: Clear rating value support in WinUI Rating enables users to reset or remove the selected rating, providing greater flexibility in rating interactions.
 platform: WinUI
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
