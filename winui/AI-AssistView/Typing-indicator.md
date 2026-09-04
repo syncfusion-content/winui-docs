@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Typing Indicator in WinUI AIAssistView | Syncfusion®
-description: The typing indicator in WinUI AIAssistView provides visual feedback while AI processes prompts or generates responses, enhancing user engagement.
+title: Typing Indicator in WinUI AI AssistView | Syncfusion®
+description: The typing indicator in WinUI AI AssistView provides visual feedback while AI processes prompts or generates responses, enhancing user engagement.
 platform: WinUI
-control: SfAIAssistView
+control: AI AssistView
 documentation: ug
 ---
 

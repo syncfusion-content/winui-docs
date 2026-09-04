@@ -1,9 +1,9 @@
 ---
 layout: post
-title: OpenAI Connection in WinUI AIAssistView | Syncfusion®
-description: The OpenAI connection feature in WinUI AIAssistView enables integration with OpenAI services to deliver AI-powered conversations and chat experiences.
+title: OpenAI Connection in WinUI AI AssistView | Syncfusion®
+description: The OpenAI connection feature in WinUI AI AssistView enables integration with OpenAI services to deliver AI-powered conversations and chat experiences.
 platform: WinUI
-control: SfAIAssistView
+control: AI AssistView
 documentation: ug
 ---
 

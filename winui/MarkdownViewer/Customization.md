@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in WinUI MarkdownViewer | Syncfusion®
-description: Customization in WinUI MarkdownViewer enables styling markdown elements, modifying themes, and adjusting appearance for a personalized viewing experience.
+title: Customization in WinUI Markdown Viewer | Syncfusion®
+description: Customization in WinUI Markdown Viewer enables styling markdown elements, modifying themes, and adjusting appearance for a personalized viewing experience.
 platform: WinUI
-control: SfMarkdownViewer
+control: Markdown Viewer
 documentation: ug
 ---
 
 # Customization in WinUI Markdown Viewer
 
-The `Markdown Viewer` control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
+The Markdown Viewer control in WinUI provides a flexible styling system through its `Settings` property. This allows developers to customize the appearance of Markdown elements such as headings, paragraphs, lists, and more to match application themes and branding.
 
 ## Style settings for Markdown Viewer
 
@@ -26,7 +26,7 @@ The `MarkdownStyleSettings` class provides style customization for different Mar
 - `CodeBlockStyle` – Applies to code blocks.  
 - `MermaidStyle` – Applies to Mermaid diagram rendering.  
 
-You can apply these custom styles by assigning a `MarkdownStyleSettings` instance to the `Settings` property of `Markdown Viewer`, as shown in the following code example.
+You can apply these custom styles by assigning a `MarkdownStyleSettings` instance to the `Settings` property of Markdown Viewer control, as shown in the following code example.
 
 {% tabs %} 
 {% highlight xaml %}

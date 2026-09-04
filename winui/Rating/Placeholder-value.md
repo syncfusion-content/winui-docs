@@ -3,7 +3,7 @@ layout: post
 title: Placeholder Value in WinUI Rating | Syncfusion®
 description: Placeholder value in WinUI Rating displays an average or default rating before user interaction, providing meaningful rating context and guidance.
 platform: WinUI
-control: SfRating
+control: Rating
 documentation: ug
 ---
 
