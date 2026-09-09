@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Types in WinUI TreeGrid
 
-SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
+WinUI TreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.
 
 <table>
@@ -117,7 +117,7 @@ Use to display the URI data.
 
 ## TreeGridColumn
 
-TreeGridColumn is an abstract class provides base functionalities for all the column types in SfTreeGrid. 
+TreeGridColumn is an abstract class provides base functionalities for all the column types in TreeGrid. 
 
 ### Mapping column to particular property
 
@@ -151,7 +151,7 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, `Hike` column display value is formatted to percentage by setting `DisplayBinding` property.
 
-<img src="Column-Type-images/winui-treegrid-currency-values.png" alt="WinUI TreeGrid Column with Currency Values" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-currency-values.png" alt="Column with Currency Values" width="100%" Height="Auto"/>
 
 By default, Columns handling the data operations (sorting) based on `MappingName` property.
 
@@ -216,7 +216,7 @@ public class DisplayBindingConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-column-progressbar.png" alt="WinUI TreeGrid Column with ProgressBar" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-column-progressbar.png" alt="Column with ProgressBar" width="100%" Height="Auto"/>
 
 
 `CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckboxColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
@@ -266,7 +266,7 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-cell-template.png" alt="WinUI TreeGrid Column with Cell Template" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-cell-template.png" alt="Column with Cell Template" width="100%" Height="Auto"/>
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -343,7 +343,7 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-<img src="Column-Type-images/winui-treegrid-template-selection.png" alt="WinUI TreeGrid Column Template Selector" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-template-selection.png" alt="Column Template Selector" width="100%" Height="Auto"/>
 
 ### Data Formatting
 
@@ -410,7 +410,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-column-formatting.png" alt="WinUI TreeGrid Column Formatting" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-column-formatting.png" alt="Column Formatting" width="100%" Height="Auto"/>
 
 
 ### Styling TreeGridColumn
@@ -484,7 +484,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-column-style.png" alt="WinUI TreeGrid Customized Column Style" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-column-style.png" alt="Customized Column Style" width="100%" Height="Auto"/>
 
 #### Styles based on custom logic
 
@@ -570,7 +570,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-column-conditional-formatting.png" alt="WinUI TreeGrid Column with Conditional Formatting" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-column-conditional-formatting.png" alt="Column with Conditional Formatting" width="100%" Height="Auto"/>
 
 ### UI Interaction
 
@@ -637,7 +637,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-column-text-trimming-and-wrapping.png" alt="WinUI SfTreeGrid Column with Text Trimming and Text Wrapping Settings" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-column-text-trimming-and-wrapping.png" alt="Column with Text Trimming and Text Wrapping Settings" width="100%" Height="Auto"/>
 
 ## TreeGridTextColumn
 
@@ -681,7 +681,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-spellchecker.png" alt="Enabled SpellChecker to WinUI TreeGrid Column" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-spellchecker.png" alt="Enabled SpellChecker on the Column" width="100%" Height="Auto"/>
 
 ## TreeGridNumericColumn
 
@@ -716,7 +716,7 @@ this.treeGrid.Columns.Add(new TreeGridNumericColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-NumericColumn-column.png" alt="WinUI TreeGrid Column with NumericColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-NumericColumn-column.png" alt="Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Supported Numeric DataTypes in TreeGridNumericColumn
 
@@ -744,7 +744,7 @@ The numeric data type for the `TreeGridNumericColumn` is specified using the [Va
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-NumericColumn-ValueType.png" alt="WinUI TreeGrid Column with NumericColumn ValueType" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-NumericColumn-ValueType.png" alt="Column with NumericColumn ValueType" width="100%" Height="Auto"/>
 
 ### Change the format of numeric value
 
@@ -795,7 +795,7 @@ numericColumn.DisplayNumberFormat = "C2";
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png" alt="WinUI TreeGrid Column with NumericColumn in Currency Format" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-NumericColumn_FormatVales-column.png" alt="Column with NumericColumn in Currency Format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -826,7 +826,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png" alt="WinUI TreeGrid Column with NumericColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-NumericColumn_AllowNullValue-column.png" alt="Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Restrict value within range
 
@@ -883,7 +883,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images\winui-treegrid-NumericColumn-ShowClearButton.png" alt="WinUI TreeGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Type-images\winui-treegrid-NumericColumn-ShowClearButton.png" alt="NumericColumn with Clear Button" width="100%" Height="Auto"/>
 
 ### UpDown button placement
 
@@ -935,7 +935,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-DateColumn-column.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-DateColumn-column.png" alt="Column with DateColumn" width="100%" Height="Auto"/>
 
 ### Change the format of date value
 
@@ -966,7 +966,7 @@ this.treeGrid.Columns.Add(new TreeGridDateColumn() { HeaderText = "Date", Mappin
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-DateColumn_FormatDate-column.png" alt="WinUI TreeGrid Column with DateColumn with Month format" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-DateColumn_FormatDate-column.png" alt="Column with DateColumn in Month format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -997,7 +997,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-DateColumn_AllowNull-column.png" alt="WinUI TreeGrid Column with DateColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-DateColumn_AllowNull-column.png" alt="Column with DateColumn" width="100%" Height="Auto"/>
 
 ### Setting date value range
 
@@ -1036,7 +1036,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-DateColumn-ShowClearButton.png" alt="WinUI TreeGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-DateColumn-ShowClearButton.png" alt="DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridTimeColumn
 
@@ -1073,7 +1073,7 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-time-column.png" alt="WinUI TreeGrid Column with TimeColumn" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-time-column.png" alt="Column with TimeColumn" width="100%" Height="Auto"/>
 
 ### Change the format of time value
 
@@ -1111,7 +1111,7 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-time-column_format.png" alt="WinUI TreeGrid Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-time-column_format.png" alt="Column with TimeColumn in 24-hour format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -1152,7 +1152,7 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-time-column_AllowNull.png" alt="WinUI TreeGrid Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-time-column_AllowNull.png" alt="Column with TimeColumn using PlaceholderText" width="100%" Height="Auto"/>
 
 ### Setting time value range
 
@@ -1255,7 +1255,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-checkbox-column.png" alt="WinUI TreeGrid Column with CheckBox" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-checkbox-column.png" alt="Column with CheckBox" width="100%" Height="Auto"/>
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -1416,7 +1416,7 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-cell-and-edit-template.png" alt="Cell and Edit Template in WinUI TreeGrid Column" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-cell-and-edit-template.png" alt="Cell and Edit Template in the Column" width="100%" Height="Auto"/>
 
 
 ## TreeGridComboBoxColumn
@@ -1454,7 +1454,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 `SelectedItem` property returns the selected item from drop down list.
 
-<img src="Column-Type-images/winui-treegrid-combobox-column.png" alt="WinUI TreeGrid Column with ComboBox" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-combobox-column.png" alt="Column with ComboBox" width="100%" Height="Auto"/>
 
 ### Improving dropdown opening time
 
@@ -1529,7 +1529,7 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-hyperlink-column.png" alt="WinUI TreeGrid Column with Hyperlink" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-hyperlink-column.png" alt="Column with Hyperlink" width="100%" Height="Auto"/>
 
 
 
@@ -1584,11 +1584,11 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-hyperlink-column-customization.png" alt="Customized Hyperlink Column in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-hyperlink-column-customization.png" alt="Customized Hyperlink Column" width="100%" Height="Auto"/>
 
 ## Customize column renderer
 
-SfTreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
+TreeGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations. 
 Below table lists the available cell types for unbound row and its renderers.
 <table>
 <tr>
@@ -1721,7 +1721,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-customization.png" alt="Customize the Column in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-customization.png" alt="Customize the Column" width="100%" Height="Auto"/>
 
 
 ## How To

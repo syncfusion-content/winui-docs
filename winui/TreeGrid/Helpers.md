@@ -11,7 +11,7 @@ documentation: ug
 
 ## IndexResolver
 
-SfTreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in the [Syncfusion.UI.Xaml.TreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.html) namespace has some extension methods to resolve from row or column index to node or visible column index and vice-versa.
+TreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in the [Syncfusion.UI.Xaml.TreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.html) namespace has some extension methods to resolve from row or column index to node or visible column index and vice-versa.
 
 For example, you can get a node from its row index using the [GetNodeAtRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_GetNodeAtRowIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_System_Int32_) method.
 
@@ -120,4 +120,4 @@ Gets the tree node based on the row index.
 
 ## Dispose
 
-This method is associated with relinquishes memory and clears all references associated with treegrid. When you call this method, it releases all references for treegrid. So, the memory occupied using treegrid is reclaimed. You should call the [SfTreeGrid.Dispose](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Dispose_System_Boolean_) method to release the memory.
+This method is associated with relinquishes memory and clears all references associated with TreeGrid. When you call this method, it releases all references for TreeGrid. So, the memory occupied using TreeGrid is reclaimed. You should call the [SfTreeGrid.Dispose](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Dispose_System_Boolean_) method to release the memory.

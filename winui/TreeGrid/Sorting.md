@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WinUI TreeGrid
 
-SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowSortingProperty) property to `true`.
+WinUI TreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowSortingProperty) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,7 +66,7 @@ N> The[TreeGridColumn.AllowSorting](https://help.syncfusion.com/cr/winui/Syncfus
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-<img src="Sorting-images/winui-treegrid-sorting.png" alt="WinUI TreeGrid Sorting" width="100%" Height="Auto"/>
+<img src="Sorting-images/winui-treegrid-sorting.png" alt="Sorting" width="100%" Height="Auto"/>
 
 ## Sort column in double click
 
@@ -106,10 +106,10 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfTreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
+TreeGrid control allows you to sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
-<img src="Sorting-images/winui-treegrid-multi-sorting.png" alt="Multi Column Sorting in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Sorting-images/winui-treegrid-multi-sorting.png" alt="Multi Column Sorting" width="100%" Height="Auto"/>
 
 ### Display sort order
 
@@ -136,7 +136,7 @@ this.treeGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Sorting-images/winui-treegrid-sorting-orders.png" alt="Sorting orders in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Sorting-images/winui-treegrid-sorting-orders.png" alt="Sorting orders" width="100%" Height="Auto"/>
 
 ## Programmatic Sorting
 
@@ -200,7 +200,7 @@ this.treeGrid.SortColumnDescriptions.Clear();
 
 ## Custom sorting
 
-SfTreeGrid allows you to sort the columns based on the custom logic. 
+TreeGrid allows you to sort the columns based on the custom logic. 
 The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
 
 The [SortComparer](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.SortComparer.html) have the following properties,
@@ -284,7 +284,7 @@ this.treeGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomSortCo
 
 Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
-<img src="Sorting-images/winui-treegrid-custom-sorting.png" alt="Custom Sorting in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Sorting-images/winui-treegrid-custom-sorting.png" alt="Custom Sorting" width="100%" Height="Auto"/>
 
 ## Handling events
 

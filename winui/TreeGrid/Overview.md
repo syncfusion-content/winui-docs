@@ -7,7 +7,7 @@ control: TreeGrid
 documentation: ug
 ---
 
-# About Syncfusion WinUI TreeGrid Control
+# About Syncfusion WinUI TreeGrid
 
 The Syncfusion<sup>®</sup> [WinUI TreeGrid](https://www.syncfusion.com/winui-controls/treegrid) is a data-oriented control that displays self-relational data in a tree-structure user interface like a multicolumn tree view. The data can be loaded on demand. The control's rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering. 
 
@@ -18,10 +18,10 @@ The Syncfusion<sup>®</sup> [WinUI TreeGrid](https://www.syncfusion.com/winui-co
 * **Filtering** – Filter the data using an intuitive, built-in, Excel-inspired filtering UI.
 * **Selection** - Select rows or cells in a similar way to Excel for all keyboard navigations.
 * **Data validation** – Support to validate the data on errors.
-* **Styling** – Extensive support for customizing styles of cells and rows in SfTreeGrid.
+* **Styling** – Extensive support for customizing styles of cells and rows in TreeGrid.
 * **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
 
-<img src="Overview-images/winui-treegrid.png" alt="WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Overview-images/winui-treegrid.png" alt="Overview of the control" width="100%" Height="Auto"/>
 
 
 

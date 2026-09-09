@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Validation in WinUI TreeGrid
 
-SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
+WinUI TreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
 ## Built-in validations
 
@@ -79,7 +79,7 @@ treeGrid.DataValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation_images/Data-Validation_img1.png" alt="Displaying validation based on conditions in WinUI SfTreeGrid using INotifyDataErrorInfo" width="100%" Height="Auto"/>
+<img src="Data-Validation_images/Data-Validation_img1.png" alt="Displaying validation based on conditions using INotifyDataErrorInfo" width="100%" Height="Auto"/>
 
 ### Built-in validation using Data Annotation
 
@@ -146,7 +146,7 @@ public string FirstName
 
 ## Custom validation through events
 
-You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellValidating) and [RowValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowValidating) events. SfTreeGrid will not allow user to edit other cell / row if validation failed.
+You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellValidating) and [RowValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowValidating) events. TreeGrid will not allow user to edit other cell / row if validation failed.
 
 ### Cell Validation
 
@@ -373,7 +373,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation_images/Data-Validation_img2.png" alt="Displaying changed validation error icon WinUI SfTreeGrid" width="100%" Height="Auto"/>
+<img src="Data-Validation_images/Data-Validation_img2.png" alt="Displaying changed validation error icon" width="100%" Height="Auto"/>
 
 #### Change the color of error icon
 
@@ -524,7 +524,7 @@ You can change the validation error template color of the `TreeGridCell` by cha
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation_images/Data-Validation_img3.png" alt="Displaying changed validation error icon color WinUI SfTreeGrid" width="100%" Height="Auto"/>
+<img src="Data-Validation_images/Data-Validation_img3.png" alt="Displaying changed validation error icon color" width="100%" Height="Auto"/>
 
 ### Customizing error tip (Help tip)
 
@@ -679,11 +679,11 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation_images/Data-Validation_img4.png" alt="Displaying changed validation error tooltip WinUI SfTreeGrid" width="100%" Height="Auto"/>
+<img src="Data-Validation_images/Data-Validation_img4.png" alt="Displaying changed validation error tooltip" width="100%" Height="Auto"/>
 
 ### Showing error details in RowHeader
 
-SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on  [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
+TreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on  [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
 
 
 #### Using INotifyDataErrorInfo
@@ -707,4 +707,4 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation_images/Data-Validation_img5.png" alt="Displaying validation in rowheader WinUI SfTreeGrid" width="100%" Height="Auto"/>
+<img src="Data-Validation_images/Data-Validation_img5.png" alt="Displaying validation in rowheader" width="100%" Height="Auto"/>

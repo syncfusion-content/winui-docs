@@ -9,7 +9,7 @@ documentation: ug
 
 # Merge Cells in WinUI TreeGrid
 
-SfTreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_QueryCoveredRange) event.
+WinUI TreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_QueryCoveredRange) event.
 
 The `QueryCoveredRange` event occurs when each cell is arranged. When scrolling, the merged range will be added for newly added columns through this event and will also be removed for the columns that are out of view.
 
@@ -61,7 +61,7 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Merge-Cells_images/Displaying-column-wise-merged-cells-in-WinUI-TreeGrid.png" alt="Displaying column wise merged cells in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Merge-Cells_images/Displaying-column-wise-merged-cells-in-WinUI-TreeGrid.png" alt="Displaying column wise merged cells" width="100%" Height="Auto"/>
 
 ## Merge all cells in an entire parent node
 
@@ -94,4 +94,4 @@ private void SfTreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRan
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Merge-Cells_images/Displaying-entire-parent-node-merged-cells-in-WinUI-TreeGrid.png" alt="Displaying entire parent node merged cells in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Merge-Cells_images/Displaying-entire-parent-node-merged-cells-in-WinUI-TreeGrid.png" alt="Displaying entire parent node merged cells" width="100%" Height="Auto"/>

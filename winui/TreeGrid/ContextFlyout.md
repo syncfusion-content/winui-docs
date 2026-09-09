@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Flyout in WinUI TreeGrid
 
-SfTreeGrid provides an entirely customizable ContextFlyout to expose the functionalities on user interface. You can create ContextFlyout for different rows in an efficient manner.
+WinUI TreeGrid provides an entirely customizable ContextFlyout to expose the functionalities on user interface. You can create ContextFlyout for different rows in an efficient manner.
 
 ## Context flyout for record rows
 
@@ -30,7 +30,7 @@ You can set the context menu to data rows using the [SfTreeGrid.ContextFlyout](h
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Context-flyout_images/ContextFlyout_image1.png" alt="ContextFlyout added for record rows in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Context-flyout_images/ContextFlyout_image1.png" alt="ContextFlyout added for record rows" width="100%" Height="Auto"/>
 
 ## Context flyout for header row
 
@@ -52,7 +52,7 @@ You can set the context menu to header using the [SfTreeGrid.HeaderContextFlyout
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Context-flyout_images/ContextFlyout_image2.png" alt="ContextFlyout for header in treegrid WinUI" width="100%" Height="Auto"/>
+<img src="Context-flyout_images/ContextFlyout_image2.png" alt="ContextFlyout for header" width="100%" Height="Auto"/>
 
 
 ## Context flyout for expander
@@ -74,7 +74,7 @@ You can set the context menu to expander using the [SfTreeGrid.ExpanderContextFl
 
 ## Events
 
-The [TreeGridContextFlyoutOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_TreeGridContextFlyoutOpening) event occurs when opening the context flyout in SfTreeGrid. [TreeGridContextFlyoutEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextFlyoutEventArgs.html) has the following members, which provide information about the TreeGridContextFlyoutOpening event:
+The [TreeGridContextFlyoutOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_TreeGridContextFlyoutOpening) event occurs when opening the context flyout in TreeGrid. [TreeGridContextFlyoutEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextFlyoutEventArgs.html) has the following members, which provide information about the TreeGridContextFlyoutOpening event:
   
 [ContextFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextFlyoutEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridContextFlyoutEventArgs_ContextFlyout) – Gets the corresponding context flyout. 
 [ContextFlyoutInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextFlyoutEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridContextFlyoutEventArgs_ContextFlyoutInfo) – Returns the context menu info based on the row that opens the context menu.
@@ -116,4 +116,4 @@ private void TreeGrid_TreeGridContextFlyoutOpening(object sender, TreeGridContex
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Context-flyout_images/ContextFlyout_image3.png" alt="ContextFlyout for opening the menu items in WinUI treegrid" width="100%" Height="Auto"/>
+<img src="Context-flyout_images/ContextFlyout_image3.png" alt="ContextFlyout for opening the menu items" width="100%" Height="Auto"/>
