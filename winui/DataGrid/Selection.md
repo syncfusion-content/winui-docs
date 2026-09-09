@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WinUI Data Grid | Syncfusion®
-description: Selection in Data Grid enables row, cell, and multiple-item selection with flexible navigation and interaction options.
+description: Selection in WinUI Data Grid enables row, cell, and multiple-item selection with flexible navigation and interaction options.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WinUI Data Grid
 
-DataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Row) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Cell) or [Any](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Any). In `Any` option you can select the row by clicking on row header.
+WinUI Data Grid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Row) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Cell) or [Any](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Any). In `Any` option you can select the row by clicking on row header.
 
 ## Current Cell Navigation
 
@@ -17,7 +17,7 @@ Keyboard navigation through the cells and rows is determined based on the [Navig
 
 ## Selection Modes
 
-The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) properties together define the behavior of selection in SfDataGrid.
+The `SelectionUnit` and [SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) properties together define the behavior of selection in Data Grid.
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ Allows selection of more than one row or cell. Selection is not cleared when sel
 Extended
 </td>
 <td>
-Allows selecting multiple rows or cells. You can select multiple rows or cells in the SfDataGrid by dragging the mouse or by using the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>.
+Allows selecting multiple rows or cells. You can select multiple rows or cells in the Data Grid by dragging the mouse or by using the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>.
 </td>
 </tr>
 </table>
@@ -80,17 +80,17 @@ Allows selecting multiple rows or cells. You can select multiple rows or cells i
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-single-row-selection.png" alt="Single Row Selection in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-single-row-selection.png" alt="Single Row Selection" width="100%" Height="Auto"/>
 
 ## Disable selection for rows and columns
 
 You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_AllowFocus) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellActivating)  event. 
 
-N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid. 
+N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of Data Grid. 
 
 ## Multiple Row or Cell Selection
 
-The SfDataGrid allows you to select multiple rows or cells by setting `SelectionMode` property as `Extended` or `Multiple`, where you can select multiple rows or cells by dragging the mouse on SfDataGrid and also using the key modifiers.
+The Data Grid allows you to select multiple rows or cells by setting `SelectionMode` property as `Extended` or `Multiple`, where you can select multiple rows or cells by dragging the mouse on Data Grid and also using the key modifiers.
 
 While using `Extended`, you can select multiple rows or cells by pressing the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>. 
 
@@ -104,7 +104,7 @@ While using `Extended`, you can select multiple rows or cells by pressing the ke
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-extended-cell-selection.png" alt="Extended Cell Selection in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-extended-cell-selection.png" alt="Extended Cell Selection" width="100%" Height="Auto"/>
 
 
 N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple rows and cells by clicking the respective cell or row.  Also in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing <kbd>space</kbd> key.
@@ -119,11 +119,11 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-multiple-cell-selection.png" alt="Multiple Cell Selection in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-multiple-cell-selection.png" alt="Multiple Cell Selection" width="100%" Height="Auto"/>
 
 ## Get Selected Rows and Cells
 
-The [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property returns the data object of the selected row and the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedIndex) property returns the index of the `SelectedItem` in SfDataGrid. `SelectedItem` denotes the first selected row in multiple selection. 
+The [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property returns the data object of the selected row and the [SelectedIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedIndex) property returns the index of the `SelectedItem` in Data Grid. `SelectedItem` denotes the first selected row in multiple selection. 
 
 The [CurrentItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentItem) returns the data object that currently has the focus and the [CurrentColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentColumn) denotes the [GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) that currently has the focus. The [CurrentCellInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellInfo) returns an instance [GridCellInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCellInfo.html) which contains the information about the cell that currently has the focus. 
 
@@ -147,7 +147,7 @@ List<GridCellInfo> selectedCells = this.sfDataGrid.GetSelectedCells();
 
 ### CurrentItem vs SelectedItem
 
-Both `SelectedItem` and `CurrentItem` returns the same data object when there is single cell or row is selected in SfDataGrid. When you have selected more than one rows or cells, the record that had been selected initially is maintained in `SelectedItem` and the record that currently have focus is maintained in `CurrentItem`. 
+Both `SelectedItem` and `CurrentItem` returns the same data object when there is single cell or row is selected in Data Grid. When you have selected more than one rows or cells, the record that had been selected initially is maintained in `SelectedItem` and the record that currently have focus is maintained in `CurrentItem`. 
 
 ## Programmatic selection
 
@@ -199,7 +199,7 @@ foreach(var order in viewModel.Orders)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-programmatic-selection.png" alt="Programmatic Selection of Records in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-programmatic-selection.png" alt="Programmatic Selection of Records" width="100%" Height="Auto"/>
 
 
 ### Process selection using methods
@@ -214,7 +214,7 @@ this.sfDataGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-programmatic-record-selections.png" alt="Programmatic Selection of Records in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-programmatic-record-selections.png" alt="Programmatic Selection of Records" width="100%" Height="Auto"/>
 
 
 You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
@@ -239,7 +239,7 @@ this.sfDataGrid.SelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-programmatic-cell-selection.png" alt="Programmatic Selection of Cell in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-programmatic-cell-selection.png" alt="Programmatic Selection of Cell" width="100%" Height="Auto"/>
 
 
 You can select a range of cells through [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method in cell selection.
@@ -285,7 +285,7 @@ private void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-programmatic-cells-selection.png" alt="Programmatic Selection of Cells in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-programmatic-cells-selection.png" alt="Programmatic Selection of Cells" width="100%" Height="Auto"/>
 
 
 You can select all the rows or cells using [SelectAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectAll_System_Boolean_) method.
@@ -389,19 +389,19 @@ this.sfDataGrid.UnselectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-progrmmatic-removal-selection.png" alt="Programmatic Removal of Selection for a Cell in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-progrmmatic-removal-selection.png" alt="Programmatic Removal of Selection for a Cell" width="100%" Height="Auto"/>
 
 
 ## Selection in Master-Details View
 
 Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
-<img src="Selection_images/winui-datagrid-selection-in-master-details-view.png" alt="WinUI DataGrid Selection in Master Details View" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-selection-in-master-details-view.png" alt="Selection in Master Details View" width="100%" Height="Auto"/>
 
 
 ### Getting SelectedDetailsViewDataGrid
 
-You can get the currently selected `DetailsViewDataGrid` by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectedDetailsViewGrid) property of parent DataGrid.
+You can get the currently selected `DetailsViewDataGrid` by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectedDetailsViewGrid) property of parent Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -641,7 +641,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ### Automatic scrolling on Drag Selection
 
-SfDataGrid will scrolls rows and columns automatically when you try to perform the drag selection like in excel. You can enable or disable AutoScrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AutoScroller.html#Syncfusion_UI_Xaml_DataGrid_AutoScroller_AutoScrolling) property.
+Data Grid will scrolls rows and columns automatically when you try to perform the drag selection like in excel. You can enable or disable AutoScrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AutoScroller.html#Syncfusion_UI_Xaml_DataGrid_AutoScroller_AutoScrolling) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -743,7 +743,7 @@ Moves the current cell to the last cell of the current row.
 <kbd>PageDown</kbd>
 </td>
 <td>
-The SfDataGrid will be scrolled to next set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to last row.
+The Data Grid will be scrolled to next set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to last row.
 </td>
 </tr>
 <tr>
@@ -751,7 +751,7 @@ The SfDataGrid will be scrolled to next set of rows that are not displayed in vi
 <kbd>PageUp</kbd>
 </td>
 <td>
-The SfDataGrid will be scrolled to previous set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to the first row.
+The Data Grid will be scrolled to previous set of rows that are not displayed in view, including the row that are partially displayed and the current cell is set to the first row.
 </td>
 </tr>
 <tr>
@@ -1097,7 +1097,7 @@ private void Datagrid_SelectionChanging(object sender, GridSelectionChangingEven
 
 ### SelectionChanged Event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionChanged) event will occurs once the selection process has been completed for particular row or cell in SfDataGrid. [GridSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionChangedEventArgs.html) has following members which provides information for `SelectionChanged` event.
+The [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionChanged) event will occurs once the selection process has been completed for particular row or cell in Data Grid. [GridSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionChangedEventArgs.html) has following members which provides information for `SelectionChanged` event.
 
 * [AddedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grids_GridSelectionChangedEventArgs_AddedItems) – Collection of [GridRowInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowInfo.html) or [GridCellInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCellInfo.html) where the selection has been processed.
 
@@ -1143,7 +1143,7 @@ You can change the selection background and foreground for all rows by using the
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-selection-customization.png" alt="Customizing Selection in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-selection-customization.png" alt="Customizing Selection" width="100%" Height="Auto"/>
 
 
 ### Changing Current Cell Border Style
@@ -1161,7 +1161,7 @@ You can change the current cell border thickness and border color using [Current
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-cell-selection-customization.png" alt="Customizing Cell Selection Border in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-cell-selection-customization.png" alt="Customizing Cell Selection Border" width="100%" Height="Auto"/>
 
 
 ### Customizing Row Selection Border
@@ -1264,7 +1264,7 @@ You can customize the row selection by editing the control template of correspon
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-row-selection-customization.png" alt="Customizing Row Selection Border in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-row-selection-customization.png" alt="Customizing Row Selection Border" width="100%" Height="Auto"/>
 
 
 ### Customizing Cell Selection
@@ -1516,7 +1516,7 @@ You can customize the cell selection by editing the control template of the corr
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Selection_images/winui-datagrid-custom-cell-selection.png" alt="Custom Cell Selection in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Selection_images/winui-datagrid-custom-cell-selection.png" alt="Custom Cell Selection" width="100%" Height="Auto"/>
 
 
 ## Binding Selection Properties
@@ -1537,7 +1537,7 @@ You can bind the selection properties like `SelectedItem`, `SelectedIndex` and `
 
 ## Customizing Selection Behaviors
 
-The SfDataGrid process the selection operations in selection controller. Below are the built-in selection controllers,
+The Data Grid processes the selection operations in selection controller. Below are the built-in selection controllers,
 
 * [GridSelectionController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html) – Process selection operations when selection unit as row.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in WinUI Data Grid | Syncfusion®
-description: Rows in Data Grid support row headers, header rows, frozen panes, and row customization features for improved data organization.
+description: Rows in WinUI Data Grid support row headers, header rows, frozen panes, and row customization features for improved data organization.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows in WinUI Data Grid
 
-This section explains about various row types in SfDataGrid.
+This section explains about various row types in WinUI Data Grid.
 
 [StackedHeaderRow](https://help.syncfusion.com/winui/datagrid/stacked-headers)
 
@@ -35,7 +35,7 @@ sfDataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-row-header.png" alt="WinUI DataGrid Row Header" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-row-header.png" alt="Row Header" width="100%" Height="Auto"/>
 
 ### Row indicators and its description
 
@@ -50,7 +50,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.png" alt="RowHeader in WinUI DataGrid Image2"/>
+<img src="Rows_images/Rows_img2.png" alt="RowHeader image 2"/>
 </td>
 <td>
 Denotes the row which has current cell or selected item.
@@ -58,7 +58,7 @@ Denotes the row which has current cell or selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.png" alt="RowHeader in WinUI DataGrid Image3"/>
+<img src="Rows_images/Rows_img3.png" alt="RowHeader image 3"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -66,7 +66,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img4.png" alt="RowHeader in WinUI DataGrid Image4"/>
+<img src="Rows_images/Rows_img4.png" alt="RowHeader image 4"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -74,7 +74,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img5.png" alt="RowHeader in WinUI DataGrid Image5"/>
+<img src="Rows_images/Rows_img5.png" alt="RowHeader image 5"/>
 </td>
 <td>
 Denotes the row has errors or current row which has errors. 
@@ -129,7 +129,7 @@ You can display the corresponding row index in each row header, by customizing t
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-row-header-with-index.png" alt="WinUI DatGrid displays Row Header Cells with Row Index" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-row-header-with-index.png" alt="Displays Row Header Cells with Row Index" width="100%" Height="Auto"/>
 
 
 ### Change the current row indicator
@@ -181,14 +181,14 @@ You can change the current row indicator in the row header by customizing the co
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-current-row-indicator.png" alt="Customizing Current Row Indicator in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-current-row-indicator.png" alt="Customizing Current Row Indicator" width="100%" Height="Auto"/>
 
 
 ## Header Row
 
-Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of the WinUI Data Grid which has column headers in it. Column header describes the caption to identify the column content.
 
-<img src="Rows_images/winui-datagrid-header-row-with-column-header.png" alt="WinUI DataGrid Header Row with Column Header" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-header-row-with-column-header.png" alt="Header Row with Column Header" width="100%" Height="Auto"/>
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) property.
 
@@ -205,7 +205,7 @@ You can hide the header row by setting `SfDataGrid.HeaderRowHeight` as `0` (zero
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-hide-row-header.png" alt="Hide Row Header in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-hide-row-header.png" alt="Hide Row Header" width="100%" Height="Auto"/>
 
 You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHeight` as `0` (zero) to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
 
@@ -224,11 +224,11 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-details-view-without-header.png" alt="Hide Row Header of Details View in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-details-view-without-header.png" alt="Hide Row Header of Details View" width="100%" Height="Auto"/>
 
 ## Freeze panes
 
-DataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
+Data Grid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
 
 <table>
 <tr>
@@ -244,7 +244,7 @@ Description
 {{'[FrozenRowsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FrozenRowsCount)'| markdownify }}
 </td>
 <td>
-Set the frozen rows count at <kbd>top</kbd> of the SfDataGrid.
+Set the frozen rows count at <kbd>top</kbd> of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -252,7 +252,7 @@ Set the frozen rows count at <kbd>top</kbd> of the SfDataGrid.
 {{'[FrozenFooterRowsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FrozenFooterRowsCount)'| markdownify }}
 </td>
 <td>
-Set the footer rows count at <kbd>bottom</kbd> of the SfDataGrid.
+Set the footer rows count at <kbd>bottom</kbd> of the Data Grid.
 </td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ Set the footer rows count at <kbd>bottom</kbd> of the SfDataGrid.
 {{'[FrozenColumnsCount](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenColumnsCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid. 
+Set the frozen columns count in <kbd>left side</kbd> of the Data Grid. 
 </td>
 </tr>
 <tr>
@@ -268,7 +268,7 @@ Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid.
 {{'[FrozenFooterColumnsCount ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_FrozenFooterColumnsCount)'| markdownify }}
 </td>
 <td>
-Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
+Set the frozen columns in <kbd>right side</kbd> of the Data Grid.
 </td>
 </tr>
 </table>
@@ -291,7 +291,7 @@ sfDataGrid.FrozenFooterRowsCount = 3;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-frozen-rows-columns-position.png" alt="WinUI DataGrid displays Frozen Rows and columns at top and bottom" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-frozen-rows-columns-position.png" alt="Displays Frozen Rows and columns at top and bottom" width="100%" Height="Auto"/>
 
 ### Differentiate frozen rows from normal rows
 
@@ -380,7 +380,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/winui-datagrid-difference-of-frozen-and-normal-rows.png" alt="Differentiating Frozen Rows and Footer Rows from Normal rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/winui-datagrid-difference-of-frozen-and-normal-rows.png" alt="Differentiating Frozen Rows and Footer Rows from Normal rows" width="100%" Height="Auto"/>
 
 ### Disable drag and drop between frozen and non-frozen columns
 
@@ -422,7 +422,7 @@ void SfDataGrid_ColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 2. When [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_AllowFrozenGroupHeaders) is `true`, frozen rows will not be considered.
 
-3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
+3. Data Grid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
 N>
 1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FrozenFooterRowsCount`.

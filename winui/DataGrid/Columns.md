@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in WinUI Data Grid | Syncfusion®
-description: Columns in Data Grid define how data is displayed and organized, with support for auto-generated columns, customization, and efficient data presentation.
+description: Columns in WinUI Data Grid define how data is displayed and organized, with support for auto-generated columns, customization, and efficient data presentation.
 platform: WinUI
 control: Data Grid
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Columns in WinUI Data Grid
 
-SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
+WinUI Data Grid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 
-Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
+Below are the built-in column types supported in Data Grid. Each column has its own properties to handle different types of data.
 
 <table>
 <tr>
@@ -122,7 +122,7 @@ Use to display custom information of each record.
 
 ## Defining columns
 
-You can let the SfDataGrid to create columns or you can manually define columns to be displayed. Below sections explains both ways,
+You can let the Data Grid to create columns or you can manually define columns to be displayed. Below sections explains both ways,
  
 1. Automatically generating columns
 2. Manually define columns
@@ -186,7 +186,7 @@ GridCheckBoxColumn
 </tr>
 </table>
 
-N> The order of columns in the collection will determine the order of that they will appear in SfDataGrid.
+N> The order of columns in the collection will determine the order of that they will appear in Data Grid.
 
 #### AutoGenerateColumns with different modes
 
@@ -346,7 +346,7 @@ private void SfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 
 ##### Cancel column generation for particular property
 
-You can cancel the specific column adding to the DataGrid by handling `AutoGeneratingColumn` event.
+You can cancel the specific column adding to the Data Grid by handling `AutoGeneratingColumn` event.
 
 In the below code, column generation for `OrderID` property is canceled by setting `Cancel` property to `true`.
  
@@ -364,7 +364,7 @@ private void SfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 
 ##### Changing column type
 
-You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event.
+You can change the type of column adding to Data Grid by setting the instance of column you want to add in `AutoGeneratingColumn` event.
  
 In the below code, column type for `IsShipped` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property.
  
@@ -442,11 +442,11 @@ private void SfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-<img src="Columns-images/winui-datagrid-header-template.png" alt="WinUI DataGrid loaded with Customized Header Template" width="100%" Height="Auto"/>
+<img src="Columns-images/winui-datagrid-header-template.png" alt="Loaded with Customized Header Template" width="100%" Height="Auto"/>
 
 #### Data Annotations with AutoGenerateColumns
 
-SfDataGrid support to generate the columns based on built-in data annotation attributes. 
+Data Grid supports to generate the columns based on built-in data annotation attributes. 
 
 Data annotations are ignored, when the `AutoGenerateColumns` is set to `False`.
 
@@ -531,11 +531,11 @@ public string ShipCity
 
 The OrderID and ShipCity columns are rearranged based on specified order.
 
-<img src="Columns-images/winui-datagrid-column-order.png" alt="Changing order of columns in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Columns-images/winui-datagrid-column-order.png" alt="Changing order of columns" width="100%" Height="Auto"/>
 
 ### Manually defining columns
 
-SfDataGrid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Columns) collection.
+Data Grid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Columns) collection.
  
 {% tabs %}
 {% highlight xaml %}
@@ -622,7 +622,7 @@ foreach (var name in childColumns)
 
 ## Resizing columns
 
-SfDataGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingColumns) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowResizing) property.
+Data Grid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingColumns) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowResizing) property.
  
 N> Resizing considers MinWidth and MaxWidth of column.
 
@@ -637,13 +637,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by clicking and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns.
  
- <img src="Columns-images/winui-datagrid-resizing-column.png" alt="Resizing of Columns in WinUI DataGrid" />
+ <img src="Columns-images/winui-datagrid-resizing-column.png" alt="Resizing of Columns" />
 
 ### Hidden column resizing
 
-SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingHiddenColumns) property to `true`.
+Data Grid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
- <img src="Columns-images/winui-datagrid-hidden-column-resizing.png" alt="Resizing Hidden Columns in WinUI DataGrid" />
+ <img src="Columns-images/winui-datagrid-hidden-column-resizing.png" alt="Resizing Hidden Columns" />
 
 ### Disable resizing
 
@@ -665,7 +665,7 @@ void sfDataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ### Identify resizing of the column gets completed
 
-SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grids_ResizingColumnsEventArgs_Reason) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grids_ResizingColumnsEventArgs_Width) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ColumnResizingReason.html) in [ResizingColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ResizingColumns) event.
+Data Grid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grids_ResizingColumnsEventArgs_Reason) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grids_ResizingColumnsEventArgs_Width) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.ColumnResizingReason.html) in [ResizingColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ResizingColumns) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -696,7 +696,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endtabs %}
 
 
-<img src="Columns-images/winui-datagrid-drag-and-drop.png" alt="Drag and Drop the Column in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Columns-images/winui-datagrid-drag-and-drop.png" alt="Drag and Drop the Column" width="100%" Height="Auto"/>
 
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_AllowDragging) property.
@@ -841,15 +841,15 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endtabs %}
 
 
-<img src="Columns-images/winui-datagrid-freezing-columns.png" alt="Freezing Columns in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Columns-images/winui-datagrid-freezing-columns.png" alt="Freezing Columns" width="100%" Height="Auto"/>
 
 ### Limitations
 
-SfDataGrid has support to freeze the number of columns from the left or right. There is no support to freeze a specific column.
+Data Grid has support to freeze the number of columns from the left or right. There is no support to freeze a specific column.
 
 ## Binding column properties with ViewModel
 
-SfDataGrid provides MVVM support for binding `GridColumn` properties with ViewModel properties.
+Data Grid provides MVVM support for binding `GridColumn` properties with ViewModel properties.
  
 {% tabs %}
 {% highlight c# %}
@@ -881,5 +881,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endtabs %}
 
 
-<img src="Columns-images/winui-datagrid-binding-column.png" alt="Data Binding of Column in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Columns-images/winui-datagrid-binding-column.png" alt="Data Binding of Column" width="100%" Height="Auto"/>
 

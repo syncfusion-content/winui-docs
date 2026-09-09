@@ -9,7 +9,7 @@ documentation: ug
 
 # Grid Lines Customization in WinUI Data Grid
 
-SfDataGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
+WinUI Data Grid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 
 [SfDataGrid.GridLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_GridLinesVisibility): To set the border lines for the cells other than header and stacked header cells.
 [SfDataGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderLinesVisibility): To set the border lines only for header and stacked header cells.
@@ -25,7 +25,7 @@ The following are the list of options available to customize grid lines visibili
 
 ### Both
 
-The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the DataGrid with both horizontal and vertical grid lines.
+The [GridLinesVisibility.Both](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Both) displays the Data Grid with both horizontal and vertical grid lines.
 {% tabs %}
 {% highlight xaml %}
 xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
@@ -41,11 +41,11 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="GridLines_images/winui-datagrid-gridlines.png" alt="WinUI DataGrid with GridLines" width="100%" Height="Auto"/>
+<img src="GridLines_images/winui-datagrid-gridlines.png" alt="GridLines" width="100%" Height="Auto"/>
 
 ### Horizontal
 
-The [GridLinesVisibility.Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Horizontal) displays the DataGrid with horizontal grid lines only.
+The [GridLinesVisibility.Horizontal](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Horizontal) displays the Data Grid with horizontal grid lines only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,11 +62,11 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="GridLines_images/winui-datagrid-horizontal-gridlines.png" alt="WinUI DataGrid with Horizontal GridLines" width="100%" Height="Auto"/>
+<img src="GridLines_images/winui-datagrid-horizontal-gridlines.png" alt="Horizontal GridLines" width="100%" Height="Auto"/>
 
 ### Vertical
 
-The [GridLinesVisibility.Vertical](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Vertical) displays the DataGrid with vertical grid lines only.
+The [GridLinesVisibility.Vertical](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_Vertical) displays the Data Grid with vertical grid lines only.
 
 {% tabs %}
 {% highlight xaml %}
@@ -83,10 +83,10 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="GridLines_images/winui-datagrid-vertical-gridlines.png" alt="WinUI DataGrid with Vertical GridLines" width="100%" Height="Auto"/>
+<img src="GridLines_images/winui-datagrid-vertical-gridlines.png" alt="Vertical GridLines" width="100%" Height="Auto"/>
 
 ### None
-[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the DataGrid without grid lines. By default GridLinesVisibility value set as None.
+[GridLinesVisibility.None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridLinesVisibility.html#Syncfusion_UI_Xaml_Grids_GridLinesVisibility_None) displays the Data Grid without grid lines. By default GridLinesVisibility value set as None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,11 +103,11 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="GridLines_images/winui-datagrid-without-gridlines.png" alt="WinUI DataGrid without GridLines" width="100%" Height="Auto"/>
+<img src="GridLines_images/winui-datagrid-without-gridlines.png" alt="Without GridLines" width="100%" Height="Auto"/>
 
 ## Header rows
 
-You can customize the DataGrid header lines visibility by using the [SfDataGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderLinesVisibility) property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
+You can customize the Data Grid header lines visibility by using the [SfDataGrid.HeaderLinesVisibility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderLinesVisibility) property. You can also customize the header lines visibility to horizontal, vertical, none or both. By default HeaderLinesVisibility value set as Both.
 
 {% tabs %}
 {% highlight xaml %}
@@ -124,11 +124,11 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 {% endhighlight %}
 {% endtabs %}
 
-<img src="GridLines_images/winui-datagrid-horizontal-header-lines.png" alt="WinUI DataGrid displays Horizontal Header Lines" width="100%" Height="Auto"/>
+<img src="GridLines_images/winui-datagrid-horizontal-header-lines.png" alt="Displays Horizontal Header Lines" width="100%" Height="Auto"/>
 
 ## Grid lines for Master-Details view
 
-SfDataGrid allows you to customize the grid lines for Master-Details view also like parent DataGrid by changing the grid lines properties in GridViewDefinition.DataGrid. 
+Data Grid allows you to customize the grid lines for Master-Details view also like parent Data Grid by changing the grid lines properties in GridViewDefinition.DataGrid. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,7 +163,7 @@ this.FirstLevelNestedGrid.HeaderLinesVisibility = GridLinesVisibility.Horizontal
 {% endhighlight %}
 {% endtabs %}
 
-<img src="GridLines_images/winui-detailsviewdatagrid-horizontal-lines.png" alt="DetailsViewDataGrid GridLinesVisibility customization in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="GridLines_images/winui-detailsviewdatagrid-horizontal-lines.png" alt="DetailsViewDataGrid GridLinesVisibility customization" width="100%" Height="Auto"/>
 
 ## Limitations
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Virtualization in WinUI Data Grid | Syncfusion®
-description: Data virtualization in Data Grid improves performance by loading and processing large datasets on demand with efficient data retrieval techniques.
+description: Data virtualization in WinUI Data Grid improves performance by loading and processing large datasets on demand with efficient data retrieval techniques.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Virtualization in WinUI Data Grid
 
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
+WinUI Data Grid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
@@ -60,7 +60,7 @@ this.sfDataGrid.EnableDataVirtualization = true;
 
 You can load the large amount of data in less time in another way using [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ItemsSource). 
 
-In the below code, `ViewModel` defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
+In the below code, `ViewModel` defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -99,10 +99,10 @@ public class ViewModel
 
 ## Incremental Loading
  
-DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.isupportincrementalloading) interface.
+Data Grid supports to load the data incrementally using [ISupportIncrementalLoading](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.isupportincrementalloading) interface.
 `ISupportIncrementalLoading` interface has [LoadMoreItemsAsync](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html#Syncfusion_UI_Xaml_DataGrid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html#Syncfusion_UI_Xaml_DataGrid_IncrementalList_1_HasMoreItems) property.
 
-If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
+If `HasMoreItems` is `false`, Data Grid stops calling `LoadMoreItemsAsync`. Data Grid have [IncrementalList](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 

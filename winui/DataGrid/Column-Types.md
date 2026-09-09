@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in WinUI Data Grid | Syncfusion®
-description: Column types in Data Grid provide specialized columns for displaying and editing text, numeric, checkbox, date, and custom data values.
+description: Column types in WinUI Data Grid provide specialized columns for displaying and editing text, numeric, checkbox, date, and custom data values.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Types in WinUI Data Grid
 
-SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
+WinUI Data Grid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
 You can also add or override existing columns and renderers as you need.
 
@@ -163,7 +163,7 @@ Selects or deselects rows based on the check box value, which is not bound with 
 
 ## GridColumn
 
-[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) is an abstract class provides base functionalities for all the column types in SfDataGrid.
+[GridColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html) is an abstract class provides base functionalities for all the column types in WinUI Data Grid.
 
 ### Mapping column to particular property
 
@@ -218,7 +218,7 @@ xmlns:dataGrid="using:Syncfusion.UI.Xaml.DataGrid"
 
 In the below screenshot, Unit Price column display value is formatted to currency by setting `DisplayBinding` property.
 
-<img src="Column-Types_images/winui-datagrid-currency-values.png" alt="WinUI DataGrid Column with Currency Values" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-currency-values.png" alt="Column with Currency Values" width="100%" Height="Auto"/>
 
 By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_UseBindingValue) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
@@ -266,7 +266,7 @@ In the below code snippet, `GridTextColumn` is loaded with `ProgressBar` and `Te
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-progressbar.png" alt="WinUI DataGrid Column with ProgressBar" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-progressbar.png" alt="Column with ProgressBar" width="100%" Height="Auto"/>
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
@@ -304,7 +304,7 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-cell-template.png" alt="WinUI DataGrid Column with Cell Template" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-cell-template.png" alt="Column with Cell Template" width="100%" Height="Auto"/>
 
 ### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -375,7 +375,7 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 N> Non-Editable columns does not support `CellTemplate`.
 
 
-<img src="Column-Types_images/winui-datagrid-template-selection.png" alt="WinUI DataGrid Column Template Selector" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-template-selection.png" alt="Column Template Selector" width="100%" Height="Auto"/>
 
 ## Data Formatting
 
@@ -452,7 +452,7 @@ private void sfDataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumn
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-column-formatting.png" alt="WinUI DataGrid Column Formatting" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-column-formatting.png" alt="Column Formatting" width="100%" Height="Auto"/>
 
 ## Styling GridColumn
 
@@ -516,7 +516,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-column-style.png" alt="WinUI DataGrid with Customized Column Style" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-column-style.png" alt="Customized Column Style" width="100%" Height="Auto"/>
 
 ### Styles based on custom logic
 
@@ -603,7 +603,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-column-conditional-formatting.png" alt="WinUI DataGrid Column with Conditional Formatting" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-column-conditional-formatting.png" alt="Column with Conditional Formatting" width="100%" Height="Auto"/>
 
 ## End-user Interaction
 
@@ -667,7 +667,7 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-column-text-trimming-and-wrap.png" alt="WinUI DataGrid Column with Text Trimming and Text Wrapping Settings" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-column-text-trimming-and-wrap.png" alt="Column with Text Trimming and Text Wrapping Settings" width="100%" Height="Auto"/>
 
 ## GridTextColumn
 
@@ -707,7 +707,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-spellchecker.png" alt="Enabled Spell Checker to WinUI DataGrid Column" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-spellchecker.png" alt="Enabled Spell Checker Column" width="100%" Height="Auto"/>
 
 ## GridNumericColumn
 
@@ -737,7 +737,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-NumericColumn-column.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-NumericColumn-column.png" alt="Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Supported Numeric DataTypes in GridNumericColumn
 
@@ -763,7 +763,7 @@ The numeric data type for the `GridNumericColumn` is specified using the [ValueT
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-NumericColumn-ValueType.png" alt="WinUI DataGrid Column with NumericColumn ValueType" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-NumericColumn-ValueType.png" alt="Column with NumericColumn ValueType" width="100%" Height="Auto"/>
 
 ### Change the format of numeric value
 
@@ -808,7 +808,7 @@ numericColumn.DisplayNumberFormat = "P2";
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png" alt="WinUI DataGrid Column with NumericColumn in Percent Format" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-NumericColumn_FormatVales-column.png" alt="Column with NumericColumn in Percent Format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -834,7 +834,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`.
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png" alt="WinUI DataGrid Column with NumericColumn" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-NumericColumn_AllowNullValue-column.png" alt="Column with NumericColumn" width="100%" Height="Auto"/>
 
 ### Restrict value within range
 
@@ -884,7 +884,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images\winui-datagrid-NumericColumn-ShowClearButton.png" alt="WinUI DataGrid NumericColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images\winui-datagrid-NumericColumn-ShowClearButton.png" alt="NumericColumn with Clear Button" width="100%" Height="Auto"/>
 
 ### UpDown button placement
 
@@ -929,7 +929,7 @@ this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingNam
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-DateColumn-column.png" alt="WinUI DataGrid Column with DateColumn" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-DateColumn-column.png" alt="Column with DateColumn" width="100%" Height="Auto"/>
 
 ### Change the Format of date value
 
@@ -957,7 +957,7 @@ this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingNam
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-DateColumn_with_M-column.png" alt="WinUI DataGrid Column with DateColumn with Month format" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-DateColumn_with_M-column.png" alt="Column with DateColumn with Month format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -985,7 +985,7 @@ The `PlaceholderText` is not shown, when the `AllowNull` is `false`.
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-DateColumn_AllowNull-column.png" alt="WinUI DataGrid DateColumn with PlaceholderText" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-DateColumn_AllowNull-column.png" alt="DateColumn with PlaceholderText" width="100%" Height="Auto"/>
 
 ### Setting date value range
 
@@ -1022,7 +1022,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-DateColumn-ShowClearButton.png" alt="WinUI DataGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-DateColumn-ShowClearButton.png" alt="DateColumn with Clear Button" width="100%" Height="Auto"/>
 
 
 ## GridCheckBoxColumn
@@ -1045,7 +1045,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-checkbox-column.png" alt="WinUI DataGrid Column with CheckBox" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-checkbox-column.png" alt="Column with CheckBox" width="100%" Height="Auto"/>
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -1217,7 +1217,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-cell-and-edit-template.png" alt="Cell and Edit Template in WinUI DataGrid Column" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-cell-and-edit-template.png" alt="Cell and Edit Template Column" width="100%" Height="Auto"/>
 
 ## GridComboBoxColumn
 
@@ -1243,12 +1243,12 @@ this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = "Customer ID",
 {% endhighlight %}
 {% endtabs %}
 
-SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellDropDownSelectionChanged) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.CurrentCellDropDownSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grids_CurrentCellDropDownSelectionChangedEventArgs__ctor_System_Object_) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
+Data Grid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellDropDownSelectionChanged) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.CurrentCellDropDownSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grids_CurrentCellDropDownSelectionChangedEventArgs__ctor_System_Object_) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
 
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
 
-<img src="Column-Types_images/winui-datagrid-combobox-column.png" alt="WinUI DataGrid column with ComboBox" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-combobox-column.png" alt="Column with ComboBox" width="100%" Height="Auto"/>
 
 ### Opening dropdown popup in single-click
 
@@ -1295,7 +1295,7 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-hyperlink-column.png" alt="WinUI DataGrid column with Hyperlink" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-hyperlink-column.png" alt="Column with Hyperlink" width="100%" Height="Auto"/>
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellRequestNavigate) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
@@ -1369,7 +1369,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-image-column.png" alt="WinUI DataGrid Column with Image" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-image-column.png" alt="Column with Image" width="100%" Height="Auto"/>
 
 ### Read image from path using ValueBinding
 
@@ -1463,7 +1463,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-TimeColumn-column.png" alt="WinUI DataGrid Column with TimeColumn" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-TimeColumn-column.png" alt="Column with TimeColumn" width="100%" Height="Auto"/>
 
 ### Change the format of time value
 
@@ -1490,7 +1490,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-TimeColumn_with_HH-column.png" alt="WinUI DataGrid Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-TimeColumn_with_HH-column.png" alt="Column with TimeColumn with 24-Hour format" width="100%" Height="Auto"/>
 
 ### Null value support
 
@@ -1520,7 +1520,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-TimeColumn_AllowNull-column.png" alt="WinUI DataGrid Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-TimeColumn_AllowNull-column.png" alt="Column with TimeColumn with PlaceholderText" width="100%" Height="Auto"/>
 
 ### Setting time value range
 
@@ -1575,7 +1575,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-TimeColumn_ShowSubmitButtons-column.gif" alt="Hide Submit Buttons from Dropdown Time Spinner in WinUI TimeColumn" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-TimeColumn_ShowSubmitButtons-column.gif" alt="Hide Submit Buttons from Dropdown Time Spinner in TimeColumn" width="100%" Height="Auto"/>
 
 ## GridToggleSwitchColumn
 
@@ -1601,7 +1601,7 @@ this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDeli
 
 GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OnContent) and [OffContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridToggleSwitchColumn.html#Syncfusion_UI_Xaml_DataGrid_GridToggleSwitchColumn_OffContent) properties.
 
-<img src="Column-Types_images/winui-datagrid-toggle-button.png" alt="WinUi DataGrid column with Toggle Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-toggle-button.png" alt="Column with Toggle Button" width="100%" Height="Auto"/>
 
 ## GridCheckBoxSelectorColumn
 
@@ -1627,9 +1627,9 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-By default, check box is displayed in header of selector column, which is used to select or deselect all the rows in the datagrid.
+By default, check box is displayed in header of selector column, which is used to select or deselect all the rows in the Data Grid.
 
-<img src="Column-Types_images/winui-datagrid-checkbox-selector-column.png" alt="WinUI DataGrid with CheckBox Selector Column" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-checkbox-selector-column.png" alt="CheckBox Selector Column" width="100%" Height="Auto"/>
 
 ### Text on column header
 
@@ -1659,7 +1659,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-column-header-text.png" alt="Show Text in Column Header of WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-column-header-text.png" alt="Show Text in Column Header" width="100%" Height="Auto"/>
 
 ### Styling selector column
 
@@ -1981,7 +1981,7 @@ The style of check box in record cells and header can be customized by changing 
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-checkbox-column-style.png" alt="Styling WinUI DataGrid CheckBox Selector Column" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-checkbox-column-style.png" alt="Styling CheckBox Selector Column" width="100%" Height="Auto"/>
 
 ### Limitations
 
@@ -1994,11 +1994,11 @@ The following are the limitations of GridCheckBoxSelectorColumn:
 
 ## Custom column support
 
-SfDataGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
+Data Grid allows you to create your own column by overriding predefined column type or creating a new custom column.
 
 ### Customize column renderer
 
-SfDataGrid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations.
+Data Grid allows you to customize the column related operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the column. Each column has its own renderer with set of virtual methods for handling the column level operations.
  
 Below table lists the available cell types for columns and its renderers.
 
@@ -2180,14 +2180,14 @@ public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 {% endtabs %}
 
 
-<img src="Column-Types_images/winui-datagrid-customization.png" alt="Customize the column in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-customization.png" alt="Customize the column" width="100%" Height="Auto"/>
 
 
 ### Creating new column and renderer
 
 You can create a new column by deriving `GridColumn`, rendered in UI using customized `CellType` using `GridVirtualizingCellRenderer`.
 
-Below steps to create custom column in SfDataGrid.
+Below steps to create custom column in Data Grid.
 
 * [Creating custom column](#creating-custom-column)
 * [Creating renderer](#creating-renderer)

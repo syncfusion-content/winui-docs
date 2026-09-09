@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in WinUI Data Grid | Syncfusion®
-description: Data validation in Data Grid ensures data accuracy and integrity by validating user input and displaying error information during editing.
+description: Data validation in WinUI Data Grid ensures data accuracy and integrity by validating user input and displaying error information during editing.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Validation in WinUI Data Grid
 
-SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
+WinUI Data Grid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
  
 ## Built-in validations
 
@@ -22,7 +22,7 @@ Built-in validations through `INotifyDataErrorInfo` and Data annotation attribut
 
 ## Built-in validation using INotifyDataErrorInfo
 
-SfDataGrid provides support to validate the data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview).
+WinUI Data Grid provides support to validate the data based on [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview).
 
 You can validate the data by inheriting the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo?view=winui-3.0-preview) interface in model class.
 
@@ -89,7 +89,7 @@ this.sfDataGrid.DataValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-data-validation.png" alt="Data Validation in WinUI DataGrid using INotifyDataErrorInfo" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-data-validation.png" alt="Data Validation using INotifyDataErrorInfo" width="100%" Height="Auto"/>
 
 ## Built-in validation using Data Annotation
 
@@ -143,7 +143,7 @@ public double Salary
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-data-validation-using-data-annotation.png" alt="Data Validation in WinUI DataGrid using Data Annotations" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-data-validation-using-data-annotation.png" alt="Data Validation using Data Annotations" width="100%" Height="Auto"/>
 
 The string type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-6.0), [String Length attributes](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-6.0)
 
@@ -220,9 +220,9 @@ public string Title
 
 ## Cell validation
 
-You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellValidating) event when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. DataGrid will not allow user to edit other cells if validation failed.
+You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellValidating) event when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. Data Grid will not allow user to edit other cells if validation failed.
 
-[CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CurrentCellValidatingEventArgs.html) provides information to `CurrentCellValidating` event for validating the cell. [CurrentCellValidatingEventArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the DataGrid fired this event.
+[CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CurrentCellValidatingEventArgs.html) provides information to `CurrentCellValidating` event for validating the cell. [CurrentCellValidatingEventArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the Data Grid fired this event.
 
 [CurrentCellValidatingEventArgs.NewValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CurrentCellValidatingEventArgsBase.html#Syncfusion_UI_Xaml_DataGrid_CurrentCellValidatingEventArgsBase_NewValue) returns the edited value and you can set the validation status using [CurrentCellValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CurrentCellValidatingEventArgsBase.html#Syncfusion_UI_Xaml_DataGrid_CurrentCellValidatingEventArgsBase_IsValid) property.
 
@@ -258,9 +258,9 @@ private void SfDataGrid_CurrentCellValidated(object sender, CurrentCellValidated
 
 ## Row validation
 
-You can validate the row using [RowValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowValidating) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. DataGrid will not allow user to edit other rows if validation failed.
+You can validate the row using [RowValidating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowValidating) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. Data Grid will not allow user to edit other rows if validation failed.
  
-[RowValidatingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowValidatingEventArgs.html) provides information to `RowValidating` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the DataGrid fired this event. 
+[RowValidatingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowValidatingEventArgs.html) provides information to `RowValidating` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the Data Grid fired this event. 
 
 [RowValidatingEventArgs.RowData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowValidatingEventArgs.html#Syncfusion_UI_Xaml_DataGrid_RowValidatingEventArgs_RowData) returns the edited value and you can set the validation status using [RowValidatingEventArgs.IsValid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RowValidatingEventArgs.html#Syncfusion_UI_Xaml_DataGrid_RowValidatingEventArgs_IsValid) property.
 
@@ -301,7 +301,7 @@ You can customize the error icon by editing `GridCell` style.
 
 ### Change the shape of error icon
 
-You can change the validation error template shape of the GridCell by changing the `Data` property of the path in the `PART_InValidCellBorder` of GridCell. And need to add the DataGrid ThemeDictionary in ResourcesDictionary.
+You can change the validation error template shape of the GridCell by changing the `Data` property of the path in the `PART_InValidCellBorder` of GridCell. And need to add the Data Grid ThemeDictionary in ResourcesDictionary.
 
 {% tabs %}
 {% highlight xaml %}
@@ -533,7 +533,7 @@ You can change the validation error template shape of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-data-validation-errors-with-error-icon.png" alt="WinUI DataGrid displays Data Validation Errors with Error Icon" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-data-validation-errors-with-error-icon.png" alt="Displays Data Validation Errors with Error Icon" width="100%" Height="Auto"/>
 
 ### Change the color of error icon
 
@@ -768,7 +768,7 @@ You can change the validation error template color of the `GridCell` by changi
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-data-validation-error-icon-color.png" alt="Data Validation Error Icon with Custom Color in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-data-validation-error-icon-color.png" alt="Data Validation Error Icon with Custom Color" width="100%" Height="Auto"/>
 
 ## Data validation error tip (help tip) customization
 
@@ -864,11 +864,11 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-error-tip-customization.png" alt="WinUI DataGrid - Error Tip Foreground and Background Customization" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-error-tip-customization.png" alt="Error Tip Foreground and Background Customization" width="100%" Height="Auto"/>
 
 ## Showing error details in RowHeader
 
-SfDataGrid support to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderCell.html) based on [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo.haserrors?view=winui-3.0-preview) property.
+Data Grid supports to show the error icon in [GridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowHeaderCell.html) based on [INotifyDataErrorInfo.HasErrors](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifydataerrorinfo.haserrors?view=winui-3.0-preview) property.
 
 ### Using INotifyDataErrorInfo
 
@@ -890,7 +890,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-error-information-of-data-validation.png" alt="WinUI DataGrid displays Error Information of Data Validation using INotifyDataErrorInfo" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-error-information-of-data-validation.png" alt="Displays Error Information of Data Validation using INotifyDataErrorInfo" width="100%" Height="Auto"/>
 
 ## Data validation with Master-details view
 
@@ -935,7 +935,7 @@ private void SfDataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRel
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Data-Validation-images/winui-datagrid-data-validation-with-master-detailsview.png" alt="Data Validation with Master-DetailsView in WinUI SfDataGrid" width="100%" Height="Auto"/>
+<img src="Data-Validation-images/winui-datagrid-data-validation-with-master-detailsview.png" alt="Data Validation with Master-DetailsView" width="100%" Height="Auto"/>
 
 ### Custom validation through events
 

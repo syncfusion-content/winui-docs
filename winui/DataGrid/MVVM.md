@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM in WinUI Data Grid | Syncfusion®
-description: MVVM support in Data Grid enables data binding, commands, and customization while maintaining a clear separation of UI and business logic.
+description: MVVM support in WinUI Data Grid enables data binding, commands, and customization while maintaining a clear separation of UI and business logic.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # MVVM in WinUI Data Grid
 
-## DataGrid SelectedItem binding
+## WinUI Data Grid SelectedItem binding
 
-You can bind the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property directly to the DataGrid by setting the `SfDataGrid.SelectedItem` property.
+You can bind the [SelectedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property directly to the Data Grid by setting the `SfDataGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -72,9 +72,9 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-## DataGrid SelectedItems binding
+## Data Grid SelectedItems binding
 
-You can bind the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItems) property directly to the DataGrid by setting the `SfDataGrid.SelectedItems` property.
+You can bind the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItems) property directly to the Data Grid by setting the `SfDataGrid.SelectedItems` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +141,7 @@ public class ViewModel : NotificationObject
 
 ## Button command binding to view model
 
-You can load a button for the columns in the DataGrid by using [GridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTemplateColumn.html). When loading the buttons, you can bind command included in view model by using `ElementName` binding.
+You can load a button for the columns in the Data Grid by using [GridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTemplateColumn.html). When loading the buttons, you can bind command included in view model by using `ElementName` binding.
 
 In the following example, the command receives the underlying data object as command parameter since the `DataContext` is binding as command parameter.
 
@@ -240,7 +240,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-<img src="MVVM_images/winui-datagrid-binding-button-command.png" alt="Binding Button Command to ViewModel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="MVVM_images/winui-datagrid-binding-button-command.png" alt="Binding Button Command to ViewModel" width="100%" Height="Auto"/>
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
@@ -323,7 +323,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-<img src="MVVM_images/winui-datagrid-binding-comboboxcolumn-itemssource.png" alt="Binding ComboBoxColumn ItemsSource from ViewModel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="MVVM_images/winui-datagrid-binding-comboboxcolumn-itemssource.png" alt="Binding ComboBoxColumn ItemsSource from ViewModel" width="100%" Height="Auto"/>
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
@@ -416,11 +416,11 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-<img src="MVVM_images/winui-datagrid-combobox-with-mvvm-data-template-binding.png" alt="WinUI DataGrid displays ComboBox with MVVM Data Template Binding" width="100%" Height="Auto"/>
+<img src="MVVM_images/winui-datagrid-combobox-with-mvvm-data-template-binding.png" alt="Displays ComboBox with MVVM Data Template Binding" width="100%" Height="Auto"/>
 
-## Binding DataGrid columns from view model
+## Binding Data Grid columns from view model
 
-You can bind the [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Columns) to a property in the `ViewModel` by having the `binding` property of type `Syncfusion.UI.Xaml.DataGrid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the DataGrid is `ViewModel`. 
+You can bind the [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Columns) to a property in the `ViewModel` by having the `binding` property of type `Syncfusion.UI.Xaml.DataGrid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the Data Grid is `ViewModel`. 
 
 {% tabs %}
 {% highlight xaml %}

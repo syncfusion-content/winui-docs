@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Cells in WinUI Data Grid | Syncfusion®
-description: Merge cells in Data Grid combines adjacent cells with similar values to improve readability, reduce repetition, and present data more clearly.
+description: Merge cells in WinUI Data Grid combines adjacent cells with similar values to improve readability, reduce repetition, and present data more clearly.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Merge Cells in WinUI Data Grid
 	
-DataGrid allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryCoveredRange) event. Merged cells can be printed.
+WinUI Data Grid allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryCoveredRange) event. Merged cells can be printed.
 
 `QueryCoveredRange` event occurs when each cell gets arranged and the custom range will be stored for visible rows and columns in [SfDataGrid.CoveredCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CoveredCells). This event is not fired for the cells that are not visible and also for the cells that are already in `SfDataGrid.CoveredCells`. When scrolling the merged range will be added for newly added rows & columns through this event and also removed for the rows & columns which are out of view.
 
-[GridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered this event. [GridQueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. By [GridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridQueryCoveredRangeEventArgs.html#Syncfusion_UI_Xaml_DataGrid_GridQueryCoveredRangeEventArgs_Range) property, the adjacent cells can be merged.
+[GridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered this event. [GridQueryCoveredRangeEventArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the Data Grid fired this event for DetailsView. By [GridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridQueryCoveredRangeEventArgs.html#Syncfusion_UI_Xaml_DataGrid_GridQueryCoveredRangeEventArgs_Range) property, the adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Merge-Cells_images/winui-datagrid-merged-columns.png" alt="Horizontally Merged Cells in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Merge-Cells_images/winui-datagrid-merged-columns.png" alt="Horizontally Merged Cells" width="100%" Height="Auto"/>
 
 ### Merging cells vertically by fixed range
 
@@ -88,7 +88,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Merge-Cells_images/winui-datagrid-merged-rows.png" alt="Vertically Merged Cells in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Merge-Cells_images/winui-datagrid-merged-rows.png" alt="Vertically Merged Cells" width="100%" Height="Auto"/>
 
 ### Merging range of cells
 
@@ -111,7 +111,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Merge-Cells_images/winui-datagrid-merged-cells.png" alt="Range of Cells Merged in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Merge-Cells_images/winui-datagrid-merged-cells.png" alt="Range of Cells Merged" width="100%" Height="Auto"/>
 
 ## Merging cells based on the content
 
@@ -353,7 +353,7 @@ private void FirstDetailsViewGrid_QueryCoveredRange(object sender, GridQueryCove
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Merge-Cells_images/winui-datagrid-merged-cells-in-master-details-view.png" alt="Range of Cells Merged in Master-Details View of WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Merge-Cells_images/winui-datagrid-merged-cells-in-master-details-view.png" alt="Range of Cells Merged in Master-Details View" width="100%" Height="Auto"/>
 
 ### Merging range of parent cells
 
@@ -382,7 +382,7 @@ private void SfDataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEv
 
 ### Limitations
 
-Below are the limitation when using Cell Merging in SfDataGrid.
+Below are the limitation when using Cell Merging in Data Grid.
 
 1. Row selection is not supported.
 2. Heterogeneous rows can’t be merged.

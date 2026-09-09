@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in WinUI Data Grid | Syncfusion®
-description: Clipboard operations in Data Grid enable cutting, copying, and pasting records or cells within the grid and across external applications.
+description: Clipboard operations in WinUI Data Grid enable cutting, copying, and pasting records or cells within the grid and across external applications.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -10,19 +10,19 @@ documentation: ug
 
 # Clipboard Operations in WinUI Data Grid
 
-SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.DataTransfer.Clipboard?view=winrt-19041) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
+WinUI Data Grid provides support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from the control by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.DataTransfer.Clipboard?view=winrt-19041) to the control by pressing <kbd>Ctrl+V</kbd>.
 
 N> Clipboard operations is not supported for the summary rows, add new row, filter row and unbound rows.
 
  
-## Copy to Clipboard in DataGrid
+## Copy to Clipboard in Data Grid
 
 Copy operation works based on [CopyOption](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_CopyOption) property. 
 `CopyOption` provides the following options,
 
-* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_None) – Disables copy in SfDataGrid.
+* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_None) – Disables copy in Data Grid.
 
-* [CopyData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_CopyData) – Enables copy in SfDataGrid.
+* [CopyData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_CopyData) – Enables copy in Data Grid.
 
 * [IncludeHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_IncludeHeaders) – Column header also copied along with data.
  
@@ -45,18 +45,18 @@ this.sfDataGrid.CopyOption = GridCopyOptions.CopyData | GridCopyOptions.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy.png" alt="Copy to Clipboard in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy.png" alt="Copy to Clipboard" width="100%" Height="Auto"/>
 
 N> `IncludeHiddenColumn` is not supported when [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html) is [Cell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Cell).
 
-## Paste from Clipboard in DataGrid
+## Paste from Clipboard in Data Grid
 
 Paste operation works based on [PasteOption](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_PasteOption) property. 
 `PasteOption` provides the following options,
 
-* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridPasteOptions.html#Syncfusion_UI_Xaml_Grids_GridPasteOptions_None) – Disable paste in SfDataGrid.
+* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridPasteOptions.html#Syncfusion_UI_Xaml_Grids_GridPasteOptions_None) – Disable paste in Data Grid.
 
-* [PasteData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridPasteOptions.html#Syncfusion_UI_Xaml_Grids_GridPasteOptions_PasteData) – Enabled paste in SfDataGrid and when an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
+* [PasteData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridPasteOptions.html#Syncfusion_UI_Xaml_Grids_GridPasteOptions_PasteData) – Enabled paste in Data Grid and when an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
 
 * [ExcludeFirstLine](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridPasteOptions.html#Syncfusion_UI_Xaml_Grids_GridPasteOptions_ExcludeFirstLine) – This can be used when pasting data copied with `IncludeHeaders` copy option.
  
@@ -78,15 +78,15 @@ this.sfDataGrid.PasteOption = GridPasteOptions.PasteData | GridPasteOptions.Excl
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste.png" alt="Paste Clipboard Content in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste.png" alt="Paste Clipboard Content" width="100%" Height="Auto"/>
 
-## Cut to Clipboard in DataGrid
+## Cut to Clipboard in Data Grid
 
 Cut operation works based on `CopyOption` property. `CopyOption` provides the following options,
 
-* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_None) – Disables cut in SfDataGrid.
+* [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_None) – Disables cut in Data Grid.
 
-* [CutData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_CutData) – Enables cut in SfDataGrid.
+* [CutData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_CutData) – Enables cut in Data Grid.
 
 * [IncludeHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyOptions.html#Syncfusion_UI_Xaml_Grids_GridCopyOptions_IncludeHeaders) – Column header also copied along with data.
  
@@ -109,7 +109,7 @@ this.sfDataGrid.CopyOption = GridCopyOptions.CutData | GridCopyOptions.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-cut.png" alt="Cut to Clipboard in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-cut.png" alt="Cut to Clipboard" width="100%" Height="Auto"/>
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
@@ -117,7 +117,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
 ### GridCopyContent
 
-[GridCopyContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GridCopyContent) event occurs when copy/cut the cells in SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyPasteEventArgs.html) provides information for `GridCopyContent` event. You can cancel copy operation by handling this event.
+[GridCopyContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GridCopyContent) event occurs when copy/cut the cells in Data Grid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyPasteEventArgs.html) provides information for `GridCopyContent` event. You can cancel copy operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ void sfDataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 
 ### GridPasteContent
 
-[GridPasteContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GridPasteContent) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
+[GridPasteContent](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GridPasteContent) event occurs when paste the clipboard value into Data Grid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ void sfDataGrid_GridPasteContent(object sender, GridCopyPasteEventArgs e)
 
 * [RowData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_Grids_GridCopyPasteCellEventArgs_RowData) – Returns corresponding RowData of a cell.
 
-* [OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) – Returns the SfDataGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) – Returns the Data Grid.
 
 You can change the text copied to clipboard by changing the `ClipBoardValue`.
  
@@ -171,7 +171,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The below code example changes the clipboard value as 100 instead of cell value 1003 in SfDataGrid.
+The below code example changes the clipboard value as 100 instead of cell value 1003 in Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-cell-value.png" alt="Copy to Clipboard based on Cell Value in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-cell-value.png" alt="Copy to Clipboard based on Cell Value" width="100%" Height="Auto"/>
 
 The below code example handled the copy operation when `MappingName` of a Column is Country.
 
@@ -197,7 +197,7 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-mapping-name.png" alt="Copy to Clipboard based on Mapping Name in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-copy-based-on-mapping-name.png" alt="Copy to Clipboard based on Mapping Name" width="100%" Height="Auto"/>
 
 ### PasteGridCellContent
 
@@ -209,9 +209,9 @@ void sfDataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 
 * [RowData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_Grids_GridCopyPasteCellEventArgs_RowData) – Returns corresponding RowData of a cell.
 
-* [OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) – Returns the SfDataGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) – Returns the Data Grid.
 
-You can change the text paste to SfDataGrid by changing the `ClipBoardValue`.
+You can change the text paste to Data Grid by changing the `ClipBoardValue`.
 
 {% tabs %}
 {% highlight c# %}
@@ -236,7 +236,7 @@ void sfDataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png" alt="Paste Clipboard Content based on Cell Value in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png" alt="Paste Clipboard Content based on Cell Value" width="100%" Height="Auto"/>
 
 The below code example handled the paste operation when `MappingName` of Column is OrderID
 
@@ -250,13 +250,13 @@ void sfDataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png" alt="Paste Clipboard Content based on Mapping Name in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Clipboard-Operations_images/winui-datagrid-clipboard-paste-based-on-cell-value.png" alt="Paste Clipboard Content based on Mapping Name" width="100%" Height="Auto"/>
 
 ## Handling Programmatically
 
-### Programmatically Copy to Clipboard in WinUI DataGrid
+### Programmatically Copy to Clipboard in WinUI Data Grid
 
-Copy the selected records/cells in SfDataGrid by using [Copy](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_Copy) method in [ClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ClipboardController) of SfDataGrid.
+Copy the selected records/cells in Data Grid by using [Copy](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_Copy) method in [ClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ClipboardController) of the control.
 
 {% tabs %}
 {% highlight c# %}
@@ -264,7 +264,7 @@ this.sfDataGrid.ClipboardController.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy a record by selecting the record using [MoveCurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_Grids_ScrollAxis_RowColumnIndex_System_Boolean_) method and `Copy` method in `ClipboardController` of SfDataGrid.
+Copy a record by selecting the record using [MoveCurrentCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_Grids_ScrollAxis_RowColumnIndex_System_Boolean_) method and `Copy` method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -276,7 +276,7 @@ this.sfDataGrid.ClipboardController.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy the multiple records by selecting group of records using [SelectRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridSelectionController_SelectRows_System_Int32_System_Int32_) method and `Copy` method in `ClipboardController` of SfDataGrid.
+Copy the multiple records by selecting group of records using [SelectRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridSelectionController_SelectRows_System_Int32_System_Int32_) method and `Copy` method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -285,7 +285,7 @@ this.sfDataGrid.ClipboardController.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy the multiple cells by selecting group of cells using [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCellSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridCellSelectionController_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method and `Copy` method in `ClipboardController` of SfDataGrid.
+Copy the multiple cells by selecting group of cells using [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCellSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridCellSelectionController_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method and `Copy` method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -295,9 +295,9 @@ this.sfDataGrid.ClipboardController.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-### Copy rows without selecting in WinUI DataGrid
+### Copy rows without selecting in WinUI Data Grid
 
-You can copy the records without selection by using [CopyRowsToClipboard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_CopyRowsToClipboard_System_Int32_System_Int32_) method in `ClipboardController` of SfDataGrid.
+You can copy the records without selection by using [CopyRowsToClipboard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_CopyRowsToClipboard_System_Int32_System_Int32_) method in `ClipboardController` of Data Grid.
  
 {% tabs %}
 {% highlight c# %}
@@ -305,9 +305,9 @@ this.sfDataGrid.ClipboardController.CopyRowsToClipboard(2, 4);
 {% endhighlight %}
 {% endtabs %}
 
-### Programmatically Cut Data to Clipboard in WinUI DataGrid
+### Programmatically Cut Data to Clipboard in WinUI Data Grid
 
-Cut the selected records/cells in SfDataGrid by using [Cut](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_Cut) method in `ClipboardController` of SfDataGrid.
+Cut the selected records/cells in Data Grid by using [Cut](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_Cut) method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -315,7 +315,7 @@ this.sfDataGrid.ClipboardController.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the entire record in SfDataGrid by selecting whole SfDataGrid using [SelectAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridSelectionController_SelectAll_System_Boolean_) method and `Cut` method in `ClipboardController` of SfDataGrid.
+Cut the entire record in Data Grid by selecting whole Data Grid using [SelectAll](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_GridSelectionController_SelectAll_System_Boolean_) method and `Cut` method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -324,7 +324,7 @@ this.sfDataGrid.ClipboardController.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the data column in SfDataGrid by using [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method and `Cut` method in `ClipboardController` of SfDataGrid.
+Cut the data column in Data Grid by using [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method and `Cut` method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -356,9 +356,9 @@ this.sfDataGrid.ClipboardController.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-### Programmatically Paste in DataGrid   
+### Programmatically Paste in Data Grid   
 
-Paste the clipboard value into SfDataGrid by using [Paste](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_Paste) method in `ClipboardController` of SfDataGrid.
+Paste the clipboard value into Data Grid by using [Paste](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IDataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_IDataGridClipboardController_Paste) method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -366,7 +366,7 @@ this.sfDataGrid.ClipboardController.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-Paste the clipboard value into selected record by selecting the record using `MoveCurrentCell` method and `Paste` method in `ClipboardController` of SfDataGrid.
+Paste the clipboard value into selected record by selecting the record using `MoveCurrentCell` method and `Paste` method in `ClipboardController` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -378,9 +378,9 @@ this.sfDataGrid.ClipboardController.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing Copy Paste Behavior in WinUI DataGrid
+## Customizing Copy Paste Behavior in WinUI Data Grid
 
-SfDataGrid process the clipboard operations in [DataGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html) class. You can customize the default copy paste behaviors by overriding `DataGridClipboardController` class and set it to `SfDataGrid.ClipboardController`.
+Data Grid processes the clipboard operations in [DataGridClipboardController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html) class. You can customize the default copy paste behaviors by overriding `DataGridClipboardController` class and set it to `SfDataGrid.ClipboardController`.
 
 {% tabs %}
 {% highlight c# %}
@@ -405,9 +405,9 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-### Paste a cell into many cells in WinUI DataGrid
+### Paste a cell into many cells in WinUI Data Grid
 
-By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfDataGrid. The below code shows how to copy one cell and paste it into all the selected cells by overriding [PasteToCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_) method in `DataGridClipboardController` class.
+By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in Data Grid. The below code shows how to copy one cell and paste it into all the selected cells by overriding [PasteToCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToCell_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_) method in `DataGridClipboardController` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -458,9 +458,9 @@ public class CustomCopyPaste : DataGridClipboardController
 {% endhighlight %}
 {% endtabs %}
 
-### Paste a record into many rows in WinUI DataGrid
+### Paste a record into many rows in WinUI Data Grid
 
-By default, you can able to copy one row and paste it into another row when Row Selection is enabled in SfDataGrid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteToRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToRow_System_Object_System_Object_) method in the `DataGridClipboardController` class.
+By default, you can able to copy one row and paste it into another row when Row Selection is enabled in Data Grid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteToRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToRow_System_Object_System_Object_) method in the `DataGridClipboardController` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -507,9 +507,9 @@ public class CustomCopyPaste : DataGridClipboardController
 {% endhighlight %}
 {% endtabs %}
 
-### Select pasted records in WinUI DataGrid
+### Select pasted records in WinUI Data Grid
 
-By default after pasting the clipboard value to SfDataGrid selection is maintains in previously selected records as it is. The below code shows select the pasted records after the Paste operation, by overriding the [PasteToRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToRows_System_Object_) and [PasteToRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToRow_System_Object_System_Object_) methods in `DataGridClipboardController` class. This code is applicable when [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) is [Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Row).
+By default after pasting the clipboard value to Data Grid selection is maintains in previously selected records as it is. The below code shows select the pasted records after the Paste operation, by overriding the [PasteToRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToRows_System_Object_) and [PasteToRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridClipboardController.html#Syncfusion_UI_Xaml_DataGrid_DataGridClipboardController_PasteToRow_System_Object_System_Object_) methods in `DataGridClipboardController` class. This code is applicable when [SelectionUnit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectionUnit) is [Row](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridSelectionUnit.html#Syncfusion_UI_Xaml_Grids_GridSelectionUnit_Row).
 
 {% tabs %}
 {% highlight c# %}
@@ -543,9 +543,9 @@ public class CustomCopyPaste : DataGridClipboardController
 {% endhighlight %}
 {% endtabs %}
 
-### Create new records while pasting in WinUI DataGrid
+### Create new records while pasting in WinUI Data Grid
 
-By default while pasting the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the `PasteToRows` method in `DataGridClipboardController` class.
+By default while pasting the clipboard value to Data Grid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in Data Grid by overriding the `PasteToRows` method in `DataGridClipboardController` class.
 
 {% tabs %}
 {% highlight c# %}

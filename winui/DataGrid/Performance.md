@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance in WinUI Data Grid | Syncfusion®
-description: Performance features in Data Grid improve responsiveness through virtualization, efficient data processing, and optimized rendering for large datasets.
+description: Performance features in WinUI Data Grid improve responsiveness through virtualization, efficient data processing, and optimized rendering for large datasets.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance in WinUI Data Grid
 
-SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
+WinUI Data Grid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
                                
 ## Improving loading performance
 
@@ -19,7 +19,7 @@ You can load the large amount of data in less time using built-in [Data Virtuali
 
 ## Improving performance when doing batch updates
 
-SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
+WinUI Data Grid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, Data Grid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
 
 1. Invoke [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.CollectionViewAdv.html#Syncfusion_UI_Xaml_Data_CollectionViewAdv_BeginInit_System_Boolean_) before update the data.
 2. After that update underlying collection.
@@ -41,7 +41,7 @@ this.sfDataGrid.View.EndInit();
 
 ## Adding columns efficiently
 
-SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance. 
+Data Grid allows you to add more number of columns to [SfDataGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance. 
 
 You can improve the performance while adding, removing columns by suspending all the UI updates using [Suspend](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html#Syncfusion_UI_Xaml_DataGrid_Columns_Suspend) and resume the updates after adding columns using [Resume](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Columns.html#Syncfusion_UI_Xaml_DataGrid_Columns_Resume) methods. You have to refresh the UI using [Refresh](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.CollectionViewAdv.html#Syncfusion_UI_Xaml_Data_CollectionViewAdv_Refresh) method.
 
@@ -59,21 +59,21 @@ this.sfDataGrid.View.Refresh();
 
 ## Optimizing summary calculation performance
 
-SfDataGrid optimizes the summary calculation when updating the underlying collection. It calculates the summaries optimistically by listening the data updates and using old calculated summary values without doing complete recalculation. 
+Data Grid optimizes the summary calculation when updating the underlying collection. It calculates the summaries optimistically by listening the data updates and using old calculated summary values without doing complete recalculation. 
 
-Below sections explains how SfDataGrid handles the updates efficiently for different data operations and what you have to do in application for the same.
+Below sections explains how Data Grid handles the updates efficiently for different data operations and what you have to do in application for the same.
 
 ### Adding Record
 
-SfDataGrid considers only the `added` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
+Data Grid considers only the `added` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
  
 ### Removing a Record
 
-SfDataGrid considers only the `removed` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
+Data Grid considers only the `removed` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
 
 ### Property Change in a record
 
-SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.INotifyPropertyChanging.html) and [INotifyPropertyChanged](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.inotifypropertychanged?view=winrt-28000) interface to your Data Model.
+Data Grid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.INotifyPropertyChanging.html) and [INotifyPropertyChanged](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.inotifypropertychanged?view=winrt-28000) interface to your Data Model.
 
 Below code to enable summary calculation optimization by inheriting `INotifyPropertyChanging` and `INotifyPropertyChanged` interface to Data Model.
 
@@ -128,7 +128,7 @@ this.sfDataGrid.SummaryCalculationMode = SummaryCalculationModes.OnDemandCaption
 
 ## Improving UI Filter loading time
 
-SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html#Syncfusion_UI_Xaml_DataGrid_AdvancedFilterControl_CanGenerateUniqueItems) property to `false`. By default [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html) loads unique items in popup which takes more time to load.
+Data Grid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.AdvancedFilterControl.html#Syncfusion_UI_Xaml_DataGrid_AdvancedFilterControl_CanGenerateUniqueItems) property to `false`. By default [GridFilterControl](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridFilterControl.html) loads unique items in popup which takes more time to load.
 
 `CanGenerateUniqueItems` property loading `TextBox` to filter instead of `ComboBox` in advanced filter UI View.
 

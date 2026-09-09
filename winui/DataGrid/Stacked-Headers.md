@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Headers in WinUI Data Grid | Syncfusion®
-description: Stacked headers in Data Grid group related columns under custom header rows, improving organization and enhancing data readability.
+description: Stacked headers in WinUI Data Grid group related columns under custom header rows, improving organization and enhancing data readability.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Stacked Headers in WinUI Data Grid
 
-SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_StackedHeaderRows). You can group one or more columns under each stacked header.
+WinUI Data Grid supports additional unbound header rows known as `stacked header rows` that span across the Data Grid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_StackedHeaderRows). You can group one or more columns under each stacked header.
 
 Each [StackedHeaderRow](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.StackedHeaderRow.html) contains the [StackedColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.StackedColumns.html) where each [StackedColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are grouped under the stacked header row. The `StackedColumn.MappingName` is a unique name used for mapping a specific child columns grouped under the same stacked header row whereas, the `StackedColumn.HeaderText` returns the text that displays in stacked header row.
 
@@ -51,7 +51,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Stacked-Headers-images/winui-datagrid-stacked-header-rows.png" alt="WinUI DataGrid with Stacked Header Rows" width="100%" Height="Auto"/>
+<img src="Stacked-Headers-images/winui-datagrid-stacked-header-rows.png" alt="Stacked Header Rows" width="100%" Height="Auto"/>
 
 ## Stacked Headers using Data Annotation
 

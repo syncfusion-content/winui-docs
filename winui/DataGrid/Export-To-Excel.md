@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To Excel in WinUI Data Grid | Syncfusion®
-description: Export To Excel in Data Grid enables grid data to be exported to Excel files with support for formatting and customization options.
+description: Export To Excel in WinUI Data Grid enables grid data to be exported to Excel files with support for formatting and customization options.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Export To Excel in WinUI Data Grid
 
-The [WinUI DataGrid](https://help.syncfusion.com/winui/datagrid/overview) supports exporting data to excel. Export unbound rows, unbound columns, merged cells, stacked headers, and Details View while exporting.
+The [WinUI Data Grid](https://help.syncfusion.com/winui/datagrid/overview) supports exporting data to excel. Export unbound rows, unbound columns, merged cells, stacked headers, and Details View while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
@@ -18,7 +18,7 @@ The following assemblies needs to be added for exporting to excel.
 
 For NuGet package, install the [Syncfusion.GridExport.WinUI](https://www.nuget.org/packages/Syncfusion.GridExport.WinUI) package.
 
-Export the SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportExtensions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_) extension method in the [Syncfusion.UI.Xaml.DataGrid.Export](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.html) namespace.
+Export the WinUI Data Grid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportExtensions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_) extension method in the [Syncfusion.UI.Xaml.DataGrid.Export](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,7 +68,7 @@ async void Save(MemoryStream stream, string filename)
 {% endhighlight %}
 {% endtabs %}
 
-N> The SfDataGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). Refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported worksheets. 
+N> The WinUI Data Grid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). Refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported worksheets. 
 
 ## Excel exporting options
 
@@ -92,7 +92,7 @@ Save(stream, "Sample");
 
 ### Export groups with outlines
 
-By default, all the groups in the DataGrid will be exported in an expanded state. Enable outlines in excel based on the group expanded state by setting the [ShowOutlines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_ShowOutlines) property as `true` in the [DataGridExcelExportOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html).
+By default, all the groups in the Data Grid will be exported in an expanded state. Enable outlines in excel based on the group expanded state by setting the [ShowOutlines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_ShowOutlines) property as `true` in the [DataGridExcelExportOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -106,11 +106,11 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-export-to-excel.png" alt="Exporting to Excel with Outlines for Groups in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-export-to-excel.png" alt="Exporting to Excel with Outlines for Groups" width="100%" Height="Auto"/>
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in the SfDataGrid will be exported to Excel. To exclude some columns while exporting to Excel, use the [ExcludedColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_ExcludedColumns) field in the [DataGridExcelExportOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html).
+By default, all the columns (including hidden columns) in the Data Grid will be exported to Excel. To exclude some columns while exporting to Excel, use the [ExcludedColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_ExcludedColumns) field in the [DataGridExcelExportOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -208,9 +208,9 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-export-with-row-column-index.png" alt="Exporting to Excel with Custom Row and Column Index in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-export-with-row-column-index.png" alt="Exporting to Excel with Custom Row and Column Index" width="100%" Height="Auto"/>
 
-## Export DataGrid SelectedItems to Excel
+## Export Data Grid SelectedItems to Excel
 
 By default, the entire grid will be exported to Excel. Export selected rows only by passing the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItems) to the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportExtensions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_) method.
 
@@ -225,7 +225,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-export-selected-item.png" alt="Exporting Selected Items only to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-export-selected-item.png" alt="Exporting Selected Items only to Excel" width="100%" Height="Auto"/>
 
 ## Row Height and Column Width customization 
 
@@ -282,7 +282,7 @@ private static void GridExportHandler(object sender, DataGridExcelExportStartOpt
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-cell-style-customization.png" alt="WinUI DataGrid displays Customized Cell Style based on CellType in Exported Excel" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-cell-style-customization.png" alt="Displays Customized Cell Style based on CellType in Exported Excel" width="100%" Height="Auto"/>
 
 ## Cell customization in Excel while exporting
 
@@ -322,7 +322,7 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-cell-value-customization.png" alt="Customizing Cell Values while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-cell-value-customization.png" alt="Customizing Cell Values while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the cell values are changed for the `Is Shipped` column based on custom condition.
 
@@ -353,7 +353,7 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-row-style-customization.png" alt="Customizing Row Style based on Data while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-row-style-customization.png" alt="Customizing Row Style based on Data while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the records having the `Country` name as `Mexico` are customized.
 
@@ -384,7 +384,7 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-export-cell-value-based-on-column.png" alt="Customizing Cell Values based on Column name while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-export-cell-value-based-on-column.png" alt="Customizing Cell Values based on Column name while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the `OrderID` column cells are customized while exporting.
 
@@ -417,7 +417,7 @@ private static void DetailsViewExportHandler(object sender, DataGridDetailsViewE
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-export-data-in-detailsview.png" alt="Excluding Specific DetailsView while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-export-data-in-detailsview.png" alt="Excluding Specific DetailsView while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) is not exported for the parent record having the `OrderID` as 1002.
 
@@ -442,14 +442,14 @@ private static void DetailsViewExportHandler(object sender, DataGridDetailsViewE
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-export-without-column.png" alt="Excluding Columns in DetailsViewDataGrid while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-export-without-column.png" alt="Excluding Columns in DetailsViewDataGrid while Exporting to Excel" width="100%" Height="Auto"/>
 
 
 Here, the `OrderID` column is displayed in the `DetailsViewDataGrid` and is excluded while exporting to excel.
 
 ### Customizing DetailsViewDataGrid cells
 
-Like the parent DataGrid, customize the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) cells by using [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_CellsExportHandler). Based on the [DataGridCellExcelExportOptions.GridViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridCellExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridCellExcelExportOptions_GridViewDefinition) property, identify the particular `DetailsViewDataGrid` and customize it.
+Like the parent Data Grid, customize the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) cells by using [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_CellsExportHandler). Based on the [DataGridCellExcelExportOptions.GridViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridCellExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridCellExcelExportOptions_GridViewDefinition) property, identify the particular `DetailsViewDataGrid` and customize it.
 
 {% tabs %}
 {% highlight c# %}
@@ -476,14 +476,14 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-exported-cell-customization.png" alt="Customizing DetailsViewDataGrid Cells while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-exported-cell-customization.png" alt="Customizing DetailsViewDataGrid Cells while Exporting to Excel" width="100%" Height="Auto"/>
 
 ## Customize exported workbook and worksheet
 
-SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
+Data Grid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
 
 ### Workbook
-The SfDataGrid provides an option to return the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html). From that, get the exported workbook. This allows you to protect, encrypt and add worksheets before saving. 
+The Data Grid provides an option to return the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html). From that, get the exported workbook. This allows you to protect, encrypt and add worksheets before saving. 
 
 {% tabs %}
 {% highlight c# %}
@@ -498,7 +498,7 @@ Save(stream, "Sample");
 
 ### Worksheet customization
 
-The SfDataGrid provides support to export to an already existing file or worksheet. 
+The Data Grid provides support to export to an already existing file or worksheet. 
 
 In the following code sample, the worksheet is created and passed to the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportExtensions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_) method. In the same way, open an already existing excel using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). 
 
@@ -535,7 +535,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-change-border-style.png" alt="Changing Border Style in Exported Excel for WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-change-border-style.png" alt="Changing Border Style in Exported Excel" width="100%" Height="Auto"/>
 
 #### Enabling Filters
 
@@ -553,7 +553,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-filter-on-exported-excel.png" alt="Filters on Exported Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-filter-on-exported-excel.png" alt="Filters on Exported Excel" width="100%" Height="Auto"/>
 
 While using the [stacked headers](https://help.syncfusion.com/winui/datagrid/stacked-headers), the filter option enables for the stacked header cell. To avoid this, specify the `range` based on the Stacked headers count to show the filter icon in the header cell.
 
@@ -590,7 +590,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-range-of-cells-customization.png" alt="Customizing Range of Cells in Exported Excel for WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-range-of-cells-customization.png" alt="Customizing Range of Cells in Exported Excel" width="100%" Height="Auto"/>
 
 ## Performance
 
@@ -617,7 +617,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-column-formatting.png" alt="Formatting the Column while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-column-formatting.png" alt="Formatting the Column while Exporting to Excel" width="100%" Height="Auto"/>
 
 ### Alternate row styling without using CellsExportHandler
 
@@ -647,6 +647,6 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-to-Excel_images/winui-datagrid-row-style.png" alt="Displaying Row Style while Exporting to Excel in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Export-to-Excel_images/winui-datagrid-row-style.png" alt="Displaying Row Style while Exporting to Excel" width="100%" Height="Auto"/>
 
 

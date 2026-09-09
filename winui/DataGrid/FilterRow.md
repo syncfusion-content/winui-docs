@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filter Row in WinUI Data Grid | Syncfusion®
-description: Filter row in Data Grid provides built-in editors and filter conditions to quickly find, refine, and manage data records.
+description: Filter row in WinUI Data Grid provides built-in editors and filter conditions to quickly find, refine, and manage data records.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Filter Row in WinUI Data Grid
 
-SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html) property.
+WinUI Data Grid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html) property.
 
-The `FilterRowPosition` property contains the below positions to load the FilterRow in SfDataGrid.
+The `FilterRowPosition` property contains the below positions to load the FilterRow in Data Grid.
 
-* [FixedTop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_FixedTop) - Placed in top of the SfDataGrid in frozen state.
-* [Top](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_Top) -  Placed in top of the SfDataGrid.
-* [Bottom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_Bottom) - Placed in bottom of the SfDataGrid.
+* [FixedTop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_FixedTop) - Placed in top of the Data Grid in frozen state.
+* [Top](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_Top) -  Placed in top of the Data Grid.
+* [Bottom](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_Bottom) - Placed in bottom of the Data Grid.
 * [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html#Syncfusion_UI_Xaml_DataGrid_FilterRowPosition_None) -  No FilterRow will be placed.
 
 {% tabs %}
@@ -30,7 +30,7 @@ this.sfDataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-filter-row.png" alt="WinUI DataGrid with Filter Row" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-filter-row.png" alt="Filter Row" width="100%" Height="Auto"/>
 
 You can get the row index of FilterRow by using the [SfDataGrid.GetFilterRowIndex ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetFilterRowIndex_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_)method.
 
@@ -52,7 +52,7 @@ bool isFilterRowIndex = this.sfDataGrid.IsFilterRowIndex(1);
 
 By default, FilterRow loads the editors based on underlying property type to filter the data easily. You can change the default editors by using [GridColumn.FilterRowEditorType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_FilterRowEditorType) property.
 
-Below are the built-in FilterRow editor types supported in SfDataGrid. 
+Below are the built-in FilterRow editor types supported in Data Grid. 
 <table>
 <tr>
 <td>
@@ -141,9 +141,9 @@ this.sfDataGrid.Columns[0].FilterRowOptionsVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-filter-rows.png" alt="WinUI DataGrid with Filter Row" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-filter-rows.png" alt="Filter Row" width="100%" Height="Auto"/>
 
-Below are the filter conditions supported by different filter row editors in SfDataGrid.
+Below are the filter conditions supported by different filter row editors in Data Grid.
 
 <table>
 <tr>
@@ -239,7 +239,7 @@ this.sfDataGrid.Columns[0].FilterRowCondition = FilterRowCondition.LessThanOrEqu
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-numeric-filter-row.png" alt="Filter Row with Numeric Editor in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-numeric-filter-row.png" alt="Filter Row with Numeric Editor" width="100%" Height="Auto"/>
 
 
 ## Filtering null values
@@ -258,7 +258,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-filter-row-without-null-option.png" alt="Filter Row without Null option in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-filter-row-without-null-option.png" alt="Filter Row without Null option" width="100%" Height="Auto"/>
 
 {% tabs %}
 {% highlight xaml %}
@@ -271,7 +271,7 @@ this.sfDataGrid.Columns[0].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-filter-row-null-option.png" alt="Filter Row with Null option in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-filter-row-null-option.png" alt="Filter Row with Null option" width="100%" Height="Auto"/>
 
 
 ## Instant Filtering
@@ -289,7 +289,7 @@ this.sfDataGrid.Columns[2].ImmediateUpdateColumnFilter = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-filter-row-immediate-filter.png" alt="Immediate Column Filter with Filter Row in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-filter-row-immediate-filter.png" alt="Immediate Column Filter with Filter Row" width="100%" Height="Auto"/>
 
 ## Disable filtering for a particular FilterRowCell
 
@@ -337,7 +337,7 @@ You can customize the style of filter row by writing style of TargetType [Filte
 {% endhighlight %}
 {% endtabs %}
 
-<img src="FilterRow_images/winui-datagrid-filter-row-customization.png" alt="Customizing Filter Row Style in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="FilterRow_images/winui-datagrid-filter-row-customization.png" alt="Customizing Filter Row Style" width="100%" Height="Auto"/>
 
 
 ## Customizing filter row cell
@@ -387,7 +387,7 @@ public MainWindow()
 
 ### Customizing the filter row renderer 
 
-SfDataGrid allows you to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. You can also create new renderers instead of overriding the existing renderer. 
+Data Grid allows you to customize the filter row renderer behavior by overriding the corresponding renderer associated with the filter row cell. Each renderer have a set of virtual methods for handling the filter row behaviors. You can also create new renderers instead of overriding the existing renderer. 
 You can customize the default TextBox editor behavior by overriding `GridFilterRowTextBoxRenderer` class and add the custom renderer to [FilterRowCellRenderers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_FilterRowCellRenderers).
 
 {% tabs %}
