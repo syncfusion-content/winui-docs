@@ -1235,27 +1235,27 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="treeGrid"
-        ColumnWidthMode="Star"
-        AllowEditing="True"
-        AutoExpandMode="AllNodesExpanded"
-        AutoGenerateColumns="False"
-        ChildPropertyName="ReportsTo"
-        ItemsSource="{Binding Employees}"
-        ParentPropertyName="ID"
-        SelfRelationRootValue="-1" >
+                     ColumnWidthMode="Star"
+                     AllowEditing="True"
+                     AutoExpandMode="AllNodesExpanded"
+                     AutoGenerateColumns="False"
+                     ChildPropertyName="ReportsTo"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     SelfRelationRootValue="-1" >
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName"/>
-        <treeGrid:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
-        <treeGrid:TreeGridNumericColumn HeaderText="Employee ID" MappingName="ID" />
-        <treeGrid:TreeGridTimeColumn HeaderText="Reporting Time" MappingName="ReportingTime" ShowClearButton="True" />
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridNumericColumn MappingName="ID" HeaderText="Employee ID" />
+        <treeGrid:TreeGridTimeColumn MappingName="ReportingTime" HeaderText="Reporting Time" ShowClearButton="True" />
         <treeGrid:TreeGridTextColumn MappingName="Title" />
-        <treeGrid:TreeGridTextColumn HeaderText="Reports To" MappingName="ReportsTo" />
+        <treeGrid:TreeGridTextColumn MappingName="ReportsTo" HeaderText="Reports To" />
     </treeGrid:SfTreeGrid.Columns>
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-TimeColumn-ShowClearButton.png" alt="WinUI TreeGrid DateColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-TimeColumn-ShowClearButton.png" alt="WinUI TreeGrid TimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridCheckBoxColumn
 

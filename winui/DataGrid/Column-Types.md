@@ -1593,10 +1593,10 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% tabs %}
 {% highlight xaml %}
 <dataGrid:SfDataGrid x:Name="dataGrid" 
-                       ItemsSource="{Binding Orders}"
-                       AutoGenerateColumns="False" 
-                       ColumnWidthMode="Star"
-                       AllowEditing="True" >
+                     ItemsSource="{Binding Orders}"
+                     AutoGenerateColumns="False" 
+                     ColumnWidthMode="Star"
+                     AllowEditing="True" >
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
         <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
