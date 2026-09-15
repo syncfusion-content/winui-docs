@@ -862,7 +862,7 @@ When `ShowClearButton` is set to `True`, a clear button is displayed in the cell
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) property:
 
- - When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+ - When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
 
  - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue).
 
@@ -1608,7 +1608,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-TimeColumn-ShowClearButton.png" alt="TimeColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-TimeColumn-ShowClearButton.png" alt="GridTimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## GridToggleSwitchColumn
 

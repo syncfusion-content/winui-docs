@@ -1012,7 +1012,7 @@ When `ShowClearButton` is set to `True`, a clear button appears within the edito
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
 
-- When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
 - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate).
 
 {% tabs %}
@@ -1229,7 +1229,7 @@ When `ShowClearButton` is set to `True`, a clear button appears within the edito
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property:
 
-- When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
 - When `AllowNull` is `False`, clicking the clear button keeps the cell value unchanged.
 
 {% tabs %}
@@ -1255,7 +1255,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Type-images/winui-treegrid-TimeColumn-ShowClearButton.png" alt="TimeColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Type-images/winui-treegrid-TimeColumn-ShowClearButton.png" alt="TreeGridTimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridCheckBoxColumn
 
