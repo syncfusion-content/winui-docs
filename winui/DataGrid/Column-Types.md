@@ -1608,7 +1608,7 @@ The behavior of the clear button depends on the [AllowNull](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Column-Types_images/winui-datagrid-TimeColumn-ShowClearButton.png" alt="WinUI DataGrid TimeColumn with Clear Button" width="100%" Height="Auto"/>
+<img src="Column-Types_images/winui-datagrid-TimeColumn-ShowClearButton.png" alt="TimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## GridToggleSwitchColumn
 
