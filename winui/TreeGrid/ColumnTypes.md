@@ -1012,7 +1012,7 @@ When `ShowClearButton` is set to `True`, a clear button appears within the edito
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
 
-- When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
 - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate).
 
 {% tabs %}
@@ -1219,6 +1219,43 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 {% endtabs %}
 
 For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
+
+### Clear Button support
+
+The `TreeGridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the **ShowClearButton** property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
+
+**AllowNull Behavior**
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property:
+
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
+- When `AllowNull` is `False`, clicking the clear button keeps the cell value unchanged.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid Name="treeGrid"
+                     ColumnWidthMode="Star"
+                     AllowEditing="True"
+                     AutoExpandMode="AllNodesExpanded"
+                     AutoGenerateColumns="False"
+                     ChildPropertyName="ReportsTo"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridNumericColumn MappingName="ID" HeaderText="Employee ID" />
+        <treeGrid:TreeGridTimeColumn MappingName="ReportingTime" HeaderText="Reporting Time" ShowClearButton="True" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-TimeColumn-ShowClearButton.png" alt="TreeGridTimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridCheckBoxColumn
 

@@ -862,7 +862,7 @@ When `ShowClearButton` is set to `True`, a clear button is displayed in the cell
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_AllowNull) property:
 
- - When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+ - When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
 
  - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridNumericColumn.html#Syncfusion_UI_Xaml_DataGrid_GridNumericColumn_MinValue).
 
@@ -1576,6 +1576,39 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 {% endtabs %}
 
 <img src="Column-Types_images/winui-datagrid-TimeColumn_ShowSubmitButtons-column.gif" alt="Hide Submit Buttons from Dropdown Time Spinner in WinUI TimeColumn" width="100%" Height="Auto"/>
+
+### Clear Button support
+
+The `GridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the **ShowClearButton** property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
+
+**AllowNull Behavior**
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTimeColumn.html#Syncfusion_UI_Xaml_DataGrid_GridTimeColumn_AllowNull) property:
+
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
+
+- When `AllowNull` is `False`, clicking the clear button keeps the cell value unchanged.
+
+{% tabs %}
+{% highlight xaml %}
+<dataGrid:SfDataGrid x:Name="dataGrid" 
+                     ItemsSource="{Binding Orders}"
+                     AutoGenerateColumns="False" 
+                     ColumnWidthMode="Star"
+                     AllowEditing="True" >
+    <dataGrid:SfDataGrid.Columns>
+        <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerID" HeaderText="Customer ID" />
+        <dataGrid:GridTextColumn MappingName="CustomerName" HeaderText="Customer Name" />
+        <dataGrid:GridTimeColumn MappingName="DeliveredTime" HeaderText="Delivered Time" ShowClearButton="True" />
+        <dataGrid:GridTextColumn MappingName="ShipCity" HeaderText="Ship City" />
+    </dataGrid:SfDataGrid.Columns>
+</dataGrid:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Types_images/winui-datagrid-TimeColumn-ShowClearButton.png" alt="GridTimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## GridToggleSwitchColumn
 
