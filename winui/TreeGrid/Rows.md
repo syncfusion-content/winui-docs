@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows in WinUI TreeGrid
 
-This section explains about various row types in treegrid and its customization.
+This section explains about various row types in TreeGrid and its customization.
 
 ## Row header
 
@@ -99,13 +99,13 @@ You can display the row index value in row header by customizing the `Tr
 
 {% endhighlight %}
 {% endtabs %}
-<img src="Rows_images/Rows_img5.png" alt="Row header customized to show the row index in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/Rows_img5.png" alt="Row header customized to show the row index" width="100%" Height="Auto"/>
 
 ## Header row
 
-Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of TreeGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-<img src="Rows_images/Rows_img6.png" alt="Header row of WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/Rows_img6.png" alt="Header row" width="100%" Height="Auto"/>
 
 ### Hiding header row
 
@@ -149,7 +149,7 @@ You can change the header cell background and foreground for specific column or
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/Rows_img7.png" alt="Style of the header row changed in WinUI treeGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/Rows_img7.png" alt="Style of the header row changed" width="100%" Height="Auto"/>
 
 You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_HeaderStyle) property in column,
 
@@ -159,5 +159,5 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Rows_images/Rows_img8.png" alt="Style of a single column header changed in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Rows_images/Rows_img8.png" alt="Style of a single column header changed" width="100%" Height="Auto"/>
 

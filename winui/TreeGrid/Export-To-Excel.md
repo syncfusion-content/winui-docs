@@ -18,7 +18,7 @@ The following assemblies needs to be added for exporting to excel.
 
 For NuGet package, install the [Syncfusion.GridExport.WinUI](https://www.nuget.org/packages/Syncfusion.GridExport.WinUI) package.
 
-Export the SfTreeGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportExtensions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_) extension method in the [Syncfusion.UI.Xaml.TreeGrid.Export](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.html) namespace.
+Export TreeGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportExtensions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_) extension method in the [Syncfusion.UI.Xaml.TreeGrid.Export](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,9 +68,9 @@ async void Save(MemoryStream stream, string filename)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-export-to-excel.png" alt="WinUI TreeGrid Data Exporting to Excel" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-export-to-excel.png" alt="Data Exporting to Excel" width="100%" Height="Auto"/>
 
-N> The SfTreeGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). For manipulating the exported worksheets, refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet).
+N> TreeGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). For manipulating the exported worksheets, refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet).
 
 ## Excel exporting options
 
@@ -109,7 +109,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-export-to-excel-without-outlines.png" alt="WinUI TreeGrid Data Exporting to Excel without Outlines" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-export-to-excel-without-outlines.png" alt="Data Exporting to Excel without Outlines" width="100%" Height="Auto"/>
 
 ### Exclude columns while exporting
 
@@ -250,7 +250,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-change-row-column-index.png" alt="Changing Row and Column Index while Exporting from WinUI TreeGrid to Excel" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-change-row-column-index.png" alt="Changing Row and Column Index while Exporting to Excel" width="100%" Height="Auto"/>
 
 ## Row Height and Column Width customization  
 
@@ -302,7 +302,7 @@ private void GridExportHandler(object sender, TreeGridExcelExportStartOptions e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-cell-style-customization.png" alt="WinUI TreeGrid displays Customized Cell Style based on CellType in Exported Excel" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-cell-style-customization.png" alt="Customized Cell Style based on CellType in Exported Excel" width="100%" Height="Auto"/>
 
 ## Cell customization in Excel while exporting
 
@@ -339,7 +339,7 @@ private void CellsExportHandler(object sender, TreeGridCellExcelExportOptions e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-export-customization.png" alt="Customizing Cell Values while Exporting to Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-export-customization.png" alt="Customizing Cell Values while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the cell values changed for the Availability column are based on the custom condition.
 
@@ -373,7 +373,7 @@ private void CellsExportHandler(object sender, TreeGridCellExcelExportOptions e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-row-style.png" alt="Customizing Row Style based on Data while Exporting to Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-row-style.png" alt="Customizing Row Style based on Data while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the records having the `City` name as `US` are customized.
 
@@ -404,7 +404,7 @@ private void CellsExportHandler(object sender, TreeGridCellExcelExportOptions e)
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-column-cell-customization.png" alt="Customizing Cell Values based on Column name while Exporting to Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-column-cell-customization.png" alt="Customizing Cell Values based on Column name while Exporting to Excel" width="100%" Height="Auto"/>
 
 Here, the `ID` column cells are customized while exporting.
 
@@ -430,7 +430,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-cell-border-style.png" alt="Changing Border Style in Exported Excel for WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-cell-border-style.png" alt="Changing Border Style in Exported Excel" width="100%" Height="Auto"/>
 
 #### Enabling Filters
 
@@ -449,7 +449,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-filter.png" alt="Filters on Exported Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-filter.png" alt="Filters on Exported Excel" width="100%" Height="Auto"/>
 
 While using the [stacked headers](https://help.syncfusion.com/winui/treegrid/columns#stacked-headers), the filter option enables the stacked header cell. To avoid this, specify the `range` based on the Stacked headers count to show the filter icon in the header cell.
 
@@ -496,13 +496,13 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Export-To-Excel_images/winui-treegrid-column-formatting.png" alt="Formatting the Column while Exporting to Excel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Export-To-Excel_images/winui-treegrid-column-formatting.png" alt="Formatting the Column while Exporting to Excel" width="100%" Height="Auto"/>
 
 ## How to
 
 ### Export the TreeGrid that is not loaded in view
 
-Export the TreeGrid that is not loaded in view by calling the ApplyTemplate() method before exporting.
+Export TreeGrid that is not loaded in view by calling the ApplyTemplate() method before exporting.
 
 {% tabs %}
 {% highlight c# %}

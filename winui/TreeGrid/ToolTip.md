@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in WinUI TreeGrid
 
-Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
+Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of TreeGrid.
 
 ## Record cell tooltip
 
@@ -55,7 +55,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 
 N> It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_ShowToolTip).
 
-<img src="Tooltip_images/Tooltip_img1.png" alt="Showing ToolTip for record cell in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Tooltip_images/Tooltip_img1.png" alt="Showing ToolTip for record cell" width="100%" Height="Auto"/>
 
 ## Header tooltip
 
@@ -76,7 +76,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Tooltip_images/ToolTip_img2.png" alt="Showing ToolTip for header cell in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Tooltip_images/ToolTip_img2.png" alt="Showing ToolTip for header cell" width="100%" Height="Auto"/>
 
 ## Tooltip customization
 
@@ -128,7 +128,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-<img src="ToolTip_images/ToolTip_img3.png" alt="WinUI treeGrid with Customized ToolTip Support" width="100%" Height="Auto"/>
+<img src="ToolTip_images/ToolTip_img3.png" alt="Customized ToolTip Support" width="100%" Height="Auto"/>
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-tooltip-using-DataTemplate-in-winui-datagrid).
 

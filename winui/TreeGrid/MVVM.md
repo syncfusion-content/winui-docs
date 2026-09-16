@@ -9,11 +9,11 @@ documentation: ug
 
 # MVVM in WinUI TreeGrid
 
-This section explains various MVVM requirements using SfTreeGrid.
+This section explains various MVVM requirements using TreeGrid.
 
 ## TreeGrid SelectedItem binding
 
-You can bind the [SelectedItem ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property directly to treegrid by setting the `SfTreeGrid.SelectedItem` property.
+You can bind the [SelectedItem ](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectedItem) property directly to TreeGrid by setting the `SfTreeGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -92,7 +92,7 @@ public class ViewModel : NotificationObject
 
 ## Button command binding to view model
 
-You can load a button for the columns in treegrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command included in view model by using `ElementName` binding.
+You can load a button for the columns in TreeGrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command included in view model by using `ElementName` binding.
 
 In the following example, the command receives the underlying data object as command parameter, since the `DataContext` is binding as command parameter.
 
@@ -208,7 +208,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-<img src="MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-TreeGrid.png" alt="Shown button command binding to viewmodel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="MVVM_images/Shown-button-command-binding-to-viewmodel-in-WinUI-TreeGrid.png" alt="Button command binding to viewmodel" width="100%" Height="Auto"/>
 
 ## Binding ComboBoxColumn ItemsSource from view model
 
@@ -305,7 +305,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-<img src="MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-TreeGrid.png" alt="Shown binding comboboxcolumn ItemsSource from ViewModel in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="MVVM_images/Shown-binding-comboboxcolumn-ItemsSource-from-ViewModel-in-WinUI-TreeGrid.png" alt="Binding comboboxcolumn ItemsSource from ViewModel" width="100%" Height="Auto"/>
 
 ## Binding ItemsSource from view model to ComboBox inside data template
 
@@ -415,7 +415,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-<img src="MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-TreeGrid.png" alt="Shown combobox inside data template binding MVVM in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="MVVM_images/Shown-combobox-inside-data-template-binding-MVVM-in-WinUI-TreeGrid.png" alt="Combobox inside data template binding MVVM" width="100%" Height="Auto"/>
 
 ## Binding TreeGrid columns from view model
 
