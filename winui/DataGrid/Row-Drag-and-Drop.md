@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop in WinUI Data Grid | Syncfusion®
-description: Row drag and drop in Data Grid enables easy row reordering and record movement within or across grids for flexible data management.
+description: Row drag and drop in WinUI Data Grid enables easy row reordering and record movement within or across grids for flexible data management.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Row Drag and Drop in WinUI Data Grid
 
-[WinUI DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the [AllowRowDragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowRowDragDrop) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between DataGrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/apps/design/controls/listview-and-gridview) , [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) and [SfTreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html). 
+[WinUI Data Grid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) allows you to drag and drop the rows by setting the [AllowRowDragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowRowDragDrop) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) property to `true`. You can also drag and drop the rows between Data Grid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/apps/design/controls/listview-and-gridview) , [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) and [SfTreeGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,20 +30,20 @@ While dropping, the dragged rows can be added above or below the target record b
 
 For example, if you drop record at the bottom of the target record, it will be added below the target record.
 
-<img src="Row-Drag-Drop-Images/RowDragDrop-Img1.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-Drop-Images/RowDragDrop-Img1.png" alt="Drag and Drop Rows" width="100%" Height="Auto"/>
 
 
 If you drop above the target record, it will be added above the target record.
 
-<img src="Row-Drag-Drop-Images/RowDragDrop-Img2.png" alt="Drag and Drop Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-Drop-Images/RowDragDrop-Img2.png" alt="Drag and Drop Rows" width="100%" Height="Auto"/>
 
 ## Dragging multiple rows
 
-WinUI DataGrid (SfDataGrid) allows to select and drag multiple rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) as `Multiple` or `Extended`. 
+WinUI Data Grid allows to select and drag multiple rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_SelectionMode) as `Multiple` or `Extended`. 
 
-N> The drag selection cannot be performed while the `AllowRowDragDrop` enabled as `true` in the SfDataGrid.
+N> The drag selection cannot be performed while the `AllowRowDragDrop` enabled as `true` in the Data Grid.
 
-<img src="Row-Drag-Drop-Images/RowDragDrop-Img3.png" alt="Dragging Multiple Rows in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-Drop-Images/RowDragDrop-Img3.png" alt="Dragging Multiple Rows" width="100%" Height="Auto"/>
 
 ## Drag and drop events
 
@@ -51,7 +51,7 @@ When dragging and dropping the rows `SfDataGrid` triggers the following events:
 
 ### RowDragStarting event
 
-[RowDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDragStarting) event occurs when you start to drag the records in the DataGrid. The [DataGridRowDragStartingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowDragStartingEventArgs.html) has the following member, which provides information for the `RowDragStarting` event.
+[RowDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDragStarting) event occurs when you start to drag the records in the Data Grid. The [DataGridRowDragStartingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowDragStartingEventArgs.html) has the following member, which provides information for the `RowDragStarting` event.
 * `DraggingRows` : Gets the records which contains the data associated while dragging the rows.
 * `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
 
@@ -68,7 +68,7 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 
 ### RowDragOver event
 
-[RowDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDragOver) event occurs continuously while dragging the record in the SfDataGrid. The [DataGridRowDragOverEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowDragOverEventArgs.html) has the following members, which provide information for the `RowDragOver` event.
+[RowDragOver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDragOver) event occurs continuously while dragging the record in the Data Grid. The [DataGridRowDragOverEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowDragOverEventArgs.html) has the following members, which provide information for the `RowDragOver` event.
 * `Data` : Gets a data object that contains the data associated with dragging the rows. 
 * `DraggingRows` : Gets the records that contains the data associated with dragging the rows.
 * `DropPosition` : Gets a value indicating the drop position which is based on dropped location. 
@@ -88,7 +88,7 @@ private void SfDataGrid_RowDragOver(object sender, DataGridRowDragOverEventArgs 
 
 ### RowDropping event
 
-[RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDropping) event occurs when a record is dropping in the SfDataGrid. The [DataGridRowDroppingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowDroppingEventArgs.html) has the following members, which provide information for the `RowDropping` event.
+[RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDropping) event occurs when a record is dropping in the Data Grid. The [DataGridRowDroppingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DataGridRowDroppingEventArgs.html) has the following members, which provide information for the `RowDropping` event.
 * `Cancel` : Gets or sets a value indicating whether the event is canceled or not. 
 * `Data` : Gets a data object that contains the data associated with dragging the rows. 
 * `DraggingRows` : Gets the records that contains the data associated with dragging the rows. 
@@ -127,9 +127,9 @@ private void SfDataGrid_RowDropped(object sender, DataGridRowDroppedEventArgs e)
 
 ## Customizing row drag and drop operation
 
-### Disable dragging of certain rows in WinUI DataGrid
+### Disable dragging of certain rows in WinUI Data Grid
 
-You can restrict the dragging of certain rows in SfDataGrid by using the  [SfDataGrid.RowDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDragStarting) event.
+You can restrict the dragging of certain rows in Data Grid by using the  [SfDataGrid.RowDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDragStarting) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -145,9 +145,9 @@ private void SfDataGrid_RowDragStarting(object sender, DataGridRowDragStartingEv
 {% endhighlight %}
 {% endtabs %}
 
-### Disable dropping over certain rows in WinUI DataGrid
+### Disable dropping over certain rows in WinUI Data Grid
 
-You can restrict the dropping the records in certain rows in SfDataGrid by using the [SfDataGrid.RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDropping) event.
+You can restrict the dropping the records in certain rows in Data Grid by using the [SfDataGrid.RowDropping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RowDropping) event.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization and Deserialization in WinUI Data Grid | Syncfusion®
-description: Serialization and deserialization in Data Grid allow grid settings and state to be saved, persisted, and restored across sessions.
+description: Serialization and deserialization in WinUI Data Grid allow grid settings and state to be saved, persisted, and restored across sessions.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,10 +9,10 @@ documentation: ug
 
 # Serialization and Deserialization in WinUI Data Grid
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-10.0&redirectedfrom=MSDN).
+WinUI Data Grid allows you to serialize and deserialize the Data Grid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-10.0&redirectedfrom=MSDN).
  
 ## Serialization 
-You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Serialize_Windows_Storage_StorageFile_) method which exports the current DataGrid control properties to an XML file.
+You can serialize the WinUI Data Grid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Serialize_Windows_Storage_StorageFile_) method which exports the current Data Grid control properties to an XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,12 +24,12 @@ this.datagrid.Serialize(storageFile);
 
 ## Serialization options 
 
-SfDataGrid serialization  operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_) method.
+Data Grid serialization  operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Serialize_System_IO_Stream_Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_) method.
 
 
 ### Serialize sorting
 
-By default, SfDataGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeSorting) to `false`.
+By default, Data Grid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeSorting) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -43,7 +43,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize grouping
 
-By default, SfDataGrid allows you to serialize the grouping operation. You can disable the grouping  serialization by setting the [SerializationOptions.SerializeGrouping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeGrouping) to `false`.
+By default, Data Grid allows you to serialize the grouping operation. You can disable the grouping  serialization by setting the [SerializationOptions.SerializeGrouping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeGrouping) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize filtering
 
-By default, SfDataGrid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the [SerializationOptions.SerializeFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeFiltering) to `false`.
+By default, Data Grid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the [SerializationOptions.SerializeFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeFiltering) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +71,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize columns
 
-By default, SfDataGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [SerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeColumns) to `false`.
+By default, Data Grid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [SerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeColumns) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -85,7 +85,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize summaries
  
-By default, SfDataGrid allows you to serialize the caption summary, group summary and table summary settings in SfDataGrid. 
+By default, Data Grid allows you to serialize the caption summary, group summary and table summary settings in Data Grid. 
 
 You can disable the summaries serialization by setting [SerializationOptions.SerializeCaptionSummary](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeCaptionSummary) , [SerializationOptions.SerializeGroupSummaries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeGroupSummaries) , [SerializationOptions.SerializeTableSummaries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeTableSummaries) properties to `false`
 
@@ -103,7 +103,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize stacked headers
 
-By default, SfDataGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [SerializationOptions.SerializeStackedHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeStackedHeaders) to `false`.
+By default, Data Grid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [SerializationOptions.SerializeStackedHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeStackedHeaders) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize Details View
 
-By default, SfDataGrid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the [SerializationOptions.SerializeDetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeDetailsViewDefinition) to `false`.
+By default, Data Grid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the [SerializationOptions.SerializeDetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeDetailsViewDefinition) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,7 +132,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ### Serialize unbound rows
 
-By default, SfDataGrid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the [SerializationOptions.SerializeUnBoundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeUnboundRows) to `false`.
+By default, Data Grid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the [SerializationOptions.SerializeUnBoundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_SerializationOptions_SerializeUnboundRows) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ this.datagrid.Serialize(storageFile, options);
 
 ## Deserialization
 
-You can deserialize the SfDataGrid setting by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Deserialize_Windows_Storage_StorageFile_) method which reconstructs the SfDataGrid based on the setting in the stored XML file.
+You can deserialize the Data Grid setting by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Deserialize_Windows_Storage_StorageFile_) method which reconstructs the control based on the setting in the stored XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ Deserialization operation can be customized by passing [DeserializationOptions](
 
 ### Deserialize sorting
 
-By default, SfDataGrid allows you to deserialize the sorting operation. You can disable the sorting  deserialization by setting the [DeserializationOptions.DeserializeSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeSorting) to `false`.
+By default, Data Grid allows you to deserialize the sorting operation. You can disable the sorting  deserialization by setting the [DeserializationOptions.DeserializeSorting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeSorting) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -176,7 +176,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize grouping
 
-By default, SfDataGrid allows you to deserialize the grouping operation. You can disable the grouping deserialization by setting the [DeserializationOptions.DeserializeGrouping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeGrouping) to `false`.
+By default, Data Grid allows you to deserialize the grouping operation. You can disable the grouping deserialization by setting the [DeserializationOptions.DeserializeGrouping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeGrouping) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -190,7 +190,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize filtering
 
-By default, SfDataGrid allows you to deserialize the filtering. You can disable the filtering deserialization by setting [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeFiltering) to `false`.
+By default, Data Grid allows you to deserialize the filtering. You can disable the filtering deserialization by setting [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeFiltering) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -204,7 +204,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize columns
 
-By default, SfDataGrid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the [DeserializationOptions.DeserializeColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeColumns) to `false`.
+By default, Data Grid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the [DeserializationOptions.DeserializeColumns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeColumns) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -218,7 +218,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize summaries
  
-By default, SfDataGrid allows you to deserialize the group summary, caption summary and table summary settings. 
+By default, Data Grid allows you to deserialize the group summary, caption summary and table summary settings. 
 
 You can disable the summaries deserialization by setting [DeserializationOptions.DeserializeCaptionSummary](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeCaptionSummary) , [DeserializationOptions.DeserializeGroupSummaries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeGroupSummaries) , [DeserializationOptions.DeserializeTableSummaries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeTableSummaries) properties to `false`.
 
@@ -236,7 +236,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize stacked headers
 
-By default, SfDataGrid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the [DeserializationOptions.DeserializeStackedHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeStackedHeaders) to `false`.
+By default, Data Grid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the [DeserializationOptions.DeserializeStackedHeaders](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeStackedHeaders) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -250,7 +250,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize Details View
 
-By default, SfDataGrid allows you to deserialize the DetailsViewDefinition. You can disable the DetailsViewDefinition deserialization by setting the [DeserializationOptions.DeserializeDetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeDetailsViewDefinition) to `false`.
+By default, Data Grid allows you to deserialize the DetailsViewDefinition. You can disable the DetailsViewDefinition deserialization by setting the [DeserializationOptions.DeserializeDetailsViewDefinition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeDetailsViewDefinition) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -264,7 +264,7 @@ this.datagrid.Deserialize(storageFile, options);
 
 ### Deserialize unbound rows
 
-By default, SfDataGrid allows you to deserialize the unbound rows settings. You can disable the unbound rows deserialization by setting the [DeserializationOptions.DeserializeUnBoundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeUnboundRows) to `false`.
+By default, Data Grid allows you to deserialize the unbound rows settings. You can disable the unbound rows deserialization by setting the [DeserializationOptions.DeserializeUnBoundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.DeserializationOptions.html#Syncfusion_UI_Xaml_DataGrid_Serialization_DeserializationOptions_DeserializeUnboundRows) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,11 +278,11 @@ this.datagrid.Deserialize(storageFile, options);
 
 ## Customizing Serialization and Deserialization Operations
 
-SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationController.html) class and override the necessary virtual methods.
+Data Grid allows you to customize the serialization and deserialization operations by deriving [SerializationController](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Serialization.SerializationController.html) class and override the necessary virtual methods.
 
 ### Serializing template column content
 
-By default, you cannot serialize the template content in SfDataGrid. This is the default behavior during  Serialization and Deserialization operation.
+By default, you cannot serialize the template content in Data Grid. This is the default behavior during  Serialization and Deserialization operation.
 
 {% tabs %}
 {% highlight xaml %}

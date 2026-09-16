@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in WinUI Data Grid | Syncfusion®
-description: ToolTip in Data Grid displays additional information for cells and rows through customizable tooltips, improving data visibility and usability.
+description: ToolTip in WinUI Data Grid displays additional information for cells and rows through customizable tooltips, improving data visibility and usability.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in WinUI Data Grid
 
-ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. 
+ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of WinUI Data Grid. 
 
 ## Record cell tooltip
 
@@ -56,7 +56,7 @@ this.sfDataGrid.Columns["CustomerID"].ShowToolTip = true;
 
 N> `GridColumn.ShowToolTip` takes higher priority than `SfDataGrid.ShowToolTip`.
 
-<img src="ToolTip_images/winui-datagrid-record-cell-tooltip.png" alt="Displaying Tooltip for Record Cell in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="ToolTip_images/winui-datagrid-record-cell-tooltip.png" alt="Displaying Tooltip for Record Cell" width="100%" Height="Auto"/>
 
 ## Header tooltip
 
@@ -78,7 +78,7 @@ this.sfDataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-<img src="ToolTip_images/winui-datagrid-tooltip-for-header.png" alt="Displaying Tooltip for Header in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="ToolTip_images/winui-datagrid-tooltip-for-header.png" alt="Displaying Tooltip for Header" width="100%" Height="Auto"/>
 
 ## ToolTip Customization
 
@@ -123,7 +123,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-<img src="ToolTip_images/winui-datagrid-tooltip-customization-using-tooltiptemplate.png" alt="Displaying Tooltip Customization using ToolTipTemplate in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="ToolTip_images/winui-datagrid-tooltip-customization-using-tooltiptemplate.png" alt="Displaying Tooltip Customization using ToolTipTemplate" width="100%" Height="Auto"/>
 
 ### Customize the ToolTip with ToolTipTemplateSelector
 
@@ -211,11 +211,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the `DefaultTemplate` which is applied through `ToolTipTemplateSelector`.
 
-<img src="ToolTip_images/winui-datagrid-default-template-for-tooltip-using-tooltiptemplateselector.png" alt="Displaying DefaultTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="ToolTip_images/winui-datagrid-default-template-for-tooltip-using-tooltiptemplateselector.png" alt="Displaying DefaultTemplate for Tooltip using ToolTipTemplateSelector" width="100%" Height="Auto"/>
 
 The below image refers the `AlternateTemplate` which is applied through `ToolTipTemplateSelector`.
 
-<img src="ToolTip_images/winui-datagrid-alternate-template-for-tooltip-using-tooltiptemplateselector.png" alt="Displaying AlternateTemplate for Tooltip using ToolTipTemplateSelector in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="ToolTip_images/winui-datagrid-alternate-template-for-tooltip-using-tooltiptemplateselector.png" alt="Displaying AlternateTemplate for Tooltip using ToolTipTemplateSelector" width="100%" Height="Auto"/>
 
 ## Events
 
@@ -224,7 +224,7 @@ The below image refers the `AlternateTemplate` which is applied through `ToolTip
 The [CellToolTipOpening](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CellToolTipOpening) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_DataGrid_CellToolTipOpeningEventArgs_Column" aria-label="Column Event Args">Column :</a> Gets the hovered cell column in the SfDataGrid.</li>
+<li> <a href="https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_DataGrid_CellToolTipOpeningEventArgs_Column" aria-label="Column Event Args">Column :</a> Gets the hovered cell column in the WinUI Data Grid.</li>
 <li> <a href="https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_DataGrid_CellToolTipOpeningEventArgs_Record" aria-label="Record Event Args">Record :</a> Gets the data context of hovered cell.</li>
 <li> <a href="https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_DataGrid_CellToolTipOpeningEventArgs_RowColumnIndex" aria-label="RowColumnIndex Event Args">RowColumnIndex :</a> Gets the row and column index of the hovered cell.</li>
 <li> <a href="https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_DataGrid_CellToolTipOpeningEventArgs_ToolTip" aria-label="ToolTip Event Args">ToolTip :</a> Gets the tooltip of the hovered cells.</li>

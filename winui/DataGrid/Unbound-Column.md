@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in WinUI Data Grid | Syncfusion®
-description: Unbound columns in Data Grid display calculated or custom values and support operations such as sorting, filtering, and data presentation.
+description: Unbound columns in WinUI Data Grid display calculated or custom values and support operations such as sorting, filtering, and data presentation.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Column in WinUI Data Grid
 
-SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping, exporting and printing as normal columns.
+WinUI Data Grid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnboundColumn](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumn.html) class. Unbound columns supports for sorting, filtering, grouping, exporting and printing as normal columns.
 
 {% tabs %}
 {% highlight xaml %}
@@ -33,7 +33,7 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Unbound-Column_images/winui-datagrid-unbound-column.png" alt="WinUI DataGrid Unbound Column" width="100%" Height="Auto"/>
+<img src="Unbound-Column_images/winui-datagrid-unbound-column.png" alt="Unbound Column" width="100%" Height="Auto"/>
 
 N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_MappingName) for `GridUnboundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -199,7 +199,7 @@ NOT
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Unbound-Column_images/winui-datagrid-expression-column.png" alt="WinUI DataGrid displays Unbound Column with Expression" width="100%" Height="Auto"/>
+<img src="Unbound-Column_images/winui-datagrid-expression-column.png" alt="Displays Unbound Column with Expression" width="100%" Height="Auto"/>
 
 ### Using Format
 
@@ -227,12 +227,12 @@ this.sfDataGrid.Columns.Add(new GridUnboundColumn() { HeaderText = "Discount Pri
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Unbound-Column_images/winui-datagrid-unbound-column-formatting.png" alt="Formatting Unbound Columns in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Unbound-Column_images/winui-datagrid-unbound-column-formatting.png" alt="Formatting Unbound Columns" width="100%" Height="Auto"/>
 
 ### Using QueryUnboundColumnValue event
 
 You can populate the data for unbound column by handling the [QueryUnboundColumnValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_QueryUnboundColumnValue) event.
-[GridUnboundColumnEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumnEventsArgs.html) of the `QueryUnboundColumnValue` event provides the information about the cell triggered this event. [GridUnboundColumnValueEventsArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView. 
+[GridUnboundColumnEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumnEventsArgs.html) of the `QueryUnboundColumnValue` event provides the information about the cell triggered this event. [GridUnboundColumnValueEventsArgs.OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridEventArgs.html#Syncfusion_UI_Xaml_Grids_GridEventArgs_OriginalSender) returns the WinUI Data Grid fired this event for DetailsView. 
 
 You can get or set the [GridUnboundColumnEventArgs.Value](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumnEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundColumnEventsArgs_Value) property based on the [UnBoundAction](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridUnboundColumnEventsArgs.html#Syncfusion_UI_Xaml_DataGrid_GridUnboundColumnEventsArgs_UnBoundAction). 
 * `UnBoundAction` - [QueryData](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.UnboundActions.html#Syncfusion_UI_Xaml_DataGrid_UnboundActions_QueryData) denotes the event triggered to query value and cell information.
@@ -256,7 +256,7 @@ void SfDataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsAr
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png" alt="Populating data with Unbound Column in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Unbound-Column_images/winui-datagrid-unbound-column-with-populated-data.png" alt="Populating data with Unbound Column" width="100%" Height="Auto"/>
 
 ## Editing unbound column
 
@@ -316,7 +316,7 @@ void SfDataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEv
 
 ## Customize the unbound column behavior
 
-SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.  
+Data Grid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.  
 Below table lists the available cell types for unbound column.
 
 <table>
@@ -388,7 +388,7 @@ public class GridUnboundCellTextBoxRendererExt : GridUnboundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-<img src="Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png" alt="Customizing Unbound Column behavior in WinUI DataGrid" width="100%" Height="Auto"/>
+<img src="Unbound-Column_images/winui-datagrid-unbound-column-behavior-customization.png" alt="Customizing Unbound Column behavior" width="100%" Height="Auto"/>
 
 ### Custom renderer
 

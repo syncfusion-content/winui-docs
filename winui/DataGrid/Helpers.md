@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in WinUI Data Grid | Syncfusion®
-description: Helper methods in Data Grid simplify common tasks such as retrieving row and column indexes, working with groups, and performing grid utility operations.
+description: Helper methods in WinUI Data Grid simplify common tasks such as retrieving row and column indexes, working with groups, and performing grid utility operations.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## IndexResolver
 
-DataGrid has [GridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.html) namespace that has some extension methods used to resolve from row or column index to record or visible column index and `vice versa`. 
+WinUI Data Grid has [GridIndexResolver](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html) static class present in [Syncfusion.UI.Xaml.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.html) namespace that has some extension methods used to resolve from row or column index to record or visible column index and `vice versa`. 
 
 ## Example: You can find the record index from row index using ResolveToRecordIndex method.
 
@@ -37,7 +37,7 @@ Resolves row index from the record associated with <code>SfDataGrid.View.Records
 <tr>
 <td>
 ResolveStartIndexOfGroup(Group group)</td><td>
-Resolves the start index of group in DataGrid associated with <code>SfDataGrid.View.Groups</code>. When there is no group in DataGrid it returns -1.</td></tr>
+Resolves the start index of group in Data Grid associated with <code>SfDataGrid.View.Groups</code>. When there is no group in Data Grid it returns -1.</td></tr>
 <tr>
 <td>
 ResolveToTableSummaryIndex(int rowIndex)</td><td>
@@ -94,4 +94,4 @@ Decides whether the given row index is <code>HeaderTableSummaryRow</code> or not
 
 ## Dispose
 
-The method is associated with relinquishes memory and clears all references associated with SfDataGrid. When you call this method, it releases all the reference for SfDataGrid. So the memory it is occupying using the DataGrid is reclaimed. You have to call [SfDataGrid.Dispose](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Dispose_System_Boolean_) method to release the memory.
+The method is associated with relinquishes memory and clears all references associated with Data Grid. When you call this method, it releases all the reference for Data Grid. So the memory it is occupying using the control is reclaimed. You have to call [SfDataGrid.Dispose](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Dispose_System_Boolean_) method to release the memory.
