@@ -12,7 +12,7 @@ documentation: ug
 The [WinUI Color Picker](https://www.syncfusion.com/winui-controls/color-picker) control is a user interface to select and adjust color values. It supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), Hex codes, linear and radial gradient color brushes.
 ## Color Picker control structure
 
-![WinUI Color Picker](Getting-Started_images/winui-colorpicker.gif)
+![WinUI ColorPicker overview](getting-started_images/winui-colorpicker-overview.gif)
 
 ## Key features
 
