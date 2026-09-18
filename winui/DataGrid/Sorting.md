@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WinUI Data Grid | Syncfusion®
-description: Sorting in Data Grid provides single and multi-column sorting, initial sort direction, custom sorting, and programmatic sorting support for efficient data organization.
+description: Sorting in Data Grid organizes data in ascending or descending order with support for multi-column, programmatic, and custom sorting.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -84,7 +84,6 @@ Following are the sequence of sorting orders when clicking column header,
  
 * Clears the sorting and records displayed in its initial order
 
-
 ## Initial sort direction
 
 By default, the first time a column is sorted, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfDataGrid.InitialSortDirection` and `GridColumn.InitialSortDirection`.
@@ -97,11 +96,10 @@ Use the `SfDataGrid.InitialSortDirection` property to apply the same initial sor
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:SfDataGrid
-    x:Name="sfDataGrid"
-    AllowSorting="True"
-    InitialSortDirection="Descending"
-    ItemsSource="{Binding Orders}" />
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
+                     AllowSorting="True"
+                     InitialSortDirection="Descending"
+                     ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% highlight c# %}
 this.sfDataGrid.InitialSortDirection = ListSortDirection.Descending;
@@ -116,11 +114,10 @@ Use the `GridColumn.InitialSortDirection` property to define the initial sort di
 
 {% tabs %}
 {% highlight xaml %}
-<dataGrid:SfDataGrid
-    x:Name="sfDataGrid"
-    AllowSorting="True"
-    AutoGenerateColumns="False"
-    ItemsSource="{Binding Orders}">
+<dataGrid:SfDataGrid x:Name="sfDataGrid"
+                     AllowSorting="True"
+                     AutoGenerateColumns="False"
+                     ItemsSource="{Binding Orders}">
 
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn MappingName="OrderID" HeaderText="Order ID" InitialSortDirection="Descending" />

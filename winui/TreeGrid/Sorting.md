@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WinUI TreeGrid | Syncfusion®
-description: Sorting in TreeGrid provides single and multi-column sorting, initial sort direction, custom sorting, and programmatic sorting support for efficient data organization.
+description: Sorting in TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: winui
 control: TreeGrid
 documentation: ug
@@ -104,7 +104,6 @@ Following are the sequence of sorting orders when clicking column header,
 * Sorts the data in descending order
 * Clears the sorting and records displayed in its initial order
 
-
 ## Initial sort direction
 
 By default, the first time a column is sorted, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfTreeGrid.InitialSortDirection` and `TreeGridColumn.InitialSortDirection`.
@@ -118,13 +117,13 @@ Use the `SfTreeGrid.InitialSortDirection` property to apply the same initial sor
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="treeGrid"
-                    AllowSorting="True"
-                    InitialSortDirection="Descending"
-                    AutoExpandMode="RootNodesExpanded"
-                    ItemsSource="{Binding Employees}"
-                    ParentPropertyName="ID"
-                    ChildPropertyName="ReportsTo"
-                    SelfRelationRootValue="-1">
+                     AllowSorting="True"
+                     InitialSortDirection="Descending"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     ChildPropertyName="ReportsTo"
+                     SelfRelationRootValue="-1">
 {% endhighlight %}
 {% highlight c# %}
 this.treeGrid.InitialSortDirection = ListSortDirection.Descending;
@@ -140,19 +139,20 @@ Use the `TreeGridColumn.InitialSortDirection` property to define the initial sor
 {% tabs %}
 {% highlight xaml %}
 <treeGrid:SfTreeGrid Name="treeGrid"
-                    AllowSorting="True"
-                    AutoGenerateColumns="False"
-                    AutoExpandMode="RootNodesExpanded"
-                    ItemsSource="{Binding Employees}"
-                    ParentPropertyName="ID"
-                    ChildPropertyName="ReportsTo"
-                    SelfRelationRootValue="-1">
+                     AllowSorting="True"
+                     AutoGenerateColumns="False"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     ChildPropertyName="ReportsTo"
+                     SelfRelationRootValue="-1">
 
     <treeGrid:SfTreeGrid.Columns>
         <treeGrid:TreeGridNumericColumn MappingName="ID" InitialSortDirection="Descending" />
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" InitialSortDirection="Ascending" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" /> 
     </treeGrid:SfTreeGrid.Columns>
+
 </treeGrid:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
