@@ -210,5 +210,5 @@ sfCalendar.SelectionShape = SelectionShape.Rectangle;
 
 ![change-shape-of-today-and-selected-date-in-winui-calendar](Images/selection/change-shape-of-today-and-selected-date-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection).
 

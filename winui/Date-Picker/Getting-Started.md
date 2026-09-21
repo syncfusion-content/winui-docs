@@ -23,7 +23,7 @@ In this walkthrough, you will create a WinUI application that contains the `Date
 
 To add the `Date Picker` control manually in XAML, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Download and refer to the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
@@ -57,7 +57,7 @@ To add the `Date Picker` control manually in XAML, follow the below steps.
 
 To add the `Date Picker` control manually in C#, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop) or [WinUI 3 app in UWP for C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app).
 2. Download and refer to the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the `Date Picker` namespace `Syncfusion.UI.Xaml.Editors` in the C# page.
@@ -93,7 +93,7 @@ namespace GettingStarted
 
 ![winui-datepicker-control](Images/getting-started/winui-datepicker-control.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/Getting_Started)
 
 ## Select date programmatically
 
@@ -112,7 +112,7 @@ sfDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 10, 29));
 
 ![programmatic-date-selection-in-winui-date-picker](Images/getting-started/programmatic-date-selection-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Select date interactively
 
@@ -139,7 +139,7 @@ SfDatePicker sfDatePicker= new SfDatePicker();
 
 ![date-selection-in-winui-date-picker](Images/getting-started/date-selection-in-winui-date-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/Getting_Started)
 
 ## Restrict selection
 
@@ -180,7 +180,7 @@ sfDatePicker.AllowNull = true;
 
 ![allow-null-value-in-winui-date-picker](Images/getting-started/allow-null-value-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateRestriction)
 
 ## Header and description
 This section explains the `Header` and `Description` properties of the `WinUI Date Picker`.
@@ -301,7 +301,7 @@ sfDatePicker.AllowNull = true;
 
 ![customize-text-with-water-mark-in-winui-date-picker](Images/getting-started/customize-text-with-water-mark-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateRestriction)
 
 ## Date changed notification
 

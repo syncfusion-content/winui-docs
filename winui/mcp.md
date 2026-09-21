@@ -27,16 +27,16 @@ Before beginning, ensure the following prerequisites are met:
 
 - Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
-- An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
+- An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key)
 - A **WinUI application** (existing or new); see [WinUI application that includes Syncfusion WinUI](https://help.syncfusion.com/winui/overview)
 - An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
   - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)  
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)  
-  - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
+  - [Free Trial](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fstart-trials)
 
 ### Getting Your API Key
 
-Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> API key from the [API Key page](https://www.syncfusion.com/account/api-key) and store it in a `.txt` or `.key` file. The saved file will be referenced in the MCP configuration:
+Generate the Syncfusion<sup style="font-size:70%">&reg;</sup> API key from the [API Key page](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key) and store it in a `.txt` or `.key` file. The saved file will be referenced in the MCP configuration:
 
 ````json
 "env": {
@@ -246,7 +246,7 @@ The table below lists frequently encountered issues and suggested resolutions to
 | Issue | Solution |
 |-------|----------|
 | **Server failed to start** | Update to .NET 8 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
-| **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://syncfusion.com/account/api-key). |
+| **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key). |
 | **Incorrect API key config** | For the file path: verify file location and content. For inline key: check the key is correctly updated. |
 | **Wrong config file location** | VS Code: `.vscode/mcp.json` • Code Studio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root. |
 | **Check IDE logs** | VS Code / Code Studio: Output panel → "MCP" • Cursor: Developer Console for MCP errors. |

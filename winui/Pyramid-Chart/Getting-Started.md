@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Pyramid Chart
 
-This section explains how to populate the [WinUI Pyramid Chart](https://www.syncfusion.com/winui-controls/charts/winui-pyramid-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the [WinUI Pyramid Chart](https://www.syncfusion.com/winui-controls/pyramid-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Chart
 

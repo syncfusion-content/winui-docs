@@ -671,6 +671,6 @@ The [LabelCreated](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chart
 
 ## See Also
 
-* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
-* [How to inverse the chart axis in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12130)
-* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857)
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013/how-to-customize-the-axis-labels-of-winui-chart-sfcartesianchart)
+* [How to inverse the chart axis in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12130/how-to-inverse-the-chart-axis-in-winui-chart-sfcartesianchart)
+* [How to add multiple axes in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/11857/how-to-add-multiple-axes-in-winui-chart-sfcartesianchart-)

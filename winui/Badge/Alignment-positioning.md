@@ -96,7 +96,7 @@ badge.Content = "99+";
 
 ![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Positioning of Badge
 
@@ -173,7 +173,7 @@ badge.Content = "99+";
 
 ![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Place the Badge anywhere on the container
 
@@ -326,7 +326,7 @@ badge.Content = "99+";
 
 ![Alignment of the Badge content is changed](Getting-Started_images/Content_Alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Padding for Badge content
 
@@ -358,7 +358,7 @@ badge.Content = "10";
 
 ![Content spacing of Badge](Getting-Started_images/Padding.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Auto re-positioning support
 

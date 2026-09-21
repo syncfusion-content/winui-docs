@@ -41,7 +41,7 @@ In this walkthrough, you will create a WinUI application that contains the `Drop
 
 To add the `DropDown Color Palette` control manually in XAML, follow the below steps.
 
-1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Download and refer to the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the control namespace `Syncfusion.UI.Xaml.Editors` in XAML or C# code.
@@ -75,7 +75,7 @@ To add the `DropDown Color Palette` control manually in XAML, follow the below s
 
 To add the `DropDown Color Palette` control manually in C#, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Download and refer the following NuGet in the project.
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
 3. Import the `DropDown Color Palette` namespace `Syncfusion.UI.Xaml.Editors` in C# page.
@@ -109,7 +109,7 @@ namespace GettingStarted
 
 ![Dropdown Color Palette added in the winui application](Getting-Started_images/controladded.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDown_ColorPalette)
 
 ## Accessing a Color programmatically
 
@@ -135,7 +135,7 @@ sfDropDownColorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 Here, `Yellow` is the selected color in the `DropDown Color Palette`.
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDown_ColorPalette)
 
 ## Select Color from Dropdown Color Palette
 
@@ -156,7 +156,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 
 ![Dropdown Color Palette control with theme and standard color items](Getting-Started_images/ThemeColorPanel.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDown_ColorPalette)
 
 ## Select Automatic Color
 
@@ -177,7 +177,7 @@ SfDropDownColorPalette sfDropDownColorPalette =  new SfDropDownColorPalette();
 
 ![Dropdown Color Palette control with theme and standard color items](Getting-Started_images/automatic_color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDown_ColorPalette)
 
 ## Selected brush changed notification
 

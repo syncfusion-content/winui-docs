@@ -13,7 +13,7 @@ This section explains how to get started with the WinUI AvatarView control and c
 
 ## Creating an application with WinUI AvatarView
 
-1. Create a [WinUI 3 desktop application in C#](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Install the [Syncfusion.Core.WinUI](https://www.nuget.org/packages/Syncfusion.Core.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Core** namespace in XAML or C#.
 4. Add and initialize the [SfAvatarView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Core.SfAvatarView.html) control.

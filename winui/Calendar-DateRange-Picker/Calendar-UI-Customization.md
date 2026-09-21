@@ -71,7 +71,7 @@ sfCalendarDateRangePicker.DropDownHeight = 500;
 
 ## Customize individual items in Calendar
 
-You can change the UI of specific cells in the `WinUI Calendar DateRange Picker` drop-down calendar by using the [FlyoutBase.AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and the `DropDownFlyout` control.
+You can change the UI of specific cells in the `WinUI Calendar DateRange Picker` drop-down calendar by using the [FlyoutBase.AttachedFlyout](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) property and the `DropDownFlyout` control.
 
 1. Create an **EventDataConverter** class and set the special dates for specific events. 
 
@@ -233,7 +233,7 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/syncfusion-
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 <table>
 <tr>

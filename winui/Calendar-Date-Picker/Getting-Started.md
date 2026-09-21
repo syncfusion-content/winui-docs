@@ -17,7 +17,7 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 
 ## Creating an application with WinUI Calendar Date Picker
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
 2. Add reference to the [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML or C# code.
 4. Initialize the `SfCalendarDatePicker` control.
@@ -89,7 +89,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 
 ![programatic-date-selection-in-winui-calendar-date-picker](Getting-Started_images/programatic-date-selection-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Restriction).
 
 ## Select date interactively
 
@@ -148,7 +148,7 @@ sfCalendarDatePicker.AllowNull = true;
 
 ![datepicker-with-null-value-in-winui-calendar-date-picker](Getting-Started_images/datepicker-with-null-value-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Selection).
 
 ## Header and description
 This section explains the `Header` and `Description` properties of the CalendarDatePicker.
@@ -270,7 +270,7 @@ sfCalendarDatePicker.AllowNull = true;
 
 ![date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker](Getting-Started_images/date-range-picker-with-water-mark-text-in-winui-calendar-date-range-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Selection)
 
 ## Selection changed notification
 
@@ -347,7 +347,7 @@ sfCalendarDatePicker.EditMode = DateTimeEditMode.Normal;
 
 ![date-picker-with-editing-in-winui-calendar-date-picker](Getting-Started_images/date-picker-with-editing-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Selection).
 
 ## Cancel a date that is being changed
 
@@ -432,7 +432,7 @@ sfCalendarDatePicker.ShowDropDownButton = false;
 
 ![show-or-hide-drop-down-button-in-winui-calendar-date-range-picker](Dropdown-Calendar_images/show-or-hide-drop-down-button-in-winui-calendar-date-range-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/DropDown).
 
 ## Show submit button
 
@@ -464,7 +464,7 @@ sfCalendarDatePicker.ShowSubmitButtons = true;
 
 ![show-or-hide-submit-buttons-in-winui-calendar-date-range-picker](Dropdown-Calendar_images/show-or-hide-submit-buttons-in-winui-calendar-date-range-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/DropDown).
 
 ## Restrict selection
 
