@@ -17,7 +17,7 @@ This section explains the steps required to add the [WinUI Calendar Date Picker]
 
 ## Creating an application with WinUI Calendar Date Picker
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2. Add reference to the [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI) NuGet package.
 3. Import the control namespace `Syncfusion.UI.Xaml.Calendar` in XAML or C# code.
 4. Initialize the `SfCalendarDatePicker` control.

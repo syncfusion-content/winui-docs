@@ -25,7 +25,7 @@ In this walkthrough, you will create a WinUI application that contains the [Numb
 
 To add `NumberBox` control manually in XAML, follow the below steps.
 
-1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2.  Download and refer the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)
@@ -66,7 +66,7 @@ To add `NumberBox` control manually in XAML, follow the below steps.
 
 To add `NumberBox` control manually in C#, follow the below steps.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2.  Download and refer to the following NuGet package in the project.
 
     * [Syncfusion.Editors.WinUI](https://www.nuget.org/packages/Syncfusion.Editors.WinUI)

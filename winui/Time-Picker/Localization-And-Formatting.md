@@ -74,7 +74,7 @@ sfTimePicker.FlowDirection = FlowDirection.RightToLeft;
 
 ![change-flow-direction-in-winui-time-picker](Dropdown-Time-Spinner_images/change-flow-direction-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Change the language
 
@@ -137,7 +137,7 @@ sfTimePicker.DisplayTimeFormat = "HH:mm";
 
 ![change-display-time-formatting-in-winui-time-picker](Getting-Started_images/change-display-time-formatting-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)
 
 ## Edit time using mask mode
 
@@ -177,7 +177,7 @@ sfTimePicker.EditMode = DateTimeEditMode.Mask;
 
 ![change-edit-mode-with-mask-in-winui-time-picker](Getting-Started_images/change-edit-mode-with-mask-in-winui-time-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)
 
 ## Edit time using free form editing
 
@@ -207,7 +207,7 @@ sfTimePicker.EditMode = DateTimeEditMode.Normal;
 
 ![change-edit-mode-with-normal-in-winui-time-picker](Getting-Started_images/change-edit-mode-with-normal-in-winui-time-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)
 
 ## Hide clear button in the editor
 

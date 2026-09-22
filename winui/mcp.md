@@ -30,7 +30,7 @@ Before beginning, ensure the following prerequisites are met:
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fapi-key)
 - A **WinUI application** (existing or new); see [WinUI application that includes Syncfusion WinUI](https://help.syncfusion.com/winui/overview)
 - An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)  
+  - [Commercial License](https://www.syncfusion.com/sales/pricing)  
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)  
   - [Free Trial](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fstart-trials)
 
