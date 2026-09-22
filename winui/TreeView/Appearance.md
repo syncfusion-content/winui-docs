@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in WinUI TreeView | Syncfusion®
 description: Customize TreeView appearance with templates, template selectors, indentation, expander settings, styling, and animations.

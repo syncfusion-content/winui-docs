@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Operations in WinUI Data Grid | Syncfusion®
-description: Context flyout in Data Grid provides quick access to commands and actions through a customizable menu for enhanced user interaction.
+description: CRUD operations in Data Grid offers support to add, delete, and update records at runtime with live data shaping and synchronization.
 platform: winui
 control: Data Grid
 documentation: ug
