@@ -85,7 +85,7 @@ sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
 
 ![change-flow-direction-in-winui-date-picker](Images/drop-down-date-spinner/change-flow-direction-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Change the language
 
@@ -148,7 +148,7 @@ sfDatePicker.DisplayDateFormat = "MM/dd";
 
 ![change-display-date-formatting-in-winui-date-picker](Images/getting-started/change-display-date-formatting-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateRestriction)
 
 ## Change the field value format in Spinner
 
@@ -223,7 +223,7 @@ sfDatePicker.EditMode = DateTimeEditMode.Mask;
 
 ![change-edit-mode-with-mask-in-winui-date-picker](Images/getting-started/change-edit-mode-with-mask-in-winui-date-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateRestriction)
 
 ## Edit date using free form editing
 
@@ -253,7 +253,7 @@ sfDatePicker.EditMode = DateTimeEditMode.Normal;
 
 ![change-edit-mode-with-normal-in-winui-date-picker](Images/getting-started/change-edit-mode-with-normal-in-winui-date-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateRestriction)
 
 ## Hide clear button in the editor
 

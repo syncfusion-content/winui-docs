@@ -99,7 +99,7 @@ public class ViewModel
 
 ## Incremental Loading
  
-DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.isupportincrementalloading) interface.
+DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.isupportincrementalloading?view=windows-app-sdk-2.0) interface.
 `ISupportIncrementalLoading` interface has [LoadMoreItemsAsync](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html#Syncfusion_UI_Xaml_DataGrid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html#Syncfusion_UI_Xaml_DataGrid_IncrementalList_1_HasMoreItems) property.
 
 If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.

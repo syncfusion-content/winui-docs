@@ -22,7 +22,7 @@ The most recent version of Syncfusion WinUI can be downloaded and installed by c
 
 ![Control Panel](Upgrade-images/upgrade-control-panel.png)
 
-You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/account/downloads) link. The existing installed versions are not required to be uninstalled. 
+You can also upgrade to the latest version just by downloading and installing the products you require from [this](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) link. The existing installed versions are not required to be uninstalled. 
 
 
 It is not required to install the Volume release before installing the Service Pack release. As releases for Volume and Service Packs work independently, you can install the latest version with major bug fixes directly.
@@ -30,6 +30,6 @@ It is not required to install the Volume release before installing the Service P
 
 ## Upgrade from trial version to license version
 
-Uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/account/downloads) section of our website to upgrade from the trial version.
+Uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) section of our website to upgrade from the trial version.
 
 N> License key registration is not required for WinUI products. So there is no need to generate and register any Syncfusion license keys in your WinUI projects.

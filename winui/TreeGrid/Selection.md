@@ -421,7 +421,7 @@ If the {{'[TreeGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusio
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=net-6.0)'| markdownify }}, clicking the <kbd>Esc</kbd> key for the second time cancels the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements {{'[IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=net-6.0)'| markdownify }}, clicking the <kbd>Esc</kbd> key for the second time cancels the edit mode for entire row.
 </td>
 </tr>
 <tr>

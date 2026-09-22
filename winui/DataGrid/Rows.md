@@ -13,7 +13,7 @@ This section explains about various row types in SfDataGrid.
 
 [StackedHeaderRow](https://help.syncfusion.com/winui/datagrid/stacked-headers)
 
-[AddNewRow](https://help.syncfusion.com/winui/datagrid/data-manipulation#add-new-rows)
+[AddNewRow](https://help.syncfusion.com/winui/datagrid/crud-operations#add-new-rows)
 
 [SummaryRow](https://help.syncfusion.com/winui/datagrid/summaries)
 

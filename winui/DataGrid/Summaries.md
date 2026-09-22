@@ -884,7 +884,7 @@ N> [DoubleAggregate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Dat
 
 You can format the summary value by setting the appropriate format after the aggregate function followed by colon(:) in  `GridSummaryColumn.Format` property.
 
-In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx?f=255&MSPPError=-2147217396) to know about how to set different format.
+In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings?redirectedfrom=MSDN) to know about how to set different format.
 
 {% tabs %}
 {% highlight xaml %}
