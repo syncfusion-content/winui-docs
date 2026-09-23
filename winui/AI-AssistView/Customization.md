@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in WinUI AI AssistView
 
-This section explains how to customize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control can be customized to meet application requirements. Use the options below to define a banner that appears above the chat list, render rich content before a chat begins, and change the appearance of each AI response using a template selector.
+This section explains how to customize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control to suit your application's requirements. Use the available customization options to display a banner above the chat list, render rich content before the conversation starts, and customize the appearance of AI responses through a template selector.
 
 ## BannerTemplate
 
@@ -31,6 +31,7 @@ The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr
     <Grid x:Name="grid">
     <syncfusion:SfAIAssistView x:Name="aiAssistView"
                                CurrentUser="{Binding CurrentUser}"
+                               InputPlaceholderText="Type your message here..."
                                Messages="{Binding Chats}">
         <syncfusion:SfAIAssistView.BannerTemplate>
             <DataTemplate>
@@ -112,7 +113,7 @@ The `EmptyViewTemplate` property allows you to customize the appearance of the e
     mc:Ignorable="d"
     Title="GettingStarted">
     <Grid x:Name="grid">
-    <syncfusion:SfAIAssistView x:Name="AiAssistView">
+    <syncfusion:SfAIAssistView x:Name="AiAssistView" InputPlaceholderText="Type your message here...">
         <syncfusion:SfAIAssistView.EmptyViewTemplate>
             <DataTemplate>
                 <StackPanel
@@ -278,6 +279,7 @@ Define the `UserTemplate` and `BotTemplate` properties within the custom `ViewTe
         </Grid.Resources>
         <syncfusion:SfAIAssistView x:Name="AiAssistView"
                                    CurrentUser="{Binding CurrentUser}"
+                                   InputPlaceholderText="Type your message here..."
                                    Messages="{Binding Chats}"
                                    ViewTemplateSelector="{StaticResource viewTemplateSelector}"
                                    IsResponseToolbarVisible="True"/>
