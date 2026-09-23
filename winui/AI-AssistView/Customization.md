@@ -149,21 +149,21 @@ using Syncfusion.UI.Xaml.Chat;
 namespace GettingStarted
 {
     public class ViewTemplateSelector : DataTemplateSelector
-{
-    public DataTemplate UserTemplate { get; set; }
-    public DataTemplate BotTemplate { get; set; }
-
-    protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
-        if (item is ITextMessage msg)
+        public DataTemplate UserTemplate { get; set; }
+        public DataTemplate BotTemplate { get; set; }
+
+        protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
         {
-            if (msg.Author?.Name == "Bot")
-                return BotTemplate ?? UserTemplate;
-            return UserTemplate;
+            if (item is ITextMessage msg)
+            {
+                if (msg.Author?.Name == "Bot")
+                    return BotTemplate ?? UserTemplate;
+                return UserTemplate;
+            }
+            return null;        
         }
-        return null;        
     }
-}
 }
 
 {% endhighlight %}
