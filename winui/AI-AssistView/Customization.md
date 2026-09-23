@@ -201,9 +201,7 @@ namespace GettingStarted
             string goalSolution = "To stay focused and productive, try these steps for setting daily goals:\n\n" +
                                   "- **Identify Priorities**: List the most important tasks based on deadlines or significance.\n" +
                                   "- **Break Down Tasks**: Split larger tasks into smaller, manageable steps.\n" +
-                                  "- **Set SMART Goals**: Make sure goals are Specific, Measurable, Achievable, Relevant, and Time-bound.\n" +
-                                  "- **Time Blocking**: Allocate specific times for each task to stay organized and on track.\n" +
-                                  "Would you like more tips on any of these steps?";
+                                  "- **Set SMART Goals**: Make sure goals are Specific, Measurable, Achievable, Relevant, and Time-bound.\n";
 
             var user = new Author { Name = "John" };
 
