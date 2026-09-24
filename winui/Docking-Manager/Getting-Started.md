@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with WinUI Dock Layout Control | Syncfusion®
-description: Learn how to get started with the Syncfusion® WinUI Dock Layout control and create Visual Studio-style docking interfaces in WinUI applications.
+title: Getting Started with WinUI DockingManager Control | Syncfusion®
+description: Learn how to get started with the Syncfusion® WinUI DockingManager control and create Visual Studio-style docking interfaces in WinUI applications.
 platform: winui
 control: DockLayout
 documentation: ug
 ---
 
-# Getting Started with WinUI Dock Layout Control
+# Getting Started with WinUI Docking Control
 
-This section explains how to create a WinUI application with the Dock Layout control and add docked and document windows.
+This section explains how to create a WinUI application with the Docking control and add docked and document windows.
 
-## Creating an application with WinUI Dock Layout
+## Creating an application with WinUI Docking
 
 1. Create a WinUI 3 desktop application using C# and .NET 8 or later.
 
@@ -60,7 +60,7 @@ public sealed partial class MainWindow : Window
 
 ## Add dock panes
 
-The `DockPane` is the basic element of the Dock Layout control. It hosts content and can be displayed in different docking states.
+The `DockPane` is the basic element of the DockingManager control. It hosts content and can be displayed in different docking states.
 
 The following example demonstrates how to add docked and document panes.
 
@@ -98,7 +98,7 @@ The following example demonstrates how to add docked and document panes.
 
 ## Dock states
 
-The Dock Layout control supports the following docking states:
+The DockingManager control supports the following docking states:
 
 * **Docked** - Displays a pane in one of the dock regions.
 * **Document** - Displays a pane in the document area.
@@ -125,7 +125,7 @@ A pane can be displayed in a floating window by setting its `DockState` to `Floa
 
 ## Create tab groups and documents
 
-The Dock Layout control allows multiple document and tool windows to be grouped as tabs.
+The DockingManager control allows multiple document and tool windows to be grouped as tabs.
 
 {% tabs %}
 {% highlight xaml %}

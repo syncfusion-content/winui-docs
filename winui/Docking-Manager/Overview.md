@@ -1,15 +1,15 @@
 ---
 layout: post
-title: About Syncfusion® WinUI Dock Layout Control | Syncfusion®
-description: Learn about the Syncfusion® WinUI Dock Layout control, which helps create Visual Studio-style desktop layouts with dockable, floating, auto-hidden, and document windows.
+title: About Syncfusion® WinUI DockingManager Control | Syncfusion®
+description: Learn about the Syncfusion® WinUI DockingManager control for creating Visual Studio-style layouts with dockable, floating, auto-hide, and document windows.
 platform: winui
 control: DockLayout
 documentation: ug
 ---
 
-# About Syncfusion® WinUI Dock Layout Control
+# About Syncfusion® WinUI Docking Control
 
-The Syncfusion<sup>®</sup> WinUI Dock Layout control is a flexible docking framework that helps organize application content into dockable panes and document windows. It enables developers to build Visual Studio-style desktop interfaces with docked, floating, auto-hidden, tabbed, and document windows. For setup steps, including NuGet package installation and namespace configuration, see getting-started.
+The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framework that helps organize application content into dockable panes and document windows. It enables developers to build Visual Studio-style desktop interfaces with docked, floating, auto-hidden, tabbed, and document windows. For setup steps, including NuGet package installation and namespace configuration, see getting-started.
 
 ## Key features
 
