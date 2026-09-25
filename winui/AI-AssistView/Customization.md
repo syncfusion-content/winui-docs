@@ -13,7 +13,7 @@ This section explains how to customize the [SfAIAssistView](https://help.syncfus
 
 ## BannerTemplate
 
-The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) lets you define the UI shown above the chat list. It is useful for displaying a welcome message, brand identity, or any custom header content. The banner area can host any WPF element through a `DataTemplate`.
+The `BannerTemplate` property of [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) lets you define the UI shown above the chat list. It is useful for displaying a welcome message, brand identity, or any custom header content. The banner area can host any WinUI element through a `DataTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
