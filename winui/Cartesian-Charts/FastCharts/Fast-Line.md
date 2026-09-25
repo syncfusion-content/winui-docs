@@ -170,4 +170,4 @@ chart.Series.Add(series);
 
 ## See Also
 
-* [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251)
+* [How to create a dotted line in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12251/how-to-create-a-dotted-line-in-winui-chart-sfcartesianchart)

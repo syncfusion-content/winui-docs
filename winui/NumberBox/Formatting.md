@@ -34,7 +34,7 @@ You can format the value of a `NumberBox` control using the [CustomFormat](https
 
 The following example shows how to set `CurrencyFormatter`, `DecimalFormatter` and `PercentFormatter` for `NumberFormatter` property. The `CultureInfo` is used to obtain the ISO currency symbol for the `CurrencyFormatter`.
 
-N> [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can be assigned for `NumberFormatter` property.
+N> [Refer here](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes) to know more about the formatting classes that can be assigned for `NumberFormatter` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ You can apply numeric, currency, and percent custom formats using the **N**, **C
 
 N> When using both the `CustomFormat` and the `NumberFormatter` properties, the `CustomFormat` property takes precedence. 
 
-N> You can apply various custom formats available in [this page](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) which are supported for `double` type.
+N> You can apply various custom formats available in [this page](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings) which are supported for `double` type.
 
 {% tabs %}
 {% highlight c# %}

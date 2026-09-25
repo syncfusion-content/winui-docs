@@ -183,7 +183,7 @@ The Syncfusion<sup>&reg;</sup> WinUI Controls are the suite, ever needed to crea
 	</tr>
     <tr>
 	    <td>
-			<a href="https://help.syncfusion.com/winui/scheduler/getting-started" aria-label="Scheduler getting started">Scheduler</a><br/>
+			<a href="https://help.syncfusion.com/scheduler-sdk/winui/schedule/getting-started" aria-label="Scheduler getting started">Scheduler</a><br/>
 		</td>
 	</tr>
     <tr>
@@ -252,6 +252,6 @@ The Syncfusion<sup>&reg;</sup> WinUI Controls are the suite, ever needed to crea
 
 ## Support and feedback
 
-If you are unable to find the information you are looking for in the self-help resources listed above, please contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+If you are unable to find the information you are looking for in the self-help resources listed above, please contact us by creating a [support ticket](https://www.syncfusion.com/Account/Login?ReturnUrl=%2fsupport%2fdirecttrac%2fincidents).
 
 Do not see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/winui).

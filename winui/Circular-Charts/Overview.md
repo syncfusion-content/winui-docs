@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WinUI Circular Chart Control
 
-Syncfusion® [WinUI Circular Charts](https://www.syncfusion.com/winui-controls/charts) is used to create charts with beautiful UI visualization of data for high-quality WinUI applications.
+Syncfusion® [WinUI Circular Charts](https://www.syncfusion.com/winui-controls/circular-charts) is used to create charts with beautiful UI visualization of data for high-quality WinUI applications.
 
 ![Circular Chart in WinUI Chart](Getting-Started_Images/winui_pie-chart-overview.png)
 

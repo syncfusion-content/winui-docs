@@ -326,4 +326,4 @@ The WinUI Kanban Board control supports RTL (Right-to-Left) rendering, allowing 
 
 ![right-to-left-support-in-winui-kanban](images/getting-started/right-to-left-support-in-winui-kanban.png)
 
-N> You can refer to our [WinUI Kanban](https://www.syncfusion.com/winui-controls/kanban) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Kanban Examples](https://github.com/SyncfusionExamples/winui-kanban-examples) that shows you how to render the Kanban in WinUI.
+N> You can refer to our [WinUI Kanban](https://www.syncfusion.com/gantt-sdk/winui-kanban) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Kanban Examples](https://github.com/SyncfusionExamples/winui-kanban-examples) that shows you how to render the Kanban in WinUI.

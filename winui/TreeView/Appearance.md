@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance in WinUI TreeView | Syncfusion®
 description: Customize TreeView appearance with templates, template selectors, indentation, expander settings, styling, and animations.
@@ -123,7 +123,7 @@ In bound mode, you can change the binding context of the TreeView items by using
 
 ## ItemTemplate Selector
 
-The `TreeView` allows to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate?view=winrt-19041) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
+The `TreeView` allows to customize the appearance of each item with different templates based on specific constraints by using the [ItemTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemTemplateSelector). You can choose a [DataTemplate](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate?view=winrt-19041) for each item at runtime based on the value of data-bound property using `ItemTemplateSelector`.
 
 {% tabs %}
 {% highlight xaml %}

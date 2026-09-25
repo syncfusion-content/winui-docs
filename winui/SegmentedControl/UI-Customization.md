@@ -13,7 +13,7 @@ The WinUI Segmented Control allows you to customize the background, text color, 
 
 ## Customizing the border thickness
 
-The Segmented Control border thickness can be customized using the [BorderThickness](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderthickness?view=winui-3.0) property. 
+The Segmented Control border thickness can be customized using the [BorderThickness](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border.borderthickness?view=winrt-28000#windows-ui-xaml-controls-border-borderthickness) property. 
 
 N> The default value is 1.
 
@@ -95,7 +95,7 @@ N> The default value is 0,0,1,0.
 
 ## Customizing the corner radius
 
-The Segmented Control corner radius can be customized using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the corner radius of segment item using the [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html). 
+The Segmented Control corner radius can be customized using the [CornerRadius](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.cornerradius?view=winrt-28000) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the corner radius of segment item using the [CornerRadius](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.cornerradius?view=winrt-28000) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html). 
 
 N> The default value is 0.
 
@@ -132,7 +132,7 @@ N> The default value is 0.
 
 ## Customizing the border color
 
-The Segmented Control border color can be customized using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the border color of segment item using the [BorderBrush](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderbrush?view=winui-3.0) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
+The Segmented Control border color can be customized using the [BorderBrush](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border.borderbrush?view=winrt-28000#windows-ui-xaml-controls-border-borderbrush) property. Also, by setting the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property of Segmented Control, you can change the border color of segment item using the [BorderBrush](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border.borderbrush?view=winrt-28000#windows-ui-xaml-controls-border-borderbrush) property in [SfSegmentedItem](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedItem.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -477,7 +477,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ### Ellipse style
 
-Users can achieve the ellipse style, by changing corner radius of the segmented item using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property and changing [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) property in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) style property.
+Users can achieve the ellipse style, by changing corner radius of the segmented item using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property and changing [CornerRadius](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.cornerradius?view=winrt-28000) property in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) style property.
 
 The following code example illustrates how to customize the ellipse style.
 
@@ -548,7 +548,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ### Circle style
 
-Users can achieve the circle style, by changing [CornerRadius](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.cornerradius?view=winui-3.0) and [Margin](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.frameworkelement.margin?view=winui-3.0) of the segmented item using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property and changing similar properties in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle).
+Users can achieve the circle style, by changing [CornerRadius](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.cornerradius?view=winrt-28000) and [Margin](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.frameworkelement.margin?view=winrt-28000) of the segmented item using the [ItemContainerStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemContainerStyle) property and changing similar properties in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle).
 
 The following code example illustrates how to customize the circle style.
 
@@ -675,7 +675,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ### Top indicator style
 
-By using the [ItemBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemBorderThickness) property and handling [BorderThickness](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.control.borderthickness?view=winui-3.0) in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property helps users to achieve the top indicator style.
+By using the [ItemBorderThickness](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_ItemBorderThickness) property and handling [BorderThickness](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.border.borderthickness?view=winrt-28000#windows-ui-xaml-controls-border-borderthickness) in the [SelectedSegmentStyle](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfSegmentedControl.html#Syncfusion_UI_Xaml_Editors_SfSegmentedControl_SelectedSegmentStyle) property helps users to achieve the top indicator style.
 
 The following code example illustrates how to customize the top indicator style.
 

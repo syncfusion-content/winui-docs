@@ -29,7 +29,7 @@ sfCalendar.MaxDate = new DateTimeOffset(new DateTime(2021, 03, 23));
 
 ![change-minimum-and-maximum-dates-in-winui-calendar](Images/restrict-date-selection/change-minimum-and-maximum-dates-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Restriction).
 
 ## Disable dates using BlackoutDates
 
@@ -169,5 +169,5 @@ private void SfCalendar_ItemPrepared(object sender, CalendarItemPreparedEventArg
 
 ![change-black-out-dates-with-display-text-in-winui-calendar](Images/restrict-date-selection/change-black-out-dates-with-display-text-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Formatting).
 
