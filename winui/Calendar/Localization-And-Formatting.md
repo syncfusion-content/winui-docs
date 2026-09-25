@@ -58,7 +58,7 @@ sfCalendar.CalendarIdentifier = "HebrewCalendar";
 
 ![hebrew-calendar-in-winui-calendar](Images/localization-and-formatting/hebrew-calendar-in-winui-calendar.png)
  
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Formatting).
 
 ## Change the language
 
@@ -88,7 +88,7 @@ sfCalendar.Language = "fr-FR";
 
 ![french-calendar-in-winui-calendar](Images/localization-and-formatting/french-calendar-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Formatting).
 
 ## First day of week
 
@@ -118,7 +118,7 @@ sfCalendar.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 ![change-first-day-of-week-in-winui-calendar](Images/localization-and-formatting/change-first-day-of-week-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection).
 
 ## Change flow direction
 
@@ -150,13 +150,13 @@ sfCalendar.FlowDirection = FlowDirection.RightToLeft;
 
 ![change-flow-direction-in-winui-calendar](Images/localization-and-formatting/change-flow-direction-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Formatting).
 
 ## Change date display format
 
 You can use different date formats such as abbreviated or full names for a day, month, week names, or header name of month and year by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_DayOfWeekFormat), and [MonthHeaderFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_MonthHeaderFormat) properties.
 
-N> Refer to the [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page for more date formatting options.
+N> Refer to the [DateTimeFormatter](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page for more date formatting options.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8" %}
@@ -188,7 +188,7 @@ sfCalendar.MonthHeaderFormat = "{month.abbreviated} {year.abbreviated}‎";
 
 ![change-date-display-format-in-winui-calendar](Images/localization-and-formatting/change-date-display-format-in-winui-calendar.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Formatting).
 
 ## Number of weeks in a view
 
@@ -218,4 +218,4 @@ sfCalendar.NumberOfWeeksInView = 3;
 
 ![change-number-of-weeks-in-a-view-in-winui-calendar](Images/localization-and-formatting/change-number-of-weeks-in-a-view-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection).

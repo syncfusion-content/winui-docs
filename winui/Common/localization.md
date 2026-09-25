@@ -53,7 +53,7 @@ You can also use the `Windows.Globalization.ApplicationLanguages.PrimaryLanguage
 
 {% endtabs %}
 
-N> We recommend setting the `ApplicationLanguages.PrimaryLanguageOverride` property **before** the `InitializeComponent` method call if you have added a .resw file to your project. Otherwise, it may cause the app to crash. The [supported culture codes](https://docs.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags) can be used as the language value (e.g., `de` for German).
+N> We recommend setting the `ApplicationLanguages.PrimaryLanguageOverride` property **before** the `InitializeComponent` method call if you have added a .resw file to your project. Otherwise, it may cause the app to crash. The [supported culture codes](https://learn.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags) can be used as the language value (e.g., `de` for German).
 
 The following screenshot illustrates how the localization is applied to the datagrid based on the defined language to the [ApplicationLanguages.PrimaryLanguageOverride](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.applicationlanguages.primarylanguageoverride?view=winrt-19041) property.
 
@@ -67,7 +67,7 @@ N> The default resource files of all Syncfusion<sup>&reg;</sup> WinUI libraries 
 
 1) Right-click the project and add a new folder named **Resources**.
 
-2) Add another folder named with the **language name**. For example, use `de` for German. Find the supported culture codes from [here](https://docs.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags).  
+2) Add another folder named with the **language name**. For example, use `de` for German. Find the supported culture codes from [here](https://learn.microsoft.com/en-us/windows/uwp/app-resources/how-rms-matches-lang-tags).  
 
 3) Add the [default resource files](https://github.com/syncfusion/winui-controls-localization-resource-files) in the following structure.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CRUD Operations in WinUI Data Grid | Syncfusion®
-description: Context flyout in Data Grid provides quick access to commands and actions through a customizable menu for enhanced user interaction.
+description: CRUD operations in Data Grid offers support to add, delete, and update records at runtime with live data shaping and synchronization.
 platform: winui
 control: Data Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # CRUD Operations in WinUI Data Grid
 
-DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/winui/datagrid/editing), [add new row](https://help.syncfusion.com/winui/datagrid/data-manipulation#add-new-rows), [delete row](https://help.syncfusion.com/winui/datagrid/data-manipulation#delete-row) by pressing <kbd>Delete</kbd> key.
+DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/winui/datagrid/editing), [add new row](https://help.syncfusion.com/winui/datagrid/crud-operations#add-new-rows), [delete row](https://help.syncfusion.com/winui/datagrid/crud-operations#delete-row) by pressing <kbd>Delete</kbd> key.
 
 ## Managing data updates
 
@@ -646,7 +646,7 @@ You can delete record directly in underlying collection also using Remove () or 
 
 [RecordDeleting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_RecordDeleting) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
 
-* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Gets or sets a value indicating whether the event should be canceled.
+* [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - Gets or sets a value indicating whether the event should be canceled.
 
 * [OriginalSender](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grids_GridCancelEventArgs_OriginalSender) - Gets the original sender from where the event is raised.
 

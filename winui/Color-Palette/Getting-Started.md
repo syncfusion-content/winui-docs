@@ -83,7 +83,7 @@ namespace GettingStarted
 
 ![Overview of WinUI Color Palette](Getting-Started_images/winui-colorpalette-overview.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Accessing a Color programmatically
 
@@ -109,7 +109,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 Here, `Yellow` color is selected color in the `ColorPalette`.
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Select color from color palette
 
@@ -138,7 +138,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 
 ![WinUI Color Palette with Theme and Standard Color Palettes](Getting-Started_images/winui-colorpalette-theme-and-standard-color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Select a color from built-in theme colors
 
@@ -164,7 +164,7 @@ colorPalette.ActivePalette = ColorPaletteNames.Yellow;
 
 N> The valid values for `ActivePalette` are members of the `ColorPaletteNames` enumeration, including `Office`, `Apex`, `Aspect`, `Opulent`, `Walker`, `Waveform`, `Solstice`, `Treasury`, `Verve`, `Gallery`, `Metro`, `Module`, `Paper`, `Slipstream`, `Parallax`, `SlipStream`, `ColorsOfTheSeventies`, `Oriel`, `Origin`, `Civic`, `Concourse`, `Equity`, `Flow`, `Foundry`, `Median`, `Metro`, `Office2007` to `Office2019` theme names. Refer to the API reference for the complete list.
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Add your own colors in the Theme and Standard color palette
 
@@ -233,7 +233,7 @@ colorPalette.StandardColors.ShowColorShades = true;
 
 ![WinUI Color Palette with Custom Colors](Working-with-SfColorPalette_images/winui-colorpalette-custom-color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/Custom-Colors)
 
 ## Choosing a color from More Colors dialog
 
@@ -255,7 +255,7 @@ colorPalette.ShowMoreColorsButton = true;
 
 ![WinUI Color Palette with More Color Window](Getting-Started_images/winui-colorpalette-more-color-window.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Recently used colors
 
@@ -301,7 +301,7 @@ colorPalette.ShowNoColorButton = true;
 
 ![Selecting Transparent Color in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-transparent-color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Selected color changed notification
 

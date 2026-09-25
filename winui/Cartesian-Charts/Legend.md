@@ -540,5 +540,5 @@ N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Leg
 
 ## See Also
 
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
-* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644/how-to-export-chart-as-image-in-winui-chart-sfcartesianchart)
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013/how-to-customize-the-axis-labels-of-winui-chart-sfcartesianchart)

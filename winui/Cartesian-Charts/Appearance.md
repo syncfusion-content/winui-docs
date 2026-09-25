@@ -242,5 +242,5 @@ this.Content = chart;
 
 ## See Also
 
-* [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016)
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
+* [How to customize the segment color based on the y value in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12016/how-to-customize-the-segment-color-based-on-the-y-value-in-winui-chart-sfcartesianchart)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644/how-to-export-chart-as-image-in-winui-chart-sfcartesianchart)

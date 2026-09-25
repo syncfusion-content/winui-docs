@@ -176,7 +176,7 @@ N> The `IsEditable` property has no effect when `MultiSelectionDisplayMode` is `
 
 ##### UI selection 
 
-The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectedItems) property of ComboBox control.
+The selected items can be changed interactively by using keyboard or by selecting from a drop-down list. The selected items can be retrieved from the [SelectedItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownListBase.html#Syncfusion_UI_Xaml_Editors_DropDownListBase_SelectedItems) property of ComboBox control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -193,7 +193,7 @@ The selected items can be changed interactively by using keyboard or by selectin
 
 ##### Separate items using delimiter
 
-The ComboBox supports various delimiter characters to separate the selected items. The delimiter character can be set by using the [DelimiterText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_DelimiterText) property. The default delimiter character is `,`.
+The ComboBox supports various delimiter characters to separate the selected items. The delimiter character can be set by using the [DelimiterText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_DelimiterText) property. The default delimiter character is `,`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -286,7 +286,7 @@ When entering text in the text box selection area, if the `AutoAppendType` prope
 
 ## Selection changed notification
 
-When selecting an item from the drop-down list, the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfDropDownListBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownListBase_SelectionChanged) event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the `AddedItems` and `RemovedItems` properties. The [ComboBoxSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxSelectionChangedEventArgs.html) contains the following properties:
+When selecting an item from the drop-down list, the [SelectionChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.SfComboBox.html#Syncfusion_UI_Xaml_Editors_SfComboBox_SelectionChanged) event is triggered. The `SelectionChanged` event contains the newly selected and removed items in the `AddedItems` and `RemovedItems` properties. The [ComboBoxSelectionChangedEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.ComboBoxSelectionChangedEventArgs.html) contains the following properties:
 
  * `AddedItems` - Contains the items that were selected.
  * `RemovedItems` - Contains the items that were unselected.
