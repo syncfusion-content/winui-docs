@@ -12,11 +12,11 @@ documentation: ug
 
 ## Overview
 
-For the Essential Studio WinUI product, Syncfusion offers an Offline Installer. This installer bundles all required files into a single downloadable setup, allowing you to install the product on machines without an active internet connection or in restricted network environments. You can simply download the offline installer and run it on your system to install the Essential Studio products of your choice. You can get the most recent version of the Essential Studio Offline Installer [here](https://www.syncfusion.com/downloads/latest-version).
+For the Essential Studio WinUI product, Syncfusion offers an Offline Installer. This installer bundles all required files into a single downloadable setup, allowing you to install the product on machines without an active internet connection or in restricted network environments. You can simply download the offline installer and run it on your system to install the Essential Studio products of your choice. You can get the most recent version of the Essential Studio Offline Installer [here](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads).
 
 ## Prerequisites
 
-* You must have a valid licensed or trial unlock key. See [How to generate the unlock key](https://www.syncfusion.com/kb/2326).
+* You must have a valid licensed or trial unlock key. See [How to generate the unlock key](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account).
 * Close all running Visual Studio instances before starting the installation.
 * The WinUI platform requires Windows 10 version 1809 (build 17763) or later, and the appropriate Windows App SDK on the target machine.
 
@@ -47,7 +47,7 @@ The steps below show how to install the Essential Studio WinUI installer.
 
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key.
 
-    To learn how to generate an unlock key for both trial and licensed products, see [this](https://www.syncfusion.com/kb/2326) Knowledge Base article.
+    To learn how to generate an unlock key for both trial and licensed products, see [this](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) Knowledge Base article.
 
     ![Product key](images/Step-by-Step-Installation_img3.png)
 

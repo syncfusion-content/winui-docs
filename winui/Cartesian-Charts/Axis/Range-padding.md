@@ -308,4 +308,4 @@ this.Content = chart;
 
 ## See Also
 
-* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013/how-to-customize-the-axis-labels-of-winui-chart-sfcartesianchart)

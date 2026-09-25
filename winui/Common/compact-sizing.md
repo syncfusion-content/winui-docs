@@ -13,8 +13,8 @@ Compact sizing reduces the spacing and padding of controls to enable dense, info
 
 There are two types of spacing support for controls in WinUI:
 
-1. [Standard](https://docs.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-standard-sizing) - to accommodate both touch and pointer input.
-2. [Compact](https://docs.microsoft.com/en-us/windows/apps/design/style/spacing#fluent-compact-sizing) - designed primarily to accommodate pointer input.
+1. [Standard](https://learn.microsoft.com/en-us/windows/apps/design/style/spacing) - to accommodate both touch and pointer input.
+2. [Compact](https://learn.microsoft.com/en-us/windows/apps/design/style/spacing) - designed primarily to accommodate pointer input.
 
 Compact sizing enables dense, information-rich groups of controls and can help with the following:
 

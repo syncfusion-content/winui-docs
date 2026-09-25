@@ -13,7 +13,7 @@ This section explains the steps required to add the Ribbon control and its eleme
 
 ## Creating an application with WinUI Ribbon
 
-1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application using C# and .NET 8 or later](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 
 2. Add a reference to the [Syncfusion.Ribbon.WinUI](https://www.nuget.org/packages/Syncfusion.Ribbon.WinUI) NuGet package.
 
@@ -449,7 +449,7 @@ rootGrid.Children.Add(sfRibbon);
 
 ![Add ribbon toggle button in group](Getting-Started-images/add-ribbon-toggle-button.png)
 
-N> Other icon element types, such as [BitmapIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://docs.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0), can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton, RibbonToggleButton, and RibbonItemHost controls.
+N> Other icon element types, such as [BitmapIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.bitmapicon?view=windows-app-sdk-1.0), [FontIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.fonticon?view=windows-app-sdk-1.0), [PathIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.pathicon?view=windows-app-sdk-1.0) and [SymbolIcon](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.symbolicon?view=windows-app-sdk-1.0), can be used for the Ribbon items such as RibbonButton, RibbonDropDownButton, RibbonSplitButton, RibbonToggleButton, and RibbonItemHost controls.
 
 ## Add ribbon combobox
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection and Restriction in WinUI Calendar Date Picker
 
-This section explains the date selection in the [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-datepicker) control and how to restrict or limit the users from selecting a date within a range.
+This section explains the date selection in the [WinUI Calendar Date Picker](https://www.syncfusion.com/winui-controls/calendar-date-picker) control and how to restrict or limit the users from selecting a date within a range.
 
 ## Select the date 
 
@@ -28,7 +28,7 @@ sfCalendarDatePicker.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06
 
 ![programatic-date-selection-in-winui-calendar-date-picker](Getting-Started_images/programatic-date-selection-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Restriction).
 
 You can also change the selected date interactively by selecting a date from the drop-down calendar or by entering the date value in the editor of the `WinUI Calendar Date Picker`. You can get the selected date from the `SelectedDate` property.
 
@@ -67,7 +67,7 @@ N> The `MinDate` property value should not be greater than the `MaxDate` propert
 
 ![change-minimum-and-maximum-dates-in-winui-calendar-date-picker](Getting-Started_images/change-minimum-and-maximum-dates-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Restriction).
 
 ## Block dates using BlackoutDates
 
@@ -132,7 +132,7 @@ sfCalendarDatePicker.BlackoutDates = (sfCalendarDatePicker.DataContext as ViewMo
 
 ![change-black-out-dates-disabled-dates-in-winui-calendar-date-picker](Getting-Started_images/change-black-out-dates-disabled-dates-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/BlockedDates).
 
 ## Disable dates dynamically (All weekend days)
 
@@ -184,7 +184,7 @@ private void SfCalendarDatePicker_CalendarItemPrepared(object sender, CalendarIt
 
 ![change-black-out-dates-to-weekend-dates-in-winui-calendar-date-picker](Getting-Started_images/change-black-out-dates-to-weekend-dates-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/BlockedDates).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/BlockedDates).
 
 You can also change the text displayed for specific days or dates in the `WinUI Calendar Date Picker` using the [ItemInfo.DisplayText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.CalendarItemInfo.html#Syncfusion_UI_Xaml_Calendar_CalendarItemInfo_DisplayText) property. 
 

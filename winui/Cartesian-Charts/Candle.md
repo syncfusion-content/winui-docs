@@ -274,5 +274,5 @@ this.Content = chart;
 
 ## See Also
 
-* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644)
-* [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058)
+* [How to export chart as image in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/18644/how-to-export-chart-as-image-in-winui-chart-sfcartesianchart)
+* [How to bind the SQLite Database to the WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12058/how-to-bind-the-sqlite-database-to-the-winui-chart-sfcartesianchart)

@@ -173,4 +173,4 @@ this.Content = chart;
 N> You can refer to our [WinUI Step Area Chart](https://www.syncfusion.com/winui-controls/cartesian-charts/winui-step-area-chart) feature tour page for its groundbreaking feature representations. You can also explore our [WinUI Step Area Chart example](https://github.com/syncfusion/winui-demos/tree/master/chart/Views/Cartesian%20Charts/StepArea) that shows how to easily configure with built-in support for creating stunning visual effects.
 ## See Also
 
-* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013)
+* [How to customize the axis labels of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/13013/how-to-customize-the-axis-labels-of-winui-chart-sfcartesianchart)
