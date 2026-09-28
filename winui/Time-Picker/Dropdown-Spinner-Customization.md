@@ -49,7 +49,7 @@ sfTimePicker.ItemHeight = 50;
 
 ![customize-size-of-drop-down-cells-in-winui-time-picker](Dropdown-Time-Spinner_images/customize-size-of-drop-down-cells-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Customize the cell's style in dropdown spinner
 
@@ -208,7 +208,7 @@ public class TimeItemTemplateSelector : DataTemplateSelector
 
 ![customize-appearance-of-drop-down-cells-in-winui-date-picker](Dropdown-Time-Spinner_images/customize-appearance-of-drop-down-cells-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/CustomUI)
 
 ## Customize the columns in dropdown spinner
 
@@ -304,4 +304,4 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
 
 ![customize-columns-of-drop-down-cells-in-winui-time-picker](Dropdown-Time-Spinner_images/customize-columns-of-drop-down-cells-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeFieldPrepared)

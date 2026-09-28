@@ -255,7 +255,7 @@ this.Content = sfRadialGauge;
 
 ![WinUI Radial Gauge Animation Easing Function](images/animation/winui-radial-gauge-animation-easing-function.gif)
 
-N> Refer to the [EasingFunctionBase](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase) to learn about the available easing functions in WinUI.
+N> Refer to the [EasingFunctionBase](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.animation.easingfunctionbase) to learn about the available easing functions in WinUI.
 
 ## See Also
 

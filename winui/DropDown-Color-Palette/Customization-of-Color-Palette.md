@@ -13,7 +13,7 @@ This section describes how to customize the Color Palette in [WinUI DropDown Col
 
 ## Customizing control in the dropdown
 
-You can customize the control displayed in the dropdown of `DropDown Color Palette` by using [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and [DropDownFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownFlyout.html#properties) properties. 
+You can customize the control displayed in the dropdown of `DropDown Color Palette` by using [AttachedFlyout](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and [DropDownFlyout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Editors.DropDownFlyout.html#properties) properties. 
 
 N> You can refer to the [Color Palette](https://help.syncfusion.com/winui/color-palette/getting-started) documentation page to know more about all customization available in the `Color Palette` control.
 
@@ -82,4 +82,4 @@ The following properties of the `SfColorPalette` and its palette models are used
 
 ![Color palette embedded inside the dropdown color palette](Getting-Started_images/custom_colorpalette.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDownColorPalette_as_command)

@@ -70,7 +70,7 @@ sfCalendarDatePicker.DropDownPlacement = FlyoutPlacementMode.Right;
 
 ![change-drop-down-placement-in-winui-calendar-date-picker](Dropdown-Calendar_images/change-drop-down-placement-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/DropDown).
 
 
 ## Change drop-down size
@@ -103,7 +103,7 @@ sfCalendarDatePicker.DropDownHeight = 500;
 
 ![change-drop-down-height-in-winui-calendar-date-picker](Dropdown-Calendar_images/change-drop-down-height-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/DropDown).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/DropDown).
 
 ## Hide days that are out of scope
 
@@ -133,12 +133,12 @@ sfCalendarDatePicker.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 
 ![show-or-hide-leading-trailing-dates-in-winui-calendar-date-picker](Getting-Started_images/show-or-hide-leading-trailing-dates-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Restriction).
 
 
 ## Customize individual items in calendar
 
-You can change the UI of specific cells in the `WinUI Calendar Date Picker` drop-down calendar by using the [AttachedFlyout](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can change the UI of specific cells in the `WinUI Calendar Date Picker` drop-down calendar by using the [AttachedFlyout](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 1. Create a **EventDataConverter** class and set the special dates for specific events. 
 
@@ -294,11 +294,11 @@ public class EventDataConverter : IValueConverter
 
 ![change-drop-down-item-template-in-winui-calendar-date-picker](Getting-Started_images/change-drop-down-item-template-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/CustomUI).
 
 ## Customize using theme keys
 
-You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
+You can customize the colors of day names and headers of month, year, decade, and century by changing the theme key values in a ResourceDictionary used in the `Calendar` control and by using the [`AttachedFlyout`](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutbase.attachedflyout?view=winrt-19041) and `DropDownFlyout` properties.
 
 <table>
 <tr>
@@ -417,5 +417,5 @@ You can customize the colors of day names and headers of month, year, decade, an
 
 ![calendar-template-customization-in-winui-calendar-date-picker](UI-Customization_images/calendar-template-customization-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/CustomUI).
 

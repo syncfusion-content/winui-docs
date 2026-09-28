@@ -10,7 +10,7 @@ documentation: ug
 # Customization in WinUI Barcode
 
 ## Background
-The Barcode background color can be changed using the [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1#System_Windows_Controls_Control_Background) property.
+The Barcode background color can be changed using the [Background](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netcore-3.1) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ The Barcode background color can be changed using the [Background](https://docs.
 {% endtabs %} 
 
 ## Foreground
-The Barcode foreground color can be changed using the [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1#System_Windows_Controls_Control_Foreground) property.
+The Barcode foreground color can be changed using the [Foreground](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netcore-3.1) property.
 
 {% tabs %}
 {% highlight xaml %}

@@ -133,7 +133,7 @@ You can gets all the selected records through [SelectedItems](https://help.syncf
 
 ### Cell Selection
 
-You can get all selected cells information through [SfDataGrid.SelectionController.SelectedCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IGridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_IGridSelectionController_SelectedCells) property which is the collection of [GridSelectedCellsInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridSelectedCellsInfo.html).
+You can get all selected cells information through [SfDataGrid.SelectionController.SelectedCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IGridSelectionController.html#Syncfusion_UI_Xaml_DataGrid_IGridSelectionController_SelectedCells) property.
 
 You can get the selected cells as [GridCellInfo](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridCellInfo.html) collection by using [GetSelectedCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_GetSelectedCells) method.
 
@@ -831,7 +831,7 @@ If the {{'[DataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusio
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=net-6.0)'| markdownify }}, on pressing of <kbd>Esc</kbd> key for the second time will cancel the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?view=net-6.0)'| markdownify }}, on pressing of <kbd>Esc</kbd> key for the second time will cancel the edit mode for entire row.
 </td>
 </tr>
 <tr>

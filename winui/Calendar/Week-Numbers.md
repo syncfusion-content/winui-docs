@@ -15,7 +15,7 @@ This section describes the week numbers and the customization options available 
 
 You can show the week numbers for each week in the [Calendar](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html) control by setting the value of the [ShowWeekNumbers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_ShowWeekNumbers) property to **true**. By default, the value of the `ShowWeekNumbers` property is **false**.
 
-N> You can change the value of the [WeekNumberRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_WeekNumberRule) property with the [CalendarWeekRule](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0), and you can also add any prefix or suffix characters to **#** in the `WeekNumberFormat` property.
+N> You can change the value of the [WeekNumberRule](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendar.html#Syncfusion_UI_Xaml_Calendar_SfCalendar_WeekNumberRule) property with the [CalendarWeekRule](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendarweekrule?view=net-5.0), and you can also add any prefix or suffix characters to **#** in the `WeekNumberFormat` property.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="6" %}

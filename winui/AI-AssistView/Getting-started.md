@@ -13,7 +13,7 @@ This section explains how to add the WinUI AI AssistView control to an applicati
 
 ## Creating an application with the WinUI AI AssistView
 
-1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop application in C#](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2. Install the [Syncfusion.Chat.WinUI](https://www.nuget.org/packages/Syncfusion.Chat.WinUI) NuGet package.
 3. Import the **Syncfusion.UI.Xaml.Chat** namespace in XAML or C#.
 4. Add and initialize the [SfAIAssistView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Chat.SfAIAssistView.html) control.

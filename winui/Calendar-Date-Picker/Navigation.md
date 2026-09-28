@@ -42,7 +42,7 @@ sfCalendarDatePicker.DisplayMode = CalendarDisplayMode.Month;
 
 ![date-picker-view-navigation-in-winui-calendar-date-picker](Navigation_images/date-picker-view-navigation-in-winui-calendar-date-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Restriction).
 
 ## Selection based on view restriction
 

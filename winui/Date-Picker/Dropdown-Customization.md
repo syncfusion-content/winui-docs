@@ -82,7 +82,7 @@ sfDatePicker.ShowDropDownButton = false;
 
 ![hide-drop-down-button-in-winui-date-picker](Images/drop-down-date-spinner/hide-drop-down-button-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Change dropdown alignment
 
@@ -114,7 +114,7 @@ sfDatePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
 ![change-drop-down-placement-in-winui-date-picker](Images/drop-down-date-spinner/change-drop-down-placement-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Open dropdown programmatically
 
@@ -174,7 +174,7 @@ sfDatePicker.DropDownHeight = 200;
 
 ![change-drop-down-height-in-winui-date-picker](Images/drop-down-date-spinner/change-drop-down-height-in-winui-date-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Change the number of dates to be shown in the dropdown
 
@@ -204,6 +204,6 @@ sfDatePicker.VisibleItemsCount = 5;
 
 ![show-number-of-dates-in-drop-down-in-winui-date-picker](Images/drop-down-date-spinner/show-number-of-dates-in-drop-down-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateRestriction)
 
 N> When the `DropDownHeight` and `VisibleItemsCount` properties are set, the `VisibleItemsCount` property has higher precedence.

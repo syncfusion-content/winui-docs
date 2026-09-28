@@ -55,7 +55,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 
 ## Stacked Headers using Data Annotation
 
-You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.aspx). 
+You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?redirectedfrom=MSDN). 
 
 {% tabs %}
 {% highlight c# %}

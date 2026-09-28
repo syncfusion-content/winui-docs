@@ -504,6 +504,6 @@ The following chart is created as a result of the previous codes.
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/GettingStartedChartWinUI/tree/main/CartesianChartGettingStarted).
 ## See Also
 
-* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
-* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
-* [How to export chart as image in WinUI Cartesian Charts](https://support.syncfusion.com/kb/article/18644)
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018/how-to-create-a-winui-line-chart-sfcartesianchart)
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031/how-to-create-a-winui-column-chart-sfcartesianchart)
+* [How to export chart as image in WinUI Cartesian Charts](https://support.syncfusion.com/kb/article/18644/how-to-export-chart-as-image-in-winui-chart-sfcartesianchart)

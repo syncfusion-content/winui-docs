@@ -150,7 +150,7 @@ badgeContainer.Badge = badge;
 
 ![Badge display content changed](Getting-Started_images/Change_BadgeContent.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Content_CustomUI).
 
 ## Alignment of Badge
 
@@ -184,7 +184,7 @@ badge.Content = "99+";
 
 ![Alignment of the Badge control is changed](Getting-Started_images/Alignment.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Positioning of Badge
 
@@ -218,7 +218,7 @@ badge.Content = "99+";
 
 ![Position of the Badge control is changed](Getting-Started_images/Anchor.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Place the Badge anywhere on the container
 
@@ -333,7 +333,7 @@ public class ViewModel {
 
 ![Badge added for ListView Items](Getting-Started_images/badge_withoutBadgeContainer.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_without_BadgeContainer).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_without_BadgeContainer).
 
 ## Predefined colors for displaying the Badges
 
@@ -383,7 +383,7 @@ badge.Content = "99+";
 
 ![Displaying the Success state of Badge](Getting-Started_images/Information_States.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 N> If you want to apply your own customized colors for the background of `Badge`, refer the [Custom colors for displaying the badges](https://help.syncfusion.com/winui/badge/badge-customization#custom-colors-for-displaying-the-badge) page.
 
@@ -417,7 +417,7 @@ badge.Content = "99+";
 
 ![Displaying the different default Badge shapes](Getting-Started_images/Default_Shape.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 N> If you want to apply your own customized shapes for the `Badge`, refer the [Custom shape for displaying the Badge](https://help.syncfusion.com/winui/badge/badge-customization#custom-shape-for-displaying-the-badge) page.
 
@@ -458,7 +458,7 @@ badge.Content = "1";
 
 ![Displaying the Badge with opacity based animation](Getting-Started_images/Opacity_animation.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Custom content formats
 
@@ -544,4 +544,4 @@ public class CustomNumberConverter : IValueConverter {
 
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Content_CustomUI).

@@ -317,7 +317,7 @@ this.Content = sfRadialGauge;
 
 {% endtabs %}
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI_Radial_Gauge_Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WinUI-Radial-Gauge-Getting-Started)
 
 ## See Also
 

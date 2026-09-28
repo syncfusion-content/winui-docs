@@ -70,7 +70,7 @@ sfCalendar.DisplayMode = CalendarDisplayMode.Month;
 
 ![restrict-view-navigation-in-winui-calendar](Images/navigation/restrict-view-navigation-in-winui-calendar.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Restriction).
 
 ## Selection based on view restriction
 
@@ -134,7 +134,7 @@ When the `NavigationDirection` property is set to **Vertical**, you can navigate
 
 ![change-navigation-buttons-direction-in-winui-calendar](Images/navigation/change-navigation-buttons-direction-in-winui-calendar.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Restriction).
 
 ## Navigation by keyboard
 

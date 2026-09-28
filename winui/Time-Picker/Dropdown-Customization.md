@@ -82,7 +82,7 @@ sfTimePicker.ShowDropDownButton = false;
 
 ![hide-drop-down-button-in-winui-time-picker](Dropdown-Time-Spinner_images/hide-drop-down-button-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Change dropdown alignment
 
@@ -115,7 +115,7 @@ sfTimePicker.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAlignedLeft;
 
 ![change-drop-down-placement-in-winui-time-picker](Dropdown-Time-Spinner_images/change-drop-down-placement-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Open dropdown programmatically
 
@@ -175,7 +175,7 @@ sfTimePicker.DropDownHeight = 200;
 
 ![change-drop-down-height-in-winui-time-picker](Dropdown-Time-Spinner_images/change-drop-down-height-in-winui-time-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Change the number of time cells to be shown in the dropdown
 
@@ -207,4 +207,4 @@ sfTimePicker.VisibleItemsCount = 5;
 
 ![show-number-of-dates-in-drop-down-in-winui-time-picker](Dropdown-Time-Spinner_images/show-number-of-dates-in-drop-down-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)

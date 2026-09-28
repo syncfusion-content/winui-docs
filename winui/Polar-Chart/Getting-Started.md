@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WinUI Polar Chart
 
-This section explains how to populate the [WinUI Polar Chart](https://www.syncfusion.com/winui-controls/charts/winui-polar-chart) with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the [WinUI Polar Chart](https://www.syncfusion.com/winui-controls/polar-charts) with data, header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Chart
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2. Add a reference to [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4. Initialize [SfPolarChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfPolarChart.html) control.

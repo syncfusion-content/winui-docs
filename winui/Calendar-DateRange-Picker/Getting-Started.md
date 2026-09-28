@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with WinUI Calendar DateRange Picker
 
-This section explains the steps required to add the [WinUI Calendar DateRange Picker](https://www.syncfusion.com/winui-controls/calendar-daterangepicker) control and its date range selection options. 
+This section explains the steps required to add the [WinUI Calendar DateRange Picker](https://www.syncfusion.com/winui-controls/calendar-daterange-picker) control and its date range selection options. 
 
 ## Structure of Calendar DateRange Picker control
 
@@ -23,7 +23,7 @@ In this walk-through, you will create a WinUI application that contains the `Cal
 
 To add `Calendar DateRange Picker` control manually in XAML, follow these steps:
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2. Download and refer the following NuGet in the project.
 
     * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)
@@ -59,7 +59,7 @@ To add `Calendar DateRange Picker` control manually in XAML, follow these steps:
 
 To add the `Calendar DateRange Picker` control manually in C#, follow these steps:
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2. Download and refer the following NuGet in the project.
 
     * [Syncfusion.Calendar.WinUI](https://www.nuget.org/packages/Syncfusion.Calendar.WinUI)

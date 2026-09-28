@@ -13,7 +13,7 @@ This section describes the various dropdown customization options available in [
 
 ## Change dropdown alignment
 
-You can change the alignment of the dropdown palette to full, center, left, right, top or bottom relative to the edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`. The supported values are the members of the [FlyoutPlacementMode](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutplacementmode) enumeration, such as `Top`, `Bottom`, `Left`, `Right`, `TopEdgeAlignedLeft`, `TopEdgeAlignedRight`, `BottomEdgeAlignedLeft`, `BottomEdgeAlignedRight`, `RightEdgeAlignedTop`, `RightEdgeAlignedBottom`, `LeftEdgeAlignedTop`, `LeftEdgeAlignedBottom`, and `Full`.
+You can change the alignment of the dropdown palette to full, center, left, right, top or bottom relative to the edge of the dropdown header by using the [DropDownPlacement](https://help.syncfusion.com/cr/winUI/Syncfusion.UI.Xaml.Editors.SfDropDownBase.html#Syncfusion_UI_Xaml_Editors_SfDropDownBase_DropDownPlacement) property. The default value of `DropDownPlacement` property is `Auto`. The supported values are the members of the [FlyoutPlacementMode](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.primitives.flyoutplacementmode) enumeration, such as `Top`, `Bottom`, `Left`, `Right`, `TopEdgeAlignedLeft`, `TopEdgeAlignedRight`, `BottomEdgeAlignedLeft`, `BottomEdgeAlignedRight`, `RightEdgeAlignedTop`, `RightEdgeAlignedBottom`, `LeftEdgeAlignedTop`, `LeftEdgeAlignedBottom`, and `Full`.
 
 N> If there is not enough space to open the dropdown in the specific position assigned by the `DropDownPlacement` property, the `DropDown Color Palette` will automatically choose the available position to open the dropdown palette.
 
@@ -33,7 +33,7 @@ sfDropDownColorPalette.DropDownPlacement = FlyoutPlacementMode.BottomEdgeAligned
 
 ![Dropdown color palette placement changed as BottomEdgeAlignedRight](Getting-Started_images/DropDownPlacement.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDown_ColorPalette)
 
 ## Color Palette as a command button
 
@@ -94,7 +94,7 @@ N> The `Command` handler applies the color to the currently selected text in the
 
 ![Dropdown color palette recent color selected in split mode](Getting-Started_images/Splitbutton.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDownColorPalette_as_command)
 
 ## Custom UI of dropdown header
 
@@ -151,7 +151,7 @@ N> The `DropDownButtonTemplate` is effective only when the dropdown mode is spli
 
 ![Displaying custom UI of dropdown header in split mode](Getting-Started_images/customUI.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDownColorPalette_as_command)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDownColorPalette_as_command)
 
 ## Dropdown Color Palette open and close notifications
 

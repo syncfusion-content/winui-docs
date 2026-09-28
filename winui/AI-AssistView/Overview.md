@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion WinUI AI AssistView Control
 
-The Syncfusion .NET [WinUI AI AssistView control](https://www.syncfusion.com/winui-controls/aiassist-view) is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
+The Syncfusion .NET [WinUI AI AssistView control](https://www.syncfusion.com/winui-controls/ai-assistview) is used to enhance interaction between users and AI services. It offers a user-friendly interface for creating intelligent and responsive applications with AI services, allowing users to customize the appearance easily.
 
 ## Key features
 

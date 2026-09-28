@@ -58,7 +58,7 @@ N> The value in the `WinUI Calendar Date Picker` control textbox is updated base
 
 ![calendar-types-hebrew-calendar-in-winui-calendar-date-picker](Getting-Started_images/calendar-types-hebrew-calendar-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Formatting).
 
 ## Change the language
 
@@ -87,7 +87,7 @@ sfCalendarDatePicker.Language = "ar-SA";
 
 ![calendar-types-arabic-calendar-in-winui-calendar-picker](Getting-Started_images/calendar-types-arabic-calendar-in-winui-calendar-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Formatting).
 
 
 ## Change editor display format
@@ -117,13 +117,13 @@ sfCalendarDatePicker.DisplayDateFormat = "M";
 
 ![change-display-date-format-in-winui-calendar-date-picker](Getting-Started_images/change-display-date-format-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Formatting)
 
 ## Change calendar display format
 
 You can use different date formats such as an abbreviated or full names for a day, month, week names, or header name of month and year in the drop-down calendar by using the [DayFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DayFormat), [MonthFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_MonthFormat), [DayOfWeekFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_DayOfWeekFormat), and [HeaderFormatInMonthView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Calendar.SfCalendarDatePicker.html#Syncfusion_UI_Xaml_Calendar_SfCalendarDatePicker_HeaderFormatInMonthView) properties.
 
-N> Refer to this [DateTimeFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting options.
+N> Refer to this [DateTimeFormatter](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.datetimeformatting.datetimeformatter?view=winrt-19041) page to get more date formatting options.
 
 {% tabs %}
 {% highlight xaml tabtitle="MainWindow.xaml" hl_lines="5 6 7 8" %}
@@ -154,7 +154,7 @@ sfCalendarDatePicker.MonthHeaderFormat = "{month.abbreviated} {year.abbreviated}
 
 ![change-display-date-formatting-in-winui-calendar-date-picker](Getting-Started_images/change-display-date-formatting-in-winui-calendar-date-range-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Formatting).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Formatting).
 
 ## First day of week
 
@@ -183,7 +183,7 @@ sfCalendarDatePicker.FirstDayOfWeek = FirstDayOfWeek.Monday;
 
 ![change-first-day-of-week-in-winui-calendar-date-picker](Getting-Started_images/change-first-day-of-week-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Selection).
 
 ## Number of weeks in a view
 
@@ -212,4 +212,4 @@ sfCalendarDatePicker.NumberOfWeeksInView = 4;
 
 ![change-number-of-weeks-in-a-view-in-winui-calendar-date-picker](Getting-Started_images/change-number-of-weeks-in-a-view-in-winui-calendar-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendardatepicker-examples/tree/main/Samples/Selection).

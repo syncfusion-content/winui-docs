@@ -13,7 +13,7 @@ This section explains how to connect the AI AssistView with OpenAI.
 
 ## Creating an application with NuGet reference.
 
-1. Create a [WinUI 3 desktop app for C# and .NET 6](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 6](https://learn.microsoft.com/en-us/windows/apps/get-started/winui-get-started-overview).
 2. Add reference to [Microsoft Semantic NuGet](https://www.nuget.org/packages/Microsoft.SemanticKernel) NuGet. 
 
 ## Creating the OpenAI view model class.

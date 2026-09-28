@@ -29,7 +29,7 @@ sfTimePicker.MaxTime = new DateTimeOffset(new DateTime(DateTime.Now.Year, DateTi
 
 ![change-minimum-and-maximum-times-in-winui-time-picker](Getting-Started_images/change-minimum-and-maximum-times-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)
 
 ## Disable times using BlackoutTimes
 
@@ -90,7 +90,7 @@ sfTimePicker.BlackoutTimes = (sfTimePicker.DataContext as ViewModel).BlackoutTim
 
 ![change-black-out-times-in-winui-time-picker](Getting-Started_images/change-black-out-times-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Custom time interval
 
@@ -165,7 +165,7 @@ private void SfTimePicker_TimeFieldPrepared(object sender, DateTimeFieldPrepared
 
 ![change-custom-time-interval-in-winui-time-picker](Dropdown-Time-Spinner_images/change-custom-time-interval-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeFieldPrepared)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeFieldPrepared)
 
 ## Select time as you scroll spinner
 
@@ -195,7 +195,7 @@ sfTimePicker.ShowSubmitButtons = false;
 
 ![show-or-hide-submit-buttons-in-winui-time-picker](Getting-Started_images/show-or-hide-submit-buttons-in-winui-time-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Cancel a time that is being changed
 

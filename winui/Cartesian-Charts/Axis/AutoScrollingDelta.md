@@ -195,6 +195,6 @@ this.Content = chart;
 
 ## See Also
 
-* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018/how-to-create-a-winui-line-chart-sfcartesianchart)
 
 

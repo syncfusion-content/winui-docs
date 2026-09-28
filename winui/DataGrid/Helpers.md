@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in WinUI Data Grid | Syncfusion®
+title: Helpers in WinUI Data Grid | Syncfusion®
 description: Helper methods in Data Grid simplify common tasks such as retrieving row and column indexes, working with groups, and performing grid utility operations.
 platform: winui
 control: Data Grid

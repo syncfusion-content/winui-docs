@@ -94,7 +94,7 @@ namespace GettingStarted
 
 ![winui-time-picker-control](Getting-Started_images/winui-time-picker-control.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Getting_Started)
 
 ## Select time programmatically
 
@@ -114,7 +114,7 @@ sfTimePicker.SelectedTime = new DateTimeOffset(new DateTime(2021, 10, 29, 10, 45
 
 ![programmatic-time-selection-in-winui-time-picker](Getting-Started_images/programmatic-time-selection-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Select time interactively
 
@@ -141,7 +141,7 @@ SfTimePicker sfTimePicker= new SfTimePicker();
 
 ![time-selection-in-winui-time-picker](Getting-Started_images/time-selection-in-winui-time-picker.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/Getting_Started)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/Getting_Started)
 
 ## Restrict selection
 
@@ -181,7 +181,7 @@ sfTimePicker.AllowNull = true;
 
 ![allow-null-value-in-winui-time-picker](Getting-Started_images/allow-null-value-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)
 
 ## Header and description
 
@@ -306,7 +306,7 @@ sfTimePicker.AllowNull = true;
 
 ![customize-text-with-water-mark-in-winui-time-picker](Getting-Started_images/customize-text-with-water-mark-in-winui-time-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/blob/main/Samples/TimeRestriction)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-timepicker-examples/tree/main/Samples/TimeRestriction)
 
 ## Time changed notification
 

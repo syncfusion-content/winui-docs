@@ -32,7 +32,7 @@ SfDropDownColorPalette sfDropDownColorPalette = new SfDropDownColorPalette();
 
 ![Dropdown Color Palette with more color dialog](Getting-Started_images/MoreColorWindow.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/DropDown_ColorPalette)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/DropDown_ColorPalette)
 
 ## Recently used Colors
 

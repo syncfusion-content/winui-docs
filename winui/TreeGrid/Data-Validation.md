@@ -21,7 +21,7 @@ Built-in validations through INotifyDataErrorInfo and Data annotation attributes
 
 ### Built-in validation using INotifyDataErrorInfo
 
-You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
+You can validate the data by implementing the [INotifyDataErrorInfo](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?view=net-5.0) interface in model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ You can validate the data using data annotation attributes by setting `SfTreeGri
 
 #### Using different annotations
 
-The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?redirectedfrom=MSDN).
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ public int ID
 {% endhighlight %}
 {% endtabs %}
 
-The string type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx), [String Length attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx)
+The string type property can be validated using [Required](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?redirectedfrom=MSDN), [String Length attributes](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?redirectedfrom=MSDN)
 
 {% tabs %}
 {% highlight c# %}
@@ -129,7 +129,7 @@ public string LastName
 {% endhighlight %}
 {% endtabs %}
 
-The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?redirectedfrom=MSDN).
 
 {% tabs %}
 {% highlight c# %}
@@ -683,12 +683,12 @@ You can change the error tip background color by setting `Background` property o
 
 ### Showing error details in RowHeader
 
-SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on  [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx) property.
+SfTreeGrid supports to show the error icon in [TreeGridRowHeaderCell](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowHeaderCell.html) based on  [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN#System_ComponentModel_INotifyDataErrorInfo_HasErrors) property.
 
 
 #### Using INotifyDataErrorInfo
 
-You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default, error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
+You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo.haserrors?redirectedfrom=MSDN#System_ComponentModel_INotifyDataErrorInfo_HasErrors). By default, error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
 {% tabs %}
 {% highlight c# %}

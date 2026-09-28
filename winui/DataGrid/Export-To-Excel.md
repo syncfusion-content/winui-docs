@@ -68,7 +68,7 @@ async void Save(MemoryStream stream, string filename)
 {% endhighlight %}
 {% endtabs %}
 
-N> The SfDataGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). Refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the exported worksheets. 
+N> The SfDataGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). Refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating the exported worksheets. 
 
 ## Excel exporting options
 
@@ -229,7 +229,7 @@ Save(stream, "Sample");
 
 ## Row Height and Column Width customization 
 
-After exporting data to excel, set the different row heights and column widths for the columns based on your requirement. Please refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information. 
+After exporting data to excel, set the different row heights and column widths for the columns based on your requirement. Please refer [here](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information. 
 
 {% tabs %}
 {% highlight c# %}
@@ -394,7 +394,7 @@ By default, the [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncf
 
 ### Excluding DetailsViewDataGrid while exporting
 
-Exclude the particular [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) while exporting by using the [DetailsViewExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_DetailsViewExportHandler) and [DataGridDetailsViewExcelExportOptions.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) .
+Exclude the particular [DetailsViewDataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.DetailsViewDataGrid.html) while exporting by using the [DetailsViewExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_DetailsViewExportHandler) and [DataGridDetailsViewExcelExportOptions.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) .
 
 {% tabs %}
 {% highlight c# %}
@@ -480,10 +480,10 @@ private static void CellsExportHandler(object sender, DataGridCellExcelExportOpt
 
 ## Customize exported workbook and worksheet
 
-SfDataGrid exports to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
+SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). You can refer [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating workbook and sheet after exporting. 
 
 ### Workbook
-The SfDataGrid provides an option to return the [ExcelEngine](https://help.syncfusion.com/cr/file-formats/Syncfusion.XlsIO.ExcelEngine.html). From that, get the exported workbook. This allows you to protect, encrypt and add worksheets before saving. 
+The SfDataGrid provides an option to return the [ExcelEngine](https://help.syncfusion.com/cr/document-processing/Syncfusion.XlsIO.ExcelEngine.html). From that, get the exported workbook. This allows you to protect, encrypt and add worksheets before saving. 
 
 {% tabs %}
 {% highlight c# %}
@@ -500,7 +500,7 @@ Save(stream, "Sample");
 
 The SfDataGrid provides support to export to an already existing file or worksheet. 
 
-In the following code sample, the worksheet is created and passed to the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportExtensions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_) method. In the same way, open an already existing excel using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). 
+In the following code sample, the worksheet is created and passed to the [ExportToExcel](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportExtensions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportExtensions_ExportToExcel_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_Syncfusion_UI_Xaml_Data_ICollectionViewAdv_Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_) method. In the same way, open an already existing excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). 
 
 {% tabs %}
 {% highlight c# %}
@@ -515,7 +515,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-Before saving the workbook, set the specific excel version by using the [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, directly manipulate the data in the worksheet. Please refer [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation) for more information.
+Before saving the workbook, set the specific excel version by using the [IWorkbook.Version](https://help.syncfusion.com/cr/wpf/Syncfusion.XlsIO.IWorkbook.html#Syncfusion_XlsIO_IWorkbook_Version) property. Here, directly manipulate the data in the worksheet. Please refer [here](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-rows-and-columns-manipulation) for more information.
 
 #### Setting borders
 
@@ -571,7 +571,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-Please refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+Please refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-cells-manipulation).
 
 #### Customize the range of cells
 
@@ -603,7 +603,7 @@ Perform cell-level customization such as row-level styling and formatting partic
 In the following code sample, the NumberFormat for the `Unit Price` column is changed in the exported sheet after exporting without using the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.Export.DataGridExcelExportOptions.html#Syncfusion_UI_Xaml_DataGrid_Export_DataGridExcelExportOptions_CellsExportHandler). 
 
 Reference:
-[CellRange Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[CellRange Formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}
@@ -624,7 +624,7 @@ Save(stream, "Sample");
 In the following code sample, the background color of rows in excel is changed based on the row index using conditional formatting for better performance.
 
 Reference:
-[Conditional Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-conditional-formatting)
+[Conditional Formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-conditional-formatting)
 
 {% tabs %}
 {% highlight c# %}

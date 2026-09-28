@@ -703,6 +703,6 @@ N> The [Item](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.Cha
 
 ## See Also
 
-* [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711)
-* [How to display more data in the tooltip in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12007)
+* [How to display more information in the Tooltip of WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12711/how-to-display-more-information-in-the-tooltip-of-winui-chart-sfcartesianchart)
+* [How to display more data in the tooltip in WinUI Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12007/how-to-display-more-data-in-the-tooltip-in-winui-chart-sfcartesianchart)
 

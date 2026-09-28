@@ -25,7 +25,7 @@ The NuGet **Package Manager UI** in Visual Studio allows you to easily install, 
 
 2. The Manage NuGet Packages window will open. Navigate to the **Updates** tab, then search for the Syncfusion WinUI NuGet packages using a term like **"Syncfusion"** and select the appropriate Syncfusion WinUI NuGet package for your application.
 
-    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the Package source drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft documents](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio#package-sources) to set up the nuget.org feed URL.
 
 3. By default, the package selected with latest version. You can select the required version and click the **Update** button and accept the license terms. The package will be upgraded to selected version in your WinUI application.
 

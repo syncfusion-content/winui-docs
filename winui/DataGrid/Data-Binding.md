@@ -19,15 +19,15 @@ SfDataGrid control is designed to display the bounded data in a tabular format. 
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), SfDataGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN), SfDataGrid will not refresh the UI automatically.
 
 ## Binding with IEnumerable
 
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
+SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
 
 ## Binding with dynamic data object
 
-SfDataGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
+SfDataGrid control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?redirectedfrom=MSDN). Below are the limitations when you are binding dynamic data object,
 
 1. SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
@@ -192,7 +192,7 @@ The following events are associated with View.
 
 `PropertyChangedEventArgs` has below property,
 
-[PropertyName](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs.propertyname) – It denotes the PropertyName of the changed value.
+[PropertyName](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?redirectedfrom=MSDN#System_ComponentModel_PropertyChangedEventArgs_PropertyName) – It denotes the PropertyName of the changed value.
 
 ### CollectionChanged
 

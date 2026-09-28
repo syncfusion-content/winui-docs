@@ -74,7 +74,7 @@ If you want to change the shape of the `Badge` other than the default shapes, us
 
 ![Displaying the custom shape of Badge](Getting-Started_images/Custom_Shape.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Badge_Features).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Badge_Features).
 
 ## Custom UI of Badge content
 
@@ -108,7 +108,7 @@ You can change the appearance of `Badge` content by using the `ContentTemplate` 
 
 ![Displaying the custom UI of Badge content](Getting-Started_images/ContentTemplate.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Content_CustomUI)
 
 
 ## Custom content formats
@@ -194,7 +194,7 @@ public class CustomNumberConverter : IValueConverter {
 
 ![Number formatting for the Badge content](Getting-Started_images/number.gif)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/blob/master/Samples/Content_CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-badge-control-examples/tree/master/Samples/Content_CustomUI).
 
 ## Stroke customization
 

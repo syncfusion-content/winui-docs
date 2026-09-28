@@ -49,7 +49,7 @@ sfDatePicker.ItemHeight = 50;
 
 ![customize-size-of-drop-down-cells-in-winui-date-picker](Images/drop-down-date-spinner/customize-size-of-drop-down-cells-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Customize the cell's style in dropdown spinner
 
@@ -207,7 +207,7 @@ public class DateItemTemplateSelector : DataTemplateSelector
 
 ![customize-appearance-of-drop-down-cells-in-winui-date-picker](Images/drop-down-date-spinner/customize-appearance-of-drop-down-cells-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/CustomUI)
 
 ## Customize the columns in dropdown spinner
 
@@ -284,4 +284,4 @@ private void SfDatePicker_DateFieldPrepared(object sender, DateTimeFieldPrepared
 
 ![customize-columns-of-drop-down-cells-in-winui-date-picker](Images/drop-down-date-spinner/customize-columns-of-drop-down-cells-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/DateFieldPrepared)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/DateFieldPrepared)

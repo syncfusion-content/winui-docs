@@ -39,7 +39,7 @@ sfCalendar.OutOfScopeVisibility = OutOfScopeVisibility.Hidden;
 
 ![hide-leading-trailing-days-in-winui-calendar](Images/UI-customization/hide-leading-trailing-days-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Restriction).
 
 ## Custom UI for specific cell in calendar
 
@@ -178,7 +178,7 @@ public class EventDataConverter : IValueConverter
 
 ![ui-customation-for-specific-cell-in-winui-calendar](Images/UI-customization/ui-customation-for-specific-cell-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/CustomUI).
 
 ## Customize using theme keys
 
@@ -293,4 +293,4 @@ You can customize the colors of day names and headers of month, year, decade, an
 
 ![customize-ui-using-theme-keys-in-winui-calendar](Images/UI-customization/customize-ui-using-theme-keys-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/CustomUI).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/CustomUI).

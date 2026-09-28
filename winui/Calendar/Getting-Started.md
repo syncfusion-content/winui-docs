@@ -123,7 +123,7 @@ sfCalendar.SelectedDate = new DateTimeOffset(new DateTime(2021, 01, 06));
 
 ![date-selection-in-winui-calendar](Images/getting-started/date-selection-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Restriction).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Restriction).
 
 ## Select multiple dates
 
@@ -154,7 +154,7 @@ sfCalendar.SelectionMode = CalendarSelectionMode.Multiple;
 
 ![multiple-date-selection-in-winui-calendar](Images/getting-started/multiple-date-selection-in-winui-calendar.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/blob/main/Samples/Selection).
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-calendar-examples/tree/main/Samples/Selection).
 
 ## Select a date range
 

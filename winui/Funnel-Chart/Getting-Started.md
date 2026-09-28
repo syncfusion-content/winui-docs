@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with WinUI Funnel Chart
 
-This section explains how to populate the [WinUI Funnel Chart](https://www.syncfusion.com/winui-controls/charts/winui-funnel-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
+This section explains how to populate the [WinUI Funnel Chart](https://www.syncfusion.com/winui-controls/funnel-chart) with data, a header, data labels, legend, and tooltips, as well as the essential aspects for getting started with the chart.
 
 ## Creating an application with WinUI Chart
 
-1. Create a [WinUI 3 desktop app for C# and .NET 5](https://docs.microsoft.com/en-us/windows/apps/winui/winui3/get-started-winui3-for-desktop).
+1. Create a [WinUI 3 desktop app for C# and .NET 5](https://learn.microsoft.com/en-us/windows/apps/get-started/start-here?tabs=visual-studio).
 2. Add a reference to the [Syncfusion.Chart.WinUI](https://www.nuget.org/packages/Syncfusion.Chart.WinUI/) NuGet package. 
 3. Import the control namespace `Syncfusion.UI.Xaml.Charts` in XAML or C# to initialize the control.
 4. Initialize the [SfFunnelChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfFunnelChart.html) control.

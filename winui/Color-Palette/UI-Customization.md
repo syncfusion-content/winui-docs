@@ -33,7 +33,7 @@ colorPalette.SelectedBrush = new SolidColorBrush(Colors.Yellow);
 
 Here, `Yellow` color is the selected color in the `Color Palette`.
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Setting null value programmatically
 
@@ -76,7 +76,7 @@ colorPalette.ShowNoColorButton = true;
 
 ![Selecting Transparent Color in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-transparent-color.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/ColorPalette_features)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/ColorPalette_features)
 
 ## Setting default color
 
@@ -98,7 +98,7 @@ colorPalette.DefaultBrush  = new SolidColorBrush(Colors.Red);
 
 ![WinUI Color Palette with Default Selected Color](Working-with-SfColorPalette_images/winui-colorpalette-default-color-selection.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/Custom-Colors)
 
 ### Hide default color button
 
@@ -205,7 +205,7 @@ colorPalette.Foreground = new SolidColorBrush(Colors.Red);
 
 ![Customizing Header Text of Colors in WinUI Color Palette](Working-with-SfColorPalette_images/winui-colorpalette-color-header-text-customization.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/Custom-Colors)
 
 ## Change flow direction
 
@@ -227,4 +227,4 @@ colorPalette.FlowDirection = FlowDirection.RightToLeft;
 
 ![WinUI Color Palette displays Right to Left Flow Direction](Working-with-SfColorPalette_images/winui-colorpalette-rtl.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/blob/master/Samples/Custom-Colors)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-colorpalette-examples/tree/master/Samples/Custom-Colors)

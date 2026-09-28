@@ -17,5 +17,5 @@ Chart includes functionality for rendering a large number of data points with fa
 
 ## See Also
 
-* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018)
-* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031)
+* [How to create a WinUI Line Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12018/how-to-create-a-winui-line-chart-sfcartesianchart)
+* [How to create a WinUI Column Chart (SfCartesianChart)](https://support.syncfusion.com/kb/article/12031/how-to-create-a-winui-column-chart-sfcartesianchart)

@@ -486,7 +486,7 @@ The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/winui/Syncfusion.
 
 * [Group](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_DataGrid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
-* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) – Decides whether to cancel the group expansion.
+* [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) – Decides whether to cancel the group expansion.
  
 You can cancel the group expansion by setting `GroupChangingEventArgs.Cancel` to `true`.
 
@@ -516,7 +516,7 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.
 
 * [Group](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_DataGrid_GroupChangingEventArgs_Group) - Gets the group that’s being collapsed.
 
-* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) – Decides whether to cancel the group collapsing.
+* [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) – Decides whether to cancel the group collapsing.
 
  
 You can cancel the group is being collapsed by using `GroupChangingEventArgs.Cancel` of `GroupCollapsing` event.

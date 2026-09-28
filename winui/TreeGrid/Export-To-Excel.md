@@ -70,7 +70,7 @@ async void Save(MemoryStream stream, string filename)
 
 <img src="Export-To-Excel_images/winui-treegrid-export-to-excel.png" alt="WinUI TreeGrid Data Exporting to Excel" width="100%" Height="Auto"/>
 
-N> The SfTreeGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). For manipulating the exported worksheets, refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet).
+N> The SfTreeGrid exports data to excel by using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). For manipulating the exported worksheets, refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet).
 
 ## Excel exporting options
 
@@ -254,7 +254,7 @@ Save(stream, "Sample");
 
 ## Row Height and Column Width customization  
 
-After exporting the data to Excel, set different row heights and column widths for the columns. Refer to [here](http://help.syncfusion.com/file-formats/xlsio/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
+After exporting the data to Excel, set different row heights and column widths for the columns. Refer to [here](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-rows-and-columns-manipulation#adjust-row-height-and-column-width) for more information.
 
 {% tabs %}
 {% highlight c# %}
@@ -410,7 +410,7 @@ Here, the `ID` column cells are customized while exporting.
 
 ## Customize exported workbook and worksheet
 
-The TreeGrid can be exported to Excel using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). Refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
+The TreeGrid can be exported to Excel using [XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview). Refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet) for manipulating the workbooks and sheets after exporting.
 
 ### Set borders
 
@@ -467,7 +467,7 @@ Save(stream, "Sample");
 {% endhighlight %}
 {% endtabs %}
 
-Please refer to the [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/worksheet-cells-manipulation#data-filtering).
+Please refer to the [XlsIO documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/worksheet-cells-manipulation#filtering).
 
 ## Performance
 
@@ -480,7 +480,7 @@ Perform cell-level customization such as row-level styling and formatting partic
 In the following code sample, the NumberFormat for the `Salary` column is changed in the exported sheet after exporting without using the [CellsExportHandler](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.Export.TreeGridExcelExportOptions.html#Syncfusion_UI_Xaml_TreeGrid_Export_TreeGridExcelExportOptions_CellsExportHandler). 
 
 Reference:
-[CellRange Formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)
+[CellRange Formatting](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-cell-or-range-formatting)
 
 {% tabs %}
 {% highlight c# %}

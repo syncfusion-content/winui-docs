@@ -41,7 +41,7 @@ sfDatePicker.ShowDropDownHeader = true;
 
 ![customize-hints-in-drop-down-header-in-winui-date-picker](Images/drop-down-date-spinner/customize-hints-in-drop-down-header-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)
 
 ## Customize the dropdown header
 
@@ -84,7 +84,7 @@ You can customize the header of the drop-down date spinner by using the [`DropDo
 
 ![customize-in-drop-down-header-template-in-winui-date-picker](Images/drop-down-date-spinner/customize-in-drop-down-header-template-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/CustomUI)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/CustomUI)
 
 ## Hide the dropdown column headers
 
@@ -116,4 +116,4 @@ sfDatePicker.ShowColumnHeaders = false;
 
 ![show-or-hide-column-headers-in-winui-date-picker](Images/drop-down-date-spinner/show-or-hide-column-headers-in-winui-date-picker.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/blob/main/Samples/ViewAndItemCustomization)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/syncfusion-winui-tools-datepicker-examples/tree/main/Samples/ViewAndItemCustomization)

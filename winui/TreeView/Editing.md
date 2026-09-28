@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing in WinUI TreeView | Syncfusion®
 description: Edit TreeView nodes using templates, programmatic editing APIs, validation logic, and editing events.
@@ -94,7 +94,7 @@ private void TreeView_Loaded(object sender, RoutedEventArgs e)
 
 By default, the TreeView does not have support for rolling back the changes when pressing the <kbd>ESC</kbd> key while editing a TreeView node. However, it does support rolling back the changes when the underlying data object implements the [IEditableObject](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject) interface.
 
-The user can take a backup of existing data of a node in the [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) method and can change the existing data to the current data in the [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) method to rollback the changes.
+The user can take a backup of existing data of a node in the [BeginEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN#System_ComponentModel_IEditableObject_BeginEdit) method and can change the existing data to the current data in the [CancelEdit](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN#System_ComponentModel_IEditableObject_CancelEdit) method to rollback the changes.
 
 The code snippet below explains a simple implementation of the `IEditableObject` interface to roll back the changes.
 

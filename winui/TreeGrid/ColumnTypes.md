@@ -225,7 +225,7 @@ public class DisplayBindingConverter : IValueConverter
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue)  property to `true`. When `SetCellBoundValue` is set to true, the DataContext for CellTemplate is changed to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate?view=winrt-28000) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_SetCellBoundValue)  property to `true`. When `SetCellBoundValue` is set to true, the DataContext for CellTemplate is changed to `DataContextHelper` which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -270,7 +270,7 @@ You can use the same [DataTemplate](https://docs.microsoft.com/en-us/windows/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` allows you to select a different[DataTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.datatemplate?view=winui-3.0) based on underlying data object by using the [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property. 
+`TreeGridColumn` allows you to select a different[DataTemplate](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate?view=winrt-28000) based on underlying data object by using the [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.GridColumnBase.html#Syncfusion_UI_Xaml_Grids_GridColumnBase_CellTemplateSelector) property. 
 
 For example, two different templates loaded alternatively in `ID` column. 
 
@@ -347,7 +347,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 ### Data Formatting
 
-`TreeGridColumn` supports to format the data using the [Converter](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.binding?view=winui-3.0) property, by defining the `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. In display mode `TreeGridColumn.DisplayBinding` formats the data. In edit mode, `TreeGridColumn.ValueBinding` formats the data.
+`TreeGridColumn` supports to format the data using the [Converter](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.binding?view=windows-app-sdk-2.0) property, by defining the `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. In display mode `TreeGridColumn.DisplayBinding` formats the data. In edit mode, `TreeGridColumn.ValueBinding` formats the data.
 
 #### Format column using Converter
 
@@ -614,9 +614,9 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 ### TreeGridTextColumnBase properties
 
-* Text trimming - You can [trim](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.texttrimming?view=winui-3.0) the column’s data using the [TextTrimming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
+* Text trimming - You can [trim](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.texttrimming?view=windows-app-sdk-2.0) the column’s data using the [TextTrimming](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextTrimming) property.
 
-* Text wrapping - You can [wrap](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.textwrapping?view=winui-3.0) the column’s data using the [TextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
+* Text wrapping - You can [wrap](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.textwrapping?view=windows-app-sdk-2.0) the column’s data using the [TextWrapping](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTextColumnBase_TextWrapping) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -750,9 +750,9 @@ The numeric data type for the `TreeGridNumericColumn` is specified using the [Va
 
 You can format the value of a `TreeGridNumericColumn` using the [DisplayNumberFormat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_DisplayNumberFormat) or [NumberFormatter](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridNumericColumn_NumberFormatter) property. The default value of `DisplayNumberFormat` and `NumberFormatter` properties are **null**.
 
-The following example shows how to set [CurrencyFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.currencyformatter?view=winrt-19041) for `NumberFormatter` property. 
+The following example shows how to set [CurrencyFormatter](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.currencyformatter?view=winrt-19041) for `NumberFormatter` property. 
 
-N> To learn more about the formatting classes that can assigned for `NumberFormatter` property. [Refer here](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041#classes)
+N> To learn more about the formatting classes that can assigned for `NumberFormatter` property. [Refer here](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting?view=winrt-19041)
 
 {% tabs %}
 {% highlight c# %}
@@ -763,7 +763,7 @@ numericColumn.NumberFormatter = new CurrencyFormatter(new RegionInfo(culture.LCI
 {% endhighlight %}
 {% endtabs %}
 
-You can also set the [PercentFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.percentformatter?view=winrt-19041) and [DecimalFormatter](https://docs.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.decimalformatter?view=winrt-19041) for `NumberFormatter` property to format the values in percent and numeric custom formats.   
+You can also set the [PercentFormatter](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.percentformatter?view=winrt-19041) and [DecimalFormatter](https://learn.microsoft.com/en-us/uwp/api/windows.globalization.numberformatting.decimalformatter?view=winrt-19041) for `NumberFormatter` property to format the values in percent and numeric custom formats.   
 
 Using the **N**, **C**, and **P** format values, you can apply numeric, currency, and percent custom formats in `DisplayNumberFormat` property.
 
@@ -1012,7 +1012,7 @@ When `ShowClearButton` is set to `True`, a clear button appears within the edito
 
 The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_AllowNull) property:
 
-- When `AllowNull` is `True`, clicking the clear button sets the cell value to null.
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
 - When `AllowNull` is `False`, clicking the clear button sets the cell value to the column's [MinDate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridDateColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridDateColumn_MinDate).
 
 {% tabs %}
@@ -1219,6 +1219,43 @@ treeGrid.Columns.Add(new TreeGridTimeColumn()
 {% endtabs %}
 
 For more information refer [here](https://help.syncfusion.com/winui/time-picker/time-restriction#select-time-as-you-scroll-spinner).
+
+### Clear Button support
+
+The `TreeGridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the **ShowClearButton** property.
+When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
+
+**AllowNull Behavior**
+
+The behavior of the clear button depends on the [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_AllowNull) property:
+
+- When `AllowNull` is `True`, clicking the clear button sets the cell value to `null`.
+- When `AllowNull` is `False`, clicking the clear button keeps the cell value unchanged.
+
+{% tabs %}
+{% highlight xaml %}
+<treeGrid:SfTreeGrid Name="treeGrid"
+                     ColumnWidthMode="Star"
+                     AllowEditing="True"
+                     AutoExpandMode="AllNodesExpanded"
+                     AutoGenerateColumns="False"
+                     ChildPropertyName="ReportsTo"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     SelfRelationRootValue="-1" >
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+        <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
+        <treeGrid:TreeGridNumericColumn MappingName="ID" HeaderText="Employee ID" />
+        <treeGrid:TreeGridTimeColumn MappingName="ReportingTime" HeaderText="Reporting Time" ShowClearButton="True" />
+        <treeGrid:TreeGridTextColumn MappingName="Title" />
+        <treeGrid:TreeGridTextColumn MappingName="ReportsTo" HeaderText="Reports To" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Column-Type-images/winui-treegrid-TimeColumn-ShowClearButton.png" alt="TreeGridTimeColumn with Clear Button" width="100%" Height="Auto"/>
 
 ## TreeGridCheckBoxColumn
 
@@ -1458,7 +1495,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 ### Improving dropdown opening time
 
-You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.virtualizingstackpanel?view=winui-3.0) as [ItemsPanelTemplate](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.itemspaneltemplate?view=winui-3.0) of `ComboBox`, when the large number of items loaded in it.
+You can improve the drop-down opening time on loading by setting [VirtualizingStackPanel](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.virtualizingstackpanel?view=windows-app-sdk-2.0) as [ItemsPanelTemplate](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.itemspaneltemplate?view=windows-app-sdk-2.0) of `ComboBox`, when the large number of items loaded in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1478,7 +1515,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.controls.combobox?view=winui-3.0) property to `true` in `OnInitializeEditElement`method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.combobox?view=windows-app-sdk-2.0) property to `true` in `OnInitializeEditElement`method by overriding existing renderer.
 Below code, creates `TreeGridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in [SfTreeGrid.CellRenderers](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CellRenderers) collection.
 
 {% tabs %}
