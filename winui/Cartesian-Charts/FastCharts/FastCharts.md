@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: fast charts in winui, fast charts, winui fast charts customization, syncfusion winui fast charts, winui sfcartesianchart.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Fast Charts in WinUI Chart

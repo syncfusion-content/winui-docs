@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui fast scatter chart, winui sfcartesianchart, winui fast scatter chart customization, syncfusion winui fast scatter chart, fast scatter chart configuration.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Fast Scatter Series in WinUI Chart
