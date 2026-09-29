@@ -5,6 +5,7 @@ description: UI Customization in TreeGrid styles column headers and grid visuals
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Customization in WinUI TreeGrid

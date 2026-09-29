@@ -5,6 +5,7 @@ description: Segment spacing in the WinUI Funnel Chart controls the gap between 
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Segment Spacing in WinUI Funnel Chart

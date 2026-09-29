@@ -5,6 +5,7 @@ description: Appearance in the WinUI Pyramid Chart allows you to customize chart
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WinUI Pyramid Chart

@@ -5,6 +5,7 @@ description: Axis types in the WinUI Polar Chart provide different ways to repre
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis Types in WinUI Polar Chart

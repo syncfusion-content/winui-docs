@@ -5,6 +5,7 @@ description: Bar pointer in the WinUI Linear Gauge displays values as filled bar
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Bar Pointer in WinUI Linear Gauge

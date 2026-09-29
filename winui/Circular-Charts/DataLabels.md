@@ -5,6 +5,7 @@ description: Data labels in the WinUI Circular Chart display data values directl
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Label in WinUI Circular Chart

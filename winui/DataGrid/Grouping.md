@@ -5,6 +5,7 @@ description: Grouping in Data Grid organizes and displays data in groups to impr
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping in WinUI Data Grid

@@ -5,6 +5,7 @@ description: Conditional Styling in TreeGrid applies styles dynamically based on
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in WinUI TreeGrid

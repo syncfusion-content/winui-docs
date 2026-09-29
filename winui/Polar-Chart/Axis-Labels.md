@@ -5,6 +5,7 @@ description: Axis labels in the WinUI Polar Chart display values and categories,
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis Labels in WinUI Polar Chart

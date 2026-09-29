@@ -5,6 +5,7 @@ description: Title in the WinUI Pyramid Chart displays descriptive text for the 
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in WinUI Pyramid Chart

@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: crosshair in winui chart, winui sfcartesianchart crosshair, winui chart crosshair customization, syncfusion winui chart crosshair, winui sfcartesianchart crosshair settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Crosshair in WinUI Chart

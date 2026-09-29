@@ -5,6 +5,7 @@ description: Content pointer in the WinUI Radial Gauge displays custom text and 
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Content Pointer in WinUI Radial Gauge

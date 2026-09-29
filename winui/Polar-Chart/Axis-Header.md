@@ -5,6 +5,7 @@ description: Axis title in the WinUI Polar Chart displays descriptive text for c
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis Title in WinUI Polar Chart

@@ -5,6 +5,7 @@ description: Pointers in the WinUI Linear Gauge indicate values on the gauge sca
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Pointers in WinUI Linear Gauge

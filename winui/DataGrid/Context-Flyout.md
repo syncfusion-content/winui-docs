@@ -5,6 +5,7 @@ description: Context flyout in Data Grid provides quick access to commands and a
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Context Flyout in WinUI Data Grid

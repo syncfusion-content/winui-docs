@@ -6,6 +6,7 @@ platform: WinUI
 control: SfChart
 documentation: ug
 keywords: stacked group chart in winui chart, winui stacked group chart customization, syncfusion winui stacked group chart, winui sfcartesianchart stacked group chart settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Stacked Group Chart in WinUI Chart

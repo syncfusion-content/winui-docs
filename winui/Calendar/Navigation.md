@@ -5,6 +5,7 @@ description: Learn how to navigate between month, year, decade and century views
 platform: winui
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Navigation in WinUI Calendar

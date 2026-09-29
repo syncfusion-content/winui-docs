@@ -5,6 +5,7 @@ description: Rendering mode in the WinUI Funnel Chart controls how funnel segmen
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Rendering Mode in WinUI Funnel Chart

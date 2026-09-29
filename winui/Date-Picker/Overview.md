@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio WinUI Date 
 platform: winui
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WinUI Date Picker Control

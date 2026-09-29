@@ -5,6 +5,7 @@ description: Learn how to select single or multiple dates in WinUI Calendar cont
 platform: winui
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Selection in WinUI Calendar

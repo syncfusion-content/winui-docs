@@ -5,6 +5,7 @@ description: Neck width in the WinUI Funnel Chart controls the width of the funn
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Neck Width in WinUI Funnel Chart

@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui fast step line chart, winui sfcartesianchart, winui fast step line chart customization, syncfusion winui fast step line chart, fast step line chart settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Fast Step Line Series in WinUI Chart

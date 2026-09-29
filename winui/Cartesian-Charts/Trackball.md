@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: trackball in winui chart, winui sfcartesianchart trackball, winui chart trackball customization, syncfusion winui chart trackball, winui sfcartesianchart trackball settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trackball in WinUI Chart
