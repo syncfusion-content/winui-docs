@@ -61,7 +61,7 @@ dockingManager.Panes.Add(floatingPane);
 {% endhighlight %}
 {% endtabs %}
 
-![Floating Window](Images/winui-floating.gif)
+![Floating Window](Images/winui-floating.png)
 
 ## Floating Multiple Windows
 
@@ -84,9 +84,9 @@ The DockingManager control supports multiple floating windows within the same la
             <TextBlock Text="Solution Explorer Content"/>
         </docking:DockPane>
 
-        <docking:DockPane Header="Properties"
+        <docking:DockPane Header="ToolBox"
                           DockState="Floating">
-            <TextBlock Text="Properties Window"/>
+            <TextBlock Text="ToolBox Window"/>
         </docking:DockPane>
 
     </docking:SfDockingManager>
@@ -108,18 +108,20 @@ DockPane solutionExplorerPane = new DockPane()
     DockState = DockState.Floating
 };
 
-DockPane propertiesPane = new DockPane()
+DockPane toolBoxPane = new DockPane()
 {
-    Header = "Properties",
+    Header = "ToolBox",
     DockState = DockState.Floating
 };
 
 dockingManager.Panes.Add(documentPane);
 dockingManager.Panes.Add(solutionExplorerPane);
-dockingManager.Panes.Add(propertiesPane);
+dockingManager.Panes.Add(toolBoxPane);
 
 {% endhighlight %}
 {% endtabs %}
+
+![MultipleFloating Window](Images/winui-multiplefloating.png)
 
 ## Reposition a Floating Window
 

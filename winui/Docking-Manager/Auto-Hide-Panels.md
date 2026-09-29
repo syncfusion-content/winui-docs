@@ -22,19 +22,35 @@ A pane can be displayed as an auto-hidden window by setting its `DockState` prop
 
 <Grid>
     <docking:SfDockingManager>
-
-        <docking:DockPane Header="Toolbox"
-                          DockDirection="Left"
-                          DockState="AutoHidden">
-            <TextBlock Text="Toolbox Content"/>
+         <!-- Left Docked -->
+        <docking:DockPane x:Name="ToolBoxPane"
+                Header="Toolbox"
+                DockDirection="Left"
+                DockState="Docked">
+            <TextBlock Text="Toolbox Content" Margin="10"/>
         </docking:DockPane>
-
-        <docking:DockPane Header="MainWindow.xaml"
-                          DockState="Document">
-            <TextBox Text="Main document editor..."
-                     AcceptsReturn="True"/>
+        <!-- Right Docked -->
+        <docking:DockPane x:Name="SolutionExplorerPane"
+                Header="Solution Explorer"
+                DockDirection="Right"
+                DockState="Docked">
+            <TextBlock Text="Solution Explorer Content" Margin="10"/>
         </docking:DockPane>
-
+        <!-- Bottom Docked -->
+        <docking:DockPane x:Name="OutputPane"
+                Header="Output"
+                DockDirection="Bottom"
+                DockState="Docked">
+            <TextBlock Text="Build Output Window" Margin="10"/>
+        </docking:DockPane>
+        <!-- Another Document Window -->
+        <docking:DockPane x:Name="Document2"
+                Header="App.xaml"
+                DockState="Document">
+            <TextBox AcceptsReturn="True"
+        Text="Another document..."
+        Margin="5"/>
+        </docking:DockPane>
     </docking:SfDockingManager>
 </Grid>
 
@@ -46,20 +62,46 @@ DockPane toolBoxPane = new DockPane()
 {
     Header = "Toolbox",
     DockDirection = DockDirection.Left,
-    DockState = DockState.AutoHidden,
+    DockState = DockState.Docked,
     Content = new TextBlock()
     {
         Text = "Toolbox Content"
     }
 };
-
+DockPane SolutionExplorerPane = new DockPane()
+{
+    Header = "Solution Explorer",
+    DockDirection = DockDirection.Right,
+    DockState = DockState.Docked,
+    Content = new TextBlock()
+    {
+        Text = "Solution Explorer Content"
+    }
+};
+DockPane OutputPane = new DockPane()
+{
+    Header = "Output",
+    DockDirection = DockDirection.Bottom,
+    DockState = DockState.Docked,
+    Content = new TextBlock()
+    {
+        Text = "Output Content"
+    }
+};
 DockPane documentPane = new DockPane()
 {
-    Header = "MainWindow.xaml",
-    DockState = DockState.Document
+    Header = "App.xaml",
+    DockDirection = DockDirection.Left,
+    DockState = DockState.Docked,
+    Content = new TextBlock()
+    {
+        Text = "App.xaml Content"
+    }
 };
 
 dockingManager.Panes.Add(toolBoxPane);
+dockingManager.Panes.Add(SolutionExplorerPane);
+dockingManager.Panes.Add(OutputPane);
 dockingManager.Panes.Add(documentPane);
 
 {% endhighlight %}

@@ -73,6 +73,8 @@ dockingManager.Panes.Add(documentPane);
 {% endhighlight %}
 {% endtabs %}
 
+![Dock Pane](Images/winui-dock.png)
+
 ## Document Window
 
 A document window is displayed in the central document area and is commonly used to host editable content such as source files, documents, and design surfaces.
@@ -119,6 +121,8 @@ dockingManager.Panes.Add(documentPane2);
 
 {% endhighlight %}
 {% endtabs %}
+
+![Document Pane](Images/winui-document.png)
 
 ## Floating Window
 
@@ -169,6 +173,8 @@ dockingManager.Panes.Add(floatingPane);
 
 {% endhighlight %}
 {% endtabs %}
+
+![Floating Window](Images/winui-floating.png)
 
 ## Auto-Hidden Window
 
@@ -222,6 +228,8 @@ dockingManager.Panes.Add(documentPane);
 {% endhighlight %}
 {% endtabs %}
 
+![Auto Hide a Pane](Images/winui-autohide.gif)
+
 ## Tabbed Window
 
 A tabbed window groups multiple panes within the same docking region and displays them as tabs.
@@ -273,3 +281,5 @@ dockingManager.Panes.Add(errorListPane);
 
 {% endhighlight %}
 {% endtabs %}
+
+![Document Tabgroup](Images/winui-document-tab-group.png)

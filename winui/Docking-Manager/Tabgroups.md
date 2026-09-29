@@ -58,6 +58,8 @@ dockingManager.Panes.Add(documentPane2);
 {% endhighlight %}
 {% endtabs %}
 
+![Document Pane](Images/winui-document.png)
+
 ## Create Tabbed Groups
 
 Tool windows can be grouped into the same docking region and displayed as tabs. This allows users to switch between related windows without occupying additional layout space.
@@ -113,3 +115,5 @@ dockingManager.Panes.Add(errorListPane);
 
 {% endhighlight %}
 {% endtabs %}
+
+![Document Tabgroup](Images/winui-document-tab-group.png)
