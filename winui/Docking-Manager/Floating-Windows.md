@@ -9,7 +9,7 @@ documentation: ug
 
 # Floating Windows
 
-The DockingManager control allows panes to be displayed as floating windows. Floating windows can be moved independently of the docking layout, providing greater flexibility for organizing content and improving productivity in multi-window and multi-monitor environments.
+The DockingManager control allows panes to be displayed as floating windows. Floating windows can be moved independently within the DockingManager layout, providing greater flexibility for organizing content and customizing the workspace.
 
 ## Create a Floating Window
 
@@ -63,7 +63,7 @@ dockingManager.Panes.Add(floatingPane);
 
 ## Floating Multiple Windows
 
-The DockingManager control supports multiple floating windows within the same application. Floating windows can be positioned independently and moved freely across the desktop.
+The DockingManager control supports multiple floating windows within the same layout. Floating windows can be positioned independently and rearranged to suit different workspace requirements.
 
 {% tabs %}
 {% highlight xaml %}

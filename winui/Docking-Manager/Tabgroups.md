@@ -58,9 +58,13 @@ dockingManager.Panes.Add(documentPane2);
 {% endhighlight %}
 {% endtabs %}
 
-## Create Tab Groups
+## Create Tabbed Groups
 
 Tool windows can be grouped into the same docking region and displayed as tabs. This allows users to switch between related windows without occupying additional layout space.
+
+Use the `TargetNameInTabbedState` property to specify the pane with which the current pane should be grouped as a tab.
+
+The following example groups the **Error List** pane with the **Output** pane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,54 +88,6 @@ Tool windows can be grouped into the same docking region and displayed as tabs. 
 
     </docking:SfDockingManager>
 </Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-DockPane outputPane = new DockPane()
-{
-    Header = "Output",
-    DockDirection = DockDirection.Bottom,
-    DockState = DockState.Docked
-};
-
-DockPane errorListPane = new DockPane()
-{
-    Header = "Error List",
-    DockDirection = DockDirection.Bottom,
-    DockState = DockState.Tabbed,
-    TargetNameInTabbedState = "OutputPane"
-};
-
-dockingManager.Panes.Add(outputPane);
-dockingManager.Panes.Add(errorListPane);
-
-{% endhighlight %}
-{% endtabs %}
-
-## TargetNameInTabbedState
-
-The `TargetNameInTabbedState` property specifies the target pane with which the current pane should be grouped as a tab.
-
-The following example tabs the **Error List** pane with the **Output** pane.
-
-{% tabs %}
-{% highlight xaml %}
-
-<docking:DockPane x:Name="OutputPane"
-                  Header="Output"
-                  DockDirection="Bottom"
-                  DockState="Docked">
-    <TextBlock Text="Build Output Window"/>
-</docking:DockPane>
-
-<docking:DockPane Header="Error List"
-                  DockDirection="Bottom"
-                  DockState="Tabbed"
-                  TargetNameInTabbedState="OutputPane">
-    <TextBlock Text="Error List Content"/>
-</docking:DockPane>
 
 {% endhighlight %}
 

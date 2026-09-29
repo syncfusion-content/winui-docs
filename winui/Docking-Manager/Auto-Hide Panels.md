@@ -67,52 +67,5 @@ dockingManager.Panes.Add(documentPane);
 
 ## Display an Auto-Hidden Pane
 
-When a pane is auto-hidden, it is displayed as a tab along the edge of the docking layout. Selecting the tab temporarily expands the pane and displays its content.
+When a pane is auto-hidden, it is displayed as a tab along the edge of the docking layout. Selecting the tab temporarily expands the pane and displays its content. When the pane loses focus, it automatically collapses back to its hidden state.
 
-{% tabs %}
-{% highlight xaml %}
-
-<Grid>
-    <docking:SfDockingManager>
-
-        <docking:DockPane Header="Solution Explorer"
-                          DockDirection="Right"
-                          DockState="AutoHidden">
-            <TextBlock Text="Solution Explorer Content"/>
-        </docking:DockPane>
-
-        <docking:DockPane Header="MainWindow.xaml"
-                          DockState="Document">
-            <TextBox Text="Main document editor..."
-                     AcceptsReturn="True"/>
-        </docking:DockPane>
-
-    </docking:SfDockingManager>
-</Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-DockPane solutionExplorerPane = new DockPane()
-{
-    Header = "Solution Explorer",
-    DockDirection = DockDirection.Right,
-    DockState = DockState.AutoHidden,
-    Content = new TextBlock()
-    {
-        Text = "Solution Explorer Content"
-    }
-};
-
-DockPane documentPane = new DockPane()
-{
-    Header = "MainWindow.xaml",
-    DockState = DockState.Document
-};
-
-dockingManager.Panes.Add(solutionExplorerPane);
-dockingManager.Panes.Add(documentPane);
-
-{% endhighlight %}
-{% endtabs %}
