@@ -5,6 +5,7 @@ description: Data labels in the WinUI Polar Chart display data values directly o
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Labels in WinUI Polar Chart

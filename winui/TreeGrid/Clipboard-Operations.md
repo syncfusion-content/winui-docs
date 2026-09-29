@@ -5,6 +5,7 @@ description: Clipboard Operations in TreeGrid enables copy, cut, and paste actio
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Clipboard Operations in WinUI TreeGrid

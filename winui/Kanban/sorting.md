@@ -5,6 +5,7 @@ description:  Learn about Sorting support in Syncfusion<sup>®</sup> WinUI Kanba
 platform: WinUI
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Sorting in WinUI Kanban Board

@@ -5,6 +5,7 @@ description: Title in the WinUI Polar Chart displays descriptive text for the ch
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in WinUI Polar Chart

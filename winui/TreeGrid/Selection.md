@@ -5,6 +5,7 @@ description: Selection in TreeGrid supports row and cell selection with navigati
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in WinUI TreeGrid

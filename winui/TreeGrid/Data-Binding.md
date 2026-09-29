@@ -5,6 +5,7 @@ description: DataBinding in TreeGrid includes various binding options for effici
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in WinUI TreeGrid

@@ -5,6 +5,7 @@ description: Polar line chart in the WinUI Polar Chart visualizes data using rad
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Polar Line Chart in WinUI Polar Chart

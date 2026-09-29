@@ -6,6 +6,7 @@ platform: WinUI
 control: SfChart
 documentation: ug
 keywords: winui stacked 100 charts, winui stacked 100 charts customization, 100% charts, cumulative chart in winui, winui sfcartesianchart, syncfusion winui cumulative chart, stackedcolum, stackedline, stackedarea.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Stacked 100 Charts in WinUI Chart

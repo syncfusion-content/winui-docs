@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WinUI Polar Chart co
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinUI Polar Chart

@@ -5,6 +5,7 @@ description: Clipboard operations in Data Grid enable cutting, copying, and past
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

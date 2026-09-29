@@ -8,6 +8,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui chart overview, introduction to winui charts, exploring winui chart capabilities.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WinUI Chart Control

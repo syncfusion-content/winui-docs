@@ -5,6 +5,7 @@ description: Doughnut chart in the WinUI Circular Chart displays proportional da
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Doughnut Chart in WinUI Circular Chart

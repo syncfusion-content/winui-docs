@@ -5,6 +5,7 @@ description: Annotation in the WinUI Radial Gauge enables custom content to be p
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotation in WinUI Radial Gauge

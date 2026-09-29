@@ -5,6 +5,7 @@ description: Selection in the WinUI Funnel Chart enables users to highlight and 
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection in WinUI Funnel Chart

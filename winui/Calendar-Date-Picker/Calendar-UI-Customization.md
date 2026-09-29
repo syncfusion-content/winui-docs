@@ -5,6 +5,7 @@ description: Learn how to customize the calendar UI in WinUI Calendar Date Picke
 platform: winui
 control: SfCalendarDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # UI Customization in WinUI Calendar Date Picker

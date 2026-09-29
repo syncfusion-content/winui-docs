@@ -5,6 +5,7 @@ description: Row Drag and Drop in TreeGrid enables interactive row reordering wi
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Drag and Drop in WinUI TreeGrid

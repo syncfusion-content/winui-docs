@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WinUI Circular Chart
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinUI Circular Chart

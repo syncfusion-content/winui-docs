@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui chart title, winui sfcartesianchart title, winui chart title customization, syncfusion winui chart title, winui sfcartesianchart title configuration.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in WinUI Chart

@@ -5,6 +5,7 @@ description: Learn about week number features and customization options in WinUI
 platform: winui
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Week Numbers in WinUI Calendar

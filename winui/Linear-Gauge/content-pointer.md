@@ -5,6 +5,7 @@ description: Content pointer in the WinUI Linear Gauge displays custom content a
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Content Pointer in WinUI Linear Gauge
