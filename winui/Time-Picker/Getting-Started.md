@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion WinUI Time Picker cont
 platform: winui
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WinUI Time Picker control

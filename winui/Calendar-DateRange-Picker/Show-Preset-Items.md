@@ -5,6 +5,7 @@ description: Learn how to show preset items in WinUI Calendar DateRange Picker d
 platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Preset Items in WinUI Calendar DateRange Picker

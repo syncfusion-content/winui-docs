@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion WinUI Date Picker cont
 platform: winui
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WinUI Date Picker

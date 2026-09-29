@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio WinUI Calen
 platform: winui
 control: SfCalendarDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WinUI Calendar Date Picker Control

@@ -5,6 +5,7 @@ description: Data labels in the WinUI Pyramid Chart display values directly on c
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Labels in WinUI Pyramid Chart

@@ -5,6 +5,7 @@ description: Selection in the WinUI Pyramid Chart enables users to highlight and
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection in WinUI Pyramid Chart

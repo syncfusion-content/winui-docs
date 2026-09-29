@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion<sup>®</sup> Essential Studi
 platform: winui
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # About Syncfusion WinUI Kanban Board Control

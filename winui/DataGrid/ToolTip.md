@@ -5,6 +5,7 @@ description: ToolTip in Data Grid displays additional information for cells and 
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # ToolTip in WinUI Data Grid

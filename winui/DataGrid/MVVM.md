@@ -5,6 +5,7 @@ description: MVVM support in Data Grid enables data binding, commands, and custo
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in WinUI Data Grid

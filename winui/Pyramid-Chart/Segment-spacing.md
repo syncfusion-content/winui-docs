@@ -5,6 +5,7 @@ description: Segment Spacing in the WinUI Pyramid Chart controls the spacing bet
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Segment Spacing in WinUI Pyramid Chart

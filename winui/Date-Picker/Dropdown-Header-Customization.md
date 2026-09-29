@@ -5,6 +5,7 @@ description: Learn how to customize the dropdown header in WinUI Date Picker con
 platform: winui
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Dropdown Header Customization in WinUI Date Picker

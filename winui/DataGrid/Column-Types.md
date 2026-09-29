@@ -5,6 +5,7 @@ description: Column types in Data Grid provide specialized columns for displayin
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

@@ -5,6 +5,7 @@ description: Explode segments in the WinUI Pyramid Chart emphasize individual or
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Explode Segments in WinUI Pyramid Chart

@@ -5,6 +5,7 @@ description: Symbology types in the WinUI Barcode support a wide range of one-di
 platform: WinUI
 control: Barcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Types in WinUI Barcode

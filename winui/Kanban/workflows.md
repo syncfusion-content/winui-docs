@@ -5,6 +5,7 @@ description: Learn about Workflows support in Syncfusion<sup>®</sup> WinUI Kanb
 platform: WinUI
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Workflows in WinUI Kanban Board

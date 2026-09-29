@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WinUI Funnel Chart c
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinUI Funnel Chart

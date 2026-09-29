@@ -5,6 +5,7 @@ description: Conditional styling in Data Grid customizes the appearance of cells
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in WinUI Data Grid

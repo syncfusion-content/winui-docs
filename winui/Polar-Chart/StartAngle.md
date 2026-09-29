@@ -5,6 +5,7 @@ description: Rendering Position in the WinUI Polar Chart controls the initial re
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Rendering Position in WinUI Polar Chart

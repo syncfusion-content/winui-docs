@@ -5,6 +5,7 @@ description: Customization in the WinUI Barcode allows you to modify barcode app
 platform: WinUI
 control: Barcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Customization in WinUI Barcode

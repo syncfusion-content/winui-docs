@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® WinUI Linear Gauge c
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinUI Linear Gauge

@@ -5,6 +5,7 @@ description: Learn about the Syncfusion Essential Studio WinUI Calendar DateRang
 platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # About Syncfusion WinUI Calendar DateRange Picker Control

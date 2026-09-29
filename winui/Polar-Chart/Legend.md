@@ -5,6 +5,7 @@ description: Legend in the WinUI Polar Chart identifies data series and chart el
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WinUI Polar Chart

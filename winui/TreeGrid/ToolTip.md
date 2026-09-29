@@ -5,6 +5,7 @@ description: ToolTip in TreeGrid displays additional information for cells, rows
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # ToolTip in WinUI TreeGrid

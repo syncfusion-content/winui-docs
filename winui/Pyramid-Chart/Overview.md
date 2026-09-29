@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® WinUI
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® WinUI Pyramid Chart Control

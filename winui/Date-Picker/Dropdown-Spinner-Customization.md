@@ -5,6 +5,7 @@ description: Learn how to customize the dropdown spinner in WinUI Date Picker co
 platform: winui
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Dropdown Spinner Customization in WinUI Date Picker

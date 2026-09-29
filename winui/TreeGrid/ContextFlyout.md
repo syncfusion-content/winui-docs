@@ -5,6 +5,7 @@ description: Context Flyout in TreeGrid provides customizable right-click menus 
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Context Flyout in WinUI TreeGrid

@@ -5,6 +5,7 @@ description: Data Validation in TreeGrid uses INotifyDataErrorInfo and attribute
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

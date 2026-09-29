@@ -5,6 +5,7 @@ description: UI customization in Data Grid allows styling, templates, and visual
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Customization in WinUI Data Grid

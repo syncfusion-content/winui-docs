@@ -5,6 +5,7 @@ description: Appearance in the WinUI Circular Chart allows you to customize char
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WinUI Circular Chart
