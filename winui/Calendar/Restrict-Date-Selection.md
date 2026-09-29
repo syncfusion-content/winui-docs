@@ -5,6 +5,7 @@ description: Learn how to restrict date selection within a particular range in W
 platform: winui
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Restrict Date Selection in WinUI Calendar

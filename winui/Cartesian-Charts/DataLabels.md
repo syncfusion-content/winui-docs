@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: data label in winui chart, winui sfcartesianchart data label, winui data label customization, syncfusion winui data label, winui chart data label overview.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Label in WinUI Chart

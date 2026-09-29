@@ -5,6 +5,7 @@ description: Printing in Data Grid enables grid data to be printed with customiz
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in WinUI Data Grid

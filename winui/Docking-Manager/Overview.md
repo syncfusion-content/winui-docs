@@ -30,3 +30,5 @@ The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framewor
 * **MVVM support:** Bind panes using ItemsSource and integrate docking functionality into MVVM applications.
 
 * **Visual Studio-style user experience:** Create familiar desktop application layouts with docking behaviors commonly found in development and productivity tools.
+
+![Docking Control Overview](Images/winui-docklayout-overview.webp)

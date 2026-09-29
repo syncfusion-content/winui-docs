@@ -5,6 +5,7 @@ description: Load On Demand in TreeGrid allows expanding nodes dynamically and f
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Load On Demand in WinUI TreeGrid

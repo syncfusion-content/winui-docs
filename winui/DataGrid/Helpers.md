@@ -5,6 +5,7 @@ description: Helper methods in Data Grid simplify common tasks such as retrievin
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in WinUI Data Grid

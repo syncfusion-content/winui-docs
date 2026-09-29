@@ -5,6 +5,7 @@ description: Axis in the WinUI Radial Gauge defines the scale, ranges, intervals
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis in WinUI Radial Gauge

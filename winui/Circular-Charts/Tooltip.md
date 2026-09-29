@@ -5,6 +5,7 @@ description: Tooltip in the WinUI Circular Chart displays detailed information a
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WinUI Circular Chart

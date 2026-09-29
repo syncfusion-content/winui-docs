@@ -5,6 +5,7 @@ description: Data validation in Data Grid ensures data accuracy and integrity by
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Validation in WinUI Data Grid

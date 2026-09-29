@@ -5,6 +5,7 @@ description: Node CheckBox in TreeGrid adds checkboxes to nodes for selection, t
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Node CheckBox in WinUI TreeGrid
 

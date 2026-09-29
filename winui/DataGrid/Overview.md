@@ -6,6 +6,7 @@ description: Learn about the introduction of Syncfusion® WinUI Data Grid contro
 platform: WinUI
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion® WinUI Data Grid Control

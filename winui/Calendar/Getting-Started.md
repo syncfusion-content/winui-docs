@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion WinUI Calendar control
 platform: winui
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Getting Started with WinUI Calendar

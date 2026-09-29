@@ -5,6 +5,7 @@ description: Learn how to restrict date range selection within a particular rang
 platform: winui
 control: SfCalendarDateRangePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Restrict DateRange Selection in WinUI Calendar DateRange Picker

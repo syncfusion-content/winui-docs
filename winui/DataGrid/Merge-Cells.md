@@ -5,6 +5,7 @@ description: Merge cells in Data Grid combines adjacent cells with similar value
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---	
 
 # Merge Cells in WinUI Data Grid

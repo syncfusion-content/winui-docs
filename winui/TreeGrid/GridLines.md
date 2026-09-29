@@ -5,6 +5,7 @@ description: Grid Lines Customization in TreeGrid configures vertical and horizo
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grid Lines Customization in WinUI TreeGrid

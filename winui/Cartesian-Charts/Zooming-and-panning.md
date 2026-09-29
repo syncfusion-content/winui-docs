@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: zooming and panning in winui chart, winui sfcartesianchart zooming and panning, winui chart zooming and panning customization, syncfusion winui chart zooming and panning, winui sfcartesianchart zooming and panning settings, winui chart zooming and panning properties.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Zooming and Panning in WinUI Chart

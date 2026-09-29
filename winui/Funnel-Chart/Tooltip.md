@@ -5,6 +5,7 @@ description: Tooltip in the WinUI Funnel Chart displays detailed information abo
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WinUI Funnel Chart

@@ -5,6 +5,7 @@ description: MVVM in TreeGrid enables binding of selected items, commands, and b
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in WinUI TreeGrid

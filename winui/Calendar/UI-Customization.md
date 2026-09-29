@@ -5,6 +5,7 @@ description: Learn about UI customization options available in WinUI Calendar co
 platform: winui
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # UI Customization in WinUI Calendar

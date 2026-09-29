@@ -5,6 +5,7 @@ description: Learn how to restrict time selection within a particular range in W
 platform: winui
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Time Restriction in WinUI Time Picker

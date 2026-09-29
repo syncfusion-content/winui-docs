@@ -5,6 +5,7 @@ description: CRUD operations in Data Grid offers support to add, delete, and upd
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # CRUD Operations in WinUI Data Grid
