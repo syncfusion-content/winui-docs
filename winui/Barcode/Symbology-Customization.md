@@ -5,6 +5,7 @@ description: Symbology customization in the WinUI Barcode allows you to configur
 platform: WinUI
 control: Barcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Customization in WinUI Barcode

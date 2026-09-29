@@ -5,6 +5,7 @@ description: Filtering in Data Grid helps users display relevant data by applyin
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Filtering in WinUI Data Grid
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied through the UI as well as the programmatic filters. 

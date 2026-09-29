@@ -5,6 +5,7 @@ description: Unbound columns in Data Grid display calculated or custom values an
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Unbound Column in WinUI Data Grid

@@ -5,6 +5,7 @@ description: Editing in TreeGrid enables cell editing with validation, cursor pl
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in WinUI TreeGrid

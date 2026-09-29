@@ -5,6 +5,7 @@ description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban B
 platform: winui
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards in WinUI Kanban Board

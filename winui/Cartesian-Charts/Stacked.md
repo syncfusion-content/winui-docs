@@ -6,6 +6,7 @@ platform: WinUI
 control: SfChart
 documentation: ug
 keywords: winui stacked charts, winui sfcartesianchart, winui stacked charts customization, syncfusion winui stacked charts, winui sfcartesianchart stacked charts configuration, stackedcolum, stackedline, stackedarea.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Stacked Charts in WinUI Chart

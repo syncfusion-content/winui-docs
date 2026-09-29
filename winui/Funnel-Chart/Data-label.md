@@ -5,6 +5,7 @@ description: Data labels in the WinUI Funnel Chart display values directly on ch
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Label in WinUI Funnel Chart

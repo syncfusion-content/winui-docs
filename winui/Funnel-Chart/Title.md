@@ -5,6 +5,7 @@ description: Title in the WinUI Funnel Chart displays descriptive text for the c
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in WinUI Funnel Chart

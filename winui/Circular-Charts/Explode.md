@@ -5,6 +5,7 @@ description: Explode segments in the WinUI Circular Chart emphasize individual o
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Explode Segments in WinUI Circular Chart

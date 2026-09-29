@@ -5,6 +5,7 @@ description: Legend in the WinUI Pyramid Chart identifies chart segments and cat
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WinUI Pyramid Chart

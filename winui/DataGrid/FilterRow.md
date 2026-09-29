@@ -5,6 +5,7 @@ description: Filter row in Data Grid provides built-in editors and filter condit
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filter Row in WinUI Data Grid

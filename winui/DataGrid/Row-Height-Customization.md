@@ -5,6 +5,7 @@ description: Row height customization in Data Grid allows row heights to be adju
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Height Customization in WinUI Data Grid

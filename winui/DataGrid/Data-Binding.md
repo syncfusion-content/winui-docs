@@ -5,6 +5,7 @@ description: Data binding in Data Grid enables seamless integration with data so
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in WinUI Data Grid

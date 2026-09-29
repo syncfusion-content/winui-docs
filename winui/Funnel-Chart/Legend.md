@@ -5,6 +5,7 @@ description: Legend in the WinUI Funnel Chart identifies chart segments and cate
 platform: WinUI
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in WinUI Funnel Chart

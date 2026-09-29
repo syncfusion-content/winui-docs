@@ -5,6 +5,7 @@ description: Selection in the WinUI Circular Chart enables users to highlight an
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection in WinUI Circular Chart

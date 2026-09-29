@@ -5,6 +5,7 @@ description: Performance features in Data Grid improve responsiveness through vi
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Performance in WinUI Data Grid

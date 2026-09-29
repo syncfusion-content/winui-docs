@@ -5,6 +5,7 @@ description: Tooltip in the WinUI Pyramid Chart displays detailed information ab
 platform: WinUI
 control: SfPyramidChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in WinUI Pyramid Chart

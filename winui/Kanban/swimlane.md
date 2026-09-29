@@ -5,6 +5,7 @@ description: Learn about Swimlane support in Syncfusion<sup>®</sup> WinUI Kanba
 platform: winui
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Swimlane in WinUI Kanban Board

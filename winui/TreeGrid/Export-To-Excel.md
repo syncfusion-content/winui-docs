@@ -5,6 +5,7 @@ description: Export To Excel in TreeGrid exports grid data to Excel with support
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WinUI TreeGrid

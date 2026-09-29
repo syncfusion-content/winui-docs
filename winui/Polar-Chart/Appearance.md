@@ -5,6 +5,7 @@ description: Appearance in the WinUI Polar Chart allows you to customize chart v
 platform: WinUI
 control: SfPolarChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in WinUI Polar Chart

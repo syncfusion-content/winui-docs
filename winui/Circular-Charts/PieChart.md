@@ -5,6 +5,7 @@ description: Pie chart in the WinUI Circular Chart displays proportional data as
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Pie Chart in WinUI Circular Chart

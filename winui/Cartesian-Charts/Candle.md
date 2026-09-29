@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui candle chart, candle chart customization winui, syncfusion winui candle chart, cartesian candle chart winui, winui stock chart.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Candle Chart in WinUI Chart
