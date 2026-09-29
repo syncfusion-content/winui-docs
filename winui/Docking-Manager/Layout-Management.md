@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# Layout Management
+# Layout Management in WinUI DockingManager
 
 The DockingManager control provides several layout management features that help organize application content efficiently. Panes can be positioned declaratively in XAML, arranged programmatically, moved through drag-and-drop interactions, and resized to suit different workflows.
 

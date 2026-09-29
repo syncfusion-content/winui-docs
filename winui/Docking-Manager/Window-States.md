@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Window States in WinUI DockingManager Control | Syncfusion®
-description: Learn about the different window states supported in the Syncfusion® WinUI DockingManager control.
+description: Learn about the docked, document, floating, auto-hidden, and tabbed window states supported in the Syncfusion® WinUI DockingManager control.
 platform: winui
 control: DockingManager
 documentation: ug
 ---
 
-# Window States
+# Window States in WinUI DockingManager
 
 The DockingManager control supports multiple window states that help organize application content into flexible and customizable layouts. Each state determines how a pane is displayed and interacts with other panes within the docking layout.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Auto-Hide Panels in WinUI DockingManager Control | Syncfusion®
-description: Learn how to automatically hide and display panes in the Syncfusion® WinUI DockingManager control.
+description: Learn how to configure auto-hide panels and maximize workspace utilization in the Syncfusion® WinUI DockingManager control.
 platform: winui
 control: DockingManager
 documentation: ug
 ---
 
-# Auto-Hide Panels
+# Auto-Hide Panels in WinUI DockingManager
 
 The DockingManager control allows panes to be automatically hidden when they are not in use. Auto-hidden panes remain accessible through edge tabs and can be displayed temporarily when selected.
 

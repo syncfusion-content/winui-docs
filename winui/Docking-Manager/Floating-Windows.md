@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Floating Windows in WinUI DockingManager Control | Syncfusion®
-description: Learn how to create and manage floating windows in the Syncfusion® WinUI DockingManager control.
+description: Learn how to create, reposition, and manage floating windows within the Syncfusion® WinUI DockingManager control layout.
 platform: winui
 control: DockingManager
 documentation: ug
 ---
 
-# Floating Windows
+# Floating Windows in WinUI DockingManager
 
 The DockingManager control allows panes to be displayed as floating windows. Floating windows can be moved independently within the DockingManager layout, providing greater flexibility for organizing content and customizing the workspace.
 
