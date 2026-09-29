@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: axis padding in winui chart, winui sfcartesianchart axis padding, winui chart axis padding customization, syncfusion winui chart axis padding.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis Padding in WinUI Chart
