@@ -5,6 +5,7 @@ description: Range in the WinUI Radial Gauge highlights specific value intervals
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Range in WinUI Radial Gauge

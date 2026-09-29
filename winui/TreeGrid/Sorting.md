@@ -5,6 +5,7 @@ description: Sorting in TreeGrid sorts one or more columns in ascending or desce
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in WinUI TreeGrid

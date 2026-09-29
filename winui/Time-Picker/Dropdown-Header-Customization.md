@@ -5,6 +5,7 @@ description: Learn how to customize the dropdown header in WinUI Time Picker con
 platform: winui
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Dropdown Header Customization in WinUI Time Picker

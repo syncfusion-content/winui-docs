@@ -7,6 +7,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: getting started with winui cartesian chart, winui cartesian chart setup, winui sfcartesianchart guide, winui cartesian chart basics.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with WinUI Cartesian Chart

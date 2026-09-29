@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion <sup>®</sup> WinUI Ka
 platform: winui
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with WinUI Kanban Board Control

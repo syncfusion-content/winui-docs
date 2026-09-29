@@ -5,6 +5,7 @@ description: Title in the WinUI Circular Chart displays descriptive text for the
 platform: WinUI
 control: SfCircularChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Title in WinUI Circular Chart

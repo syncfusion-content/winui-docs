@@ -5,6 +5,7 @@ description: Filtering in TreeGrid refines visible nodes with filter levels, pro
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in WinUI TreeGrid

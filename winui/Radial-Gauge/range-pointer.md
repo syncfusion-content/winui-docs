@@ -5,6 +5,7 @@ description: Range pointer in the WinUI Radial Gauge highlights values across a 
 platform: WinUI
 control: SfRadialGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Range Pointer in WinUI Radial Gauge

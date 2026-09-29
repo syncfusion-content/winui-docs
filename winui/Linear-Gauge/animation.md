@@ -5,6 +5,7 @@ description: Animation in the WinUI Linear Gauge enables smooth transitions for 
 platform: WinUI
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Animation in WinUI Linear Gauge

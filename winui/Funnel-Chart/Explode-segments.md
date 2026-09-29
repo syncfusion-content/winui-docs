@@ -5,6 +5,7 @@ description: Explode segments in the WinUI Funnel Chart emphasize individual or 
 platform: WinUI 
 control: SfFunnelChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Explode Segments in WinUI Funnel Chart

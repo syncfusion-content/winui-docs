@@ -5,6 +5,7 @@ description: Rows in TreeGrid manages row headers, indicators, and customization
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in WinUI TreeGrid

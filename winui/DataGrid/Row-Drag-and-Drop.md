@@ -5,6 +5,7 @@ description: Row drag and drop in Data Grid enables easy row reordering and reco
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Drag and Drop in WinUI Data Grid

@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio Windows F
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion WinUI TreeGrid Control

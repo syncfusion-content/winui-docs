@@ -5,6 +5,7 @@ description: Serialization and deserialization in Data Grid allow grid settings 
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in WinUI Data Grid

@@ -5,6 +5,7 @@ description: Columns in Data Grid define how data is displayed and organized, wi
 platform: WinUI
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in WinUI Data Grid

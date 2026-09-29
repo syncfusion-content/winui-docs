@@ -5,6 +5,7 @@ description: Grid lines customization in Data Grid lets you control the visibili
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grid Lines Customization in WinUI Data Grid

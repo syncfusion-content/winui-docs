@@ -6,6 +6,7 @@ platform: WinUI
 control: SfChart
 documentation: ug
 keywords: winui bubblechart, winui sfcartesianchart bubble chart, winui bubble chart customization, syncfusion winui bubble chart, winui sfcartesianchart, bubble chart settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Bubble Chart in WinUI Chart

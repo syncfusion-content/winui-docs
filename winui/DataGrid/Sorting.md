@@ -5,6 +5,7 @@ description: Sorting in Data Grid organizes data in ascending or descending orde
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

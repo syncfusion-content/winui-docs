@@ -5,6 +5,7 @@ description: Learn about Columns support in Syncfusion<sup>®</sup> WinUI Kanban
 platform: winui
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Columns in WinUI Kanban Board

@@ -5,6 +5,7 @@ description: Columns in TreeGrid enable adding, removing, customizing, resizing,
 platform: winui
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in WinUI TreeGrid

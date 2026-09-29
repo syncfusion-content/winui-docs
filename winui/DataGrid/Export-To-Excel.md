@@ -5,6 +5,7 @@ description: Export To Excel in Data Grid enables grid data to be exported to Ex
 platform: winui
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WinUI Data Grid
