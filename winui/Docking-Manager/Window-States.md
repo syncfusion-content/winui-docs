@@ -19,7 +19,7 @@ The following window states are supported:
 * AutoHidden
 * Tabbed
 
-![Window States](Images/dock-types.webp)
+![Window States](Images/dock-types.png)
 
 ## Docked Window
 
