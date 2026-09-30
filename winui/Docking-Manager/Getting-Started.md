@@ -106,7 +106,7 @@ The DockingManager control supports the following docking states:
 * **AutoHidden** - Hides a pane until it is activated.
 * **Tabbed** - Groups panes within a tabbed layout.
 
-![Dock States in WinUI Docking](Images/dock-types.webp)
+![Dock States in WinUI Docking](Images/dock-types.png)
 
 ## Add a floating window
 
