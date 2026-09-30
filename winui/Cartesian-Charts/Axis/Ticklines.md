@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: tick lines in winui chart, winui sfcartesianchart tick lines, winui chart tick lines customization, syncfusion winui chart tick lines.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tick Lines in WinUI Chart
