@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: winui fast line chart, winui sfcartesianchart, fast line chart, winui fast line chart customization, syncfusion winui fast line chart, fast line chart settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Fast Line Series in WinUI Chart

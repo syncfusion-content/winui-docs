@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: grid lines in winui chart, winui sfcartesianchart grid lines, winui chart grid lines customization, syncfusion winui chart grid lines, winui sfcartesianchart grid lines settings.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Grid Lines in WinUI Chart

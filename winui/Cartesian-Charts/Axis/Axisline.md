@@ -6,6 +6,7 @@ platform: WinUI
 control: SfCartesianChart
 documentation: ug
 keywords: axis line in winui chart, winui sfcartesianchart axis line, syncfusion winui chart axis line, customizing axis line in winui, winui sfcartesianchart axis line configuration.
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis Line in WinUI Chart
