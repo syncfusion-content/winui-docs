@@ -393,7 +393,7 @@ DockPane ToolBoxPane = new DockPane()
 
 DockPane SolutionExplorerPane = new DockPane()
 {
-    Header = "Error List",
+    Header = "SolutionExplorer",
     DockDirection = DockDirection.Right,
     DockState = DockState.Docked,
     TargetNameInTabbedState = "ToolBoxPane"
@@ -406,3 +406,55 @@ dockingManager.Panes.Add(SolutionExplorerPane);
 {% endtabs %}
 
 ![Document Tabgroup](Images/winui-targetNameInDockedState.png)
+
+The following example docks the **SolutionExplorer** pane to the **top side** of the **ToolBox** pane.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <docking:SfDockingManager>
+
+        <docking:DockPane x:Name="ToolBoxPane"
+                          Header="ToolBox"
+                          DockDirection="Left"
+                          DockState="Docked">
+            <TextBlock Text="ToolBox Content"/>
+        </docking:DockPane>
+
+        <docking:DockPane Header="SolutionExplorer"
+                          DockDirection="Top"
+                          DockState="Docked"
+                          TargetNameInDockedState="ToolBoxPane">
+            <TextBlock Text="SolutionExplorer Content"/>
+        </docking:DockPane>
+
+    </docking:SfDockingManager>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane ToolBoxPane = new DockPane()
+{
+    Header = "ToolBox",
+    DockDirection = DockDirection.Left,
+    DockState = DockState.Docked
+};
+
+DockPane SolutionExplorerPane = new DockPane()
+{
+    Header = "SolutionExplorer",
+    DockDirection = DockDirection.Top,
+    DockState = DockState.Docked,
+    TargetNameInTabbedState = "ToolBoxPane"
+};
+
+dockingManager.Panes.Add(ToolBoxPane);
+dockingManager.Panes.Add(SolutionExplorerPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Document Tabgroup](Images/winui-topbottom.png)
