@@ -123,33 +123,4 @@ dockingManager.Panes.Add(toolBoxPane);
 
 ![MultipleFloating Window](Images/winui-multiplefloating.png)
 
-## Reposition a Floating Window
-
-Floating windows can be repositioned using drag-and-drop interactions. Users can move floating windows anywhere on the desktop and place them according to their workflow requirements.
-
-When a floating window is dragged over the docking layout, docking targets are displayed, allowing the window to be docked back into the layout.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Grid>
-    <docking:SfDockingManager>
-
-        <docking:DockPane Header="MainWindow.xaml"
-                          DockState="Document">
-            <TextBox Text="Main document editor..."
-                     AcceptsReturn="True"/>
-        </docking:DockPane>
-
-        <docking:DockPane Header="Solution Explorer"
-                          DockState="Floating">
-            <TextBlock Text="Solution Explorer Content"/>
-        </docking:DockPane>
-
-    </docking:SfDockingManager>
-</Grid>
-
-{% endhighlight %}
-{% endtabs %}
-
 

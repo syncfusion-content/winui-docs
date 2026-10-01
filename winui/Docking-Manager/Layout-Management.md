@@ -75,13 +75,14 @@ dockingManager.Panes.Add(documentPane);
 
 {% endhighlight %}
 
-## Drag-and-Drop Docking
+## Drag-and-Drop Docking with Dock Indicators
 
 Users can rearrange panes at runtime through drag-and-drop interactions. Panes can be moved between docking regions, converted into floating windows, or grouped as tabs.
 
+During a drag operation, dock indicators provide visual feedback by displaying valid docking targets around the layout and document area. These indicators help users place panes in the desired region. Dropping a pane onto a docking target docks it to the corresponding position.
+
 {% tabs %}
 {% highlight xaml %}
-
 <Grid>
     <docking:SfDockingManager x:Name="dockingmanager">
         <!-- Left Docked -->
@@ -129,7 +130,6 @@ Users can rearrange panes at runtime through drag-and-drop interactions. Panes c
         </docking:DockPane>
     </docking:SfDockingManager>
 </Grid>
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -184,64 +184,6 @@ dockingManager.Panes.Add(documentPane);
 {% endtabs %}
 
 ![Drag and Drop item](Images/winui-docklayout-dragdrop.gif)
-
-## Dock Indicators
-
-Dock indicators provide visual feedback while dragging panes. These indicators display valid docking targets and help users place panes in the desired region.
-
-When a pane is dragged, docking targets appear around the layout and document area. Dropping the pane onto one of these targets docks the pane in the corresponding position.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Grid>
-    <docking:SfDockingManager>
-        <docking:DockPane Header="Toolbox"
-                          DockDirection="Left"
-                          DockState="Docked">
-            <TextBlock Text="Toolbox Content"/>
-        </docking:DockPane>
-        <docking:DockPane Header="MainWindow.xaml"
-                          DockState="Document">
-            <TextBox Text="Main document editor..."
-                     AcceptsReturn="True"/>
-        </docking:DockPane>
-        <docking:DockPane Header="Solution Explorer"
-                          DockState="Floating">
-            <TextBlock Text="Solution Explorer Content"/>
-        </docking:DockPane>
-    </docking:SfDockingManager>
-</Grid>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-DockPane toolboxPane = new DockPane()
-{
-    Header = "Toolbox",
-    DockDirection = DockDirection.Left,
-    DockState = DockState.Docked
-};
-
-DockPane documentPane = new DockPane()
-{
-    Header = "MainWindow.xaml",
-    DockState = DockState.Document
-};
-
-DockPane floatingPane = new DockPane()
-{
-    Header = "Solution Explorer",
-    DockState = DockState.Floating
-};
-
-dockingManager.Panes.Add(toolboxPane);
-dockingManager.Panes.Add(documentPane);
-dockingManager.Panes.Add(floatingPane);
-
-{% endhighlight %}
-{% endtabs %}
 
 ## Layout Resizing
 
