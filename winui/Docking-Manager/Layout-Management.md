@@ -348,3 +348,113 @@ dockingManager.Panes.Add(errorListPane);
 {% endtabs %}
 
 ![Layout Resize](Images/winui-resize-windows.gif)
+
+## Create Split Layouts
+
+Tool windows can be arranged in a split layout, allowing multiple panes to remain visible simultaneously within the same docking region. This helps users view and interact with related content side by side.
+
+Use the `TargetNameInDockedState` property to specify the pane relative to which the current pane should be docked. The position of the pane is determined by the `DockDirection` property, which supports docking to the left, right, top, or bottom of the target pane.
+
+The following example docks the **SolutionExplorer** pane to the **right side** of the **ToolBox** pane.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <docking:SfDockingManager>
+
+        <docking:DockPane x:Name="ToolBoxPane"
+                          Header="ToolBox"
+                          DockDirection="Left"
+                          DockState="Docked">
+            <TextBlock Text="ToolBox Content"/>
+        </docking:DockPane>
+
+        <docking:DockPane Header="SolutionExplorer"
+                          DockDirection="Right"
+                          DockState="Docked"
+                          TargetNameInDockedState="ToolBoxPane">
+            <TextBlock Text="SolutionExplorer Content"/>
+        </docking:DockPane>
+
+    </docking:SfDockingManager>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane ToolBoxPane = new DockPane()
+{
+    Header = "ToolBox",
+    DockDirection = DockDirection.Left,
+    DockState = DockState.Docked
+};
+
+DockPane SolutionExplorerPane = new DockPane()
+{
+    Header = "SolutionExplorer",
+    DockDirection = DockDirection.Right,
+    DockState = DockState.Docked,
+    TargetNameInTabbedState = "ToolBoxPane"
+};
+
+dockingManager.Panes.Add(ToolBoxPane);
+dockingManager.Panes.Add(SolutionExplorerPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Document Tabgroup](Images/winui-targetNameInDockedState.png)
+
+The following example docks the **SolutionExplorer** pane to the **top side** of the **ToolBox** pane.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <docking:SfDockingManager>
+
+        <docking:DockPane x:Name="ToolBoxPane"
+                          Header="ToolBox"
+                          DockDirection="Left"
+                          DockState="Docked">
+            <TextBlock Text="ToolBox Content"/>
+        </docking:DockPane>
+
+        <docking:DockPane Header="SolutionExplorer"
+                          DockDirection="Top"
+                          DockState="Docked"
+                          TargetNameInDockedState="ToolBoxPane">
+            <TextBlock Text="SolutionExplorer Content"/>
+        </docking:DockPane>
+
+    </docking:SfDockingManager>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane ToolBoxPane = new DockPane()
+{
+    Header = "ToolBox",
+    DockDirection = DockDirection.Left,
+    DockState = DockState.Docked
+};
+
+DockPane SolutionExplorerPane = new DockPane()
+{
+    Header = "SolutionExplorer",
+    DockDirection = DockDirection.Top,
+    DockState = DockState.Docked,
+    TargetNameInTabbedState = "ToolBoxPane"
+};
+
+dockingManager.Panes.Add(ToolBoxPane);
+dockingManager.Panes.Add(SolutionExplorerPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Document Tabgroup](Images/winui-topbottom.png)
