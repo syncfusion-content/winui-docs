@@ -113,3 +113,5 @@ dockingManager.Panes.Add(documentPane);
 
 When a pane is auto-hidden, it is displayed as a tab along the edge of the docking layout. Selecting the tab temporarily expands the pane and displays its content. When the pane loses focus, it automatically collapses back to its hidden state.
 
+![Auto Hide Behavior](Images/winui-autohide-behavior.gif)
+
