@@ -1223,7 +1223,7 @@ For more information refer [here](https://help.syncfusion.com/winui/time-picker/
 
 ### Clear Button support
 
-The `TreeGridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the **ShowClearButton** property.
+The `TreeGridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridTimeColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridTimeColumn_ShowClearButton) property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
 **AllowNull Behavior**
