@@ -1580,7 +1580,7 @@ this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", 
 
 ### Clear Button support
 
-The `GridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the **ShowClearButton** property.
+The `GridTimeColumn` provides a clear button feature that enables users to reset cell values during editing using the [ShowClearButton](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridTimeColumn.html#Syncfusion_UI_Xaml_DataGrid_GridTimeColumn_ShowClearButton) property.
 When `ShowClearButton` is set to `True`, a clear button appears within the editor, providing users with a convenient way to clear the cell's value.
 
 **AllowNull Behavior**
