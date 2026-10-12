@@ -18,7 +18,7 @@ This section explains how to create a WinUI application with the Docking control
 2. Add a reference to the `Syncfusion.DockingManager.WinUI` NuGet package using one of the following methods:
 
     * **Package Manager Console**: Run `Install-Package Syncfusion.DockingManager.WinUI`.
-    * **.NET CLI**: Run `dotnet add package Syncfusion.DockingManager.WinUI`.
+    * **.NET CLI**: Run `dot net add package Syncfusion.DockingManager.WinUI`.
     * **Visual Studio**: Right-click the project, choose Manage NuGet Packages, search for `Syncfusion.DockingManager.WinUI`, and click Install.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Docking` in XAML or C# code.
