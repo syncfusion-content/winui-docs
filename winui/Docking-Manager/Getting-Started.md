@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with WinUI DockingManager Control | Syncfusion®
 description: Learn how to get started with the Syncfusion® WinUI DockingManager control and create Visual Studio-style docking interfaces in WinUI applications.
 platform: winui
-control: DockLayout
+control: SfDockingManager
 documentation: ug
 ---
 
@@ -13,15 +13,22 @@ This section explains how to create a WinUI application with the Docking control
 
 ## Creating an application with WinUI Docking
 
-1. Create a WinUI 3 desktop application using C# and .NET 8 or later.
+1. Create a WinUI 3 desktop application using C# and .NET 8 or later. For step-by-step instructions, see the [Create a WinUI 3 desktop app](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app) guide.
 
-2. Add a reference to the `Syncfusion.DockingManager.WinUI` NuGet package.
+2. Add a reference to the `Syncfusion.DockingManager.WinUI` NuGet package using one of the following methods:
+
+    * **Package Manager Console**: Run `Install-Package Syncfusion.DockingManager.WinUI`.
+    * **.NET CLI**: Run `dotnet add package Syncfusion.DockingManager.WinUI`.
+    * **Visual Studio**: Right-click the project, choose Manage NuGet Packages, search for `Syncfusion.DockingManager.WinUI`, and click Install.
 
 3. Import the control namespace `Syncfusion.UI.Xaml.Docking` in XAML or C# code.
 
-4. Initialize the `SfDockingManager` control.
+N> The XAML samples in this document use `<Window>` as the root element because the control targets WinUI 3 desktop applications.
 
-{% capture codesnippet1 %}
+### Initialize the DockingManager
+
+Add the `SfDockingManager` control to the page or window.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -55,8 +62,6 @@ public sealed partial class MainWindow : Window
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## Add dock panes
 
@@ -94,13 +99,11 @@ The following example demonstrates how to add docked and document panes.
 {% endhighlight %}
 {% endtabs %}
 
-
-
 ## Dock states
 
 The DockingManager control supports the following docking states:
 
-* **Docked** - Displays a pane in one of the dock regions.
+* **Docked** - Displays a pane in one of the four dock regions (Left, Right, Top, or Bottom).
 * **Document** - Displays a pane in the document area.
 * **Floating** - Displays a pane in a separate floating window.
 * **AutoHidden** - Hides a pane until it is activated.
@@ -108,26 +111,9 @@ The DockingManager control supports the following docking states:
 
 ![Dock States in WinUI Docking](Images/dock-types.png)
 
-## Add a floating window
+## Create tab groups
 
-A pane can be displayed in a floating window by setting its `DockState` to `Floating`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<docking:DockPane Header="Properties"
-                  DockState="Floating">
-    <TextBlock Text="Properties Window"/>
-</docking:DockPane>
-
-{% endhighlight %}
-{% endtabs %}
-
-
-
-## Create tab groups and documents
-
-The DockingManager control allows multiple document and tool windows to be grouped as tabs.
+Use the `TargetNameInTabbedState` property to group a pane with another existing pane. The grouped panes appear together in a tabbed layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -145,6 +131,95 @@ The DockingManager control allows multiple document and tool windows to be group
                   TargetNameInTabbedState="OutputPane">
     <TextBlock Text="Error List Content"/>
 </docking:DockPane>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDockingManager dockingManager = new SfDockingManager();
+
+DockPane outputPane = new DockPane()
+{
+    Name = "OutputPane",
+    Header = "Output",
+    DockDirection = DockDirection.Bottom,
+    DockState = DockState.Docked,
+    Content = new TextBlock() { Text = "Output Content" }
+};
+
+DockPane errorListPane = new DockPane()
+{
+    Header = "Error List",
+    DockDirection = DockDirection.Bottom,
+    DockState = DockState.Tabbed,
+    TargetNameInTabbedState = "OutputPane",
+    Content = new TextBlock() { Text = "Error List Content" }
+};
+
+dockingManager.Children.Add(outputPane);
+dockingManager.Children.Add(errorListPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add document panes
+
+A document pane is hosted in the document area of the layout. Set the `DockState` property to `Document`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<docking:DockPane Header="MainWindow.xaml"
+                  DockState="Document">
+    <TextBox AcceptsReturn="True"
+             Text="Main document editor..."/>
+</docking:DockPane>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDockingManager dockingManager = new SfDockingManager();
+
+DockPane documentPane = new DockPane()
+{
+    Header = "MainWindow.xaml",
+    DockState = DockState.Document,
+    Content = new TextBox()
+    {
+        AcceptsReturn = true,
+        Text = "Main document editor..."
+    }
+};
+
+dockingManager.Children.Add(documentPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add a floating window
+
+A pane can be displayed in a floating window by setting its `DockState` to `Floating`. The pane detaches from the main layout and appears in its own movable window.
+
+{% tabs %}
+{% highlight xaml %}
+
+<docking:DockPane Header="Properties"
+                  DockState="Floating">
+    <TextBlock Text="Properties Window"/>
+</docking:DockPane>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDockingManager dockingManager = new SfDockingManager();
+
+DockPane propertiesPane = new DockPane()
+{
+    Header = "Properties",
+    DockState = DockState.Floating,
+    Content = new TextBlock() { Text = "Properties Window" }
+};
+
+dockingManager.Children.Add(propertiesPane);
 
 {% endhighlight %}
 {% endtabs %}
