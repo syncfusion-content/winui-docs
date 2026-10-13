@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Context Flyout in WinUI TreeView | Syncfusion®
 description: Display context menus for TreeView nodes using built-in commands, custom commands, and flyout events.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Context Flyout in WinUI TreeView
 
-This section explains how to show a ContextFlyout and use built-in commands in the TreeView.
+This section explains how to show a ContextFlyout and use built-in commands in the WinUI TreeView.
 
 ## ContextFlyout for Nodes
 

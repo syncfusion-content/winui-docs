@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Item Height Customization in WinUI TreeView | Syncfusion®
 description: Customize TreeView item heights using fixed sizing options or dynamically adjust item sizes through the QueryNodeSize event.
@@ -13,7 +13,7 @@ The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.
 
 ## Customize Item Height
 
-The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `40`. This property can be customized at runtime.
+The WinUI TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ treeView.ItemHeight = 50;
 {% endtabs %}
 
 ## Customize Item height using `QueryNodeSize` event
-The TreeView allows you to customize the height of the items using the [QueryNodeSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_QueryNodeSize) event. This event is raised whenever an item comes into view and is triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
+The WinUI TreeView allows you to customize the height of the items using the [QueryNodeSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_QueryNodeSize) event. This event is raised whenever an item comes into view and is triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
 
 The `TreeView.QueryNodeSize` event provides the following arguments:
  
@@ -35,7 +35,7 @@ The `TreeView.QueryNodeSize` event provides the following arguments:
 
 ### Customize specific item height using custom value
 
-The TreeView allows customizing the height of the specific item by setting the custom value directly to the [Height](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_UI_Xaml_TreeView_QueryNodeSizeEventArgs_Height) argument which is available in [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
+The WinUI TreeView allows customizing the height of the specific item by setting the custom value directly to the [Height](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html#Syncfusion_UI_Xaml_TreeView_QueryNodeSizeEventArgs_Height) argument which is available in [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tree Lines in WinUI TreeView | Syncfusion®
 description: Display and customize tree lines with configurable visibility, root lines, colors, and line thickness.
@@ -9,7 +9,7 @@ documentation: ug
 
 # Tree Lines in WinUI TreeView
 
-The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows you to show the tree lines for TreeView nodes by setting the [ShowLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value is `false`.
+The [TreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html) allows you to show the tree lines for WinUI TreeView nodes by setting the [ShowLines](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ShowLines) property to `true`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}

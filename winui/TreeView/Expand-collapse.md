@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Expand and Collapse in WinUI TreeView | Syncfusion®
 description: Expand and collapse nodes programmatically or through user interaction with auto-expand modes and related events.
@@ -31,9 +31,9 @@ treeView.ExpandActionTrigger = ExpandActionTrigger.Node;
 
 ## Auto Expand Mode
 
-By default, the TreeView items are in a collapsed state. You can define how the nodes are expanded when the TreeView is loaded by using the [AutoExpandMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
+By default, the WinUI TreeView items are in a collapsed state. You can define how the nodes are expanded when the WinUI TreeView is loaded by using the [AutoExpandMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_AutoExpandMode) property.
 
-The `AutoExpandMode` property is only applicable for bound mode. For unbound mode, you need to set the `IsExpanded` property to `true` when creating the nodes to keep them in an expanded state when loading the TreeView.
+The `AutoExpandMode` property is only applicable for bound mode. For unbound mode, you need to set the `IsExpanded` property to `true` when creating the nodes to keep them in an expanded state when loading the WinUI TreeView.
 
 * `None`: All items are collapsed when loaded.
 * `RootNodes`: Expands only the root item when loaded.
@@ -41,7 +41,7 @@ The `AutoExpandMode` property is only applicable for bound mode. For unbound mod
 
 ## Expand or collapse the nodes based on a property of the underlying data object
 
-You can bind the expand state of a node to a `bool` property in the underlying data object by using the [IsExpandedPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_HierarchyPropertyDescriptor_IsExpandedPropertyName) property. The TreeView updates the expanded state of a node when the underlying data object property changes, and vice versa.
+You can bind the expand state of a node to a `bool` property in the underlying data object by using the [IsExpandedPropertyName](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.HierarchyPropertyDescriptor.html#Syncfusion_UI_Xaml_TreeView_HierarchyPropertyDescriptor_IsExpandedPropertyName) property. The WinUI TreeView updates the expanded state of a node when the underlying data object property changes, and vice versa.
 
 {% tabs %}
 {% highlight xaml %}
@@ -168,7 +168,7 @@ N> `IsExpandedPropertyName` property is not supported for unbound mode and it ac
 
 ## Programmatic Expand and Collapse
 
-The TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) and level by using following methods.
+The WinUI TreeView allows programmatic expand and collapse based on the [TreeViewNode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.TreeViewNode.html) and level by using following methods.
 
 * [ExpandNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_ExpandNode_Syncfusion_UI_Xaml_TreeView_TreeViewNode_) - Method to expand the particular `TreeViewNode` passed to it.
 * [CollapseNode(TreeViewNode item)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_CollapseNode_Syncfusion_UI_Xaml_TreeView_TreeViewNode_) - Method to collapse the particular `TreeViewNode` passed to it.
@@ -210,11 +210,11 @@ treeView.CollapseAll();
 
 ## Expand and Collapse using Keyboard
 
-The TreeView allows you to expand and collapse the nodes by using the right and left arrow keys. To expand a node, press the right arrow key; to collapse a node, press the left arrow key on the focused item.
+The WinUI TreeView allows you to expand and collapse the nodes by using the right and left arrow keys. To expand a node, press the right arrow key; to collapse a node, press the left arrow key on the focused item.
 
 ## Events
 
-TreeView exposes following events to handle expanding and collapsing of items.
+WinUI TreeView exposes following events to handle expanding and collapsing of items.
 
 * [NodeCollapsing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodeCollapsing) - It occurs when a node is being collapsed.
 * [NodeExpanding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html#Syncfusion_UI_Xaml_TreeView_SfTreeView_NodeExpanding) - It occurs when a node is being expanded.

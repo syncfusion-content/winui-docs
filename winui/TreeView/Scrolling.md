@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrolling in WinUI TreeView | Syncfusion®
 description: Scroll items programmatically using BringIntoView, customize scroll positioning, and enable horizontal scrolling.
@@ -51,8 +51,8 @@ private void BringIntoView_Click(object sender, RoutedEventArgs e)
 
  The third optional parameter `canExpand` in `BringIntoView` method decides whether we need to expand and show the collapsed node or not when item passed for `BringIntoView` method which is in collapsed state. By default, this parameter value will be `false`.
  
- * If the parameter value is `true`, TreeView expands the collapsed node if it is collapsed and scroll to the specified item.
- * If the parameter value is `false`, TreeView does not expand the collapsed node and only scroll for item which is not in collapsed state.
+ * If the parameter value is `true`, WinUI TreeView expands the collapsed node if it is collapsed and scroll to the specified item.
+ * If the parameter value is `false`, WinUI TreeView does not expand the collapsed node and only scroll for item which is not in collapsed state.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-winu
 
 ## Horizontal scrolling
 
-By default, the horizontal scrollbar is not enabled in the TreeView. If you want to enable horizontal scrolling based on the content, set the [ScrollViewer.HorizontalScrollBarVisibility](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.scrollviewer.horizontalscrollbarvisibility) property to `Auto`.
+By default, the horizontal scrollbar is not enabled in the WinUI TreeView. If you want to enable horizontal scrolling based on the content, set the [ScrollViewer.HorizontalScrollBarVisibility](https://learn.microsoft.com/en-us/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.scrollviewer.horizontalscrollbarvisibility) property to `Auto`.
 
 {% tabs %}
 {% highlight xaml %}
