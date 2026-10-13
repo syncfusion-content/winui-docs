@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in WinUI AI AssistView | Syncfusion®
-description: Learn how to get customize the Syncfusion® WinUI AI AssistView using the BannerTemplate, EmptyView, EmptyViewTemplate, and ViewTemplateSelector properties.
+description: Learn how to get customize the Syncfusion® WinUI AI AssistView using the BannerTemplate, EmptyView, EmptyViewTemplate, ViewTemplateSelector, and InputPlaceHolderText properties.
 platform: WinUI
 control: AI AssistView
 documentation: ug
