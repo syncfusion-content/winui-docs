@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WinUI Docking Control
 
-The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framework that helps organize application content into dockable panes and document windows. It enables developers to build Visual Studio-style desktop interfaces with docked, floating, auto-hidden, tabbed, and document windows. For setup steps, including NuGet package installation and namespace configuration, see getting-started.
+The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framework that helps organize application content into dockable panes and document windows. It enables developers to build Visual Studio-style desktop interfaces with docked, floating, auto-hidden, tabbed, and document windows. For setup steps, including NuGet package installation and namespace configuration, see the [Getting Started](Getting-Started.md) page.
 
 ## Key features
 
