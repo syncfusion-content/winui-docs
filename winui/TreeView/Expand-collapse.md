@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Expand and Collapse in WinUI TreeView | Syncfusion®
 description: Expand and collapse nodes programmatically or through user interaction with auto-expand modes and related events.

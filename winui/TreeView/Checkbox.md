@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: CheckBox Support in WinUI TreeView | Syncfusion®
 description: Enable check boxes for TreeView nodes, manage checked items, configure check states, and handle checkbox events.

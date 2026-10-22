@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in WinUI TreeView | Syncfusion®
 description: Bind hierarchical data using ItemsSource, hierarchy descriptors, and TreeViewNode objects in bound and unbound modes.

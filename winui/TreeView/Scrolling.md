@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrolling in WinUI TreeView | Syncfusion®
 description: Scroll items programmatically using BringIntoView, customize scroll positioning, and enable horizontal scrolling.
