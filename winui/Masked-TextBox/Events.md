@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in WinUI Masked TextBox | Syncfusion®
 description: Events provide notifications when values change, enabling validation, input monitoring, and mask completion tracking.

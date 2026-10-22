@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tree Lines in WinUI TreeView | Syncfusion®
 description: Display and customize tree lines with configurable visibility, root lines, colors, and line thickness.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization in WinUI Masked TextBox | Syncfusion®
 description: Customization options include headers, header templates, and descriptions to enhance user guidance and control presentation.
