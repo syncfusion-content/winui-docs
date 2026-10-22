@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Error Indication in WinUI Masked TextBox | Syncfusion®
 description: Error indication support provides built-in and custom validation icons, border styling, and informative error content.

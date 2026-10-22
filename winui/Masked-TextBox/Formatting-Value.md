@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Formatting Value in WinUI Masked TextBox | Syncfusion®
 description: Format masked input values by including or excluding prompts and literals through ValueMaskFormat settings.

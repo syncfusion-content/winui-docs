@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to Restrict Default Validation in Masked TextBox | Syncfusion®
 description: Learn how to disable or customize built-in validation behavior in the WinUI Masked TextBox by handling the ValueChanging event.
