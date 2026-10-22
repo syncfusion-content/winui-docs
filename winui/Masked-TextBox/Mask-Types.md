@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Mask Types in WinUI Masked TextBox | Syncfusion®
 description: Mask types support simple and regular expression patterns for creating fixed-length and dynamic input validation scenarios.
