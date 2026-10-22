@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection in WinUI TreeView | Syncfusion®
 description: Manage single and multiple selection, selected items, keyboard navigation, styling, and selection-related events.
