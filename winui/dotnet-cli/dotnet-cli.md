@@ -110,7 +110,7 @@ Complete direct commands remain usable without opening the menu. `--no-interacti
 | `sf help winui` | Show the WinUI command map |
 | `sf --version` | Show the CLI version |
 
-![Show help in the Syncfusion .NET CLI](images/show-help.png)
+![Show help in the Syncfusion .NET CLI](images/cli-help-command.png)
 
 ## Create a WinUI 3 project
 
@@ -136,7 +136,7 @@ Run `sf new`, or select **Create a new project** from the main menu. The WinUI c
 
 5. **Controls:** When you include controls, choose one or more controls from the list. Controls start unchecked, and at least one selection is required.
 
-    ![Configured WinUI options in the Syncfusion .NET CLI](images/configured-winui-options.png)
+    ![Configured WinUI options in the Syncfusion .NET CLI](images/cli-winui-configuration.png)
 
 6. **Post-create:** Select **Generate only** or **Build project**.
 7. **Confirmation:** Review the selected values and confirm to create the project.
@@ -198,7 +198,7 @@ dotnet run --project .\MyApp\MyApp.csproj --no-build
 
 Native XAML compilation and runtime checks require Windows. Restore can run on other hosts; use `--post-action generate` there and build after copying the project to a Windows machine.
 
-![Sample generated in the Syncfusion .NET CLI](images/sample-generated.png)
+![Sample generated in the Syncfusion .NET CLI](images/cli-generated-sample.png)
 
 ## Manage packages in an existing project
 
@@ -220,7 +220,7 @@ To list the available WinUI packages:
 sf list winui packages
 ```
 
-![List of available packages in the Syncfusion .NET CLI](images/list-of-avilable-packages.png)
+![List of available packages in the Syncfusion .NET CLI](images/cli-package-list.png)
 
 To list the Syncfusion<sup>®</sup> packages installed in an existing project:
 
