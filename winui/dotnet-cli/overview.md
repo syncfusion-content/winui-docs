@@ -27,14 +27,11 @@ This documentation covers the WinUI 3 platform.
 
 The following software is required before you install and use the CLI:
 
-* [.NET SDK](https://dotnet.microsoft.com/download). The SDK selected through `PATH` takes precedence, with the running .NET installation as a fallback.
-* A Windows development environment. WinUI 3 projects use the Windows App SDK, and building and launching the generated apps require Windows.
+* A Windows development environment with the [.NET SDK](https://dotnet.microsoft.com/download) installed. WinUI 3 projects use the Windows App SDK, and building and launching the generated apps require Windows.
 * An internet connection so package operations can reach [nuget.org](https://www.nuget.org).
 * A Syncfusion<sup>®</sup> account to activate licenses. Sign in is performed through the browser during license activation.
 
 N> Syncfusion<sup>®</sup> packages resolve from the official nuget.org feed, `https://api.nuget.org/v3/index.json`. The CLI accepts only this source through `--source`.
-
-N> The CLI does not require an installed `dotnet new winui` template. WinUI projects use an unpackaged, self-contained Windows App SDK application pattern with a minimum Windows 10 build of 19041 and a win-x64 runtime identifier.
 
 ## Installation
 
@@ -42,27 +39,47 @@ The CLI is published as a .NET global tool with the package ID `Syncfusion.DotNe
 
 1. Open a terminal and run the following command. Add `--prerelease` while only preview versions are available.
 
-    ```bash
+    {% tabs %}
+    {% highlight bash tabtitle="Bash" %}
+
     dotnet tool install -g Syncfusion.DotNet.CLI --prerelease
-    ```
+
+    {% endhighlight %}
+    {% endtabs %}
 
 2. Verify the installation and print the CLI version.
 
-    ```bash
+    {% tabs %}
+    {% highlight bash tabtitle="Bash" %}
+
     sf --version
-    ```
+
+    {% endhighlight %}
+    {% endtabs %}
+
+3. If the terminal does not recognize the `sf` command, add the tools installation folder to the `PATH` environment variable, and then restart the terminal.
+
+    **Environment variable path:** `%USERPROFILE%\.dotnet\tools`
 
 To update the tool to the latest release, run:
 
-```bash
+{% tabs %}
+{% highlight bash tabtitle="Bash" %}
+
 dotnet tool update -g Syncfusion.DotNet.CLI --prerelease
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 To remove the tool, run:
 
-```bash
+{% tabs %}
+{% highlight bash tabtitle="Bash" %}
+
 dotnet tool uninstall -g Syncfusion.DotNet.CLI
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Initialize the CLI
 
@@ -70,39 +87,7 @@ Run `sf` in an interactive terminal to open the main menu. The menu shows the cu
 
 ![Syncfusion .NET CLI main menu](images/cli-main-menu.png)
 
-| Group | Operation | Command reference |
-| --- | --- | --- |
-| Project creation | Create a new project | `sf new` |
-| Package management | Add a package to an existing project | `sf add` |
-| Package management | Update a package in an existing project | `sf update` |
-| Discovery | List available packages | `sf list <platform> packages` |
-| Discovery | List installed packages in an existing project | `sf list <platform> installed` |
-| Discovery | Search for packages | `sf search` |
-| AI & Skills | Setup Model Context Protocol (MCP) | `sf mcp init` |
-| AI & Skills | Add component skills to AI Agent | `sf skills install` |
-| License management | Activate license | `sf license activate` |
-| License management | View installed licenses | `sf license view` |
-| License management | Sign in to Syncfusion | `sf login` |
-| License management | Sign out | `sf logout` |
-| Help and information | View CLI information | `sf info` |
-| Help and information | Show help | `sf help` |
-| Exit | Exit | `Ctrl+C` |
-
-N> The `<platform>` text is a usage placeholder. Use `winui` for WinUI 3.
-
-Use the following keys to navigate the interactive screens:
-
-| Key | Action |
-| --- | --- |
-| Up / Down | Move through the options |
-| Enter | Choose the focused option, or continue |
-| Space | Toggle a checkbox in a multi-selection list |
-| Escape | Cancel the current question and return to the menu |
-| `Ctrl+C` | Exit the interactive session |
-
-Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
-
-## Available commands
+The following table lists the CLI key actions:
 
 | Command | Purpose | For details, refer to |
 | --- | --- | --- |
@@ -121,8 +106,22 @@ Complete direct commands remain usable without opening the menu. `--no-interacti
 | `sf info` | Show CLI information | |
 | `sf help winui` | Show the WinUI command map | |
 | `sf --version` | Show the CLI version | |
+| `Ctrl+C` | Exit the interactive session | |
+
+N> The `<package>` and `<text>` placeholders are usage placeholders. Use a package alias, package ID, or display name for `<package>`, and the search text for `<text>`.
+
+Use the following keys to navigate the interactive screens:
+
+| Key | Action |
+| --- | --- |
+| Up / Down | Move through the options |
+| Enter | Choose the focused option, or continue |
+| Space | Toggle a checkbox in a multi-selection list |
+| Escape | Cancel the current question and return to the menu |
 
 ![Show help in the Syncfusion .NET CLI](images/cli-help-command.png)
+
+Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
 
 ## See also
 
