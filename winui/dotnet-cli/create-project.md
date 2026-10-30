@@ -109,7 +109,7 @@ Native XAML compilation and runtime checks require Windows. Restore can run on o
 | `-p`, `--path` | Parent directory. Defaults to `%USERPROFILE%\source\repos` |
 | `-t`, `--target-framework` | The .NET target framework: `net10.0` (default) or `net9.0` |
 | `--control` | One or more control IDs, or `empty`. Omit to create an empty project |
-| `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands and prompts in interactive use |
+| `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands |
 | `--dry-run` | Preview the action without making changes |
 | `--force` | Allow supported overwrites |
 | `--no-restore` | Skip `dotnet restore` after the action |

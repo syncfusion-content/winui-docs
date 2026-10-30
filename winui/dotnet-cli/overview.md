@@ -112,14 +112,14 @@ Use the following keys to navigate the interactive screens:
 
 | Key | Action |
 | --- | --- |
-| Up / Down / Tab | Move through the options |
+| Up / Down | Move through the options |
 | Enter | Choose the focused option, or continue |
 | Space | Toggle a checkbox in a multi-selection list |
 | Escape | Cancel the current question and return to the menu |
 
 ![Show help in the Syncfusion .NET CLI](images/cli-help-command.png)
 
-Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command, and the global options `--interactive`, `--json`, `--verbose`, and `--no-color` apply to every command.
+Complete direct commands remain usable without opening the menu. `--no-interactive` disables prompts in any command.
 
 ## See also
 
