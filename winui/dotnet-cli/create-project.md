@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create WinUI 3 Projects using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to create a Syncfusion® WinUI 3 project using the Syncfusion® .NET CLI (sf) through the interactive wizard or direct commands.
+description: Learn here about how to create a Syncfusion® WinUI 3 project using the Syncfusion® .NET CLI (sfdotnet) through the interactive wizard or direct commands.
 platform: winui
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -13,7 +13,7 @@ You can create a WinUI 3 project through the interactive wizard or a direct comm
 
 ## Create a project using the interactive wizard
 
-Run `sf new`, or select **Create a new project** from the main menu. The WinUI creation flow is:
+Run `sfdotnet new`, or select **Create a new project** from the main menu. The WinUI creation flow is:
 
 1. **Platform:** Select **WinUI**.
 
@@ -21,7 +21,7 @@ Run `sf new`, or select **Create a new project** from the main menu. The WinUI c
 
 2. **Framework:** Select the .NET version: .NET 10 (`net10.0`), the default, or .NET 9 (`net9.0`).
 
-3. **Location and name:** Enter the parent directory and the project name. The suggested name is `SyncfusionWinUIApp`, and the first available numeric suffix is used when the destination name collides.
+3. **Location and name:** Enter the parent directory and the project name. The suggested location is `%USERPROFILE%\source\repos` on Windows (`~/Projects` on macOS and Linux), and the suggested name is `SyncfusionWinUIApp`. The first available numeric suffix is used when the destination name collides.
 
 4. **Setup:** Select **Blank app** or **Include Syncfusion controls**.
 
@@ -57,7 +57,7 @@ To create a blank project without the wizard:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf new winui -n MyApp
+sfdotnet new winui -n MyApp
 
 {% endhighlight %}
 {% endtabs %}
@@ -67,9 +67,9 @@ To create a project containing Syncfusion<sup>®</sup> control samples:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf new winui -n MyApp --control datagrid
-sf new winui -n MyApp --control datagrid chart treeview
-sf new winui -n MyApp --control datagrid chart treegrid ribbon docking-manager
+sfdotnet new winui -n MyApp --control datagrid
+sfdotnet new winui -n MyApp --control datagrid chart treeview
+sfdotnet new winui -n MyApp --control datagrid chart treegrid ribbon docking-manager
 
 {% endhighlight %}
 {% endtabs %}
@@ -79,7 +79,7 @@ To select the .NET version and generate sources without restoring or building:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf new winui --name MyApp --target-framework net10.0 --control empty --post-action generate --no-interactive
+sfdotnet new winui --name MyApp --target-framework net10.0 --control empty --post-action generate --no-interactive
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,7 +91,7 @@ After creation, the CLI prints a copyable **Next commands** block. Build and run
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-cd .\MyApp
+cd <project-location>\MyApp
 dotnet run --project .\MyApp\MyApp.csproj --no-build
 
 {% endhighlight %}
@@ -106,10 +106,10 @@ Native XAML compilation and runtime checks require Windows. Restore can run on o
 | Option | Description |
 | --- | --- |
 | `-n`, `--name` | Project name. Required when prompting is unavailable |
-| `-p`, `--path` | Parent directory. Defaults to the current directory |
-| `-t`, `--target-framework` | The .NET target framework: `net10.0`, `net9.0`, or `net8.0` |
+| `-p`, `--path` | Parent directory. Defaults to `%USERPROFILE%\source\repos` on Windows and `~/Projects` on macOS and Linux |
+| `-t`, `--target-framework` | The .NET target framework: `net10.0` (default), `net9.0`, or `net8.0` |
 | `--control` | One or more control IDs, or `empty`. Omit to create an empty project |
-| `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands |
+| `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands and prompts in interactive use |
 | `--dry-run` | Preview the action without making changes |
 | `--force` | Allow supported overwrites |
 | `--no-restore` | Skip `dotnet restore` after the action |
