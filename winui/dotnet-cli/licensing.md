@@ -1,7 +1,7 @@
 ---
 layout: post
 title: License Activation using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to activate and view Syncfusion® licenses for WinUI 3 projects using the Syncfusion® .NET CLI (sf) license commands.
+description: Learn here about how to activate and view Syncfusion® licenses for WinUI 3 projects using the Syncfusion® .NET CLI (sfdotnet) license commands.
 platform: winui
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -22,7 +22,7 @@ License activation requires a signed-in Syncfusion<sup>®</sup> account. You can
     {% tabs %}
     {% highlight bash tabtitle="Bash" %}
 
-    sf login
+    sfdotnet login
 
     {% endhighlight %}
     {% endtabs %}
@@ -45,12 +45,12 @@ License activation requires a signed-in Syncfusion<sup>®</sup> account. You can
     {% endhighlight %}
     {% endtabs %}
 
-2. Run `sf` to open the main menu.
+2. Run `sfdotnet` to open the main menu.
 
     {% tabs %}
     {% highlight bash tabtitle="Bash" %}
 
-    sf
+    sfdotnet
 
     {% endhighlight %}
     {% endtabs %}
@@ -76,7 +76,7 @@ Run the activation command from the sample's project directory:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf license activate
+sfdotnet license activate
 
 {% endhighlight %}
 {% endtabs %}
@@ -86,8 +86,8 @@ Pass `--path` to point the CLI at a specific project directory or `.csproj` file
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf license activate --path ./MyApp
-sf license activate --path ./MyApp/MyApp.csproj
+sfdotnet license activate --path ./MyApp
+sfdotnet license activate --path ./MyApp/MyApp.csproj
 
 {% endhighlight %}
 {% endtabs %}
@@ -97,7 +97,7 @@ Use `--yes` to accept the trial EULA prompt without asking:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf license activate --yes
+sfdotnet license activate --yes
 
 {% endhighlight %}
 {% endtabs %}
@@ -109,13 +109,13 @@ Use `--file` to activate from an existing key file. With no value, the CLI reads
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf license activate --file
-sf license activate --file C:\Keys\syncfusion-license.txt
+sfdotnet license activate --file
+sfdotnet license activate --file C:\Keys\syncfusion-license.txt
 
 {% endhighlight %}
 {% endtabs %}
 
-N> When a license key is supplied through `--file`, the CLI skips sign in and download and registers the keys already in the file. The file path must be absolute.
+N> When a license key is supplied through `--file`, the CLI skips sign in and download and registers the keys already in the file. A custom path must be absolute, and it is rejected when `syncfusion-license.txt` already exists in the project directory or a key is already supplied through the `SYNCFUSION_LICENSE` environment variable.
 
 ## View installed licenses
 
@@ -124,7 +124,7 @@ To see the licenses cached for the current project, run:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf license view
+sfdotnet license view
 
 {% endhighlight %}
 {% endtabs %}
@@ -144,19 +144,19 @@ To clear the local sign-in session, run:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf logout
+sfdotnet logout
 
 {% endhighlight %}
 {% endtabs %}
 
-Sign out does not remove any license registered in the project. To sign in again without running activation, use `sf login`.
+Sign out does not remove any license registered in the project. To sign in again without running activation, use `sfdotnet login`.
 
 ## Managing account authentication during license activation
 
-* If no sign-in session exists when you run `sf license activate`, the CLI opens the browser sign-in page automatically before the keys are downloaded. Complete sign in and the activation continues.
-* If sign in is not desired during activation, use `sf login` beforehand to establish the session, or use `sf license activate --file` to register keys from an existing key file without contacting the license service.
+* If no sign-in session exists when you run `sfdotnet license activate`, the CLI opens the browser sign-in page automatically before the keys are downloaded. Complete sign in and the activation continues.
+* If sign in is not desired during activation, use `sfdotnet login` beforehand to establish the session, or use `sfdotnet license activate --file` to register keys from an existing key file without contacting the license service.
 * If a control in the project is not covered by a paid entitlement, the CLI prompts you to accept the Syncfusion<sup>®</sup> trial EULA and download a trial key for the missing packages. Pass `--yes` to accept the prompt automatically.
-* When activation fails due to an expired session, run `sf login` again and re-run the activation command. Registered keys are refreshed without duplication.
+* When activation fails due to an expired session, run `sfdotnet login` again and re-run the activation command. Registered keys are refreshed without duplication.
 
 ## Register a license without activation
 
@@ -166,16 +166,18 @@ You can also register a license without writing values into generated sources by
 
 | Option | Description |
 | --- | --- |
-| `-p`, `--path` | The project directory or `.csproj`/`.vbproj` to scan for Syncfusion<sup>®</sup> packages. Defaults to the current directory |
+| `-p`, `--path` | The project directory or `.csproj` file to scan for Syncfusion<sup>®</sup> packages. Defaults to the current directory |
 | `-y`, `--yes` | Accept the trial EULA prompt automatically during activation |
 | `--file` | Activate from an existing key file. With no value, the CLI reads `./syncfusion-license.txt` from the project directory. With an absolute path, the CLI uses the specified file |
 | `--json` | Emit one JSON document instead of table output |
+
+N> The options also apply to `sfdotnet license view`, which accepts `--path` and `--json`.
 
 ## FAQs
 
 **Does the CLI register a license?**
 
-Yes. `sf license activate` scans the project for Syncfusion<sup>®</sup> `PackageReference` entries, downloads the matching license keys from your Syncfusion<sup>®</sup> account, and inserts `SyncfusionLicenseProvider.RegisterLicense(...)` into `App.xaml.cs`. The CLI signs you in through the browser the first time, or you can sign in ahead with `sf login`.
+Yes. `sfdotnet license activate` scans the project for Syncfusion<sup>®</sup> `PackageReference` entries, downloads the matching license keys from your Syncfusion<sup>®</sup> account, and inserts `SyncfusionLicenseProvider.RegisterLicense(...)` into `App.xaml.cs`. The CLI signs you in through the browser the first time, or you can sign in ahead with `sfdotnet login`.
 
 **Where does the CLI register the license for WinUI?**
 
@@ -183,7 +185,7 @@ In `App.xaml.cs`, inside the `App` constructor before any other initialization.
 
 **Can I use my own key file?**
 
-Yes. Run `sf license activate --file C:\Keys\syncfusion-license.txt` with an absolute path. The CLI reads the keys from the file and registers them in the project's startup code without contacting the license service.
+Yes. Run `sfdotnet license activate --file C:\Keys\syncfusion-license.txt` with an absolute path. The CLI reads the keys from the file and registers them in the project's startup code without contacting the license service.
 
 ## See also
 
