@@ -21,7 +21,7 @@ Run `sfdotnet new`, or select **Create a new project** from the main menu. The W
 
 2. **Framework:** Select the .NET version: .NET 10 (`net10.0`), the default, or .NET 9 (`net9.0`).
 
-3. **Location and name:** Enter the parent directory and the project name. The suggested location is `%USERPROFILE%\source\repos` on Windows (`~/Projects` on macOS and Linux), and the suggested name is `SyncfusionWinUIApp`. The first available numeric suffix is used when the destination name collides.
+3. **Location and name:** Enter the parent directory and the project name. The suggested location is `%USERPROFILE%\source\repos`, and the suggested name is `SyncfusionWinUIApp`. The first available numeric suffix is used when the destination name collides.
 
 4. **Setup:** Select **Blank app** or **Include Syncfusion controls**.
 
@@ -106,7 +106,7 @@ Native XAML compilation and runtime checks require Windows. Restore can run on o
 | Option | Description |
 | --- | --- |
 | `-n`, `--name` | Project name. Required when prompting is unavailable |
-| `-p`, `--path` | Parent directory. Defaults to `%USERPROFILE%\source\repos` on Windows and `~/Projects` on macOS and Linux |
+| `-p`, `--path` | Parent directory. Defaults to `%USERPROFILE%\source\repos` |
 | `-t`, `--target-framework` | The .NET target framework: `net10.0` (default), `net9.0`, or `net8.0` |
 | `--control` | One or more control IDs, or `empty`. Omit to create an empty project |
 | `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands and prompts in interactive use |

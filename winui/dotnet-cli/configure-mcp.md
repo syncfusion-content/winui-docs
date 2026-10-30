@@ -70,7 +70,7 @@ The CLI writes a project-local configuration file inside the workspace, next to 
 | Syncfusion Code Studio | `.codestudio/mcp.json` | `servers` |
 | Claude Code | `.mcp.json` | `mcpServers` |
 
-The generated entry registers a server named `sf-winui-mcp`. With the default `auto` runner on .NET SDK 10 or later (and the `dnx` runner), the server starts with `dnx`. On SDK 8 or 9 (and with the `local` runner), the server starts as a local .NET tool. For example, for VS Code with the local runner the CLI adds the following entry to `.vscode/mcp.json`:
+The generated entry registers a server named `sf-winui-mcp`. How the server starts depends on the runner resolved by setup: with the `local` runner (or `auto` on .NET SDK 8/9) it runs as a local .NET tool, and with the `dnx` runner (or `auto` on SDK 10 or later) it starts with `dnx`. For example, for VS Code with the local runner the CLI adds the following entry to `.vscode/mcp.json`:
 
 ```json
 {
@@ -129,7 +129,7 @@ W> Never commit the API-key file to source control, and never paste the key valu
 | `--key-file` | Path to an existing API-key `.txt`/`.key` file outside the workspace |
 | `--runner` | Server runner: `auto` (default), `dnx`, or `local` |
 | `-p`, `--path` | The workspace directory. Defaults to the current directory. The directory must already exist |
-| `--dry-run` | Validate inputs and preview the destination without writing files or running tools. The runner is reported, but `auto` is not resolved to `dnx` or `local` |
+| `--dry-run` | Validate inputs and preview the destination without writing files or running tools. With `--runner auto`, the runner is not resolved to `dnx` or `local` in the preview |
 | `--force` | Replace an existing, differing platform server entry |
 | `--json` | Emit one JSON document |
 
