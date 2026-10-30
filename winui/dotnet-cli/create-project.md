@@ -107,7 +107,7 @@ Native XAML compilation and runtime checks require Windows. Restore can run on o
 | --- | --- |
 | `-n`, `--name` | Project name. Required when prompting is unavailable |
 | `-p`, `--path` | Parent directory. Defaults to `%USERPROFILE%\source\repos` |
-| `-t`, `--target-framework` | The .NET target framework: `net10.0` (default), `net9.0`, or `net8.0` |
+| `-t`, `--target-framework` | The .NET target framework: `net10.0` (default) or `net9.0` |
 | `--control` | One or more control IDs, or `empty`. Omit to create an empty project |
 | `--post-action` | Post-create action: `generate` or `build`. Defaults to `build` for direct commands and prompts in interactive use |
 | `--dry-run` | Preview the action without making changes |
@@ -123,7 +123,7 @@ N> `--post-action build` conflicts with `--no-build`. Neither `--force` nor conf
 
 **Which .NET versions are supported for WinUI?**
 
-.NET 10 (`net10.0`), .NET 9 (`net9.0`), and .NET 8 (`net8.0`). C# is the supported language, and projects use the native WinUI theme.
+.NET 10 (`net10.0`) and .NET 9 (`net9.0`). C# is the supported language, and projects use the native WinUI theme.
 
 **Can I build a WinUI project on macOS or Linux?**
 
