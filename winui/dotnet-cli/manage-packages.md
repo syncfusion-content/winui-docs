@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Syncfusion WinUI NuGet Packages using .NET CLI | Syncfusion®
-description: Learn here about how to add, update, list, and search Syncfusion® WinUI NuGet packages in an existing project using the Syncfusion® .NET CLI (sf).
+description: Learn here about how to add, update, list, and search Syncfusion® WinUI NuGet packages in an existing project using the Syncfusion® .NET CLI (sfdotnet).
 platform: winui
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -9,7 +9,9 @@ documentation: ug
 
 # Manage packages in an existing project
 
-Package operations change NuGet references only. They do not generate control files. Existing-project commands accept `-p/--path` with a `.csproj` file, a project directory, or a supported subdirectory, and `--json` emits one JSON document for script use.
+Package operations change NuGet references in an existing project. Existing-project commands accept `-p/--path` with a `.csproj` file or the project directory, and `--json` emits one JSON document for script use.
+
+N> On a project created by the CLI, adding or removing a control package also adds or removes the matching generated control sample. On any other project, only the NuGet reference changes.
 
 ## Add a package
 
@@ -22,7 +24,7 @@ Use the canonical package alias to add a package by its name:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf add winui grid
+sfdotnet add winui grid
 
 {% endhighlight %}
 {% endtabs %}
@@ -34,7 +36,7 @@ Use the canonical package ID to add a package by its exact identifier:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf add winui Syncfusion.Grid.WinUI
+sfdotnet add winui Syncfusion.Grid.WinUI
 
 {% endhighlight %}
 {% endtabs %}
@@ -48,7 +50,7 @@ To update a package in an existing project, optionally with a specific version:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf update winui chart --version 35.1.40
+sfdotnet update winui chart --version 35.1.40
 
 {% endhighlight %}
 {% endtabs %}
@@ -60,10 +62,12 @@ To list all WinUI packages available on the package source:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf list winui packages
+sfdotnet list winui packages
 
 {% endhighlight %}
 {% endtabs %}
+
+Add `--details` to show package descriptions, setup support, and verification evidence, or `--search <text>` to filter the list by alias, name, package ID, or description.
 
 ![List of available packages in the Syncfusion .NET CLI](images/cli-package-list.png)
 
@@ -74,7 +78,7 @@ To list the Syncfusion<sup>®</sup> packages installed in an existing project:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf list winui installed -p .\MyApp\MyApp.csproj
+sfdotnet list winui installed -p .\MyApp\MyApp.csproj
 
 {% endhighlight %}
 {% endtabs %}
@@ -86,32 +90,36 @@ To search the WinUI package catalog:
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf search winui chart
-sf search chart --framework winui
+sfdotnet search winui chart
+sfdotnet search chart --framework winui
 
 {% endhighlight %}
 {% endtabs %}
 
-N> WinUI projects retain package-only operations. Package operations never apply control registration based on package metadata.
+N> Existing-project package commands do not accept `--control`; pass the package alias or package ID instead. When a package ID supplies multiple control samples, use a control alias to select the sample.
 
 ## Package operation options
 
 | Option | Description |
 | --- | --- |
-| `-p`, `--path` | The project directory, `.csproj` file, or a supported subdirectory |
+| `-p`, `--path` | The project directory or `.csproj` file |
 | `-v`, `--version` | The Syncfusion<sup>®</sup> NuGet package version |
+| `--build` | Build the project after the operation. Cannot be combined with `--no-restore` |
+| `--details` | Show package descriptions, setup support, and verification evidence (`list` and `search`) |
+| `--search` | Filter listed packages by alias, name, package ID, or description (`list`) |
 | `--source` | Package source; Syncfusion<sup>®</sup> packages require `https://api.nuget.org/v3/index.json` |
 | `--configfile` | The NuGet configuration file to use |
 | `--dry-run` | Preview the action without making changes |
 | `--force` | Allow supported overwrites |
 | `--no-restore` | Skip `dotnet restore` after the action |
+| `--no-interactive` | Disable interactive prompts |
 | `--json` | Emit one JSON document |
 
 ## FAQs
 
 **Why do DataGrid and TreeGrid share a package?**
 
-Both controls are provided by `Syncfusion.Grid.WinUI`. Use the control alias (`datagrid` or `treegrid`) to add the matching package.
+Both controls are provided by `Syncfusion.Grid.WinUI`. Add the package with the alias `grid`, and create the matching sample with the control alias (`datagrid` or `treegrid`) in `sfdotnet new winui --control`.
 
 ## See also
 

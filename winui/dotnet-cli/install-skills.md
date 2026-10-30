@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install AI Component Skills using Syncfusion .NET CLI | Syncfusion®
-description: Learn here about how to install Syncfusion® WinUI component skills for AI agents using the Syncfusion® .NET CLI (sf).
+description: Learn here about how to install Syncfusion® WinUI component skills for AI agents using the Syncfusion® .NET CLI (sfdotnet).
 platform: winui
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Install AI component skills
 
-The `sf skills install` command installs the official Syncfusion<sup>®</sup> WinUI component skills for AI agents from the `syncfusion/winui-ui-components-skills` GitHub repository. Skills give AI agents product-specific guidance for generating and editing Syncfusion<sup>®</sup> control code. Skills are installed for the agents you choose, either project-local or global.
+The `sfdotnet skills install` command installs the official Syncfusion<sup>®</sup> WinUI component skills for AI agents from the `syncfusion/winui-ui-components-skills` GitHub repository. Skills give AI agents product-specific guidance for generating and editing Syncfusion<sup>®</sup> control code. Skills are installed for the agents you choose, either project-local or global.
 
 No Syncfusion<sup>®</sup> account, API key, or license is required to install or read skills.
 
@@ -20,7 +20,7 @@ No Syncfusion<sup>®</sup> account, API key, or license is required to install o
 
 ## Install skills through the interactive menu
 
-1. Run `sf` to open the main menu, and under **AI & Skills**, select **Add component skills to AI Agent**.
+1. Run `sfdotnet` to open the main menu, and under **AI & Skills**, select **Add component skills to AI Agent**.
 
     ![Add component skills to AI Agent option in the Syncfusion .NET CLI main menu](images/cli-setup-skills-command-menu.png)
 
@@ -41,10 +41,10 @@ No Syncfusion<sup>®</sup> account, API key, or license is required to install o
 {% tabs %}
 {% highlight bash tabtitle="Bash" %}
 
-sf skills install winui
-sf skills install winui --list
-sf skills install winui --agent github-copilot --skill <exact-skill-name> --yes
-sf skills install winui --agent cursor claude-code --all --yes
+sfdotnet skills install winui
+sfdotnet skills install winui --list
+sfdotnet skills install winui --agent github-copilot --skill <exact-skill-name> --yes
+sfdotnet skills install winui --agent cursor claude-code --all --yes
 
 {% endhighlight %}
 {% endtabs %}
