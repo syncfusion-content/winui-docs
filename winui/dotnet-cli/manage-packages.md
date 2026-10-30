@@ -9,9 +9,9 @@ documentation: ug
 
 # Manage packages in an existing project
 
-Package operations change NuGet references in an existing project. Existing-project commands accept `-p/--path` with a `.csproj` file or the project directory, and `--json` emits one JSON document for script use. When the directory contains more than one project, pass the `.csproj` file explicitly.
+Package operations change NuGet references in an existing project. Existing-project commands accept `-p/--path` with a `.csproj` file or the project directory, and `--json` emits one JSON document for script use.
 
-N> On a project created by the CLI, adding or removing a control package also adds or removes the matching generated control sample and its navigation entry, tracked by the `Syncfusion/desktop.json` manifest. On any other project, only the NuGet reference changes.
+N> On a project created by the CLI, adding or removing a control package also adds or removes the matching generated control sample. On any other project, only the NuGet reference changes.
 
 ## Add a package
 
@@ -104,14 +104,14 @@ N> Existing-project package commands do not accept `--control`; pass the package
 | --- | --- |
 | `-p`, `--path` | The project directory or `.csproj` file |
 | `-v`, `--version` | The Syncfusion<sup>®</sup> NuGet package version |
-| `--build` | Build the changed project after the operation. Conflicts with `--no-build` |
+| `--build` | Build the project after the operation. Cannot be combined with `--no-restore` |
 | `--details` | Show package descriptions, setup support, and verification evidence (`list` and `search`) |
 | `--search` | Filter listed packages by alias, name, package ID, or description (`list`) |
 | `--source` | Package source; Syncfusion<sup>®</sup> packages require `https://api.nuget.org/v3/index.json` |
 | `--configfile` | The NuGet configuration file to use |
 | `--dry-run` | Preview the action without making changes |
 | `--force` | Allow supported overwrites |
-| `--no-restore` | Skip `dotnet restore` after the action. Restore and build (`--build`) requires restore, so remove `--no-restore` to build |
+| `--no-restore` | Skip `dotnet restore` after the action |
 | `--no-interactive` | Disable interactive prompts |
 | `--json` | Emit one JSON document |
 
@@ -119,7 +119,7 @@ N> Existing-project package commands do not accept `--control`; pass the package
 
 **Why do DataGrid and TreeGrid share a package?**
 
-Both controls are provided by `Syncfusion.Grid.WinUI`. Add the package with the package alias (`grid` or `Syncfusion.Grid.WinUI`), and create the matching sample with the control alias (`datagrid` or `treegrid`) in `sfdotnet new winui --control`.
+Both controls are provided by `Syncfusion.Grid.WinUI`. Add the package with the alias `grid`, and create the matching sample with the control alias (`datagrid` or `treegrid`) in `sfdotnet new winui --control`.
 
 ## See also
 

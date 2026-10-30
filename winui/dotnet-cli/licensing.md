@@ -115,7 +115,7 @@ sfdotnet license activate --file C:\Keys\syncfusion-license.txt
 {% endhighlight %}
 {% endtabs %}
 
-N> When a license key is supplied through `--file`, the CLI skips sign in and download and registers the keys already in the file. A custom path must be absolute, and it is rejected when `syncfusion-license.txt` already exists in the project directory or a key is already supplied through the `SYNCFUSION_LICENSE` environment variable.
+N> When a license key is supplied through `--file`, the CLI skips sign in and download and registers the keys already in the file. A custom path must be absolute, and it cannot be used when the project already contains a `syncfusion-license.txt` file.
 
 ## View installed licenses
 
@@ -160,7 +160,7 @@ Sign out does not remove any license registered in the project. To sign in again
 
 ## Register a license without activation
 
-You can also register a license without writing values into generated sources by setting the `SYNCFUSION_LICENSE_KEY` environment variable in the application environment. When controls are selected, generated apps read this variable and register the license at startup. Refer to the [WinUI licensing overview](https://help.syncfusion.com/winui/licensing/overview) to generate a license key.
+You can also register a license without activation by setting the `SYNCFUSION_LICENSE_KEY` environment variable in the application environment. Generated apps read this variable and register the license at startup. Refer to the [WinUI licensing overview](https://help.syncfusion.com/winui/licensing/overview) to generate a license key.
 
 ## License options
 
@@ -171,7 +171,7 @@ You can also register a license without writing values into generated sources by
 | `--file` | Activate from an existing key file. With no value, the CLI reads `./syncfusion-license.txt` from the project directory. With an absolute path, the CLI uses the specified file |
 | `--json` | Emit one JSON document instead of table output |
 
-N> The options also apply to `sfdotnet license view`, which accepts `--path` and `--json`.
+N> The `--path` and `--json` options also apply to `sfdotnet license view`.
 
 ## FAQs
 

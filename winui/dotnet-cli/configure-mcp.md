@@ -18,7 +18,7 @@ The MCP setup workflow does not install component libraries and does not modify 
 * A Syncfusion<sup>®</sup> MCP API key, generated at [https://www.syncfusion.com/account/api-key](https://www.syncfusion.com/account/api-key).
 * An active Syncfusion<sup>®</sup> license for MCP usage.
 
-N> MCP setup requires .NET SDK 8 or later selected in the workspace (a `global.json` selection is respected). The `--runner dnx` mode requires .NET SDK 10 or later. For the general CLI prerequisites, refer to the [overview](/winui/dotnet-cli/overview).
+N> MCP setup requires .NET SDK 8 or later, and the `--runner dnx` mode requires .NET SDK 10 or later. For the general CLI prerequisites, refer to the [overview](/winui/dotnet-cli/overview).
 
 N> The MCP API key is separate from your product license key and from the `sfdotnet login` session. It is used only by the MCP server.
 
@@ -70,7 +70,7 @@ The CLI writes a project-local configuration file inside the workspace, next to 
 | Syncfusion Code Studio | `.codestudio/mcp.json` | `servers` |
 | Claude Code | `.mcp.json` | `mcpServers` |
 
-The generated entry registers a server named `sf-winui-mcp`. With the default `auto` runner on .NET SDK 10 or later (and the `dnx` runner), the server starts with `dnx`. On SDK 8 or 9 (and with the `local` runner), the server starts as a local .NET tool. For example, for VS Code with the local runner the CLI adds the following entry to `.vscode/mcp.json`:
+The generated entry registers a server named `sf-winui-mcp`. For example, for VS Code the CLI adds the following entry to `.vscode/mcp.json` (shown with the `local` runner; see [Runner modes](#runner-modes) for how each runner starts the server):
 
 ```json
 {
@@ -129,7 +129,7 @@ W> Never commit the API-key file to source control, and never paste the key valu
 | `--key-file` | Path to an existing API-key `.txt`/`.key` file outside the workspace |
 | `--runner` | Server runner: `auto` (default), `dnx`, or `local` |
 | `-p`, `--path` | The workspace directory. Defaults to the current directory. The directory must already exist |
-| `--dry-run` | Validate inputs and preview the destination without writing files or running tools. The runner is reported, but `auto` is not resolved to `dnx` or `local` |
+| `--dry-run` | Validate inputs and preview the destination without writing files or running tools |
 | `--force` | Replace an existing, differing platform server entry |
 | `--json` | Emit one JSON document |
 
