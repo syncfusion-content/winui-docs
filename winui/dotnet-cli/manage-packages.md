@@ -124,5 +124,4 @@ Both controls are provided by `Syncfusion.Grid.WinUI`. Add the package with the 
 ## See also
 
 * [Create a WinUI 3 project](/winui/dotnet-cli/create-project)
-* [License activation](/winui/dotnet-cli/licensing)
 * [Installing and deploying WinUI NuGet packages](https://help.syncfusion.com/winui/installation/install-nuget-packages)

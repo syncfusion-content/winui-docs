@@ -136,7 +136,6 @@ Both controls are provided by `Syncfusion.Grid.WinUI`. Use the control alias (`d
 ## See also
 
 * [Manage packages in an existing project](/winui/dotnet-cli/manage-packages)
-* [License activation](/winui/dotnet-cli/licensing)
 * [MCP configuration](/winui/dotnet-cli/configure-mcp)
 * [AI skills installation](/winui/dotnet-cli/install-skills)
 * [Windows App SDK unpackaged deployment](https://learn.microsoft.com/windows/apps/windows-app-sdk/deploy-unpackaged-apps)
