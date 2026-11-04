@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion .NET CLI Overview for WinUI | Syncfusion®
-description: Learn to install and use the Syncfusion® .NET CLI (sfdotnet) to create WinUI 3 apps, manage Syncfusion WinUI NuGet packages, register licenses, and configure AI tools.
+description: Learn to install and use the Syncfusion® .NET CLI (sfdotnet) to create WinUI 3 apps, manage Syncfusion WinUI NuGet packages, and configure AI tools.
 platform: winui
 control: Syncfusion<sup>®</sup> .NET CLI
 documentation: ug
@@ -9,13 +9,12 @@ documentation: ug
 
 # Overview of the Syncfusion<sup>®</sup> .NET CLI
 
-The Syncfusion<sup>®</sup> .NET CLI (`sfdotnet`) is a cross-platform command line tool that creates WinUI 3 projects, manages Syncfusion<sup>®</sup> WinUI NuGet packages, and registers licenses from a terminal. After you install the CLI, you can run `sfdotnet` with no arguments to open an interactive menu, or run a direct command such as `sfdotnet new winui` for scripted, prompt-free creation.
+The Syncfusion<sup>®</sup> .NET CLI (`sfdotnet`) is a cross-platform command line tool that creates WinUI 3 projects and manages Syncfusion<sup>®</sup> WinUI NuGet packages from a terminal. After you install the CLI, you can run `sfdotnet` with no arguments to open an interactive menu, or run a direct command such as `sfdotnet new winui` for scripted, prompt-free creation.
 
 You can use the CLI to perform the following actions:
 
 * Create a blank WinUI 3 app, or an app containing generated Syncfusion<sup>®</sup> control samples. For details, refer to [Create a WinUI 3 project](/winui/dotnet-cli/create-project).
 * Add or update Syncfusion<sup>®</sup> WinUI NuGet package references in an existing project. For details, refer to [Manage packages](/winui/dotnet-cli/manage-packages).
-* Activate Syncfusion<sup>®</sup> licenses for the controls used in a sample, and view installed licenses. For details, refer to [License activation](/winui/dotnet-cli/licensing).
 * Configure an official Syncfusion<sup>®</sup> Model Context Protocol (MCP) server for AI coding clients. For details, refer to [MCP configuration](/winui/dotnet-cli/configure-mcp).
 * Install official Syncfusion<sup>®</sup> component skills for AI agents. For details, refer to [AI skills installation](/winui/dotnet-cli/install-skills).
 
@@ -27,7 +26,6 @@ The following software is required before you install and use the CLI:
 
 * A Windows development environment with the [.NET SDK](https://dotnet.microsoft.com/download) installed. WinUI 3 projects use the Windows App SDK, and building and launching the generated apps require Windows.
 * An internet connection so package operations can reach [nuget.org](https://www.nuget.org).
-* A Syncfusion<sup>®</sup> account to activate licenses. Sign in is performed through the browser during license activation.
 
 N> Syncfusion<sup>®</sup> packages resolve from the official nuget.org feed, `https://api.nuget.org/v3/index.json`. The CLI accepts only this source through `--source`.
 
@@ -97,10 +95,6 @@ The following table lists the CLI key actions:
 | `sfdotnet search winui <text>` | Search packages | [Manage packages](/winui/dotnet-cli/manage-packages) |
 | `sfdotnet mcp init winui` | Configure a project-local Syncfusion<sup>®</sup> MCP client | [MCP configuration](/winui/dotnet-cli/configure-mcp) |
 | `sfdotnet skills install winui` | Install Syncfusion<sup>®</sup> component skills for AI agents | [AI skills installation](/winui/dotnet-cli/install-skills) |
-| `sfdotnet login` | Sign in to Syncfusion through the browser | [License activation](/winui/dotnet-cli/licensing) |
-| `sfdotnet logout` | Sign out and clear the local session | [License activation](/winui/dotnet-cli/licensing) |
-| `sfdotnet license activate` | Download the license for the project's packages and register it in the project's startup code | [License activation](/winui/dotnet-cli/licensing) |
-| `sfdotnet license view` | Show the licenses cached for the project (no network call) | [License activation](/winui/dotnet-cli/licensing) |
 | `sfdotnet info` | Show CLI information | |
 | `sfdotnet help winui` | Show the WinUI command map | |
 | `sfdotnet --version` | Show the CLI version | |
