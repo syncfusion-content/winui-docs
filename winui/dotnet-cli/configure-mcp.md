@@ -153,6 +153,5 @@ No. Setup writes the client configuration and installs the required tool, but do
 ## See also
 
 * [AI skills installation](/winui/dotnet-cli/install-skills)
-* [License activation](/winui/dotnet-cli/licensing)
 * [Syncfusion WinUI MCP server](/winui/mcp)
 * [MCP getting started](https://modelcontextprotocol.io/docs/getting-started/intro)
