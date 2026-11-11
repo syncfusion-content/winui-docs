@@ -141,7 +141,7 @@ DockPane outputPane = new DockPane()
 {
     Name = "OutputPane",
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked,
     Content = new TextBlock() { Text = "Output Content" }
 };
@@ -149,14 +149,14 @@ DockPane outputPane = new DockPane()
 DockPane errorListPane = new DockPane()
 {
     Header = "Error List",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Tabbed,
     TargetNameInTabbedState = "OutputPane",
     Content = new TextBlock() { Text = "Error List Content" }
 };
 
-dockingManager.Children.Add(outputPane);
-dockingManager.Children.Add(errorListPane);
+dockingManager.Panes.Add(outputPane);
+dockingManager.Panes.Add(errorListPane);
 
 {% endhighlight %}
 {% endtabs %}
@@ -190,7 +190,7 @@ DockPane documentPane = new DockPane()
     }
 };
 
-dockingManager.Children.Add(documentPane);
+dockingManager.Panes.Add(documentPane);
 
 {% endhighlight %}
 {% endtabs %}
@@ -219,7 +219,7 @@ DockPane propertiesPane = new DockPane()
     Content = new TextBlock() { Text = "Properties Window" }
 };
 
-dockingManager.Children.Add(propertiesPane);
+dockingManager.Panes.Add(propertiesPane);
 
 {% endhighlight %}
 {% endtabs %}

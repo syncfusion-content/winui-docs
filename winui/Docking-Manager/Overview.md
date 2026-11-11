@@ -31,4 +31,12 @@ The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framewor
 
 * **Visual Studio-style user experience:** Create familiar desktop application layouts with docking behaviors commonly found in development and productivity tools.
 
+* **Dock restrictions:** Limit the drag-and-drop targets of a pane with `DockAbility`, and prevent floating or auto-hiding with `AllowFloat` and `AllowAutoHide`. See [Dock Ability](Dock-Ability.md) and [Window States](Window-States.md).
+
+* **Layout serialization:** Save and restore the pane arrangement with `SaveLayout` and `LoadLayout`. See [Layout Serialization](Serialization.md).
+
+* **Programmatic pane management:** Add, remove, float, auto-hide, hide, restore, and activate panes in code. See [Pane Management](Pane-Management.md).
+
+* **Events:** Respond to pane, state, layout, and drag-and-drop changes. See [Events](Events.md).
+
 ![Docking Control Overview](Images/winui-docklayout-overview.webp)

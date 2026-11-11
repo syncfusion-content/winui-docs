@@ -123,4 +123,43 @@ dockingManager.Panes.Add(toolBoxPane);
 
 ![MultipleFloating Window](Images/winui-multiplefloating.png)
 
+## Prevent a Pane from Floating
 
+Set the `AllowFloat` property of the pane to `false` to prevent it from being displayed as a floating window. The default value is `true`. The `FloatPane` method and the pane header menu then leave the pane in its current state. For more information, see [Window States](Window-States.md).
+
+{% tabs %}
+{% highlight xaml %}
+
+<docking:DockPane Header="Toolbox"
+                  DockDirection="Left"
+                  DockState="Docked"
+                  AllowFloat="False">
+    <TextBlock Text="Toolbox Content"/>
+</docking:DockPane>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane toolboxPane = new DockPane()
+{
+    Header = "Toolbox",
+    DockDirection = Dock.Left,
+    DockState = DockState.Docked,
+    AllowFloat = false
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+## Float a Pane Programmatically
+
+Use the `FloatPane` method to move a docked pane to a floating window at runtime, and the `RestorePane` method to return it to the docked layout. See [Pane Management](Pane-Management.md).
+
+{% highlight c# %}
+
+dockingManager.FloatPane(toolboxPane);
+
+dockingManager.RestorePane(toolboxPane);
+
+{% endhighlight %}
