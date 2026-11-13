@@ -37,7 +37,7 @@ The following example allows the **Toolbox** pane to be docked only to the left 
         <docking:DockPane Header="Toolbox"
                           DockDirection="Left"
                           DockState="Docked"
-                          DockAbility="Left,Right">
+                          DockAbility="Right">
             <TextBlock Text="Toolbox Content"/>
         </docking:DockPane>
 
@@ -59,7 +59,7 @@ DockPane toolboxPane = new DockPane()
     Header = "Toolbox",
     DockDirection = Dock.Left,
     DockState = DockState.Docked,
-    DockAbility = DockAbility.Left | DockAbility.Right,
+    DockAbility = DockAbility.Right,
     Content = new TextBlock() { Text = "Toolbox Content" }
 };
 
@@ -75,6 +75,7 @@ dockingManager.Panes.Add(documentPane);
 {% endhighlight %}
 {% endtabs %}
 
+![Disable docking](Images/dockability-right.png)
 ## Disable docking through drag-and-drop
 
 Set `DockAbility` to `None` to prevent a pane from being docked through drag-and-drop.
@@ -104,6 +105,7 @@ DockPane outputPane = new DockPane()
 {% endhighlight %}
 {% endtabs %}
 
+![Disable docking](Images/dockability-none.png)
 ## Control document and tab targets
 
 Dropping a pane on the center of a target depends on the target type:
@@ -137,7 +139,7 @@ DockPane errorListPane = new DockPane()
 
 {% endhighlight %}
 {% endtabs %}
-
+![Disable docking](Images/dockability-tabbed.png)
 N> Dock hints for targets that `DockAbility` does not permit are not displayed, and dropping on them is ignored.
 
 N> `DockAbility` restricts only drag-and-drop operations. Changing `DockState` or `DockDirection` in code, or calling methods such as `AddPane` and `SetPaneState`, is not restricted. To restrict floating and auto-hiding, use `AllowFloat` and `AllowAutoHide`. See [Window States](Window-States.md).
