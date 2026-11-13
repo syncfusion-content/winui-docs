@@ -97,15 +97,16 @@ The following example groups the **Error List** pane with the **Output** pane.
 
 DockPane outputPane = new DockPane()
 {
+    Name = "OutputPane",
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked
 };
 
 DockPane errorListPane = new DockPane()
 {
     Header = "Error List",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Tabbed,
     TargetNameInTabbedState = "OutputPane"
 };
