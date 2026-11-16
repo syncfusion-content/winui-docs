@@ -116,7 +116,9 @@ Create all panes first, and call `LoadLayout` after the control has loaded.
 
 {% highlight c# %}
 
-dockingManager.Loaded += (s, e) =>
+dockingManager.Loaded += OnDockingManagerLoaded;
+
+private void OnDockingManagerLoaded(object sender, RoutedEventArgs e)
 {
     if (File.Exists(layoutPath))
     {
@@ -125,7 +127,7 @@ dockingManager.Loaded += (s, e) =>
             dockingManager.LoadLayout(stream);
         }
     }
-};
+}
 
 {% endhighlight %}
 

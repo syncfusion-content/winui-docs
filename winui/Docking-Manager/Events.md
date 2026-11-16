@@ -25,19 +25,6 @@ The DockingManager control raises events when panes are added or closed, when th
 | `DragCancelled` | `DragDeltaEventArgs` | Occurs when a pane drag operation is cancelled. |
 | `DockOperationCompleted` | `DockOperationCompletedEventArgs` | Occurs after the dock operation caused by a drop is applied. |
 
-## Event arguments
-
-| Event argument | Properties |
-|----------------|------------|
-| `PaneEventArgs` | `Pane` - the affected pane. |
-| `PaneCancelEventArgs` | `Pane` - the affected pane. `Cancel` - set to `true` to cancel the operation. |
-| `ActivePaneChangedEventArgs` | `OldPane` - the previously active pane. `NewPane` - the newly active pane. Either value can be `null`. |
-| `DockStateChangedEventArgs` | `Pane` - the affected pane. `OldState` - the previous `DockState`. `NewState` - the new `DockState`. |
-| `LayoutChangedEventArgs` | `Reason` - the `LayoutChangeReason` that caused the update. `Pane` - the pane involved, if any. |
-| `DragStartedEventArgs` | `Pane` - the dragged pane. `InitialPosition` - the pointer position where the drag started. |
-| `DragDeltaEventArgs` | `Pane` - the dragged pane. `Position` - the pointer position. `OldTarget` and `NewTarget` - the previous and current `Dock` targets, if any. |
-| `DockOperationCompletedEventArgs` | `Pane` - the docked pane. `Operation` - the `Dock` target that was applied. |
-
 ## Cancel adding or closing a pane
 
 The `PaneAdding` and `PaneClosing` events can be cancelled. The following example keeps the **Output** pane from being closed.
@@ -67,20 +54,24 @@ private void OnPaneClosing(object sender, PaneCancelEventArgs e)
 
 {% highlight c# %}
 
-dockingManager.DockStateChanged += (s, e) =>
+dockingManager.DockStateChanged += OnDockStateChanged;
+dockingManager.ActivePaneChanged += OnActivePaneChanged;
+dockingManager.LayoutChanged += OnLayoutChanged;
+
+private void OnDockStateChanged(object sender, DockStateChangedEventArgs e)
 {
     Debug.WriteLine($"{e.Pane?.Header}: {e.OldState} -> {e.NewState}");
-};
+}
 
-dockingManager.ActivePaneChanged += (s, e) =>
+private void OnActivePaneChanged(object sender, ActivePaneChangedEventArgs e)
 {
     Debug.WriteLine($"Active pane: {e.OldPane?.Header} -> {e.NewPane?.Header}");
-};
+}
 
-dockingManager.LayoutChanged += (s, e) =>
+private void OnLayoutChanged(object sender, LayoutChangedEventArgs e)
 {
     Debug.WriteLine($"Layout changed: {e.Reason}");
-};
+}
 
 {% endhighlight %}
 
@@ -88,24 +79,29 @@ dockingManager.LayoutChanged += (s, e) =>
 
 {% highlight c# %}
 
-dockingManager.DragStarted += (s, e) =>
+dockingManager.DragStarted += OnDragStarted;
+dockingManager.DragCompleted += OnDragCompleted;
+dockingManager.DragCancelled += OnDragCancelled;
+dockingManager.DockOperationCompleted += OnDockOperationCompleted;
+
+private void OnDragStarted(object sender, DragStartedEventArgs e)
 {
     Debug.WriteLine($"Drag started: {e.Pane.Header}");
-};
+}
 
-dockingManager.DragCompleted += (s, e) =>
+private void OnDragCompleted(object sender, DragDeltaEventArgs e)
 {
     Debug.WriteLine($"Dropped {e.Pane.Header} on {e.NewTarget}");
-};
+}
 
-dockingManager.DragCancelled += (s, e) =>
+private void OnDragCancelled(object sender, DragDeltaEventArgs e)
 {
     Debug.WriteLine($"Drag cancelled: {e.Pane.Header}");
-};
+}
 
-dockingManager.DockOperationCompleted += (s, e) =>
+private void OnDockOperationCompleted(object sender, DockOperationCompletedEventArgs e)
 {
     Debug.WriteLine($"{e.Pane.Header} docked: {e.Operation}");
-};
+}
 
 {% endhighlight %}

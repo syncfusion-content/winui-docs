@@ -18,7 +18,11 @@ Bind an `ObservableCollection<DockPane>` to `ItemsSource`. Each `DockPane` in th
 {% tabs %}
 {% highlight xaml %}
 
-<Grid>
+<Grid x:Name="grid">
+    <Grid.DataContext>
+        <local:DockingViewModel/>
+    </Grid.DataContext>
+
     <Grid.RowDefinitions>
         <RowDefinition Height="Auto"/>
         <RowDefinition/>
@@ -28,7 +32,7 @@ Bind an `ObservableCollection<DockPane>` to `ItemsSource`. Each `DockPane` in th
 
     <docking:SfDockingManager x:Name="dockingManager"
                               Grid.Row="1"
-                              ItemsSource="{x:Bind ViewModel.Panes}"/>
+                              ItemsSource="{Binding Panes}"/>
 </Grid>
 
 {% endhighlight %}
@@ -63,8 +67,6 @@ public class DockingViewModel
 
 public sealed partial class MainWindow : Window
 {
-    public DockingViewModel ViewModel { get; } = new DockingViewModel();
-
     public MainWindow()
     {
         InitializeComponent();
@@ -72,7 +74,8 @@ public sealed partial class MainWindow : Window
 
     private void OnAddPane(object sender, RoutedEventArgs e)
     {
-        ViewModel.Panes.Add(new DockPane()
+        var vm = grid.DataContext as DockingViewModel;
+        vm?.Panes.Add(new DockPane()
         {
             Header = "Output",
             DockDirection = Dock.Bottom,
@@ -113,7 +116,7 @@ public class NoteItem
 
 // The generated pane header is "Notes" and its content is the NoteItem instance.
 public ObservableCollection<NoteItem> Notes { get; } = new ObservableCollection<NoteItem>();
-// Bind: ItemsSource="{x:Bind ViewModel.Notes}"
+// Bind: ItemsSource="{Binding Notes}"
 Notes.Add(new NoteItem() { Title = "Notes" });
 
 {% endhighlight %}
