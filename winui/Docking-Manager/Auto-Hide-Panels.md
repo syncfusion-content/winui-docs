@@ -61,7 +61,7 @@ A pane can be displayed as an auto-hidden window by setting its `DockState` prop
 DockPane toolBoxPane = new DockPane()
 {
     Header = "Toolbox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -71,7 +71,7 @@ DockPane toolBoxPane = new DockPane()
 DockPane SolutionExplorerPane = new DockPane()
 {
     Header = "Solution Explorer",
-    DockDirection = DockDirection.Right,
+    DockDirection = Dock.Right,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -81,7 +81,7 @@ DockPane SolutionExplorerPane = new DockPane()
 DockPane OutputPane = new DockPane()
 {
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -91,7 +91,7 @@ DockPane OutputPane = new DockPane()
 DockPane documentPane = new DockPane()
 {
     Header = "App.xaml",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -115,3 +115,43 @@ When a pane is auto-hidden, it is displayed as a tab along the edge of the docki
 
 ![Auto Hide Behavior](Images/winui-autohide-behavior.gif)
 
+## Prevent a Pane from Auto-Hiding
+
+Set the `AllowAutoHide` property of the pane to `false` to prevent it from being auto-hidden. The default value is `true`. The `AutoHidePane` method and the pane header menu then leave the pane in its current state. For more information, see [Window States](Window-States.md).
+
+{% tabs %}
+{% highlight xaml %}
+
+<docking:DockPane Header="Toolbox"
+                  DockDirection="Left"
+                  DockState="Docked"
+                  AllowAutoHide="False">
+    <TextBlock Text="Toolbox Content"/>
+</docking:DockPane>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane toolboxPane = new DockPane()
+{
+    Header = "Toolbox",
+    DockDirection = Dock.Left,
+    DockState = DockState.Docked,
+    AllowAutoHide = false
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+## Auto-Hide a Pane Programmatically
+
+Use the `AutoHidePane` method to auto-hide a docked pane at runtime, and the `RestorePane` method to return it to the docked layout. See [Pane Management](Pane-Management.md).
+
+{% highlight c# %}
+
+dockingManager.AutoHidePane(toolboxPane);
+
+dockingManager.RestorePane(toolboxPane);
+
+{% endhighlight %}

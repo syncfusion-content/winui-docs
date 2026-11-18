@@ -53,7 +53,7 @@ A docked window is attached to one of the docking regions such as the left, righ
 DockPane toolboxPane = new DockPane()
 {
     Header = "Toolbox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -208,7 +208,7 @@ An auto-hidden window remains collapsed along the edge of the layout and expands
 DockPane autoHiddenPane = new DockPane()
 {
     Header = "Toolbox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.AutoHidden,
     Content = new TextBlock()
     {
@@ -263,15 +263,16 @@ A tabbed window groups multiple panes within the same docking region and display
 
 DockPane outputPane = new DockPane()
 {
+    Name = "OutputPane",
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked
 };
 
 DockPane errorListPane = new DockPane()
 {
     Header = "Error List",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Tabbed,
     TargetNameInTabbedState = "OutputPane"
 };
@@ -283,3 +284,79 @@ dockingManager.Panes.Add(errorListPane);
 {% endtabs %}
 
 ![Document Tabgroup](Images/winui-document-tab-group.png)
+
+## Hidden Window
+
+A hidden pane is closed and not displayed, but it remains part of the DockingManager so that it can be restored later. Use the `HidePane` method to hide a pane and the `RestorePane` method to display it again in the docked layout.
+
+{% highlight c# %}
+
+dockingManager.HidePane(toolboxPane);
+
+dockingManager.RestorePane(toolboxPane);
+
+{% endhighlight %}
+
+N> `HidePane` raises the `PaneClosing` and `PaneClosed` events. See [Events](Events.md).
+
+## Restrict Floating and Auto-Hiding
+
+Use the `AllowFloat` and `AllowAutoHide` properties of `DockPane` to control whether a pane can enter the `Floating` or `AutoHidden` state. Both properties are `true` by default.
+
+| Property | Description |
+|----------|-------------|
+| `AllowFloat` | When `false`, the pane cannot be floated. |
+| `AllowAutoHide` | When `false`, the pane cannot be auto-hidden. |
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <docking:SfDockingManager>
+
+        <docking:DockPane Header="Toolbox"
+                          DockDirection="Left"
+                          DockState="Docked"
+                          AllowFloat="False"
+                          AllowAutoHide="False">
+            <TextBlock Text="Toolbox Content"/>
+        </docking:DockPane>
+
+        <docking:DockPane Header="MainWindow.xaml"
+                          DockState="Document">
+            <TextBox Text="Main document editor..."
+                     AcceptsReturn="True"/>
+        </docking:DockPane>
+
+    </docking:SfDockingManager>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane toolboxPane = new DockPane()
+{
+    Header = "Toolbox",
+    DockDirection = Dock.Left,
+    DockState = DockState.Docked,
+    AllowFloat = false,
+    AllowAutoHide = false,
+    Content = new TextBlock() { Text = "Toolbox Content" }
+};
+
+dockingManager.Panes.Add(toolboxPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+When a state is not allowed:
+
+* The corresponding command is unavailable in the pane header menu.
+* The `FloatPane`, `AutoHidePane`, and `SetPaneState` methods leave the pane in its current state.
+* A pane that requests the `Floating` or `AutoHidden` state while being added is placed in the `Docked` state instead.
+* The state is not applied when a saved layout is loaded. See [Layout Serialization](Serialization.md).
+
+The properties can also be changed at runtime, and the header menu updates accordingly.
+
+N> To restrict the drag-and-drop targets of a pane, see [Dock Ability](Dock-Ability.md).
