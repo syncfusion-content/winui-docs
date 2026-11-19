@@ -52,14 +52,14 @@ You can create and arrange panes dynamically at runtime using the DockingManager
 DockPane toolboxPane = new DockPane()
 {
     Header = "Toolbox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked
 };
 
 DockPane solutionExplorerPane = new DockPane()
 {
     Header = "Solution Explorer",
-    DockDirection = DockDirection.Right,
+    DockDirection = Dock.Right,
     DockState = DockState.Docked
 };
 
@@ -137,7 +137,7 @@ During a drag operation, dock indicators provide visual feedback by displaying v
 DockPane toolBoxPane = new DockPane()
 {
     Header = "Toolbox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -147,7 +147,7 @@ DockPane toolBoxPane = new DockPane()
 DockPane SolutionExplorerPane = new DockPane()
 {
     Header = "Solution Explorer",
-    DockDirection = DockDirection.Right,
+    DockDirection = Dock.Right,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
@@ -156,29 +156,42 @@ DockPane SolutionExplorerPane = new DockPane()
 };
 DockPane OutputPane = new DockPane()
 {
+    Name = "OutputPane",
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked,
     Content = new TextBlock()
     {
         Text = "Output Content"
     }
 };
-DockPane documentPane = new DockPane()
+DockPane document1 = new DockPane()
+{
+    Header = "MainWindow.xaml",
+    DockState = DockState.Document,
+    Content = new TextBox() { AcceptsReturn = true, Text = "Main document editor..." }
+};
+DockPane document2 = new DockPane()
 {
     Header = "App.xaml",
-    DockDirection = DockDirection.Left,
-    DockState = DockState.Docked,
-    Content = new TextBlock()
-    {
-        Text = "App.xaml Content"
-    }
+    DockState = DockState.Document,
+    Content = new TextBox() { AcceptsReturn = true, Text = "Another document..." }
+};
+DockPane errorListPane = new DockPane()
+{
+    Header = "Error List",
+    DockDirection = Dock.Bottom,
+    DockState = DockState.Tabbed,
+    TargetNameInTabbedState = "OutputPane",
+    Content = new TextBlock() { Text = "Error List Content" }
 };
 
 dockingManager.Panes.Add(toolBoxPane);
 dockingManager.Panes.Add(SolutionExplorerPane);
 dockingManager.Panes.Add(OutputPane);
-dockingManager.Panes.Add(documentPane);
+dockingManager.Panes.Add(document1);
+dockingManager.Panes.Add(document2);
+dockingManager.Panes.Add(errorListPane);
 
 {% endhighlight %}
 {% endtabs %}
@@ -228,8 +241,8 @@ The following example creates multiple docked panes and a document window. Users
         </docking:DockPane>
 
         <docking:DockPane Header="ErrorList"
-                          DockDirection="Right"
-                          DockState="Docked" TargetNameInTabbedState="OutputPane">
+                          DockDirection="Bottom"
+                          DockState="Tabbed" TargetNameInTabbedState="OutputPane">
             <TextBlock Text="ErrorList Window"/>
         </docking:DockPane>
 
@@ -243,14 +256,14 @@ The following example creates multiple docked panes and a document window. Users
 DockPane toolboxPane = new DockPane()
 {
     Header = "Toolbox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked
 };
 
 DockPane editPane = new DockPane()
 {
     Header = "Edit",
-    DockDirection = DockDirection.Right,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked
 };
 
@@ -267,17 +280,17 @@ DockPane documentPane2 = new DockPane()
 
 DockPane outputPane = new DockPane()
 {
+    Name = "OutputPane",
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked
 };
 DockPane errorListPane = new DockPane()
 {
     Header = "ErrorList",
-    DockDirection = DockDirection.Bottom,
-    DockState = DockState.Docked,
-    DockDirection = DockDirection.Right,
-    TargetNameInTabbedState="outputPane"
+    DockDirection = Dock.Bottom,
+    DockState = DockState.Tabbed,
+    TargetNameInTabbedState = "OutputPane"
 };
 dockingManager.Panes.Add(toolboxPane);
 dockingManager.Panes.Add(editPane);
@@ -328,17 +341,18 @@ The following example docks the **SolutionExplorer** pane to the **right side** 
 
 DockPane ToolBoxPane = new DockPane()
 {
+    Name = "ToolBoxPane",
     Header = "ToolBox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked
 };
 
 DockPane SolutionExplorerPane = new DockPane()
 {
     Header = "SolutionExplorer",
-    DockDirection = DockDirection.Right,
+    DockDirection = Dock.Right,
     DockState = DockState.Docked,
-    TargetNameInTabbedState = "ToolBoxPane"
+    TargetNameInDockedState = "ToolBoxPane"
 };
 
 dockingManager.Panes.Add(ToolBoxPane);
@@ -380,17 +394,18 @@ The following example docks the **SolutionExplorer** pane to the **top side** of
 
 DockPane ToolBoxPane = new DockPane()
 {
+    Name = "ToolBoxPane",
     Header = "ToolBox",
-    DockDirection = DockDirection.Left,
+    DockDirection = Dock.Left,
     DockState = DockState.Docked
 };
 
 DockPane SolutionExplorerPane = new DockPane()
 {
     Header = "SolutionExplorer",
-    DockDirection = DockDirection.Top,
+    DockDirection = Dock.Top,
     DockState = DockState.Docked,
-    TargetNameInTabbedState = "ToolBoxPane"
+    TargetNameInDockedState = "ToolBoxPane"
 };
 
 dockingManager.Panes.Add(ToolBoxPane);
@@ -400,3 +415,59 @@ dockingManager.Panes.Add(SolutionExplorerPane);
 {% endtabs %}
 
 ![Document Tabgroup](Images/winui-topbottom.png)
+
+## Control Pane Size
+
+Use the `DesiredDockSize`, `MinDockSize`, and `MaxDockSize` properties to control the size of a docked pane along its docked edge. Left and right panes use these values as width, and top and bottom panes use them as height. The default value of each property is `NaN`, which uses the default size.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid>
+    <docking:SfDockingManager>
+
+        <docking:DockPane Header="Toolbox"
+                          DockDirection="Left"
+                          DockState="Docked"
+                          DesiredDockSize="250"
+                          MinDockSize="150"
+                          MaxDockSize="400">
+            <TextBlock Text="Toolbox Content"/>
+        </docking:DockPane>
+
+        <docking:DockPane Header="MainWindow.xaml"
+                          DockState="Document">
+            <TextBox Text="Main document editor..."
+                     AcceptsReturn="True"/>
+        </docking:DockPane>
+
+    </docking:SfDockingManager>
+</Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DockPane toolboxPane = new DockPane()
+{
+    Header = "Toolbox",
+    DockDirection = Dock.Left,
+    DockState = DockState.Docked,
+    DesiredDockSize = 250,
+    MinDockSize = 150,
+    MaxDockSize = 400
+};
+
+dockingManager.Panes.Add(toolboxPane);
+
+{% endhighlight %}
+{% endtabs %}
+
+For more information, including how to read and restore pane sizes as a ratio, see [Pane Management](Pane-Management.md).
+
+## See Also
+
+* [Dock Ability](Dock-Ability.md)
+* [Pane Management](Pane-Management.md)
+* [Layout Serialization](Serialization.md)
+* [Events](Events.md)

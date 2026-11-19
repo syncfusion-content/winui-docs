@@ -97,15 +97,16 @@ The following example groups the **Error List** pane with the **Output** pane.
 
 DockPane outputPane = new DockPane()
 {
+    Name = "OutputPane",
     Header = "Output",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Docked
 };
 
 DockPane errorListPane = new DockPane()
 {
     Header = "Error List",
-    DockDirection = DockDirection.Bottom,
+    DockDirection = Dock.Bottom,
     DockState = DockState.Tabbed,
     TargetNameInTabbedState = "OutputPane"
 };
@@ -117,3 +118,4 @@ dockingManager.Panes.Add(errorListPane);
 {% endtabs %}
 
 ![Document Tabgroup](Images/winui-document-tab-group.png)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/winui-sfdockingmanager-samples/tree/master/Samples/TabbedGroup)
