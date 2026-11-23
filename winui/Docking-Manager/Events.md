@@ -27,7 +27,7 @@ The DockingManager control raises events when panes are added or closed, when th
 
 ## Cancel adding or closing a pane
 
-The `PaneAdding` and `PaneClosing` events can be cancelled. The following example keeps the **Output** pane from being closed.
+The [PaneAdding](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_PaneAdding) and [PaneClosing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_PaneClosing) events can be cancelled. The following example keeps the **Output** pane from being closed.
 
 {% tabs %}
 {% highlight xaml %}

@@ -15,8 +15,8 @@ The layout is written as an XML document. The application owns the storage, so t
 
 | Method | Description |
 |--------|-------------|
-| `SaveLayout(Stream)` | Writes the current layout as XML to the specified stream. |
-| `LoadLayout(Stream)` | Reads a layout produced by `SaveLayout` and applies it to the panes. |
+| [SaveLayout(Stream)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_SaveLayout_System_IO_Stream_) | Writes the current layout as XML to the specified stream. |
+| [LoadLayout(Stream)](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_LoadLayout_System_IO_Stream_) | Reads a layout produced by `SaveLayout` and applies it to the panes. |
 
 ## What is saved
 
@@ -111,9 +111,10 @@ private void OnLoadLayout(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/winui-sfdockingmanager-samples/tree/master/Samples/Serialization)
+
 ## Restore the layout when the application starts
 
-Create all panes first, and call `LoadLayout` after the control has loaded.
+Create all panes first, and call [LoadLayout](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_LoadLayout_System_IO_Stream_) after the control has loaded.
 
 {% highlight c# %}
 

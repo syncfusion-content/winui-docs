@@ -9,7 +9,7 @@ documentation: ug
 
 # Dock Ability in WinUI DockingManager
 
-The `DockAbility` property of `DockPane` controls where a pane can be dropped during drag-and-drop operations. Use it to prevent users from docking a pane to unsupported regions, for example to keep a tool window on the horizontal edges only.
+The [DockAbility](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockAbility.html) property of [DockPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html) controls where a pane can be dropped during drag-and-drop operations. Use it to prevent users from docking a pane to unsupported regions, for example to keep a tool window on the horizontal edges only.
 
 `DockAbility` is a flags enumeration, so values can be combined with the bitwise OR operator. The default value is `All`.
 
@@ -142,6 +142,6 @@ DockPane errorListPane = new DockPane()
 ![Disable docking](Images/dockability-tabbed.png)
 N> Dock hints for targets that `DockAbility` does not permit are not displayed, and dropping on them is ignored.
 
-N> `DockAbility` restricts only drag-and-drop operations. Changing `DockState` or `DockDirection` in code, or calling methods such as `AddPane` and `SetPaneState`, is not restricted. To restrict floating and auto-hiding, use `AllowFloat` and `AllowAutoHide`. See [Window States](Window-States.md).
+N> `DockAbility` restricts only drag-and-drop operations. Changing `DockState` or `DockDirection` in code, or calling methods such as `AddPane` and `SetPaneState`, is not restricted. To restrict floating and auto-hiding, use `AllowFloat` and `AllowAutoHide`. See [Window States](https://help.syncfusion.com/winui/docking-manager/window-states).
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/winui-sfdockingmanager-samples/tree/master/Samples/DockAbility)

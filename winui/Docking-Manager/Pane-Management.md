@@ -15,10 +15,10 @@ The DockingManager control provides properties and methods to manage panes at ru
 
 | Member | Description |
 |--------|-------------|
-| `ActivePane` | Gets the pane that currently has focus. This property is read-only. Use `ActivatePane` to change it. |
-| `SelectedDocument` | Gets or sets the content displayed in the central document area. |
+| [ActivePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_ActivePane) | Gets the pane that currently has focus. This property is read-only. Use `ActivatePane` to change it. |
+| [SelectedDocument](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_SelectedDocument) | Gets or sets the content displayed in the central document area. |
 
-The `ActivePane` changes when the user clicks or focuses a pane, or when `ActivatePane` is called. The [ActivePaneChanged](Events.md) event is raised after every change.
+The [ActivePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_ActivePane) changes when the user clicks or focuses a pane, or when [ActivatePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_ActivatePane_Syncfusion_UI_Xaml_Docking_DockPane_) is called. The [ActivePaneChanged](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_ActivePaneChanged) event is raised after every change.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,9 +47,9 @@ dockingManager.SelectedDocument = new TextBox() { Text = "Document content" };
 
 ## Add and remove panes
 
-Use `AddPane` to add a pane to the DockingManager at runtime. The second parameter specifies the edge to dock the pane to. Passing `Dock.Center` adds the pane as a document.
+Use [AddPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_AddPane_Syncfusion_UI_Xaml_Docking_DockPane_Syncfusion_UI_Xaml_Docking_Dock_) to add a pane to the DockingManager at runtime. The second parameter specifies the edge to dock the pane to. Passing `Dock.Center` adds the pane as a document.
 
-Use `RemovePane` to remove a pane from the DockingManager. Nothing happens if the pane is not part of the DockingManager.
+Use [RemovePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_RemovePane_Syncfusion_UI_Xaml_Docking_DockPane_) to remove a pane from the DockingManager. Nothing happens if the pane is not part of the DockingManager.
 
 {% highlight c# %}
 
@@ -71,7 +71,7 @@ N> `AddPane` raises `PaneAdding` and `PaneAdded`. `RemovePane` raises `PaneClosi
 
 ## Change the state of a pane
 
-The following methods change the `DockState` of a pane at runtime.
+The following methods change the [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockState) of a pane at runtime.
 
 | Method | Description |
 |--------|-------------|
@@ -116,7 +116,7 @@ private void OnRestore(object sender, RoutedEventArgs e) => dockingManager.Resto
 {% endhighlight %}
 {% endtabs %}
 
-The `SetPaneState` method can be used instead of the individual methods.
+The [SetPaneState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_SetPaneState_Syncfusion_UI_Xaml_Docking_DockPane_Syncfusion_UI_Xaml_Docking_DockState_) method can be used instead of the individual methods.
 
 {% highlight c# %}
 
@@ -130,7 +130,7 @@ N> These methods do nothing when the pane is `null`, is not part of the DockingM
 
 ## Pane sizes
 
-Use the following `DockPane` properties to control the size of a docked pane along its docked edge. Left and right panes use the value as their width. Top and bottom panes use it as their height.
+Use the following [DockPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html) properties to control the size of a docked pane along its docked edge. Left and right panes use the value as their width. Top and bottom panes use it as their height.
 
 | Property | Description |
 |----------|-------------|
@@ -182,7 +182,7 @@ DockPane outputPane = new DockPane()
 {% endhighlight %}
 {% endtabs %}
 
-To read or restore the size of a docked pane as a ratio, use `GetDockSizeRatio` and `SetPaneSizeRatio`. The ratio is the pane size relative to the pane plus the document area along the same axis. `GetDockSizeRatio` returns `NaN` when the pane is not docked.
+To read or restore the size of a docked pane as a ratio, use [GetDockSizeRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_GetDockSizeRatio_Syncfusion_UI_Xaml_Docking_DockPane_) and [SetPaneSizeRatio](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_SetPaneSizeRatio_Syncfusion_UI_Xaml_Docking_DockPane_System_Double_). The ratio is the pane size relative to the pane plus the document area along the same axis. `GetDockSizeRatio` returns `NaN` when the pane is not docked.
 
 {% highlight c# %}
 

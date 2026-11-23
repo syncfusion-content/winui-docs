@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® WinUI Docking Control
 
-The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framework that helps organize application content into dockable panes and document windows. It enables developers to build Visual Studio-style desktop interfaces with docked, floating, auto-hidden, tabbed, and document windows. For setup steps, including NuGet package installation and namespace configuration, see the [Getting Started](Getting-Started.md) page.
+The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framework that helps organize application content into dockable panes and document windows. It enables developers to build Visual Studio-style desktop interfaces with docked, floating, auto-hidden, tabbed, and document windows. For setup steps, including NuGet package installation and namespace configuration, see the [Getting Started](https://help.syncfusion.com/winui/docking-manager/getting-started) page.
 
 ## Key features
 
@@ -31,12 +31,12 @@ The Syncfusion<sup>®</sup> WinUI Docking control is a flexible docking framewor
 
 * **Visual Studio-style user experience:** Create familiar desktop application layouts with docking behaviors commonly found in development and productivity tools.
 
-* **Dock restrictions:** Limit the drag-and-drop targets of a pane with `DockAbility`, and prevent floating or auto-hiding with `AllowFloat` and `AllowAutoHide`. See [Dock Ability](Dock-Ability.md) and [Window States](Window-States.md).
+* **Dock restrictions:** Limit the drag-and-drop targets of a pane with `DockAbility`, and prevent floating or auto-hiding with `AllowFloat` and `AllowAutoHide`. See [Dock Ability](https://help.syncfusion.com/winui/docking-manager/dock-ability) and [Window States](https://help.syncfusion.com/winui/docking-manager/window-states).
 
-* **Layout serialization:** Save and restore the pane arrangement with `SaveLayout` and `LoadLayout`. See [Layout Serialization](Serialization.md).
+* **Layout serialization:** Save and restore the pane arrangement with `SaveLayout` and `LoadLayout`. See [Layout Serialization](https://help.syncfusion.com/winui/docking-manager/serialization).
 
-* **Programmatic pane management:** Add, remove, float, auto-hide, hide, restore, and activate panes in code. See [Pane Management](Pane-Management.md).
+* **Programmatic pane management:** Add, remove, float, auto-hide, hide, restore, and activate panes in code. See [Pane Management](https://help.syncfusion.com/winui/docking-manager/pane-management).
 
-* **Events:** Respond to pane, state, layout, and drag-and-drop changes. See [Events](Events.md).
+* **Events:** Respond to pane, state, layout, and drag-and-drop changes. See [Events](https://help.syncfusion.com/winui/docking-manager/events).
 
-![Docking Control Overview](Images/winui-docklayout-overview.webp)
+![Docking Control Overview](Images/winui-docklayout-overview.png)

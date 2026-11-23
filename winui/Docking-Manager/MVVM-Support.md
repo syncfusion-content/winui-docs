@@ -13,7 +13,7 @@ The DockingManager control can generate its panes from a collection bound to the
 
 ## Bind a collection of panes
 
-Bind an `ObservableCollection<DockPane>` to `ItemsSource`. Each `DockPane` in the collection is added to the layout using its own `DockDirection` and `DockState`.
+Bind an `ObservableCollection<DockPane>` to [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_ItemsSource). Each [DockPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html) in the collection is added to the layout using its own [DockDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockDirection) and [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockState).
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,7 +84,7 @@ Setting `ItemsSource` to a different collection removes the previously generated
 
 ## Bind items that are not panes
 
-An item that is not a `DockPane` is also converted to a pane. The pane `Header` is set to the text returned by the item's `ToString()` method, and the item itself becomes the pane `Content`. Override `ToString()` on the item type to control the header text.
+An item that is not a `DockPane` is also converted to a pane. The pane [Header](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_Header) is set to the text returned by the item's `ToString()` method, and the item itself becomes the pane `Content`. Override `ToString()` on the item type to control the header text.
 
 {% highlight c# %}
 
@@ -102,4 +102,4 @@ Notes.Add(new NoteItem() { Title = "Notes" });
 
 {% endhighlight %}
 
-N> `ItemsSource` panes participate in the layout like panes defined in XAML. Pane methods such as `FloatPane`, `AutoHidePane`, and `HidePane`, and layout [serialization](Serialization.md), work with them in the same way.
+N> `ItemsSource` panes participate in the layout like panes defined in XAML. Pane methods such as `FloatPane`, `AutoHidePane`, and `HidePane`, and layout [serialization](https://help.syncfusion.com/winui/docking-manager/serialization), work with them in the same way.
