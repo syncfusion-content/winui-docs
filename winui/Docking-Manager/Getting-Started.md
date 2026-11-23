@@ -27,7 +27,7 @@ N> The XAML samples in this document use `<Window>` as the root element because 
 
 ### Initialize the DockingManager
 
-Add the `SfDockingManager` control to the page or window.
+Add the [SfDockingManager](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html) control to the page or window.
 
 {% tabs %}
 {% highlight xaml %}
@@ -65,7 +65,7 @@ public sealed partial class MainWindow : Window
 
 ## Add dock panes
 
-The `DockPane` is the basic element of the DockingManager control. It hosts content and can be displayed in different docking states.
+The [DockPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html) is the basic element of the DockingManager control. It hosts content and can be displayed in different docking states.
 
 The following example demonstrates how to add docked and document panes.
 
@@ -113,7 +113,7 @@ The DockingManager control supports the following docking states:
 
 ## Create tab groups
 
-Use the `TargetNameInTabbedState` property to group a pane with another existing pane. The grouped panes appear together in a tabbed layout.
+Use the [TargetNameInTabbedState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_TargetNameInTabbedState) property to group a pane with another existing pane. The grouped panes appear together in a tabbed layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,7 +163,7 @@ dockingManager.Panes.Add(errorListPane);
 
 ## Add document panes
 
-A document pane is hosted in the document area of the layout. Set the `DockState` property to `Document`.
+A document pane is hosted in the document area of the layout. Set the [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockState.html) property to [Document](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockState.html#Syncfusion_UI_Xaml_Docking_DockState_Document).
 
 {% tabs %}
 {% highlight xaml %}
@@ -197,7 +197,7 @@ dockingManager.Panes.Add(documentPane);
 
 ## Add a floating window
 
-A pane can be displayed in a floating window by setting its `DockState` to `Floating`. The pane detaches from the main layout and appears in its own movable window.
+A pane can be displayed in a floating window by setting its [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockState.html) to [Floating](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockState.html#Syncfusion_UI_Xaml_Docking_DockState_Floating). The pane detaches from the main layout and appears in its own movable window.
 
 {% tabs %}
 {% highlight xaml %}

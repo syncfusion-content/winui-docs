@@ -15,7 +15,7 @@ This behavior helps maximize the available workspace while keeping important too
 
 ## Auto-Hide a Pane
 
-A pane can be displayed as an auto-hidden window by setting its `DockState` property to `AutoHidden`.
+A pane can be displayed as an auto-hidden window by setting its [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockState) property to `AutoHidden`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ A pane can be displayed as an auto-hidden window by setting its `DockState` prop
         <docking:DockPane x:Name="ToolBoxPane"
                 Header="Toolbox"
                 DockDirection="Left"
-                DockState="Docked">
+                DockState="AutoHidden">
             <TextBlock Text="Toolbox Content" Margin="10"/>
         </docking:DockPane>
         <!-- Right Docked -->
@@ -109,15 +109,9 @@ dockingManager.Panes.Add(documentPane);
 
 ![Auto Hide a Pane](Images/winui-autohide.gif)
 
-## Display an Auto-Hidden Pane
-
-When a pane is auto-hidden, it is displayed as a tab along the edge of the docking layout. Selecting the tab temporarily expands the pane and displays its content. When the pane loses focus, it automatically collapses back to its hidden state.
-
-![Auto Hide Behavior](Images/winui-autohide-behavior.gif)
-
 ## Prevent a Pane from Auto-Hiding
 
-Set the `AllowAutoHide` property of the pane to `false` to prevent it from being auto-hidden. The default value is `true`. The `AutoHidePane` method and the pane header menu then leave the pane in its current state. For more information, see [Window States](Window-States.md).
+Set the [AllowAutoHide](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_AllowAutoHide) property of the pane to `false` to prevent it from being auto-hidden. The default value is `true`. The [AutoHidePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_AutoHidePane_Syncfusion_UI_Xaml_Docking_DockPane_) method and the pane header menu then leave the pane in its current state. For more information, see [Window States](https://help.syncfusion.com/winui/docking-manager/window-states).
 
 {% tabs %}
 {% highlight xaml %}
@@ -146,7 +140,7 @@ DockPane toolboxPane = new DockPane()
 
 ## Auto-Hide a Pane Programmatically
 
-Use the `AutoHidePane` method to auto-hide a docked pane at runtime, and the `RestorePane` method to return it to the docked layout. See [Pane Management](Pane-Management.md).
+Use the [AutoHidePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_AutoHidePane_Syncfusion_UI_Xaml_Docking_DockPane_) method to auto-hide a docked pane at runtime, and the `RestorePane` method to return it to the docked layout. See [Pane Management](https://help.syncfusion.com/winui/docking-manager/pane-management).
 
 {% highlight c# %}
 
