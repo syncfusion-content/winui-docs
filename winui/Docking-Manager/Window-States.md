@@ -287,7 +287,7 @@ dockingManager.Panes.Add(errorListPane);
 
 ## Hidden Window
 
-A hidden pane is closed and not displayed, but it remains part of the DockingManager so that it can be restored later. Use the `HidePane` method to hide a pane and the `RestorePane` method to display it again in the docked layout.
+A hidden pane is closed and not displayed, but it remains part of the DockingManager so that it can be restored later. Use the [HidePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_HidePane_Syncfusion_UI_Xaml_Docking_DockPane_) method to hide a pane and the [RestorePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_RestorePane_Syncfusion_UI_Xaml_Docking_DockPane_) method to display it again in the docked layout.
 
 {% highlight c# %}
 
@@ -297,7 +297,7 @@ dockingManager.RestorePane(toolboxPane);
 
 {% endhighlight %}
 
-N> `HidePane` raises the `PaneClosing` and `PaneClosed` events. See [Events](Events.md).
+N> `HidePane` raises the `PaneClosing` and `PaneClosed` events. See [Events](https://help.syncfusion.com/winui/docking-manager/events).
 
 ## Restrict Floating and Auto-Hiding
 
@@ -355,8 +355,8 @@ When a state is not allowed:
 * The corresponding command is unavailable in the pane header menu.
 * The `FloatPane`, `AutoHidePane`, and `SetPaneState` methods leave the pane in its current state.
 * A pane that requests the `Floating` or `AutoHidden` state while being added is placed in the `Docked` state instead.
-* The state is not applied when a saved layout is loaded. See [Layout Serialization](Serialization.md).
+* The state is not applied when a saved layout is loaded. See [Layout Serialization](https://help.syncfusion.com/winui/docking-manager/serialization).
 
 The properties can also be changed at runtime, and the header menu updates accordingly.
 
-N> To restrict the drag-and-drop targets of a pane, see [Dock Ability](Dock-Ability.md).
+N> To restrict the drag-and-drop targets of a pane, see [Dock Ability](https://help.syncfusion.com/winui/docking-manager/dock-ability).

@@ -64,7 +64,7 @@ dockingManager.Panes.Add(documentPane2);
 
 Tool windows can be grouped into the same docking region and displayed as tabs. This allows users to switch between related windows without occupying additional layout space.
 
-Use the `TargetNameInTabbedState` property to specify the pane with which the current pane should be grouped as a tab.
+Use the [TargetNameInTabbedState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_TargetNameInTabbedState) property to specify the pane with which the current pane should be grouped as a tab.
 
 The following example groups the **Error List** pane with the **Output** pane.
 
@@ -118,4 +118,5 @@ dockingManager.Panes.Add(errorListPane);
 {% endtabs %}
 
 ![Document Tabgroup](Images/winui-document-tab-group.png)
+
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/winui-sfdockingmanager-samples/tree/master/Samples/TabbedGroup)

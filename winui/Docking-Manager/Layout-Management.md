@@ -13,7 +13,7 @@ The DockingManager control provides several layout management features that help
 
 ## Place Panes Using XAML
 
-You can define the initial position and state of panes directly in XAML by setting the `DockDirection` and `DockState` properties.
+You can define the initial position and state of panes directly in XAML by setting the [DockDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockDirection) and [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockState) properties.
 
 {% highlight xaml %}
 
@@ -308,7 +308,7 @@ dockingManager.Panes.Add(errorListPane);
 
 Tool windows can be arranged in a split layout, allowing multiple panes to remain visible simultaneously within the same docking region. This helps users view and interact with related content side by side.
 
-Use the `TargetNameInDockedState` property to specify the pane relative to which the current pane should be docked. The position of the pane is determined by the `DockDirection` property, which supports docking to the left, right, top, or bottom of the target pane.
+Use the [TargetNameInDockedState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_TargetNameInDockedState) property to specify the pane relative to which the current pane should be docked. The position of the pane is determined by the [DockDirection](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockDirection) property, which supports docking to the left, right, top, or bottom of the target pane.
 
 The following example docks the **SolutionExplorer** pane to the **right side** of the **ToolBox** pane.
 
@@ -418,7 +418,7 @@ dockingManager.Panes.Add(SolutionExplorerPane);
 
 ## Control Pane Size
 
-Use the `DesiredDockSize`, `MinDockSize`, and `MaxDockSize` properties to control the size of a docked pane along its docked edge. Left and right panes use these values as width, and top and bottom panes use them as height. The default value of each property is `NaN`, which uses the default size.
+Use the [DesiredDockSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DesiredDockSize), [MinDockSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_MinDockSize), and [MaxDockSize](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_MaxDockSize) properties to control the size of a docked pane along its docked edge. Left and right panes use these values as width, and top and bottom panes use them as height. The default value of each property is `NaN`, which uses the default size.
 
 {% tabs %}
 {% highlight xaml %}
@@ -463,11 +463,11 @@ dockingManager.Panes.Add(toolboxPane);
 {% endhighlight %}
 {% endtabs %}
 
-For more information, including how to read and restore pane sizes as a ratio, see [Pane Management](Pane-Management.md).
+For more information, including how to read and restore pane sizes as a ratio, see [Pane Management](https://help.syncfusion.com/winui/docking-manager/pane-management#pane-sizes).
 
 ## See Also
 
-* [Dock Ability](Dock-Ability.md)
-* [Pane Management](Pane-Management.md)
-* [Layout Serialization](Serialization.md)
-* [Events](Events.md)
+* [Dock Ability](https://help.syncfusion.com/winui/docking-manager/dock-ability)
+* [Pane Management](https://help.syncfusion.com/winui/docking-manager/pane-management)
+* [Layout Serialization](https://help.syncfusion.com/winui/docking-manager/serialization)
+* [Events](https://help.syncfusion.com/winui/docking-manager/events)

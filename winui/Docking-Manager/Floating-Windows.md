@@ -13,7 +13,7 @@ The DockingManager control allows panes to be displayed as floating windows. Flo
 
 ## Create a Floating Window
 
-A pane can be displayed as a floating window by setting its `DockState` property to `Floating`.
+A pane can be displayed as a floating window by setting its [DockState](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_DockState) property to `Floating`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ dockingManager.Panes.Add(toolBoxPane);
 
 ## Prevent a Pane from Floating
 
-Set the `AllowFloat` property of the pane to `false` to prevent it from being displayed as a floating window. The default value is `true`. The `FloatPane` method and the pane header menu then leave the pane in its current state. For more information, see [Window States](Window-States.md).
+Set the [AllowFloat](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.DockPane.html#Syncfusion_UI_Xaml_Docking_DockPane_AllowFloat) property of the pane to `false` to prevent it from being displayed as a floating window. The default value is `true`. The [FloatPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_FloatPane_Syncfusion_UI_Xaml_Docking_DockPane_) method and the pane header menu then leave the pane in its current state. For more information, see [Window States](https://help.syncfusion.com/winui/docking-manager/window-states).
 
 {% tabs %}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ DockPane toolboxPane = new DockPane()
 
 ## Float a Pane Programmatically
 
-Use the `FloatPane` method to move a docked pane to a floating window at runtime, and the `RestorePane` method to return it to the docked layout. See [Pane Management](Pane-Management.md).
+Use the [FloatPane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_FloatPane_Syncfusion_UI_Xaml_Docking_DockPane_) method to move a docked pane to a floating window at runtime, and the [RestorePane](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Docking.SfDockingManager.html#Syncfusion_UI_Xaml_Docking_SfDockingManager_RestorePane_Syncfusion_UI_Xaml_Docking_DockPane_) method to return it to the docked layout. See [Pane Management](https://help.syncfusion.com/winui/docking-manager/pane-management).
 
 {% highlight c# %}
 
