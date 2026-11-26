@@ -69,6 +69,7 @@ public sealed partial class MainWindow : Window
 {% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/winui-sfdockingmanager-samples/tree/master/Samples/MVVM)
+
 ## Collection changes
 
 When the bound collection implements `INotifyCollectionChanged`, such as `ObservableCollection<T>`, the DockingManager keeps the panes in sync:
