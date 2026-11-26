@@ -41,7 +41,7 @@ It is necessary to define an [EditTemplate](https://help.syncfusion.com/cr/winui
     </treeView:SfTreeView.ItemTemplate>
     <treeView:SfTreeView.EditTemplate>
         <DataTemplate>
-            <TextBox Text="{Binding Name}" 
+            <TextBox Text="{Binding FileName, Mode=TwoWay}" 
 				VerticalContentAlignment="Center" 
                 Margin="-4,0,-4,0"
                 Height="{Binding ItemHeight,ElementName=treeView}" />

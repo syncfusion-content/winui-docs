@@ -140,6 +140,7 @@ DockPane errorListPane = new DockPane()
 {% endhighlight %}
 {% endtabs %}
 ![Disable docking](Images/dockability-tabbed.png)
+
 N> Dock hints for targets that `DockAbility` does not permit are not displayed, and dropping on them is ignored.
 
 N> `DockAbility` restricts only drag-and-drop operations. Changing `DockState` or `DockDirection` in code, or calling methods such as `AddPane` and `SetPaneState`, is not restricted. To restrict floating and auto-hiding, use `AllowFloat` and `AllowAutoHide`. See [Window States](https://help.syncfusion.com/winui/docking-manager/window-states).
