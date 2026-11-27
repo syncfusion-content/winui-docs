@@ -14,7 +14,7 @@ This section outlines a step‑by‑step guide for integrating and using the Mar
 
 ## Creating an WinUI application with Markdown Viewer
 
-1. Create a WinUI 3 desktop application.
+1. Create a WinUI 3 desktop application for C# and .NET 8 or later
 
 2. Install the following NuGet package in your project:
    - Syncfusion.MarkdownViewer.WinUI

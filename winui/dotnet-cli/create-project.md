@@ -19,7 +19,7 @@ Run `sfdotnet new`, or select **Create a new project** from the main menu. The W
 
     ![Framework selection in the Syncfusion .NET CLI](images/cli-create-new-project.png)
 
-2. **Framework:** Select the .NET version: .NET 10 (`net10.0`), the default, or .NET 9 (`net9.0`).
+2. **Framework:** Select the .NET version: .NET 11 (`net11.0`), .NET 10 (`net10.0`), the default, or .NET 9 (`net9.0`).
 
 3. **Location and name:** Enter the parent directory and the project name. The suggested location is `%USERPROFILE%\source\repos`, and the suggested name is `SyncfusionWinUIApp`. The first available numeric suffix is used when the destination name collides.
 
