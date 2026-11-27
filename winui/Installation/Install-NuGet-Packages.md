@@ -17,8 +17,8 @@ N> Syncfusion WinUI NuGet packages are available from v18.3.0.35 (Essential Stud
 
 ## Prerequisites
 
-* Visual Studio 2019 version 16.10 or later, or Visual Studio 2022, with the **Windows App SDK** workload installed.
-* A WinUI project that targets `net5.0-windows10.0.19041.0` or later, with the Windows App SDK reference.
+* Visual Studio 2019 version 16.10 or later, or Visual Studio 2026, with the **Windows App SDK** workload installed.
+* A WinUI project that targets `net8.0-windows10.0.19041.0` or later, with the Windows App SDK reference.
 * An active internet connection to reach the [nuget.org](https://www.nuget.org/) feed.
 * If you plan to use the CLI method, install the [.NET SDK](https://learn.microsoft.com/en-us/dotnet/core/sdk) matching your project target framework.
 

@@ -19,7 +19,7 @@ Run `sfdotnet new`, or select **Create a new project** from the main menu. The W
 
     ![Framework selection in the Syncfusion .NET CLI](images/cli-create-new-project.png)
 
-2. **Framework:** Select the .NET version: .NET 10 (`net10.0`), the default, or .NET 9 (`net9.0`).
+2. **Framework:** Select the .NET version: .NET 11 (`net11.0`), .NET 10 (`net10.0`), the default, or .NET 9 (`net9.0`).
 
 3. **Location and name:** Enter the parent directory and the project name. The suggested location is `%USERPROFILE%\source\repos`, and the suggested name is `SyncfusionWinUIApp`. The first available numeric suffix is used when the destination name collides.
 
@@ -123,7 +123,7 @@ N> `--post-action build` conflicts with `--no-build`. Neither `--force` nor conf
 
 **Which .NET versions are supported for WinUI?**
 
-.NET 10 (`net10.0`) and .NET 9 (`net9.0`). C# is the supported language, and projects use the native WinUI theme.
+.NET 11 (`net11.0`) .NET 10 (`net10.0`) and .NET 9 (`net9.0`). C# is the supported language, and projects use the native WinUI theme.
 
 **Can I build a WinUI project on macOS or Linux?**
 
@@ -138,4 +138,4 @@ Both controls are provided by `Syncfusion.Grid.WinUI`. Use the control alias (`d
 * [Manage packages in an existing project](/winui/dotnet-cli/manage-packages)
 * [MCP configuration](/winui/dotnet-cli/configure-mcp)
 * [AI skills installation](/winui/dotnet-cli/install-skills)
-* [Windows App SDK unpackaged deployment](https://learn.microsoft.com/windows/apps/windows-app-sdk/deploy-unpackaged-apps)
+* [Windows App SDK unpackaged deployment](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/deploy-unpackaged-apps)
